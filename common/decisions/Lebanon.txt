@@ -1,0 +1,7367 @@
+political_actions = {
+	LEB_Nihal_Atsiz_picker = {
+		icon = GFX_decision_portraits_picker
+		allowed = {
+			tag = LEB
+		}
+		visible = {
+			has_country_leader = {
+				name = "Nihâl Atsız"
+				ruling_only = yes
+			}
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 1
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_willy_ii_picker"
+			country_event = leb_portrait_picker.1
+		}
+	}
+}
+LEB_Arab_War = {
+	
+	LEB_war_of_SYR = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = SYR
+		}
+		
+		remove_effect = {
+			declare_war_on = { target = SYR type = annex_everything }
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Syria_revolt_power > 0
+					}
+					check_variable = { 
+						Syria_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Syrian insurgents"
+					division_names_group = LEB_NRARABARMY_07
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Syria_revolt_power > 5
+					}
+					check_variable = { 
+						Syria_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Syrian insurgents"
+					division_names_group = LEB_NRARABARMY_07
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Syria_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Syrian insurgents"
+					division_names_group = LEB_NRARABARMY_07
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Syrian insurgents\" division_template = \"Syrian insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_OMA = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = OMA
+		}
+		
+		remove_effect = {
+			declare_war_on = { target = OMA type = annex_everything }
+			hidden_effect = {
+				OMA = {
+					transfer_state = 658
+					transfer_state = 993
+					transfer_state = 907
+					658 = { add_core_of = OMA }
+					993 = { add_core_of = OMA }
+					907 = { add_core_of = OMA }
+				}
+			}
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Oman_revolt_power > 0
+					}
+					check_variable = { 
+						Oman_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Oman insurgents"
+					division_names_group = LEB_NRARABARMY_12
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Oman_revolt_power > 5
+					}
+					check_variable = { 
+						Oman_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Oman insurgents"
+					division_names_group = LEB_NRARABARMY_12
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Oman_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Oman insurgents"
+					division_names_group = LEB_NRARABARMY_12
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Oman insurgents\" division_template = \"Oman insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_YEM = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = YEM
+		}
+		
+		remove_effect = {
+			declare_war_on = { target = YEM type = annex_everything }
+			every_state = {
+				limit = { is_core_of = YEM }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Yeman_revolt_power > 0
+					}
+					check_variable = { 
+						Yeman_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Yemen insurgents"
+					division_names_group = LEB_NRARABARMY_11
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Yeman_revolt_power > 5
+					}
+					check_variable = { 
+						Yeman_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Yemen insurgents"
+					division_names_group = LEB_NRARABARMY_11
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Yeman_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Yemen insurgents"
+					division_names_group = LEB_NRARABARMY_11
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Yemen insurgents\" division_template = \"Yemen insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_SAU = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = SAU
+		}
+		
+		remove_effect = {
+			declare_war_on = { target = SAU type = annex_everything }
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Saudi_Arabia_revolt_power > 0
+					}
+					check_variable = { 
+						Saudi_Arabia_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Najd insurgents"
+					division_names_group = LEB_NRARABARMY_10
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Saudi_Arabia_revolt_power > 5
+					}
+					check_variable = { 
+						Saudi_Arabia_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Najd insurgents"
+					division_names_group = LEB_NRARABARMY_10
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Saudi_Arabia_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Najd insurgents"
+					division_names_group = LEB_NRARABARMY_10
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Najd insurgents\" division_template = \"Najd insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_IRQ = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = IRQ
+		}
+		
+		remove_effect = {
+			declare_war_on = { target = IRQ type = annex_everything }
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Iraq_revolt_power > 0
+					}
+					check_variable = { 
+						Iraq_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Iraq insurgents"
+					division_names_group = LEB_NRARABARMY_08
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Iraq_revolt_power > 5
+					}
+					check_variable = { 
+						Iraq_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Iraq insurgents"
+					division_names_group = LEB_NRARABARMY_08
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Iraq_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Iraq insurgents"
+					division_names_group = LEB_NRARABARMY_08
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Iraq insurgents\" division_template = \"Iraq insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_JBS = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = JBS
+		}
+		
+		remove_effect = {
+			declare_war_on = { target = JBS type = annex_everything }
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Jabal_Shammar_revolt_power > 0
+					}
+					check_variable = { 
+						Jabal_Shammar_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Jebel Shemaier insurgents"
+					division_names_group = LEB_NRARABARMY_09
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Jabal_Shammar_revolt_power > 5
+					}
+					check_variable = { 
+						Jabal_Shammar_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Jebel Shemaier insurgents"
+					division_names_group = LEB_NRARABARMY_09
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Jabal_Shammar_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Jebel Shemaier insurgents"
+					division_names_group = LEB_NRARABARMY_09
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Jebel Shemaier insurgents\" division_template = \"Jebel Shemaier insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_HEJ = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = HEJ
+		}
+		
+		remove_effect = {
+			declare_war_on = { target = HEJ type = annex_everything }
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Hejaz_revolt_power > 0
+					}
+					check_variable = { 
+						Hejaz_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Hejz insurgents"
+					division_names_group = LEB_NRARABARMY_06
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Hejaz_revolt_power > 5
+					}
+					check_variable = { 
+						Hejaz_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Hejz insurgents"
+					division_names_group = LEB_NRARABARMY_06
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Hejaz_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Hejz insurgents"
+					division_names_group = LEB_NRARABARMY_06
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Hejz insurgents\" division_template = \"Hejz insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_SOM = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = SOM
+		}
+		
+		remove_effect = {
+			declare_war_on = { target = SOM type = annex_everything }
+			every_state = {
+				limit = { is_core_of = SOM }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Somalia_revolt_power > 0
+					}
+					check_variable = { 
+						Somalia_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Somalia insurgents"
+					division_names_group = LEB_NRARABARMY_05
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Somalia_revolt_power > 5
+					}
+					check_variable = { 
+						Somalia_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Somalia insurgents"
+					division_names_group = LEB_NRARABARMY_05
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Somalia_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Somalia insurgents"
+					division_names_group = LEB_NRARABARMY_05
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Somalia insurgents\" division_template = \"Somalia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_EGY = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		remove_effect = {
+			declare_war_on = { target = EGY type = annex_everything }
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Egypt_revolt_power > 0
+					}
+					check_variable = { 
+						Egypt_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Egypt insurgents"
+					division_names_group = LEB_NRARABARMY_04
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Egypt_revolt_power > 5
+					}
+					check_variable = { 
+						Egypt_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Egypt insurgents"
+					division_names_group = LEB_NRARABARMY_04
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Egypt_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Egypt insurgents"
+					division_names_group = LEB_NRARABARMY_04
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = { LEB = { has_country_flag = EGY_Funding_of_the_Free_Officers_Organization_Yes } }
+				division_template = {
+					name = "Egypt insurgents"
+					division_names_group = LEB_EGYNRARABARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Egypt insurgents\" division_template = \"Egypt insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_MOR = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		remove_effect = {
+			declare_war_on = { target = MOR type = annex_everything }
+			hidden_effect = {
+				GER =  {
+					end_puppet = MOR
+				}
+				MOR = {
+					leave_faction = yes
+				}
+				MOR = {
+					transfer_state = 699
+					transfer_state = 1318
+					transfer_state = 178
+					transfer_state = 290
+					178 = { add_core_of = MOR }
+				}
+			}
+			every_state = {
+				limit = { is_core_of = MOR }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Morocco_revolt_power > 0
+					}
+					check_variable = { 
+						Morocco_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Morocco insurgents"
+					division_names_group = LEB_NRARABARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Morocco_revolt_power > 5
+					}
+					check_variable = { 
+						Morocco_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Morocco insurgents"
+					division_names_group = LEB_NRARABARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Morocco_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Morocco insurgents"
+					division_names_group = LEB_NRARABARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Morocco insurgents\" division_template = \"Morocco insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					LEB = {
+						has_country_flag = LEB_Contact_the_Rif_Independence_Army_Yes
+					}
+				}
+				LEB = {
+					transfer_state = 290
+					division_template = {
+						name = "Rif Independence Army"
+						division_names_group = LEB_RIFNRARABARMY_00
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+						}
+					}
+					random_owned_controlled_state = {
+						prioritize = { 290 }
+						create_unit = {
+							division = "name = \"Rif Independence Army\" division_template = \"Rif Independence Army\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = LEB
+						}
+						create_unit = {
+							division = "name = \"Rif Independence Army\" division_template = \"Rif Independence Army\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = LEB
+						}
+					}
+				}
+			}
+		}
+	}
+	LEB_Attack_on_Mauritania = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = MRT
+			NOT = {
+				country_exists = ALG
+				country_exists = MOR
+			}
+		}
+		remove_effect = {
+			declare_war_on = { target = MRT type = annex_everything }
+			every_state = {
+				limit = { is_core_of = MRT }
+				add_core_of = LEB
+			}
+		}
+	}
+	LEB_war_of_NFA = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = ALG
+			country_exists = MOR
+			country_exists = MRT
+		}
+		
+		remove_effect = {
+			declare_war_on = { target = NFA type = annex_everything }
+			declare_war_on = { target = ALG type = annex_everything }
+			declare_war_on = { target = MOR type = annex_everything }
+			declare_war_on = { target = MRT type = annex_everything }
+			every_state = {
+				limit = { is_core_of = MOR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = ALG }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = MRT }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Algeria_revolt_power > 0
+					}
+					check_variable = { 
+						Algeria_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Algeria insurgents"
+					division_names_group = LEB_NRARABARMY_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Algeria_revolt_power > 5
+					}
+					check_variable = { 
+						Algeria_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Algeria insurgents"
+					division_names_group = LEB_NRARABARMY_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Algeria_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Algeria insurgents"
+					division_names_group = LEB_NRARABARMY_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Algeria insurgents\" division_template = \"Algeria insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Tunisia_revolt_power > 0
+					}
+					check_variable = { 
+						Tunisia_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Tunisia insurgents"
+					division_names_group = LEB_NRARABARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Tunisia_revolt_power > 5
+					}
+					check_variable = { 
+						Tunisia_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Tunisia insurgents"
+					division_names_group = LEB_NRARABARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Tunisia_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Tunisia insurgents"
+					division_names_group = LEB_NRARABARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tunisia insurgents\" division_template = \"Tunisia insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_TRP = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			country_exists = TRP
+		}
+		
+		remove_effect = {
+			declare_war_on = { target = TRP type = annex_everything }
+			every_state = {
+				limit = { is_core_of = TRP }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Tripolitania_revolt_power > 0
+					}
+					check_variable = { 
+						Tripolitania_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Tripoli insurgents"
+					division_names_group = LEB_NRARABARMY_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Tripolitania_revolt_power > 5
+					}
+					check_variable = { 
+						Tripolitania_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Tripoli insurgents"
+					division_names_group = LEB_NRARABARMY_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Tripolitania_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Tripoli insurgents"
+					division_names_group = LEB_NRARABARMY_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Tripoli insurgents\" division_template = \"Tripoli insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_war_of_LBA = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		remove_effect = {
+			declare_war_on = { target = LBA type = annex_everything }
+			every_state = {
+				limit = { is_core_of = LBA }
+				add_core_of = LEB
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Tripolitania_revolt_power > 0
+					}
+					check_variable = { 
+						Tripolitania_revolt_power < 6
+					}
+				}
+				division_template = {
+					name = "Cyrenaica insurgents"
+					division_names_group = LEB_NRARABARMY_03
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Tripolitania_revolt_power > 5
+					}
+					check_variable = { 
+						Tripolitania_revolt_power < 11
+					}
+				}
+				division_template = {
+					name = "Cyrenaica insurgents"
+					division_names_group = LEB_NRARABARMY_03
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { 
+						Tripolitania_revolt_power > 10
+					}
+				}
+				division_template = {
+					name = "Cyrenaica insurgents"
+					division_names_group = LEB_NRARABARMY_03
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+					create_unit = {
+						division = "name = \"Cyrenaica insurgents\" division_template = \"Cyrenaica insurgents\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = LEB
+					}
+				}
+			}
+		}
+	}
+	LEB_Core_Eritrea = {
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available {
+			transfer_state = 550
+			transfer_state = 961
+		}
+		visible = {
+			transfer_state = 550
+			transfer_state = 961
+		}
+		remove_effect = {
+			550 = { add_core_of = LEB }
+			961 = { add_core_of = LEB }
+		}
+	}
+	LEB_Core_Djibouti = {
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available {
+			transfer_state = 268
+		}
+		visible = {
+			transfer_state = 268
+		}
+		remove_effect = {
+			268 = { add_core_of = LEB }
+		}
+	}
+	LEB_Core_Gulf_Arabia = {
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available {
+			controls_state = 658
+			controls_state = 993
+			controls_state = 907
+		}
+		visible = {
+			controls_state = 658
+			controls_state = 993
+			controls_state = 907
+			NOT = {
+				658 = { is_core_of = LEB }
+				993 = { is_core_of = LEB }
+				907 = { is_core_of = LEB }
+			}
+		}
+		remove_effect = {
+			658 = { add_core_of = LEB }
+			993 = { add_core_of = LEB }
+			907 = { add_core_of = LEB }
+		}
+	}
+	LEB_Core_Iraq = {
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available {
+			controls_state = 349
+			controls_state = 676
+			controls_state = 291
+			controls_state = 812
+		}
+		visible = {
+			controls_state = 349
+			controls_state = 676
+			controls_state = 291
+			controls_state = 812
+			NOT = {
+				349 = { is_core_of = LEB }
+				676 = { is_core_of = LEB }
+				291 = { is_core_of = LEB }
+				812 = { is_core_of = LEB }
+			}
+		}
+		remove_effect = {
+			349 = { add_core_of = LEB }
+			676 = { add_core_of = LEB }
+			291 = { add_core_of = LEB }
+			812 = { add_core_of = LEB }
+		}
+	}
+	LEB_Core_SYR = {
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available {
+			controls_state = 455
+			controls_state = 554
+			controls_state = 995
+			controls_state = 680
+			controls_state = 677
+			controls_state = 344
+		}
+		visible = {
+			controls_state = 455
+			controls_state = 554
+			controls_state = 995
+			controls_state = 680
+			controls_state = 677
+			controls_state = 344
+			NOT = {
+				455 = { is_core_of = LEB }
+				554 = { is_core_of = LEB }
+				995 = { is_core_of = LEB }
+				680 = { is_core_of = LEB }
+				677 = { is_core_of = LEB }
+				344 = { is_core_of = LEB }
+			}
+		}
+		remove_effect = {
+			992 = { add_core_of = LEB }
+			455 = { add_core_of = LEB }
+			554 = { add_core_of = LEB }
+			995 = { add_core_of = LEB }
+			680 = { add_core_of = LEB }
+			677 = { add_core_of = LEB }
+			344 = { add_core_of = LEB }
+		}
+	}
+	LEB_Core_TRP = {
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available {
+			controls_state = 448
+			controls_state = 273
+		}
+		visible = {
+			controls_state = 448
+			controls_state = 273
+			NOT = {
+				448 = { is_core_of = LEB }
+				273 = { is_core_of = LEB }
+			}
+		}
+		remove_effect = {
+			448 = { add_core_of = LEB }
+			273 = { add_core_of = LEB }
+		}
+	}
+	LEB_Core_HEJ = {
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available {
+			controls_state = 754
+			controls_state = 679
+		}
+		visible = {
+			controls_state = 754
+			controls_state = 679
+			NOT = {
+				679 = { is_core_of = LEB }
+				754 = { is_core_of = LEB }
+			}
+		}
+		remove_effect = {
+			679 = { add_core_of = LEB }
+			754 = { add_core_of = LEB }
+		}
+	}
+	LEB_Core_BJX = {
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available {
+			controls_state = 450
+		}
+		visible = {
+			controls_state = 450
+			NOT = {
+				450 = { is_core_of = LEB }
+			}
+		}
+		remove_effect = {
+			450 = { add_core_of = LEB }
+		}
+	}
+	LEB_Core_JBS = {
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available {
+			controls_state = 994
+			controls_state = 1035
+			controls_state = 915
+		}
+		visible = {
+			controls_state = 994
+			controls_state = 1035
+			controls_state = 915
+			NOT = {
+				994 = { is_core_of = LEB }
+				1035 = { is_core_of = LEB }
+				915 = { is_core_of = LEB }
+			}
+		}
+		remove_effect = {
+			994 = { add_core_of = LEB }
+			1035 = { add_core_of = LEB }
+			915 = { add_core_of = LEB }
+		}
+	}
+	LEB_Core_SAU = {
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available {
+			controls_state = 675
+			controls_state = 292
+			controls_state = 678
+			controls_state = 991
+			controls_state = 656
+		}
+		visible = {
+			controls_state = 675
+			controls_state = 292
+			controls_state = 678
+			controls_state = 991
+			controls_state = 656
+			NOT = {
+				675 = { is_core_of = LEB }
+				292 = { is_core_of = LEB }
+				678 = { is_core_of = LEB }
+				991 = { is_core_of = LEB }
+				656 = { is_core_of = LEB }
+			}
+		}
+		remove_effect = {
+			675 = { add_core_of = LEB }
+			292 = { add_core_of = LEB }
+			678 = { add_core_of = LEB }
+			991 = { add_core_of = LEB }
+			656 = { add_core_of = LEB }
+		}
+	}
+	LEB_war_of_JBT_ELT = {
+	
+		icon = bear
+		
+		cost = 20
+		days_remove = 20
+		fire_only_once = yes
+		
+		available = {
+			NOT = {
+				controls_state = 550
+				controls_state = 961
+				controls_state = 268
+			}
+		}
+		
+		visible = {
+			NOT = {
+				controls_state = 550
+				controls_state = 961
+				controls_state = 268
+			}
+		}
+		
+		remove_effect = {
+			550 = { add_core_of = LEB }
+			961 = { add_core_of = LEB }
+			268 = { add_core_of = LEB }
+			create_wargoal = {
+				target = 550.owner
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = 961.owner
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = 268.owner
+				type = annex_everything
+			}
+		}
+	}
+}
+LEB_Arab_National_Unit = {
+	LEB_ALG_The_day_of_wrath = {
+	
+		icon = trumpet
+		
+		activation = {
+			ALG = {
+				has_war_with = NFA
+				has_government = syndicalist
+			}
+			TUN = {
+				has_war_with = NFA
+				has_government = syndicalist
+			}
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}                                    
+		available = {
+			has_country_flag = LEB_ALG_The_day_of_wrath
+		}
+	
+		days_mission_timeout = 30
+		timeout_effect = {                      
+			if = {
+				limit = {
+					country_exists = ALG
+					country_exists = TUN
+				}
+				ALG = {
+					white_peace = NFA
+				}
+				TUN = {
+					white_peace = NFA
+				}
+				set_country_flag = ALG_win_for_NFA
+				country_event = LEB.128
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = ALG }
+					NOT = { country_exists = TUN }
+				}
+				country_event = LEB.127
+			}
+		}
+		complete_effect = {                             
+		}
+	}
+	LEB_ALG_Contact_North_African_Star = {
+	
+		icon = generic_agreement
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		
+		available = {
+			NOT = { country_exists = ALG }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = ALG }
+			NFA = {
+				controls_state = 805
+				controls_state = 459
+				controls_state = 460
+				controls_state = 513
+				controls_state = 514
+				controls_state = 458
+				controls_state = 665
+			}
+			has_country_flag = arab_gui_Algeria_vis
+			NOT = {
+				has_country_flag = The_Great_Algerian_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = ALG_RFAU_get_power
+			add_to_variable = {
+				var = ALG_RFAU_var
+				value = 0.15
+			}
+		}
+	}
+	LEB_ALG_Dispatch_of_teaching_missions = {
+	
+		icon = soldierly_discipline
+		
+		cost = 70
+		fire_only_once = yes
+		days_remove = 15
+		
+		available = {
+			NOT = { country_exists = ALG }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = ALG }
+			NFA = {
+				controls_state = 805
+				controls_state = 459
+				controls_state = 460
+				controls_state = 513
+				controls_state = 514
+				controls_state = 458
+				controls_state = 665
+			}
+			has_country_flag = arab_gui_Algeria_vis
+			NOT = {
+				has_country_flag = The_Great_Algerian_Uprising
+			}
+		}
+		remove_effect = {
+			add_manpower = -15000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -5000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = -200
+				producer = LEB
+			}
+			custom_effect_tooltip = ALG_RFAU_get_power
+			custom_effect_tooltip = ALG_Dispatch_of_teaching_missions_Yes
+			add_to_variable = {
+				var = ALG_RFAU_var
+				value = 0.15
+			}
+			set_country_flag = LEB_ALG_Dispatch_of_teaching_missions_Yes
+		}
+	}
+	LEB_ALG_Training_resistance_fighters = {
+	
+		icon = trumpet
+		
+		cost = 40
+		fire_only_once = yes
+		days_remove = 30
+		
+		available = {
+			NOT = { country_exists = ALG }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = ALG }
+			NFA = {
+				controls_state = 805
+				controls_state = 459
+				controls_state = 460
+				controls_state = 513
+				controls_state = 514
+				controls_state = 458
+				controls_state = 665
+			}
+			has_country_flag = arab_gui_Algeria_vis
+			NOT = {
+				has_country_flag = The_Great_Algerian_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = ALG_RFAU_get_power
+			custom_effect_tooltip = ALG_Training_resistance_fighters_Yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -3000
+				producer = LEB
+			}
+			add_to_variable = {
+				var = ALG_RFAU_var
+				value = 0.2
+			}
+			set_country_flag = LEB_ALG_Training_resistance_fighters_Yes
+		}
+	}
+	LEB_ALG_Destruction_of_colonizer_logistics = {
+	
+		icon = road
+		
+		cost = 30
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = ALG }
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = ALG }
+			NFA = {
+				controls_state = 805
+				controls_state = 459
+				controls_state = 460
+				controls_state = 513
+				controls_state = 514
+				controls_state = 458
+				controls_state = 665
+			}
+			has_country_flag = arab_gui_Algeria_vis
+			NOT = {
+				has_country_flag = The_Great_Algerian_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = ALG_RFAU_get_power
+			add_to_variable = {
+				var = ALG_RFAU_var
+				value = 0.1
+			}
+			NFA = {
+				random_owned_controlled_state={
+					prioritize = { }
+					add_building_construction={
+						type = industrial_complex
+						level = -1
+						instant_build = yes
+					}
+					add_building_construction={
+						type = infrastructure
+						level = -1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	LEB_ALG_Steal_colonist_intelligence = {
+	
+		icon = binoculars
+		
+		cost = 20
+		days_remove = 15
+		
+		available = {
+			NOT = { country_exists = ALG }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			NOT = { country_exists = ALG }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NFA = {
+				controls_state = 805
+				controls_state = 459
+				controls_state = 460
+				controls_state = 513
+				controls_state = 514
+				controls_state = 458
+				controls_state = 665
+			}
+			has_country_flag = arab_gui_Algeria_vis
+			NOT = {
+				has_country_flag = The_Great_Algerian_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = ALG_RFAU_get_power
+			add_to_variable = {
+				var = ALG_RFAU_var
+				value = 0.1
+			}
+		}
+	}
+	LEB_ALG_Inciting_revolt = {
+	
+		icon = bear
+		
+		cost = 15
+		days_remove = 10
+		
+		available = {
+			NOT = { country_exists = ALG }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			NOT = { country_exists = ALG }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NFA = {
+				controls_state = 805
+				controls_state = 459
+				controls_state = 460
+				controls_state = 513
+				controls_state = 514
+				controls_state = 458
+				controls_state = 665
+			}
+			has_country_flag = arab_gui_Algeria_vis
+			NOT = {
+				has_country_flag = The_Great_Algerian_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = ALG_RFAU_get_power
+			add_to_variable = {
+				var = ALG_RFAU_var
+				value = 0.1
+			}
+		}
+	}
+	LEB_ALG_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = ALG
+			ALG = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = ALG
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Algeria_vis
+			ALG = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Algeria_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_ALG_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = ALG
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			ALG = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = ALG 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Algeria_vis
+			ALG = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Algeria_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_ALG_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = ALG 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			ALG = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = ALG
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Algeria_vis
+			ALG = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Algeria_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_ALG_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = ALG
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			ALG = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = ALG 
+			has_country_flag = arab_gui_Algeria_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			ALG = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Algeria_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_MOR_Contact_the_Rif_Independence_Army = {
+	
+		icon = Contact_the_RIA
+		
+		cost = 75
+		custom_cost_text = CP_30
+		custom_cost_trigger = {
+			command_power > 29.99
+		}
+		days_remove = 30
+		fire_only_once = yes
+		
+		available = {
+			NOT = { country_exists = RIF }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = MOR
+			MOR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			NOT = { country_exists = RIF }
+			country_exists = MOR
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Morocco_vis
+			MOR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			add_manpower = -1500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = -100
+				producer = LEB
+			}
+			custom_effect_tooltip = revolt_get_power
+			custom_effect_tooltip = Contact_the_Rif_Independence_Army_Yes
+			set_country_flag = LEB_Contact_the_Rif_Independence_Army_Yes
+			add_to_variable = {
+				var = Morocco_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_MOR_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = MOR
+			MOR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = MOR
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Morocco_vis
+			MOR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Morocco_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_MOR_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = MOR
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			MOR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = MOR 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Morocco_vis
+			MOR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Morocco_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_MOR_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = MOR 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			MOR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = MOR
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Morocco_vis
+			MOR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Morocco_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_MOR_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = MOR
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			MOR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = MOR 
+			has_country_flag = arab_gui_Morocco_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			MOR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Morocco_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_TUN_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = TUN
+			TUN = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = TUN
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Tunisia_vis
+			TUN = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Tunisia_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_TUN_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = TUN
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			TUN = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = TUN 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Tunisia_vis
+			TUN = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Tunisia_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_TUN_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = TUN 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			TUN = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = TUN
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Tunisia_vis
+			TUN = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Tunisia_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_TUN_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = TUN
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			TUN = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = TUN 
+			has_country_flag = arab_gui_Tunisia_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			TUN = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Tunisia_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_TRP_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = TRP
+			TRP = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = TRP
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Tripolitania_vis
+			TRP = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Tripolitania_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_TRP_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = TRP
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			TRP = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = TRP 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Tripolitania_vis
+			TRP = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Tripolitania_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_TRP_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = TRP 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			TRP = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = TRP
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Tripolitania_vis
+			TRP = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Tripolitania_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_TRP_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = TRP
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			TRP = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = TRP 
+			has_country_flag = arab_gui_Tripolitania_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			TRP = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Tripolitania_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_TRP_The_day_of_Gods_wrath = {
+	
+		icon = trumpet
+		
+		activation = {
+			TRP = {
+				OR = {
+					has_war_with = TUR
+					has_war_with = LBA
+				}
+				has_government = syndicalist
+			}
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}                                    
+		available = {
+			has_country_flag = LEB_TRP_The_day_of_Gods_wrath
+		}
+	
+		days_mission_timeout = 30
+		timeout_effect = {                      
+			if = {
+				limit = {
+					country_exists = TRP
+				}
+				TRP = {
+					white_peace = TUR
+					white_peace = LBA
+				}
+				set_country_flag = TRP_win_for_TUR
+				country_event = LEB.131
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = TRP }
+				}
+				country_event = LEB.130
+			}
+		}
+		complete_effect = {                             
+		}
+	}
+	LEB_TRP_Contact_Tripoli_Labor_Party = {
+	
+		icon = generic_agreement
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		
+		available = {
+			NOT = { country_exists = TRP }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = TRP }
+			TUR = {
+				controls_state = 448
+				controls_state = 273
+			}
+			has_country_flag = arab_gui_Tripolitania_vis
+			NOT = {
+				has_country_flag = The_Great_Tripolitania_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = TRP_RFTU_get_power
+			add_to_variable = {
+				var = TRP_RFTU_var
+				value = 0.15
+			}
+		}
+	}
+	LEB_TRP_Dispatch_of_teaching_missions = {
+	
+		icon = soldierly_discipline
+		
+		cost = 70
+		fire_only_once = yes
+		days_remove = 15
+		
+		available = {
+			NOT = { country_exists = TRP }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = TRP }
+			TUR = {
+				controls_state = 448
+				controls_state = 273
+			}
+			has_country_flag = arab_gui_Tripolitania_vis
+			NOT = {
+				has_country_flag = The_Great_Tripolitania_Uprising
+			}
+		}
+		remove_effect = {
+			add_manpower = -15000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -5000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = -200
+				producer = LEB
+			}
+			custom_effect_tooltip = TRP_Dispatch_of_teaching_missions_Yes
+			custom_effect_tooltip = TRP_RFTU_get_power
+			add_to_variable = {
+				var = TRP_RFTU_var
+				value = 0.15
+			}
+			set_country_flag = LEB_TRP_Dispatch_of_teaching_missions_Yes
+		}
+	}
+	LEB_TRP_Training_resistance_fighters = {
+	
+		icon = trumpet
+		
+		cost = 40
+		fire_only_once = yes
+		days_remove = 30
+		
+		available = {
+			NOT = { country_exists = TRP }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = TRP }
+			TUR = {
+				controls_state = 448
+				controls_state = 273
+			}
+			has_country_flag = arab_gui_Tripolitania_vis
+			NOT = {
+				has_country_flag = The_Great_Tripolitania_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = TRP_RFTU_get_power
+			custom_effect_tooltip = TRP_Training_resistance_fighters_Yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -3000
+				producer = LEB
+			}
+			add_to_variable = {
+				var = TRP_RFTU_var
+				value = 0.2
+			}
+			set_country_flag = LEB_TRP_Training_resistance_fighters_Yes
+		}
+	}
+	LEB_TRP_Destruction_of_colonizer_logistics = {
+	
+		icon = road
+		
+		cost = 30
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = TRP }
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = TRP }
+			TUR = {
+				controls_state = 448
+				controls_state = 273
+			}
+			has_country_flag = arab_gui_Tripolitania_vis
+			NOT = {
+				has_country_flag = The_Great_Tripolitania_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = TRP_RFTU_get_power
+			add_to_variable = {
+				var = TRP_RFTU_var
+				value = 0.1
+			}
+			TUR = {
+				random_owned_controlled_state={
+					prioritize = { 448 }
+					add_building_construction={
+						type = industrial_complex
+						level = -1
+						instant_build = yes
+					}
+					add_building_construction={
+						type = infrastructure
+						level = -1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	LEB_TRP_Steal_colonist_intelligence = {
+	
+		icon = binoculars
+		
+		cost = 20
+		days_remove = 15
+		
+		available = {
+			NOT = { country_exists = TRP }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = TRP }
+			TUR = {
+				controls_state = 448
+				controls_state = 273
+			}
+			has_country_flag = arab_gui_Tripolitania_vis
+			NOT = {
+				has_country_flag = The_Great_Tripolitania_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = TRP_RFTU_get_power
+			add_to_variable = {
+				var = TRP_RFTU_var
+				value = 0.1
+			}
+		}
+	}
+	LEB_TRP_Inciting_revolt = {
+	
+		icon = bear
+		
+		cost = 15
+		days_remove = 10
+		
+		available = {
+			NOT = { country_exists = TRP }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = TRP }
+			TUR = {
+				controls_state = 448
+				controls_state = 273
+			}
+			has_country_flag = arab_gui_Tripolitania_vis
+			NOT = {
+				has_country_flag = The_Great_Tripolitania_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = TRP_RFTU_get_power
+			add_to_variable = {
+				var = TRP_RFTU_var
+				value = 0.1
+			}
+		}
+	}
+	LEB_LBA_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = LBA
+			LBA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = LBA
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Libya_vis
+			LBA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Libya_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_LBA_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = LBA
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			LBA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = LBA 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Libya_vis
+			LBA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Libya_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_LBA_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = LBA 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			LBA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = LBA
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Libya_vis
+			LBA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Libya_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_LBA_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = LBA
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			LBA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = LBA 
+			has_country_flag = arab_gui_Libya_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			LBA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Libya_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_EGY_Expand_the_local_Socialist_network = {
+	
+		icon = Expand_the_local_Socialist_network
+		
+		cost = 30
+		days_remove = 10
+		
+		available = {
+			country_exists = EGY 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			EGY = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = EGY
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Egypt_vis
+			EGY = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Egypt_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_EGY_Co_opt_pan_Arab_sympathizers = {
+	
+		icon = Co_opt_pan_Arab_sympathizers
+		
+		cost = 20
+		days_remove = 15
+		
+		available = {
+			country_exists = EGY 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			EGY = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = EGY
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Egypt_vis
+			EGY = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Egypt_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_EGY_Funding_of_the_Free_Officers_Organization = {
+	
+		icon = Funding_of_the_Free_Officers_Organization
+		
+		cost = 30
+		days_remove = 15
+		
+		available = {
+			country_exists = EGY 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			EGY = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = EGY
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Egypt_vis
+			EGY = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			custom_effect_tooltip = LEB_EGY_Funding_of_the_Free_Officers_Organization_Yes
+			set_country_flag = EGY_Funding_of_the_Free_Officers_Organization_Yes
+			add_to_variable = {
+				var = Egypt_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_EGY_Incitement_to_strike = {
+	
+		icon = Incitement_to_strike
+		
+		cost = 20
+		days_remove = 15
+		
+		available = {
+			country_exists = EGY 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			EGY = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = EGY
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Egypt_vis
+			EGY = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			EGY = {
+				add_stability = -0.03
+				add_war_support = -0.03
+			}
+			add_to_variable = {
+				var = Egypt_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_HEJ_The_day_of_sorrow_and_wrath = {
+	
+		icon = trumpet
+		
+		activation = {
+			HEJ = {
+				OR = {
+					has_war_with = TUR
+					has_war_with = YEM
+				}
+				has_government = syndicalist
+			}
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}                                    
+		available = {
+			has_country_flag = LEB_HEJ_The_day_of_sorrow_and_wrath
+		}
+	
+		days_mission_timeout = 30
+		timeout_effect = {                      
+			if = {
+				limit = {
+					country_exists = HEJ
+				}
+				HEJ = {
+					white_peace = TUR
+					white_peace = YEM
+				}
+				set_country_flag = HEJ_win_for_TUR
+				country_event = LEB.134
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = HEJ }
+				}
+				country_event = LEB.133
+			}
+		}
+		complete_effect = {                             
+		}
+	}
+	LEB_HEJ_Contact_Tripoli_Labor_Party = {
+	
+		icon = cash_flow
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		
+		available = {
+			NOT = { country_exists = HEJ }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = HEJ }
+			TUR = {
+				controls_state = 754
+				controls_state = 679
+			}
+			has_country_flag = arab_gui_Hejaz_vis
+			NOT = {
+				has_country_flag = The_Great_Hejaz_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = HEJ_RFHU_get_power
+			add_to_variable = {
+				var = HEJ_RFHU_var
+				value = 0.15
+			}
+		}
+	}
+	LEB_HEJ_Dispatch_of_teaching_missions = {
+	
+		icon = soldierly_discipline
+		
+		cost = 70
+		fire_only_once = yes
+		days_remove = 15
+		
+		available = {
+			NOT = { country_exists = HEJ }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = HEJ }
+			TUR = {
+				controls_state = 754
+				controls_state = 679
+			}
+			has_country_flag = arab_gui_Hejaz_vis
+			NOT = {
+				has_country_flag = The_Great_Hejaz_Uprising
+			}
+		}
+		remove_effect = {
+			add_manpower = -15000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -5000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = -200
+				producer = LEB
+			}
+			custom_effect_tooltip = HEJ_Dispatch_of_teaching_missions_Yes
+			custom_effect_tooltip = HEJ_RFHU_get_power
+			add_to_variable = {
+				var = HEJ_RFHU_var
+				value = 0.15
+			}
+			set_country_flag = LEB_HEJ_Dispatch_of_teaching_missions_Yes
+		}
+	}
+	LEB_HEJ_Training_resistance_fighters = {
+	
+		icon = trumpet
+		
+		cost = 40
+		fire_only_once = yes
+		days_remove = 30
+		
+		available = {
+			NOT = { country_exists = HEJ }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = HEJ }
+			TUR = {
+				controls_state = 754
+				controls_state = 679
+			}
+			has_country_flag = arab_gui_Hejaz_vis
+			NOT = {
+				has_country_flag = The_Great_Hejaz_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = HEJ_RFHU_get_power
+			custom_effect_tooltip = HEJ_Training_resistance_fighters_Yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -3000
+				producer = LEB
+			}
+			add_to_variable = {
+				var = HEJ_RFHU_var
+				value = 0.2
+			}
+			set_country_flag = LEB_HEJ_Training_resistance_fighters_Yes
+		}
+	}
+	LEB_HEJ_Destruction_of_colonizer_logistics = {
+	
+		icon = road
+		
+		cost = 30
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = HEJ }
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = HEJ }
+			TUR = {
+				controls_state = 754
+				controls_state = 679
+			}
+			has_country_flag = arab_gui_Hejaz_vis
+			NOT = {
+				has_country_flag = The_Great_Hejaz_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = HEJ_RFHU_get_power
+			add_to_variable = {
+				var = HEJ_RFHU_var
+				value = 0.1
+			}
+			TUR = {
+				random_owned_controlled_state={
+					prioritize = { 754 }
+					add_building_construction={
+						type = industrial_complex
+						level = -1
+						instant_build = yes
+					}
+					add_building_construction={
+						type = infrastructure
+						level = -1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	LEB_HEJ_Steal_colonist_intelligence = {
+	
+		icon = binoculars
+		
+		cost = 20
+		days_remove = 15
+		
+		available = {
+			NOT = { country_exists = HEJ }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = HEJ }
+			TUR = {
+				controls_state = 754
+				controls_state = 679
+			}
+			has_country_flag = arab_gui_Hejaz_vis
+			NOT = {
+				has_country_flag = The_Great_Hejaz_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = HEJ_RFHU_get_power
+			add_to_variable = {
+				var = HEJ_RFHU_var
+				value = 0.1
+			}
+		}
+	}
+	LEB_HEJ_Inciting_revolt = {
+	
+		icon = bear
+		
+		cost = 15
+		days_remove = 10
+		
+		available = {
+			NOT = { country_exists = HEJ }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = HEJ }
+			TUR = {
+				controls_state = 754
+				controls_state = 679
+			}
+			has_country_flag = arab_gui_Hejaz_vis
+			NOT = {
+				has_country_flag = The_Great_Hejaz_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = HEJ_RFHU_get_power
+			add_to_variable = {
+				var = HEJ_RFHU_var
+				value = 0.1
+			}
+		}
+	}
+	LEB_HEJ_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = HEJ
+			HEJ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = HEJ
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Hejaz_vis
+			HEJ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Hejaz_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_HEJ_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = HEJ
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			HEJ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = HEJ 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Hejaz_vis
+			HEJ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Hejaz_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_HEJ_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = HEJ 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			HEJ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = HEJ
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Hejaz_vis
+			HEJ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Hejaz_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_HEJ_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = HEJ
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			HEJ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = HEJ 
+			has_country_flag = arab_gui_Hejaz_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			HEJ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Hejaz_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_SOM_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = SOM
+			SOM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SOM
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Somalia_vis
+			SOM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Somalia_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_SOM_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = SOM
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SOM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SOM 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Somalia_vis
+			SOM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Somalia_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_SOM_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = SOM 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SOM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SOM
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Somalia_vis
+			SOM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Somalia_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_SOM_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = SOM
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SOM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SOM 
+			has_country_flag = arab_gui_Somalia_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SOM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Somalia_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_JBS_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = JBS
+			JBS = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = JBS
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Jabal_Shammar_vis
+			JBS = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Jabal_Shammar_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_JBS_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = JBS
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			JBS = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = JBS 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Jabal_Shammar_vis
+			JBS = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Jabal_Shammar_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_JBS_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = JBS 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			JBS = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = JBS
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Jabal_Shammar_vis
+			JBS = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Jabal_Shammar_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_JBS_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = JBS
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			JBS = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = JBS 
+			has_country_flag = arab_gui_Jabal_Shammar_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			JBS = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Jabal_Shammar_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_SAU_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = SAU
+			SAU = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SAU
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Saudi_Arabia_vis
+			SAU = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Saudi_Arabia_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_SAU_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = SAU
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SAU = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SAU 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Saudi_Arabia_vis
+			SAU = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Saudi_Arabia_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_SAU_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = SAU 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SAU = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SAU
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Saudi_Arabia_vis
+			SAU = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Saudi_Arabia_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_SAU_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = SAU
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SAU = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SAU 
+			has_country_flag = arab_gui_Saudi_Arabia_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SAU = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Saudi_Arabia_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_OMA_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = OMA
+			OMA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = OMA
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Oman_vis
+			OMA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Oman_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_OMA_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = OMA
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			OMA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = OMA 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Oman_vis
+			OMA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Oman_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_OMA_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = OMA 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			OMA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = OMA
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Oman_vis
+			OMA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Oman_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_OMA_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = OMA
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			OMA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = OMA 
+			has_country_flag = arab_gui_Oman_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			OMA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Oman_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_YEM_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = YEM
+			YEM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = YEM
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Yeman_vis
+			YEM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Yeman_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_YEM_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = YEM
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			YEM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = YEM 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Yeman_vis
+			YEM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Yeman_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_YEM_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = YEM 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			YEM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = YEM
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Yeman_vis
+			YEM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Yeman_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_YEM_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = YEM
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			YEM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = YEM 
+			has_country_flag = arab_gui_Yeman_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			YEM = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Yeman_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_SYR_The_day_of_weeping = {
+	
+		icon = trumpet
+		
+		activation = {
+			SYR = {
+				OR = {
+					has_war_with = TUR
+					has_war_with = JBS
+				}
+				has_government = syndicalist
+			}
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}                                    
+		available = {
+			has_country_flag = LEB_SYR_The_day_of_weeping
+		}
+	
+		days_mission_timeout = 30
+		timeout_effect = {                      
+			if = {
+				limit = {
+					country_exists = SYR
+				}
+				SYR = {
+					white_peace = TUR
+					white_peace = JBS
+				}
+				set_country_flag = SYR_win_for_TUR
+				country_event = LEB.137
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = SYR }
+				}
+				country_event = LEB.136
+			}
+		}
+		complete_effect = {                             
+		}
+	}
+	LEB_SYR_Contact_the_Damascus_branch_of_the_Syrian_Socialist_National_Party = {
+	
+		icon = Contact_the_Damascus_branch_of_the_Syrian_Socialist_National_Party
+		
+		cost = 50
+		days_remove = 20
+		
+		available = {
+			NOT = { country_exists = SYR }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = SYR }
+			TUR = {
+				controls_state = 455
+				controls_state = 554
+				controls_state = 995
+				controls_state = 680
+				controls_state = 677
+				controls_state = 344
+			}
+			has_country_flag = arab_gui_Syria_vis
+			NOT = {
+				has_country_flag = The_Great_Syria_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SYR_RFSU_get_power
+			add_to_variable = {
+				var = SYR_RFSU_var
+				value = 0.2
+			}
+		}
+	}
+	LEB_SYR_Expansion_of_the_Damascus_branch_of_the_Socialist_Party = {
+	
+		icon = Expansion_of_the_Damascus_branch_of_the_Socialist_Party
+		
+		cost = 50
+		days_remove = 20
+		
+		available = {
+			NOT = { country_exists = SYR }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = SYR }
+			TUR = {
+				controls_state = 455
+				controls_state = 554
+				controls_state = 995
+				controls_state = 680
+				controls_state = 677
+				controls_state = 344
+			}
+			has_country_flag = arab_gui_Syria_vis
+			NOT = {
+				has_country_flag = The_Great_Syria_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SYR_RFSU_get_power
+			add_to_variable = {
+				var = SYR_RFSU_var
+				value = 0.2
+			}
+		}
+	}
+	LEB_SYR_Leading_the_Syrian_Resistance_Army = {
+	
+		icon = kolchak
+		
+		cost = 30
+		days_remove = 20
+		
+		available = {
+			NOT = { country_exists = SYR }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = SYR }
+			TUR = {
+				controls_state = 455
+				controls_state = 554
+				controls_state = 995
+				controls_state = 680
+				controls_state = 677
+				controls_state = 344
+			}
+			has_country_flag = arab_gui_Syria_vis
+			NOT = {
+				has_country_flag = The_Great_Syria_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SYR_RFSU_get_power
+			add_to_variable = {
+				var = SYR_RFSU_var
+				value = 0.15
+			}
+		}
+	}
+	LEB_SYR_Destruction_of_Turkic_settlements = {
+	
+		icon = Destruction_of_Turkic_settlements
+		
+		cost = 30
+		days_remove = 15
+		
+		available = {
+			NOT = { country_exists = SYR }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = SYR }
+			TUR = {
+				controls_state = 455
+				controls_state = 554
+				controls_state = 995
+				controls_state = 680
+				controls_state = 677
+				controls_state = 344
+			}
+			has_country_flag = arab_gui_Syria_vis
+			NOT = {
+				has_country_flag = The_Great_Syria_Uprising
+			}
+		}
+		remove_effect = {
+			TUR = {
+				add_manpower = -2000
+			}
+			custom_effect_tooltip = SYR_RFSU_get_power
+			add_to_variable = {
+				var = SYR_RFSU_var
+				value = 0.15
+			}
+		}
+	}
+	LEB_SYR_Wake_up_the_Syrians = {
+	
+		icon = Wake_up_the_Syrians
+		
+		cost = 25
+		days_remove = 15
+		
+		available = {
+			NOT = { country_exists = SYR }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = SYR }
+			TUR = {
+				controls_state = 455
+				controls_state = 554
+				controls_state = 995
+				controls_state = 680
+				controls_state = 677
+				controls_state = 344
+			}
+			has_country_flag = arab_gui_Syria_vis
+			NOT = {
+				has_country_flag = The_Great_Syria_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SYR_RFSU_get_power
+			add_to_variable = {
+				var = SYR_RFSU_var
+				value = 0.15
+			}
+			SYR = {
+				add_war_support = 0.1
+			}
+		}
+	}
+	LEB_SYR_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = SYR
+			SYR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SYR
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Syria_vis
+			SYR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Syria_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_SYR_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = SYR
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SYR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SYR 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Syria_vis
+			SYR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Syria_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_SYR_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = SYR 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SYR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SYR
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Syria_vis
+			SYR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Syria_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_SYR_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = SYR
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SYR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = SYR 
+			has_country_flag = arab_gui_Syria_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			SYR = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Syria_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_IRQ_The_Day_of_Judgment = {
+	
+		icon = trumpet
+		
+		activation = {
+			IRQ = {
+				OR = {
+					has_war_with = TUR
+					has_war_with = JBS
+				}
+				has_government = syndicalist
+			}
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}                                    
+		available = {
+			has_country_flag = LEB_IRQ_The_Day_of_Judgment
+		}
+	
+		days_mission_timeout = 30
+		timeout_effect = {                      
+			if = {
+				limit = {
+					country_exists = IRQ
+				}
+				IRQ = {
+					white_peace = TUR
+					white_peace = JBS
+				}
+				set_country_flag = IRQ_win_for_TUR
+				country_event = LEB.140
+			}
+			if = {
+				limit = {
+					NOT = { country_exists = IRQ }
+				}
+				country_event = LEB.139
+			}
+		}
+		complete_effect = {                             
+		}
+	}
+	LEB_IRQ_Contact_Tripoli_Labor_Party = {
+	
+		icon = cash_flow
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		
+		available = {
+			NOT = { country_exists = IRQ }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = IRQ }
+			TUR = {
+				controls_state = 349
+				controls_state = 676
+				controls_state = 291
+				controls_state = 812
+			}
+			has_country_flag = arab_gui_Iraq_vis
+			NOT = {
+				has_country_flag = The_Great_Iraq_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = IRQ_RFIU_get_power
+			add_to_variable = {
+				var = IRQ_RFIU_var
+				value = 0.15
+			}
+		}
+	}
+	LEB_IRQ_Dispatch_of_teaching_missions = {
+	
+		icon = soldierly_discipline
+		
+		cost = 70
+		fire_only_once = yes
+		days_remove = 15
+		
+		available = {
+			NOT = { country_exists = IRQ }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = IRQ }
+			TUR = {
+				controls_state = 349
+				controls_state = 676
+				controls_state = 291
+				controls_state = 812
+			}
+			has_country_flag = arab_gui_Iraq_vis
+			NOT = {
+				has_country_flag = The_Great_Iraq_Uprising
+			}
+		}
+		remove_effect = {
+			add_manpower = -15000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -5000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = -200
+				producer = LEB
+			}
+			custom_effect_tooltip = IRQ_Dispatch_of_teaching_missions_Yes
+			custom_effect_tooltip = IRQ_RFIU_get_power
+			add_to_variable = {
+				var = IRQ_RFIU_var
+				value = 0.15
+			}
+			set_country_flag = LEB_IRQ_Dispatch_of_teaching_missions_Yes
+		}
+	}
+	LEB_IRQ_Training_resistance_fighters = {
+	
+		icon = trumpet
+		
+		cost = 40
+		fire_only_once = yes
+		days_remove = 30
+		
+		available = {
+			NOT = { country_exists = IRQ }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = IRQ }
+			TUR = {
+				controls_state = 349
+				controls_state = 676
+				controls_state = 291
+				controls_state = 812
+			}
+			has_country_flag = arab_gui_Iraq_vis
+			NOT = {
+				has_country_flag = The_Great_Iraq_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = IRQ_RFIU_get_power
+			custom_effect_tooltip = IRQ_Training_resistance_fighters_Yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -3000
+				producer = LEB
+			}
+			add_to_variable = {
+				var = IRQ_RFIU_var
+				value = 0.2
+			}
+			set_country_flag = LEB_IRQ_Training_resistance_fighters_Yes
+		}
+	}
+	LEB_IRQ_Destruction_of_colonizer_logistics = {
+	
+		icon = road
+		
+		cost = 30
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = IRQ }
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = IRQ }
+			TUR = {
+				controls_state = 349
+				controls_state = 676
+				controls_state = 291
+				controls_state = 812
+			}
+			has_country_flag = arab_gui_Iraq_vis
+			NOT = {
+				has_country_flag = The_Great_Iraq_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = IRQ_RFIU_get_power
+			add_to_variable = {
+				var = IRQ_RFIU_var
+				value = 0.1
+			}
+			TUR = {
+				random_owned_controlled_state={
+					prioritize = { }
+					add_building_construction={
+						type = industrial_complex
+						level = -1
+						instant_build = yes
+					}
+					add_building_construction={
+						type = infrastructure
+						level = -1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	LEB_IRQ_Steal_colonist_intelligence = {
+	
+		icon = binoculars
+		
+		cost = 20
+		days_remove = 15
+		
+		available = {
+			NOT = { country_exists = IRQ }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = IRQ }
+			TUR = {
+				controls_state = 349
+				controls_state = 676
+				controls_state = 291
+				controls_state = 812
+			}
+			has_country_flag = arab_gui_Iraq_vis
+			NOT = {
+				has_country_flag = The_Great_Iraq_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = IRQ_RFIU_get_power
+			add_to_variable = {
+				var = IRQ_RFIU_var
+				value = 0.1
+			}
+		}
+	}
+	LEB_IRQ_Inciting_revolt = {
+	
+		icon = bear
+		
+		cost = 15
+		days_remove = 10
+		
+		available = {
+			NOT = { country_exists = IRQ }
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		}
+		
+		visible = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			NOT = { country_exists = IRQ }
+			TUR = {
+				controls_state = 349
+				controls_state = 676
+				controls_state = 291
+				controls_state = 812
+			}
+			has_country_flag = arab_gui_Iraq_vis
+			NOT = {
+				has_country_flag = The_Great_Iraq_Uprising
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = IRQ_RFIU_get_power
+			add_to_variable = {
+				var = IRQ_RFIU_var
+				value = 0.1
+			}
+		}
+	}
+	LEB_IRQ_Undermine_the_rule_of_reactionary_governments = {
+	
+		icon = artillery
+		
+		cost = 15
+		days_remove = 15
+		
+		available = {
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			country_exists = IRQ
+			IRQ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = IRQ
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Iraq_vis
+			IRQ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Iraq_revolt_power
+				value = 2
+			}
+		}
+	}
+	
+	LEB_IRQ_Funding_Arab_nationalists = {
+	
+		icon = give_cash
+		
+		cost = 50
+		days_remove = 15
+		
+		available = {
+			country_exists = IRQ
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			IRQ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = IRQ 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Iraq_vis
+			IRQ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Iraq_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_IRQ_Propaganda_of_Arab_unity = {
+	
+		icon = radio
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = IRQ 
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			IRQ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = IRQ
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			has_country_flag = arab_gui_Iraq_vis
+			IRQ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Iraq_revolt_power
+				value = 2
+			}
+		}
+	}
+	LEB_IRQ_Wooing_the_local_proletariat = {
+	
+		icon = trumpet
+		
+		cost = 10
+		days_remove = 30
+		
+		available = {
+			country_exists = IRQ
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			IRQ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		visible = {
+			country_exists = IRQ 
+			has_country_flag = arab_gui_Iraq_vis
+			has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+			IRQ = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+						has_country_flag = ALG_LEB_The_offer_was_rejected
+					}
+				}
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = revolt_get_power
+			add_to_variable = {
+				var = Iraq_revolt_power
+				value = 2
+			}
+		}
+	}
+}
+SSNP_The_party_Unit = {
+	LEB_PUPARAB = {
+
+		icon = soldierly_discipline
+
+		available = {
+			994 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1035 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			915 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			675 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			292 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			678 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			991 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			656 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			754 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			679 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			982 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			981 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			293 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			752 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			659 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1024 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			294 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			859 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			658 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			993 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			907 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+		original_tag = LEB
+		NOT = {
+		has_country_flag = SF_JBSGHG
+		}
+		has_country_flag = SSNP_VIS_kl
+		}
+
+		complete_effect = {
+		JBS =  {
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = LEB_paternal_autocrat_party_long
+			name = LEB_paternal_autocrat_party
+		}
+		}		
+		set_country_flag = SF_JBSGHG
+		JBS = {
+			set_cosmetic_tag = JBS_KLZF
+			transfer_state = 994
+			transfer_state = 1035
+			transfer_state = 915
+			transfer_state = 675
+			transfer_state = 292
+			transfer_state = 678
+			transfer_state = 991
+			transfer_state = 656
+			transfer_state = 754
+			transfer_state = 679
+			transfer_state = 982
+			transfer_state = 981
+			transfer_state = 293
+			transfer_state = 752
+			transfer_state = 659
+			transfer_state = 1024
+			transfer_state = 294
+			transfer_state = 859
+			transfer_state = 658
+			transfer_state = 993
+			transfer_state = 907
+				create_country_leader = {
+					name = "Geroge abd Messih"
+					picture = "gfx/leaders/LEB/SYR_geroge_abd_messih.jpg"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = antoun_saadeh_thought_subtype
+				}
+			}
+			set_autonomy = { target = JBS autonomy_state = Social_National_Party_Brotherly_republics }
+		}
+	}
+	LEB_PUPEGY = {
+
+		icon = soldierly_discipline
+
+		available = {
+			447 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			452 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			446 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			457 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			552 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			456 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1008 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1007 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			551 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			862 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1011 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1010 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			549 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+		original_tag = LEB
+		NOT = {
+		has_country_flag = SF_EGYGHG
+		}
+		has_country_flag = SSNP_VIS_kl
+		}
+
+		complete_effect = {	
+		EGY =  {
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = LEB_paternal_autocrat_party_long
+			name = LEB_paternal_autocrat_party
+		}
+		}
+		set_country_flag = SF_EGYGHG
+		EGY = {
+			set_cosmetic_tag = EGY_KLZF
+			transfer_state = 447
+			transfer_state = 452
+			transfer_state = 446
+			transfer_state = 457
+			transfer_state = 552
+			transfer_state = 456
+			transfer_state = 1008
+			transfer_state = 1007
+			transfer_state = 551
+			transfer_state = 862
+			transfer_state = 1011
+			transfer_state = 1010
+			transfer_state = 549
+				create_country_leader = {
+					name = "Abdullah Saad"
+					picture = "gfx/leaders/LEB/SYR_Abdullah_Saad.jpg"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = antoun_saadeh_thought_subtype
+				}
+			}
+			set_autonomy = { target = EGY autonomy_state = Social_National_Party_Brotherly_republics }
+		}
+	}
+	LEB_PUPPER = {
+
+		icon = soldierly_discipline
+
+		available = {
+			419 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			266 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			420 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			416 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			418 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			804 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			411 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			412 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+		   	414 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			410 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+		original_tag = LEB
+		NOT = {
+		has_country_flag = SF_PERGHG
+		}
+		has_country_flag = SSNP_VIS_kl
+		}
+
+		complete_effect = {	
+		PER =  {
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = LEB_paternal_autocrat_party_long
+			name = LEB_paternal_autocrat_party
+		}
+		}
+		set_country_flag = SF_PERGHG
+		PER = {
+			set_cosmetic_tag = PER_KLZF
+			transfer_state = 419
+			transfer_state = 266
+			transfer_state = 420
+			transfer_state = 416
+			transfer_state = 418
+			transfer_state = 804
+			transfer_state = 411
+			transfer_state = 412
+			transfer_state = 414
+			transfer_state = 410
+				create_country_leader = {
+					name = "Sami al Hinawi"
+					picture = "gfx/leaders/LEB/SYR_sami_al_hinawi.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = antoun_saadeh_thought_subtype
+				}
+			}
+			set_autonomy = { target = PER autonomy_state = Social_National_Party_Brotherly_republics }
+		}
+	}
+	LEB_PUPTUR = {
+
+		icon = soldierly_discipline
+
+		available = {
+			341 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1225 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			773 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			340 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			343 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			339 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			187 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			164 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			342 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			346 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			49 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			356 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			355 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			345 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			354 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1000 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1213 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1001 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+		original_tag = LEB
+		NOT = {
+		has_country_flag = SF_TURGHG
+		}
+		has_country_flag = SSNP_VIS_kl
+		}
+
+		complete_effect = {	
+		TUR =  {
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = LEB_paternal_autocrat_party_long
+			name = LEB_paternal_autocrat_party
+		}
+		}
+		set_country_flag = SF_TURGHG
+		TUR = {
+			set_cosmetic_tag = TUR_KLZF
+			transfer_state = 341
+			transfer_state = 1225
+			transfer_state = 773
+			transfer_state = 340
+			transfer_state = 343
+			transfer_state = 339
+			transfer_state = 187
+			transfer_state = 164
+			transfer_state = 342
+			transfer_state = 346
+			transfer_state = 49
+			transfer_state = 356
+			transfer_state = 355
+			transfer_state = 345
+			transfer_state = 354
+			transfer_state = 1000
+			transfer_state = 1213
+			transfer_state = 1001
+				create_country_leader = {
+					name = "Adib bin Hassan"
+					picture = "gfx/leaders/SYR/Portrait_SYR_Adib_bin_Hassan.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = antoun_saadeh_thought_subtype
+				}
+			}
+			set_autonomy = { target = TUR autonomy_state = Social_National_Party_Brotherly_republics }
+		}
+	}
+}

@@ -1,0 +1,159 @@
+guiTypes = {
+	containerWindowType = {
+		name = "THE_SSNP_unit_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 275 height = 380 }
+		
+		iconType = {
+			name = "SSNP_unit_GUI"
+			orientation = center
+			position = { x = 0 y = 0 }
+		}
+		
+		instantTextboxType = {
+			name = "SSNP_freely_yes_or_no"
+			position = { x = -60 y = 40 }
+			font = "hoi_18mbs"
+			text = "SSNP_freely_yes_or_no_TEXT"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "SSNP_liability_yes_or_no"
+			position = { x = -60 y = 80 }
+			font = "hoi_18mbs"
+			text = "SSNP_liability_yes_or_no_TEXT"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "SSNP_discipline_yes_or_no"
+			position = { x = -60 y = 120 }
+			font = "hoi_18mbs"
+			text = "SSNP_discipline_yes_or_no_TEXT"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "SSNP_power_yes_or_no"
+			position = { x = -60 y = 160 }
+			font = "hoi_18mbs"
+			text = "SSNP_power_yes_or_no_TEXT"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "SSNP_freely_yes"
+			position = { x = -60 y = 40 }
+			font = "hoi_18mbs"
+			text = "SSNP_freely_yes_TEXT"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "SSNP_liability_yes"
+			position = { x = -60 y = 80 }
+			font = "hoi_18mbs"
+			text = "SSNP_liability_yes_TEXT"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "SSNP_discipline_yes"
+			position = { x = -60 y = 120 }
+			font = "hoi_18mbs"
+			text = "SSNP_discipline_yes_TEXT"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "SSNP_power_yes"
+			position = { x = -60 y = 160 }
+			font = "hoi_18mbs"
+			text = "SSNP_power_yes_TEXT"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		
+		iconType = {
+			name = "SSNP_Antun_Saadeh_GUI_name"
+			spriteType = "GFX_SSNP_Antun_Saadeh_GUI"		
+			position = { x = 10  y = 190 }
+			pdx_tooltip = "SSNP_Antun_Saadeh_GUI_tooltip"
+		}
+		
+		iconType = {
+			name = "SSNP_Great_Syria_Map_name"
+			spriteType = "GFX_SSNP_Great_Syria_Map_GUI"		
+			position = { x = 350  y = 220 }
+			pdx_tooltip = "SSNP_Great_Syria_Map_tooltip"
+		}
+		
+		buttonType = {
+			name = "SSNP_button"
+			quadTextureSprite ="GFX_SSNP_button_GUI"
+			buttonFont = "hoi_20b"
+			clicksound = click_default
+			shortcut = "RETURN"
+			position = { x = 220 y = 260 }
+			buttonText = ""
+			pdx_tooltip = "GFX_SSNP_button_tooltip"
+		}
+		
+		instantTextboxType = {
+			name = "SSNP_button_name"
+			position = { x = 125 y = 330 }
+			font = "hoi_18mbs"
+			text = "执行我们的正义"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		
+		iconType = {
+			name = "SSNP_gui_no_unit_name"
+			spriteType = "GFX_SSNP_gui_no_unit"		
+			position = { x = 135  y = 0 }
+			pdx_tooltip = "SSNP_gui_no_unit_tooltip"
+		}
+		
+		iconType = {
+			name = "SSNP_gui_freely_name"
+			spriteType = "GFX_SSNP_gui_freely"		
+			position = { x = 135  y = 0 }
+			pdx_tooltip = "SSNP_gui_freely_tooltip"
+		}
+		
+		iconType = {
+			name = "SSNP_gui_liability_name"
+			spriteType = "GFX_SSNP_gui_liability"		
+			position = { x = 135  y = 0 }
+			pdx_tooltip = "SSNP_gui_liability_tooltip"
+		}
+		
+		iconType = {
+			name = "SSNP_gui_discipline_name"
+			spriteType = "GFX_SSNP_gui_discipline"		
+			position = { x = 135  y = 0 }
+			pdx_tooltip = "SSNP_gui_discipline_tooltip"
+		}
+		
+		iconType = {
+			name = "SSNP_gui_power_name"
+			spriteType = "GFX_SSNP_gui_power"		
+			position = { x = 135  y = 0 }
+			pdx_tooltip = "SSNP_gui_power_tooltip"
+		}
+		
+	}
+}
+
+

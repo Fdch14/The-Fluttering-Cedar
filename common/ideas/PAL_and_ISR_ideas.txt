@@ -1,0 +1,982 @@
+### Rhineland Ideas ###
+
+ideas = {
+	country = {
+		PAL_Bloated_administrative_system = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Bloated_administrative_system" }
+			name = PAL_Bloated_administrative_system
+			picture = generic_destruction
+			allowed = { always = no }
+			modifier = {
+			political_power_factor = -0.1
+			production_speed_buildings_factor = -0.1
+			stability_factor = -0.05
+			industrial_capacity_factory = -0.05
+			}
+		}
+		PAL_Bloated_administrative_system1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Bloated_administrative_system1" }
+			name = PAL_Bloated_administrative_system
+			picture = generic_destruction
+			allowed = { always = no }
+			modifier = {
+			stability_factor = -0.05
+			industrial_capacity_factory = -0.05
+			}
+		}
+		PAL_Kemalist_continued = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued" }
+			name = PAL_Kemalist_continued
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+			social_conservative_drift = 0.05
+			local_resources_factor = 0.05
+			consumer_goods_factor = -0.1
+			}
+		}
+		PAL_Kemalist_continued_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued2" }
+			name = PAL_Kemalist_continued
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+			social_conservative_drift = 0.05
+			local_resources_factor = 0.1
+			consumer_goods_factor = -0.1
+			drift_defence_factor = 0.05
+			}
+		}
+		PAL_Kemalist_continued_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued3" }
+			name = PAL_Kemalist_continued
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+			social_conservative_drift = 0.1
+			local_resources_factor = 0.15
+			consumer_goods_factor = -0.15
+			drift_defence_factor = 0.05
+			}
+		}
+		PAL_Kemalist_continued_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued_4" }
+			name = PAL_Kemalist_continued_4
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+			paternal_autocrat_drift = 0.1
+			local_resources_factor = 0.15
+			consumer_goods_factor = -0.15
+			drift_defence_factor = 0.05
+			}
+		}
+		MOJ_Jaffa_Seaport_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued" }
+			name = MOJ_Jaffa_Seaport_ideas
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.0015
+	            defensive_war_stability_factor = 0.2
+	            war_support_factor = 0.2
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.5
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				production_speed_dockyard_factor = 0.5
+			}
+		}
+		MOJ_Break_Jaffa_Seaport_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Break_Jaffa_Seaport_ideas" }
+			name = MOJ_Break_Jaffa_Seaport_ideas
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.0015
+	            defensive_war_stability_factor = 0.2
+	            war_support_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.25
+				production_speed_buildings_factor = 0.15
+				production_speed_dockyard_factor = 0.2
+			}
+		}
+		MOJ_Jaffa_Seaport_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Jaffa_Seaport_ideas1" }
+			name = MOJ_Jaffa_Seaport_ideas
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.0015
+	            defensive_war_stability_factor = 0.2
+	            war_support_factor = 0.2
+				line_change_production_efficiency_factor = 0.3
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.02
+				production_factory_max_efficiency_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.3
+				production_speed_buildings_factor = 0.15
+				production_speed_dockyard_factor = 0.2
+			}
+		}
+		MOJ_Jaffa_Seaport_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Jaffa_Seaport_ideas3" }
+			name = MOJ_Jaffa_Seaport_ideas3
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.001
+	            defensive_war_stability_factor = 0.1
+	            war_support_factor = 0.1
+				line_change_production_efficiency_factor = 0.35
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.35
+				production_factory_efficiency_gain_factor = 0.35
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		MOJ_Purge_the_nationalist_thugs_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Purge_the_nationalist_thugs_ideas" }
+			name = MOJ_Purge_the_nationalist_thugs_ideas
+			picture = BAN_shaken_nation
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.05
+				stability_weekly = 0.05	
+				political_power_cost = 0.15
+				industrial_capacity_factory = 0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		MOJ_Jaffa_Seaport_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Kemalist_continued2" }
+			name = MOJ_Jaffa_Seaport_ideas
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.0015
+	            defensive_war_stability_factor = 0.2
+	            war_support_factor = 0.2
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.6
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.25
+				production_speed_buildings_factor = 0.2
+				production_speed_dockyard_factor = 0.6
+			}
+		}
+		MOJ_J_centralization_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_J_centralization_ideas" }
+			name = MOJ_J_centralization_ideas
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = -0.05
+				stability_weekly = 0.05	
+				political_power_cost = 0.1
+				industrial_capacity_factory = 0.2
+			}
+		}
+		MOJ_J_Decentralization_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_J_Decentralization_ideas" }
+			name = MOJ_J_Decentralization_ideas
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.025
+				stability_weekly = -0.02	
+				political_power_cost = -0.002
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		Equal_pay_for_equal_work_for_multiple_ethnic_groups_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea Equal_pay_for_equal_work_for_multiple_ethnic_groups_2" }
+			name = Equal_pay_for_equal_work_for_multiple_ethnic_groups_2
+			picture = TUR_ottoman_hegemony
+			allowed = { always = no }
+			modifier = {
+			consumer_goods_factor = 0.08
+			production_speed_infrastructure_factor = 0.05
+			local_building_slots_factor = 0.02
+			}
+		}
+		PAL_Verana_Zionist_Union = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Verana_Zionist_Union" }
+			name = PAL_Verana_Zionist_Union
+			picture = COR_safeguard_jewish_communities
+			allowed = { always = no }
+			modifier = {
+			political_power_gain = 0.05
+			war_support_factor = 0.1
+			research_speed_factor = 0.05
+			}
+		}
+		PAL_Verana_Zionist_Union_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Verana_Zionist_Union" }
+			name = PAL_Verana_Zionist_Union_2
+			picture = COR_safeguard_jewish_communities
+			allowed = { always = no }
+			modifier = {
+			political_power_gain = 0.05
+			war_support_factor = 0.12
+			research_speed_factor = 0.05
+			resistance_decay = 0.05
+			compliance_growth = 0.03
+			}
+		}
+		PAL_1935_census_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Verana_Zionist_Union" }
+			name = PAL_1935_census_ideas
+			picture = COR_safeguard_jewish_communities
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = 0.2
+				non_core_manpower = 0.1
+				monthly_population = 0.05
+			}
+		}
+		PAL_Dependent_on_the_Ottoman_economy_with_the_nobility = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Dependent_on_the_Ottoman_economy_with_the_nobility" }
+			name = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility
+			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
+			allowed = { always = no }
+			modifier = {
+			production_factory_max_efficiency_factor = 0.05		
+			line_change_production_efficiency_factor = -0.1
+			production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Dependent_on_the_Ottoman_economy_with_the_nobility" }
+			name = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_2
+			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
+			allowed = { always = no }
+			modifier = {
+			production_factory_max_efficiency_factor = 0.08
+			line_change_production_efficiency_factor = 0.02
+			production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+		PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Dependent_on_the_Ottoman_economy_with_the_nobility" }
+			name = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_3
+			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
+			allowed = { always = no }
+			modifier = {
+			production_factory_max_efficiency_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+			production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Dependent_on_the_Ottoman_economy_with_the_nobility" }
+			name = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_4
+			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
+			allowed = { always = no }
+			modifier = {
+			production_factory_max_efficiency_factor = 0.2
+			line_change_production_efficiency_factor = 0.2
+			production_factory_efficiency_gain_factor = 0.2
+			production_factory_start_efficiency_factor = 0.2
+			production_speed_buildings_factor = 0.1
+			}
+		}
+		pal_black_monday = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_black_monday"}
+			picture = chi_hyper_inflation4
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = -0.40
+				production_speed_buildings_factor = -0.40
+				consumer_goods_factor = 0.25
+			}
+		}
+		pal_black_monday2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_black_monday2"}
+			picture = chi_hyper_inflation4
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = -0.30
+				production_speed_buildings_factor = -0.30
+				consumer_goods_factor = 0.15
+			}
+		}
+		pal_black_monday3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_black_monday3"}
+			picture = chi_hyper_inflation4
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = -0.20
+				consumer_goods_factor = 0.05
+			}
+		}
+		pal_black_monday4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_black_monday4"}
+			picture = chi_hyper_inflation4
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		pal_corporate_power_ideas = {
+			name = pal_corporate_power_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_corporate_power_ideas"}
+			picture = chi_hyper_inflation4
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		pal_corporate_power_ideas2 = {
+			name = pal_corporate_power_ideas2
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_corporate_power_ideas"}
+			picture = chi_hyper_inflation4
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		pal_Vilaia_Union_ideas = {
+			name = pal_Vilaia_Union_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Vilaia_Union_ideas"}
+			picture = SOV_workers
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.07
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_start_efficiency_factor = 0.07
+			}
+		}
+		pal_Collaborators_in_the_shadows_ideas = {
+			name = pal_Collaborators_in_the_shadows_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborators_in_the_shadows_ideas"}
+			picture = collectivist_primacy_2
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.2
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+			}
+		}
+		pal_Collaborators_in_the_shadows1_ideas = {
+			name = pal_Collaborators_in_the_shadows1_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborators_in_the_shadows1_ideas"}
+			picture = collectivist_primacy_2
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.2
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		pal_Gendarmerie_state_of_emergency_ideas = {
+			name = pal_Gendarmerie_state_of_emergency_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Gendarmerie_state_of_emergency_ideas"}
+			picture = SKM_outdated_army
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.1
+				army_core_attack_factor = 0.07
+				army_core_defence_factor = 0.07
+				initiative_factor = 0.1
+			}
+		}
+		pal_Gendarmerie_state_of_emergency1_ideas = {
+			name = pal_Gendarmerie_state_of_emergency1_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Gendarmerie_state_of_emergency1_ideas"}
+			picture = SKM_outdated_army
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.15
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				initiative_factor = 0.2
+				planning_speed = 0.1
+			}
+		}
+		pal_Centralism_within_the_party_ideas = {
+			name = pal_Centralism_within_the_party_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Centralism_within_the_party_ideas"}
+			picture = USA_civil_war_pol_aftermath_3
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				reassignment_duration_factor = -0.5
+				army_leader_start_level = 2
+			}
+		}
+		pal_Social_Harmony_Act_ideas = {
+			name = pal_Social_Harmony_Act_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Social_Harmony_Act_ideas"}
+			picture = BBR_civil_rights_act_idea
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				weekly_manpower = 1000
+				industrial_capacity_dockyard = 0.07
+				conscription = 0.1
+			}
+		}
+		pal_Social_Harmony_Act_ideas1 = {
+			name = pal_Social_Harmony_Act_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Social_Harmony_Act_ideas1"}
+			picture = BBR_civil_rights_act_idea
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				weekly_manpower = 2000
+				industrial_capacity_dockyard = 0.15
+				conscription = 0.15
+				conscription_factor = 0.2
+			}
+		}
+		pal_Social_Harmony_Act1_ideas = {
+			name = pal_Social_Harmony_Act1_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Social_Harmony_Act1_ideas"}
+			picture = BBR_civil_rights_act_idea
+			allowed = { always = no }
+            modifier = {
+				repair_speed_industrial_complex_factor = 0.05
+				repair_speed_arms_factory_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+		pal_Social_Harmony_Act1_ideas1 = {
+			name = pal_Social_Harmony_Act1_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Social_Harmony_Act1_ideas1"}
+			picture = BBR_civil_rights_act_idea
+			allowed = { always = no }
+            modifier = {
+				repair_speed_industrial_complex_factor = 0.15
+				repair_speed_arms_factory_factor = 0.15
+				production_speed_buildings_factor = 0.2
+				political_power_factor = 0.2
+			}
+		}
+		pal_Minority_Bill_of_Rights_ideas = {
+			name = pal_Minority_Bill_of_Rights_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Social_Harmony_Act1_ideas"}
+			picture = NYC_civil_rights_all_or_nothing
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				experience_loss_factor = -0.2
+			}
+		}
+		pal_State_Academy_of_Sciences_ideas = {
+			name = pal_State_Academy_of_Sciences_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_State_Academy_of_Sciences_ideas"}
+			picture = CSA_experimental_research
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+		pal_State_Academy_of_Sciences_ideas1 = {
+			name = pal_State_Academy_of_Sciences_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_State_Academy_of_Sciences_ideas1"}
+			picture = CSA_experimental_research
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.2
+				local_resources_factor = 0.2
+				consumer_goods_factor = -0.25
+			}
+		}
+		pal_Maintain_stability_ideas = {
+			name = pal_Maintain_stability_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Maintain_stability_ideas"}
+			picture = state_economy
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				attrition = -0.1
+				supply_factor = 0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		pal_German_aid_ideas = {
+			name = pal_German_aid_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_German_aid_ideas"}
+			picture = GRE_german_sanctions
+			allowed = { always = no }
+            modifier = {
+				required_garrison_factor = -0.1
+				attrition = -0.1
+				supply_factor = 0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		pal_German_aid_ideas1 = {
+			name = pal_German_aid_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_German_aid_ideas1"}
+			picture = GRE_german_sanctions
+			allowed = { always = no }
+            modifier = {
+				required_garrison_factor = -0.1
+				attrition = -0.1
+				supply_factor = 0.15
+				land_reinforce_rate = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas = {
+			name = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas"}
+			picture = communal_democracy
+			allowed = { always = no }
+            modifier = {
+				required_garrison_factor = -0.1
+				attrition = -0.1
+				supply_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas1 = {
+			name = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas1"}
+			picture = communal_democracy
+			allowed = { always = no }
+            modifier = {
+				required_garrison_factor = -0.2
+				attrition = -0.2
+				supply_factor = 0.2
+				army_org_factor = 0.2
+			}
+		}
+		pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas2 = {
+			name = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas2"}
+			picture = communal_democracy
+			allowed = { always = no }
+            modifier = {
+				required_garrison_factor = -0.2
+				attrition = -0.2
+				supply_factor = 0.25
+				army_org_factor = 0.25
+				breakthrough_factor = 0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		pal_Ottoman_authority_ideas1 = {
+			name = pal_Ottoman_authority_ideas1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ottoman_authority_ideas1"}
+			picture = OTT_autocracy_idea_icon
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.1
+				conscription = 0.2
+				conscription_factor = 0.2
+				army_org_factor = 0.1
+				breakthrough_factor = 0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		pal_Ottoman_authority_ideas2 = {
+			name = pal_Ottoman_authority_ideas1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ottoman_authority_ideas2"}
+			picture = OTT_autocracy_idea_icon
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.15
+				conscription = 0.2
+				conscription_factor = 0.2
+				army_org_factor = 0.2
+				breakthrough_factor = 0.15
+				land_reinforce_rate = 0.15
+			}
+		}
+		pal_Ottoman_authority_ideas3 = {
+			name = pal_Ottoman_authority_ideas1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ottoman_authority_ideas3"}
+			picture = OTT_autocracy_idea_icon
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.2
+				conscription = 0.2
+				conscription_factor = 0.2
+				army_org_factor = 0.2
+				breakthrough_factor = 0.2
+				land_reinforce_rate = 0.2
+				experience_gain_army_factor = 0.2
+				lanning_speed = 0.15
+			}
+		}
+		pal_Ottoman_authority_ideas = {
+			name = pal_Ottoman_authority_ideas1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ottoman_authority_ideas"}
+			picture = OTT_autocracy_idea_icon
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.1
+				conscription = 0.1
+				conscription_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		pal_Gendarmerie_state_of_emergency_ideas2 = {
+			name = pal_Gendarmerie_state_of_emergency_ideas2
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Gendarmerie_state_of_emergency_ideas2"}
+			picture = SKM_outdated_army
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.15
+				initiative_factor = 0.15
+			}
+		}
+		pal_Collaborate_with_Jews_ideas = {
+			name = pal_Collaborate_with_Jews_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborate_with_Jews_ideas"}
+			picture = COR_jewish_segregation
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.2
+				conscription = 0.1
+				conscription_factor = 0.1
+				experience_gain_army_factor = 0.2
+			}
+		}
+		pal_Collaborate_with_Jews_ideas1 = {
+			name = pal_Collaborate_with_Jews_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborate_with_Jews_ideas1"}
+			picture = COR_jewish_segregation
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.25
+				conscription = 0.15
+				conscription_factor = 0.15
+				experience_gain_army_factor = 0.25
+			}
+		}
+		pal_Collaborate_with_Jews_ideas2 = {
+			name = pal_Collaborate_with_Jews_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborate_with_Jews_ideas2"}
+			picture = COR_jewish_segregation
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.3
+				conscription = 0.2
+				conscription_factor = 0.2
+				experience_gain_army_factor = 0.3
+			}
+		}
+		pal_Collaborate_with_Jews_ideas2_1 = {
+			name = pal_Collaborate_with_Jews_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Collaborate_with_Jews_ideas2_1"}
+			picture = COR_jewish_segregation
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.25
+				conscription = 0.2
+				conscription_factor = 0.15
+				experience_gain_army_factor = 0.25
+				experience_gain_factor = 0.2
+				lanning_speed = 0.15
+			}
+		}
+		pal_Palestinian_nation_state_ideas = {
+			name = pal_Palestinian_nation_state_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Palestinian_nation_state_ideas"}
+			picture = islam
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.1
+				drift_defence_factor = 0.2
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		pal_Freedom_Act_ideas = {
+			name = pal_Freedom_Act_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Freedom_Act_ideas"}
+			picture = CAN_leader_of_the_free_world
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		pal_Freedom_Act_ideas1 = {
+			name = pal_Freedom_Act_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Freedom_Act_ideas1"}
+			picture = CAN_leader_of_the_free_world
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		pal_Palestinian_nation_state_ideas1 = {
+			name = pal_Palestinian_nation_state_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Palestinian_nation_state_ideas1"}
+			picture = islam
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.15
+				drift_defence_factor = 0.25
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		pal_Palestinian_nation_state_ideas2 = {
+			name = pal_Palestinian_nation_state_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Palestinian_nation_state_ideas2"}
+			picture = islam
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.15
+				drift_defence_factor = 0.5
+				industrial_capacity_factory = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.2
+				line_change_production_efficiency_factor = 0.15
+			}
+		}
+		pal_Ethnicity_Bill_ideas = {
+			name = pal_Ethnicity_Bill_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ethnicity_Bill_ideas"}
+			picture = NGR_at_islam
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				conscription = 0.1
+				conscription_factor = 0.1
+			}
+		}
+		pal_Ethnicity_Bill_ideas1 = {
+			name = pal_Ethnicity_Bill_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ethnicity_Bill_ideas1"}
+			picture = NGR_at_islam
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.2
+				conscription = 0.2
+				conscription_factor = 0.2
+				non_core_manpower = 0.1
+			}
+		}
+		pal_Ethnicity_Bill_ideas2 = {
+			name = pal_Ethnicity_Bill_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Ethnicity_Bill_ideas2"}
+			picture = NGR_at_islam
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.2
+				conscription = 0.2
+				conscription_factor = 0.2
+				non_core_manpower = 0.2
+				attrition = -0.1
+				supply_factor = 0.1
+				supply_node_range = 0.1
+			}
+		}
+		pal_Gendarmerie_state_of_emergency_ideas1 = {
+			name = pal_Gendarmerie_state_of_emergency_ideas1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Gendarmerie_state_of_emergency_ideas1"}
+			picture = SKM_outdated_army
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				initiative_factor = 0.15
+			}
+		}
+		pal_Government_reforms_ideas = {
+			name = pal_Government_reforms_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Government_reforms_ideas"}
+			picture = SKM_outdated_army
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.1
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				breakthrough_factor = 0.1
+			}
+		}
+		pal_Government_reforms_ideas1 = {
+			name = pal_Government_reforms_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Government_reforms_ideas1"}
+			picture = SKM_outdated_army
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.2
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				breakthrough_factor = 0.15
+				land_reinforce_rate = 0.1
+			}
+		}
+		pal_Government_reforms_ideas2 = {
+			name = pal_Government_reforms_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Government_reforms_ideas2"}
+			picture = SKM_outdated_army
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.2
+				political_power_factor = 0.25
+				political_power_gain = 0.25
+				breakthrough_factor = 0.2
+				land_reinforce_rate = 0.2
+				army_leader_start_level = 3
+			}
+		}
+		pal_Development_economy_ideas = {
+			name = pal_Development_economy_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Development_economy_ideas"}
+			picture = corporatist_economy
+			allowed = { always = no }
+            modifier = {
+				min_export = 0.2
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		pal_Development_economy_ideas1 = {
+			name = pal_Development_economy_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Development_economy_ideas1"}
+			picture = corporatist_economy
+			allowed = { always = no }
+            modifier = {
+				min_export = 0.2
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		pal_Levy_a_tax_on_the_rich_ideas = {
+			name = pal_Levy_a_tax_on_the_rich_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Levy_a_tax_on_the_rich_ideas"}
+			picture = state_economy
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				local_building_slots_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		pal_People_are_equal_ideas = {
+			name = pal_People_are_equal_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_People_are_equal_ideas"}
+			picture = COR_protected_not_equal
+			allowed = { always = no }
+            modifier = {
+				attrition = -0.1
+				supply_factor = 0.1
+				supply_node_range = 0.1
+				local_org_regain = 0.1
+			}
+		}
+		pal_People_are_equal_ideas1 = {
+			name = pal_People_are_equal_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_People_are_equal_ideas1"}
+			picture = COR_protected_not_equal
+			allowed = { always = no }
+            modifier = {
+				attrition = -0.15
+				supply_factor = 0.15
+				supply_node_range = 0.15
+				local_org_regain = 0.15
+				conscription = 0.2
+				conscription_factor = 0.2
+			}
+		}
+		pal_People_are_equal_ideas2 = {
+			name = pal_People_are_equal_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_People_are_equal_ideas2"}
+			picture = COR_protected_not_equal
+			allowed = { always = no }
+            modifier = {
+				attrition = -0.2
+				supply_factor = 0.15
+				supply_node_range = 0.15
+				local_org_regain = 0.15
+				conscription = 0.2
+				conscription_factor = 0.2
+				mobilization_speed = 0.2
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+			}
+		}
+		pal_Government_reforms_ideas_1 = {
+			name = pal_Government_reforms_ideas_1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Government_reforms_ideas_1"}
+			picture = SKM_outdated_army
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.1
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				breakthrough_factor = 0.1
+			}
+		}
+		pal_Government_reforms_ideas_2 = {
+			name = pal_Government_reforms_ideas_1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Government_reforms_ideas_2"}
+			picture = SKM_outdated_army
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.5
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				breakthrough_factor = 0.15
+				land_reinforce_rate = 0.15
+				planning_speed = 0.1
+				max_planning = 0.1	
+			}
+		}
+		pal_Development_economy_ideas_1 = {
+			name = pal_Development_economy_ideas_1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Development_economy_ideas1"}
+			picture = corporatist_economy
+			allowed = { always = no }
+            modifier = {
+				min_export = 0.2
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+	}
+}

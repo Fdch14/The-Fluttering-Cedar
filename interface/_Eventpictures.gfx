@@ -1,0 +1,11 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_news_event_Suez_Exchange_Agreement"
+	texturefile = "gfx/event_news_pictures/PAL/GFX_news_event_Suez_Exchange_Agreement.png"			
+	}
+	SpriteType = {
+	name = "GFX_news_event_Palestinian_communist_attack"
+	texturefile = "gfx/event_news_pictures/PAL/GFX_news_event_Palestinian_communist_attack.png"			
+		}
+}

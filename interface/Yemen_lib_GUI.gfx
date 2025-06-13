@@ -1,0 +1,14 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "Al_Harakat_al_Yamaniat_al_Hura_button"
+		texturefile = "gfx/interface/GUI/YEM/Al_Harakat_al_Yamaniat_al_Hura_button.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "Salalat_ar_Rassid_button"
+		texturefile = "gfx/interface/GUI/YEM/Salalat_ar_Rassid_button.png"
+		transparencecheck = yes
+	}
+	
+}

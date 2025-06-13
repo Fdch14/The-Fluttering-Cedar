@@ -1,0 +1,29 @@
+#########################################################################
+# THE GATES OF VERSAILLES - OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+#France
+opinion_modifiers = {
+	NSW_ties_to_mother_country_om = { value = 30 }
+}
+opinion_modifiers = {
+	NSW_absolute_loyalty = { value = 50 }
+}
+opinion_modifiers = {
+	NSW_sent_delegation = { value = 50 }
+}
+opinion_modifiers = {
+	NSW_betrayed_foreign_policy = { value = -10 }
+}
+opinion_modifiers = {
+	NSW_ties_to_moscow = { value = 25 }
+}
+opinion_modifiers = {
+	NSW_ties_to_moscow_ENG = { value = -25 }
+}

@@ -1,0 +1,10 @@
+on_actions = {
+    on_startup = {	
+        effect = {
+             if = {
+				limit = { original_tag = LEB }
+				country_event = LEB.1
+			}
+        }
+    }
+}

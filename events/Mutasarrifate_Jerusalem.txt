@@ -1,0 +1,985 @@
+add_namespace = pal
+add_namespace = MOJ
+add_namespace = MOJ_News
+add_namespace = sand_war
+country_event = {	#Introduction Event
+	id = pal.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pal.1" }
+	title = pal.1.t
+	desc = pal.1.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = pal.1.a
+		country_event = pal.111
+		CAN = { set_country_flag = jerusalem_accord_signature }
+		GER = { set_country_flag = jerusalem_accord_signature }
+		AUS = { set_country_flag = jerusalem_accord_signature }
+		USA = { set_country_flag = jerusalem_accord_signature }
+		NFA = { set_country_flag = jerusalem_accord_signature }
+		country_event = ISRC.5
+	}
+}
+country_event = {	#Introduction Event
+	id = pal.111
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pal.1" }
+	title = pal.111.t
+	desc = pal.111.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = pal.111.a
+	}
+}
+country_event = {	#Egypt receives the Sinai (EGY)
+	id = sand_war.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sand_war.28" }
+	title = sand_war.28.t
+	desc = sand_war.28.d
+
+	trigger = {
+		tag = PAL
+		date > 1938.9.10
+		date < 1938.9.30
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = sand_war.28.b
+		EGY = {
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PAL
+				type = annex_everything
+			}
+		}
+		TUR = {
+			country_event = sand_war.24
+		}
+	}
+}
+country_event = {	#Egypt invades the M.O.J. (OTT)
+	id = sand_war.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pal.24" }
+	title = sand_war.24.t
+	desc = sand_war.24.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = sand_war.24.a
+		ai_chance = {
+			factor = 95
+		}
+		declare_war_on = {
+			target = EGY
+			type = annex_everything
+		}
+		PAL = {
+			declare_war_on = {
+				target = EGY
+				type = annex_everything
+			}
+		}
+	}
+}
+########
+# 1936 #
+########
+
+country_event = {	#Black Monday hits the M.O.J.
+	id = pal.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pal.2" }
+	title = pal.2.t
+	desc = pal.2.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = pal.3
+				days = 200
+			}
+		}
+	}
+
+	option = {
+		name = pal.2.a
+		add_stability = -0.2
+		add_ideas = pal_black_monday
+		set_country_flag = pal_black_monday_flag
+	}
+}
+news_event = {
+	id = MOJ_News.1 #苏伊士交流协议
+	title = MOJ_News.1.t
+	
+	picture = GFX_news_event_Suez_Exchange_Agreement
+	is_triggered_only = yes
+    major = yes
+	desc = MOJ_News.1.d
+	option = {
+	   name = MOJ_News.1.a
+	   trigger = {
+		tag = PAL
+		NOT = { TAG = GER }
+		NOT = { TAG = TUR }
+		NOT = { has_government = totalist }
+		NOT = { has_government = syndicalist }
+		NOT = { has_government = radical_socialist }
+	    }
+	}
+	option = {
+		name = MOJ_News.1.b
+		trigger = {
+			tag = GER
+			NOT = { TAG = PAL }
+			NOT = { TAG = TUR }
+			NOT = { has_government = totalist }
+		    NOT = { has_government = syndicalist }
+		    NOT = { has_government = radical_socialist }
+		}
+	}
+	option = {
+		name = MOJ_News.1.c
+		trigger = {
+			tag = TUR
+			NOT = { TAG = PAL }
+			NOT = { TAG = GER }
+			NOT = { has_government = totalist }
+		    NOT = { has_government = syndicalist }
+		    NOT = { has_government = radical_socialist }
+		}
+	}
+	option = {
+		name = MOJ_News.1.h
+		trigger = {
+			has_government = totalist
+			has_government = syndicalist
+			has_government = radical_socialist
+			NOT = { TAG = PAL }
+			NOT = { TAG = GER }
+			NOT = { TAG = TUR }
+		}
+	}
+	option = {
+		name = MOJ_News.1.f
+		trigger = {
+		NOT = { has_government = totalist }
+		NOT = { has_government = syndicalist }
+		NOT = { has_government = radical_socialist }
+		NOT = { TAG = PAL }
+		NOT = { TAG = GER }
+		NOT = { TAG = TUR }
+	}
+}
+	}
+country_event = {
+	id = MOJ.1 #新年议程
+	title = MOJ.1.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = MOJ.1.d
+	option = {
+	name = MOJ.1.a
+	add_political_power = 100
+	add_stability = 0.05
+	add_war_support = 0.05
+	}
+
+
+
+	}
+	country_event = {
+		id = MOJ.2 # 1935
+		title = MOJ.2.t
+		
+		
+		is_triggered_only = yes
+		fire_only_once = yes
+		desc = MOJ.2.d
+		option = {
+		name = MOJ.2.a
+		add_timed_idea = { idea = PAL_1935_census_ideas days = 60 }
+		}
+	
+	
+	
+		}
+		country_event = {
+			id = MOJ.3 # 行政问题
+			title = MOJ.3.t
+			
+			
+			is_triggered_only = yes
+			fire_only_once = yes
+			desc = MOJ.3.d
+			option = {
+			name = MOJ.3.a
+			country_event = MOJ.10
+			}
+		    option = {
+			name = MOJ.3.b
+			country_event = MOJ.11
+			}
+		}
+			country_event = {
+				id = MOJ.10 # 高效化行政方案-集权化
+				title = MOJ.10.t
+									
+									
+				is_triggered_only = yes
+				fire_only_once = yes
+					desc = MOJ.10.d
+					option = {
+					name = MOJ.10.a
+                    add_timed_idea = { idea = MOJ_J_centralization_ideas days = 90 }
+                    add_popularity = { ideology = social_conservative popularity = 0.05 }
+                    set_country_flag = MOJ_PAL_MOJ_J_centralization
+							}		
+								
+			}
+			country_event = {
+				id = MOJ.11 # 高效化行政方案-联邦分区
+				title = MOJ.11.t
+									
+									
+				is_triggered_only = yes
+				fire_only_once = yes
+					desc = MOJ.11.d
+					option = {
+					name = MOJ.11.a
+					add_timed_idea = { idea = MOJ_J_Decentralization_ideas days = 90 }
+					add_popularity = { ideology = social_liberal popularity = 0.02 }
+					add_popularity = { ideology = social_democrat popularity = 0.02 }
+					add_popularity = { ideology = market_liberal popularity = 0.02 } 
+					set_country_flag = MOJ_PAL_Decentralization 
+							}
+								
+								
+								
+			}
+		
+			
+			country_event = {
+				id = MOJ.4 # 重组人口
+				title = MOJ.4.t
+				
+				
+				is_triggered_only = yes
+				fire_only_once = yes
+				desc = MOJ.4.d
+				option = {
+				name = MOJ.4.a
+				}
+			
+			
+			
+				}
+country_event = {
+	id = MOJ.6 # 整合报告
+	title = MOJ.6.t
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	desc = MOJ.6.d
+	option = {
+		name = MOJ.6.a
+	}
+}
+country_event = {
+	id = MOJ.7 # 多族移民法
+	title = MOJ.7.t
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	desc = MOJ.7.d
+	option = {
+		name = MOJ.7.a
+		add_manpower = 4569
+		swap_ideas = {
+			remove_idea = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility
+			add_idea = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_2		
+		}
+		hidden_effect = {
+			country_event = { 
+				id = MOJ.15
+				days = 5
+			}
+		}
+	}
+}
+country_event = {
+	id = MOJ.8 # 交流协议
+	title = MOJ.8.t
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	desc = MOJ.8.d
+
+	option = {
+		name = MOJ.8.a
+		PAL = {
+			add_opinion_modifier = {
+				target = GER  #ROOT作用域，这里指苏联。还记得它嘛，如果忘记了去看看在高级代码里面的“关于作用域一些小东西”
+				modifier = PAL_Suez_Exchange_Agreement_opinion_modifier ##这个便是modifier ，左右好感度的东西，定义在opinion_modifiers文件夹
+			}
+		}
+		hidden_effect = {
+			news_event = { 
+				id = MOJ_News.1	
+			}
+		}
+	}	
+	option = {
+		name = MOJ.8.b
+	}	
+}					
+country_event = {
+	id = MOJ.16 # 交流协议-德国
+	title = MOJ.16.t
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = MOJ.16.d
+	
+	option = {
+		name = MOJ.16.a
+	}
+}
+country_event = {
+	id = MOJ.12 # 巴勒斯坦袭击
+	title = MOJ.12.t
+							
+	trigger = {
+		tag = PAL
+		date > 1936.5.22
+	}				
+		fire_only_once = yes
+			desc = MOJ.12.d
+			option = {
+			name = MOJ.12.a
+			remove_ideas = pal_moj
+			complete_national_focus = MOJ_Palestinian_communist_attack
+		    set_variable = { MOJ_Palestinian_attack_var = 1 }
+		    mark_focus_tree_layout_dirty = yes
+			453 = { set_demilitarized_zone = no }
+			454 = { set_demilitarized_zone = no }
+			992 = { set_demilitarized_zone = no }
+			hidden_effect = {
+				news_event = { 
+					id = MOJ_News.2
+					days = 1
+				}
+			}
+		}
+						
+						
+						
+}
+country_event = {
+	id = MOJ.13 # 西奈边境巡逻
+	title = MOJ.13.t
+	is_triggered_only = yes
+						
+						
+	fire_only_once = yes
+		desc = MOJ.13.d
+		option = {
+		name = MOJ.13.a
+				}
+					
+					
+					
+}
+country_event = {
+	id = MOJ.15 # 青年代表大会
+	title = MOJ.15.t
+						
+	is_triggered_only = yes
+		fire_only_once = yes
+		desc = MOJ.15.d
+		option = {
+		name = MOJ.15.a
+				}
+					
+					
+					
+}
+country_event = {
+	id = MOJ.14 # 成立巴以调解部
+	title = MOJ.14.t
+											
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	desc = MOJ.14.d
+	option = {
+		name = MOJ.14.a
+	}	
+}
+
+country_event = {
+	id = MOJ.17 # 凯末尔信件
+	title = MOJ.17.t
+						
+	trigger = {
+		tag = PAL
+		date > 1937.4.28
+	}
+	fire_only_once = yes
+		desc = MOJ.17.d
+		option = {
+		name = MOJ.17.a
+		complete_national_focus = MOJ_The_Speaker_is_caught_in_a_conspiracy
+		hidden_effect = {
+			set_country_flag = MOJ_Kemal_conspiracy
+			country_event = { 
+				id = MOJ.18
+				days = 3
+			}
+			news_event = { 
+				id = MOJ_News.3
+				days = 1
+			}
+		}
+		add_popularity = { ideology = social_liberal popularity = 0.05 }
+		add_popularity = { ideology = market_liberal popularity = 0.05 }
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
+		clr_country_flag = NR_LEADER_GUI_VISIBLE
+		remove_ideas = PAL_Huseyin_Rauf_Orbay_hog_sco
+	}
+					
+}
+country_event = {
+	id = MOJ.18 # 议长辞职议会瘫痪
+	title = MOJ.18.t
+						
+						
+	fire_only_once = yes
+	is_triggered_only = yes
+		desc = MOJ.18.d
+		option = {
+		name = MOJ.18.a
+		add_popularity = { ideology = social_liberal popularity = 0.05 }
+		add_popularity = { ideology = market_liberal popularity = 0.05 }
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
+				}
+					
+}
+country_event = {
+	id = MOJ.19 # 不信任投票
+	title = MOJ.19.t
+						
+	is_triggered_only = yes			
+	fire_only_once = yes
+		desc = MOJ.19.d
+		option = {
+		name = MOJ.19.a
+		hidden_effect = {
+			country_event = {
+				id = ISRC.6
+				days = 2
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = MOJ_Kemal_conspiracy
+				NOT = { has_country_flag = MOJ_PAL_Decentralization }
+                has_country_flag = MOJ_PAL_MOJ_J_centralization
+				has_government = social_conservative
+			}
+			custom_effect_tooltip = MOJ_Kemal_conspiracy_1
+			complete_national_focus = MOJ_The_end_of_democracy_in_Jerusalem
+			hidden_effect = {
+				country_event = {	
+				id = MOJ.20
+				days = 10
+			}
+			}
+			
+		}
+		else_if = {
+			limit = {
+				has_country_flag = MOJ_Kemal_conspiracy
+					NOT = { has_country_flag = MOJ_PAL_MOJ_J_centralization }
+                has_country_flag = MOJ_PAL_Decentralization
+				has_government = social_conservative
+			}
+			custom_effect_tooltip = MOJ_Kemal_conspiracy_2
+			set_politics = {  
+				ruling_party = social_liberal
+				election_frequency = 120 
+				elections_allowed = yes
+			}  
+			hidden_effect = {
+				country_event = {	
+				id = MOJ.22
+				days = 10
+			}
+			}
+		}
+		
+	}
+}
+country_event = {
+	id = MOJ.22 # 民主投票
+	title = MOJ.22.t
+						
+						
+	fire_only_once = yes
+	is_triggered_only = yes
+		desc = MOJ.22.d
+	option = {
+		name = MOJ.22.a
+		set_politics = {  
+			ruling_party = market_liberal
+			election_frequency = 120 
+			elections_allowed = yes
+		}  
+		complete_national_focus = MOJ_Independents_Party
+		add_ideas = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+		set_country_flag = NR_LEADER_GUI_VISIBLE
+	}
+	option = {
+		name = MOJ.22.b
+		add_popularity = { ideology = social_liberal popularity = 0.1 }
+		complete_national_focus = MOJ_Liberals_Party
+		add_ideas = PAL_Raghib_al_Nashashibi_hog_mil
+		set_country_flag = NR_LEADER_GUI_VISIBLE
+	}
+	option = {
+		name = MOJ.22.c
+		set_politics = {  
+			ruling_party = social_democrat
+			election_frequency = 120 
+			elections_allowed = yes
+		}  
+		complete_national_focus = MOJ_Reform_Party
+		add_ideas = PAL_Husayn_al_Khalidi_hog_sde
+		set_country_flag = NR_LEADER_GUI_VISIBLE
+	}
+}
+country_event = {
+	id = MOJ.20 # 不信任投票 - 祖国联&人民党
+	title = MOJ.20.t
+						
+						
+	fire_only_once = yes
+	is_triggered_only = yes
+		desc = MOJ.20.d
+		option = {
+		name = MOJ.20.a
+		if = {
+			limit = {
+				has_country_flag = MOJ_Kemal_conspiracy
+				has_country_flag = MOJ_PAL_MOJ_J_centralization
+				has_government = social_conservative
+				NOT = { has_country_flag = UDF_joins_parliament_flag }
+			}
+			custom_effect_tooltip = MOJ_UDF_TT1
+			complete_national_focus = MOJ_OHF_reorganizes_the_government
+			add_popularity = { ideology = social_conservative popularity = 0.25 }
+		set_party_name = { 
+			ideology = social_liberal 
+			long_name = MOJ_Kemal_conspiracy_centralizationsli_long
+			name = MOJ_Kemal_conspiracy_centralizationsli 
+		} 
+		set_party_name = { 
+			ideology = social_democrat 
+			long_name =  MOJ_Kemal_conspiracy_centralizationsde_long
+			name = MOJ_Kemal_conspiracy_centralizationsde 
+		} 
+		set_party_name = { 
+			ideology = authoritarian_democrat 
+			long_name =  MOJ_Kemal_conspiracy_centralizationade_long
+			name = MOJ_Kemal_conspiracy_centralizationade 
+		} 
+		set_party_name = { 
+			ideology = market_liberal 
+			long_name = MOJ_Kemal_conspiracy_centralizationmli_long
+			name = MOJ_Kemal_conspiracy_centralizationmli 
+		} 
+		set_party_name = { 
+			ideology = social_conservative 
+			long_name = MOJ_Kemal_conspiracy_centralizationsco_long
+			name = MOJ_Kemal_conspiracy_centralizationsco 
+		}
+		add_ideas = PAL_Huseyin_Rauf_Orbay_hog_sco
+		set_country_flag = NR_LEADER_GUI_VISIBLE
+		}
+		else_if = {
+			limit = {
+				has_country_flag = MOJ_Kemal_conspiracy
+				has_country_flag = MOJ_PAL_MOJ_J_centralization
+				has_government = social_conservative
+				has_country_flag = UDF_joins_parliament_flag 
+			}
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.25 }
+			custom_effect_tooltip = MOJ_UDF_TT2
+			set_politics = {  
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			} 
+			complete_national_focus = MOJ_A_win_for_the_UDFs_collaborators
+		}
+	}
+}
+country_event = {
+	id = MOJ.21 # 祖国联
+	title = MOJ.21.t
+						
+						
+	fire_only_once = yes
+	is_triggered_only = yes
+		desc = MOJ.21.d
+		option = {
+		name = MOJ.21.a
+		set_country_flag = UDF_joins_parliament_flag
+	}
+	option = {
+		name = MOJ.21.b
+		add_popularity = { ideology = authoritarian_democrat popularity = -0.1 }
+	}
+}
+country_event = {
+	id = MOJ.23 # 驻军政变的前奏曲
+	title = MOJ.23.t
+						
+						
+	fire_only_once = yes
+	is_triggered_only = yes
+		desc = MOJ.23.d
+		option = {
+		name = MOJ.23.a
+		if = {
+			limit = {
+				tag = PAL
+				has_government = social_conservative
+				NOT ={ has_government = authoritarian_democrat }
+			}
+			set_politics = {  
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+			add_popularity = { ideology = paternal_autocrat popularity = 0.6 }
+			complete_national_focus = MOJ_The_garrison_took_over_power
+		}
+		else_if = {
+			limit = {
+				tag = PAL
+				NOT ={ has_government = social_conservative }
+				has_government = authoritarian_democrat
+			}
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.6 }
+			set_politics = { 
+				ruling_party = authoritarian_democrat 
+				long_name =  MOJ_The_garrison_took_over_powerade_long
+				name = MOJ_The_garrison_took_over_powerade 
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Mehmet Talaat"
+				picture = "gfx/leaders/MOJ/Portrait_PAL_Mehmed_Talat.png"
+				expire = "1.1.1"
+				ideology = authdem_junta_subtype
+			}
+			complete_national_focus = MOJ_The_garrison_took_over_power
+		}
+		
+	}
+	option = {
+		trigger = {
+			tag = PAL
+			OR = {
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+			}
+		}
+		name = MOJ.23.b
+		add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
+		set_country_flag = The_garrison_took_over_powe_filled
+		hidden_effect = {
+			country_event = {
+				days = 35
+				id = MOJ.27
+			}
+		}
+	}
+}
+country_event = {
+	id = MOJ.24 # 人民党宪兵办公室
+	title = MOJ.24.t
+						
+	is_triggered_only = yes			
+	fire_only_once = yes
+		desc = MOJ.24.d
+		option = {
+		name = MOJ.24.a
+				}
+					
+					
+					
+}
+country_event = {
+	id = MOJ.25 # 重开“选举”
+	title = MOJ.25.t
+						
+	is_triggered_only = yes			
+	fire_only_once = yes
+		desc = MOJ.25.d
+		option = {
+		name = MOJ.25.a
+				}
+					
+					
+					
+}
+country_event = {
+	id = MOJ.26 # 官方语言法
+	title = MOJ.26.t
+						
+	is_triggered_only = yes			
+	fire_only_once = yes
+		desc = MOJ.26.d
+		option = {
+		name = MOJ.26.a
+				}
+			option = {
+		name = MOJ.26.b
+		}				
+					
+					
+}
+country_event = {
+	id = MOJ.231
+	title = MOJ.231.t
+						
+	is_triggered_only = yes			
+	fire_only_once = yes
+	desc = MOJ.231.d
+		
+	option = {
+		name = MOJ.231.a
+	}
+	option = {
+		name = MOJ.231.b
+	}
+}
+country_event = {
+	id = MOJ.27 # 省政地位改变
+	title = MOJ.27.t
+
+	is_triggered_only = yes			
+	fire_only_once = yes
+	desc = MOJ.27.d
+	
+	option = {
+		name = MOJ.27.a
+		set_cosmetic_tag = PAL_Jerusalem_Vilaye
+		TUR = {
+			set_autonomy = { 
+				target = PAL
+				autonomy_state = kr_ottoman_vilayet
+			}
+		}
+	}
+}
+country_event = {
+	id = MOJ.281
+	title = MOJ.281.t
+
+	is_triggered_only = yes			
+	fire_only_once = yes
+	desc = MOJ.281.d
+	
+	option = {
+		name = MOJ.281.a
+	}
+}
+
+
+
+
+
+
+
+#----------------------------------------------------------------------------------------------------------
+
+news_event = { # 议会紧急状态
+    id = MOJ_News.3
+    title = MOJ_News.3.t
+    desc = MOJ_News.3.d
+   picture = GFX_news_event_Palestinian_FILLED12
+    fire_only_once = yes
+    major = yes
+    option = {
+		trigger = {
+			tag = PAL
+			NOT = { has_government = totalist }
+		    NOT = { has_government = syndicalist }
+		    NOT = { has_government = radical_socialist }
+			NOT = { tag = TUR }
+		}
+        name = MOJ_News.3.a 
+    }
+	option = {
+		trigger = {
+			NOT = {tag = PAL}
+			NOT = { tag = TUR }
+			has_government = totalist 
+		    has_government = syndicalist 
+		    has_government = radical_socialist
+		}
+        name = MOJ_News.3.b
+    }
+	option = {
+		trigger = {
+			tag = TUR
+			NOT = {tag = PAL}
+			NOT = { has_government = totalist }
+		    NOT = { has_government = syndicalist }
+		    NOT = { has_government = radical_socialist }
+		}
+        name = MOJ_News.3.c 
+    }
+	option = {
+		trigger = {
+			NOT = {tag = TUR}
+			NOT = {tag = PAL}
+			NOT = { has_government = totalist }
+		    NOT = { has_government = syndicalist }
+		    NOT = { has_government = radical_socialist }
+		}
+        name = MOJ_News.3.dd
+    }
+}
+news_event = { # 人民党解散议会
+    id = MOJ_News.4
+    title = MOJ_News.4.t
+    desc = MOJ_News.4.d
+   picture = GFX_news_event_Palestinian_OHF
+    fire_only_once = yes
+    major = yes
+	option = {
+		trigger = {
+			tag = PAL
+			NOT = { has_government = totalist }
+		    NOT = { has_government = syndicalist }
+		    NOT = { has_government = radical_socialist }
+			NOT = { tag = EGY }
+		}
+        name = MOJ_News.4.a 
+    }
+	option = {
+		trigger = {
+			NOT = {tag = PAL}
+			NOT = { tag = EGY }
+			has_government = totalist 
+		    has_government = syndicalist 
+		    has_government = radical_socialist
+		}
+        name = MOJ_News.4.b
+    }
+	option = {
+		trigger = {
+			tag = EGY
+			NOT = {tag = PAL}
+			NOT = { has_government = totalist }
+		    NOT = { has_government = syndicalist }
+		    NOT = { has_government = radical_socialist }
+		}
+        name = MOJ_News.4.c 
+    }
+	option = {
+		trigger = {
+			NOT = {tag = EGY}
+			NOT = {tag = PAL}
+			NOT = { has_government = totalist }
+		    NOT = { has_government = syndicalist }
+		    NOT = { has_government = radical_socialist }
+		}
+        name = MOJ_News.4.dd
+    }
+	
+}
+news_event = { # 改组选举 - 独立党
+    id = MOJ_News.5
+    title = MOJ_News.5.t
+    desc = MOJ_News.5.d
+   picture = GFX_news_event_Palestinian_IP
+    fire_only_once = yes
+    major = yes
+	option = {
+		trigger = {
+			tag = PAL
+		}
+        name = MOJ_News.4.a 
+    }
+	option = {
+		trigger = {
+			NOT = { tag = PAL }
+		}
+        name = MOJ_News.4.b 
+    }
+}
+news_event = { # 改组选举 - 自由党
+    id = MOJ_News.6
+    title = MOJ_News.6.t
+    desc = MOJ_News.6.d
+   picture = GFX_news_event_Palestinian_LP
+    fire_only_once = yes
+    major = yes
+	option = {
+		trigger = {
+			tag = PAL
+		}
+        name = MOJ_News.4.a 
+    }
+	option = {
+		trigger = {
+			NOT = { tag = PAL }
+		}
+        name = MOJ_News.4.b 
+    }
+}
+news_event = { # 改组选举 - 改革党
+    id = MOJ_News.7
+    title = MOJ_News.7.t
+    desc = MOJ_News.7.d
+   picture = GFX_news_event_Palestinian_Reform_Party 
+    fire_only_once = yes
+    major = yes
+	option = {
+		trigger = {
+			tag = PAL
+		}
+        name = MOJ_News.4.a 
+    }
+	option = {
+		trigger = {
+			NOT = { tag = PAL }
+		}
+        name = MOJ_News.4.b 
+    }
+}

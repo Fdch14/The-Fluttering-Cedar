@@ -1,0 +1,12 @@
+focus_tree={
+	country={
+		id=Cyprus_Focus
+		factor=0
+		modifier={
+			add=10
+			tag=CYP
+		}
+	}
+	continuous_focus_position = { x = 50 y = 2500 }
+	default=no
+}

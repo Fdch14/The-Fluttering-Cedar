@@ -1,0 +1,221 @@
+﻿add_namespace = Palestine
+
+country_event = {
+	id = Palestine.1
+	title = Palestine.1.t
+	desc = Palestine.1.d
+	picture = GFX_Liberation_Organization_of_Turkestan
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.1.a
+		division_template = {
+			name = "Gisch Tehrir Turkistan"
+				division_names_group = PLS_NRARMY_03
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				artillery_brigade  = { x = 3 y = 0 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Gisch Tehrir Turkistan\" division_template = \"Gisch Tehrir Turkistan\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"Gisch Tehrir Turkistan\" division_template = \"Gisch Tehrir Turkistan\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"Gisch Tehrir Turkistan\" division_template = \"Gisch Tehrir Turkistan\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.2
+	title = Palestine.2.t
+	desc = Palestine.2.d
+	picture = GFX_Otto_Skorzney
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.2.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 12500
+			producer = AUS
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 1000
+			producer = AUS
+		}
+		create_field_marshal = {
+			name = "Otto Skorzney"
+			portrait_path = "gfx/leaders/PLS/Portrait_AUS_Otto.png"
+			traits = {
+				war_hero
+				offensive_doctrine
+				skilled_staffer
+				expert_delegator
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		division_template = {
+			name = "Große germanische Freiwilligenarmee"
+				division_names_group = PLS_NRARMY_02
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+				artillery_brigade  = { x = 3 y = 0 }
+				artillery_brigade  = { x = 3 y = 1 }
+				artillery_brigade  = { x = 3 y = 2 }
+				artillery_brigade  = { x = 3 y = 3 }
+				artillery_brigade  = { x = 3 y = 4 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Große germanische Freiwilligenarmee\" division_template = \"Große germanische Freiwilligenarmee\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"Große germanische Freiwilligenarmee\" division_template = \"Große germanische Freiwilligenarmee\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.3
+	title = Palestine.3.t
+	desc = Palestine.3.d
+	picture = GFX_International_Volunteer_Army
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.3.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = PLS
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = FRA
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = UKR
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = SPR
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = ROM
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 4000
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 150
+			producer = FRA
+		}
+		division_template = {
+			name = "International Volunteer Army"
+				division_names_group = PLS_NRARMY_02
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				artillery_brigade  = { x = 3 y = 0 }
+				artillery_brigade  = { x = 3 y = 1 }
+				artillery_brigade  = { x = 3 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"International Volunteer Army\" division_template = \"International Volunteer Army\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"International Volunteer Army\" division_template = \"International Volunteer Army\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"International Volunteer Army\" division_template = \"International Volunteer Army\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+			create_unit = {
+				division = "name = \"International Volunteer Army\" division_template = \"International Volunteer Army\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PLS
+			}
+		}
+	}
+}

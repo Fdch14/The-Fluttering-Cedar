@@ -1,0 +1,9 @@
+###########
+### NR ###
+
+SUE = "countries/WestEur.txt"
+PLS = "countries/MidEast.txt"
+LYE = "countries/MidEast.txt"
+ISR = "countries/WestEur.txt"
+
+#### GFX storage only - These tags should always be at the end of this list

@@ -1,0 +1,94 @@
+scripted_gui = {
+
+	THE_SSNP_unit_GUI = {
+		context_type = decision_category
+		parent_window_token = politics_tab
+		window_name = "THE_SSNP_unit_GUI"
+
+		ai_check = {
+			always = no
+		}
+
+		triggers = {
+			SSNP_freely_yes_or_no_visible = {
+				NOT = {
+					has_completed_focus = SSNP_Fight_for_it_with_blood
+				}
+			}
+			SSNP_liability_yes_or_no_visible = {
+				NOT = {
+					has_completed_focus = SSNP_End_the_chaos_of_poverty
+				}
+			}
+			SSNP_discipline_yes_or_no_visible = {
+				NOT = {
+					has_completed_focus = SSNP_Syria_fight_for_yourself
+				}
+			}
+			SSNP_power_yes_or_no_visible = {
+				NOT = {
+					has_completed_focus = SSNP_Do_whatever_it_takes_for_the_sake_of_the_Motherland
+				}
+			}
+			SSNP_freely_yes_visible = {
+				has_completed_focus = SSNP_Fight_for_it_with_blood
+			}
+			SSNP_liability_yes_visible = {
+				has_completed_focus = SSNP_End_the_chaos_of_poverty
+			}
+			SSNP_discipline_yes_visible = {
+				has_completed_focus = SSNP_Syria_fight_for_yourself
+			}
+			SSNP_power_yes_visible = {
+				has_completed_focus = SSNP_Do_whatever_it_takes_for_the_sake_of_the_Motherland
+			}
+			SSNP_gui_freely_name_visible = {
+				has_completed_focus = SSNP_Fight_for_it_with_blood
+			}
+			SSNP_gui_liability_name_visible = {
+				has_completed_focus = SSNP_End_the_chaos_of_poverty
+			}
+			SSNP_gui_discipline_name_visible = {
+				has_completed_focus = SSNP_Syria_fight_for_yourself
+			}
+			SSNP_gui_power_name_visible = {
+				has_completed_focus = SSNP_Do_whatever_it_takes_for_the_sake_of_the_Motherland
+			}
+			SSNP_button_visible = {
+				has_completed_focus = SSNP_Fight_for_it_with_blood
+				has_completed_focus = SSNP_End_the_chaos_of_poverty
+				has_completed_focus = SSNP_Syria_fight_for_yourself
+				has_completed_focus = SSNP_Do_whatever_it_takes_for_the_sake_of_the_Motherland
+			}
+			SSNP_button_name_visible = {
+				has_completed_focus = SSNP_Fight_for_it_with_blood
+				has_completed_focus = SSNP_End_the_chaos_of_poverty
+				has_completed_focus = SSNP_Syria_fight_for_yourself
+				has_completed_focus = SSNP_Do_whatever_it_takes_for_the_sake_of_the_Motherland
+			}
+		}
+		
+		visible = {
+		}
+
+		effects = {
+			SSNP_button_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = SSNP_VIS_kl
+						}
+					}
+					set_country_flag = SSNP_VIS_kl
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = SSNP_VIS_kl
+					}
+					clr_country_flag = SSNP_VIS_kl
+				}
+			}
+		}
+	}
+}

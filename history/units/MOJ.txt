@@ -1,0 +1,141 @@
+division_template = {
+	name = "Güvenlik Jandarma"
+	division_names_group = MOJ_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+    }
+}
+division_template = {
+	name = "Alman Askerî Misyonu"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery = { x = 2 y = 0 }
+		artillery = { x = 2 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+    }
+	
+}
+division_template = {
+	name = "Mutasarrifate's guards"
+	division_names_group = MOJ_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery  = { x = 1 y = 0 }
+	}
+	
+}
+units = {
+	division= {	
+		name = "1. Güvenlik Jandarma"
+		location = 4206
+		division_template = "Güvenlik Jandarma"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "2. Güvenlik Jandarma"
+		location = 1086
+		division_template = "Güvenlik Jandarma"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "3. Güvenlik Jandarma"
+		location = 11970
+		division_template = "Güvenlik Jandarma"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "4. Güvenlik Jandarma"
+		location = 12049
+		division_template = "Güvenlik Jandarma"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "5. Güvenlik Jandarma"
+		location = 1112
+		division_template = "Güvenlik Jandarma"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "3. Piyade Tümeni Komutanı"
+		location = 4206
+		division_template = "Alman Askerî Misyonu"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "9. Piyade Tümeni Komutanı"
+		location = 1065
+		division_template = "Alman Askerî Misyonu"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "5. Piyade Tümeni Komutanı"
+		location = 1112
+		division_template = "Alman Askerî Misyonu"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "10. Piyade Tümeni Komutanı"
+		location = 9947
+		division_template = "Alman Askerî Misyonu"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "12. Piyade Tümeni Komutanı"
+		location = 4073
+		division_template = "Alman Askerî Misyonu"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Mutasarrifate's guards"
+		location = 4206
+		division_template = "Mutasarrifate's guards"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Mutasarrifate's guards"
+		location = 1086
+		division_template = "Mutasarrifate's guards"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Mutasarrifate's guards"
+		location = 1065
+		division_template = "Mutasarrifate's guards"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+}

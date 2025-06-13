@@ -1,0 +1,2163 @@
+ideas = {
+	head_of_government = {
+		ISR_Shmuel_Mikunis_hog_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Shmuel_Mikunis_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_gentleman_politician
+			}
+		}
+		ISR_Jakub_Berman_hog_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Jakub_Berman_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_architect_of_the_union
+			}
+		}
+		ISR_Tony_Cliff_hog_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Tony_Cliff_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_ambitious_union_boss
+			}
+		}
+		ISR_Arthur_Koestler_hog_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Arthur_Koestler_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_silent_workhorse
+			}
+		}
+		ISR_Avraham_Stern_hog_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Avraham_Stern_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_the_tiger
+			}
+		}
+		ISR_Nathan_Yellin_Mor_hog_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Nathan_Yellin_Mor_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_hooded_chairman
+			}
+		}
+		ISR_Hans_Muller_hog_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Hans_Muller_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_reformist_socialist
+			}
+		}
+		ISR_Meir_Ya_ari_hog_syn = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Meir_Ya_ari_hog_syn"
+			}
+			traits = {
+				head_of_government
+				syndicalist
+				hog_pragmatic_statesman
+			}
+		}
+		ISR_Central_Peoples_Committee_hog_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Central_Peoples_Committee_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+			}
+		}
+		ISR_Moshe_Sneh_hog_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Moshe_Sneh_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_the_grand_old_man
+			}
+		}
+		ISR_Leopold_Trepper_hog_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Leopold_Trepper_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_hooded_chairman
+			}
+		}
+		ISR_Central_Committee_of_the_Labour_Party_hog_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Central_Committee_of_the_Labour_Party_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+			}
+		}
+		ISR_Ya_akov_Hazan_hog_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Ya_akov_Hazan_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_gentleman_politician
+			}
+		}
+		ISR_Yosef_Sprinzak_hog_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yosef_Sprinzak_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_spiritual_leader
+			}
+		}
+		ISR_Morris_Abraham_Cohen_hog_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Morris_Abraham_Cohen_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_humanitarian
+			}
+		}
+		ISR_Central_Committee_of_the_Kuomintang_hog_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Central_Committee_of_the_Kuomintang_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+			}
+		}
+		ISR_Yizahk_Tabenkin_hog_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yizahk_Tabenkin_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_gentleman_politician
+			}
+		}
+		ISR_Central_Committee_of_the_United_Labour_Party_hog_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Central_Committee_of_the_United_Labour_Party_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+			}
+		}
+		ISR_Levi_Eshkol_hog_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Levi_Eshkol_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_naive_optimist
+			}
+		}
+		ISR_Judah_Leon_Magnes_hog_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Judah_Leon_Magnes_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_pacifist_patriot
+			}
+		}
+		ISR_Golda_Meir_hog_sli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Golda_Meir_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_young_guard
+			}
+		}
+		ISR_Pinchas_Rosen_hog_sli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Pinchas_Rosen_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_liberal_jurisprudence
+			}
+		}
+		ISR_Peretz_Bernstein_hog_mli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Peretz_Bernstein_hog_mli"
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_humanitarian
+			}
+		}
+		ISR_Haim_Moshe_Shapira_hog_sco = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Haim_Moshe_Shapira_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_political_survivor
+			}
+		}
+		ISR_Zeev_Jabotinsky_hog_ade = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Zeev_Jabotinsky_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_militant_reactionary
+			}
+		}
+		ISR_Moshe_Dayan_hog_ade = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Moshe_Dayan_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_old_general
+			}
+		}
+		ISR_Yitzhak_Shamir_hog_pau = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yitzhak_Shamir_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_the_capitanul
+			}
+		}
+		ISR_Benzion_Netanyahu_hog_pau = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Benzion_Netanyahu_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_quartermaster_general
+			}
+		}
+		ISR_Menachem_Begin_hog_npo = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Menachem_Begin_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_populist_reactionary
+			}
+		}
+		ISR_Abba_Ahimeir_hog_npo = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Abba_Ahimeir_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_the_vozhd
+			}
+		}
+		SUE_Heinrich_August_Meissner_hog_ade = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Heinrich_August_Meissner_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_the_grand_old_man
+			}
+		}
+		SUE_Fedor_von_Bock_hog_pau = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Fedor_von_Bock_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_respected_war_hero
+			}
+		}
+		PAL_Husayn_al_Khalidi_hog_sde = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PAL_Husayn_al_Khalidi_hog_sde"
+			}
+			traits = {
+				speaker_of_the_parliament 
+				social_democrat
+				hog_reformist_soldier
+			}
+		}
+		PAL_Hassan_Sidqi_al_Dajani_hog_sli = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PAL_Hassan_Sidqi_al_Dajani_hog_sli"
+			}
+			traits = {
+				speaker_of_the_parliament 
+				social_liberal
+				hog_pragmatic_statesman
+			}
+		}
+		PAL_Raghib_al_Nashashibi_hog_mil = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PAL_Raghib_al_Nashashibi_hog_mil"
+			}
+			traits = {
+				speaker_of_the_parliament 
+				market_liberal
+				hog_the_grand_old_man
+			}
+		}
+		PAL_Ahmet_Ferit_Tek_hog_sco = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PAL_Ahmet_Ferit_Tek_hog_sco"
+			}
+			traits = {
+				speaker_of_the_parliament 
+				social_conservative
+				hog_gentleman_politician
+			}
+		}
+		PAL_Huseyin_Rauf_Orbay_hog_sco = {
+			allowed = { original_tag = PAL }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PAL_Huseyin_Rauf_Orbay_hog_sco"
+			}
+			traits = {
+				speaker_of_the_parliament 
+				social_conservative
+				hog_gentleman_politician
+			}
+		}
+		LEB_Akram_al_Haurani_hog_syn = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Akram_al_Haurani_hog_syn"
+			}
+			traits = {
+				head_of_government
+				syndicalist
+				hog_ambitious_union_boss
+			}
+		}
+		LEB_Michel_Aflaq_hog_rso = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Michel_Aflaq_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_reformist_soldier
+			}
+		}
+		LEB_Sadr_al_Din_al_Sadr_hog_sco = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Sadr_al_Din_al_Sadr_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_spiritual_leader
+			}
+		}
+		LEB_Amin_al_Hafiz_hog_pau = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Amin_al_Hafiz_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_respected_war_hero
+			}
+		}
+		LEB_Antoun_Sadeh_hog_pau = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Antoun_Sadeh_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_theorist_of_social_nationalism
+			}
+		}
+		LEB_Pierre_Amine_Gemayel_hog_pau = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Pierre_Amine_Gemayel_hog_pau"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_pragmatic_statesman
+			}
+		}
+		CYP_Fevzi_Cakmak_hog_ade = {
+			allowed = { original_tag = CYP }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea CYP_Fevzi_Cakmak_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_pragmatic_intriguer
+			}
+		}
+	}
+	person_of_influence = {
+		ISR_Meir_Vilner_for_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Meir_Vilner_for_tot"
+			}
+			traits = {
+				foreign_minister
+				totalist
+				for_iron_fisted_brute
+			}
+		}
+		ISR_Aryeh_Ben_Eliezer_for_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Aryeh_Ben_Eliezer_for_tot"
+			}
+			traits = {
+				foreign_minister
+				totalist
+				for_apologetic_clerk
+			}
+		}
+		ISR_Moshe_Erem_for_syn = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Moshe_Erem_for_syn"
+			}
+			traits = {
+				foreign_minister
+				syndicalist
+				for_great_compromiser
+			}
+		}
+		ISR_Yisrael_Galili_for_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yisrael_Galili_for_rso"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_general_staffer
+			}
+		}
+		ISR_Yisrael_Barzilai_for_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yisrael_Barzilai_for_rso"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_iron_fisted_brute
+			}
+		}
+		ISR_Abraham_Kaufman_for_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Abraham_Kaufman_for_rso"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_pious_intellectual
+			}
+		}
+		ISR_Eliezer_Peri_for_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Eliezer_Peri_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				lobe_persuasive_mediator
+			}
+		}
+		ISR_Moshe_Sharett_for_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Moshe_Sharett_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_leading_diplomat
+			}
+		}
+		ISR_Natan_Peled_for_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Natan_Peled_for_sde"
+			}
+			traits = {
+				foreign_minister
+				social_democrat
+				for_staunch_idealist
+			}
+		}
+		ISR_Shimon_Kanovitch_for_sli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Shimon_Kanovitch_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_conscientious_diplomat
+			}
+		}
+		ISR_Moshe_Kol_for_sli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Moshe_Kol_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_committed_democrat
+			}
+		}
+		ISR_Yosef_Sapir_for_mli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yosef_Sapir_for_mli"
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				lobe_foreign_policy_master
+			}
+		}
+		ISR_Moshe_Unna_for_sco = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Moshe_Unna_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_tireless_organiser
+			}
+		}
+		ISR_Aharon_Yaakov_Greenberg_for_ade = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Aharon_Yaakov_Greenberg_for_ade"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_pious_intellectual
+			}
+		}
+		ISR_Yaakov_Dori_for_ade = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yaakov_Dori_for_ade"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				naaf_sober_pragmatist
+			}
+		}
+		ISR_Frija_Zoaretz_for_pau = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Frija_Zoaretz_for_pau"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_war_propagandist
+			}
+		}
+		ISR_Aryeh_Ben_Eliezer_national_for_npo = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Aryeh_Ben_Eliezer_national_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				lobe_persuasive_mediator
+			}
+		}
+		ISR_Ya_akov_Meridor_for_npo = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Ya_akov_Meridor_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_iron_fisted_brute
+			}
+		}
+		ISR_Esther_Vilenska_eco_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Esther_Vilenska_eco_tot"
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_socialist_industrializer
+			}
+		}
+		ISR_Nathan_Yellin_Mor_eco_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Nathan_Yellin_Mor_eco_tot"
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_keynesian_economy
+			}
+		}
+		ISR_Menachem_Bader_eco_syn = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Menachem_Bader_eco_syn"
+			}
+			traits = {
+				economy_minister
+				syndicalist
+				eco_reformer
+			}
+		}
+		ISR_Mordechai_Bentov_eco_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Mordechai_Bentov_eco_rso"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_administrative_genius
+			}
+		}
+		ISR_Yitzhak_Yitzhaky_eco_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yitzhak_Yitzhaky_eco_rso"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_railway_magnate
+			}
+		}
+		ISR_Hannah_Lamdan_eco_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Hannah_Lamdan_eco_sde"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_industrial_chemist
+			}
+		}
+		ISR_Joseph_Roth_eco_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Joseph_Roth_eco_rso"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_agricultural_economist
+			}
+		}
+		ISR_Pinhas_Lavon_eco_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Pinhas_Lavon_eco_sde"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_modest_trade_unionist
+			}
+		}
+		ISR_Shlomo_Rosen_eco_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Shlomo_Rosen_eco_sde"
+			}
+			traits = {
+				economy_minister
+				social_democrat
+				eco_captain_of_industry
+			}
+		}
+		ISR_Rachel_Cohen_Kagan_eco_sli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Rachel_Cohen_Kagan_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_peoples_economist
+			}
+		}
+		ISR_Idov_Cohen_eco_sli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Idov_Cohen_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_pious_entrepreneur
+			}
+		}
+		ISR_Yosef_Serlin_eco_mli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yosef_Serlin_eco_mli"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_captain_of_industry
+			}
+		}
+		ISR_Shlomo_Joseph_Burg_eco_sco = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Shlomo_Joseph_Burg_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_pious_entrepreneur
+			}
+		}
+		ISR_Zorach_Warhaftig_eco_ade = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Zorach_Warhaftig_eco_ade"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_captain_of_industry
+			}
+		}
+		ISR_Yigael_Yadin_eco_ade = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yigael_Yadin_eco_ade"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_heer_advocate
+			}
+		}
+		ISR_Michael_Hasani_eco_pau = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Michael_Hasani_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_austere_finance_advocate
+			}
+		}
+		ISR_Eri_Jabotinsky_eco_npo = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Eri_Jabotinsky_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				lama_reactionary_erudite
+			}
+		}
+		ISR_Mordechai_Olmert_eco_npo = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Mordechai_Olmert_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				lama_reactionary_erudite
+			}
+		}
+		ISR_Israel_Eldad_eco_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Israel_Eldad_eco_tot"
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_planned_economy_proponent
+			}
+		}
+		ISR_Adolf_Berman_sec_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Adolf_Berman_sec_tot"
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_man_of_the_people
+			}
+		}
+		ISR_Eliyahu_Giladi_sec_tot = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Eliyahu_Giladi_sec_tot"
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_secret_police_chief
+			}
+		}
+		ISR_Yisrael_Bar_Yehuda_sec_syn = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yisrael_Bar_Yehuda_sec_syn"
+			}
+			traits = {
+				security_minister
+				syndicalist
+				sec_health_and_safety
+			}
+		}
+		ISR_Yitzhak_Ben_Aharon_sec_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yitzhak_Ben_Aharon_sec_rso"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_health_and_safety
+			}
+		}
+		ISR_Haim_Yehuda_sec_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Haim_Yehuda_sec_rso"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_efficient_sociopath
+			}
+		}
+		ISR_Laura_Margolis_sec_rso = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Laura_Margolis_sec_rso"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_brilliant_lawyer
+			}
+		}
+		ISR_Berl_Repetur_sec_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Berl_Repetur_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_silent_lawyer
+			}
+		}
+		ISR_Yigal_Allon_sec_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yigal_Allon_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_paramilitary_leader
+			}
+		}
+		ISR_Reuven_Arazi_sec_sde = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Reuven_Arazi_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_centrist_educator
+			}
+		}
+		ISR_Yitzhak_Hans_Klinghoffer_sec_sli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yitzhak_Hans_Klinghoffer_sec_sli"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				lobe_domestic_reformer
+			}
+		}
+		ISR_Yizhar_Harari_sec_sli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yizhar_Harari_sec_sli"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				hog_staunch_constitutionalist
+			}
+		}
+		ISR_Elimelekh_Shimon_Rimalt_sec_mli = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Elimelekh_Shimon_Rimalt_sec_mli"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_man_of_the_centre
+			}
+		}
+		ISR_Eliyahu_Moshe_Ganhovsky_sec_sco = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Eliyahu_Moshe_Ganhovsky_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_paternalistic_missionary
+			}
+		}
+		ISR_Moshe_Kelmer_sec_ade = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Moshe_Kelmer_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_incendiary_demagogue
+			}
+		}
+		ISR_Haim_Laskov_sec_ade = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Haim_Laskov_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_army_recruiter
+			}
+		}
+		ISR_Yitzhak_Rafael_sec_pau = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Yitzhak_Rafael_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_charismatic_blueshirt
+			}
+		}
+		ISR_Hillel_Kook_sec_npo = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Hillel_Kook_sec_npo"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				lobe_nationalist_firebrand
+			}
+		}
+		ISR_Dov_Gruner_sec_npo = {
+			allowed = { original_tag = ISR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ISR_Dov_Gruner_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				lobe_nationalist_firebrand
+			}
+		}
+		SUE_Max_von_Oppenheim_eco_sco = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Max_von_Oppenheim_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_oil_baron
+			}
+		}
+		SUE_Oswald_Spengler_for_ade = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Oswald_Spengler_for_ade"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_tireless_organiser
+			}
+		}
+		SUE_Fedor_von_Bock_sec_pau = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Fedor_von_Bock_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				hog_old_general
+			}
+		}
+		SUE_Paul_Emilvon_Lettow_Vorbeck_sec_pau = {
+			allowed = { original_tag = SUE }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SUE_Paul_Emilvon_Lettow_Vorbeck_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_crime_fighter
+			}
+		}
+		LEB_Munif_al_Razzaz_for_syn = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Munif_al_Razzaz_for_syn"
+			}
+			traits = {
+				foreign_minister
+				syndicalist
+				for_apologetic_clerk
+			}
+		}
+		LEB_Michel_Aflaq_for_syn = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Michel_Aflaq_for_syn"
+			}
+			traits = {
+				foreign_minister
+				syndicalist
+				for_ideological_crusader
+			}
+		}
+		LEB_Salah_al_Din_al_Bitar_eco_syn = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Salah_al_Din_al_Bitar_eco_syn"
+			}
+			traits = {
+				economy_minister
+				syndicalist
+				eco_industrial_chemist
+			}
+		}
+		LEB_Zaki_al_Arsuzi_sec_syn = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Zaki_al_Arsuzi_sec_syn"
+			}
+			traits = {
+				security_minister
+				syndicalist
+				sec_great_soul
+			}
+		}
+		LEB_Akram_al_Hourani_sec_rso = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Akram_al_Hourani_sec_rso"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_man_of_the_people
+			}
+		}
+		LEB_Adel_Osseiran_for_sco = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Adel_Osseiran_for_sco"
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_apologetic_clerk
+			}
+		}
+		LEB_Sabri_Hamadeh_eco_sco = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Sabri_Hamadeh_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_reformer
+			}
+		}
+		LEB_Abdul_Hussein_Sharaf_Eddin_sec_sco = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Abdul_Hussein_Sharaf_Eddin_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_crime_fighter
+			}
+		}
+		LEB_Saeed_Taqi_al_Din_for_pau = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Saeed_Taqi_al_Din_for_pau"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_great_compromiser
+			}
+		}
+		LEB_Adib_al_Shishakli_eco_pau = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Adib_al_Shishakli_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_mixed_economy
+			}
+		}
+		LEB_George_Abd_Messih_sec_pau = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_George_Abd_Messih_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_prince_of_terror
+			}
+		}
+		LEB_Alfred_Georges_Naccache_for_npo = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Alfred_Georges_Naccache_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_apologetic_clerk
+			}
+		}
+		LEB_Charles_Helou_eco_npo = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Charles_Helou_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_resource_industrialist
+			}
+		}
+		LEB_Fouad_Chehab_sec_npo = {
+			allowed = { original_tag = LEB }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea LEB_Fouad_Chehab_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_crime_fighter
+			}
+		}
+		CYP_Ismet_Inonu_for_ade = {
+			allowed = { original_tag = CYP }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea CYP_Ismet_Inonu_for_ade"
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_iron_fisted_brute
+			}
+		}
+		CYP_Mahmut_Esat_Bozkurt_eco_ade = {
+			allowed = { original_tag = CYP }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea CYP_Mahmut_Esat_Bozkurt_eco_ade"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_heer_advocate
+			}
+		}
+		CYP_Recep_Peker_sec_ade = {
+			allowed = { original_tag = CYP }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea CYP_Recep_Peker_sec_ade"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_prince_of_terror
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,3067 @@
+focus_tree = {
+	id = yemen_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = YEM
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 2800 y = 2300 }
+
+	focus={
+		id=YEM_Officers_Come_Home
+		icon=GFX_goal_YEM_Army
+		x=12
+		y=2
+		cost=5
+		available = {
+			has_completed_focus=NYE_Reform_of_the_military_department
+		}
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Officers_Come_Home"
+			add_war_support=.1
+			army_experience=50
+			add_ideas = YEM_Officers_Come_Home_ideas
+		}
+		search_filters={
+			FOCUS_FILTER_WAR_SUPPORT
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus={
+		id=YEM_Modern_Naval_Transports
+		icon=GFX_goal_generic_naval_industry
+		x=11
+		y=3
+		prerequisite={focus=YEM_Officers_Come_Home}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Modern_Naval_Transports"
+			add_tech_bonus={
+				name=YEM_Modern_Naval_Transports
+				bonus=1
+				uses=1
+				category=tp_tech
+			}
+			add_ideas = YEM_Modern_Naval_Transports_ideas
+		}
+		search_filters={
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus={
+		id=YEM_Merchant_Marine
+		icon=GFX_goal_YEM_Navy
+		x=11
+		y=4
+		prerequisite={focus=YEM_Modern_Naval_Transports}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Merchant_Marine"
+			add_equipment_to_stockpile={
+				type=convoy_1
+				amount=50
+				producer=YEM
+			}
+			add_ideas=YEM_Merchant_Fleet
+		}
+		search_filters={
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus={
+		id=YEM_Trade_Protection
+		icon=GFX_goal_NFA_merchant_marine
+		x=11
+		y=5
+		prerequisite={focus=YEM_Merchant_Marine}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Trade_Protection"
+			add_tech_bonus={
+				name=YEM_Trade_Protection
+				bonus=1
+				uses=1
+				category=dd_tech
+			}
+			swap_ideas = {
+				remove_idea = YEM_Modern_Naval_Transports_ideas
+				add_idea = YEM_Modern_Naval_Transports_ideas1
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus={
+		id=YEM_Aden_Ports
+		icon=GFX_USA_ports_atlantic
+		x=11
+		y=6
+		prerequisite={focus=YEM_Trade_Protection}
+		cost=4
+		available={
+			owns_state=659
+			controls_state=659
+		}
+		bypass={
+			NOT={
+				owns_state=659
+			}
+		}
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Aden_Ports"
+			659={
+				add_building_construction={
+					type=naval_base
+					province=5074
+					level=3
+					instant_build=yes
+				}
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=dockyard
+					level=1
+					instant_build=yes
+				}
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus={
+		id=YEM_Ship_Commission
+		icon=GFX_goal_NIC_buy_ship
+		x=11
+		y=7
+		prerequisite={focus=YEM_Aden_Ports}
+		cost=5
+		available={
+			country_exists=GER
+		}
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Ship_Commission"
+			GER={
+				country_event={
+					id=yemen.38
+					days=1
+				}
+			}
+		}
+	}
+	focus={
+		id=YEM_This_Is_My_Boomstick
+		icon=GFX_BRY_Every_Hand_A_Rifle
+		x=14
+		y=3
+		prerequisite={focus=YEM_Officers_Come_Home}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_This_Is_My_Boomstick"
+			add_tech_bonus={
+				name=YEM_This_Is_My_Boomstick
+				bonus=1
+				uses=1
+				category=infantry_weapons
+			}
+			add_ideas = YEM_This_Is_My_Boomstick_ideas
+		}
+		search_filters={
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus={
+		id=YEM_Bigger_Boom
+		icon=GFX_goal_SKM_Modern_Artillery
+		x=14
+		y=4
+		prerequisite={focus=YEM_This_Is_My_Boomstick}
+		cost=3
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Bigger_Boom"
+			add_tech_bonus={
+				name=YEM_Bigger_Boom
+				bonus=1
+				uses=1
+				category=artillery
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus={
+		id=YEM_Fortify_To_Protecc
+		icon=GFX_goal_nested_fortifications
+		x=14
+		y=5
+		prerequisite={focus=YEM_Bigger_Boom}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Fortify_To_Protecc"
+			add_ideas=YEM_forts
+		}
+		search_filters={
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus={
+		id=YEM_Mountain_Warriors
+		icon=GFX_goal_generic_mountain_warfare2
+		x=14
+		y=6
+		prerequisite={focus=YEM_Fortify_To_Protecc}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Mountain_Warriors"
+			add_tech_bonus={
+				name=YEM_Mountain_Warriors
+				bonus=1
+				uses=1
+				technology=tech_mountaineers
+				technology=tech_mountaineers2
+				technology=tech_mountaineers3
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus={
+		id=YEM_Arabian_Knights
+		icon=GFX_HUN_fleet_horse
+		x=16
+		y=3
+		prerequisite={focus=YEM_Officers_Come_Home}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Arabian_Knights"
+			add_ideas=YEM_HorsieBoyes
+		}
+		search_filters={
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus={
+		id=YEM_Better_Shovels
+		icon=GFX_goal_generic_support_equipment
+		x=18
+		y=3
+		prerequisite={focus=YEM_Officers_Come_Home}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Better_Shovels"
+			add_tech_bonus={
+				name=YEM_Better_Shovels
+				bonus=1
+				uses=2
+				category=support_tech
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus={
+		id=YEM_Trench_War
+		icon=GFX_goal_skull_fortification
+		x=17
+		y=4
+		prerequisite={focus=YEM_Better_Shovels}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Trench_War"
+			add_doctrine_cost_reduction={
+				name=land_doc_bonus
+				cost_reduction=0.5
+				uses=1
+				category=land_doctrine
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus={
+		id=YEM_Scouts
+		icon=GFX_goal_ATH_engineering
+		x=16
+		y=5
+		prerequisite={focus=YEM_Trench_War}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Scouts"
+			add_tech_bonus={
+				name=YEM_Scouts
+				bonus=1
+				uses=1
+				category=engineers_tech
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus={
+		id=YEM_Hold_The_Line
+		icon=GFX_goal_planning_bonus
+		x=16
+		y=6
+		prerequisite={focus=YEM_Scouts}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Hold_The_Line"
+			add_doctrine_cost_reduction={
+				name=land_doc_bonus
+				cost_reduction=0.5
+				uses=1
+				category=land_doctrine
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus={
+		id=YEM_Rifle_Guilds
+		icon=GFX_goal_BRG_Guilds
+		x=18
+		y=5
+		prerequisite={focus=YEM_Better_Shovels}
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Rifle_Guilds"
+			add_ideas=YEM_Rifle_Guilds_Temp
+		}
+	}
+	focus={
+		id=YEM_Taiz_Arsenal
+		icon=GFX_goal_ZAM_arms_factory
+		x=18
+		y=6
+		prerequisite={focus=YEM_Rifle_Guilds}
+		cost=5
+		available={
+			owns_state=293
+			controls_state=293
+		}
+		bypass={
+			NOT={
+				owns_state=293
+			}
+		}
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Taiz_Arsenal"
+			293={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=arms_factory
+					level=1
+					instant_build=yes
+				}
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus={
+		id=YEM_Modern_Army
+		icon=GFX_goal_FNG_Army_Modern
+		x=15
+		y=7
+		prerequisite={focus=YEM_Taiz_Arsenal focus=YEM_Hold_The_Line focus=YEM_Mountain_Warriors }
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Modern_Army"
+			swap_ideas={
+				remove_idea=YEM_Old_Army
+				add_idea=YEM_Modern_Plans
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus={
+		id=YEM_Military_Science
+		icon=GFX_goal_military_research_2
+		x=17
+		y=7
+		prerequisite={focus=YEM_Taiz_Arsenal focus=YEM_Hold_The_Line focus=YEM_Mountain_Warriors }
+		cost=5
+		ai_will_do={
+			factor=50
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Military_Science"
+			add_research_slot=1
+		}
+		search_filters={
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus={
+		id=YEM_Rassid_Arabia
+		icon=GFX_goal_Unite_Arabia
+		x=3
+		y=2
+		cost=0
+		available={
+			owns_state=292
+			owns_state=915
+			has_completed_focus = NYE_New_Imam
+		}
+		ai_will_do={
+			factor=100
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Rassid_Arabia"
+			add_stability=0.1
+			set_cosmetic_tag=RAS_ARB
+			add_ideas=YEM_arabian_integration
+		}
+	}
+	focus={
+		id=YEM_Damage_Control
+		icon=GFX_goal_generic_crisis
+		x=2
+		y=3
+		prerequisite={focus=YEM_Rassid_Arabia}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Damage_Control"
+			add_stability=0.03
+		}
+		search_filters={
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus={
+		id=YEM_Rebuild_and_Heal
+		icon=GFX_DKB_Rebuild
+		x=1
+		y=4
+		prerequisite={focus=YEM_Damage_Control}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Rebuild_and_Heal"
+			swap_ideas={
+				add_idea=YEM_arabian_integration_rebuild
+				remove_idea=YEM_arabian_integration
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus={
+		id=YEM_Mobilize_Military_As_Police
+		icon=GFX_goal_NYC_cops_beating_down_on_hippie_scum_at_the_1968_democratic_national_convention
+		x=4
+		y=3
+		prerequisite={focus=YEM_Rassid_Arabia}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Mobilize_Military_As_Police"
+			add_war_support=-0.02
+			add_stability=0.02
+		}
+		search_filters={
+			FOCUS_FILTER_WAR_SUPPORT
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus={
+		id=YEM_Crackdown_On_Dissent
+		icon=GFX_goal_DSR_Purge
+		x=5
+		y=4
+		prerequisite={focus=YEM_Mobilize_Military_As_Police}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Crackdown_On_Dissent"
+			swap_ideas={
+				add_idea=YEM_arabian_integration_dissent
+				remove_idea=YEM_arabian_integration_rebuild
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus={
+		id=YEM_Appease_Tribes
+		icon=GFX_goal_AFG_placate_tribe_leaders
+		x=3
+		y=4
+		prerequisite={focus=YEM_Rassid_Arabia}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			has_completed_focus=YEM_Crackdown_On_Dissent
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Appease_Tribes"
+			swap_ideas={
+				add_idea=YEM_arabian_integration_2
+				remove_idea=YEM_arabian_integration_dissent
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus={
+		id=YEM_Purge_Saudis
+		icon=GFX_goal_hunt_down_saudis
+		x=4
+		y=5
+		prerequisite={focus=YEM_Appease_Tribes}
+		prerequisite={focus=YEM_Crackdown_On_Dissent}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Purge_Saudis"
+			add_stability=0.1
+			country_event=yemen.33
+		}
+		search_filters={
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus={
+		id=YEM_Give_Religious_Freedom
+		icon=GFX_goal_OTT_caliph
+		x=2
+		y=5
+		prerequisite={focus=YEM_Appease_Tribes}
+		prerequisite={focus=YEM_Rebuild_and_Heal}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Give_Religious_Freedom"
+			add_stability=0.03
+		}
+		search_filters={
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus={
+		id=YEM_Begin_Integration
+		icon=GFX_goal_OTT_Arab_Peninsula
+		x=1
+		y=6
+		prerequisite={focus=YEM_Give_Religious_Freedom}
+		prerequisite={focus=YEM_Purge_Saudis}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Begin_Integration"
+			678={
+				add_core_of=YEM
+			}
+			679={
+				add_core_of=YEM
+			}
+			754={
+				add_core_of=YEM
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_ANNEXATION
+		}
+	}
+	focus={
+		id=YEM_New_Administration
+		icon=GFX_goal_generic_parliament
+		x=3
+		y=6
+		prerequisite={focus=YEM_Give_Religious_Freedom}
+		prerequisite={focus=YEM_Purge_Saudis}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			has_completed_focus=YEM_Begin_Integration
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_New_Administration"
+			swap_ideas={
+				add_idea=YEM_arabian_integration_administration
+				remove_idea=YEM_arabian_integration_2
+			}
+		}
+		search_filters={
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus={
+		id=YEM_Welcome_Rashids_Back
+		icon=GFX_goal_Elect_a_Rashidi
+		x=5
+		y=6
+		prerequisite={focus=YEM_Give_Religious_Freedom}
+		prerequisite={focus=YEM_Purge_Saudis}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			has_completed_focus=YEM_New_Administration
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		bypass={
+			OR={
+				has_government=social_conservative
+				has_government=social_liberal
+			}
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Welcome_Rashids_Back"
+			swap_ideas={
+				add_idea=YEM_arabian_integration_rashids
+				remove_idea=YEM_arabian_integration_administration
+			}
+			country_event=yemen.34
+		}
+		search_filters={
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus={
+		id=YEM_Complete_Integration
+		icon=GFX_TTR_Islamic_Order
+		x=3
+		y=7
+		prerequisite={focus=YEM_New_Administration}
+		prerequisite={focus=YEM_Welcome_Rashids_Back}
+		prerequisite={focus=YEM_Begin_Integration}
+		cost=5
+		ai_will_do={
+			factor=100
+		}
+		available={
+			owns_state=292
+			JBS={
+				exists=no
+			}
+			SAU={
+				exists=no
+			}
+			is_subject=no
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus YEM_Complete_Integration"
+			if={
+				limit={
+					has_idea=YEM_arabian_integration_arabian_spirit
+				}
+				swap_ideas={
+					add_idea=YEM_arabian_integration_arabian_spirit
+					remove_idea=YEM_arabian_integration_rashids
+				}
+			}
+			if={
+				limit={
+					has_idea=YEM_arabian_integration_administration
+				}
+				swap_ideas={
+					add_idea=YEM_arabian_integration_arabian_spirit
+					remove_idea=YEM_arabian_integration_administration
+				}
+			}
+			every_state={
+				limit={
+					OR={
+						is_core_of=SAU
+						is_claimed_by=SAU
+					}
+				}
+				add_core_of=YEM
+			}
+			every_state={
+				limit={
+					is_core_of=JBS
+				}
+				add_core_of=YEM
+			}
+			country_event=yemen.47
+		}
+		search_filters={
+			FOCUS_FILTER_ANNEXATION
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus={
+		id=NYE_Riots_intensified
+		icon=YEM_Riots_intensified
+		x=26
+		y=0
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+	}
+	focus={
+		id=NYE_The_words_of_the_Imam
+		icon=YEM_The_words_of_the_Imam
+		x=26
+		y=1
+		prerequisite={focus=NYE_Riots_intensified}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.02
+		}
+	}
+	focus={
+		id=NYE_Summoning_the_police_department
+		icon=YEM_Summoning_the_police_department
+		x=26
+		y=2
+		prerequisite={focus=NYE_The_words_of_the_Imam}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.02
+			add_war_support = 0.02
+		}
+	}
+	focus={
+		id=NYE_Summoning_the_governors_of_the_provinces
+		icon=YEM_Summoning_the_governors_of_the_provinces
+		x=23
+		y=3
+		prerequisite={focus=NYE_Summoning_the_police_department}
+		cost=0.7
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = Summoning_the_governors_of_the_provinces_eff
+		}
+	}
+	focus={
+		id=NYE_Draw_tribal_warriors
+		icon=YEM_Draw_tribal_warriors
+		x=25
+		y=3
+		prerequisite={focus=NYE_Summoning_the_police_department}
+		cost=0.7
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = Draw_tribal_warriors_eff
+		}
+	}
+	focus={
+		id=NYE_Ensure_stability
+		icon=YEM_Ensure_stability
+		x=27
+		y=3
+		prerequisite={focus=NYE_Summoning_the_police_department}
+		cost=0.7
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = yemen.3
+			add_stability = 0.05
+		}
+	}
+	focus={
+		id=NYE_Court_order
+		icon=YEM_Court_order
+		x=29
+		y=3
+		prerequisite={focus=NYE_Summoning_the_police_department}
+		cost=0.7
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 200
+		}
+	}
+	focus={
+		id=NYE_Assault_on_Aden
+		icon=YEM_Assault_on_Aden
+		x=24
+		y=4
+		prerequisite={focus=NYE_Summoning_the_governors_of_the_provinces}
+		prerequisite={focus=NYE_Draw_tribal_warriors}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = 0.02
+			add_to_variable = {
+				var = Dissatisfaction_Level_var
+				value = -0.1
+			}
+			custom_effect_tooltip = Dissatisfaction_Level_var_lost_tt
+		}
+	}
+	focus={
+		id=NYE_Desert_guerrilla
+		icon=YEM_Desert_guerrilla
+		x=26
+		y=4
+		prerequisite={focus=NYE_Draw_tribal_warriors}
+		prerequisite={focus=NYE_Ensure_stability}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = 0.02
+			add_to_variable = {
+				var = Dissatisfaction_Level_var
+				value = -0.1
+			}
+			custom_effect_tooltip = Dissatisfaction_Level_var_lost_tt
+		}
+	}
+	focus={
+		id=NYE_Clearing_the_border
+		icon=YEM_Clearing_the_border
+		x=28
+		y=4
+		prerequisite={focus=NYE_Ensure_stability}
+		prerequisite={focus=NYE_Court_order}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = 0.02
+			add_to_variable = {
+				var = Dissatisfaction_Level_var
+				value = -0.1
+			}
+			custom_effect_tooltip = Dissatisfaction_Level_var_lost_tt
+		}
+	}
+	focus={
+		id=NYE_Tight_reality
+		icon=YEM_Tight_reality
+		x=26
+		y=5
+		prerequisite={focus=NYE_Assault_on_Aden}
+		prerequisite={focus=NYE_Desert_guerrilla}
+		prerequisite={focus=NYE_Clearing_the_border}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 150
+			country_event = yemen.49
+		}
+	}
+	focus={
+		id=NYE_The_threat_of_Free_Yemen
+		icon=NLEB_Shiites_are_encouraged_to_join_the_army
+		x=25
+		y=6
+		prerequisite={focus=NYE_Tight_reality}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.02
+		}
+	}
+	focus={
+		id=NYE_Counter_insurgent_propaganda_organization
+		icon=PAL_Revisit_the_Freedom_of_Speech_Amendment
+		x=25
+		y=7
+		prerequisite={focus=NYE_The_threat_of_Free_Yemen}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.1
+			}
+		}
+	}
+	focus={
+		id=NYE_Reform_of_the_military_department
+		icon=PAL_Develop_borders
+		x=23
+		y=7
+		prerequisite={focus=NYE_The_threat_of_Free_Yemen}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = NYE_Reform_of_the_military
+		}
+	}
+	focus={
+		id=NYE_Support_for_the_constitutionalist_program
+		icon=PAL_The_Princes_Tempering
+		x=24
+		y=8
+		prerequisite={focus=NYE_Reform_of_the_military_department}
+		prerequisite={focus=NYE_Counter_insurgent_propaganda_organization}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+          custom_effect_tooltip = NYE_constitutionalist_program
+		}
+	}
+	focus={
+		id=NYE_Strengthen_religious_influence
+		icon=NLEB_Imam_in_the_army
+		x=27
+		y=6
+		prerequisite={focus=NYE_Tight_reality}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.02
+		}
+	}
+	focus={
+		id=NYE_Compulsory_religious_education
+		icon=NLEB_Pioneering_Lebanese_tactics
+		x=27
+		y=7
+		prerequisite={focus=NYE_Strengthen_religious_influence}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = {
+				ideology = market_liberal
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.05
+			}
+		}
+	}
+	focus={
+		id=NYE_Use_of_Waqf
+		icon=PAL_Budget_cuts_for_the_Jaffa_port_project
+		x=29
+		y=7
+		prerequisite={focus=NYE_Strengthen_religious_influence}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	focus={
+		id=NYE_caesaropapism
+		icon=PAL_Ensuring_the_powers_of_the_National_Minorities_Council
+		x=28
+		y=8
+		prerequisite={focus=NYE_Compulsory_religious_education}
+		prerequisite={focus=NYE_Use_of_Waqf}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = national_populist popularity = 0.05}
+			add_political_power = 200
+		}
+	}
+	focus={
+		id=NYE_Request_for_Ottoman_assistance
+		icon=PAL_Establishment_of_district_gendarmerie_offices
+		x=26
+		y=9
+		prerequisite={focus=NYE_Support_for_the_constitutionalist_program}
+		prerequisite={focus=NYE_caesaropapism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment
+				amount = 25000
+				producer = TUR
+			}
+			add_equipment_to_stockpile = { 
+				type = artillery_equipment_1
+				amount = 1000
+				producer = TUR
+			}
+		}
+	}
+	focus={
+		id=NYE_A_new_round_of_attacks
+		icon=PAL_Shelving_the_Jaffa_seaport_project
+		x=26
+		y=10
+		prerequisite={focus=NYE_Request_for_Ottoman_assistance}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.02
+		}
+	}
+	focus={
+		id=NYE_Black_Monday_effects
+		icon=PAL_Establishment_of_the_Immigration_Administration
+		x=32
+		y=6
+		prerequisite={focus=NYE_Tight_reality}
+		available = {
+			has_idea = YEM_black_monday
+		}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=NYE_Empowering_the_Constitutional_Movement
+		icon=PAL_Establishment_of_the_Central_Security_Service
+		x=32
+		y=7
+		prerequisite={focus=NYE_Black_Monday_effects}
+		available = {
+			has_completed_focus=NYE_Support_for_the_constitutionalist_program
+		}
+		mutually_exclusive={focus=NYE_Reform_the_slave_economy }
+		
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_black_monday
+				add_idea = YEM_black_monday2
+			}
+		}
+	}
+	focus={
+		id=NYE_Emancipation_of_part_of_the_serfs
+		icon=PAL_Jordanian_irrigation
+		x=31
+		y=8
+		prerequisite={focus=NYE_Empowering_the_Constitutional_Movement}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 100
+		}
+	}
+	focus={
+		id=NYE_Establishment_of_the_Court_Council
+		icon=PAL_Bicameral_government
+		x=33
+		y=8
+		prerequisite={focus=NYE_Empowering_the_Constitutional_Movement}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_Palace_Committee
+		}
+	}
+	focus={
+		id=NYE_Non_religious_colleges
+		icon=PAL_Improve_the_Supreme_Court_system
+		x=30
+		y=9
+		prerequisite={focus=NYE_Emancipation_of_part_of_the_serfs}
+		prerequisite={focus=NYE_Establishment_of_the_Court_Council}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_Sana_Educational_Institute
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	focus={
+		id=NYE_Export_specialty_products
+		icon=SUE_Problems_with_the_General_Union_of_Suez_City
+		x=32
+		y=9
+		prerequisite={focus=NYE_Emancipation_of_part_of_the_serfs}
+		prerequisite={focus=NYE_Establishment_of_the_Court_Council}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 30
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.1}
+		}
+	}
+	focus={
+		id=NYE_Install_cronies
+		icon=NLEB_Break_the_backbone_of_the_Bedouins
+		x=31
+		y=10
+		prerequisite={focus=NYE_Non_religious_colleges}
+		prerequisite={focus=NYE_Export_specialty_products}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Palace_Committee
+				add_idea = YEM_Palace_Committee2
+			}
+		}
+	}
+	focus={
+		id=NYE_Economic_planning
+		icon=PAL_Jaffa_Port_Engineering_Department
+		x=31
+		y=11
+		prerequisite={focus=NYE_Install_cronies}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_black_monday2
+				add_idea = YEM_black_monday3
+			}
+		}
+	}
+	focus={
+		id=NYE_Reform_the_slave_economy
+		icon=NLEB_First_Religious_Census
+		x=36
+		y=7
+		prerequisite={focus=NYE_Black_Monday_effects}
+		mutually_exclusive={focus=NYE_Empowering_the_Constitutional_Movement }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_black_monday
+				add_idea = YEM_black_monday_P
+			}
+		}
+	}
+	focus={
+		id=NYE_Fight_against_big_landowners
+		icon=PAL_Sanctions_against_the_Ottoman_nobility
+		x=36
+		y=8
+		prerequisite={focus=NYE_Reform_the_slave_economy}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_black_monday_P
+				add_idea = YEM_black_monday2
+			}
+		}
+	}
+	focus={
+		id=NYE_Provision_of_serf_rights
+		icon=PAL_Subdivide_the_management_system
+		x=36
+		y=9
+		prerequisite={focus=NYE_Fight_against_big_landowners}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 50
+		}
+	}
+	focus={
+		id=NYE_Reward_loyal_serfs
+		icon=GFX_goal_AFG_ottoman_rewarding_loyalty
+		x=34
+		y=10
+		prerequisite={focus=NYE_Provision_of_serf_rights}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			293 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	focus={
+		id=NYE_Clean_up_the_stubborn_landlords
+		icon=GFX_AFG_end_bandits
+		x=38
+		y=10
+		prerequisite={focus=NYE_Provision_of_serf_rights}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = paternal_autocrat popularity = 0.1}
+			add_ideas = YEM_Fight_against_landlords
+		}
+	}
+	focus={
+		id=NYE_Encourage_grain_exports
+		icon=PAL_Open_economic_policy
+		x=34
+		y=11
+		prerequisite={focus=NYE_Reward_loyal_serfs}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_Food_exports
+		}
+	}
+	focus={
+		id=NYE_Mixed_Development_Schemes
+		icon=PAL_Expansion_of_the_budget_for_the_Jaffa_Port_project
+		x=36
+		y=11
+		prerequisite={focus=NYE_Provision_of_serf_rights}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_black_monday2
+				add_idea = YEM_black_monday3
+			}
+		}
+	}
+	focus={
+		id=NYE_Yading_Factory
+		icon=PAL_Economic_Integration_Report
+		x=38
+		y=11
+		prerequisite={focus=NYE_Clean_up_the_stubborn_landlords}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			659 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	focus={
+		id=NYE_Greater_Yemeniisms_internal_affairs
+		icon=YEM_Greater_Yemeniisms_internal_affairs
+		x=5
+		y=10
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = NYE_Economic_planning
+				AND = {
+					has_completed_focus = NYE_Yading_Factory
+					has_completed_focus = NYE_Mixed_Development_Schemes
+					has_completed_focus = NYE_Encourage_grain_exports
+				}
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Slave_economy
+				add_idea = YEM_Slave_economy2
+			}
+		}
+	}
+	focus={
+		id=NYE_Consolidation_of_Aden
+		icon=YEM_Consolidation_of_Aden
+		x=5
+		y=11
+		prerequisite={focus=NYE_Greater_Yemeniisms_internal_affairs}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = YEM_Slave_economy2
+		}
+	}
+	focus={
+		id=NYE_Yemen_and_the_Islamic_world
+		icon=YEM_Yemen_and_the_Islamic_world
+		x=5
+		y=12
+		prerequisite={focus=NYE_Consolidation_of_Aden}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_owned_state = {
+				add_manpower = 1000
+				add_extra_state_shared_building_slots = 1
+			}
+			country_event = yemen.50
+		}
+	}
+	focus={
+		id=NYE_Imam_assassination
+		icon=YEM_assassination
+		x=5
+		y=13
+		prerequisite={focus=NYE_Yemen_and_the_Islamic_world}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = yemen.48
+		}
+	}
+	focus={
+		id=NYE_The_new_constitution_of_Yemen
+		icon=YEM_The_new_constitution_of_Yemen
+		x=4
+		y=14
+		prerequisite={focus=NYE_Imam_assassination}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=NYE_New_Imam
+		icon=YEM_New_Imam
+		x=6
+		y=14
+		prerequisite={focus=NYE_Imam_assassination}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=NYE_Local_representation
+		icon=YEM_Local_representation
+		x=0
+		y=15
+		prerequisite={focus=NYE_The_new_constitution_of_Yemen}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_Local_representation
+		}
+	}
+	focus={
+		id=NYE_Removal_of_governors_of_the_provinces
+		icon=YEM_Removal_of_governors_of_the_provinces
+		x=2
+		y=15
+		prerequisite={focus=NYE_The_new_constitution_of_Yemen}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = 0.2
+			add_political_power = 50
+		}
+	}
+	focus={
+		id=NYE_Islamic_Society
+		icon=YEM_Islamic_Society
+		x=4
+		y=15
+		prerequisite={focus=NYE_The_new_constitution_of_Yemen}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_Implementing_Islamic_law
+		}
+	}
+	focus={
+		id=NYE_Arab_cultural_revival
+		icon=YEM_Arab_cultural_revival
+		x=1
+		y=16
+		prerequisite={focus=NYE_Local_representation}
+		prerequisite={focus=NYE_Removal_of_governors_of_the_provinces}
+		prerequisite={focus=NYE_Islamic_Society}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Implementing_Islamic_law
+				add_idea = YEM_Implementing_Islamic_law2
+			}
+			swap_ideas = {
+				remove_idea = YEM_Local_representation
+				add_idea = YEM_Local_representation2
+			}
+		}
+	}
+	focus={
+		id=NYE_Reconciliation_with_Free_Yemen
+		icon=YEM_Reconciliation_with_Free_Yemen
+		x=3
+		y=16
+		prerequisite={focus=NYE_Removal_of_governors_of_the_provinces}
+		prerequisite={focus=NYE_Islamic_Society}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_Eternal_Yemeni_Brothers
+			clr_country_flag = Free_Yemen_in_action_Flag
+		}
+	}
+	focus={
+		id=NYE_Trade_in_cash_crops
+		icon=YEM_Trade_in_cash_crops
+		x=2
+		y=17
+		prerequisite={focus=NYE_Arab_cultural_revival}
+		prerequisite={focus=NYE_Reconciliation_with_Free_Yemen}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Implementing_Islamic_law2
+				add_idea = YEM_Implementing_Islamic_law3
+			}
+			293 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+			752 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	focus={
+		id=NYE_Pro_European_position
+		icon=YEM_Pro_European_position
+		x=2
+		y=18
+		prerequisite={focus=NYE_Trade_in_cash_crops}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+					remove_idea = YEM_Local_representation2
+				add_idea = YEM_Local_representation3
+			}
+		}
+	}
+	focus={
+		id=NYE_Eliminate_the_constitutionalists
+		icon=YEM_Eliminate_the_constitutionalists
+		x=6
+		y=15
+		prerequisite={focus=NYE_New_Imam}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = authoritarian_democrat popularity = -0.3}
+		}
+	}
+	focus={
+		id=NYE_Maintain_the_tradition_of_theocracy
+		icon=YEM_Maintain_the_tradition_of_theocracy
+		x=8
+		y=15
+		prerequisite={focus=NYE_New_Imam}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_Theocratic_tradition
+		}
+	}
+	focus={
+		id=NYE_Towards_Greater_Yemen
+		icon=YEM_Towards_Greater_Yemen
+		x=10
+		y=15
+		prerequisite={focus=NYE_New_Imam}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+				add_ideas = YEM_Unified_Centralized_Process
+		}
+	}
+	focus={
+		id=NYE_Organize_a_religious_cabinet
+		icon=YEM_Organize_a_religious_cabinet
+		x=7
+		y=16
+		prerequisite={focus=NYE_Eliminate_the_constitutionalists}
+		prerequisite={focus=NYE_Maintain_the_tradition_of_theocracy}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Theocratic_tradition
+				add_idea = YEM_Theocratic_tradition2
+			}
+		}
+	}
+	focus={
+		id=NYE_The_way_of_benevolence
+		icon=YEM_The_way_of_benevolence
+		x=9
+		y=16
+		prerequisite={focus=NYE_Maintain_the_tradition_of_theocracy}
+		prerequisite={focus=NYE_Towards_Greater_Yemen}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Unified_Centralized_Process
+				add_idea = YEM_Unified_Centralized_Process2
+			}
+		}
+	}
+	focus={
+		id=NYE_Development_of_borders
+		icon=YEM_Development_of_borders
+		x=7
+		y=17
+		prerequisite={focus=NYE_Organize_a_religious_cabinet}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			982 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+			659 = {
+				add_extra_state_shared_building_slots =1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	focus={
+		id=NYE_Eliminate_the_Free_Yemen_Movement
+		icon=YEM_Eliminate_the_Free_Yemen_Movement
+		x=9
+		y=17
+		prerequisite={focus=NYE_The_way_of_benevolence}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = Kill_Free_Yemen_tt
+			set_country_flag = A_new_imam_was_chosen
+			add_to_variable = {
+				var = Riot_Level_var
+				value = 0.5
+			}
+		}
+	}
+	focus={
+		id=NYE_Heart_of_Yemen
+		icon=YEM_Heart_of_Yemen
+		x=8
+		y=18
+		prerequisite={focus=NYE_Development_of_borders}
+		prerequisite={focus=NYE_Eliminate_the_Free_Yemen_Movement}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Theocratic_tradition2
+				add_idea = YEM_Theocratic_tradition3
+			}
+		}
+	}
+	focus={
+		id=NYE_for_independence
+		icon=YEM_for_independence
+		x=5
+		y=17
+		prerequisite={focus=NYE_Reconciliation_with_Free_Yemen focus=NYE_Organize_a_religious_cabinet }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment
+				amount = 35000
+				producer = YEM
+			}
+			add_equipment_to_stockpile = { 
+				type = artillery_equipment_1
+				amount = 1500
+				producer = YEM
+			}
+		}
+	}
+	focus={
+		id=NYE_Organize_anti_Ottoman_marches
+		icon=YEM_Organize_anti_Ottoman_marches
+		x=5
+		y=18
+		prerequisite={focus=NYE_for_independence}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = YEM_Ottoman_Rule
+			YEM = {
+				OVERLORD =  {
+					end_puppet = YEM
+				}
+			}
+			set_cosmetic_tag = YEM_emir_state2
+		}
+	}
+	focus={
+		id=NYE_Contact_the_Arab_Brothers
+		icon=YEM_Contact_the_Arab_Brothers
+		x=5
+		y=19
+		prerequisite={focus=NYE_Organize_anti_Ottoman_marches}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Arab_nationalism_ideas
+		}
+	}
+	focus={
+		id=NYE_Financing_the_Lebanese_rebels
+		icon=YEM_Financing_the_Lebanese_rebels
+		x=4
+		y=20
+		prerequisite={focus=NYE_Contact_the_Arab_Brothers}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_White_Cedar_ideas
+		}
+	}
+	focus={
+		id=NYE_Palestinian_Brothers
+		icon=YEM_Palestinian_Brothers
+		x=6
+		y=20
+		prerequisite={focus=NYE_Contact_the_Arab_Brothers}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Arab_nationalism_ideas
+				add_idea = AMAL_Arab_nationalism_ideas1
+			}
+		}
+	}
+	focus={
+		id=NYE_Take_advantage_of_Free_Yemen
+		icon=YEM_Take_advantage_of_Free_Yemen
+		x=3
+		y=21
+		prerequisite={focus=NYE_Financing_the_Lebanese_rebels}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Al_Sham_Arab_Liberation_Army_ideas
+		}
+	}
+	focus={
+		id=NYE_Go_to_battle
+		icon=YEM_Go_to_battle
+		x=4
+		y=22
+		prerequisite={focus=NYE_Take_advantage_of_Free_Yemen}
+		mutually_exclusive={focus=NYE_for_survival }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = ETH }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = LBA }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = LEB }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = LBA }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = TRP }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = TUN }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = ALG }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = MOR }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = MRT }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = ERI }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = DJI }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = {
+				OR = {
+					is_core_of = SOM
+					is_claimed_by = SOM
+					}
+				}
+				add_core_of = YEM
+			}
+			hidden_effect = {
+			819 = {	add_core_of = YEM }
+			352 = {	add_core_of = YEM }
+			350 = {	add_core_of = YEM }
+			450 = {	add_core_of = YEM }
+			905 = { add_core_of = YEM }
+			}
+			set_cosmetic_tag = YEM_Arab_Kingdom
+		}
+	}
+	focus={
+		id=NYE_Incitement_of_Palestinian_insurgency
+		icon=YEM_Incitement_of_Palestinian_insurgency
+		x=7
+		y=21
+		prerequisite={focus=NYE_Palestinian_Brothers}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_warriors_idea
+		}
+	}
+	focus={
+		id=NYE_for_survival
+		icon=YEM_for_survival
+		x=6
+		y=22
+		prerequisite={focus=NYE_Incitement_of_Palestinian_insurgency}
+		mutually_exclusive={focus=NYE_Go_to_battle }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_The_battle_for_survival
+		}
+	}
+	focus={
+		id=NYE_Greater_Yemen_ideals
+		icon=YEM_Greater_Yemen_ideals
+		x=5
+		y=21
+		prerequisite={focus=NYE_Financing_the_Lebanese_rebels}
+		prerequisite={focus=NYE_Palestinian_Brothers}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Arab_nationalism_ideas1
+				add_idea = AMAL_Arab_nationalism_ideas2
+			}
+		}
+	}
+	focus={
+		id=NYE_The_victory_of_the_Free_Yemeni_Movement
+		icon=YEM_The_victory_of_the_Free_Yemeni_Movement
+		x=19
+		y=12
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=NYE_Purge_former_government_supporters
+		icon=YEM_Purge_former_government_supporters
+		x=18
+		y=13
+		prerequisite={focus=NYE_The_victory_of_the_Free_Yemeni_Movement}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = paternal_autocrat popularity = -0.3}
+			add_popularity = { ideology = national_populist popularity = -0.3}
+		}
+	}
+	focus={
+		id=NYE_Universal_suffrage
+		icon=YEM_Universal_suffrage
+		x=18
+		y=14
+		prerequisite={focus=NYE_Purge_former_government_supporters}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas= YEM_Universal_suffrage
+		}
+	}
+	focus={
+		id=NYE_Promotion_of_progressive_officers
+		icon=YEM_Promotion_of_progressive_officers
+		x=20
+		y=13
+		prerequisite={focus=NYE_The_victory_of_the_Free_Yemeni_Movement}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_corps_commander = {
+				name = "Abdullah al-Sallal"
+				portrait_path = "gfx/leaders/YEM/Portrait_YEM_Abdullah_al_Sallal.png"
+				traits = {
+					thorough_planner
+					organisational_leader
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Ali Nasser Al-Qardai"
+				portrait_path = "gfx/leaders/YEM/Portrait_YEM_Ali_Nasser_Al-Qardai.png"
+				traits = {
+					trait_mountaineer
+					thorough_planner
+				}
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Hassal Al-Amiri"
+				portrait_path = "gfx/leaders/YEM/Portrait_YEM_Hassal_Al_Amiri.png"
+				traits = {
+					offensive_doctrine
+					trickster
+				}
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+	}
+	focus={
+		id=NYE_Lift_the_ban_on_partisanship
+		icon=YEM_Lift_the_ban_on_partisanship
+		x=20
+		y=14
+		prerequisite={focus=NYE_Promotion_of_progressive_officers}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas= YEM_Lift_the_ban_on_partisanship
+		}
+	}
+	focus={
+		id=NYE_Yemen_fighting_for_the_people
+		icon=YEM_Yemen_fighting_for_the_people
+		x=16
+		y=15
+		prerequisite={focus=NYE_Universal_suffrage}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=NYE_The_first_general_election
+		icon=YEM_The_first_general_election
+		x=19
+		y=15
+		prerequisite={focus=NYE_Universal_suffrage}
+		prerequisite={focus=NYE_Lift_the_ban_on_partisanship}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = yemen.53
+		}
+	}
+	focus={
+		id=NYE_Yemen_fighting_for_the_freedom
+		icon=YEM_Yemen_fighting_for_the_freedom
+		x=22
+		y=15
+		prerequisite={focus=NYE_Lift_the_ban_on_partisanship}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=NYE_Get_rid_of_slavery
+		icon=YEM_Get_rid_of_slavery
+		x=14
+		y=16
+		prerequisite={focus=NYE_Yemen_fighting_for_the_people}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_Anti_slavery_education
+		}
+	}
+	focus={
+		id=NYE_Fundamental_Bill_of_Rights
+		icon=YEM_Fundamental_Bill_of_Rights
+		x=14
+		y=17
+		prerequisite={focus=NYE_Get_rid_of_slavery}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Anti_slavery_education
+				add_idea = YEM_Anti_slavery_education2
+			}
+		}
+	}
+	focus={
+		id=NYE_Reform_the_land_system
+		icon=YEM_Reform_the_land_system
+		x=16
+		y=16
+		prerequisite={focus=NYE_Yemen_fighting_for_the_people}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			752 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+			293 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	focus={
+		id=NYE_Sweep_the_landlords_and_aristocrats
+		icon=YEM_Sweep_the_landlords_and_aristocrats
+		x=16
+		y=17
+		prerequisite={focus=NYE_Reform_the_land_system}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_radsoc_to_coalition = yes
+			add_political_power = 75
+			add_stability = 0.2
+	       add_war_support = 0.2
+		}
+	}
+	focus={
+		id=NYE_Promote_a_planned_economy
+		icon=YEM_Promote_a_planned_economy
+		x=18
+		y=16
+		prerequisite={focus=NYE_Yemen_fighting_for_the_people}
+		prerequisite={focus=NYE_The_first_general_election}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas= YEM_Promote_a_planned_economy
+		}
+	}
+	focus={
+		id=NYE_Local_elections_are_free
+		icon=YEM_Local_elections_are_free
+		x=20
+		y=16
+		prerequisite={focus=NYE_The_first_general_election}
+		prerequisite={focus=NYE_Yemen_fighting_for_the_freedom}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Universal_suffrage
+				add_idea = YEM_Universal_suffrage2
+			}
+		}
+	}
+	focus={
+		id=NYE_Learn_from_the_experience_of_elections
+		icon=YEM_Learn_from_the_experience_of_elections
+		x=19
+		y=17
+		prerequisite={focus=NYE_Promote_a_planned_economy focus=NYE_Local_elections_are_free }
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 300
+		}
+	}
+	focus={
+		id=NYE_Modernize_the_law
+		icon=YEM_Modernize_the_law
+		x=22
+		y=16
+		prerequisite={focus=NYE_Yemen_fighting_for_the_freedom}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = YEM_Modern_Law
+		}
+	}
+	focus={
+		id=NYE_Real_political_freedom
+		icon=YEM_Real_political_freedom
+		x=22
+		y=17
+		prerequisite={focus=NYE_Modernize_the_law}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Modern_Law
+				add_idea = YEM_Implementing_Islamic_law2
+			}
+		}
+	}
+	focus={
+		id=NYE_Introduce_foreign_capital
+		icon=YEM_Introduce_foreign_capital
+		x=24
+		y=16
+		prerequisite={focus=NYE_Yemen_fighting_for_the_freedom}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			659 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes 
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	focus={
+		id=NYE_Absorbing_the_Constitutional_Movement
+		icon=YEM_Absorbing_the_Constitutional_Movement
+		x=24
+		y=17
+		prerequisite={focus=NYE_Introduce_foreign_capital}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_authdem_to_coalition = yes
+			add_political_power = 75
+		}
+	}
+	focus={
+		id=NYE_Atheistic_society
+		icon=YEM_The_Red_Star_of_the_Red_Sea
+		x=15
+		y=18
+		prerequisite={focus=NYE_Fundamental_Bill_of_Rights}
+		prerequisite={focus=NYE_Sweep_the_landlords_and_aristocrats}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+				add_ideas = YEM_Atheist_society
+		}
+	}
+	focus={
+		id=NYE_Basic_decentralization
+		icon=YEM_Basic_decentralization
+		x=23
+		y=18
+		prerequisite={focus=NYE_Real_political_freedom}
+		prerequisite={focus=NYE_Absorbing_the_Constitutional_Movement}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = YEM_Modern_Law2
+				add_idea = YEM_Implementing_Islamic_law3
+			}
+		}
+	}
+	focus={
+		id=NYE_The_Red_Star_of_the_Red_Sea
+		icon=YEM_Atheistic_society
+		x=15
+		y=19
+		prerequisite={focus=NYE_Atheistic_society}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = YEM_Atheist_society
+				add_idea = YEM_Atheist_society1
+			}
+		}
+	}
+	focus={
+		id=NYE_New_government_new_Yemen
+		icon=YEM_New_government_new_Yemen
+		x=23
+		y=19
+		prerequisite={focus=NYE_Basic_decentralization}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+		}
+	}
+	focus={
+		id=NYE_Liberal_diplomacy
+		icon=YEM_Liberal_diplomacy
+		x=17
+		y=19
+		prerequisite={focus=NYE_Basic_decentralization }
+		mutually_exclusive={focus=NYE_Join_the_Third_International focus=NYE_Arab_League }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_government = totalist
+				has_government = syndicalist
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			CAN = {
+				add_to_faction = YEM
+			}
+		}
+	}
+	focus={
+		id=NYE_Join_the_Third_International
+		icon=YEM_Join_the_Third_International
+		x=19
+		y=19
+		prerequisite={focus=NYE_Atheistic_society }
+		mutually_exclusive={focus=NYE_Liberal_diplomacy focus=NYE_Arab_League }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_government = totalist
+				has_government = syndicalist
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			FRA = {
+				add_to_faction = YEM
+			}
+		}
+	}
+	focus={
+		id=NYE_Arab_League
+		icon=YEM_Arab_League
+		x=21
+		y=19
+		prerequisite={focus=NYE_Atheistic_society focus=NYE_Basic_decentralization }
+		mutually_exclusive={focus=NYE_Liberal_diplomacy focus=NYE_Join_the_Third_International }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_government = totalist
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = ETH }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = LBA }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = LEB }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = LBA }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = TRP }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = TUN }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = ALG }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = MOR }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = MRT }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = ERI }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = { is_core_of = DJI }
+				add_core_of = YEM
+			}
+			every_state = {
+				limit = {
+				OR = {
+					is_core_of = SOM
+					is_claimed_by = SOM
+					}
+				}
+				add_core_of = YEM
+			}
+			hidden_effect = {
+			819 = {	add_core_of = YEM }
+			352 = {	add_core_of = YEM }
+			350 = {	add_core_of = YEM }
+			450 = {	add_core_of = YEM }
+			905 = { add_core_of = YEM }
+			}
+			set_cosmetic_tag = YEM_Arab
+		}
+	}
+}

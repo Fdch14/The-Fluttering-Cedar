@@ -1,0 +1,1071 @@
+NR_National_Reconstruction_Commission_co = {
+	NR_National_Reconstruction_Commission_open = {
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+		available = {
+		}
+		
+		visible = {
+			NOT = {
+				has_country_flag = NR_NRC_open
+			}
+		}
+		
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = NR_NRC_open
+		}
+	}
+	NR_National_Reconstruction_Commission_close = {
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+		available = {
+		}
+		
+		visible = {
+			has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+
+		complete_effect = {
+			clr_country_flag = NR_NRC_open
+		}
+	}
+}
+NR_National_Reconstruction_Commission = {
+	NR_get_compiled1 = {
+
+		icon = AA_small
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  30
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		division_template = {
+			name = "General Infantry Division Type 1"
+			division_names_group = PP_NRARMY_00
+			regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 2 y = 2 }
+			artillery_brigade  = { x = 3 y = 0 }
+			artillery_brigade  = { x = 3 y = 1 }
+			artillery_brigade  = { x = 3 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+			}
+			}
+			set_division_template_lock = { division_template = "General Infantry Division Type 1" is_locked = yes }
+			set_country_flag = HNR_get_compiled1
+		}
+	}
+	NR_get_compiled2 = {
+
+		icon = AA_small
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		division_template = {
+			name = "General Infantry Division Type 2"
+			division_names_group = PP_NRARMY_00
+			regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 0 y = 3 }
+			infantry = { x = 0 y = 4 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 1 y = 3 }
+			infantry = { x = 1 y = 4 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			artillery_brigade  = { x = 3 y = 0 }
+			artillery_brigade  = { x = 3 y = 1 }
+			artillery_brigade  = { x = 3 y = 2 }
+			artillery_brigade  = { x = 3 y = 3 }
+			artillery_brigade  = { x = 3 y = 4 }
+			anti_air_brigade  = { x = 4 y = 0 }
+			anti_air_brigade  = { x = 4 y = 1 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+			}
+			}
+			set_division_template_lock = { division_template = "General Infantry Division Type 2" is_locked = yes }
+			set_country_flag = HNR_get_compiled2
+		}
+	}
+	NR_get_compiled3 = {
+
+		icon = AA_small
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+		division_template = {
+			name = "General Tank Division"
+			division_names_group = PP_NRARMY_00
+			regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 0 y = 3 }
+			infantry = { x = 0 y = 4 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 1 y = 3 }
+			infantry = { x = 1 y = 4 }
+			artillery_brigade  = { x = 2 y = 0 }
+			artillery_brigade  = { x = 2 y = 1 }
+			artillery_brigade  = { x = 2 y = 2 }
+			artillery_brigade  = { x = 2 y = 3 }
+			medium_armor  = { x = 3 y = 0 }
+			medium_armor  = { x = 3 y = 1 }
+			}
+			support = {
+				anti_air = { x = 0 y = 0 }
+			}
+			}
+			set_division_template_lock = { division_template = "General Tank Division" is_locked = yes }
+			set_country_flag = HNR_get_compiled3
+		}
+	}
+	NR_arms_factory_reconstruction_plan = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=arms_factory
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=arms_factory
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_industrial_complex_reconstruction_plan = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=industrial_complex
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=industrial_complex
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_arms_factory_reconstruction_plan2 = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=arms_factory
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=arms_factory
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_industrial_complex_reconstruction_plan2 = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=industrial_complex
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=industrial_complex
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_arms_factory_reconstruction_plan3 = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=arms_factory
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=arms_factory
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_industrial_complex_reconstruction_plan3 = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=industrial_complex
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=industrial_complex
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_exploitation_reconstruction_plan = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 7
+
+		remove_effect = {
+		random_owned_controlled_state={
+		add_extra_state_shared_building_slots=1
+		}
+		}
+	}
+	NR_exploitation_reconstruction_plan2 = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 7
+
+		remove_effect = {
+		random_owned_controlled_state={
+		add_extra_state_shared_building_slots=1
+		}
+		}
+	}
+	NR_exploitation_reconstruction_plan3 = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 7
+
+		remove_effect = {
+		random_owned_controlled_state={
+		add_extra_state_shared_building_slots=1
+		}
+		}
+	}
+	NR_air_base_plan = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=air_base
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=air_base
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_infrastructure_plan = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=infrastructure
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=infrastructure
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_anti_air_building_plan = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=anti_air_building
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=anti_air_building
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_synthetic_refinery_plan = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=synthetic_refinery
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=synthetic_refinery
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_fuel_silo_plan = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=fuel_silo
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=fuel_silo
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_construction_of_the_shipyard = {
+
+		icon = factories
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			prioritize={
+			}
+			limit={
+				free_building_slots={
+					building=dockyard
+					size>0
+					include_locked=yes
+				}
+			}
+			add_building_construction={
+				type=dockyard
+				level=1
+				instant_build=yes
+			}
+		}
+		}
+	}
+	NR_oil_reconstruction_plan = {
+
+		icon = generic_agriculture
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			add_resource = {
+				type = oil
+				amount = 10
+			}
+		}
+		}
+	}
+	NR_aluminium_reconstruction_plan = {
+
+		icon = generic_agriculture
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			add_resource = {
+				type = aluminium
+				amount = 10
+			}
+		}
+		}
+	}
+	NR_rubber_reconstruction_plan = {
+
+		icon = generic_agriculture
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			add_resource = {
+				type = rubber
+				amount = 10
+			}
+		}
+		}
+	}
+	NR_tungsten_reconstruction_plan = {
+
+		icon = generic_agriculture
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			add_resource = {
+				type = tungsten
+				amount = 10
+			}
+		}
+		}
+	}
+	NR_steel_reconstruction_plan = {
+
+		icon = generic_agriculture
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
+		}
+	}
+	NR_chromium_reconstruction_plan = {
+
+		icon = generic_agriculture
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state={
+			add_resource = {
+				type = chromium
+				amount = 10
+			}
+		}
+		}
+	}
+	NR_gongye_reconstruction_plan = {
+
+		icon = cash_flow
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  220
+		
+		available = {
+			NOT = {
+				has_idea = NR_GJGYH
+			}
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+			NOT = {
+				has_idea = NR_GJGYH
+			}
+		}
+		
+		fire_only_once = no
+
+		complete_effect = {
+		add_timed_idea = {
+				idea = NR_GJGYH
+				days = 365
+			}
+		}
+	}
+	NR_gongren_reconstruction_plan = {
+
+		icon = cash_flow
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  220
+		
+		available = {
+			NOT = {
+				has_idea = NR_HZGR
+			}
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+			NOT = {
+				has_idea = NR_HZGR
+			}
+		}
+		
+		fire_only_once = no
+
+		complete_effect = {
+		add_timed_idea = {
+				idea = NR_HZGR
+				days = 365
+			}
+		}
+	}
+	NR_training_troops1 = {
+
+		icon = soldierly_discipline
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  50
+		
+		available = {
+			has_country_flag = HNR_get_compiled1
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"General Infantry Division Type 1\" division_template = \"General Infantry Division Type 1\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+		}
+	}
+	NR_training_troops2 = {
+
+		icon = soldierly_discipline
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  70
+		
+		available = {
+		has_country_flag = HNR_get_compiled2
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"General Infantry Division Type 2\" division_template = \"General Infantry Division Type 2\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+		}
+	}
+	NR_training_troops3 = {
+
+		icon = soldierly_discipline
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  80
+		
+		available = {
+		has_country_flag = HNR_get_compiled3
+		}
+		
+		visible = {
+		has_country_flag = NR_NRC_open
+		}
+		
+		fire_only_once = no
+		days_remove = 20
+
+		remove_effect = {
+		random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"General Tank Division\" division_template = \"General Tank Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = ROOT
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,2838 @@
+ideas = {
+
+	country = {
+		LEB_idea_a_land_hard_to_govern = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_idea_a_land_hard_to_govern"}
+			picture = LEB_idea_a_land_hard_to_govern
+
+			allowed = { always = no }
+            modifier = {
+war_support_factor = -0.15
+production_speed_buildings_factor = -0.1
+consumer_goods_factor = -0.1
+industry_air_damage_factor = -0.30
+			}
+		}
+
+		LEB_religious_clashes = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_religious_clashes"}
+			picture = LEB_religious_clashes
+
+			allowed = { always = no }
+            modifier = {
+political_power_factor = -0.05
+stability_factor = -0.2
+industrial_capacity_factory = -0.1
+			}
+		}
+
+		LEB_gate_between_two_worlds = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_gate_between_two_worlds"}
+			picture = LEB_gate_between_two_worlds
+
+			allowed = { always = no }
+            modifier = {
+research_speed_factor = 0.15
+consumer_goods_factor = -0.15
+civilian_intel_to_others = 10
+trade_opinion_factor = 0.2
+opinion_gain_monthly_factor = 0.2
+			}
+		}
+
+
+		LEB_black_monday = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_black_monday"}
+			picture = LEB_black_monday
+
+			allowed = { always = no }
+            modifier = {
+consumer_goods_factor = 0.3
+stability_factor = -0.3
+industrial_capacity_factory = -0.3
+trade_opinion_factor = -0.3
+production_speed_buildings_factor = -0.3
+			}
+		}
+
+		LEB_black_monday_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_black_monday_1"}
+			picture = LEB_black_monday
+
+			allowed = { always = no }
+            modifier = {
+consumer_goods_factor = 0.2
+stability_factor = -0.2
+industrial_capacity_factory = -0.2
+trade_opinion_factor = -0.2
+production_speed_buildings_factor = -0.2
+			}
+		}
+
+		LEB_black_monday_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_black_monday_2"}
+			picture = LEB_black_monday
+
+			allowed = { always = no }
+            modifier = {
+consumer_goods_factor = 0.1
+stability_factor = -0.1
+industrial_capacity_factory = -0.1
+trade_opinion_factor = -0.1
+production_speed_buildings_factor = -0.1
+			}
+		}
+
+		LEB_food_assistance = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_food_assistance"}
+			picture = LEB_food_assistance
+
+			allowed = { always = no }
+            modifier = {
+consumer_goods_factor = 0.05
+industrial_capacity_factory = -0.05
+
+			}
+		}
+
+		LEB_religious_riots = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_religious_riots"}
+			picture = LEB_religious_riots
+
+			allowed = { always = no }
+            modifier = {
+political_power_factor = -0.2
+stability_factor = -0.3
+industrial_capacity_factory = -0.3
+			}
+		}
+
+		LEB_religious_riots_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_religious_riots_1"}
+			picture = LEB_religious_riots
+
+			allowed = { always = no }
+            modifier = {
+political_power_factor = -0.1
+stability_factor = -0.2
+industrial_capacity_factory = -0.2
+			}
+		}
+
+		LEB_religious_clashes_mitigated = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_religious_clashes_mitigated"}
+			picture = LEB_religious_clashes_mitigated
+
+			allowed = { always = no }
+            modifier = {
+political_power_factor = +0.05
+stability_factor = +0.05
+industrial_capacity_factory = +0.1
+command_power_gain = 0.30
+			}
+		}
+		
+		LEB_religious_clashes_calmed = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_religious_clashes_calmed"}
+			picture = LEB_religious_clashes_calmed
+
+			allowed = { always = no }
+            modifier = {
+political_power_factor = +0.10
+stability_factor = +0.10
+industrial_capacity_factory = +0.15
+command_power_gain = 0.45
+civilian_intel_to_others = -10
+
+			}
+		}
+		
+
+		LEB_an_new_era_for_vilayet = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_an_new_era_for_vilayet"}
+			picture = LEB_an_new_era_for_vilayet
+
+			allowed = { always = no }
+            modifier = {
+political_power_factor = +0.15
+research_speed_factor = 0.15
+trade_opinion_factor = 0.5
+production_factory_efficiency_gain_factor = 0.15
+line_change_production_efficiency_factor = 0.15
+global_building_slots_factor = 0.1
+opinion_gain_monthly_factor = 0.2
+			}
+		}
+		
+		
+		LEB_shia_appeased = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_shia_appeased"}
+			picture = LEB_shia_appeased
+
+			allowed = { always = no }
+            modifier = {
+political_power_gain = 0.25
+stability_factor = 0.15
+production_speed_buildings_factor = 0.15
+training_time_factor = -0.15
+out_of_supply_factor = -0.40
+conscription = 0.015
+army_org_factor = 0.1
+
+			}
+		}
+		
+		
+		LEB_maronite_appeased = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_maronite_appeased"}
+			picture = LEB_maronite_appeased
+
+			allowed = { always = no }
+            modifier = {
+research_speed_factor = 0.15
+army_speed_factor = 0.1
+global_building_slots_factor = 0.25
+industrial_capacity_factory = 0.15
+supply_consumption_factor = -0.2
+local_resources_factor = 0.2
+			}
+		}
+		
+		
+		LEB_overseas_remittance = { 
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_overseas_remittance"}
+			picture = LEB_oversea_investment
+
+			allowed = { always = no }
+            modifier = {
+political_power_gain = -0.40	
+consumer_goods_factor = -0.25		
+production_speed_buildings_factor = 0.5
+industrial_capacity_factory = 0.3
+
+			}
+		}
+		
+		LEB_idea_tourism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_idea_tourism"}
+			picture = LEB_tourism
+
+			allowed = { always = no }
+            modifier = {
+political_power_gain = 0.2
+trade_laws_cost_factor = -0.25
+stability_weekly = 0.005
+			}
+		}
+		
+		
+		LEB_gambling_industry = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_gambling_industry"}
+			picture = LEB_Gambling
+
+			allowed = { always = no }
+            modifier = {
+consumer_goods_factor = -0.15
+stability_factor = -0.05
+min_export = 0.1
+economy_cost_factor = 0.2
+			}
+		}
+		
+		LEB_gambling_industry_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_gambling_industry_1"}
+			picture = LEB_Gambling
+
+			allowed = { always = no }
+            modifier = {
+consumer_goods_factor = -0.25
+stability_factor = -0.08
+min_export = 0.15
+cavalry_attack_factor = 0.10
+cavalry_defence_factor = 0.10
+			}
+		}		
+		
+		LEB_hajj_port = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_hajj_port"}
+			picture = LEB_hajj_port
+
+			allowed = { always = no }
+            modifier = {
+		weekly_manpower = 400
+			}
+		}
+
+		LEB_new_jerusalem = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_hajj_port_1"}
+			picture = LEB_new_jerusalem
+
+			allowed = { always = no }
+            modifier = {
+		weekly_manpower = 600
+		research_speed_factor = 0.05
+		production_speed_buildings_factor = 0.05
+			}
+		}
+
+		LEB_idea_reopen_the_bank = {
+
+on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_idea_reopen_the_bank"}
+			picture = LEB_bank_reform
+
+			allowed = { always = no }
+            modifier = {
+		production_factory_max_efficiency_factor = 0.15
+		production_factory_start_efficiency_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		
+		
+LEB_idea_reopen_the_bank_1 = {
+
+on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_idea_reopen_the_bank_1"}
+			picture = LEB_bank_reform
+
+			allowed = { always = no }
+            modifier = {
+		production_factory_max_efficiency_factor = 0.25
+		production_factory_start_efficiency_factor = 0.25
+		production_factory_efficiency_gain_factor = 0.25
+			}
+		}
+
+LEB_oil_oil_oil = {
+
+on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_oil_oil_oil"}
+			picture = LEB_oil_stealing
+
+			allowed = { always = no }
+            modifier = {
+		production_speed_fuel_silo_factor = 0.5
+		max_fuel_factor = 0.5
+			}
+		}		
+	
+	
+	
+	
+
+
+
+		TUR_LEB_war = {
+			allowed = { always = no }
+			modifier = {
+			ai_call_ally_desire_factor = -1000
+			}
+			picture = LEB_idea_a_land_hard_to_govern
+		}
+		SSNP_Persian_Council_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Persian_Council_ideas" }
+			name = SSNP_Persian_Council_ideas
+			picture = PER_gendarmerie_idea_icon
+			allowed = { always = no }
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = PER
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = PER
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_Syrian_Committee_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Syrian_Committee_ideas" }
+			name = SSNP_Syrian_Committee_ideas
+			picture = SYR_Army
+			allowed = { always = no }
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = SYR
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SYR
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_Syrian_Committee_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Syrian_Committee_ideas1" }
+			name = SSNP_Syrian_Committee_ideas
+			picture = SYR_Army
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				weekly_manpower = 300
+			}
+			targeted_modifier = {
+				tag = SYR
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SYR
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_Syrian_Committee_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Syrian_Committee_ideas2" }
+			name = SSNP_Syrian_Committee_ideas
+			picture = SYR_Army
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				stability_factor = 0.07
+				weekly_manpower = 500
+			}
+			targeted_modifier = {
+				tag = SYR
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SYR
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_Iraq_Commission_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Iraq_Commission_ideas" }
+			name = SSNP_Iraq_Commission_ideas
+			picture = PER_gendarmerie_idea_icon
+			allowed = { always = no }
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = IRQ
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = IRQ
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_Iraq_Commission_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Iraq_Commission_ideas1" }
+			name = SSNP_Iraq_Commission_ideas
+			picture = IRQ_Coastal_Defense_Force
+			allowed = { always = no }
+			modifier = {
+			stability_factor = 0.03
+			consumer_goods_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = IRQ
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = IRQ
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_Revolt_against_the_Turks_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Revolt_against_the_Turks_ideas" }
+			name = SSNP_Revolt_against_the_Turks_ideas
+			picture = OTT_Horrors_of_the_Weltkrieg_idea_icon
+			allowed = { always = no }
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = TUR
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_Arab_Committee = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Arab_Committee" }
+			name = SSNP_Arab_Committee
+			picture = EGY_model_democracy_arab_world
+			allowed = { always = no }
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = JBS
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = JBS
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SAU
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SAU
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = YEM
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = YEM
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = OMA
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = OMA
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_Arab_Committee1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Arab_Committee1" }
+			name = SSNP_Arab_Committee
+			picture = EGY_model_democracy_arab_world
+			allowed = { always = no }
+			modifier = {
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = JBS
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = JBS
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SAU
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SAU
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = YEM
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = YEM
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = OMA
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = OMA
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_Arab_Committee2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Arab_Committee2" }
+			name = SSNP_Arab_Committee
+			picture = EGY_model_democracy_arab_world
+			allowed = { always = no }
+			modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.1
+				terrain_penalty_reduction = 0.2
+			}
+			targeted_modifier = {
+				tag = JBS
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = JBS
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SAU
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SAU
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = YEM
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = YEM
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = OMA
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = OMA
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_Egyptian_Committee = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Egyptian_Committee" }
+			name = SSNP_Egyptian_Committee
+			picture = EGY_free_independent_egypt
+			allowed = { always = no }
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = EGY
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = EGY
+				defense_bonus_against = 0.1
+			}
+		}
+		SSNP_the_rule_of_the_Socialist_National_Party_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_the_rule_of_the_Socialist_National_Party_ideas" }
+			name = SSNP_the_rule_of_the_Socialist_National_Party_ideas
+			picture = LEB_the_rule_of_the_Socialist_National_Party
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.005
+				drift_defence_factor = 0.2
+				paternal_autocrat_drift = 0.02
+			}
+		}
+		SSNP_the_rule_of_the_Socialist_National_Party_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_the_rule_of_the_Socialist_National_Party_ideas1" }
+			name = SSNP_the_rule_of_the_Socialist_National_Party_ideas
+			picture = LEB_the_rule_of_the_Socialist_National_Party
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.005
+				drift_defence_factor = 0.2
+				paternal_autocrat_drift = 0.02
+				initiative_factor = 0.1
+				planning_speed = 0.1
+				max_planning = 0.1
+			}
+		}
+		SSNP_freely_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_freely_ideas" }
+			name = SSNP_freely_ideas
+			picture = BBR_free_thought_societies
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.1
+				political_power_factor = 0.1
+			}
+		}
+		SSNP_freely_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_freely_ideas1" }
+			name = SSNP_freely_ideas
+			picture = BBR_free_thought_societies
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.15
+				political_power_factor = 0.15
+				attrition = -0.2
+			}
+		}
+		SSNP_freely_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_freely_ideas2" }
+			name = SSNP_freely_ideas
+			picture = BBR_free_thought_societies
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.2
+				political_power_factor = 0.2
+				attrition = -0.2
+				drift_defence_factor = -0.1
+				local_building_slots_factor = 0.1
+			}
+		}
+		SSNP_freely_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_freely_ideas3" }
+			name = SSNP_freely_ideas
+			picture = BBR_free_thought_societies
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.22
+				political_power_factor = 0.22
+				attrition = -0.2
+				drift_defence_factor = -0.1
+				local_building_slots_factor = 0.1
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+		SSNP_freely_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_freely_ideas4" }
+			name = SSNP_freely_ideas
+			picture = BBR_free_thought_societies
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.25
+				political_power_factor = 0.25
+				attrition = -0.25
+				drift_defence_factor = -0.15
+				local_building_slots_factor = 0.15
+				research_speed_factor = 0.12
+				local_resources_factor = 0.12
+			}
+		}
+		SSNP_progressive_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_progressive_ideas" }
+			name = SSNP_progressive_ideas
+			picture = progressive_society
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.2
+				military_leader_cost_factor = -0.5
+			}
+		}
+		SSNP_progressive_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_progressive_ideas1" }
+			name = SSNP_progressive_ideas
+			picture = progressive_society
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.25
+				military_leader_cost_factor = -0.5
+				mobilization_speed = 0.2
+			}
+		}
+		SSNP_progressive_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_progressive_ideas2" }
+			name = SSNP_progressive_ideas
+			picture = progressive_society
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.12
+				conscription_factor = 0.25
+				military_leader_cost_factor = -0.5
+				mobilization_speed = 0.2
+				consumer_goods_factor = -0.1
+				research_speed_factor = 0.1
+			}
+		}
+		SSNP_liability_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_liability_ideas" }
+			name = SSNP_liability_ideas
+			picture = ALB_traditions
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		SSNP_liability_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_liability_ideas1" }
+			name = SSNP_liability_ideas
+			picture = ALB_traditions
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		SSNP_liability_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_liability_ideas2" }
+			name = SSNP_liability_ideas
+			picture = ALB_traditions
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		SSNP_liability_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_liability_ideas3" }
+			name = SSNP_liability_ideas
+			picture = ALB_traditions
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				conscription_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		SSNP_liability_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_liability_ideas4" }
+			name = SSNP_liability_ideas
+			picture = ALB_traditions
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				conscription_factor = 0.05
+				line_change_production_efficiency_factor = 0.15
+			}
+		}
+		SSNP_Build_the_Motherland_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Build_the_Motherland_ideas" }
+			name = SSNP_Build_the_Motherland_ideas
+			picture = backward_industry
+			allowed = { always = no }
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		SSNP_Build_the_Motherland_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Build_the_Motherland_ideas1" }
+			name = SSNP_Build_the_Motherland_ideas
+			picture = backward_industry
+			allowed = { always = no }
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+				local_building_slots_factor = 0.1
+			}
+		}
+		SSNP_Build_the_Motherland_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Build_the_Motherland_ideas2" }
+			name = SSNP_Build_the_Motherland_ideas
+			picture = backward_industry
+			allowed = { always = no }
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+				local_building_slots_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SSNP_discipline_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_discipline_ideas" }
+			name = SSNP_discipline_ideas
+			picture = NFA_internal_discontent
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.2
+				stability_weekly = 0.005
+			}
+		}
+		SSNP_discipline_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_discipline_ideas1" }
+			name = SSNP_discipline_ideas
+			picture = NFA_internal_discontent
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.3
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				mobilization_speed = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		SSNP_discipline_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_discipline_ideas2" }
+			name = SSNP_discipline_ideas
+			picture = NFA_internal_discontent
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.35
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				mobilization_speed = 0.15
+				industrial_capacity_factory = 0.15
+				paternal_autocrat_drift = 0.02
+			}
+		}
+		SSNP_discipline_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_discipline_ideas3" }
+			name = SSNP_discipline_ideas
+			picture = NFA_internal_discontent
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.4
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				mobilization_speed = 0.2
+				industrial_capacity_factory = 0.2
+				paternal_autocrat_drift = 0.02
+			}
+		}
+		SSNP_discipline_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_discipline_ideas4" }
+			name = SSNP_discipline_ideas
+			picture = NFA_internal_discontent
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.4
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				mobilization_speed = 0.2
+				industrial_capacity_factory = 0.2
+				paternal_autocrat_drift = 0.05
+				repair_speed_factor = 0.2
+				no_supply_grace = 48
+				max_command_power = 300
+			}
+		}
+		SSNP_Rectification_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Rectification_ideas" }
+			name = SSNP_Rectification_ideas
+			picture = ALB_purge
+			allowed = { always = no }
+			modifier = {
+				compliance_growth = 0.01
+				resistance_decay = 0.01
+				resistance_target = -0.1
+			}
+		}
+		SSNP_Rectification_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_Rectification_ideas1" }
+			name = SSNP_Rectification_ideas
+			picture = ALB_purge
+			allowed = { always = no }
+			modifier = {
+				compliance_growth = 0.03
+				resistance_decay = 0.03
+				resistance_target = -0.15
+			}
+		}
+		SSNP_power_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_power_ideas" }
+			name = SSNP_power_ideas
+			picture = presidential_war_powers
+			allowed = { always = no }
+			modifier = {
+				breakthrough_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+		SSNP_power_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_power_ideas1" }
+			name = SSNP_power_ideas
+			picture = presidential_war_powers
+			allowed = { always = no }
+			modifier = {
+				breakthrough_factor = 0.05
+				army_attack_factor = 0.1
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+			}
+		}
+		SSNP_power_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_power_ideas2" }
+			name = SSNP_power_ideas
+			picture = presidential_war_powers
+			allowed = { always = no }
+			modifier = {
+				breakthrough_factor = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				army_artillery_attack_factor = 0.1
+			}
+		}
+		SSNP_power_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_power_ideas3" }
+			name = SSNP_power_ideas
+			picture = presidential_war_powers
+			allowed = { always = no }
+			modifier = {
+				breakthrough_factor = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				army_artillery_attack_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		SSNP_power_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_power_ideas4" }
+			name = SSNP_power_ideas
+			picture = presidential_war_powers
+			allowed = { always = no }
+			modifier = {
+				breakthrough_factor = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				army_artillery_attack_factor = 0.15
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.15
+			}
+		}
+		SSNP_reform_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_reform_ideas" }
+			name = SSNP_reform_ideas
+			picture = BRG_Republican_Spirit
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.2
+				production_resource_need_factor = -0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SSNP_reform_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_reform_ideas1" }
+			name = SSNP_reform_ideas
+			picture = BRG_Republican_Spirit
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.25
+				production_resource_need_factor = -0.25
+				production_speed_buildings_factor = 0.15
+				local_building_slots_factor = 0.1
+			}
+		}
+		SSNP_reform_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SSNP_reform_ideas2" }
+			name = SSNP_reform_ideas
+			picture = BRG_Republican_Spirit
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.3
+				production_resource_need_factor = -0.3
+				production_speed_buildings_factor = 0.2
+				local_building_slots_factor = 0.15
+			}
+		}
+		KATP_Lebanese_nationalism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_nationalism_ideas" }
+			name = KATP_Lebanese_nationalism_ideas
+			picture = SAF_native_service
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.3
+				stability_factor = 0.02
+				national_populist_drift = 0.2
+			}
+		}
+		KATP_Lebanese_nationalism_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_nationalism_ideas1" }
+			name = KATP_Lebanese_nationalism_ideas
+			picture = SAF_native_service
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.5
+				stability_factor = 0.07
+				national_populist_drift = 0.2
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+		KATP_Lebanese_nationalism_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_nationalism_ideas2" }
+			name = KATP_Lebanese_nationalism_ideas2
+			picture = SAF_native_service
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 1
+				stability_factor = 0.1
+				national_populist_drift = 0.2
+				army_morale_factor = 0.2
+				supply_consumption_factor = -0.2
+			}
+		}
+		KATP_Antisemitism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Antisemitism_ideas" }
+			name = KATP_Antisemitism_ideas
+			picture = COR_jewish_segregation
+			allowed = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				local_building_slots_factor = 0.1
+			}
+		}
+		KATP_Antisemitism_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Antisemitism_ideas1" }
+			name = KATP_Antisemitism_ideas
+			picture = COR_jewish_segregation
+			allowed = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		KATP_Antisemitism_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Antisemitism_ideas2" }
+			name = KATP_Antisemitism_ideas
+			picture = COR_jewish_segregation
+			allowed = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				local_building_slots_factor = 0.25
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		KATP_individualism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_individualism_ideas" }
+			name = KATP_individualism_ideas
+			picture = GER_fund_farmers
+			allowed = { always = no }
+			modifier = {
+				local_resources_factor = 0.05
+				research_speed_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		KATP_individualism_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_individualism_ideas1" }
+			name = KATP_individualism_ideas
+			picture = GER_fund_farmers
+			allowed = { always = no }
+			modifier = {
+				local_resources_factor = 0.1
+				research_speed_factor = 0.1
+				production_factory_start_efficiency_factor = 0.15
+				mobilization_speed = 0.2
+			}
+		}
+		KATP_New_Lebanese_Nation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_New_Lebanese_Nation" }
+			name = KATP_New_Lebanese_Nation
+			picture = GER_election_representation
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_weekly = 0.005
+				attrition = -0.1
+			}
+		}
+		KATP_New_Lebanese_Nation1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_New_Lebanese_Nation1" }
+			name = KATP_New_Lebanese_Nation
+			picture = GER_election_representation
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.2
+				stability_weekly = 0.01
+				attrition = -0.2
+				supply_factor = 0.05
+			}
+		}
+		KATP_The_Maroonite_faction_dominates = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_The_Maroonite_faction_dominates" }
+			name = KATP_The_Maroonite_faction_dominates
+			picture = christian_commonwealth
+			allowed = { always = no }
+			modifier = {
+				social_conservative_drift = -0.1
+				national_populist_drift = 0.1
+				breakthrough_factor = 0.05
+			}
+		}
+		KATP_The_Maroonite_faction_dominates1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_The_Maroonite_faction_dominates1" }
+			name = KATP_The_Maroonite_faction_dominates
+			picture = christian_commonwealth
+			allowed = { always = no }
+			modifier = {
+				social_conservative_drift = -0.1
+				national_populist_drift = 0.1
+				breakthrough_factor = 0.1
+				army_leader_start_level = 1
+				military_leader_cost_factor = -0.5
+			}
+		}
+		KATP_Organize_the_workers_and_peasants_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Organize_the_workers_and_peasants_ideas" }
+			name = KATP_Organize_the_workers_and_peasants_ideas
+			picture = BBR_workers_market
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		KATP_Organize_the_workers_and_peasants_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Organize_the_workers_and_peasants_ideas1" }
+			name = KATP_Organize_the_workers_and_peasants_ideas
+			picture = BBR_workers_market
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		KATP_Mobilize_the_masses_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Mobilize_the_masses_ideas" }
+			name = KATP_Mobilize_the_masses_ideas
+			picture = worker_coops
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		KATP_Mobilize_the_masses_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Mobilize_the_masses_ideas1" }
+			name = KATP_Mobilize_the_masses_ideas
+			picture = worker_coops
+			allowed = { always = no }
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		KATP_Mobilize_the_masses_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Mobilize_the_masses_ideas2" }
+			name = KATP_Mobilize_the_masses_ideas
+			picture = worker_coops
+			allowed = { always = no }
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		KATP_Lebanese_Forces_nouvelles_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_Forces_nouvelles_ideas" }
+			name = KATP_Lebanese_Forces_nouvelles_ideas
+			picture = army_cooperation
+			allowed = { always = no }
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_artillery_attack_factor =0.1
+			}
+		}
+		KATP_Lebanese_Forces_nouvelles_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_Forces_nouvelles_ideas1" }
+			name = KATP_Lebanese_Forces_nouvelles_ideas
+			picture = army_cooperation
+			allowed = { always = no }
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_artillery_attack_factor = 0.1
+				army_defence_factor = 0.1
+				mechanized_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+			}
+		}
+		KATP_Lebanese_Forces_nouvelles_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Lebanese_Forces_nouvelles_ideas2" }
+			name = KATP_Lebanese_Forces_nouvelles_ideas
+			picture = army_cooperation
+			allowed = { always = no }
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_artillery_attack_factor = 0.15
+				army_artillery_defence_factor = 0.15
+				army_defence_factor = 0.1
+				mechanized_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+			}
+		}
+		KATP_Falangist_discipline_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Falangist_discipline_ideas" }
+			name = KATP_Falangist_discipline_ideas
+			picture = NFA_dispo
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				terrain_penalty_reduction = 0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		KATP_Falangist_discipline_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Falangist_discipline_ideas1" }
+			name = KATP_Falangist_discipline_ideas
+			picture = NFA_dispo
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				terrain_penalty_reduction = 0.1
+				land_reinforce_rate = 0.1
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				war_support_weekly = 0.005
+			}
+		}
+		KATP_Falangist_discipline_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Falangist_discipline_ideas2" }
+			name = KATP_Falangist_discipline_ideas
+			picture = NFA_dispo
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				terrain_penalty_reduction = 0.15
+				land_reinforce_rate = 0.15
+				political_power_factor = 0.25
+				political_power_gain = 0.25
+				war_support_weekly = 0.01
+			}
+		}
+		KATP_National_syndicalist_progress_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_National_syndicalist_progress_ideas" }
+			name = KATP_National_syndicalist_progress_ideas
+			picture = syndicalist_resistance
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.2
+				mobilization_speed = 0.2
+			}
+		}
+		KATP_National_syndicalist_progress_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_National_syndicalist_progress_ideas1" }
+			name = KATP_National_syndicalist_progress_ideas
+			picture = syndicalist_resistance
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.2
+				mobilization_speed = 0.2
+				production_speed_buildings_factor = 0.05
+				offensive_war_stability_factor = 0.2
+				attrition = -0.1
+			}
+		}
+		KATP_National_syndicalist_progress_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_National_syndicalist_progress_ideas2" }
+			name = KATP_National_syndicalist_progress_ideas
+			picture = syndicalist_resistance
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.25
+				mobilization_speed = 0.25
+				production_speed_buildings_factor = 0.1
+				offensive_war_stability_factor = 0.25
+				attrition = -0.15
+			}
+		}
+		KATP_Dedication_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Dedication_ideas" }
+			name = KATP_Dedication_ideas
+			picture = NFA_compulsory_work
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		KATP_Dedication_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Dedication_ideas1" }
+			name = KATP_Dedication_ideas
+			picture = NFA_compulsory_work
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		KATP_Long_live_unity_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Long_live_unity_ideas" }
+			name = KATP_Long_live_unity_ideas
+			picture = generic_tourism
+			allowed = { always = no }
+			modifier = {
+				initiative_factor = 0.05
+				planning_speed = 0.05
+				max_planning = 0.05
+				experience_loss_factor = -0.05
+			}
+		}
+		KATP_Long_live_unity_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KATP_Long_live_unity_ideas1" }
+			name = KATP_Long_live_unity_ideas
+			picture = generic_tourism
+			allowed = { always = no }
+			modifier = {
+				initiative_factor = 0.1
+				planning_speed = 0.1
+				max_planning = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+		SOCL_Bridging_divisions_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Bridging_divisions_ideas" }
+			name = SOCL_Bridging_divisions_ideas
+			picture = generic_tourism
+			allowed = { always = no }
+			modifier = {
+				surrender_limit = 0.05
+				local_resources_factor = 0.05
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		SOCL_Bridging_divisions_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Bridging_divisions_ideas1" }
+			name = SOCL_Bridging_divisions_ideas1
+			picture = generic_tourism
+			allowed = { always = no }
+			modifier = {
+				surrender_limit = 0.1
+				local_resources_factor = 0.1
+				research_speed_factor = 0.1
+				consumer_goods_factor = -0.2
+			}
+		}
+		SOCL_Guiding_Marxism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Guiding_Marxism_ideas" }
+			name = SOCL_Guiding_Marxism_ideas
+			picture = GER_praise_marx
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		SOCL_Workers_Congress_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Workers_Congress_ideas" }
+			name = SOCL_Workers_Congress_ideas
+			picture = worker_guarantees
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				military_leader_cost_factor = -0.5
+				army_leader_start_level = 1
+			}
+		}
+		SOCL_Workers_Congress_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Workers_Congress_ideas1" }
+			name = SOCL_Workers_Congress_ideas
+			picture = worker_guarantees
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				breakthrough_factor = 0.1
+				military_leader_cost_factor = -0.5
+				army_leader_start_level = 2
+			}
+		}
+		SOCL_Classless_society_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Classless_society_ideas" }
+			name = SOCL_Classless_society_ideas
+			picture = worker_coops
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		SOCL_Classless_society_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Classless_society_ideas1" }
+			name = SOCL_Classless_society_ideas
+			picture = worker_coops
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_expected_value = -0.2
+			}
+		}
+		SOCL_Classless_society_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Classless_society_ideas2" }
+			name = SOCL_Classless_society_ideas
+			picture = worker_coops
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				consumer_goods_expected_value = -0.3
+			}
+		}
+		SOCL_Classless_society_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Classless_society_ideas3" }
+			name = SOCL_Classless_society_ideas
+			picture = worker_coops
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.25
+				production_speed_buildings_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				consumer_goods_expected_value = -0.3
+				conscription = 0.1
+				mobilization_speed = 0.2
+			}
+		}
+		SOCL_Ownership_reform_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Ownership_reform_ideas" }
+			name = SOCL_Ownership_reform_ideas
+			picture = Worksharingplan
+			allowed = { always = no }
+			modifier = {
+				attrition = -0.1
+				supply_factor = 0.1
+				army_org_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SOCL_Ownership_reform_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Ownership_reform_ideas1" }
+			name = SOCL_Ownership_reform_ideas
+			picture = Worksharingplan
+			allowed = { always = no }
+			modifier = {
+				attrition = -0.15
+				supply_factor = 0.15
+				army_org_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				compliance_growth = 0.05
+			}
+		}
+		SOCL_Build_the_Motherland_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Build_the_Motherland_ideas" }
+			name = SOCL_Build_the_Motherland_ideas
+			picture = agro_industrial_army
+			allowed = { always = no }
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		SOCL_Build_the_Motherland_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Build_the_Motherland_ideas1" }
+			name = SOCL_Build_the_Motherland_ideas
+			picture = agro_industrial_army
+			allowed = { always = no }
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		SOCL_Build_the_Motherland_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Build_the_Motherland_ideas2" }
+			name = SOCL_Build_the_Motherland_ideas2
+			picture = NOR_planned_economy
+			allowed = { always = no }
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		SOCL_Build_the_Motherland_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Build_the_Motherland_ideas3" }
+			name = SOCL_Build_the_Motherland_ideas2
+			picture = NOR_planned_economy
+			allowed = { always = no }
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		SOCL_Build_the_Motherland_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Build_the_Motherland_ideas4" }
+			name = SOCL_Build_the_Motherland_ideas2
+			picture = NOR_planned_economy
+			allowed = { always = no }
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+		SOCL_Social_security_system_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Social_security_system_ideas" }
+			name = SOCL_Social_security_system_ideas
+			picture = BBR_workers_aid
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.2
+				non_core_manpower = 0.2
+				mobilization_speed = 0.2
+			}
+		}
+		SOCL_Social_security_system_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Social_security_system_ideas1" }
+			name = SOCL_Social_security_system_ideas
+			picture = BBR_workers_aid
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.2
+				conscription_factor = 0.25
+				non_core_manpower = 0.25
+				mobilization_speed = 0.2
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		SOCL_Subsidiary_Islam_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Subsidiary_Islam_ideas" }
+			name = SOCL_Subsidiary_Islam_ideas
+			picture = OTT_institutionalised_islam
+			allowed = { always = no }
+			modifier = {
+				war_support_weekly = 0.005
+				stability_weekly = 0.005
+				send_volunteer_size = 2
+				drift_defence_factor = 0.2
+			}
+		}
+		SOCL_Subsidiary_Islam_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Subsidiary_Islam_ideas1" }
+			name = SOCL_Subsidiary_Islam_ideas1
+			picture = OTT_institutionalised_islam
+			allowed = { always = no }
+			modifier = {
+				war_support_weekly = 0.01
+				stability_weekly = 0.01
+				send_volunteer_size = 5
+				drift_defence_factor = 0.5
+			}
+		}
+		SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas" }
+			name = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas
+			picture = worker_coops
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas1" }
+			name = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas
+			picture = worker_coops
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_expected_value = -0.15
+				military_leader_cost_factor = -0.5
+			}
+		}
+		SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas2" }
+			name = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas
+			picture = worker_coops
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				consumer_goods_expected_value = -0.2
+				military_leader_cost_factor = -0.5
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SOCL_Anti_colonialism_front_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Anti_colonialism_front_ideas" }
+			name = SOCL_Anti_colonialism_front_ideas
+			picture = great_army
+			allowed = { always = no }
+			modifier = {
+				recon_factor = 0.2
+				land_reinforce_rate = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		SOCL_One_party_dominates_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_One_party_dominates_ideas" }
+			name = SOCL_One_party_dominates_ideas
+			picture = generic_investigation
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				military_leader_cost_factor = -0.5
+				army_leader_start_level = 1
+			}
+		}
+		SOCL_One_party_dominates_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_One_party_dominates_ideas1" }
+			name = SOCL_One_party_dominates_ideas
+			picture = generic_investigation
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				military_leader_cost_factor = -0.7
+				army_leader_start_level = 2
+			}
+		}
+		SOCL_One_party_dominates_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_One_party_dominates_ideas2" }
+			name = SOCL_One_party_dominates_ideas
+			picture = generic_investigation
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.3
+				political_power_gain = 0.3
+				military_leader_cost_factor = -1.2
+				army_leader_start_level = 2
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		SOCL_Pan_Arab_Pioneer = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Pan_Arab_Pioneer" }
+			name = SOCL_Pan_Arab_Pioneer
+			picture = generic_lightbulb
+			allowed = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				initiative_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+		SOCL_Pan_Arab_Pioneer1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Pan_Arab_Pioneer1" }
+			name = SOCL_Pan_Arab_Pioneer
+			picture = generic_lightbulb
+			allowed = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				initiative_factor = 0.15
+				planning_speed = 0.15
+				experience_gain_army_factor = 0.1
+				experience_gain_factor = 0.1
+			}
+		}
+		SOCL_Pan_Arab_Pioneer2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SOCL_Pan_Arab_Pioneer2" }
+			name = SOCL_Pan_Arab_Pioneer
+			picture = generic_lightbulb
+			allowed = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				initiative_factor = 0.15
+				planning_speed = 0.15
+				experience_gain_army_factor = 0.15
+				experience_gain_factor = 0.15
+				army_speed_factor = 0.1
+				org_loss_when_moving = -0.1
+			}
+		}
+		AMAL_Control_of_military_and_political_organs = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALMAL_Control_of_military_and_political_organs" }
+			name = AMAL_Control_of_military_and_political_organs
+			picture = army_cooperation
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.05
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+			}
+		}
+		AMAL_Control_of_military_and_political_organs1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALMAL_Control_of_military_and_political_organs1" }
+			name = AMAL_Control_of_military_and_political_organs1
+			picture = army_cooperation
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.05
+				army_attack_factor = 0.08
+				army_defence_factor = 0.08
+				breakthrough_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		AMAL_Control_of_military_and_political_organs2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALMAL_Control_of_military_and_political_organs2" }
+			name = AMAL_Control_of_military_and_political_organs1
+			picture = army_cooperation
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.1
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				breakthrough_factor = 0.15
+				war_support_factor = 0.1
+			}
+		}
+		AMAL_Defend_the_Motherland_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Defend_the_Motherland_ideas" }
+			name = AMAL_Defend_the_Motherland_ideas
+			picture = carm_elastic_defense_icon
+			allowed = { always = no }
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				production_speed_bunker_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		AMAL_Defend_the_Motherland_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Defend_the_Motherland_ideas1" }
+			name = AMAL_Defend_the_Motherland_ideas
+			picture = carm_elastic_defense_icon
+			allowed = { always = no }
+			modifier = {
+				production_speed_dockyard_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				army_core_defence_factor = 0.2
+				cavalry_defence_factor = 0.1
+				army_armor_defence_factor = 0.1
+			}
+		}
+		AMAL_Strengthen_your_defenses_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALMAL_Strengthen_your_defenses_ideas" }
+			name = AMAL_Strengthen_your_defenses_ideas
+			picture = generic_ultranationalism
+			allowed = { always = no }
+			modifier = {
+				supply_factor = 0.1
+				army_defence_factor = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		AMAL_Strengthen_your_defenses_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALMAL_Strengthen_your_defenses_ideas1" }
+			name = AMAL_Strengthen_your_defenses_ideas
+			picture = generic_ultranationalism
+			allowed = { always = no }
+			modifier = {
+				supply_factor = 0.2
+				army_defence_factor = 0.2
+				research_speed_factor = 0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		AMAL_Foreign_Military_Advisory_Groups_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Foreign_Military_Advisory_Groups_ideas" }
+			name = AMAL_Foreign_Military_Advisory_Groups_ideas
+			picture = UK_military_loyal_idea
+			allowed = { always = no }
+			modifier = {
+				experience_gain_army_factor = 0.1
+				experience_gain_factor = 0.1
+				army_attack_factor = 0.1
+				cas_damage_reduction = 0.2
+				mobilization_speed = 0.1
+			}
+		}
+		AMAL_Restructuring_of_the_militia_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Restructuring_of_the_militia_ideas" }
+			name = AMAL_Restructuring_of_the_militia_ideas
+			picture = GER_quenched_militarism
+			allowed = { always = no }
+			modifier = {
+				supply_consumption_factor = -0.1
+				org_loss_when_moving = -0.1
+				army_strength_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		AMAL_Restructuring_of_the_militia_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Restructuring_of_the_militia_ideas1" }
+			name = AMAL_Restructuring_of_the_militia_ideas1
+			picture = GER_quenched_militarism
+			allowed = { always = no }
+			modifier = {
+				supply_consumption_factor = -0.2
+				org_loss_when_moving = -0.2
+				army_strength_factor = 0.2
+				army_org_factor = 0.2
+			}
+		}
+		AMAL_Restructuring_of_the_militia_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Restructuring_of_the_militia_ideas2" }
+			name = AMAL_Restructuring_of_the_militia_ideas1
+			picture = GER_quenched_militarism
+			allowed = { always = no }
+			modifier = {
+				supply_consumption_factor = -0.3
+				org_loss_when_moving = -0.3
+				army_strength_factor = 0.3
+				army_org_factor = 0.3
+			}
+		}
+		AMAL_Equality_and_justice_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Equality_and_justice_ideas" }
+			name = AMAL_Equality_and_justice_ideas
+			picture = republican_justice_1
+			allowed = { always = no }
+			modifier = {
+				resistance_target = -0.2
+				resistance_decay = 0.1
+				compliance_growth = 0.2
+				required_garrison_factor = -0.15
+				attrition = -0.1
+			}
+		}
+		AMAL_Equality_and_justice_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Equality_and_justice_ideas1" }
+			name = AMAL_Equality_and_justice_ideas
+			picture = republican_justice_1
+			allowed = { always = no }
+			modifier = {
+				resistance_target = -0.25
+				resistance_decay = 0.15
+				compliance_growth = 0.25
+				required_garrison_factor = -0.2
+				attrition = -0.15
+			}
+		}
+		AMAL_Islamic_scholars_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Islamic_scholars_ideas" }
+			name = AMAL_Islamic_scholars_ideas
+			picture = OTT_institutionalised_islam
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		AMAL_Islamic_scholars_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Islamic_scholars_ideas1" }
+			name = AMAL_Islamic_scholars_ideas
+			picture = OTT_institutionalised_islam
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.2
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
+		AMAL_Levy_tribute_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Levy_tribute_ideas" }
+			name = AMAL_Levy_tribute_ideas
+			picture = give_money
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_expected_value = -0.15
+				consumer_goods_factor = -0.15
+				political_power_gain = 0.2
+			}
+		}
+		AMAL_Re_decide_on_administrative_divisions_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Re_decide_on_administrative_divisions_ideas" }
+			name = AMAL_Re_decide_on_administrative_divisions_ideas
+			picture = KTG_Industrial_Crisis_Town
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.15
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		AMAL_Re_decide_on_administrative_divisions_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Re_decide_on_administrative_divisions_ideas1" }
+			name = AMAL_Re_decide_on_administrative_divisions_ideas
+			picture = KTG_Industrial_Crisis_Town
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.2
+				political_power_factor = 0.25
+				political_power_gain = 0.25
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		AMAL_Re_decide_on_administrative_divisions_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Re_decide_on_administrative_divisions_ideas2" }
+			name = AMAL_Re_decide_on_administrative_divisions_ideas
+			picture = KTG_Industrial_Crisis_Town
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.25
+				political_power_factor = 0.3
+				political_power_gain = 0.3
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				drift_defence_factor = 0.5
+			}
+		}
+		AMAL_Arab_nationalism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Arab_nationalism_ideas" }
+			name = AMAL_Arab_nationalism_ideas
+			picture = JBS_Bedouin_Faction
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.3
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		AMAL_Arab_nationalism_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Arab_nationalism_ideas1" }
+			name = AMAL_Arab_nationalism_ideas
+			picture = JBS_Bedouin_Faction
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.4
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				production_speed_buildings_factor = 0.1
+				breakthrough_factor = 0.1
+			}
+		}
+		AMAL_Arab_nationalism_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Arab_nationalism_ideas2" }
+			name = AMAL_Arab_nationalism_ideas
+			picture = JBS_Bedouin_Faction
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.5
+				political_power_factor = 0.25
+				political_power_gain = 0.25
+				production_speed_buildings_factor = 0.15
+				breakthrough_factor = 0.15
+				land_reinforce_rate = 0.1
+			}
+		}
+		AMAL_The_experience_of_Mount_Shermail_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_experience_of_Mount_Shermail_ideas" }
+			name = AMAL_The_experience_of_Mount_Shermail_ideas
+			picture = JBS_Rashidi_Arabia
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		AMAL_The_experience_of_Mount_Shermail_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_experience_of_Mount_Shermail_ideas1" }
+			name = AMAL_The_experience_of_Mount_Shermail_ideas
+			picture = JBS_Rashidi_Arabia
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.2
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		AMAL_White_Cedar_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_White_Cedar_ideas" }
+			name = AMAL_White_Cedar_ideas
+			picture = LEB_White_Cedar
+			allowed = { always = no }
+			modifier = {
+				army_org_factor = 0.2
+				surrender_limit = 0.1
+				consumer_goods_factor = -0.2
+				field_officer_promotion_penalty = -0.2
+			}
+		}
+		AMAL_White_Cedar_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_White_Cedar_ideas1" }
+			name = AMAL_White_Cedar_ideas
+			picture = LEB_White_Cedar
+			allowed = { always = no }
+			modifier = {
+				army_org_factor = 0.25
+				surrender_limit = 0.15
+				consumer_goods_factor = -0.25
+				field_officer_promotion_penalty = -0.25
+				local_building_slots_factor = 0.1
+			}
+		}
+		AMAL_White_Cedar_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_White_Cedar_ideas2" }
+			name = AMAL_White_Cedar_ideas
+			picture = LEB_White_Cedar
+			allowed = { always = no }
+			modifier = {
+				army_org_factor = 0.35
+				surrender_limit = 0.15
+				consumer_goods_factor = -0.3
+				field_officer_promotion_penalty = -0.3
+				local_building_slots_factor = 0.2
+			}
+		}
+		AMAL_White_Cedar_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_White_Cedar_ideas3" }
+			name = AMAL_White_Cedar_ideas
+			picture = LEB_White_Cedar
+			allowed = { always = no }
+			modifier = {
+				army_org_factor = 0.35
+				surrender_limit = 0.15
+				consumer_goods_factor = -0.35
+				consumer_goods_expected_value = -0.1
+				field_officer_promotion_penalty = -0.35
+				local_building_slots_factor = 0.25
+			}
+		}
+		AMAL_Al_Sham_Arab_Liberation_Army_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Al_Sham_Arab_Liberation_Army_ideas" }
+			name = AMAL_Al_Sham_Arab_Liberation_Army_ideas
+			picture = EGY_model_democracy_arab_world
+			allowed = { always = no }
+			modifier = {
+				initiative_factor = 0.1
+				planning_speed = 0.1
+				max_planning = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+		AMAL_Al_Sham_Arab_Liberation_Army_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Al_Sham_Arab_Liberation_Army_ideas1" }
+			name = AMAL_Al_Sham_Arab_Liberation_Army_ideas
+			picture = EGY_model_democracy_arab_world
+			allowed = { always = no }
+			modifier = {
+				initiative_factor = 0.15
+				planning_speed = 0.15
+				max_planning = 0.15
+				experience_loss_factor = -0.15
+			}
+		}
+		AMAL_Al_Sham_Arab_Liberation_Army_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Al_Sham_Arab_Liberation_Army_ideas2" }
+			name = AMAL_Al_Sham_Arab_Liberation_Army_ideas
+			picture = EGY_model_democracy_arab_world
+			allowed = { always = no }
+			modifier = {
+				initiative_factor = 0.15
+				planning_speed = 0.15
+				max_planning = 0.15
+				experience_loss_factor = -0.15
+				breakthrough_factor = 0.1
+			}
+		}
+		AMAL_Al_Sham_Arab_Liberation_Army_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Al_Sham_Arab_Liberation_Army_ideas3" }
+			name = AMAL_Al_Sham_Arab_Liberation_Army_ideas
+			picture = EGY_model_democracy_arab_world
+			allowed = { always = no }
+			modifier = {
+				initiative_factor = 0.2
+				planning_speed = 0.2
+				max_planning = 0.2
+				experience_loss_factor = -0.2
+				breakthrough_factor = 0.2
+			}
+		}
+		AMAL_German_consultant_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_German_consultant_ideas" }
+			name = AMAL_German_consultant_ideas
+			picture = HOL_totalist_military
+			allowed = { always = no }
+			modifier = {
+				recon_factor = 0.1
+				land_reinforce_rate = 0.1
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+			}
+		}
+		AMAL_German_consultant_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_German_consultant_ideas1" }
+			name = AMAL_German_consultant_ideas
+			picture = HOL_totalist_military
+			allowed = { always = no }
+			modifier = {
+				recon_factor = 0.2
+				land_reinforce_rate = 0.2
+				army_infantry_attack_factor = 0.2
+				army_infantry_defence_factor = 0.2
+			}
+		}
+		AMAL_Lebanese_Order_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_Order_ideas" }
+			name = AMAL_Lebanese_Order_ideas
+			picture = TUR_golden_age_of_islam
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.1
+				paternal_autocrat_drift = 0.2
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+			}
+		}
+		AMAL_Lebanese_Order_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_Order_ideas1" }
+			name = AMAL_Lebanese_Order_ideas
+			picture = TUR_golden_age_of_islam
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.15
+				paternal_autocrat_drift = 0.25
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+			}
+		}
+		AMAL_Lebanese_Order_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_Order_ideas2" }
+			name = AMAL_Lebanese_Order_ideas
+			picture = TUR_golden_age_of_islam
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				paternal_autocrat_drift = 0.25
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				local_resources_factor = 0.1
+			}
+		}
+		AMAL_Lebanese_Order_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_Order_ideas3" }
+			name = AMAL_Lebanese_Order_ideas
+			picture = TUR_golden_age_of_islam
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.25
+				production_speed_buildings_factor = 0.15
+				paternal_autocrat_drift = 0.25
+				stability_weekly = 0.015
+				war_support_weekly = 0.015
+				local_resources_factor = 0.15
+			}
+		}
+		AMAL_Lebanese_Order_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_Order_ideas4" }
+			name = AMAL_Lebanese_Order_ideas
+			picture = TUR_golden_age_of_islam
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.3
+				production_speed_buildings_factor = 0.2
+				command_power_gain = 0.1
+				paternal_autocrat_drift = 0.25
+				stability_weekly = 0.015
+				war_support_weekly = 0.015
+				local_resources_factor = 0.2
+			}
+		}
+		AMAL_Religious_colleges_were_opened_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_colleges_were_opened_ideas" }
+			name = AMAL_Religious_colleges_were_opened_ideas
+			picture = OTT_institutionalised_islam
+			allowed = { always = no }
+			modifier = {
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				attrition = -0.1
+			}
+		}
+		AMAL_Religious_colleges_were_opened_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_colleges_were_opened_ideas1" }
+			name = AMAL_Religious_colleges_were_opened_ideas
+			picture = OTT_institutionalised_islam
+			allowed = { always = no }
+			modifier = {
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+				attrition = -0.15
+				supply_factor = 0.1
+			}
+		}
+		AMAL_Religious_colleges_were_opened_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_colleges_were_opened_ideas2" }
+			name = AMAL_Religious_colleges_were_opened_ideas
+			picture = OTT_institutionalised_islam
+			allowed = { always = no }
+			modifier = {
+				command_power_gain_mult = 0.2
+				max_command_power_mult = 0.2
+				attrition = -0.2
+				supply_factor = 0.15
+			}
+		}
+		AMAL_Lebanese_tactics_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Lebanese_tactics_ideas" }
+			name = AMAL_Lebanese_tactics_ideas
+			picture = VIN_Centralized_Militia_Command
+			allowed = { always = no }
+			modifier = {
+				army_org_factor = 0.1
+				dig_in_speed_factor = 0.3
+				dig_in_speed = 1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		AMAL_imams_are_supreme_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas" }
+			name = AMAL_imams_are_supreme_ideas
+			picture = NGR_at_islam
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				mobilization_speed = 0.2
+				supply_factor = 0.1
+			}
+		}
+		AMAL_imams_are_supreme_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas1" }
+			name = AMAL_imams_are_supreme_ideas
+			picture = NGR_at_islam
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				mobilization_speed = 0.4
+				supply_factor = 0.2
+				initiative_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+		AMAL_imams_are_supreme_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas2" }
+			name = AMAL_imams_are_supreme_ideas
+			picture = NGR_at_islam
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				mobilization_speed = 0.4
+				supply_factor = 0.2
+				initiative_factor = 0.2
+				planning_speed = 0.2
+				experience_loss_factor = -0.2
+				experience_gain_army_factor = 0.2
+			}
+		}
+		AMAL_imams_are_supreme_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas3" }
+			name = AMAL_imams_are_supreme_ideas
+			picture = NGR_at_islam
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				mobilization_speed = 0.5
+				supply_factor = 0.3
+				initiative_factor = 0.25
+				planning_speed = 0.25
+				experience_loss_factor = -0.2
+				experience_gain_army_factor = 0.2
+			}
+		}
+		AMAL_imams_are_supreme_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas4" }
+			name = AMAL_imams_are_supreme_ideas
+			picture = NGR_at_islam
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				mobilization_speed = 0.55
+				supply_factor = 0.35
+				initiative_factor = 0.25
+				planning_speed = 0.25
+				experience_loss_factor = -0.25
+				experience_gain_army_factor = 0.25
+			}
+		}
+		AMAL_Religious_Census_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_Census_ideas" }
+			name = AMAL_Religious_Census_ideas
+			picture = islam
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				monthly_population = 0.3
+				stability_weekly = 0.005
+			}
+		}
+		AMAL_Religious_Census_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_Census_ideas1" }
+			name = AMAL_Religious_Census_ideas1 
+			picture = islam
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				monthly_population = 0.5
+				drift_defence_factor = 0.5
+				stability_weekly = 0.01
+			}
+		}
+		AMAL_Religious_Census_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Religious_Census_ideas2" }
+			name = AMAL_Religious_Census_ideas1 
+			picture = islam
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.25
+				political_power_gain = 0.25
+				monthly_population = 0.7
+				drift_defence_factor = 0.5
+				stability_weekly = 0.015
+			}
+		}
+		AMAL_Heresy_Segregation_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas" }
+			name = AMAL_Heresy_Segregation_ideas
+			picture = everything_is_fine
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				terrain_penalty_reduction = 0.1
+			}
+		}
+		AMAL_Heresy_Segregation_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas1" }
+			name = AMAL_Heresy_Segregation_ideas
+			picture = everything_is_fine
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+				terrain_penalty_reduction = 0.2
+			}
+		}
+		AMAL_Heresy_Segregation_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_imams_are_supreme_ideas2" }
+			name = AMAL_Heresy_Segregation_ideas
+			picture = everything_is_fine
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.3
+				consumer_goods_factor = -0.3
+				terrain_penalty_reduction = 0.3
+				war_support_weekly = 0.005
+			}
+		}
+		AMAL_1785_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_1785_ideas" }
+			name = AMAL_1785_ideas
+			picture = CAN_militarism_idea
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.1
+				national_populist_drift = 0.1
+				local_resources_factor = 0.1
+				local_building_slots_factor = 0.1
+			}
+		}
+		AMAL_1785_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_1785_ideas1" }
+			name = AMAL_1785_ideas
+			picture = CAN_militarism_idea
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.15
+				national_populist_drift = 0.15
+				local_resources_factor = 0.15
+				local_building_slots_factor = 0.15
+			}
+		}
+		AMAL_1785_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_1785_ideas2" }
+			name = AMAL_1785_ideas
+			picture = CAN_militarism_idea
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.2
+				national_populist_drift = 0.2
+				local_resources_factor = 0.2
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		AMAL_warriors_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_warriors_idea" }
+			name = AMAL_warriors_idea
+			picture = AFG_tribal_cavalry
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				cas_damage_reduction = 0.2
+				experience_gain_factor = 0.2
+			}
+		}
+		AMAL_warriors_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_warriors_idea1" }
+			name = AMAL_warriors_idea
+			picture = AFG_tribal_cavalry
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_armor_defence_factor = 0.1
+				army_armor_speed_factor = 0.1
+				cas_damage_reduction = 0.25
+				experience_gain_factor = 0.25
+			}
+		}
+		AMAL_warriors_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_warriors_idea2" }
+			name = AMAL_warriors_idea
+			picture = AFG_tribal_cavalry
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_armor_defence_factor = 0.1
+				army_armor_speed_factor = 0.1
+				cas_damage_reduction = 0.3
+				experience_gain_factor = 0.3
+			}
+		}
+		AMAL_warriors_idea3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_warriors_idea3" }
+			name = AMAL_warriors_idea
+			picture = AFG_tribal_cavalry
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25
+				army_armor_defence_factor = 0.15
+				army_armor_speed_factor = 0.15
+				cas_damage_reduction = 0.35
+				experience_gain_factor = 0.35
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		AMAL_warriors_idea4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_warriors_idea4" }
+			name = AMAL_warriors_idea
+			picture = AFG_tribal_cavalry
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25
+				army_armor_defence_factor = 0.15
+				army_armor_speed_factor = 0.15
+				cas_damage_reduction = 0.35
+				experience_gain_factor = 0.35
+				org_loss_when_moving = -0.2
+				max_planning = 0.1
+				fuel_gain_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		AMAL_Allah_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Allah_ideas" }
+			name = AMAL_Allah_ideas
+			picture = death_men
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.2
+				production_speed_nuclear_reactor_factor = 0.2
+				research_speed_factor = 5
+			}
+		}
+		AMAL_Allah_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Allah_ideas1" }
+			name = AMAL_Allah_ideas1
+			picture = death_men
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.2
+				production_speed_nuclear_reactor_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_synthetic_refinery_factor = 0.2
+				research_speed_factor = 5
+			}
+		}
+		AMAL_Allah_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Allah_ideas2" }
+			name = AMAL_Allah_ideas2
+			picture = death_men
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.2
+				production_speed_nuclear_reactor_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_synthetic_refinery_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+				research_speed_factor = 5
+			}
+		}
+		AMAL_Allah_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Allah_ideas3" }
+			name = AMAL_Allah_ideas3
+			picture = death_men
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.4
+				production_speed_buildings_factor = 0.4
+				production_speed_nuclear_reactor_factor = 0.4
+				production_speed_arms_factory_factor = 0.4
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_synthetic_refinery_factor = 0.4
+				production_speed_dockyard_factor = 0.4
+				production_speed_bunker_factor = 0.4
+				production_speed_infrastructure_factor = 0.4
+				research_speed_factor = 5
+			}
+		}
+		AMAL_Allah_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_Allah_ideas4" }
+			name = AMAL_Allah_ideas4
+			picture = death_men
+			allowed = { always = no }
+			modifier = {
+				local_building_slots_factor = 0.4
+				production_speed_buildings_factor = 0.4
+				production_speed_nuclear_reactor_factor = 0.4
+				production_speed_arms_factory_factor = 0.4
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_synthetic_refinery_factor = 0.4
+				production_speed_dockyard_factor = 0.4
+				production_speed_bunker_factor = 0.4
+				production_speed_infrastructure_factor = 0.4
+				repair_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+				repair_speed_rail_way_factor = 0.2
+				research_speed_factor = 5
+				local_resources_factor = 5
+			}
+		}
+		AMAL_The_Day_of_Retribution_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_Day_of_Retribution_ideas" }
+			name = AMAL_The_Day_of_Retribution_ideas
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.2
+			}
+		}
+		AMAL_The_Day_of_Retribution_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_Day_of_Retribution_ideas1" }
+			name = AMAL_The_Day_of_Retribution_ideas1
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.2
+				roduction_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+			}
+		}
+		AMAL_The_Day_of_Retribution_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_Day_of_Retribution_ideas2" }
+			name = AMAL_The_Day_of_Retribution_ideas2
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.2
+				roduction_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				military_leader_cost_factor = -1
+				army_leader_start_level = 10
+				conscription = 0.15
+			}
+		}
+		AMAL_The_Day_of_Retribution_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_Day_of_Retribution_ideas3" }
+			name = AMAL_The_Day_of_Retribution_ideas3
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.4
+				army_defence_factor = 0.4
+				army_speed_factor = 0.2
+				roduction_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				military_leader_cost_factor = -1
+				army_leader_start_level = 10
+				conscription = 0.2
+				conscription_factor = 1
+			}
+		}
+		AMAL_The_Day_of_Retribution_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_Day_of_Retribution_ideas4" }
+			name = AMAL_The_Day_of_Retribution_ideas4
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.4
+				army_defence_factor = 0.4
+				army_speed_factor = 0.2
+				roduction_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				military_leader_cost_factor = -1
+				army_leader_start_level = 10
+				conscription = 0.2
+				conscription_factor = 1
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+		AMAL_The_Day_of_Retribution_ideas5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_Day_of_Retribution_ideas5" }
+			name = AMAL_The_Day_of_Retribution_ideas5
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.4
+				army_defence_factor = 0.4
+				army_speed_factor = 0.2
+				roduction_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				military_leader_cost_factor = -1
+				army_leader_start_level = 10
+				conscription = 0.2
+				conscription_factor = 1
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				org_loss_when_moving = -0.5
+				army_bonus_air_superiority_factor = 1
+				cas_damage_reduction = 1
+			}
+		}
+		AMAL_The_Day_of_Retribution_ideas6 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_Day_of_Retribution_ideas6" }
+			name = AMAL_The_Day_of_Retribution_ideas6
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.4
+				army_defence_factor = 0.4
+				army_speed_factor = 0.2
+				roduction_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				military_leader_cost_factor = -1
+				army_leader_start_level = 10
+				conscription = 0.2
+				conscription_factor = 1
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				org_loss_when_moving = -0.5
+				army_bonus_air_superiority_factor = 1
+				cas_damage_reduction = 1
+				experience_loss_factor = -0.2
+				experience_gain_army_factor = 0.2
+				experience_gain_factor = 0.2
+			}
+		}
+		AMAL_The_Day_of_Retribution_ideas7 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_Day_of_Retribution_ideas7" }
+			name = AMAL_The_Day_of_Retribution_ideas7
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.4
+				army_defence_factor = 0.4
+				army_speed_factor = 0.2
+				roduction_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				military_leader_cost_factor = -1
+				army_leader_start_level = 10
+				conscription = 0.2
+				conscription_factor = 1
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				org_loss_when_moving = -0.5
+				army_bonus_air_superiority_factor = 1
+				cas_damage_reduction = 1
+				experience_loss_factor = -0.2
+				experience_gain_army_factor = 0.2
+				experience_gain_factor = 0.2
+				land_night_attack = 1
+				army_fuel_consumption_factor = -1
+				air_mission_efficiency = 1
+			}
+		}
+		AMAL_The_Day_of_Retribution_ideas8 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AMAL_The_Day_of_Retribution_ideas8" }
+			name = AMAL_The_Day_of_Retribution_ideas8
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.6
+				army_defence_factor = 0.6
+				army_speed_factor = 0.4
+				roduction_factory_max_efficiency_factor = 0.4
+				production_factory_efficiency_gain_factor = 0.4
+				production_factory_start_efficiency_factor = 0.4
+				military_leader_cost_factor = -2
+				army_leader_start_level = 10
+				conscription = 0.4
+				conscription_factor = 2
+				line_change_production_efficiency_factor = 0.4
+				industrial_capacity_factory = 0.4
+				industrial_capacity_dockyard = 0.4
+				org_loss_when_moving = -1
+				army_bonus_air_superiority_factor = 2
+				cas_damage_reduction = 2
+				experience_loss_factor = -0.4
+				experience_gain_army_factor = 0.4
+				experience_gain_factor = 0.4
+				land_night_attack = 2
+				army_fuel_consumption_factor = -2
+				air_mission_efficiency = 2
+			}
+		}
+	}	
+}

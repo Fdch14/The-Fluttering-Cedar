@@ -1,0 +1,78 @@
+MOJ_attack_EGY = {
+	icon = GFX_decision_category_canals
+	picture = GFX_decision_cat_picture_CEA_cannibalism
+	
+	allowed = {
+		original_tag = PAL
+	}
+	visible = {
+		original_tag = PAL
+	}
+	
+	priority = 100
+
+}
+SUE_Investigate_corruption_thoroughly_decision = {
+	icon = GFX_decision_category_canals
+	
+	allowed = {
+		original_tag = SUE
+	}
+	visible = {
+		has_country_flag = Suez_Corruption_incidents_Flag
+		has_completed_focus = SUZ_Corruption_case_in_the_Governor_Generals_Government_of_Rheinbaben
+	}
+	visible_when_empty = yes
+	
+	priority = 100
+
+}
+YEM_Yemen_lib_decision = {
+	icon = GFX_decision_cat_caf_rebelion
+	
+	allowed = {
+		original_tag = YEM
+		OR = {
+			NOT = {
+				has_completed_focus = NYE_The_new_constitution_of_Yemen
+			}
+			NOT = {
+				has_completed_focus = NYE_Reconciliation_with_Free_Yemen
+			}
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+	}
+	visible = {
+		original_tag = YEM
+		OR = {
+			NOT = {
+				has_completed_focus = NYE_The_new_constitution_of_Yemen
+			}
+			NOT = {
+				has_completed_focus = NYE_Reconciliation_with_Free_Yemen
+			}
+			NOT = {
+				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
+			}
+		}
+	}
+	visible_when_empty = yes
+	scripted_gui = Yemen_lib_GUI
+	
+	priority = 100
+
+}
+ISR_coup_crisis_decision = {
+	icon = GFX_decision_cat_caf_rebelion
+	picture = GFX_decision_cat_picture_CEA_cannibalism
+	allowed = {
+		tag = ISR
+	}
+	visible = {
+		tag = ISR
+		has_war_with = EGY
+	}
+	priority = 500
+}

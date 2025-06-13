@@ -1,0 +1,608 @@
+scripted_gui = {
+
+	THE_Arab_unit_GUI = {
+		context_type = decision_category
+		parent_window_token = politics_tab
+		window_name = "THE_Arab_unit_GUI"
+
+		ai_check = {
+			always = no
+		}
+
+		triggers = {
+			Readiness_for_the_Algerian_uprising_name_visible = {
+				has_country_flag = arab_gui_Algeria_vis
+				NFA = {
+					controls_state = 805
+					controls_state = 459
+					controls_state = 460
+					controls_state = 513
+					controls_state = 514
+				}
+			}
+			Algeria_revolt_visible = {
+				has_country_flag = arab_gui_Algeria_vis
+				NOT = {
+					NFA = {
+						controls_state = 805
+						controls_state = 459
+						controls_state = 460
+						controls_state = 513
+						controls_state = 514
+					}
+				}
+			}
+			Algeria_Owner_visible = {
+				has_country_flag = arab_gui_Algeria_vis
+			}
+			Egypt_revolt_visible = {
+				has_country_flag = arab_gui_Egypt_vis
+			}
+			Egypt_Owner_visible = {
+				has_country_flag = arab_gui_Egypt_vis
+			}
+			Yeman_revolt_visible = {
+				has_country_flag = arab_gui_Yeman_vis
+			}
+			Yeman_Owner_visible = {
+				has_country_flag = arab_gui_Yeman_vis
+			}
+			Tunisia_revolt_visible = {
+				has_country_flag = arab_gui_Tunisia_vis
+			}
+			Tunisia_Owner_visible = {
+				has_country_flag = arab_gui_Tunisia_vis
+			}
+			Readiness_for_the_Tripolitania_uprising_name_visible = {
+				has_country_flag = arab_gui_Tripolitania_vis
+				TUR = {
+					controls_state = 448
+					controls_state = 273
+				}
+			}
+			Tripolitania_revolt_visible = {
+				has_country_flag = arab_gui_Tripolitania_vis
+				NOT = {
+					TUR = {
+						controls_state = 448
+						controls_state = 273
+					}
+				}
+			}
+			Tripolitania_Owner_visible = {
+				has_country_flag = arab_gui_Tripolitania_vis
+			}
+			Readiness_for_the_Syria_uprising_name_visible = {
+				has_country_flag = arab_gui_Syria_vis
+				TUR = {
+					controls_state = 455
+					controls_state = 554
+					controls_state = 995
+					controls_state = 680
+					controls_state = 677
+					controls_state = 344
+				}
+			}
+			Syria_revolt_visible = {
+				has_country_flag = arab_gui_Syria_vis
+				NOT = {
+					TUR = {
+						controls_state = 455
+						controls_state = 554
+						controls_state = 995
+						controls_state = 680
+						controls_state = 677
+						controls_state = 344
+					}
+				}
+			}
+			Syria_Owner_visible = {
+				has_country_flag = arab_gui_Syria_vis
+			}
+			Somalia_revolt_visible = {
+				has_country_flag = arab_gui_Somalia_vis
+			}
+			Somalia_Owner_visible = {
+				has_country_flag = arab_gui_Somalia_vis
+			}
+			Saudi_Arabia_revolt_visible = {
+				has_country_flag = arab_gui_Saudi_Arabia_vis
+			}
+			Saudi_Arabia_Owner_visible = {
+				has_country_flag = arab_gui_Saudi_Arabia_vis
+			}
+			Oman_revolt_visible = {
+				has_country_flag = arab_gui_Oman_vis
+			}
+			Oman_Owner_visible = {
+				has_country_flag = arab_gui_Oman_vis
+			}
+			Morocco_revolt_visible = {
+				has_country_flag = arab_gui_Morocco_vis
+			}
+			Morocco_Owner_visible = {
+				has_country_flag = arab_gui_Morocco_vis
+			}
+			Libya_revolt_visible = {
+				has_country_flag = arab_gui_Libya_vis
+			}
+			Libya_Owner_visible = {
+				has_country_flag = arab_gui_Libya_vis
+			}
+			Jabal_Shammar_revolt_visible = {
+				has_country_flag = arab_gui_Jabal_Shammar_vis
+			}
+			Jabal_Shammar_Owner_visible = {
+				has_country_flag = arab_gui_Jabal_Shammar_vis
+			}
+			Readiness_for_the_Iraq_uprising_name_visible = {
+				has_country_flag = arab_gui_Iraq_vis
+				TUR = {
+					controls_state = 349
+					controls_state = 676
+					controls_state = 291
+					controls_state = 812
+				}
+			}
+			Iraq_revolt_visible = {
+				has_country_flag = arab_gui_Iraq_vis
+				NOT = {
+					TUR = {
+						controls_state = 349
+						controls_state = 676
+						controls_state = 291
+						controls_state = 812
+					}
+				}
+			}
+			Iraq_Owner_visible = {
+				has_country_flag = arab_gui_Iraq_vis
+			}
+			Readiness_for_the_Hejaz_uprising_name_visible = {
+				has_country_flag = arab_gui_Hejaz_vis
+				TUR = {
+					controls_state = 754
+					controls_state = 679
+				}
+			}
+			Hejaz_revolt_visible = {
+				has_country_flag = arab_gui_Hejaz_vis
+				NOT = {
+					TUR = {
+						controls_state = 754
+						controls_state = 679
+					}
+				}
+			}
+			Hejaz_Owner_visible = {
+				has_country_flag = arab_gui_Hejaz_vis
+			}
+		}
+		
+		visible = {
+		}
+
+		effects = {
+			arab_gui_Algeria_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Algeria_vis
+						}
+					}
+					set_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+					clr_country_flag = arab_gui_Egypt_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Algeria_vis
+					}
+					clr_country_flag = arab_gui_Algeria_vis
+				}
+			}
+			arab_gui_Egypt_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Egypt_vis
+						}
+					}
+					set_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Egypt_vis
+					}
+					clr_country_flag = arab_gui_Egypt_vis
+				}
+			}
+			arab_gui_Hejaz_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Hejaz_vis
+						}
+					}
+					set_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Hejaz_vis
+					}
+					clr_country_flag = arab_gui_Hejaz_vis
+				}
+			}
+			arab_gui_Iraq_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Iraq_vis
+						}
+					}
+					set_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Iraq_vis
+					}
+					clr_country_flag = arab_gui_Iraq_vis
+				}
+			}
+			arab_gui_Jabal_Shammar_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Jabal_Shammar_vis
+						}
+					}
+					set_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Jabal_Shammar_vis
+					}
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+				}
+			}
+			arab_gui_Libya_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Libya_vis
+						}
+					}
+					set_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Libya_vis
+					}
+					clr_country_flag = arab_gui_Libya_vis
+				}
+			}
+			arab_gui_Morocco_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Morocco_vis
+						}
+					}
+					set_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Morocco_vis
+					}
+					clr_country_flag = arab_gui_Morocco_vis
+				}
+			}
+			arab_gui_Oman_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Oman_vis
+						}
+					}
+					set_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Oman_vis
+					}
+					clr_country_flag = arab_gui_Oman_vis
+				}
+			}
+			arab_gui_Saudi_Arabia_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Saudi_Arabia_vis
+						}
+					}
+					set_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Saudi_Arabia_vis
+					}
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+				}
+			}
+			arab_gui_Somalia_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Somalia_vis
+						}
+					}
+					set_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Somalia_vis
+					}
+					clr_country_flag = arab_gui_Somalia_vis
+				}
+			}
+			arab_gui_Syria_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Syria_vis
+						}
+					}
+					set_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Syria_vis
+					}
+					clr_country_flag = arab_gui_Syria_vis
+				}
+			}
+			arab_gui_Tripolitania_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Tripolitania_vis
+						}
+					}
+					set_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Tripolitania_vis
+					}
+					clr_country_flag = arab_gui_Tripolitania_vis
+				}
+			}
+			arab_gui_Tunisia_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Tunisia_vis
+						}
+					}
+					set_country_flag = arab_gui_Tunisia_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Tunisia_vis
+					}
+					clr_country_flag = arab_gui_Tunisia_vis
+				}
+			}
+			arab_gui_Yeman_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = arab_gui_Yeman_vis
+						}
+					}
+					set_country_flag = arab_gui_Yeman_vis
+					clr_country_flag = arab_gui_Libya_vis
+					clr_country_flag = arab_gui_Jabal_Shammar_vis
+					clr_country_flag = arab_gui_Iraq_vis
+					clr_country_flag = arab_gui_Hejaz_vis
+					clr_country_flag = arab_gui_Egypt_vis
+					clr_country_flag = arab_gui_Algeria_vis
+					clr_country_flag = arab_gui_Morocco_vis
+					clr_country_flag = arab_gui_Oman_vis
+					clr_country_flag = arab_gui_Saudi_Arabia_vis
+					clr_country_flag = arab_gui_Somalia_vis
+					clr_country_flag = arab_gui_Syria_vis
+					clr_country_flag = arab_gui_Tripolitania_vis
+					clr_country_flag = arab_gui_Tunisia_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = arab_gui_Yeman_vis
+					}
+					clr_country_flag = arab_gui_Yeman_vis
+				}
+			}
+		}
+	}
+}

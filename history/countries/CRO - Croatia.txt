@@ -1,0 +1,441 @@
+﻿capital = 109
+
+set_research_slots = 3
+
+oob = "CRO"
+
+set_cosmetic_tag = ILL
+starting_train_buffer = 0.5
+
+set_technology = {
+	basic_train = 1
+	### Tanks ###
+	### INF ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "CRO_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			early_bombs = 1
+			engines_1 = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			air_torpedoe_1 = 1
+		}
+		CRO_BBA_air_variants = yes
+	else = {
+		set_air_oob = "CRO_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+			cv_early_fighter = 1
+			cv_CAS1 = 1
+		}
+	}
+}
+
+### Navy - MtG ###
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		panzerschiffe = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_carrier = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		
+		basic_naval_mines = 1
+
+		## Modules##
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+
+		### Transport ###
+		mtg_transport = 1
+	}
+}
+
+### Navy - Non MtG ###
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		basic_submarine = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battlecruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+
+		### Transport ###
+		transport = 1
+	}
+}
+
+save_global_event_target_as = Croatian_Republic
+
+add_ideas = {
+	CRO_Vladko_Macek_hog_sli
+	CRO_Ivo_Krbek_for_sli
+	CRO_Barisa_Smoljan_eco_sli
+	CRO_Franjo_Gazi_sec_sli
+
+	AUS_part_of_the_Empire
+	CRO_croatian_command
+	ILL_federated_army
+	CRO_ethnic_clashes
+	CRO_rampant_corruption
+}
+
+set_stability = 0.4
+set_war_support = 0.1
+add_manpower = 100000
+
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    totalist = 5
+    radical_socialist = 15
+    syndicalist = 5
+    social_democrat = 13
+    social_liberal = 19
+    market_liberal = 18
+    social_conservative = 3
+    authoritarian_democrat = 7
+    paternal_autocrat = 5
+    national_populist = 10
+}
+
+set_convoys = 30
+
+create_country_leader = {
+	name = "Josip Broz Tito"
+	desc = ""
+	picture = "gfx/leaders/CRO/CRO_tito.png"
+	expire = "1.1.1"
+	ideology = popcom_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ivan Zepp"
+	desc = ""
+	picture = "gfx/leaders/CRO/Portrait_CRO_Ivan_Zepp.png"
+	expire = "1.1.1"
+	ideology = anarcho_syndicalist_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mirko Kus-Nikolajev"
+	desc = ""
+	picture = "gfx/leaders/CRO/Portrait_CRO_Mirko_Kus_Nikolajev.png"
+	expire = "1.1.1"
+	ideology = croatian_socialism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Stjepan Radic"
+	desc = ""
+	picture = "gfx/leaders/CRO/Portrait_CRO_Stjepan_Radic.png"
+	expire = "1.1.1"
+	ideology = socdem_agrarianism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Vladko Maček"
+	desc = "CRO_VLADKO_MACEK_DESC"
+	picture = "gfx/leaders/CRO/CRO_vladko_macek_KX.png"
+	expire = "1.1.1"
+	ideology = national_liberalism_subtype
+}
+create_country_leader = {
+	name = "Svetozar Pribićević"
+	desc = "CRO_SVETOZAR_PRIBICEVIC_DESC"
+	picture = "gfx/leaders/CRO/CRO_Svetozar_Pribicevic.png"
+	expire = "1.1.1"
+	ideology = marlib_national_liberalism_subtype
+}
+create_country_leader = {
+	name = "Alojzije Stepinac"
+	desc = ""
+	picture = "gfx/leaders/CRO/Portrait_CRO_Alojzije_Stepinac.png"
+	expire = "1.1.1"
+	ideology = christian_democracy_subtype
+}
+create_country_leader = {
+	name = "Vinko Krišković"
+	desc = ""
+	picture = "gfx/leaders/CRO/Portrait_CRO_Vinko_Kriskovic.png"
+	expire = "1.1.1"
+	ideology = generic_national_democracy_subtype
+}
+create_country_leader = {
+	name = "Ivo Pillar"
+	desc = "CRO_IVO_PILLAR_DESC"
+	picture = "gfx/leaders/CRO/Portrait_CRO_Ivo_Pillar.png"
+	expire = "1.1.1"
+	ideology = pataut_right_syndicalism_subtype
+}
+create_country_leader = {
+	name = "Ante Pavelić"
+	desc = ""
+	picture = "gfx/leaders/CRO/CRO_ante_pavelic.png"
+	expire = "1.1.1"
+	ideology = ustase_subtype
+}
+
+### Field Marshal
+create_field_marshal = { #Real
+	name = "Slavko Kvaternik"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Slavko_Kvaternik.png"
+	traits = {
+		defensive_doctrine
+		old_guard
+		organizer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_field_marshal = { #Real
+	name = "Emil Milan Uzelac"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Emil_Milan_Uzelac.png"
+	traits = {
+		war_hero
+		old_guard
+		organizer
+		naval_liason
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+### Corps Commander
+create_corps_commander = {#Real
+	name = "Slavko Stancer"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Slavko_Stancer.png"
+	traits = {
+		old_guard
+		organizer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {#Real
+	name = "Mihajlo Lukić"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Mihajlo_Lukic.png"
+	traits = {
+		trait_mountaineer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {#Real
+	name = "Fedor Dragojlov"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Fedor_Dragojlov.png"
+	traits = {
+		organizer
+		trait_engineer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {#Real
+	name = "Vilim Begić"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Vilim_Begic.png"
+	traits = {
+		old_guard
+		trait_engineer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Eduard Bona-Bunić"#Real
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Eduard_Bona-Bunic.png"
+	traits = {
+		armor_officer
+		cavalry_leader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {#Real
+	name = "Matija Čanić"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Matija_Canic.png"
+	traits = {
+		infantry_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {#Real
+	name = "Vladimir Laxa"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Vladimir_Laxa.png"
+	traits = {
+		old_guard
+		trait_mountaineer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {#Real
+	name = "Đuro Dragičević"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Duro_Dragicevic.png"
+	traits = {
+		war_hero
+		trait_engineer
+		organizer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Krsto Popović"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Krsto_Popovic.png"
+	traits = {
+		war_hero
+		old_guard
+		trait_mountaineer
+		trickster
+		guerilla_officer
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mihovil Vujicic"
+	portrait_path = "gfx/leaders/CRO/Portrait_CRO_Mihovil_Vujicic.png"
+	traits = {
+		infantry_officer
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Navy Leader
+create_navy_leader = { #Auto-Generated
+	name = "Đuro Jakčin"
+	portrait_path = "gfx/leaders/Generic/Portrait_Europe_Generic_navy_new_1.png"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = { #Auto-Generated
+	name = "Edgar Angeli"
+	portrait_path = "gfx/leaders/FIU/FIU_Edgar_Angeli.png"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = { #Auto-Generated
+	name = "Nikola Steinfel"
+	portrait_path = "gfx/leaders/Generic/Portrait_Europe_Generic_navy_new_2.png"
+	traits = {
+		seawolf
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+#country_event = { #Sarajevo bombing!
+#	id = bos.1
+#	days = 120
+#	random = 5760
+#}

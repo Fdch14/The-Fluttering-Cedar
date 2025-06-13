@@ -1,0 +1,2569 @@
+focus_tree = {
+	id = mutasarrifate_jerusalem_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PAL
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 600 y = 1500 }
+	focus={
+		id=MOJ_New_Years_Agenda_in_Jerusalem
+		icon=PAL_New_Years_Agenda_in_Jerusalem
+		x=3
+		y=0
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.1
+		}
+	}
+	focus={
+		id=MOJ_Strengthen_Kemalist_education
+		icon=PAL_Strengthen_Kemalist_education
+		x=1
+		y=1
+		prerequisite={focus=MOJ_New_Years_Agenda_in_Jerusalem}
+		mutually_exclusive={focus=MOJ_Strengthening_Palestinian_national_identity focus=MOJ_Equal_pay_for_equal_work_for_multiple_ethnic_groups }
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Kemalist_continued
+				add_idea = PAL_Kemalist_continued_2			
+			}
+		}
+	}
+	focus={
+		id=MOJ_Strengthening_Palestinian_national_identity
+		icon=PAL_Strengthening_Palestinian_national_identity
+		x=3
+		y=1
+		prerequisite={focus=MOJ_New_Years_Agenda_in_Jerusalem}
+		mutually_exclusive={focus=MOJ_Strengthen_Kemalist_education focus=MOJ_Equal_pay_for_equal_work_for_multiple_ethnic_groups }
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_stability = 0.1
+		}
+	}
+	focus={
+		id=MOJ_Equal_pay_for_equal_work_for_multiple_ethnic_groups
+		icon=PAL_Equal_pay_for_equal_work_for_multiple_ethnic_groups
+		x=5
+		y=1
+		prerequisite={focus=MOJ_New_Years_Agenda_in_Jerusalem}
+		mutually_exclusive={focus=MOJ_Strengthen_Kemalist_education focus=MOJ_Strengthening_Palestinian_national_identity }
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = Equal_pay_for_equal_work_for_multiple_ethnic_groups_2
+		}
+	}
+	focus={
+		id=MOJ_Jaffa_Seaport
+		icon=PAL_Jaffa_Seaport
+		x=3
+		y=2
+		prerequisite={focus=MOJ_Strengthen_Kemalist_education focus=MOJ_Strengthening_Palestinian_national_identity focus=MOJ_Equal_pay_for_equal_work_for_multiple_ethnic_groups }
+		cost=0.5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = Jaffa_Seaport_tt
+		}
+	}
+	focus={
+		id=MOJ_Completed_the_1935_census
+		icon=GFX_goal_SKM_Recruit_Village_Manpower
+		x=3
+		y=3
+		prerequisite={focus=MOJ_Jaffa_Seaport}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.2
+		}
+	}
+	focus={
+		id=MOJ_Administrative_system_issues
+		icon=PAL_Administrative_system_issues
+		x=3
+		y=4
+		prerequisite={focus=MOJ_Completed_the_1935_census}
+		prerequisite={focus=MOJ_Relieve_Shortages}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		available = {
+			NOT = { has_country_flag = pal_black_monday_flag }
+		}
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = MOJ_Administrative_system_issues_TT
+			swap_ideas = {
+				remove_idea = PAL_Bloated_administrative_system
+				add_idea = PAL_Bloated_administrative_system1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Reform_the_Palestinian_Israeli_dispute
+		icon=PAL_Reform_the_Palestinian_Israeli_dispute
+		x=2
+		y=5
+		prerequisite={focus=MOJ_Administrative_system_issues}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.14
+		}
+	}
+	focus={
+		id=MOJ_Reconstitution_of_urban_population
+		icon=PAL_Reconstitution_of_urban_population
+		x=0
+		y=6
+		prerequisite={focus=MOJ_Reform_the_Palestinian_Israeli_dispute}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.4
+		}
+	}
+	focus={
+		id=MOJ_Security_gendarmerie
+		icon=PAL_Security_gendarmerie
+		x=2
+		y=6
+		prerequisite={focus=MOJ_Reform_the_Palestinian_Israeli_dispute}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+
+	random_owned_controlled_state ={
+		prioritize= 12049
+			limit = {is_in_home_area=yes}
+			create_unit = {
+			division= "name = \"said Güvenlik Jandarma\" division_template =\"Güvenlik Jandarma\"start_experience_factor = 0.4"
+			owner = PREV
+			count = 1
+		}
+	}
+	random_owned_controlled_state ={
+		prioritize= 1065
+			limit = {is_in_home_area=yes}
+			create_unit = {
+				division= "name = \"Haifa Güvenlik Jandarma\" division_template =\"Güvenlik Jandarma\"start_experience_factor = 0.4"
+				owner = PREV
+				count = 1
+			}
+		}
+	}
+}
+	focus={
+		id=MOJ_De_Ottoman_authority
+		icon=PAL_De_Ottoman_authority
+		x=2
+		y=7
+		prerequisite={focus=MOJ_Security_gendarmerie}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = PAL_Bloated_administrative_system1
+			add_autonomy_ratio = {
+				value = 0.3
+				localization = NR_Nominal_international_trusteeship
+			}
+		}
+	}
+	focus={
+		id=MOJ_Suez_Exchange_Agreement
+		icon=PAL_Suez_Exchange_Agreement
+		x=0
+		y=8
+		prerequisite={focus=MOJ_Reconstitution_of_urban_population}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = {
+				id = MOJ.8
+				days = 1
+			}
+			hidden_effect = {
+			GER = {
+             country_event = MOJ.16
+			}
+		  }	
+		}
+	  }
+	focus={
+		id=MOJ_Resettlement_Multi_Ethnic_Immigration_Act
+		icon=PAL_Resettlement_Multi_Ethnic_Immigration_Act
+		x=2
+		y=8
+		prerequisite={focus=MOJ_De_Ottoman_authority}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.7
+		}
+	}
+	focus={
+		id=MOJ_Efficient_administrative_system
+		icon=PAL_Efficient_administrative_system
+		x=4
+		y=5
+		prerequisite={focus=MOJ_Administrative_system_issues}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.3
+		}
+	}
+	focus={
+		id=MOJ_Economic_Integration_Report
+		icon=PAL_Economic_Integration_Report
+		x=4
+		y=6
+		prerequisite={focus=MOJ_Efficient_administrative_system}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.6
+		}
+	}
+	focus={
+		id=MOJ_Urban_roads
+		icon=PAL_Urban_roads
+		x=4
+		y=7
+		prerequisite={focus=MOJ_Economic_Integration_Report}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			454 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+					province = 4206
+				}
+			}
+			454 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+					province = 1086
+				}
+			}
+			
+		}
+	}
+	focus={
+		id=MOJ_Supplies_Railway
+		icon=PAL_Supplies_Railway
+		x=6
+		y=7
+		prerequisite={focus=MOJ_Economic_Integration_Report}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			build_railway = { #铺设铁路
+		path = { 1086 4206 4088 4161 11979 1155 12049 }
+	}
+		}
+	}
+	focus={
+		id=MOJ_Jordanian_irrigation
+		icon=PAL_Jordanian_irrigation
+		x=5
+		y=8
+		prerequisite={focus=MOJ_Urban_roads}
+		prerequisite={focus=MOJ_Supplies_Railway}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			453 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+					province = 1112
+				}
+			}
+			453 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+					province = 1155
+				}
+			}
+		}
+	}
+	focus={
+		id=MOJ_Construction_of_the_Jaffa_seaport_begins
+		icon=PAL_Construction_of_the_Jaffa_seaport_begins
+		x=3
+		y=9
+		prerequisite={focus=MOJ_Resettlement_Multi_Ethnic_Immigration_Act}
+		prerequisite={focus=MOJ_Jordanian_irrigation}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		available = {
+			has_completed_focus = MOJ_Suez_Exchange_Agreement
+		}
+		completion_reward={
+			add_ideas = MOJ_Jaffa_Seaport_ideas
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=MOJ_Palestinian_communist_attack
+		icon=PAL_Palestinian_communist_attack
+		x=8
+		y=5
+		prerequisite={focus=MOJ_Administrative_system_issues}
+		allow_branch = {
+			NOT = { 
+				check_variable = {
+					var = MOJ_Palestinian_attack_var
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MOJ_Harness_the_power_of_the_Zionist
+		icon=PAL_Harness_the_power_of_the_Zionist
+		x=8
+		y=6
+		prerequisite={focus=MOJ_Palestinian_communist_attack}
+		allow_branch = {
+			NOT = { 
+				check_variable = {
+					var = MOJ_Palestinian_attack_var
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Verana_Zionist_Union
+				add_idea = PAL_Verana_Zionist_Union_2			
+			}
+		}
+	}
+	focus={
+		id=MOJ_Sinai_Border_Patrol
+		icon=PAL_Sinai_Border_Patrol
+		x=8
+		y=7
+		prerequisite={focus=MOJ_Harness_the_power_of_the_Zionist}
+		allow_branch = {
+			NOT = { 
+				check_variable = {
+					var = MOJ_Palestinian_attack_var
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.13
+		}
+	}
+	focus={
+		id=MOJ_Ottoman_military_assistance_was_requested
+		icon=PAL_Ottoman_military_assistance_was_requested
+		x=10
+		y=6
+		prerequisite={focus=MOJ_Palestinian_communist_attack}
+		allow_branch = {
+			NOT = { 
+				check_variable = {
+					var = MOJ_Palestinian_attack_var
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+				producer = TUR
+
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = TUR
+			}
+		}
+	}
+	focus={
+		id=MOJ_Tel_Aviv_Light_Weapons_Factory
+		icon=PAL_Tel_Aviv_Light_Weapons_Factory
+		x=10
+		y=7
+		prerequisite={focus=MOJ_Ottoman_military_assistance_was_requested}
+		allow_branch = {
+			NOT = { 
+				check_variable = {
+					var = MOJ_Palestinian_attack_var
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			454 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes 
+					province = 1086
+				}
+			}
+		}
+	}
+	focus={
+		id=MOJ_Sinai_Border_Fortress
+		icon=PAL_Sinai_Border_Fortress
+		x=12
+		y=7
+		prerequisite={focus=MOJ_Ottoman_military_assistance_was_requested}
+		allow_branch = {
+			NOT = { 
+				check_variable = {
+					var = MOJ_Palestinian_attack_var
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			453 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes 
+					province = 12049
+				}
+			}
+		}
+	}
+	focus={
+		id=MOJ_UDF_asked_to_join_Parliament
+		icon=PAL_UDF_asked_to_join_Parliament
+		x=11
+		y=8
+		prerequisite={focus=MOJ_Tel_Aviv_Light_Weapons_Factory}
+		prerequisite={focus=MOJ_Sinai_Border_Fortress}
+		allow_branch = {
+			NOT = { 
+				check_variable = {
+					var = MOJ_Palestinian_attack_var
+					value = 0
+					compare = equals
+				}
+			}
+		}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.21
+		}
+	}
+	focus={
+		id=MOJ_The_impact_of_Black_Monday
+		icon=GFX_goal_HOL_black_monday
+		available = { has_idea = pal_black_monday }
+		x=11
+		y=0
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		bypass = {
+			has_idea = pal_black_monday
+		}
+
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MOJ_Jerusalem_Lira_issued
+		icon=GFX_goal_TEX_banks_for_america
+		x=9
+		y=1
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		prerequisite={focus=MOJ_The_impact_of_Black_Monday}
+		search_filters={
+		}
+		completion_reward={
+			add_timed_idea = {
+				idea = pal_corporate_power_ideas2
+				days = 90
+			}
+			}
+		}
+	
+	focus={
+		id=MOJ_Central_Bank_Reform_Act
+		icon=GFX_goal_AST_independent_central_bank
+		x=11
+		y=1
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		prerequisite={focus=MOJ_The_impact_of_Black_Monday}
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+			remove_idea = pal_black_monday
+			add_idea = pal_black_monday2
+					}
+				}
+		}
+	
+	
+	focus={
+		id=MOJ_corporate_power
+		icon=GFX_goal_MEX_corporate_economics
+		x=13
+		y=1
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		prerequisite={focus=MOJ_The_impact_of_Black_Monday}
+		search_filters={
+		}
+		completion_reward={
+			add_timed_idea = {
+				idea = pal_corporate_power_ideas
+				days = 90
+			}
+		}
+	}
+		focus = {
+			id = MOJ_Relieve_Shortages
+			icon = GFX_goal_AUS_recovery_food
+	
+			cost = 2
+	
+			prerequisite={focus=MOJ_balance_the_budget}
+	
+			x = 11
+			y = 3
+	
+			ai_will_do = {
+				factor = 4
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = pal_black_monday3
+					add_idea = pal_black_monday4
+					}
+					clr_country_flag = pal_black_monday_flag
+					}
+			}
+		
+		
+		focus={
+			id=MOJ_balance_the_budget
+			icon=GFX_goal_NFL_balanced_budget
+			x=11
+			y=2
+			cost=4
+			ai_will_do={
+				factor=1
+			}
+			available_if_capitulated=yes
+			prerequisite={focus=MOJ_Central_Bank_Reform_Act}
+			search_filters={
+			}
+			completion_reward={
+				swap_ideas = {
+					remove_idea = pal_black_monday2
+					add_idea = pal_black_monday3
+					}
+			}
+		}
+	focus={
+		id=MOJ_The_Speaker_is_caught_in_a_conspiracy
+		icon=PAL_The_Speaker_is_caught_in_a_conspiracy
+		available = { has_country_flag = MOJ_Kemal_conspiracy }
+		x=32
+		y=0
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MOJ_A_vote_of_no_confidence_in_parliament
+		icon=PAL_A_vote_of_no_confidence_in_parliament
+		available = { has_country_flag = MOJ_Kemal_conspiracy }
+		x=32
+		y=1
+		prerequisite={focus=MOJ_The_Speaker_is_caught_in_a_conspiracy}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.19
+		}
+	}
+	focus={
+		id=MOJ_The_end_of_democracy_in_Jerusalem
+		icon=PAL_The_end_of_democracy_in_Jerusalem
+		x=20
+		y=3
+		prerequisite={focus=MOJ_A_vote_of_no_confidence_in_parliament}
+		mutually_exclusive={focus=MOJ_Parliamentary_reshuffling_elections }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=MOJ_A_win_for_the_UDFs_collaborators
+		icon=PAL_A_win_for_the_UDFs_collaborators
+		available = no
+		x=16
+		y=4
+		prerequisite={focus=MOJ_The_end_of_democracy_in_Jerusalem}
+		mutually_exclusive={focus=MOJ_OHF_reorganizes_the_government }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = unlock_focuses
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MOJ_Vilaye_trade_union
+		icon=PAL_Vilaye_trade_union
+		x=14
+		y=5
+		prerequisite={focus=MOJ_A_win_for_the_UDFs_collaborators}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = MOJ_The_influence_of_the_Ottoman_garrison
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Vilaia_Union_ideas
+		}
+	}
+	focus={
+		id=MOJ_Look_for_collaborators_within_the_opposition
+		icon=PAL_Look_for_collaborators_within_the_opposition
+		x=14
+		y=6
+		prerequisite={focus=MOJ_Vilaye_trade_union}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Collaborators_in_the_shadows_ideas
+		}
+	}
+	focus={
+		id=MOJ_The_state_of_emergency_is_normalized
+		icon=PAL_The_state_of_emergency_is_normalized
+		x=14
+		y=7
+		prerequisite={focus=MOJ_Look_for_collaborators_within_the_opposition}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Gendarmerie_state_of_emergency_ideas
+		}
+	}
+	focus={
+		id=MOJ_Centralized_parliament_within_the_party
+		icon=PAL_Centralized_parliament_within_the_party
+		x=16
+		y=5
+		prerequisite={focus=MOJ_A_win_for_the_UDFs_collaborators}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = MOJ_The_influence_of_the_Ottoman_garrison
+			 has_country_flag = The_garrison_took_over_powe_filled
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Centralism_within_the_party_ideas
+		}
+	}
+	focus={
+		id=MOJ_Revisit_the_Vilaye_Law_on_Social_Harmony
+		icon=PAL_Revisit_the_Vilaye_Law_on_Social_Harmony
+		x=16
+		y=7
+		prerequisite={focus=MOJ_Centralized_parliament_within_the_party}
+		mutually_exclusive={focus=MOJ_Continuation_of_Kemalism }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Social_Harmony_Act_ideas
+		}
+	}
+	focus={
+		id=MOJ_Revisit_Ottoman_authority
+		icon=PAL_Revisit_Ottoman_authority
+		x=18
+		y=5
+		prerequisite={focus=MOJ_A_win_for_the_UDFs_collaborators focus=MOJ_OHF_reorganizes_the_government }
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = -0.05
+		}
+	}
+	focus={
+		id=MOJ_The_influence_of_the_Ottoman_garrison
+		icon=PAL_The_influence_of_the_Ottoman_garrison
+		x=18
+		y=6
+		prerequisite={focus=MOJ_Revisit_Ottoman_authority}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.23
+		}
+	}
+	focus={
+		id=MOJ_OHF_reorganizes_the_government
+		icon=PAL_OHF_reorganizes_the_government
+		available = no
+		x=20
+		y=4
+		prerequisite={focus=MOJ_The_end_of_democracy_in_Jerusalem}
+		mutually_exclusive={focus=MOJ_A_win_for_the_UDFs_collaborators }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = unlock_focuses
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MOJ_Securing_the_ballot
+		icon=PAL_Securing_the_ballot
+			available = { has_country_flag = MOJ_Kemal_conspiracy }
+		x=20
+		y=5
+		prerequisite={focus=MOJ_OHF_reorganizes_the_government}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = MOJ_The_influence_of_the_Ottoman_garrison
+			 has_country_flag = The_garrison_took_over_powe_filled
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Collaborators_in_the_shadows1_ideas
+			country_event = MOJ.25
+		}
+	}
+	focus={
+		id=MOJ_Continuation_of_Kemalism
+		icon=PAL_Continuation_of_Kemalism
+		x=20
+		y=7
+		prerequisite={focus=MOJ_Securing_the_ballot}
+		mutually_exclusive={focus=MOJ_Revisit_the_Vilaye_Law_on_Social_Harmony }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			if = {
+				limit = {
+					has_idea = PAL_Kemalist_continued
+				}
+				swap_ideas = {
+					remove_idea = PAL_Kemalist_continued
+					add_idea = PAL_Kemalist_continued_2
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_idea = PAL_Kemalist_continued
+					}
+				}
+				swap_ideas = {
+					remove_idea = PAL_Kemalist_continued_2
+					add_idea = PAL_Kemalist_continued_3
+				}
+			}
+		}
+	}
+	focus={
+		id=MOJ_Establishment_of_district_gendarmerie_offices
+		icon=PAL_Establishment_of_district_gendarmerie_offices
+		x=22
+		y=5
+		
+		prerequisite={focus=MOJ_OHF_reorganizes_the_government}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = MOJ_The_influence_of_the_Ottoman_garrison
+		 has_country_flag = The_garrison_took_over_powe_filled 
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Gendarmerie_state_of_emergency1_ideas
+			country_event = MOJ.25
+		}
+	}
+	focus={
+		id=MOJ_Ensuring_the_powers_of_the_National_Minorities_Council
+		icon=PAL_Ensuring_the_powers_of_the_National_Minorities_Council
+		x=22
+		y=6
+		prerequisite={focus=MOJ_Establishment_of_district_gendarmerie_offices}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Minority_Bill_of_Rights_ideas
+		}
+	}
+	focus={
+		id=MOJ_Introduce_an_official_language_law
+		icon=PAL_Introduce_an_official_language_law
+		x=22
+		y=7
+		prerequisite={focus=MOJ_Ensuring_the_powers_of_the_National_Minorities_Council}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Social_Harmony_Act1_ideas
+			country_event = MOJ.26
+		}
+	}
+	focus={
+		id=MOJ_Budget_cuts_for_the_Jaffa_port_project
+		icon=PAL_Budget_cuts_for_the_Jaffa_port_project
+		x=15
+		y=8
+		prerequisite={focus=MOJ_Revisit_the_Vilaye_Law_on_Social_Harmony}
+		prerequisite={focus=MOJ_The_state_of_emergency_is_normalized}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = MOJ_Construction_of_the_Jaffa_seaport_begins
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = MOJ_Jaffa_Seaport_ideas
+				add_idea = MOJ_Jaffa_Seaport_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Establishment_of_the_State_Institute_of_Science_and_Culture
+		icon=GFX_goal_AFG_ottoman_ex_brains_refuge
+		x=15
+		y=9
+		prerequisite={focus=MOJ_Budget_cuts_for_the_Jaffa_port_project}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_research_slot = 1
+			add_ideas = pal_State_Academy_of_Sciences_ideas
+		}
+	}
+	focus={
+		id=MOJ_The_flourishing_of_science_and_art
+		icon=GFX_goal_AFG_Reimpose_Sharia
+		x=15
+		y=10
+		prerequisite={focus=MOJ_Establishment_of_the_State_Institute_of_Science_and_Culture}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_State_Academy_of_Sciences_ideas
+				add_idea = pal_State_Academy_of_Sciences_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Preparations_for_cooperation_with_the_PCP
+		icon=PAL_Preparations_for_cooperation_with_the_PCP
+		x=17
+		y=8
+		prerequisite={focus=MOJ_Revisit_the_Vilaye_Law_on_Social_Harmony}
+		prerequisite={focus=MOJ_The_state_of_emergency_is_normalized}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			PAL = {
+				set_temp_variable = { coalition_partner_var = token:syndicalist }
+				add_to_coalition = yes 
+			}
+			add_popularity = { ideology = syndicalist popularity = 0.1 }
+			PAL = {
+				set_temp_variable = { coalition_partner_var = token:radical_socialist }
+				add_to_coalition = yes 
+			}
+			add_popularity = { ideology = radical_socialist popularity = 0.1 }
+			add_ideas = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas
+		}
+	}
+	focus={
+		id=MOJ_Crush_the_Zionists
+		icon=NLEB_The_sword_of_Islam
+		x=17
+		y=9
+		prerequisite={focus=MOJ_Preparations_for_cooperation_with_the_PCP}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_natpop_from_coalition = yes
+			add_popularity = { ideology = national_populist popularity = -1 }
+			swap_ideas = {
+				remove_idea = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas
+				add_idea = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Remove_the_ban_on_PCPs
+		icon=NLEB_Shiites_are_encouraged_to_join_the_army
+		x=17
+		y=10
+		prerequisite={focus=MOJ_Crush_the_Zionists}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas1
+				add_idea = pal_Cooperate_with_the_Communist_Party_of_Palestine_ideas2
+			}
+		}
+	}
+	focus={
+		id=MOJ_The_virtuous_Vilaye
+		icon=NLEB_Islam_peace_and_goodness
+		x=16
+		y=11
+		prerequisite={focus=MOJ_The_flourishing_of_science_and_art}
+		prerequisite={focus=MOJ_Remove_the_ban_on_PCPs}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Social_Harmony_Act_ideas
+				add_idea = pal_Social_Harmony_Act_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Jaffa_Port_Engineering_Department
+		icon=PAL_Jaffa_Port_Engineering_Department
+		x=21
+		y=8
+		prerequisite={focus=MOJ_Continuation_of_Kemalism}
+		prerequisite={focus=MOJ_Introduce_an_official_language_law}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_political_power > 700
+			has_completed_focus = MOJ_Construction_of_the_Jaffa_seaport_begins
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = -700
+			swap_ideas = {
+				remove_idea = MOJ_Jaffa_Seaport_ideas
+				add_idea = MOJ_Jaffa_Seaport_ideas2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Good_relations_with_Germany
+		icon=NLEB_Hire_a_foreign_military_attache
+		x=21
+		y=9
+		prerequisite={focus=MOJ_Jaffa_Port_Engineering_Department}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_German_aid_ideas
+		}
+	}
+	focus={
+		id=MOJ_One_time_and_equal_economic_checks
+		icon=GFX_goal_AFG_ottoman_rewarding_loyalty
+		x=21
+		y=10
+		prerequisite={focus=MOJ_Good_relations_with_Germany}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_German_aid_ideas
+				add_idea = pal_German_aid_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Crush_the_PCP
+		icon=PAL_Crush_the_PCP
+		x=23
+		y=8
+		prerequisite={focus=MOJ_Continuation_of_Kemalism}
+		prerequisite={focus=MOJ_Introduce_an_official_language_law}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Collaborate_with_Jews_ideas
+			add_popularity = { ideology = radical_socialist popularity = -1 }
+			add_popularity = { ideology = syndicalist popularity = -1 }
+			add_popularity = { ideology = national_populist popularity = 0.1 }
+		}
+	}
+	focus={
+		id=MOJ_Absorb_the_remnants_of_the_PCP
+		icon=NLEB_Clergy_in_politics
+		x=23
+		y=9
+		prerequisite={focus=MOJ_Crush_the_PCP}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Collaborate_with_Jews_ideas
+				add_idea = pal_Collaborate_with_Jews_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Peoples_Party_Reform_Party_Alliance
+		icon=GFX_goal_AFG_Cavalry_Legacy
+		x=23
+		y=10
+		prerequisite={focus=MOJ_Absorb_the_remnants_of_the_PCP}
+		mutually_exclusive={focus=MOJ_Extinguish_the_momentum_of_the_Reform_Party }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Collaborate_with_Jews_ideas1
+				add_idea = pal_Collaborate_with_Jews_ideas2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Smooth_Vilaye
+		icon=PAL_Smooth_Vilaye
+		x=22
+		y=11
+		prerequisite={focus=MOJ_One_time_and_equal_economic_checks}
+		prerequisite={focus=MOJ_Peoples_Party_Reform_Party_Alliance focus=MOJ_Extinguish_the_momentum_of_the_Reform_Party }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Social_Harmony_Act1_ideas
+				add_idea = pal_Social_Harmony_Act1_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Extinguish_the_momentum_of_the_Reform_Party
+		icon=NLEB_Alis_loyal_scimitar
+		x=25
+		y=10
+		prerequisite={focus=MOJ_Absorb_the_remnants_of_the_PCP}
+		mutually_exclusive={focus=MOJ_Peoples_Party_Reform_Party_Alliance }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Collaborate_with_Jews_ideas1
+				add_idea = pal_Collaborate_with_Jews_ideas2_1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Parliamentary_reshuffling_elections
+		icon=PAL_Parliamentary_reshuffling_elections
+		x=32
+		y=3
+		prerequisite={focus=MOJ_A_vote_of_no_confidence_in_parliament}
+		mutually_exclusive={focus=MOJ_The_end_of_democracy_in_Jerusalem }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = unlock_focuses
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			hidden_effect = {
+				country_event = {
+					days = 35
+					id = MOJ.27
+				}
+			}
+		}
+	}
+	focus={
+		id=MOJ_The_Palestinian_flag_flutters
+		icon=PAL_The_Palestinian_flag_flutters
+		x=27
+		y=5
+		prerequisite={focus=MOJ_Independents_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_cosmetic_tag = PLS
+			add_ideas = pal_Palestinian_nation_state_ideas
+			PAL = {
+				set_temp_variable = { coalition_partner_var = token:syndicalist }
+				add_to_coalition = yes 
+			}
+			add_popularity = { ideology = syndicalist popularity = 0.1 }
+			PAL = {
+				set_temp_variable = { coalition_partner_var = token:radical_socialist }
+				add_to_coalition = yes 
+			}
+			add_popularity = { ideology = radical_socialist popularity = 0.1 }
+		}
+	}
+	focus={
+		id=MOJ_Hammer_Zionism_to_the_grave
+		icon=PAL_Hammer_Zionism_to_the_grave
+		x=27
+		y=6
+		prerequisite={focus=MOJ_The_Palestinian_flag_flutters}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Palestinian_nation_state_ideas
+				add_idea = pal_Palestinian_nation_state_ideas1
+			}
+			remove_natpop_from_coalition = yes
+			add_popularity = { ideology = national_populist popularity = -1 }
+		}
+	}
+	focus={
+		id=MOJ_Allow_the_PCP_to_work_again
+		icon=PAL_Allow_the_PCP_to_work_again
+		x=27
+		y=7
+		prerequisite={focus=MOJ_Hammer_Zionism_to_the_grave}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Palestinian_nation_state_ideas1
+				add_idea = pal_Palestinian_nation_state_ideas2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Confronting_Palestinian_rights
+		icon=PAL_Confronting_Palestinian_rights
+		x=29
+		y=5
+		prerequisite={focus=MOJ_Independents_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Ethnicity_Bill_ideas
+		}
+	}
+	focus={
+		id=MOJ_Multi_communal_parliament
+		icon=PAL_Multi_communal_parliament
+		x=29
+		y=6
+		prerequisite={focus=MOJ_Confronting_Palestinian_rights}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Ethnicity_Bill_ideas
+				add_idea = pal_Ethnicity_Bill_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Implement_a_quarantine_policy
+		icon=PAL_Implement_a_quarantine_policy
+		x=29
+		y=7
+		prerequisite={focus=MOJ_Multi_communal_parliament}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Ethnicity_Bill_ideas1
+				add_idea = pal_Ethnicity_Bill_ideas2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Independents_Party
+		icon=PAL_Independents_Party
+		available = no
+		x=28
+		y=4
+		prerequisite={focus=MOJ_Parliamentary_reshuffling_elections}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = unlock_focuses
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MOJ_Integration_of_the_gendarmerie
+		icon=PAL_Integration_of_the_gendarmerie
+		x=33
+		y=5
+		prerequisite={focus=MOJ_Liberals_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Gendarmerie_state_of_emergency_ideas1
+		}
+	}
+	focus={
+		id=MOJ_Freedom_for_the_Palestinians
+		icon=PAL_Freedom_for_the_Palestinians
+		x=33
+		y=6
+		prerequisite={focus=MOJ_Integration_of_the_gendarmerie}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Freedom_Act_ideas
+		}
+	}
+	focus={
+		id=MOJ_Revisit_the_Freedom_of_Speech_Amendment
+		icon=PAL_Revisit_the_Freedom_of_Speech_Amendment
+		x=33
+		y=7
+		prerequisite={focus=MOJ_Freedom_for_the_Palestinians}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Freedom_Act_ideas
+				add_idea = pal_Freedom_Act_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Bicameral_government
+		icon=PAL_Bicameral_government
+		x=35
+		y=5
+		prerequisite={focus=MOJ_Liberals_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Government_reforms_ideas
+		}
+	}
+	focus={
+		id=MOJ_The_foundation_of_the_people_the_help_of_clean_officials
+		icon=PAL_The_foundation_of_the_people_the_help_of_clean_officials
+		x=35
+		y=6
+		prerequisite={focus=MOJ_Bicameral_government}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Government_reforms_ideas
+				add_idea = pal_Government_reforms_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Improve_the_Supreme_Court_system
+		icon=PAL_Improve_the_Supreme_Court_system
+		x=35
+		y=7
+		prerequisite={focus=MOJ_The_foundation_of_the_people_the_help_of_clean_officials}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Government_reforms_ideas1
+				add_idea = pal_Government_reforms_ideas2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Open_economic_policy
+		icon=PAL_Open_economic_policy
+		x=31
+		y=5
+		prerequisite={focus=MOJ_Independents_Party focus=MOJ_Liberals_Party }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Development_economy_ideas
+		}
+	}
+	focus={
+		id=MOJ_Increase_the_export_of_products
+		icon=PAL_Increase_the_export_of_products
+		x=31
+		y=6
+		prerequisite={focus=MOJ_Open_economic_policy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Development_economy_ideas
+				add_idea = pal_Development_economy_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Expansion_of_the_budget_for_the_Jaffa_Port_project
+		icon=PAL_Expansion_of_the_budget_for_the_Jaffa_Port_project
+		x=31
+		y=7
+		prerequisite={focus=MOJ_Increase_the_export_of_products}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_political_power > 700
+			has_completed_focus = MOJ_Construction_of_the_Jaffa_seaport_begins
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = -700
+			swap_ideas = {
+				remove_idea = MOJ_Jaffa_Seaport_ideas
+				add_idea = MOJ_Jaffa_Seaport_ideas2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Liberals_Party
+		icon=PAL_Liberals_Party
+		available = no
+		x=34
+		y=4
+		prerequisite={focus=MOJ_Parliamentary_reshuffling_elections}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = unlock_focuses
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MOJ_Reform_Party
+		icon=PAL_Reform_Party
+		available = no
+		x=38
+		y=4
+		prerequisite={focus=MOJ_Parliamentary_reshuffling_elections}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = unlock_focuses
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MOJ_Levy_a_tax_on_the_rich
+		icon=PAL_Levy_a_tax_on_the_rich
+		x=37
+		y=5
+		prerequisite={focus=MOJ_Reform_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Levy_a_tax_on_the_rich_ideas
+		}
+	}
+	focus={
+		id=MOJ_Sanctions_against_the_Ottoman_nobility
+		icon=PAL_Sanctions_against_the_Ottoman_nobility
+		x=37
+		y=6
+		prerequisite={focus=MOJ_Levy_a_tax_on_the_rich}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = MOJ_Resettlement_Multi_Ethnic_Immigration_Act
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_2
+				add_idea = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_3
+			}
+		}
+	}
+	focus={
+		id=MOJ_Nobility_Property_Law
+		icon=PAL_Nobility_Property_Law
+		x=37
+		y=7
+		prerequisite={focus=MOJ_Sanctions_against_the_Ottoman_nobility}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_3
+				add_idea = PAL_Dependent_on_the_Ottoman_economy_with_the_nobility_4
+			}
+		}
+	}
+	focus={
+		id=MOJ_People_are_equal
+		icon=PAL_People_are_equal
+		x=39
+		y=5
+		prerequisite={focus=MOJ_Reform_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_People_are_equal_ideas
+		}
+	}
+	focus={
+		id=MOJ_Thousands_of_rivers_flow_into_the_river_of_Vilaye
+		icon=PAL_Thousands_of_rivers_flow_into_the_river_of_Vilaye
+		x=39
+		y=6
+		prerequisite={focus=MOJ_People_are_equal}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_People_are_equal_ideas
+				add_idea = pal_People_are_equal_ideas1
+			}
+			remove_natpop_from_coalition = yes
+			set_party_name = { 
+				ideology = national_populist 
+				long_name = MOJ_Disbanded_party_long
+				name = MOJ_Disbanded_party
+			}
+		}
+	}
+	focus={
+		id=MOJ_Increase_the_strength_of_the_gendarmerie
+		icon=PAL_Increase_the_strength_of_the_gendarmerie
+		x=39
+		y=7
+		prerequisite={focus=MOJ_Thousands_of_rivers_flow_into_the_river_of_Vilaye}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_People_are_equal_ideas1
+				add_idea = pal_People_are_equal_ideas2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Subdivide_the_management_system
+		icon=PAL_Subdivide_the_management_system
+		x=41
+		y=5
+		prerequisite={focus=MOJ_Reform_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Government_reforms_ideas_1
+		}
+	}
+	focus={
+		id=MOJ_A_conciliatory_law_was_introduced
+		icon=PAL_A_conciliatory_law_was_introduced
+		x=41
+		y=6
+		prerequisite={focus=MOJ_Subdivide_the_management_system}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Government_reforms_ideas_1
+				add_idea = pal_Government_reforms_ideas_2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Attracting_investment_brings_prosperity 
+		icon=PAL_Attracting_investment_brings_prosperity
+		x=41
+		y=7
+		prerequisite={focus=MOJ_A_conciliatory_law_was_introduced}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Development_economy_ideas_1
+		}
+	}
+	focus={
+		id=MOJ_The_garrison_took_over_power
+		icon=PAL_The_garrison_took_over_power
+		x=46
+		y=2
+		prerequisite={focus=MOJ_A_vote_of_no_confidence_in_parliament}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = unlock_focuses
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MOJ_The_authority_of_the_Ottomans_was_supreme
+		icon=PAL_The_authority_of_the_Ottomans_was_supreme
+		x=45
+		y=4
+		prerequisite={focus=MOJ_kick_down_the_ladder}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Ottoman_authority_ideas
+		}
+	}
+	focus={
+		id=MOJ_Gendarmerie_government
+		icon=PAL_Gendarmerie_government
+		x=45
+		y=5
+		prerequisite={focus=MOJ_The_authority_of_the_Ottomans_was_supreme}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Gendarmerie_state_of_emergency_ideas2
+		}
+	}
+	focus={
+		id=MOJ_A_permanent_state_of_emergency_was_declared
+		icon=PAL_A_permanent_state_of_emergency_was_declared
+		x=45
+		y=6
+		prerequisite={focus=MOJ_Gendarmerie_government}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Ottoman_authority_ideas
+				add_idea = pal_Ottoman_authority_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Remove_instability
+		icon=PAL_Remove_instability
+		x=47
+		y=4
+		prerequisite={focus=MOJ_kick_down_the_ladder}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Maintain_stability_ideas
+		}
+	}
+	focus={
+		id=MOJ_The_Future_of_Kemalist_Doctrine_in_Jerusalem
+		icon=PAL_The_Future_of_Kemalist_Doctrine_in_Jerusalem
+		x=47
+		y=5
+		prerequisite={focus=MOJ_Remove_instability}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Kemalist_continued_2
+				add_idea = PAL_Kemalist_continued_4
+			}
+		}
+	}
+	focus={
+		id=MOJ_Shelving_the_Jaffa_seaport_project
+		icon=PAL_Shelving_the_Jaffa_seaport_project
+		x=47
+		y=6
+		prerequisite={focus=MOJ_The_Future_of_Kemalist_Doctrine_in_Jerusalem}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = MOJ_Construction_of_the_Jaffa_seaport_begins
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = MOJ_Jaffa_Seaport_ideas
+				add_idea = MOJ_Jaffa_Seaport_ideas3
+			}
+		}
+	}
+	focus={
+		id=MOJ_Suppress_the_nationalist_bug
+		icon=PAL_Suppress_the_nationalist_bug
+		x=43
+		y=8
+		prerequisite={focus=MOJ_A_horn_used_to_cut_off_the_tongue}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = MOJ_Purge_the_nationalist_thugs_ideas
+		}
+	}
+	focus={
+		id=MOJ_A_horn_used_to_cut_off_the_tongue
+		icon=PAL_A_horn_used_to_cut_off_the_tongue
+		x=45
+		y=7
+		prerequisite={focus=MOJ_A_permanent_state_of_emergency_was_declared}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Ottoman_authority_ideas1
+				add_idea = pal_Ottoman_authority_ideas2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Its_a_long_way_to_get_home
+		icon=PAL_Its_a_long_way_to_get_home
+		x=45
+		y=9
+		prerequisite={focus=MOJ_Suppress_the_nationalist_bug}
+		prerequisite={focus=MOJ_The_empire_is_under_the_direct_jurisdiction_of_Vilaye}
+		mutually_exclusive={focus=MOJ_The_new_king_of_Jerusalem }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = Ottoman_annex_Mutasarrifate_of_Jerusalem
+			TUR = {
+				change_tag_from = PAL
+				annex_country = { target = PAL transfer_troops = yes }
+				add_ideas = pal_Ottoman_authority_ideas3
+				add_ideas = MOJ_Jaffa_Seaport_ideas3
+				add_ideas = pal_Maintain_stability_ideas
+				add_ideas = pal_Gendarmerie_state_of_emergency_ideas2
+				add_ideas = MOJ_Purge_the_nationalist_thugs_ideas
+				add_ideas = MOJ_The_new_king_of_Jerusalem_ideas1
+				add_ideas = MOJ_Ottoman_Development_economy_ideas
+				add_ideas = PAL_Kemalist_continued_4
+			}
+		}
+	}
+	focus={
+		id=MOJ_The_Empires_Council_of_Economic_Advisers
+		icon=PAL_The_Empires_Council_of_Economic_Advisers
+		x=47
+		y=7
+		prerequisite={focus=MOJ_Shelving_the_Jaffa_seaport_project}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = MOJ_Ottoman_Development_economy_ideas
+		}
+	}
+	focus={
+		id=MOJ_Develop_borders
+		icon=PAL_Develop_borders
+		x=49
+		y=8
+		prerequisite={focus=MOJ_The_Empires_Council_of_Economic_Advisers}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = MOJ_Ottoman_Development_economy_ideas
+				add_idea = MOJ_Ottoman_Development_economy_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_The_new_king_of_Jerusalem
+		icon=PAL_The_new_king_of_Jerusalem
+		x=47
+		y=9
+		prerequisite={focus=MOJ_Develop_borders}
+		prerequisite={focus=MOJ_The_Princes_Tempering}
+		mutually_exclusive={focus=MOJ_Its_a_long_way_to_get_home }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = Mutasarrifate_of_Jerusalem_annex_Ottoman
+			set_cosmetic_tag = PAL_Jerusalem_Kingdom
+			swap_ideas = {
+				remove_idea = MOJ_The_new_king_of_Jerusalem_ideas
+				add_idea = MOJ_The_new_king_of_Jerusalem_ideas1
+			}
+		}
+	}
+	focus={
+		id=MOJ_kick_down_the_ladder
+		icon=PAL_kick_down_the_ladder
+		x=46
+		y=3
+		prerequisite={focus=MOJ_The_garrison_took_over_power}
+		available = { has_government = paternal_autocrat }
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = MOJ.281
+			add_political_power = 200
+			add_stability = 0.05
+		}
+	}
+	focus={
+		id=MOJ_The_empire_is_under_the_direct_jurisdiction_of_Vilaye
+		icon=PAL_The_empire_is_under_the_direct_jurisdiction_of_Vilaye
+		x=45
+		y=8
+		prerequisite={focus=MOJ_A_horn_used_to_cut_off_the_tongue}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = pal_Ottoman_authority_ideas2
+				add_idea = pal_Ottoman_authority_ideas3
+			}
+		}
+	}
+	focus={
+		id=MOJ_The_Princes_Tempering
+		icon=PAL_The_Princes_Tempering
+		x=47
+		y=8
+		prerequisite={focus=MOJ_The_Empires_Council_of_Economic_Advisers}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = MOJ_The_new_king_of_Jerusalem_ideas
+		}
+	}
+	focus={
+		id=MOJ_Talat_Pasha_became_the_new_Speaker
+		icon=PAL_Talat_Pasha_became_the_new_Speaker
+		x=51
+		y=3
+		prerequisite={focus=MOJ_The_garrison_took_over_power}
+		available = { has_government = authoritarian_democrat }
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+		}
+	}
+	focus={
+		id=MOJ_Parliamentary_Tin_House
+		icon=PAL_Parliamentary_Tin_House
+		x=50
+		y=4
+		prerequisite={focus=MOJ_Talat_Pasha_became_the_new_Speaker}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = pal_Talat_Government_reforms_ideas
+		}
+	}
+	focus={
+		id=MOJ_Eliminate_Kemalism
+		icon=PAL_Eliminate_Kemalism
+		x=49
+		y=5
+		prerequisite={focus=MOJ_Parliamentary_Tin_House}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Kemalist_continued_2
+				add_idea = PAL_Remove_Kemalist_continued
+			}
+		}
+	}
+	focus={
+		id=MOJ_Break_down_the_port_of_Jaffa
+		icon=PAL_Break_down_the_port_of_Jaffa
+		x=50
+		y=6
+		prerequisite={focus=MOJ_Eliminate_Kemalism}
+		prerequisite={focus=MOJ_Establishment_of_the_Immigration_Administration}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = MOJ_Construction_of_the_Jaffa_seaport_begins
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = MOJ_Jaffa_Seaport_ideas
+				add_idea = MOJ_Break_Jaffa_Seaport_ideas
+			}
+		}
+	}
+	focus={
+		id=MOJ_Abandon_decentralization
+		icon=PAL_Abandon_decentralization
+		x=52
+		y=4
+		prerequisite={focus=MOJ_Talat_Pasha_became_the_new_Speaker}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = MOJ_J_centralization_ideas
+				add_idea = MOJ_J_centralization_ideas2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Establishment_of_the_Central_Security_Service
+		icon=PAL_Establishment_of_the_Immigration_Administration
+		x=53
+		y=5
+		prerequisite={focus=MOJ_Abandon_decentralization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = MOJ_J_centralization_ideas2
+				add_idea = MOJ_J_centralization_ideas3
+			}
+		}
+	}
+	focus={
+		id=MOJ_Revise_the_Settlement_Act
+		icon=PAL_Revise_the_Settlement_Act
+		x=52
+		y=6
+		prerequisite={focus=MOJ_Establishment_of_the_Central_Security_Service}
+		prerequisite={focus=MOJ_Establishment_of_the_Immigration_Administration}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = MOJ_J_centralization_ideas3
+				add_idea = MOJ_J_centralization_ideas4
+			}
+		}
+	}
+	focus={
+		id=MOJ_Establishment_of_the_Immigration_Administration
+		icon=PAL_Establishment_of_the_Central_Security_Service
+		x=51
+		y=5
+		prerequisite={focus=MOJ_Parliamentary_Tin_House}
+		prerequisite={focus=MOJ_Abandon_decentralization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = MOJ_Immigration_Administration_ideas
+		}
+	}
+	focus={
+		id=MOJ_Expulsion_of_Jews
+		icon=PAL_Expulsion_of_Jews
+		x=51
+		y=7
+		prerequisite={focus=MOJ_Revise_the_Settlement_Act}
+		prerequisite={focus=MOJ_Break_down_the_port_of_Jaffa}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Remove_Kemalist_continued
+				add_idea = PAL_Remove_Kemalist_continued1
+			}
+		}
+	}
+	focus={
+		id=MOJ_Talatism
+		icon=PAL_Talatism
+		x=51
+		y=8
+		prerequisite={focus=MOJ_Expulsion_of_Jews}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = PAL_Remove_Kemalist_continued1
+				add_idea = PAL_Remove_Kemalist_continued2
+			}
+		}
+	}
+	focus={
+		id=MOJ_Fight_against_PCP
+		icon=PAL_Fight_against_PCP
+		x=53
+		y=7
+		prerequisite={focus=MOJ_Break_down_the_port_of_Jaffa}
+		prerequisite={focus=MOJ_Revise_the_Settlement_Act}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = MOJ_J_centralization_ideas4
+				add_idea = MOJ_J_centralization_ideas5
+			}
+		}
+	}
+	focus={
+		id=MOJ_Palestinian_Quarter
+		icon=PAL_Palestinian_Quarter
+		x=53
+		y=8
+		prerequisite={focus=MOJ_Fight_against_PCP}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = MOJ_J_centralization_ideas5
+				add_idea = MOJ_J_centralization_ideas6
+			}
+		}
+	}
+	focus={
+		id=MOJ_Jerusalem_safe_and_eternal
+		icon=PAL_Jerusalem_safe_and_eternal
+		x=52
+		y=9
+		prerequisite={focus=MOJ_Talatism}
+		prerequisite={focus=MOJ_Palestinian_Quarter}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = MOJ_J_centralization_ideas6
+				add_idea = MOJ_J_centralization_ideas7
+			}
+		}
+	}
+}

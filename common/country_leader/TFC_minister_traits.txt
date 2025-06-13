@@ -1,0 +1,15 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+leader_traits = {
+	
+	hog_theorist_of_social_nationalism = {
+		paternal_autocrat_drift = 0.02
+		army_attack_factor = 0.02
+		army_core_defence_factor = 0.02
+
+		random = no
+	}
+
+}

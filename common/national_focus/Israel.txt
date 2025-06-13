@@ -1,0 +1,8049 @@
+focus_tree={
+	id = Israel_Focus
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=ISR
+		}
+	}
+	default=no
+	focus={
+		id=ISR_Stern_withstood_the_pressure
+		icon=Lehi_Stern_withstood_the_pressure
+		x=8
+		y=0
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_war_support = 0.05
+		}
+	}
+	focus={
+		id=ISR_Ignoring_calls_for_democracy
+		icon=Lehi_Ignoring_calls_for_democracy
+		x=6
+		y=1
+		prerequisite={focus=ISR_Stern_withstood_the_pressure}
+		cost=2.9
+		ai_will_do={
+			factor=1
+		}
+		available =  {
+			NOT = {
+				OR = {
+					has_war_with = PAL
+					has_war_with = PLS
+				}
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_denial_of_democracy_ideas
+		}
+	}
+	focus={
+		id=ISR_Fight_for_freedom_for_the_Motherland
+		icon=Lehi_Fight_for_freedom_for_the_Motherland
+		x=8
+		y=1
+		prerequisite={focus=ISR_Stern_withstood_the_pressure}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_the_great_jewish_revolt_ideas
+		}
+	}
+	focus={
+		id=ISR_Win_over_Israeli_youth
+		icon=Lehi_Win_over_Israeli_youth
+		x=10
+		y=1
+		prerequisite={focus=ISR_Stern_withstood_the_pressure}
+		cost=2.9
+		ai_will_do={
+			factor=1
+		}
+		available =  {
+			NOT = {
+				OR = {
+					has_war_with = PAL
+					has_war_with = PLS
+				}
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_young_guard_ideas
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=ISR_Hit_Maki
+		icon=Lehi_Hit_Maki
+		x=5
+		y=2
+		prerequisite={focus=ISR_Fight_for_freedom_for_the_Motherland}
+		prerequisite={focus=ISR_Ignoring_calls_for_democracy}
+		cost=2.9
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_National_Security_Agency_ideas
+		}
+	}
+	focus={
+		id=ISR_Expose_the_stupidity_of_David_Ben_Gurion
+		icon=Lehi_Expose_the_stupidity_of_David_Ben_Gurion
+		x=7
+		y=2
+		prerequisite={focus=ISR_Fight_for_freedom_for_the_Motherland}
+		prerequisite={focus=ISR_Ignoring_calls_for_democracy}
+		cost=2.9
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			country_event = Israel.10
+		}
+	}
+	focus={
+		id=ISR_Authorized_Ahimeir
+		icon=Lehi_Authorized_Ahimeir
+		x=9
+		y=2
+		prerequisite={focus=ISR_Fight_for_freedom_for_the_Motherland}
+		prerequisite={focus=ISR_Win_over_Israeli_youth}
+		cost=2.9
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.05
+			country_event = {
+				id = Israel.8
+				days = 5
+			}
+		}
+	}
+	focus={
+		id=ISR_There_will_be_no_more_Hebron_tragedy
+		icon=Lehi_There_will_be_no_more_Hebron_tragedy
+		x=11
+		y=2
+		prerequisite={focus=ISR_Fight_for_freedom_for_the_Motherland}
+		prerequisite={focus=ISR_Win_over_Israeli_youth}
+		cost=2.9
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_young_guard_ideas
+				add_idea = ISR_young_guard_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Expand_Lehi_mandate
+		icon=Lehi_Expand_Lehi_mandate
+		x=4
+		y=3
+		prerequisite={focus=ISR_Hit_Maki}
+		prerequisite={focus=ISR_Expose_the_stupidity_of_David_Ben_Gurion}
+		cost=2.9
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_National_Security_Agency_ideas
+				add_idea = ISR_National_Security_Agency_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Completely_shatter_parliamentary_illusions
+		icon=Lehi_Completely_shatter_parliamentary_illusions
+		x=6
+		y=3
+		prerequisite={focus=ISR_Hit_Maki}
+		prerequisite={focus=ISR_Expose_the_stupidity_of_David_Ben_Gurion}
+		cost=2.9
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_denial_of_democracy_ideas
+				add_idea = ISR_denial_of_democracy_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Standing_in_a_sea_of_blood
+		icon=Lehi_Standing_in_a_sea_of_blood
+		x=8
+		y=3
+		prerequisite={focus=ISR_Fight_for_freedom_for_the_Motherland}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_the_great_jewish_revolt_ideas
+				add_idea = ISR_the_great_jewish_revolt_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Closure_of_Radio_Free_Palestine
+		icon=Lehi_Closure_of_Radio_Free_Palestine
+		x=10
+		y=3
+		prerequisite={focus=ISR_Authorized_Ahimeir}
+		cost=2.9
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			army_experience = 150
+			add_command_power = 100
+			country_event = Israel.11
+		}
+	}
+	focus={
+		id=ISR_Attacks_on_Arab_settlements
+		icon=Lehi_Attacks_on_Arab_settlements
+		x=12
+		y=3
+		prerequisite={focus=ISR_There_will_be_no_more_Hebron_tragedy}
+		cost=2.9
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_young_guard_ideas1
+				add_idea = ISR_young_guard_ideas2
+			}
+		}
+	}
+	focus={
+		id=ISR_The_Israelites_shook_off_their_chains
+		icon=Lehi_The_Israelites_shook_off_their_chains
+		x=8
+		y=4
+		prerequisite={focus=ISR_Expand_Lehi_mandate}
+		prerequisite={focus=ISR_Completely_shatter_parliamentary_illusions}
+		prerequisite={focus=ISR_Standing_in_a_sea_of_blood}
+		prerequisite={focus=ISR_Closure_of_Radio_Free_Palestine}
+		prerequisite={focus=ISR_Attacks_on_Arab_settlements}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = ISR_The_Israelites_shook_off_their_chains_Effect
+			hidden_effect = {
+				country_event = {
+					id = Israel.1
+					days = 7
+				}
+			}
+		}
+	}
+	focus={
+		id=ISR_Stern_our_Savior
+		icon=Lehi_Stern_our_Savior
+		x=2
+		y=5
+		prerequisite={focus=ISR_The_Israelites_shook_off_their_chains}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Lehi_The_regime_is_solid_Flag
+			has_country_leader = {
+				name = "Avraham Stern"
+				ruling_only = yes
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ISR_Unite_the_Israelites
+		icon=Lehi_Unite_the_Israelites
+		x=0
+		y=6
+		prerequisite={focus=ISR_Stern_our_Savior}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Unite_the_Israelites_ideas
+		}
+	}
+	focus={
+		id=ISR_Red_Terror
+		icon=Lehi_Red_Terror
+		x=2
+		y=6
+		prerequisite={focus=ISR_Stern_our_Savior}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Red_Terror_ideas
+		}
+	}
+	focus={
+		id=ISR_British_aid
+		icon=Lehi_British_aid
+		x=4
+		y=6
+		prerequisite={focus=ISR_Stern_our_Savior}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_British_aid_ideas
+		}
+	}
+	focus={
+		id=ISR_Political_Commissar
+		icon=Lehi_Political_Commissar
+		x=1
+		y=7
+		prerequisite={focus=ISR_Unite_the_Israelites}
+		prerequisite={focus=ISR_Red_Terror}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Unite_the_Israelites_ideas
+				add_idea = ISR_Unite_the_Israelites_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Raise_the_torch
+		icon=Lehi_Raise_the_torch
+		x=3
+		y=7
+		prerequisite={focus=ISR_Red_Terror}
+		prerequisite={focus=ISR_British_aid}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Raise_the_torch_ideas
+		}
+	}
+	focus={
+		id=ISR_Inciting_fanaticism
+		icon=Lehi_Inciting_fanaticism
+		x=0
+		y=8
+		prerequisite={focus=ISR_Political_Commissar}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Inciting_fanaticism_ideas
+		}
+	}
+	focus={
+		id=ISR_Let_the_Turks_pay_for_their_blood_debts
+		icon=Lehi_Let_the_Turks_pay_for_their_blood_debts
+		x=2
+		y=8
+		prerequisite={focus=ISR_Political_Commissar}
+		prerequisite={focus=ISR_Raise_the_torch}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Red_Terror_ideas
+				add_idea = ISR_Red_Terror_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Approval_of_the_Lehi_Youth_Corps
+		icon=Lehi_Approval_of_the_Lehi_Youth_Corps
+		x=4
+		y=8
+		prerequisite={focus=ISR_Raise_the_torch}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = ISR_Inciting_fanaticism
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Inciting_fanaticism_ideas
+				add_idea = ISR_Inciting_fanaticism_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_With_my_heart_shape_the_future_of_Israel
+		icon=Lehi_With_my_heart_shape_the_future_of_Israel
+		x=2
+		y=9
+		prerequisite={focus=ISR_Inciting_fanaticism}
+		prerequisite={focus=ISR_Let_the_Turks_pay_for_their_blood_debts}
+		prerequisite={focus=ISR_Approval_of_the_Lehi_Youth_Corps}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_lehis_will_ideas
+		}
+	}
+	focus={
+		id=ISR_Nathan_Yellin_returns_to_the_roots_of_national_syndicalism
+		icon=Lehi_Nathan_Yellin_returns_to_the_roots_of_national_syndicalism
+		x=8
+		y=5
+		prerequisite={focus=ISR_The_Israelites_shook_off_their_chains}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Lehi_The_regime_is_solid_Flag
+			has_country_leader = {
+				name = "Nathan Yellin-Mor"
+				ruling_only = yes
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ISR_Canaan_replaces_Hebrew
+		icon=Lehi_Canaan_replaces_Hebrew
+		x=6
+		y=6
+		prerequisite={focus=ISR_Nathan_Yellin_returns_to_the_roots_of_national_syndicalism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_canaan_agreed_ideas
+		}
+	}
+	focus={
+		id=ISR_Reconciliation_with_Palestine
+		icon=Lehi_Reconciliation_with_Palestine
+		x=8
+		y=6
+		prerequisite={focus=ISR_Nathan_Yellin_returns_to_the_roots_of_national_syndicalism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_palestinian_israeli_reconciliation_ideas
+		}
+	}
+	focus={
+		id=ISR_Unite_in_the_struggle
+		icon=Lehi_Unite_in_the_struggle
+		x=10
+		y=6
+		prerequisite={focus=ISR_Nathan_Yellin_returns_to_the_roots_of_national_syndicalism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_youth_power_ideas
+		}
+	}
+	focus={
+		id=ISR_Hatred_blinds_people
+		icon=Lehi_Hatred_blinds_people
+		x=7
+		y=7
+		prerequisite={focus=ISR_Canaan_replaces_Hebrew}
+		prerequisite={focus=ISR_Reconciliation_with_Palestine}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_palestinian_israeli_reconciliation_ideas
+				add_idea = ISR_palestinian_israeli_reconciliation_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Eradicate_Zionist_fanaticism
+		icon=Lehi_Eradicate_Zionist_fanaticism
+		x=9
+		y=7
+		prerequisite={focus=ISR_Reconciliation_with_Palestine}
+		prerequisite={focus=ISR_Unite_in_the_struggle}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_eliminate_zionist_fervor_ideas
+		}
+	}
+	focus={
+		id=ISR_Concerted_opposition_to_imperialism
+		icon=Lehi_Concerted_opposition_to_imperialism
+		x=6
+		y=8
+		prerequisite={focus=ISR_Hatred_blinds_people}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_canaan_agreed_ideas
+				add_idea = ISR_canaan_agreed_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Affirming_the_power_of_youth
+		icon=Lehi_Affirming_the_power_of_youth
+		x=8
+		y=8
+		prerequisite={focus=ISR_Hatred_blinds_people}
+		prerequisite={focus=ISR_Eradicate_Zionist_fanaticism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_youth_power_ideas
+				add_idea = ISR_youth_power_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Workers_homes_in_Israel
+		icon=Lehi_Workers_homes_in_Israel
+		x=10
+		y=8
+		prerequisite={focus=ISR_Eradicate_Zionist_fanaticism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_eliminate_zionist_fervor_ideas
+				add_idea = ISR_eliminate_zionist_fervor_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Israel_united_and_strong
+		icon=Lehi_Israel_united_and_strong
+		x=8
+		y=9
+		prerequisite={focus=ISR_Concerted_opposition_to_imperialism}
+		prerequisite={focus=ISR_Affirming_the_power_of_youth}
+		prerequisite={focus=ISR_Workers_homes_in_Israel}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_youth_power_ideas1
+				add_idea = ISR_youth_power_ideas2
+			}
+		}
+	}
+	focus={
+		id=ISR_Anti_Stern_coup
+		icon=Lehi_Anti_Stern_coup
+		x=14
+		y=5
+		prerequisite={focus=ISR_The_Israelites_shook_off_their_chains}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Lehi_The_regime_is_solid_Flag
+			has_country_leader = {
+				name = "Abba Ahimeir"
+				ruling_only = yes
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ISR_Incitement_to_attacks_against_Palestinians
+		icon=Lehi_Incitement_to_attacks_against_Palestinians
+		x=12
+		y=6
+		prerequisite={focus=ISR_Anti_Stern_coup}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_attacks_on_palestinians_ideas
+			country_event = Israel.2
+		}
+	}
+	focus={
+		id=ISR_Lehi_new_owner
+		icon=Lehi_Lehi_new_owner
+		x=14
+		y=6
+		prerequisite={focus=ISR_Anti_Stern_coup}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_new_lehi_ideas
+		}
+	}
+	focus={
+		id=ISR_Mobilize_the_Israelis
+		icon=Lehi_Mobilize_the_Israelis
+		x=16
+		y=6
+		prerequisite={focus=ISR_Anti_Stern_coup}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_mobilize_the_israelis_ideas
+		}
+	}
+	focus={
+		id=ISR_Support_for_radical_Zionists
+		icon=Lehi_Support_for_radical_Zionists
+		x=13
+		y=7
+		prerequisite={focus=ISR_Incitement_to_attacks_against_Palestinians}
+		prerequisite={focus=ISR_Lehi_new_owner}
+		mutually_exclusive={focus=ISR_Legionism_is_the_future }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_radical_zionists_ideas
+		}
+	}
+	focus={
+		id=ISR_Legionism_is_the_future
+		icon=Lehi_Legionism_is_the_future
+		x=15
+		y=7
+		prerequisite={focus=ISR_Lehi_new_owner}
+		prerequisite={focus=ISR_Mobilize_the_Israelis}
+		mutually_exclusive={focus=ISR_Support_for_radical_Zionists }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_learn_the_iron_guard_ideas
+			create_country_leader = {
+				name = "Abba Ahimeir"
+				picture = "gfx/leaders/PAL/Portrait_ISR_Abba_Ahimeir.png"
+				expire = "1.1.1"
+				ideology = legionarism_subtype
+			}
+		}
+	}
+	focus={
+		id=ISR_Towards_eternity_and_stability
+		icon=Lehi_Towards_eternity_and_stability
+		x=12
+		y=8
+		prerequisite={focus=ISR_Support_for_radical_Zionists}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_radical_zionists_ideas
+				add_idea = ISR_radical_zionists_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Be_wary_of_the_resurgence_of_the_Arabs
+		icon=Lehi_Be_wary_of_the_resurgence_of_the_Arabs
+		x=14
+		y=8
+		prerequisite={focus=ISR_Support_for_radical_Zionists focus=ISR_Legionism_is_the_future }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_attacks_on_palestinians_ideas
+				add_idea = ISR_attacks_on_palestinians_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Learn_the_Iron_Guard_system
+		icon=Lehi_Learn_the_Iron_Guard_system
+		x=16
+		y=8
+		prerequisite={focus=ISR_Legionism_is_the_future}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_learn_the_iron_guard_ideas
+				add_idea = ISR_learn_the_iron_guard_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISR_Forged_in_fire_and_war
+		icon=Lehi_Forged_in_fire_and_war
+		x=14
+		y=9
+		prerequisite={focus=ISR_Be_wary_of_the_resurgence_of_the_Arabs}
+		prerequisite={focus=ISR_Towards_eternity_and_stability focus=ISR_Learn_the_Iron_Guard_system }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_attacks_on_palestinians_ideas1
+				add_idea = ISR_attacks_on_palestinians_ideas2
+			}
+		}
+	}
+	focus={
+		id=ICP_The_ICP_won_a_resounding_victory
+		icon=ISRA_The_ICP_won_a_resounding_victory
+		x=42
+		y=0
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Flag_Israel_Communist_Party_Win
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ICP_Shmuel_Mikunis
+		icon=ISRA_Shmuel_Mikunis
+		x=22
+		y=1
+		prerequisite={focus=ICP_The_ICP_won_a_resounding_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ICP_In_pursuit_of_Leninism
+		icon=ISRA_In_pursuit_of_Leninism
+		x=19
+		y=2
+		prerequisite={focus=ICP_Shmuel_Mikunis}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Leninism_ideas
+		}
+	}
+	focus={
+		id=ICP_Establish_democratic_centralism
+		icon=ISRA_Establish_democratic_centralism
+		x=21
+		y=2
+		prerequisite={focus=ICP_Shmuel_Mikunis}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_democratic_centralism_ideas
+		}
+	}
+	focus={
+		id=ICP_Moderate_collectivization
+		icon=ISRA_Moderate_collectivization
+		x=23
+		y=2
+		prerequisite={focus=ICP_Shmuel_Mikunis}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Moderate_collectivization_ideas
+		}
+	}
+	focus={
+		id=ICP_Socialist_education
+		icon=ISRA_Socialist_education
+		x=25
+		y=2
+		prerequisite={focus=ICP_Shmuel_Mikunis}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Mass_education
+		}
+	}
+	focus={
+		id=ICP_Support_the_Union_of_Workers_and_Peasants
+		icon=ISRA_Support_the_Union_of_Workers_and_Peasants
+		x=19
+		y=4
+		prerequisite={focus=ICP_In_pursuit_of_Leninism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Leninism_ideas
+				add_idea = ISR_Leninism_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Supporting_scientific_causes
+		icon=ISRA_Supporting_scientific_causes
+		x=25
+		y=4
+		prerequisite={focus=ICP_Socialist_education}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Mass_education
+				add_idea = ISR_Mass_education1
+			}
+		}
+	}
+	focus={
+		id=ICP_Rectify_the_partys_style
+		icon=ISRA_Rectify_the_partys_style
+		x=20
+		y=3
+		prerequisite={focus=ICP_Establish_democratic_centralism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Rectify_the_partys_style_ideas
+		}
+	}
+	focus={
+		id=ICP_Dictatorship_of_the_Proletariat
+		icon=ISRA_Dictatorship_of_the_Proletariat
+		x=22
+		y=3
+		prerequisite={focus=ICP_Establish_democratic_centralism}
+		prerequisite={focus=ICP_Moderate_collectivization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_democratic_centralism_ideas
+				add_idea = ISR_democratic_centralism_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Five_year_plan
+		icon=ISRA_Five_year_plan
+		x=24
+		y=3
+		prerequisite={focus=ICP_Moderate_collectivization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Moderate_collectivization_ideas
+				add_idea = ISR_Moderate_collectivization_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Communist_youth_league
+		icon=ISRA_Communist_youth_league
+		x=22
+		y=4
+		prerequisite={focus=ICP_Rectify_the_partys_style}
+		prerequisite={focus=ICP_Dictatorship_of_the_Proletariat}
+		prerequisite={focus=ICP_Five_year_plan}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_democratic_centralism_ideas1
+				add_idea = ISR_democratic_centralism_ideas2
+			}
+		}
+	}
+	focus={
+		id=ICP_No_more_nationalism
+		icon=ISRA_No_more_nationalism
+		x=22
+		y=5
+		prerequisite={focus=ICP_Support_the_Union_of_Workers_and_Peasants}
+		prerequisite={focus=ICP_Communist_youth_league}
+		prerequisite={focus=ICP_Supporting_scientific_causes}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Leninism_ideas1
+				add_idea = ISR_Leninism_ideas2
+			}
+		}
+	}
+	focus={
+		id=ICP_Jakub_Berman
+		icon=ISRA_Jakub_Berman
+		x=30
+		y=1
+		prerequisite={focus=ICP_The_ICP_won_a_resounding_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ICP_Centralized
+		icon=ISRA_Centralized
+		x=27
+		y=2
+		prerequisite={focus=ICP_Jakub_Berman}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Centralized_ideas
+		}
+	}
+	focus={
+		id=ICP_Labour_and_Defense_Committee
+		icon=ISRA_Labour_and_Defense_Committee
+		x=29
+		y=2
+		prerequisite={focus=ICP_Jakub_Berman}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Labour_and_Defense_Committee_ideas
+		}
+	}
+	focus={
+		id=ICP_All_ethnic_groups_are_equal
+		icon=ISRA_All_ethnic_groups_are_equal
+		x=31
+		y=2
+		prerequisite={focus=ICP_Jakub_Berman}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = ICP_Labour_and_Defense_Committee
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Labour_and_Defense_Committee_ideas
+				add_idea = ISR_Labour_and_Defense_Committee_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_The_vanguard_of_the_proletariat
+		icon=ISRA_The_vanguard_of_the_proletariat
+		x=33
+		y=2
+		prerequisite={focus=ICP_Jakub_Berman}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_vanguard_ideas
+		}
+	}
+	focus={
+		id=ICP_Consolidate_the_authority_of_the_President
+		icon=ISRA_Consolidate_the_authority_of_the_President
+		x=27
+		y=4
+		prerequisite={focus=ICP_Centralized}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Centralized_ideas
+				add_idea = ISR_Centralized_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Socialist_realist_art
+		icon=ISRA_Socialist_realist_art
+		x=33
+		y=4
+		prerequisite={focus=ICP_The_vanguard_of_the_proletariat}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_vanguard_ideas
+				add_idea = ISR_vanguard_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Promote_urbanization
+		icon=ISRA_Promote_urbanization
+		x=28
+		y=3
+		prerequisite={focus=ICP_Labour_and_Defense_Committee}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Promote_urbanization_ideas
+		}
+	}
+	focus={
+		id=ICP_Mass_collectivization
+		icon=ISRA_Mass_collectivization
+		x=30
+		y=3
+		prerequisite={focus=ICP_Labour_and_Defense_Committee}
+		prerequisite={focus=ICP_All_ethnic_groups_are_equal}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Mass_collectivization_ideas
+		}
+	}
+	focus={
+		id=ICP_Israelis_come_first
+		icon=ISRA_Israelis_come_first
+		x=32
+		y=3
+		prerequisite={focus=ICP_All_ethnic_groups_are_equal}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Israelis_come_first_ideas
+		}
+	}
+	focus={
+		id=ISR_Reshaping_the_Israeli_state
+		icon=ISRA_Reshaping_the_Israeli_state
+		x=30
+		y=4
+		prerequisite={focus=ICP_Promote_urbanization}
+		prerequisite={focus=ICP_Mass_collectivization}
+		prerequisite={focus=ICP_Israelis_come_first}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Promote_urbanization_ideas
+				add_idea = ISR_Promote_urbanization_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Successor_to_Red_October
+		icon=ISRA_Successor_to_Red_October
+		x=30
+		y=5
+		prerequisite={focus=ICP_Consolidate_the_authority_of_the_President}
+		prerequisite={focus=ISR_Reshaping_the_Israeli_state}
+		prerequisite={focus=ICP_Socialist_realist_art}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israelis_come_first_ideas
+				add_idea = ISR_Israelis_come_first_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Moshe_Sneh
+		icon=ISRA_Moshe_Sneh
+		x=38
+		y=1
+		prerequisite={focus=ICP_The_ICP_won_a_resounding_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ICP_Criticism_of_radical_Zionism
+		icon=ISRA_Criticism_of_radical_Zionism
+		x=35
+		y=2
+		prerequisite={focus=ICP_Moshe_Sneh}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Criticism_of_radical_Zionism_ideas
+		}
+	}
+	focus={
+		id=ICP_Control_prices
+		icon=ISRA_Control_prices
+		x=37
+		y=2
+		prerequisite={focus=ICP_Moshe_Sneh}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Control_prices_ideas
+		}
+	}
+	focus={
+		id=ICP_Gradual_decentralization
+		icon=ISRA_Gradual_decentralization
+		x=39
+		y=2
+		prerequisite={focus=ICP_Moshe_Sneh}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_decentralization_ideas
+		}
+	}
+	focus={
+		id=ICP_Unite_the_major_lefts
+		icon=ISRA_Unite_the_major_lefts
+		x=41
+		y=2
+		prerequisite={focus=ICP_Moshe_Sneh}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Unite_the_major_lefts_ideas
+		}
+	}
+	focus={
+		id=ICP_Consolidate_the_regime
+		icon=ISRA_Consolidate_the_regime
+		x=35
+		y=4
+		prerequisite={focus=ICP_Criticism_of_radical_Zionism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Criticism_of_radical_Zionism_ideas
+				add_idea = ISR_Criticism_of_radical_Zionism_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Build_a_proletarian_paradise
+		icon=ISRA_Build_a_proletarian_paradise
+		x=41
+		y=4
+		prerequisite={focus=ICP_Unite_the_major_lefts}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Unite_the_major_lefts_ideas
+				add_idea = ISR_Unite_the_major_lefts_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Dealing_with_the_unemployed
+		icon=ISRA_Dealing_with_the_unemployed
+		x=36
+		y=3
+		prerequisite={focus=ICP_Control_prices}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Control_prices_ideas
+				add_idea = ISR_Control_prices_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Humanity_reigns_supreme
+		icon=ISRA_Humanity_reigns_supreme
+		x=38
+		y=3
+		prerequisite={focus=ICP_Control_prices}
+		prerequisite={focus=ICP_Gradual_decentralization}
+		prerequisite={focus=ICP_Gradual_decentralization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_decentralization_ideas
+				add_idea = ISR_decentralization_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Strengthen_the_alliance_of_workers_and_peasants
+		icon=ISRA_Strengthen_the_alliance_of_workers_and_peasants
+		x=40
+		y=3
+		prerequisite={focus=ICP_Gradual_decentralization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = ICP_Humanity_reigns_supreme
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_decentralization_ideas1
+				add_idea = ISR_decentralization_ideas2
+			}
+		}
+	}
+	focus={
+		id=ICP_There_is_bread_for_everyone
+		icon=ISRA_There_is_bread_for_everyone
+		x=38
+		y=4
+		prerequisite={focus=ICP_Dealing_with_the_unemployed}
+		prerequisite={focus=ICP_Humanity_reigns_supreme}
+		prerequisite={focus=ICP_Strengthen_the_alliance_of_workers_and_peasants}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Control_prices_ideas1
+				add_idea = ISR_Control_prices_ideas2
+			}
+		}
+	}
+	focus={
+		id=ICP_A_morally_high_and_united_Israel
+		icon=ISRA_A_morally_high_and_united_Israel
+		x=38
+		y=5
+		prerequisite={focus=ICP_Consolidate_the_regime}
+		prerequisite={focus=ICP_There_is_bread_for_everyone}
+		prerequisite={focus=ICP_Build_a_proletarian_paradise}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Control_prices_ideas2
+				add_idea = ISR_Control_prices_ideas3
+			}
+		}
+	}
+	focus={
+		id=ICP_Leopold_Trepper
+		icon=ISRA_Leopold_Trepper
+		x=46
+		y=1
+		prerequisite={focus=ICP_The_ICP_won_a_resounding_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		available = {
+			has_country_flag = FE_NOM
+		}
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ICP_Introduction_of_the_New_Economic_Policy
+		icon=ISRA_Introduction_of_the_New_Economic_Policy
+		x=43
+		y=2
+		prerequisite={focus=ICP_Leopold_Trepper}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_New_Economic_Policy_ideas
+		}
+	}
+	focus={
+		id=ICP_Take_control_of_the_union
+		icon=ISRA_Take_control_of_the_union
+		x=45
+		y=2
+		prerequisite={focus=ICP_Leopold_Trepper}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Take_control_of_the_union_ideas
+		}
+	}
+	focus={
+		id=ICP_Redemption_of_private_businesses
+		icon=ISRA_Redemption_of_private_businesses
+		x=47
+		y=2
+		prerequisite={focus=ICP_Leopold_Trepper}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Redemption_of_private_businesses_ideas
+		}
+	}
+	focus={
+		id=ICP_Absorption_of_the_PCP
+		icon=ISRA_Absorption_of_the_PCP
+		x=49
+		y=2
+		prerequisite={focus=ICP_Leopold_Trepper}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_League_of_Communists_ideas
+		}
+	}
+	focus={
+		id=ICP_Slow_industrialization
+		icon=ISRA_Slow_industrialization
+		x=43
+		y=4
+		prerequisite={focus=ICP_Introduction_of_the_New_Economic_Policy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_New_Economic_Policy_ideas
+				add_idea = ISR_New_Economic_Policy_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_League_of_Communists
+		icon=ISRA_League_of_Communists
+		x=49
+		y=4
+		prerequisite={focus=ICP_Absorption_of_the_PCP}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_League_of_Communists_ideas
+				add_idea = ISR_League_of_Communists_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Attack_the_bureaucracy
+		icon=ISRA_Attack_the_bureaucracy
+		x=44
+		y=3
+		prerequisite={focus=ICP_Take_control_of_the_union}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Take_control_of_the_union_ideas
+				add_idea = ISR_Take_control_of_the_union_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Eliminate_rural_urban_disparities
+		icon=ISRA_Eliminate_rural_urban_disparities
+		x=46
+		y=3
+		prerequisite={focus=ICP_Take_control_of_the_union}
+		prerequisite={focus=ICP_Redemption_of_private_businesses}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_rural_urban_disparities_ideas
+		}
+	}
+	focus={
+		id=ICP_The_tiller_has_his_field
+		icon=ISRA_The_tiller_has_his_field
+		x=48
+		y=3
+		prerequisite={focus=ICP_Redemption_of_private_businesses}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Redemption_of_private_businesses_ideas
+				add_idea = ISR_Redemption_of_private_businesses_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_True_Leninism
+		icon=ISRA_True_Leninism
+		x=46
+		y=4
+		prerequisite={focus=ICP_Attack_the_bureaucracy}
+		prerequisite={focus=ICP_Eliminate_rural_urban_disparities}
+		prerequisite={focus=ICP_The_tiller_has_his_field}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_rural_urban_disparities_ideas
+				add_idea = ISR_rural_urban_disparities_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Towards_a_prosperous_and_prosperous_future
+		icon=ISRA_Towards_a_prosperous_and_prosperous_future
+		x=46
+		y=5
+		prerequisite={focus=ICP_Slow_industrialization}
+		prerequisite={focus=ICP_True_Leninism}
+		prerequisite={focus=ICP_League_of_Communists}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_New_Economic_Policy_ideas1
+				add_idea = ISR_New_Economic_Policy_ideas2
+			}
+		}
+	}
+	focus={
+		id=ICP_Tony_Cliff
+		icon=ISRA_Tony_Cliff
+		x=54
+		y=1
+		prerequisite={focus=ICP_The_ICP_won_a_resounding_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ICP_Preservation_of_multiculturalism
+		icon=ISRA_Preservation_of_multiculturalism
+		x=51
+		y=2
+		prerequisite={focus=ICP_Tony_Cliff}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Preservation_of_multiculturalism_ideas
+		}
+	}
+	focus={
+		id=ICP_Reborn
+		icon=ISRA_Reborn
+		x=53
+		y=2
+		prerequisite={focus=ICP_Tony_Cliff}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Reborn_ideas
+		}
+	}
+	focus={
+		id=ICP_Revolutionary_economic_outlook
+		icon=ISRA_Revolutionary_economic_outlook
+		x=55
+		y=2
+		prerequisite={focus=ICP_Tony_Cliff}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Revolutionary_economic_outlook_ideas
+		}
+	}
+	focus={
+		id=ICP_Wake_up_to_the_Middle_East
+		icon=ISRA_Wake_up_to_the_Middle_East
+		x=57
+		y=2
+		prerequisite={focus=ICP_Tony_Cliff}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Vanguard_of_the_revolution_ideas
+		}
+	}
+	focus={
+		id=ICP_Artistic_freedom
+		icon=ISRA_Artistic_freedom
+		x=51
+		y=4
+		prerequisite={focus=ICP_Preservation_of_multiculturalism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Preservation_of_multiculturalism_ideas
+				add_idea = ISR_Preservation_of_multiculturalism_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Red_internationalism
+		icon=ISRA_Red_internationalism
+		x=57
+		y=4
+		prerequisite={focus=ICP_Wake_up_to_the_Middle_East}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Vanguard_of_the_revolution_ideas
+				add_idea = ISR_Vanguard_of_the_revolution_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Liquidation_of_the_socialist_bureaucracy
+		icon=ISRA_Liquidation_of_the_socialist_bureaucracy
+		x=52
+		y=3
+		prerequisite={focus=ICP_Reborn}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Reborn_ideas
+				add_idea = ISR_Reborn_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Step_into_modernization
+		icon=ISRA_Step_into_modernization
+		x=54
+		y=3
+		prerequisite={focus=ICP_Reborn}
+		prerequisite={focus=ICP_Revolutionary_economic_outlook}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Step_into_modernization_ideas
+		}
+	}
+	focus={
+		id=ICP_Balancing_interests
+		icon=ISRA_Balancing_interests
+		x=56
+		y=3
+		prerequisite={focus=ICP_Revolutionary_economic_outlook}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Revolutionary_economic_outlook_ideas
+				add_idea = ISR_Revolutionary_economic_outlook_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Committee_democracy
+		icon=ISRA_Committee_democracy
+		x=54
+		y=4
+		prerequisite={focus=ICP_Liquidation_of_the_socialist_bureaucracy}
+		prerequisite={focus=ICP_Step_into_modernization}
+		prerequisite={focus=ICP_Balancing_interests}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Reborn_ideas1
+				add_idea = ISR_Reborn_ideas2
+			}
+		}
+	}
+	focus={
+		id=ICP_The_Second_Great_Flood
+		icon=ISRA_The_Second_Great_Flood
+		x=54
+		y=5
+		prerequisite={focus=ICP_Artistic_freedom}
+		prerequisite={focus=ICP_Committee_democracy}
+		prerequisite={focus=ICP_Red_internationalism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Vanguard_of_the_revolution_ideas1
+				add_idea = ISR_Vanguard_of_the_revolution_ideas2
+			}
+		}
+	}
+	focus={
+		id=ICP_Arthur_Koestler
+		icon=ISRA_Arthur_Koestler
+		x=62
+		y=1
+		prerequisite={focus=ICP_The_ICP_won_a_resounding_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ICP_Patriotic_education
+		icon=ISRA_Patriotic_education
+		x=59
+		y=2
+		prerequisite={focus=ICP_Arthur_Koestler}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Patriotic_education_ideas
+		}
+	}
+	focus={
+		id=ICP_Burnhamism_in_the_Middle_East
+		icon=ISRA_Burnhamism_in_the_Middle_East
+		x=61
+		y=2
+		prerequisite={focus=ICP_Arthur_Koestler}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_burnhams_economic_policy_ideas
+		}
+	}
+	focus={
+		id=ICP_Supporting_professional_trade_unions
+		icon=ISRA_Supporting_professional_trade_unions
+		x=63
+		y=2
+		prerequisite={focus=ICP_Arthur_Koestler}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_trade_unions_ideas
+		}
+	}
+	focus={
+		id=ICP_Emergency_powers
+		icon=ISRA_Emergency_powers
+		x=65
+		y=2
+		prerequisite={focus=ICP_Arthur_Koestler}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_proletariat_commander_ideas
+		}
+	}
+	focus={
+		id=ICP_Anti_capitalist_barriers
+		icon=ISRA_Anti_capitalist_barriers
+		x=59
+		y=4
+		prerequisite={focus=ICP_Patriotic_education}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Patriotic_education_ideas
+				add_idea = ISR_Patriotic_education_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Swear_loyalty
+		icon=ISRA_Swear_loyalty
+		x=65
+		y=4
+		prerequisite={focus=ICP_Emergency_powers}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_proletariat_commander_ideas
+				add_idea = ISR_proletariat_commander_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Squeeze_out_the_bourgeoisie
+		icon=ISRA_Squeeze_out_the_bourgeoisie
+		x=60
+		y=3
+		prerequisite={focus=ICP_Burnhamism_in_the_Middle_East}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_burnhams_economic_policy_ideas
+				add_idea = ISR_burnhams_economic_policy_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Council_of_Technocrats
+		icon=ISRA_Council_of_Technocrats
+		x=62
+		y=3
+		prerequisite={focus=ICP_Burnhamism_in_the_Middle_East}
+		prerequisite={focus=ICP_Supporting_professional_trade_unions}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Council_of_Technocrats_ideas
+		}
+	}
+	focus={
+		id=ICP_Industrial_Army
+		icon=ISRA_Industrial_Army
+		x=64
+		y=3
+		prerequisite={focus=ICP_Supporting_professional_trade_unions}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_trade_unions_ideas
+				add_idea = ISR_trade_unions_ideas1
+			}
+		}
+	}
+	focus={
+		id=ICP_Labor_wins_new_life
+		icon=ISRA_Labor_wins_new_life
+		x=62
+		y=4
+		prerequisite={focus=ICP_Squeeze_out_the_bourgeoisie}
+		prerequisite={focus=ICP_Council_of_Technocrats}
+		prerequisite={focus=ICP_Industrial_Army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_burnhams_economic_policy_ideas1
+				add_idea = ISR_burnhams_economic_policy_ideas2
+			}
+		}
+	}
+	focus={
+		id=ICP_Show_the_power_of_Israel
+		icon=ISRA_Show_the_power_of_Israel
+		x=62
+		y=5
+		prerequisite={focus=ICP_Anti_capitalist_barriers}
+		prerequisite={focus=ICP_Labor_wins_new_life}
+		prerequisite={focus=ICP_Swear_loyalty}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Council_of_Technocrats_ideas
+				add_idea = ISR_Council_of_Technocrats_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Labour_Party_Win
+		icon=ISRA_Labour_Party_Win
+		x=28
+		y=6
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Flag_MAPAI_Win
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MAPAI_Meir_Yaari
+		icon=ISRA_Meir_Yaari
+		x=22
+		y=7
+		prerequisite={focus=MAPAI_Labour_Party_Win}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MAPAI_Advancing_one_country_programmes
+		icon=ISRA_Advancing_one_country_programmes
+		x=20
+		y=8
+		prerequisite={focus=MAPAI_Meir_Yaari}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Union_of_National_Unity_ideas
+		}
+	}
+	focus={
+		id=MAPAI_Affirmative_society
+		icon=ISRA_Affirmative_society
+		x=22
+		y=8
+		prerequisite={focus=MAPAI_Meir_Yaari}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Affirmative_society_ideas
+		}
+	}
+	focus={
+		id=MAPAI_Workers_Economic_Council
+		icon=ISRA_Workers_Economic_Council
+		x=24
+		y=8
+		prerequisite={focus=MAPAI_Meir_Yaari}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Workers_Economic_Council_ideas
+		}
+	}
+	focus={
+		id=MAPAI_On_the_road_to_revolution
+		icon=ISRA_On_the_road_to_revolution
+		x=21
+		y=9
+		prerequisite={focus=MAPAI_Affirmative_society}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_On_the_road_to_revolution_ideas
+		}
+	}
+	focus={
+		id=MAPAI_Downplaying_the_notion_of_nationality
+		icon=ISRA_Downplaying_the_notion_of_nationality
+		x=23
+		y=9
+		prerequisite={focus=MAPAI_Affirmative_society}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Affirmative_society_ideas
+				add_idea = ISR_Affirmative_society_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Hawkish_diplomatic_position
+		icon=ISRA_Hawkish_diplomatic_position
+		x=20
+		y=10
+		prerequisite={focus=MAPAI_Advancing_one_country_programmes}
+		prerequisite={focus=MAPAI_On_the_road_to_revolution}
+		prerequisite={focus=MAPAI_Downplaying_the_notion_of_nationality}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Union_of_National_Unity_ideas
+				add_idea = ISR_Union_of_National_Unity_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Youth_Social_Planning
+		icon=ISRA_Youth_Social_Planning
+		x=22
+		y=10
+		prerequisite={focus=MAPAI_On_the_road_to_revolution}
+		prerequisite={focus=MAPAI_Downplaying_the_notion_of_nationality}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_On_the_road_to_revolution_ideas
+				add_idea = ISR_On_the_road_to_revolution_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Steady_economic_planning
+		icon=ISRA_Steady_economic_planning
+		x=24
+		y=10
+		prerequisite={focus=MAPAI_Workers_Economic_Council}
+		prerequisite={focus=MAPAI_Downplaying_the_notion_of_nationality}
+		prerequisite={focus=MAPAI_On_the_road_to_revolution}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Workers_Economic_Council_ideas
+				add_idea = ISR_Workers_Economic_Council_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Israels_legal_society
+		icon=ISRA_Israels_legal_society
+		x=22
+		y=11
+		prerequisite={focus=MAPAI_Hawkish_diplomatic_position}
+		prerequisite={focus=MAPAI_Steady_economic_planning}
+		prerequisite={focus=MAPAI_Youth_Social_Planning}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Affirmative_society_ideas1
+				add_idea = ISR_Affirmative_society_ideas2
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Yaakov_Hazan
+		icon=ISRA_Yaakov_Hazan
+		x=28
+		y=7
+		prerequisite={focus=MAPAI_Labour_Party_Win}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MAPAI_Internationally_oriented
+		icon=ISRA_Internationally_oriented
+		x=26
+		y=8
+		prerequisite={focus=MAPAI_Yaakov_Hazan}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Middle_East_unity_ideas
+		}
+	}
+	focus={
+		id=MAPAI_Praise_to_the_Commune
+		icon=ISRA_Praise_to_the_Commune
+		x=28
+		y=8
+		prerequisite={focus=MAPAI_Yaakov_Hazan}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_The_fruits_of_the_Commune_ideas
+		}
+	}
+	focus={
+		id=MAPAI_Planning_and_Economic_Commission
+		icon=ISRA_Planning_and_Economic_Commission
+		x=30
+		y=8
+		prerequisite={focus=MAPAI_Yaakov_Hazan}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Planning_and_Economic_Commission_ideas
+		}
+	}
+	focus={
+		id=MAPAI_Promote_secularization
+		icon=ISRA_Promote_secularization
+		x=27
+		y=9
+		prerequisite={focus=MAPAI_Praise_to_the_Commune}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_The_fruits_of_the_Commune_ideas
+				add_idea = ISR_The_fruits_of_the_Commune_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Symbol_of_settlement_culture
+		icon=ISRA_Symbol_of_settlement_culture
+		x=29
+		y=9
+		prerequisite={focus=MAPAI_Praise_to_the_Commune}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Symbol_of_settlement_culture_ideas
+		}
+	}
+	focus={
+		id=MAPAI_Joint_diplomacy_in_the_Middle_East
+		icon=ISRA_Joint_diplomacy_in_the_Middle_East
+		x=26
+		y=10
+		prerequisite={focus=MAPAI_Internationally_oriented}
+		prerequisite={focus=MAPAI_Promote_secularization}
+		prerequisite={focus=MAPAI_Symbol_of_settlement_culture}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Middle_East_unity_ideas
+				add_idea = ISR_Middle_East_unity_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Ideological_society
+		icon=ISRA_Ideological_society
+		x=28
+		y=10
+		prerequisite={focus=MAPAI_Promote_secularization}
+		prerequisite={focus=MAPAI_Symbol_of_settlement_culture}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_The_fruits_of_the_Commune_ideas1
+				add_idea = ISR_The_fruits_of_the_Commune_ideas2
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Intensive_industrialization
+		icon=ISRA_Intensive_industrialization
+		x=30
+		y=10
+		prerequisite={focus=MAPAI_Planning_and_Economic_Commission}
+		prerequisite={focus=MAPAI_Promote_secularization}
+		prerequisite={focus=MAPAI_Symbol_of_settlement_culture}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Planning_and_Economic_Commission_ideas
+				add_idea = ISR_Planning_and_Economic_Commission_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Solidarity_and_unity
+		icon=ISRA_Solidarity_and_unity
+		x=28
+		y=11
+		prerequisite={focus=MAPAI_Joint_diplomacy_in_the_Middle_East}
+		prerequisite={focus=MAPAI_Ideological_society}
+		prerequisite={focus=MAPAI_Intensive_industrialization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Symbol_of_settlement_culture_ideas
+				add_idea = ISR_Symbol_of_settlement_culture_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Yizahk_Tabenkin
+		icon=ISRA_Yizahk_Tabenkin
+		x=34
+		y=7
+		prerequisite={focus=MAPAI_Labour_Party_Win}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=MAPAI_Promote_internationalization
+		icon=ISRA_Promote_internationalization
+		x=32
+		y=8
+		prerequisite={focus=MAPAI_Yizahk_Tabenkin}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Free_Country_ideas
+		}
+	}
+	focus={
+		id=MAPAI_Maintain_settlements
+		icon=ISRA_Maintain_settlements
+		x=34
+		y=8
+		prerequisite={focus=MAPAI_Yizahk_Tabenkin}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Maintain_settlements_ideas
+		}
+	}
+	focus={
+		id=MAPAI_Committee_of_Cooperatives
+		icon=ISRA_Committee_of_Cooperatives
+		x=36
+		y=8
+		prerequisite={focus=MAPAI_Yizahk_Tabenkin}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Committee_of_Cooperatives_ideas
+		}
+	}
+	focus={
+		id=MAPAI_The_Law_of_Land_Cooperation
+		icon=ISRA_The_Law_of_Land_Cooperation
+		x=33
+		y=9
+		prerequisite={focus=MAPAI_Maintain_settlements}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Maintain_settlements_ideas
+				add_idea = ISR_Maintain_settlements_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Liberate_the_people
+		icon=ISRA_Liberate_the_people
+		x=35
+		y=9
+		prerequisite={focus=MAPAI_Maintain_settlements}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Liberate_the_people_ideas
+		}
+	}
+	focus={
+		id=MAPAI_A_place_for_the_Arabs
+		icon=ISRA_A_place_for_the_Arabs
+		x=32
+		y=10
+		prerequisite={focus=MAPAI_Promote_internationalization}
+		prerequisite={focus=MAPAI_The_Law_of_Land_Cooperation}
+		prerequisite={focus=MAPAI_Liberate_the_people}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Free_Country_ideas
+				add_idea = ISR_Free_Country_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_The_influence_of_farmers
+		icon=ISRA_The_influence_of_farmers
+		x=34
+		y=10
+		prerequisite={focus=MAPAI_The_Law_of_Land_Cooperation}
+		prerequisite={focus=MAPAI_Liberate_the_people}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Liberate_the_people_ideas
+				add_idea = ISR_Liberate_the_people_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Focus_on_agricultural_work
+		icon=ISRA_Focus_on_agricultural_work
+		x=36
+		y=10
+		prerequisite={focus=MAPAI_Committee_of_Cooperatives}
+		prerequisite={focus=MAPAI_The_Law_of_Land_Cooperation}
+		prerequisite={focus=MAPAI_Liberate_the_people}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Committee_of_Cooperatives_ideas
+				add_idea = ISR_Committee_of_Cooperatives_ideas1
+			}
+		}
+	}
+	focus={
+		id=MAPAI_Agriculture_cooperatives_Israel
+		icon=ISRA_Agriculture_cooperatives_Israel
+		x=34
+		y=11
+		prerequisite={focus=MAPAI_A_place_for_the_Arabs}
+		prerequisite={focus=MAPAI_The_influence_of_farmers}
+		prerequisite={focus=MAPAI_Focus_on_agricultural_work}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Maintain_settlements_ideas1
+				add_idea = ISR_Maintain_settlements_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAPO_Victory_for_the_United_Labour_Party
+		icon=ISRA_Victory_for_the_United_Labour_Party
+		x=50
+		y=6
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = United_Labour_Party_Victory_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HAPO_Yosef_Sprinzak
+		icon=ISRA_Yosef_Sprinzak
+		x=41
+		y=7
+		prerequisite={focus=HAPO_Victory_for_the_United_Labour_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HAPO_Practical_diplomacy
+		icon=ISRA_Practical_diplomacy
+		x=39
+		y=8
+		prerequisite={focus=HAPO_Yosef_Sprinzak}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Practical_diplomacy_ideas
+		}
+	}
+	focus={
+		id=HAPO_National_Parliament
+		icon=ISRA_National_Parliament
+		x=41
+		y=8
+		prerequisite={focus=HAPO_Yosef_Sprinzak}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_National_Parliament_ideas
+		}
+	}
+	focus={
+		id=HAPO_Israel_agrees
+		icon=ISRA_Israel_agrees
+		x=43
+		y=8
+		prerequisite={focus=HAPO_Yosef_Sprinzak}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Israel_agrees_ideas
+		}
+	}
+	focus={
+		id=HAPO_Strengthening_trade_unions
+		icon=ISRA_Strengthening_trade_unions
+		x=40
+		y=9
+		prerequisite={focus=HAPO_National_Parliament}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_National_Parliament_ideas
+				add_idea = ISR_National_Parliament_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Medicare_plans
+		icon=ISRA_Medicare_plans
+		x=42
+		y=9
+		prerequisite={focus=HAPO_National_Parliament}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Medicare_plans_ideas
+		}
+	}
+	focus={
+		id=HAPO_Receiving_refugees
+		icon=ISRA_Receiving_refugees
+		x=39
+		y=10
+		prerequisite={focus=HAPO_Practical_diplomacy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Practical_diplomacy_ideas
+				add_idea = ISR_Practical_diplomacy_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Declare_war_on_poverty
+		icon=ISRA_Declare_war_on_poverty
+		x=41
+		y=10
+		prerequisite={focus=HAPO_Strengthening_trade_unions}
+		prerequisite={focus=HAPO_Medicare_plans}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_National_Parliament_ideas
+				add_idea = ISR_National_Parliament_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_aid_settlement
+		icon=ISRA_aid_settlement
+		x=43
+		y=10
+		prerequisite={focus=HAPO_Israel_agrees}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israel_agrees_ideas
+				add_idea = ISR_Israel_agrees_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Moses_Harmonious_Society
+		icon=ISRA_Moses_Harmonious_Society
+		x=41
+		y=11
+		prerequisite={focus=HAPO_Receiving_refugees}
+		prerequisite={focus=HAPO_Declare_war_on_poverty}
+		prerequisite={focus=HAPO_aid_settlement}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Medicare_plans_ideas
+				add_idea = ISR_Medicare_plans_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Levi_Eshkol
+		icon=ISRA_Levi_Eshkol
+		x=47
+		y=7
+		prerequisite={focus=HAPO_Victory_for_the_United_Labour_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HAPO_The_two_countries_reconciled
+		icon=ISRA_The_two_countries_reconciled
+		x=45
+		y=8
+		prerequisite={focus=HAPO_Levi_Eshkol}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_The_two_countries_reconciled_ideas
+		}
+	}
+	focus={
+		id=HAPO_Placement_of_workers
+		icon=ISRA_Placement_of_workers
+		x=47
+		y=8
+		prerequisite={focus=HAPO_Levi_Eshkol}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_One_big_union_ideas
+		}
+	}
+	focus={
+		id=HAPO_National_Water_Corporation
+		icon=ISRA_National_Water_Corporation
+		x=49
+		y=8
+		prerequisite={focus=HAPO_Levi_Eshkol}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_National_Engineering_ideas
+		}
+	}
+	focus={
+		id=HAPO_Helping_workers_families
+		icon=ISRA_Helping_workers_families
+		x=46
+		y=9
+		prerequisite={focus=HAPO_Placement_of_workers}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_One_big_union_ideas
+				add_idea = ISR_One_big_union_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_State_Housing
+		icon=ISRA_State_Housing
+		x=48
+		y=9
+		prerequisite={focus=HAPO_Placement_of_workers}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_State_Housing_ideas
+		}
+	}
+	focus={
+		id=HAPO_Fight_extremist_forces
+		icon=ISRA_Fight_extremist_forces
+		x=45
+		y=10
+		prerequisite={focus=HAPO_The_two_countries_reconciled}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_One_big_union_ideas
+				add_idea = ISR_One_big_union_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_No_more_homeless_people
+		icon=ISRA_No_more_homeless_people
+		x=47
+		y=10
+		prerequisite={focus=HAPO_Helping_workers_families}
+		prerequisite={focus=HAPO_State_Housing}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_State_Housing_ideas
+				add_idea = ISR_State_Housing_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Utility_offices
+		icon=ISRA_Utility_offices
+		x=49
+		y=10
+		prerequisite={focus=HAPO_National_Water_Corporation}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_National_Engineering_ideas
+				add_idea = ISR_National_Engineering_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Moses_Livelihood_Society
+		icon=ISRA_Moses_Livelihood_Society
+		x=47
+		y=11
+		prerequisite={focus=HAPO_Fight_extremist_forces}
+		prerequisite={focus=HAPO_No_more_homeless_people}
+		prerequisite={focus=HAPO_Utility_offices}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_One_big_union_ideas1
+				add_idea = ISR_One_big_union_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAPO_Judah_Leon_Magnes
+		icon=ISRA_Judah_Leon_Magnes
+		x=53
+		y=7
+		prerequisite={focus=HAPO_Victory_for_the_United_Labour_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HAPO_Fight_for_the_bi_nation
+		icon=ISRA_Fight_for_the_bi_nation
+		x=51
+		y=8
+		prerequisite={focus=HAPO_Judah_Leon_Magnes}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Fight_for_the_bi_nation_ideas
+		}
+	}
+	focus={
+		id=HAPO_Unite_the_Jewish_community
+		icon=ISRA_Unite_the_Jewish_community
+		x=53
+		y=8
+		prerequisite={focus=HAPO_Judah_Leon_Magnes}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Unite_the_Jewish_community_ideas
+		}
+	}
+	focus={
+		id=HAPO_foreign_trade
+		icon=ISRA_foreign_trade
+		x=55
+		y=8
+		prerequisite={focus=HAPO_Judah_Leon_Magnes}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Market_economy_system_ideas
+		}
+	}
+	focus={
+		id=HAPO_Relief_for_refugees
+		icon=ISRA_Relief_for_refugees
+		x=52
+		y=9
+		prerequisite={focus=HAPO_Unite_the_Jewish_community}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Unite_the_Jewish_community_ideas
+				add_idea = ISR_Unite_the_Jewish_community_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Board_of_Education
+		icon=ISRA_Board_of_Education
+		x=54
+		y=9
+		prerequisite={focus=HAPO_Unite_the_Jewish_community}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Board_of_Education_ideas
+		}
+	}
+	focus={
+		id=HAPO_Peaceful_anti_war_movement
+		icon=ISRA_Peaceful_anti_war_movement
+		x=51
+		y=10
+		prerequisite={focus=HAPO_Fight_for_the_bi_nation}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Fight_for_the_bi_nation_ideas
+				add_idea = ISR_Fight_for_the_bi_nation_ideas1
+			}
+			country_event = Israel.14
+		}
+	}
+	focus={
+		id=HAPO_The_importance_of_education
+		icon=ISRA_The_importance_of_education
+		x=53
+		y=10
+		prerequisite={focus=HAPO_Relief_for_refugees}
+		prerequisite={focus=HAPO_Board_of_Education}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Board_of_Education_ideas
+				add_idea = ISR_Board_of_Education_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Imported_goods
+		icon=ISRA_Imported_goods
+		x=55
+		y=10
+		prerequisite={focus=HAPO_foreign_trade}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Market_economy_system_ideas
+				add_idea = ISR_Market_economy_system_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Moses_Free_Society
+		icon=ISRA_Moses_Free_Society
+		x=53
+		y=11
+		prerequisite={focus=HAPO_Peaceful_anti_war_movement}
+		prerequisite={focus=HAPO_The_importance_of_education}
+		prerequisite={focus=HAPO_Imported_goods}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Unite_the_Jewish_community_ideas1
+				add_idea = ISR_Unite_the_Jewish_community_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAPO_Golda_Meir
+		icon=ISRA_Golda_Meir
+		x=59
+		y=7
+		prerequisite={focus=HAPO_Victory_for_the_United_Labour_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HAPO_Conciliation_Commission
+		icon=ISRA_Conciliation_Commission
+		x=57
+		y=8
+		prerequisite={focus=HAPO_Golda_Meir}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Conciliation_Commission_ideas
+		}
+	}
+	focus={
+		id=HAPO_Iron_Man_Politics
+		icon=ISRA_Iron_Man_Politics
+		x=59
+		y=8
+		prerequisite={focus=HAPO_Golda_Meir}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Iron_Man_Politics_ideas
+		}
+	}
+	focus={
+		id=HAPO_Workers_Councils
+		icon=ISRA_Workers_Councils
+		x=61
+		y=8
+		prerequisite={focus=HAPO_Golda_Meir}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Workers_Councils_ideas
+		}
+	}
+	focus={
+		id=HAPO_Fundraising
+		icon=ISRA_Fundraising
+		x=58
+		y=9
+		prerequisite={focus=HAPO_Iron_Man_Politics}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Fundraising_ideas
+		}
+	}
+	focus={
+		id=HAPO_The_feminist_movement
+		icon=ISRA_The_feminist_movement
+		x=60
+		y=9
+		prerequisite={focus=HAPO_Iron_Man_Politics}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Iron_Man_Politics_ideas
+				add_idea = ISR_Iron_Man_Politics_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Let_go_of_contradictions
+		icon=ISRA_Let_go_of_contradictions
+		x=57
+		y=10
+		prerequisite={focus=HAPO_Conciliation_Commission}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Conciliation_Commission_ideas
+				add_idea = ISR_Conciliation_Commission_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Organic_government
+		icon=ISRA_Organic_government
+		x=59
+		y=10
+		prerequisite={focus=HAPO_Fundraising}
+		prerequisite={focus=HAPO_The_feminist_movement}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Iron_Man_Politics_ideas1
+				add_idea = ISR_Iron_Man_Politics_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAPO_Strengthen_compulsory_education
+		icon=ISRA_Strengthen_compulsory_education
+		x=61
+		y=10
+		prerequisite={focus=HAPO_Workers_Councils}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Workers_Councils_ideas
+				add_idea = ISR_Workers_Councils_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAPO_Moses_ordered_society
+		icon=ISRA_Moses_ordered_society
+		x=59
+		y=11
+		prerequisite={focus=HAPO_Let_go_of_contradictions}
+		prerequisite={focus=HAPO_Organic_government}
+		prerequisite={focus=HAPO_Strengthen_compulsory_education}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Fundraising_ideas
+				add_idea = ISR_Fundraising_ideas1
+			}
+		}
+	}
+	focus={
+		id=INP_Kuomintang_Israel
+		icon=ISRA_Kuomintang_Israel
+		x=66
+		y=7
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Flag_Kuomintang_Win
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=INP_Discipline_and_government
+		icon=ISRA_Discipline_and_government
+		x=65
+		y=8
+		prerequisite={focus=INP_Kuomintang_Israel}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_political_tutelage_ideas
+		}
+	}
+	focus={
+		id=INP_National_Revolution
+		icon=ISRA_National_Revolution
+		x=66
+		y=9
+		prerequisite={focus=INP_Discipline_and_government}
+		prerequisite={focus=INP_Localization_of_the_TPP}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_national_revolution_ideas
+		}
+	}
+	focus={
+		id=INP_Localization_of_the_TPP
+		icon=ISRA_Localization_of_the_TPP
+		x=67
+		y=8
+		prerequisite={focus=INP_Kuomintang_Israel}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_sanmin_ideas
+		}
+	}
+	focus={
+		id=INP_Fight_against_hostile_forces
+		icon=ISRA_Fight_against_hostile_forces
+		x=64
+		y=9
+		prerequisite={focus=INP_Discipline_and_government}
+		prerequisite={focus=INP_Localization_of_the_TPP}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_political_tutelage_ideas
+				add_idea = ISR_political_tutelage_ideas1
+			}
+		}
+	}
+	focus={
+		id=INP_The_sun_is_rising
+		icon=ISRA_The_sun_is_rising
+		x=66
+		y=10
+		prerequisite={focus=INP_Fight_against_hostile_forces}
+		prerequisite={focus=INP_National_Revolution}
+		prerequisite={focus=INP_Nationwide_construction}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_national_revolution_ideas
+				add_idea = ISR_national_revolution_ideas1
+			}
+		}
+	}
+	focus={
+		id=INP_Revenge_for_the_Chinese_Revolution
+		icon=ISRA_Revenge_for_the_Chinese_Revolution
+		x=65
+		y=11
+		prerequisite={focus=INP_The_sun_is_rising}
+		mutually_exclusive={focus=INP_Long_live_the_citizens_of_the_Middle_East }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_leader = {
+				name = "Morris Abraham Cohen"
+				ruling_only = yes
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_cosmetic_tag = ISR_KMT_gov
+			every_state = {
+				limit = { is_core_of = CHI }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = QIE }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = SQI }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = FNG }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = MON }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = TIB }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = SIK }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = TAN }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = ETS }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = XSM }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = SHX }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = HNN }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = GXC }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = LEP }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = LEC }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = YUN }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = SZC }
+				add_core_of = ISR
+			}
+			745 = { add_core_of = ISR }
+			524 = { add_core_of = ISR }
+			create_wargoal = { type = annex_everything target = CHI }
+			create_wargoal = { type = annex_everything target = QIE }
+			create_wargoal = { type = annex_everything target = SQI }
+			create_wargoal = { type = annex_everything target = FNG }
+			create_wargoal = { type = annex_everything target = MON }
+			create_wargoal = { type = annex_everything target = TIB }
+			create_wargoal = { type = annex_everything target = SIK }
+			create_wargoal = { type = annex_everything target = TAN }
+			create_wargoal = { type = annex_everything target = ETS }
+			create_wargoal = { type = annex_everything target = XSM }
+			create_wargoal = { type = annex_everything target = SHX }
+			create_wargoal = { type = annex_everything target = HNN }
+			create_wargoal = { type = annex_everything target = GXC }
+			create_wargoal = { type = annex_everything target = LEP }
+			create_wargoal = { type = annex_everything target = LEC }
+			create_wargoal = { type = annex_everything target = YUN }
+			create_wargoal = { type = annex_everything target = SZC }
+		}
+	}
+	focus={
+		id=INP_Nationwide_construction
+		icon=ISRA_Nationwide_construction
+		x=68
+		y=9
+		prerequisite={focus=INP_Discipline_and_government}
+		prerequisite={focus=INP_Localization_of_the_TPP}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_sanmin_ideas
+				add_idea = ISR_sanmin_ideas1
+			}
+		}
+	}
+	focus={
+		id=INP_Long_live_the_citizens_of_the_Middle_East
+		icon=ISRA_Long_live_the_citizens_of_the_Middle_East
+		x=67
+		y=11
+		prerequisite={focus=INP_The_sun_is_rising}
+		mutually_exclusive={focus=INP_Revenge_for_the_Chinese_Revolution }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_leader = {
+				name = "Hans Müller"
+				ruling_only = yes
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_cosmetic_tag = ISR_KMT2
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = LEB }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = TUR }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = YEM }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = PER }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = ISR
+			}
+			create_wargoal = { type = annex_everything target = SYR }
+			create_wargoal = { type = annex_everything target = LEB }
+			create_wargoal = { type = annex_everything target = TUR }
+			create_wargoal = { type = annex_everything target = IRQ }
+			create_wargoal = { type = annex_everything target = HEJ }
+			create_wargoal = { type = annex_everything target = YEM }
+			create_wargoal = { type = annex_everything target = OMA }
+			create_wargoal = { type = annex_everything target = PER }
+			create_wargoal = { type = annex_everything target = EGY }
+			create_wargoal = { type = annex_everything target = SAU }
+			create_wargoal = { type = annex_everything target = JBS }
+		}
+	}
+	focus={
+		id=ILP_The_Liberals_won
+		icon=ISRA_The_Liberals_won
+		x=14
+		y=12
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Liberty_Party_Victory_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ILP_Pinchas_Rosen
+		icon=ISRA_Pinchas_Rosen
+		x=11
+		y=13
+		prerequisite={focus=ILP_The_Liberals_won}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ILP_Rapprochement_with_the_Arabs
+		icon=ISRA_Rapprochement_with_the_Arabs
+		x=9
+		y=14
+		prerequisite={focus=ILP_Pinchas_Rosen}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Rapprochement_with_the_Arabs_ideas
+		}
+	}
+	focus={
+		id=ILP_Election_of_judges
+		icon=ISRA_Election_of_judges
+		x=11
+		y=14
+		prerequisite={focus=ILP_Pinchas_Rosen}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Election_of_judges_ideas
+		}
+	}
+	focus={
+		id=ILP_Supporting_multinational_corporations
+		icon=ISRA_Supporting_multinational_corporations
+		x=13
+		y=14
+		prerequisite={focus=ILP_Pinchas_Rosen}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Supporting_multinational_corporations_ideas
+		}
+	}
+	focus={
+		id=ILP_Establish_a_just_government
+		icon=ISRA_Establish_a_just_government
+		x=10
+		y=15
+		prerequisite={focus=ILP_Election_of_judges}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Establish_a_just_government_ideas
+		}
+	}
+	focus={
+		id=ILP_The_importance_of_the_dignity_of_the_judiciary
+		icon=ISRA_The_importance_of_the_dignity_of_the_judiciary
+		x=12
+		y=15
+		prerequisite={focus=ILP_Election_of_judges}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Election_of_judges_ideas
+				add_idea = ISR_Election_of_judges_ideas1
+			}
+		}
+	}
+	focus={
+		id=ILP_Progressive_diplomacy
+		icon=ISRA_Progressive_diplomacy
+		x=9
+		y=16
+		prerequisite={focus=ILP_Rapprochement_with_the_Arabs}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Rapprochement_with_the_Arabs_ideas
+				add_idea = ISR_Rapprochement_with_the_Arabs_ideas1
+			}
+		}
+	}
+	focus={
+		id=ILP_The_era_of_cultural_progress
+		icon=ISRA_The_era_of_cultural_progress
+		x=11
+		y=16
+		prerequisite={focus=ILP_Establish_a_just_government}
+		prerequisite={focus=ILP_The_importance_of_the_dignity_of_the_judiciary}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Election_of_judges_ideas1
+				add_idea = ISR_Election_of_judges_ideas2
+			}
+		}
+	}
+	focus={
+		id=ILP_Simplify_immigration_procedures
+		icon=ISRA_Simplify_immigration_procedures
+		x=13
+		y=16
+		prerequisite={focus=ILP_Supporting_multinational_corporations}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Supporting_multinational_corporations_ideas
+				add_idea = ISR_Supporting_multinational_corporations_ideas1
+			}
+		}
+	}
+	focus={
+		id=ILP_A_just_society_that_cannot_be_defiled
+		icon=ISRA_A_just_society_that_cannot_be_defiled
+		x=11
+		y=17
+		prerequisite={focus=ILP_Progressive_diplomacy}
+		prerequisite={focus=ILP_The_era_of_cultural_progress}
+		prerequisite={focus=ILP_Simplify_immigration_procedures}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Establish_a_just_government_ideas
+				add_idea = ISR_Establish_a_just_government_ideas1
+			}
+		}
+	}
+	focus={
+		id=ILP_Peretz_Bernstein
+		icon=ISRA_Peretz_Bernstein
+		x=17
+		y=13
+		prerequisite={focus=ILP_The_Liberals_won}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ILP_Promote_the_separation_of_church_and_state
+		icon=ISRA_Promote_the_separation_of_church_and_state
+		x=15
+		y=14
+		prerequisite={focus=ILP_Peretz_Bernstein}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Promote_the_separation_of_church_and_state_ideas
+		}
+	}
+	focus={
+		id=ILP_Trade_importance
+		icon=ISRA_Trade_importance
+		x=17
+		y=14
+		prerequisite={focus=ILP_Peretz_Bernstein}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Trade_importance_ideas
+		}
+	}
+	focus={
+		id=ILP_Entrepreneurship_is_encouraged
+		icon=ISRA_Entrepreneurship_is_encouraged
+		x=19
+		y=14
+		prerequisite={focus=ILP_Peretz_Bernstein}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Entrepreneurship_is_encouraged_ideas
+		}
+	}
+	focus={
+		id=ILP_Fair_Trade_Commission
+		icon=ISRA_Fair_Trade_Commission
+		x=16
+		y=15
+		prerequisite={focus=ILP_Trade_importance}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Trade_importance_ideas
+				add_idea = ISR_Trade_importance_ideas1
+			}
+		}
+	}
+	focus={
+		id=ILP_Independent_diplomacy
+		icon=ISRA_Independent_diplomacy
+		x=18
+		y=15
+		prerequisite={focus=ILP_Trade_importance}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Independent_diplomacy_ideas
+		}
+	}
+	focus={
+		id=ILP_Limited_Settlement
+		icon=ISRA_Limited_Settlement
+		x=15
+		y=16
+		prerequisite={focus=ILP_Promote_the_separation_of_church_and_state}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Promote_the_separation_of_church_and_state_ideas
+				add_idea = ISR_Promote_the_separation_of_church_and_state_ideas1
+			}
+		}
+	}
+	focus={
+		id=ILP_Moses_prospered
+		icon=ISRA_Moses_prospered
+		x=17
+		y=16
+		prerequisite={focus=ILP_Fair_Trade_Commission}
+		prerequisite={focus=ILP_Independent_diplomacy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Trade_importance_ideas1
+				add_idea = ISR_Trade_importance_ideas2
+			}
+		}
+	}
+	focus={
+		id=ILP_Tax_schemes
+		icon=ISRA_Tax_schemes
+		x=19
+		y=16
+		prerequisite={focus=ILP_Entrepreneurship_is_encouraged}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Entrepreneurship_is_encouraged_ideas
+				add_idea = ISR_Entrepreneurship_is_encouraged_ideas1
+			}
+		}
+	}
+	focus={
+		id=ILP_Where_prosperity_reigns_democracy_is_the_law
+		icon=ISRA_Where_prosperity_reigns_democracy_is_the_law
+		x=17
+		y=17
+		prerequisite={focus=ILP_Limited_Settlement}
+		prerequisite={focus=ILP_Moses_prospered}
+		prerequisite={focus=ILP_Tax_schemes}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Independent_diplomacy_ideas
+				add_idea = ISR_Independent_diplomacy_ideas1
+			}
+		}
+	}
+	focus={
+		id=HERUT_Herut_won
+		icon=ISRA_Herut_won
+		x=27
+		y=12
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Israel_Herut_Victory_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HERUT_Haim_Moshe_Shapira
+		icon=ISRA_Haim_Moshe_Shapira
+		x=24
+		y=13
+		prerequisite={focus=HERUT_Herut_won}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HERUT_Against_military_organizations
+		icon=ISRA_Against_military_organizations
+		x=22
+		y=14
+		prerequisite={focus=HERUT_Haim_Moshe_Shapira}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Against_military_organizations_ideas
+		}
+	}
+	focus={
+		id=HERUT_Traditions_and_commandments
+		icon=ISRA_Traditions_and_commandments
+		x=24
+		y=14
+		prerequisite={focus=HERUT_Haim_Moshe_Shapira}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Traditions_and_commandments_ideas
+		}
+	}
+	focus={
+		id=HERUT_Stimulate_the_vitality_of_the_market
+		icon=ISRA_Stimulate_the_vitality_of_the_market
+		x=26
+		y=14
+		prerequisite={focus=HERUT_Haim_Moshe_Shapira}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Market_dynamism_ideas
+		}
+	}
+	focus={
+		id=HERUT_Be_loyal_to_the_people_of_Israel
+		icon=ISRA_Be_loyal_to_the_people_of_Israel
+		x=23
+		y=15
+		prerequisite={focus=HERUT_Traditions_and_commandments}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Traditions_and_commandments_ideas
+				add_idea = ISR_Traditions_and_commandments_ideas1
+			}
+		}
+	}
+	focus={
+		id=HERUT_Stabilize_the_parliamentary_system
+		icon=ISRA_Stabilize_the_parliamentary_system
+		x=25
+		y=15
+		prerequisite={focus=HERUT_Traditions_and_commandments}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Parliament_reigns_supreme_ideas
+		}
+	}
+	focus={
+		id=HERUT_Compromise_with_the_Arabs
+		icon=ISRA_Compromise_with_the_Arabs
+		x=22
+		y=16
+		prerequisite={focus=HERUT_Against_military_organizations}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Against_military_organizations_ideas
+				add_idea = ISR_Against_military_organizations_ideas1
+			}
+		}
+	}
+	focus={
+		id=HERUT_Jewish_Educational_Framework
+		icon=ISRA_Jewish_Educational_Framework
+		x=24
+		y=16
+		prerequisite={focus=HERUT_Be_loyal_to_the_people_of_Israel}
+		prerequisite={focus=HERUT_Stabilize_the_parliamentary_system}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Parliament_reigns_supreme_ideas
+				add_idea = ISR_Parliament_reigns_supreme_ideas1
+			}
+		}
+	}
+	focus={
+		id=HERUT_Foreign_owned_factories
+		icon=ISRA_Foreign_owned_factories
+		x=26
+		y=16
+		prerequisite={focus=HERUT_Stimulate_the_vitality_of_the_market}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Market_dynamism_ideas
+				add_idea = ISR_Market_dynamism_ideas1
+			}
+		}
+	}
+	focus={
+		id=HERUT_Mosaic_Society_of_Virtues
+		icon=ISRA_Mosaic_Society_of_Virtues
+		x=24
+		y=17
+		prerequisite={focus=HERUT_Compromise_with_the_Arabs}
+		prerequisite={focus=HERUT_Jewish_Educational_Framework}
+		prerequisite={focus=HERUT_Foreign_owned_factories}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Traditions_and_commandments_ideas1
+				add_idea = ISR_Traditions_and_commandments_ideas2
+			}
+		}
+	}
+	focus={
+		id=HERUT_Ze_ev_Jabotinsky
+		icon=ISRA_Ze_ev_Jabotinsky
+		x=30
+		y=13
+		prerequisite={focus=HERUT_Herut_won}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HERUT_Principles_of_the_Ten_Commandments
+		icon=ISRA_Principles_of_the_Ten_Commandments
+		x=28
+		y=14
+		prerequisite={focus=HERUT_Ze_ev_Jabotinsky}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Principles_of_the_Ten_Commandments_ideas
+		}
+	}
+	focus={
+		id=HERUT_Land_self_defense
+		icon=ISRA_Land_self_defense
+		x=30
+		y=14
+		prerequisite={focus=HERUT_Ze_ev_Jabotinsky}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Land_self_defense_ideas
+		}
+	}
+	focus={
+		id=HERUT_Garibaldi_Legendary_Consciousness
+		icon=ISRA_Gallipolis_Legendary_Consciousness
+		x=32
+		y=14
+		prerequisite={focus=HERUT_Ze_ev_Jabotinsky}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Corporatist_economy_ideas
+		}
+	}
+	focus={
+		id=HERUT_Strict_law
+		icon=ISRA_Strict_law
+		x=29
+		y=15
+		prerequisite={focus=HERUT_Land_self_defense}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Strict_law_ideas
+		}
+	}
+	focus={
+		id=HERUT_A_real_way_of_life
+		icon=ISRA_A_real_way_of_life
+		x=31
+		y=15
+		prerequisite={focus=HERUT_Land_self_defense}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Land_self_defense_ideas
+				add_idea = ISR_Land_self_defense_ideas1
+			}
+		}
+	}
+	focus={
+		id=HERUT_The_social_power_of_young_people
+		icon=ISRA_The_social_power_of_young_people
+		x=28
+		y=16
+		prerequisite={focus=HERUT_Principles_of_the_Ten_Commandments}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Principles_of_the_Ten_Commandments_ideas
+				add_idea = ISR_Principles_of_the_Ten_Commandments_ideas1
+			}
+		}
+	}
+	focus={
+		id=HERUT_Empowering_youth
+		icon=ISRA_Empowering_youth
+		x=30
+		y=16
+		prerequisite={focus=HERUT_Strict_law}
+		prerequisite={focus=HERUT_A_real_way_of_life}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Land_self_defense_ideas1
+				add_idea = ISR_Land_self_defense_ideas2
+			}
+		}
+	}
+	focus={
+		id=HERUT_Devotion_to_the_country
+		icon=ISRA_Devotion_to_the_country
+		x=32
+		y=16
+		prerequisite={focus=HERUT_Garibaldi_Legendary_Consciousness}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Corporatist_economy_ideas
+				add_idea = ISR_Corporatist_economy_ideas1
+			}
+		}
+	}
+	focus={
+		id=HERUT_God_said_to_Moses
+		icon=ISRA_God_said_to_Moses
+		x=30
+		y=17
+		prerequisite={focus=HERUT_The_social_power_of_young_people}
+		prerequisite={focus=HERUT_Empowering_youth}
+		prerequisite={focus=HERUT_Devotion_to_the_country}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Strict_law_ideas
+				add_idea = ISR_Strict_law_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Irgun_coup
+		icon=ISRA_Irgun_coup
+		x=43
+		y=12
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Israel_Irgun_Victory_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRGUN_Seasoned_Menachem
+		icon=ISRA_Seasoned_Menachem
+		x=37
+		y=13
+		prerequisite={focus=IRGUN_Irgun_coup}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRGUN_Anti_Ottoman_position
+		icon=ISRA_Anti_Ottoman_position
+		x=35
+		y=14
+		prerequisite={focus=IRGUN_Seasoned_Menachem}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Anti_Ottoman_position_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Globalized_terrorist_attacks
+		icon=ISRA_Globalized_terrorist_attacks
+		x=37
+		y=14
+		prerequisite={focus=IRGUN_Seasoned_Menachem}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Globalized_terrorist_attacks_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Exclusion_of_Palestinians
+		icon=ISRA_Exclusion_of_Palestinians
+		x=39
+		y=14
+		prerequisite={focus=IRGUN_Seasoned_Menachem}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_National_Purification_Campaign_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Eradicate_socialism
+		icon=ISRA_Eradicate_socialism
+		x=36
+		y=15
+		prerequisite={focus=IRGUN_Globalized_terrorist_attacks}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Globalized_terrorist_attacks_ideas
+				add_idea = ISR_Globalized_terrorist_attacks_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Greater_Israel_identifies
+		icon=ISRA_Greater_Israel_identifies
+		x=38
+		y=15
+		prerequisite={focus=IRGUN_Globalized_terrorist_attacks}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Domination_and_domination_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Raid_the_Turks
+		icon=ISRA_Raid_the_Turks
+		x=35
+		y=16
+		prerequisite={focus=IRGUN_Anti_Ottoman_position}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Anti_Ottoman_position_ideas
+				add_idea = ISR_Anti_Ottoman_position_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Cultivating_national_superiority
+		icon=ISRA_Cultivating_national_superiority
+		x=37
+		y=16
+		prerequisite={focus=IRGUN_Eradicate_socialism}
+		prerequisite={focus=IRGUN_Greater_Israel_identifies}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Globalized_terrorist_attacks_ideas1
+				add_idea = ISR_Globalized_terrorist_attacks_ideas2
+			}
+		}
+	}
+	focus={
+		id=IRGUN_The_Jewish_nation_reigns_supreme
+		icon=ISRA_The_Jewish_nation_reigns_supreme
+		x=39
+		y=16
+		prerequisite={focus=IRGUN_Exclusion_of_Palestinians}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_National_Purification_Campaign_ideas
+				add_idea = ISR_National_Purification_Campaign_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Enemies_of_Arabia
+		icon=ISRA_Enemies_of_Arabia
+		x=37
+		y=17
+		prerequisite={focus=IRGUN_Cultivating_national_superiority}
+		prerequisite={focus=IRGUN_Raid_the_Turks}
+		prerequisite={focus=IRGUN_The_Jewish_nation_reigns_supreme}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={	
+			swap_ideas = {
+				remove_idea = ISR_Domination_and_domination_ideas
+				add_idea = ISR_Domination_and_domination_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Loyal_Yitzhak
+		icon=ISRA_Loyal_Yitzhak
+		x=43
+		y=13
+		prerequisite={focus=IRGUN_Irgun_coup}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRGUN_Absorb_lehi_stubs
+		icon=ISRA_Absorb_lehi_stubs
+		x=41
+		y=14
+		prerequisite={focus=IRGUN_Loyal_Yitzhak}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Blood_Pact_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Show_your_iron_fist
+		icon=ISRA_Show_your_iron_fist
+		x=43
+		y=14
+		prerequisite={focus=IRGUN_Loyal_Yitzhak}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Show_your_iron_fist_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Blurring_diplomatic_positions
+		icon=ISRA_Blurring_diplomatic_positions
+		x=45
+		y=14
+		prerequisite={focus=IRGUN_Loyal_Yitzhak}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_International_crooks_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Bleeding_Palestine
+		icon=ISRA_Bleeding_Palestine
+		x=42
+		y=15
+		prerequisite={focus=IRGUN_Show_your_iron_fist}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Show_your_iron_fist_ideas
+				add_idea = ISR_Show_your_iron_fist_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Encourage_violence
+		icon=ISRA_Encourage_violence
+		x=44
+		y=15
+		prerequisite={focus=IRGUN_Show_your_iron_fist}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Aesthetics_of_violence_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Drive_the_merger
+		icon=ISRA_Drive_the_merger
+		x=41
+		y=16
+		prerequisite={focus=IRGUN_Absorb_lehi_stubs}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Blood_Pact_ideas
+				add_idea = ISR_Blood_Pact_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Towards_a_mono_nation_state
+		icon=ISRA_Towards_a_mono_nation_state
+		x=43
+		y=16
+		prerequisite={focus=IRGUN_Bleeding_Palestine}
+		prerequisite={focus=IRGUN_Encourage_violence}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Aesthetics_of_violence_ideas
+				add_idea = ISR_Aesthetics_of_violence_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Fraudulent_funds
+		icon=ISRA_Fraudulent_funds
+		x=45
+		y=16
+		prerequisite={focus=IRGUN_Blurring_diplomatic_positions}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_International_crooks_ideas
+				add_idea = ISR_International_crooks_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Pure_Nation
+		icon=ISRA_Pure_Nation
+		x=43
+		y=17
+		prerequisite={focus=IRGUN_Drive_the_merger}
+		prerequisite={focus=IRGUN_Towards_a_mono_nation_state}
+		prerequisite={focus=IRGUN_Fraudulent_funds}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Show_your_iron_fist_ideas1
+				add_idea = ISR_Show_your_iron_fist_ideas2
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Knowledgeable_Benzion
+		icon=ISRA_Knowledgeable_Benzion
+		x=49
+		y=13
+		prerequisite={focus=IRGUN_Irgun_coup}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRGUN_Seek_international_support
+		icon=ISRA_Seek_international_support
+		x=47
+		y=14
+		prerequisite={focus=IRGUN_Knowledgeable_Benzion}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_international_support_welfarey_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Dressed_thugs
+		icon=ISRA_Dressed_thugs
+		x=49
+		y=14
+		prerequisite={focus=IRGUN_Knowledgeable_Benzion}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_National_barriers_ideas
+		}
+	}
+	focus={
+		id=IRGUN_New_Israeli_Culture
+		icon=ISRA_New_Israeli_Culture
+		x=51
+		y=14
+		prerequisite={focus=IRGUN_Knowledgeable_Benzion}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_New_Israeli_Culture_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Construction_of_iron_walls
+		icon=ISRA_Construction_of_iron_walls
+		x=48
+		y=15
+		prerequisite={focus=IRGUN_Dressed_thugs}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_National_barriers_ideas
+				add_idea = ISR_National_barriers_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Expansion_of_the_revisionist_movement
+		icon=ISRA_Expansion_of_the_revisionist_movement
+		x=50
+		y=15
+		prerequisite={focus=IRGUN_Dressed_thugs}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Three_knives_on_both_sides_ideas
+		}
+	}
+	focus={
+		id=IRGUN_Incitement_to_American_Jews
+		icon=ISRA_Incitement_to_American_Jews
+		x=47
+		y=16
+		prerequisite={focus=IRGUN_Seek_international_support}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = USA }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = CSA }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = COR }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = BBR }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = TEX }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = WCC }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = CAL }
+				add_core_of = ISR
+			}
+			swap_ideas = {
+				remove_idea = ISR_international_support_welfarey_ideas
+				add_idea = ISR_international_support_welfarey_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Contact_the_Entente
+		icon=ISRA_Contact_the_Entente
+		x=49
+		y=16
+		prerequisite={focus=IRGUN_Construction_of_iron_walls}
+		prerequisite={focus=IRGUN_Expansion_of_the_revisionist_movement}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Three_knives_on_both_sides_ideas
+				add_idea = ISR_Three_knives_on_both_sides_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Summarizing_Jewish_History
+		icon=ISRA_Summarizing_Jewish_History
+		x=51
+		y=16
+		prerequisite={focus=IRGUN_New_Israeli_Culture}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_New_Israeli_Culture_ideas
+				add_idea = ISR_New_Israeli_Culture_ideas1
+			}
+		}
+	}
+	focus={
+		id=IRGUN_Rational_people
+		icon=ISRA_Rational_people
+		x=49
+		y=17
+		prerequisite={focus=IRGUN_Incitement_to_American_Jews}
+		prerequisite={focus=IRGUN_Contact_the_Entente}
+		prerequisite={focus=IRGUN_Summarizing_Jewish_History}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_National_barriers_ideas1
+				add_idea = ISR_National_barriers_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Save_Israel
+		icon=ISRA_Save_Israel
+		x=64
+		y=12
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Israel_Haganah_Victory_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HAGANAH_Unexpected_collaboration
+		icon=ISRA_Labour_Party_Win
+		x=55
+		y=13
+		prerequisite={focus=HAGANAH_Save_Israel}
+		mutually_exclusive={focus=HAGANAH_An_olive_branch_from_an_old_face focus=HAGANAH_Haganah_is_in_charge focus=HAGANAH_The_dagger_of_revisionism }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HAGANAH_Request_for_the_Third_International
+		icon=ISRA_Request_for_the_Third_International
+		x=54
+		y=14
+		prerequisite={focus=HAGANAH_Unexpected_collaboration}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_International_Aid_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_Securing_the_shipping_line
+		icon=ISRA_Artistic_freedom
+		x=54
+		y=15
+		prerequisite={focus=HAGANAH_Request_for_the_Third_International}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_International_Aid_ideas
+				add_idea = ISR_International_Aid_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Military_Advisory_Panel
+		icon=ISRA_Israelis_come_first
+		x=54
+		y=16
+		prerequisite={focus=HAGANAH_Securing_the_shipping_line}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_International_Aid_ideas1
+				add_idea = ISR_International_Aid_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Suspend_the_war
+		icon=ISRA_Dealing_with_the_unemployed
+		x=56
+		y=14
+		prerequisite={focus=HAGANAH_Unexpected_collaboration}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Kibbutz_Syndicate_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_Implement_the_trade_union_policy
+		icon=ISRA_Balancing_interests
+		x=56
+		y=15
+		prerequisite={focus=HAGANAH_Suspend_the_war}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Kibbutz_Syndicate_ideas
+				add_idea = ISR_Kibbutz_Syndicate_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Special_funding
+		icon=ISRA_Israels_legal_society
+		x=56
+		y=16
+		prerequisite={focus=HAGANAH_Implement_the_trade_union_policy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Kibbutz_Syndicate_ideas1
+				add_idea = ISR_Kibbutz_Syndicate_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Military_civilian_government
+		icon=ISRA_Military_civilian_government
+		x=55
+		y=17
+		prerequisite={focus=HAGANAH_Military_Advisory_Panel}
+		prerequisite={focus=HAGANAH_Special_funding}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_International_Aid_ideas2
+				add_idea = ISR_International_Aid_ideas3
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Praise_to_the_working_workers
+		icon=ISRA_Hawkish_diplomatic_position
+		x=58
+		y=14
+		prerequisite={focus=HAGANAH_Unexpected_collaboration focus=HAGANAH_An_olive_branch_from_an_old_face focus=HAGANAH_Haganah_is_in_charge focus=HAGANAH_The_dagger_of_revisionism }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Praise_to_the_workers_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_Take_advantage_of_Ben_Gurions_legacy
+		icon=ISRA_Take_advantage_of_Ben_Gurions_legacy
+		x=58
+		y=15
+		prerequisite={focus=HAGANAH_Praise_to_the_working_workers}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Praise_to_the_workers_ideas
+				add_idea = ISR_Praise_to_the_workers_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Suppress_the_opposition
+		icon=ISRA_Dictatorship_of_the_Proletariat
+		x=58
+		y=16
+		prerequisite={focus=HAGANAH_Take_advantage_of_Ben_Gurions_legacy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Praise_to_the_workers_ideas1
+				add_idea = ISR_Praise_to_the_workers_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_An_olive_branch_from_an_old_face
+		icon=ISRA_Victory_for_the_United_Labour_Party
+		x=61
+		y=13
+		prerequisite={focus=HAGANAH_Save_Israel}
+		mutually_exclusive={focus=HAGANAH_Unexpected_collaboration focus=HAGANAH_Haganah_is_in_charge focus=HAGANAH_The_dagger_of_revisionism }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HAGANAH_Blame_the_revisionists
+		icon=ISRA_Mass_collectivization
+		x=60
+		y=14
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		prerequisite={focus=HAGANAH_An_olive_branch_from_an_old_face}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_reeducate_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_Jerusalem_Judgment
+		icon=ISRA_Build_a_proletarian_paradise
+		x=60
+		y=15
+		prerequisite={focus=HAGANAH_Blame_the_revisionists}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_reeducate_ideas
+				add_idea = ISR_reeducate_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Re_education_of_deserters
+		icon=ISRA_Socialist_education
+		x=60
+		y=16
+		prerequisite={focus=HAGANAH_Jerusalem_Judgment}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_reeducate_ideas1
+				add_idea = ISR_reeducate_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Military_industrial_complex
+		icon=ISRA_There_is_bread_for_everyone
+		x=62
+		y=14
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		prerequisite={focus=HAGANAH_An_olive_branch_from_an_old_face}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Military_industrial_complex_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_Priority_is_given_to_civilian_production
+		icon=ISRA_Introduction_of_the_New_Economic_Policy
+		x=62
+		y=15
+		prerequisite={focus=HAGANAH_Military_industrial_complex}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Military_industrial_complex_ideas
+				add_idea = ISR_Military_industrial_complex_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Bring_back_to_life
+		icon=ISRA_Liquidation_of_the_socialist_bureaucracy
+		x=62
+		y=16
+		prerequisite={focus=HAGANAH_Priority_is_given_to_civilian_production}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Military_industrial_complex_ideas1
+				add_idea = ISR_Military_industrial_complex_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Mass_government
+		icon=ISRA_Mass_government
+		x=61
+		y=17
+		prerequisite={focus=HAGANAH_Bring_back_to_life}
+		prerequisite={focus=HAGANAH_Re_education_of_deserters}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_reeducate_ideas2
+				add_idea = ISR_reeducate_ideas3
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Monument_to_the_War_Dead
+		icon=ISRA_Monument_to_the_War_Dead
+		x=64
+		y=14
+		prerequisite={focus=HAGANAH_Unexpected_collaboration focus=HAGANAH_An_olive_branch_from_an_old_face focus=HAGANAH_Haganah_is_in_charge focus=HAGANAH_The_dagger_of_revisionism }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Honor_the_heroes_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_Treatment_of_soldiers_families
+		icon=ISRA_Treatment_of_soldiers_families
+		x=64
+		y=15
+		prerequisite={focus=HAGANAH_Monument_to_the_War_Dead}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Honor_the_heroes_ideas
+				add_idea = ISR_Honor_the_heroes_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_get_ready_to_fight
+		icon=ISRA_get_ready_to_fight
+		x=64
+		y=16
+		prerequisite={focus=HAGANAH_Treatment_of_soldiers_families}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Honor_the_heroes_ideas1
+				add_idea = ISR_Honor_the_heroes_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Haganah_is_in_charge
+		icon=ISRA_Haganah_is_in_charge
+		x=67
+		y=13
+		prerequisite={focus=HAGANAH_Save_Israel}
+		mutually_exclusive={focus=HAGANAH_Unexpected_collaboration focus=HAGANAH_An_olive_branch_from_an_old_face focus=HAGANAH_The_dagger_of_revisionism }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HAGANAH_End_the_ideological_struggle
+		icon=ISRA_End_the_ideological_struggle
+		x=66
+		y=14
+		prerequisite={focus=HAGANAH_Haganah_is_in_charge}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Military_politics_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_Clean_up_useless_politicians
+		icon=ISRA_Clean_up_useless_politicians
+		x=66
+		y=15
+		prerequisite={focus=HAGANAH_End_the_ideological_struggle}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Military_politics_ideas
+				add_idea = ISR_Military_politics_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Promote_officers
+		icon=ISRA_Promote_officers
+		x=66
+		y=16
+		prerequisite={focus=HAGANAH_Clean_up_useless_politicians}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Military_politics_ideas1
+				add_idea = ISR_Military_politics_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Israeli_militarism
+		icon=ISRA_Israeli_militarism
+		x=68
+		y=14
+		prerequisite={focus=HAGANAH_Haganah_is_in_charge}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_militarism_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_Patriotic_education_for_the_masses
+		icon=ISRA_Patriotic_education_for_the_masses
+		x=68
+		y=15
+		prerequisite={focus=HAGANAH_Israeli_militarism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_militarism_ideas
+				add_idea = ISR_militarism_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Military_priority
+		icon=ISRA_Military_priority
+		x=68
+		y=16
+		prerequisite={focus=HAGANAH_Patriotic_education_for_the_masses}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_militarism_ideas1
+				add_idea = ISR_militarism_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_military_government
+		icon=ISRA_military_government
+		x=67
+		y=17
+		prerequisite={focus=HAGANAH_Promote_officers}
+		prerequisite={focus=HAGANAH_Military_priority}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Military_politics_ideas2
+				add_idea = ISR_Military_politics_ideas3
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Revival_of_the_shadow_of_Napoleon
+		icon=ISRA_Revival_of_the_shadow_of_Napoleon
+		x=70
+		y=14
+		prerequisite={focus=HAGANAH_Unexpected_collaboration focus=HAGANAH_An_olive_branch_from_an_old_face focus=HAGANAH_Haganah_is_in_charge focus=HAGANAH_The_dagger_of_revisionism }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Second_Napoleon_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_From_Cairo_to_Tehran
+		icon=ISRA_From_Cairo_to_Tehran
+		x=70
+		y=15
+		prerequisite={focus=HAGANAH_Revival_of_the_shadow_of_Napoleon}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = {
+					is_core_of = EGY
+					NOT = {
+						is_core_of = SUD
+					}
+				}
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = YEM }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = PER }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = TRU }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = LEB }
+				add_core_of = ISR
+			}
+			swap_ideas = {
+				remove_idea = ISR_Second_Napoleon_ideas
+				add_idea = ISR_Second_Napoleon_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Bring_liberation_and_death
+		icon=ISRA_Bring_liberation_and_death
+		x=70
+		y=16
+		prerequisite={focus=HAGANAH_From_Cairo_to_Tehran}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Second_Napoleon_ideas1
+				add_idea = ISR_Second_Napoleon_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_The_dagger_of_revisionism
+		icon=ISRA_Irgun_coup
+		x=73
+		y=13
+		prerequisite={focus=HAGANAH_Save_Israel}
+		mutually_exclusive={focus=HAGANAH_Unexpected_collaboration focus=HAGANAH_An_olive_branch_from_an_old_face focus=HAGANAH_Haganah_is_in_charge }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=HAGANAH_Take_advantage_of_the_Lehi_heritage
+		icon=ISRA_Take_advantage_of_the_Lehi_heritage
+		x=72
+		y=14
+		prerequisite={focus=HAGANAH_The_dagger_of_revisionism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Gears_of_War_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_Army_of_Zeals
+		icon=ISRA_Army_of_Zeals
+		x=72
+		y=15
+		prerequisite={focus=HAGANAH_Take_advantage_of_the_Lehi_heritage}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Gears_of_War_ideas
+				add_idea = ISR_Gears_of_War_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Military_supremacy_national_supremacy
+		icon=ISRA_Military_supremacy_national_supremacy
+		x=72
+		y=16
+		prerequisite={focus=HAGANAH_Army_of_Zeals}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Gears_of_War_ideas1
+				add_idea = ISR_Gears_of_War_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Myth_Leader
+		icon=ISRA_Myth_Leader
+		x=74
+		y=14
+		prerequisite={focus=HAGANAH_The_dagger_of_revisionism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_The_party_state_is_one_ideas
+		}
+	}
+	focus={
+		id=HAGANAH_Gun_command_nation
+		icon=ISRA_Gun_command_nation
+		x=74
+		y=15
+		prerequisite={focus=HAGANAH_Myth_Leader}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_The_party_state_is_one_ideas
+				add_idea = ISR_The_party_state_is_one_ideas1
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_Obedience_and_loyalty
+		icon=ISRA_Obedience_and_loyalty
+		x=74
+		y=16
+		prerequisite={focus=HAGANAH_Gun_command_nation}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_The_party_state_is_one_ideas1
+				add_idea = ISR_The_party_state_is_one_ideas2
+			}
+		}
+	}
+	focus={
+		id=HAGANAH_National_government
+		icon=ISRA_National_government
+		x=73
+		y=17
+		prerequisite={focus=HAGANAH_Military_supremacy_national_supremacy}
+		prerequisite={focus=HAGANAH_Obedience_and_loyalty}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Gears_of_War_ideas2
+				add_idea = ISR_Gears_of_War_ideas3
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Step_into_the_world
+		icon=ISRA_Step_into_the_world
+		x=83
+		y=0
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = ISRAE_Israels_place_in_the_world
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=ISRAE_Greater_Israels_territory
+		icon=ISRA_Greater_Israels_territory
+		x=73
+		y=1
+		prerequisite={focus=ISRAE_Step_into_the_world}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_state_claim = 992
+			add_state_claim = 455
+			add_state_claim = 554
+			add_state_claim = 995
+			add_state_claim = 680
+			add_state_claim = 677
+			add_state_claim = 344
+			add_state_claim = 183
+			add_state_claim = 350
+			add_state_claim = 676
+			add_state_claim = 352
+			add_state_claim = 819
+			add_state_claim = 349
+			add_state_claim = 291
+			add_state_claim = 812
+			add_state_claim = 753
+			add_state_claim = 453
+			add_state_claim = 454
+			add_state_claim = 994
+			add_state_claim = 1035
+			add_state_claim = 915
+			add_state_claim = 754
+		}
+	}
+	focus={
+		id=ISRAE_To_the_Nile
+		icon=ISRA_To_the_Nile
+		x=72
+		y=2
+		prerequisite={focus=ISRAE_Greater_Israels_territory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			453 = { add_core_of = ISR }
+			753 = { add_core_of = ISR }
+			create_wargoal = { target = PAL type = annex_everything }
+			create_wargoal = { target = SUE type = annex_everything }
+			create_wargoal = { target = EGY type = annex_everything }
+			if = {
+				limit = {
+					has_completed_focus = ISRAE_The_afterglow_of_the_hegemon
+					SUE = { is_ai = yes }
+				}
+				annex_country = { target = SUE transfer_troops = no }
+			}
+		}
+	}
+	focus={
+		id=ISRAE_End_the_struggle_for_Arab_royalty
+		icon=ISRA_End_the_struggle_for_Arab_royalty
+		x=74
+		y=2
+		prerequisite={focus=ISRAE_Greater_Israels_territory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			754 = { add_core_of = ISR }
+			994 = { add_core_of = ISR }
+			915 = { add_core_of = ISR }
+			1035 = { add_core_of = ISR }
+			create_wargoal = { target = JBS type = annex_everything }
+			create_wargoal = { target = HEJ type = annex_everything }
+			create_wargoal = { target = SAU type = annex_everything }
+		}
+	}
+	focus={
+		id=ISRAE_Shame_on_Babylon
+		icon=ISRA_Shame_on_Babylon
+		x=73
+		y=3
+		prerequisite={focus=ISRAE_To_the_Nile}
+		prerequisite={focus=ISRAE_End_the_struggle_for_Arab_royalty}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = TRU }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = LEB }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = ISR
+			}
+			create_wargoal = { target = SYR type = annex_everything }
+			create_wargoal = { target = IRQ type = annex_everything }
+			create_wargoal = { target = LEB type = annex_everything }
+			if = {
+				limit = {
+					has_completed_focus = ICP_Tony_Cliff
+				}
+				every_country = {
+					ISR = {
+						create_wargoal = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+				every_state = { add_core_of = LEB }
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Attack_the_Turks
+		icon=ISRA_Attack_the_Turks
+		x=71
+		y=4
+		prerequisite={focus=ISRAE_Shame_on_Babylon}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			344 = { add_core_of = ISR }
+			819 = { add_core_of = ISR }
+			350 = { add_core_of = ISR }
+			352 = { add_core_of = ISR }
+			183 = { add_core_of = ISR }
+			create_wargoal = { target = TUR type = annex_everything }
+			create_wargoal = { target = GRE type = annex_everything }
+			create_wargoal = { target = CYP type = annex_everything }
+		}
+	}
+	focus={
+		id=ISRAE_Exterminate_the_Persians
+		icon=ISRA_Exterminate_the_Persians
+		x=73
+		y=4
+		prerequisite={focus=ISRAE_Shame_on_Babylon}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = PER type = annex_everything }
+		}
+	}
+	focus={
+		id=ISRAE_Conquer_the_peninsula
+		icon=ISRA_Conquer_the_peninsula
+		x=75
+		y=4
+		prerequisite={focus=ISRAE_Shame_on_Babylon}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = YEM type = annex_everything }
+			create_wargoal = { target = OMA type = annex_everything }
+		}
+	}
+	focus={
+		id=ISRAE_Join_the_Third_International
+		icon=ISRA_Join_the_Third_International
+		x=79
+		y=1
+		prerequisite={focus=ISRAE_Step_into_the_world}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = ISRAE_The_afterglow_of_the_hegemon
+				has_completed_focus = ISRAE_Johnny_back_homeland
+			}
+			OR = {
+				has_completed_focus = ISR_Stern_our_Savior
+				has_completed_focus = ISR_Nathan_Yellin_returns_to_the_roots_of_national_syndicalism
+				has_completed_focus = ICP_The_ICP_won_a_resounding_victory
+				has_completed_focus = MAPAI_Labour_Party_Win
+				has_completed_focus = HAPO_Victory_for_the_United_Labour_Party
+				has_completed_focus = IRGUN_Loyal_Yitzhak
+				has_completed_focus = HAGANAH_Unexpected_collaboration
+				has_completed_focus = HAGANAH_An_olive_branch_from_an_old_face
+			}
+			is_puppet = no
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			FRA = {
+				add_to_faction = ISR
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Crush_the_colonists
+		icon=ISRA_Crush_the_colonistsl
+		x=77
+		y=2
+		prerequisite={focus=ISRAE_Join_the_Third_International}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Anti_colonialism_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Outpost_of_the_Eastern_Revolution
+		icon=ISRA_Outpost_of_the_Eastern_Revolution
+		x=79
+		y=2
+		prerequisite={focus=ISRAE_Join_the_Third_International}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = AFG type = annex_everything }
+			create_wargoal = { target = DEH type = annex_everything }
+			create_wargoal = { target = PRF type = annex_everything }
+			create_wargoal = { target = MAD type = annex_everything }
+			create_wargoal = { target = NEP type = annex_everything }
+			create_wargoal = { target = SKM type = annex_everything }
+			create_wargoal = { target = BHU type = annex_everything }
+		}
+	}
+	focus={
+		id=ISRAE_The_end_of_imperialism
+		icon=ISRA_The_end_of_imperialism
+		x=81
+		y=2
+		prerequisite={focus=ISRAE_Join_the_Third_International}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = GER type = annex_everything }
+			create_wargoal = { target = CAN type = annex_everything }
+			create_wargoal = { target = NFA type = annex_everything }
+		}
+	}
+	focus={
+		id=ISRAE_The_Liberator_triumphed
+		icon=ISRA_The_Liberator_triumphed
+		x=79
+		y=3
+		prerequisite={focus=ISRAE_Crush_the_colonists}
+		prerequisite={focus=ISRAE_Outpost_of_the_Eastern_Revolution}
+		prerequisite={focus=ISRAE_The_end_of_imperialism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = { country_exists = GER }
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Liberators_ideas
+		}
+	}
+	focus={
+		id=ISRAE_The_afterglow_of_the_hegemon
+		icon=ISRA_The_afterglow_of_the_hegemon
+		x=86
+		y=1
+		prerequisite={focus=ISRAE_Step_into_the_world}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = ISRAE_Johnny_back_homeland
+				has_completed_focus = ISRAE_Join_the_Third_International
+			}
+			OR = {
+				has_completed_focus = ILP_The_Liberals_won
+				has_completed_focus = ISR_Anti_Stern_coup
+				has_completed_focus = HERUT_Herut_won
+				has_completed_focus = IRGUN_Irgun_coup
+				has_completed_focus = HAGANAH_Haganah_is_in_charge
+				has_completed_focus = HAGANAH_The_dagger_of_revisionism
+			}
+			is_puppet = no
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			GER = {
+				add_to_faction = ISR
+			}
+			if = {
+				limit = {
+					has_completed_focus = ISRAE_To_the_Nile
+					SUE = { is_ai = yes }
+				}
+				annex_country = { target = SUE transfer_troops = no }
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Anti_red_defenders
+		icon=ISRA_Anti_red_defenders
+		x=86
+		y=2
+		prerequisite={focus=ISRAE_The_afterglow_of_the_hegemon}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_country = {
+				limit = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+					}
+				}
+				ISR = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Middle_East_Agents
+		icon=ISRA_Middle_East_Agents
+		x=84
+		y=3
+		prerequisite={focus=ISRAE_Anti_red_defenders}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Middle_East_Agents_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Deep_into_the_Caucasus
+		icon=ISRA_Deep_into_the_Caucasus
+		x=86
+		y=3
+		prerequisite={focus=ISRAE_Anti_red_defenders}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = RUS type = annex_everything }
+		}
+	}
+	focus={
+		id=ISRAE_Wonderful_victory
+		icon=ISRA_Wonderful_victory
+		x=88
+		y=3
+		prerequisite={focus=ISRAE_Anti_red_defenders}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = { country_exists = FRA }
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Middle_East_Agents_ideas
+				add_idea = ISR_Middle_East_Agents_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Johnny_back_homeland
+		icon=ISRA_Johnny_back_homeland
+		x=92
+		y=1
+		prerequisite={focus=ISRAE_Step_into_the_world}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = ISRAE_The_afterglow_of_the_hegemon
+				has_completed_focus = ISRAE_Join_the_Third_International
+			}
+			OR = {
+				has_completed_focus = ILP_The_Liberals_won
+				has_completed_focus = ISR_Anti_Stern_coup
+				has_completed_focus = HERUT_Herut_won
+				has_completed_focus = IRGUN_Irgun_coup
+				has_completed_focus = HAGANAH_Haganah_is_in_charge
+				has_completed_focus = HAGANAH_The_dagger_of_revisionism
+			}
+			is_puppet = no
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			CAN = {
+				add_to_faction = ISR
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Authorized_naval_bases
+		icon=ISRA_Authorized_naval_bases
+		x=91
+		y=2
+		prerequisite={focus=ISRAE_Johnny_back_homeland}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_rent_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Troops_assist_in_training
+		icon=ISRA_Troops_assist_in_training
+		x=91
+		y=3
+		prerequisite={focus=ISRAE_Authorized_naval_bases}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_rent_ideas
+				add_idea = ISR_rent_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Funding_from_the_Delhi_government
+		icon=ISRA_Funding_from_the_Delhi_government
+		x=93
+		y=2
+		prerequisite={focus=ISRAE_Johnny_back_homeland}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Funding_from_the_Delhi_government_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Share
+		icon=ISRA_Share
+		x=93
+		y=3
+		prerequisite={focus=ISRAE_Funding_from_the_Delhi_government}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = { country_exists = GER }
+			NOT = { country_exists = FRA }
+			NOT = { country_exists = ENG }
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Funding_from_the_Delhi_government_ideas
+				add_idea = ISR_Funding_from_the_Delhi_government_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Israeli_Army
+		icon=ISRA_Israeli_Army
+		x=76
+		y=6
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Israeli_Army_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Memories_of_the_Great_War
+		icon=ISRA_Memories_of_the_Great_War
+		x=74
+		y=7
+		prerequisite={focus=ISRAE_Israeli_Army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Army_ideas
+				add_idea = ISR_Israeli_Army_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Formation_of_the_National_Guard
+		icon=ISRA_Formation_of_the_National_Guard
+		x=73
+		y=8
+		prerequisite={focus=ISRAE_Memories_of_the_Great_War}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Army_ideas1
+				add_idea = ISR_Israeli_Army_ideas2
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Expansion_of_the_police_force
+		icon=ISRA_Expansion_of_the_police_force
+		x=75
+		y=8
+		prerequisite={focus=ISRAE_Memories_of_the_Great_War}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_command_power = 50
+			army_experience = 50
+			custom_effect_tooltip = Israel_Formation_of_army_divisions
+			hidden_effect = {
+				division_template = {
+					name = "Israeli Patrol Division"
+						division_names_group = ISR_NRARMY_02
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Israeli Patrol Division\" division_template = \"Israeli Patrol Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+					create_unit = {
+						division = "name = \"Israeli Patrol Division\" division_template = \"Israeli Patrol Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+				}
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Artillery_regiment
+		icon=ISRA_Artillery_regiment
+		x=72
+		y=9
+		prerequisite={focus=ISRAE_Formation_of_the_National_Guard}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+				producer = ISR
+			}
+			add_tech_bonus = {
+				name = ISRAE_Artillery_regiment
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+			custom_effect_tooltip = Israel_Formation_of_army_divisions1
+			hidden_effect = {
+				division_template = {
+					name = "Israeli Artillery Division"
+						division_names_group = ISR_NRARMY_03
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade  = { x = 3 y = 0 }
+						artillery_brigade  = { x = 3 y = 1 }
+						artillery_brigade  = { x = 3 y = 2 }
+						artillery_brigade  = { x = 3 y = 3 }
+						artillery_brigade  = { x = 3 y = 4 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Israeli Artillery Division\" division_template = \"Israeli Artillery Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+					create_unit = {
+						division = "name = \"Israeli Artillery Division\" division_template = \"Israeli Artillery Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+				}
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Calling_patriots
+		icon=ISRA_Calling_patriots
+		x=74
+		y=9
+		prerequisite={focus=ISRAE_Memories_of_the_Great_War}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Army_ideas2
+				add_idea = ISR_Israeli_Army_ideas3
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Resistant_to_sand_and_dust
+		icon=ISRA_Resistant_to_sand_and_dust
+		x=76
+		y=9
+		prerequisite={focus=ISRAE_Expansion_of_the_police_force}
+		prerequisite={focus=ISRAE_Levantine_defense_program}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = desert_warfare_effect
+			hidden_effect = {
+				set_technology = { desert_warfare = 1 popup = yes }
+			}
+			add_ideas = ISR_Resistant_to_sand_and_dust_ideas
+		}
+	}
+	focus={
+		id=ISRAE_special_forces
+		icon=ISRA_special_forces
+		x=73
+		y=10
+		prerequisite={focus=ISRAE_Artillery_regiment}
+		prerequisite={focus=ISRAE_Calling_patriots}
+		prerequisite={focus=ISRAE_Resistant_to_sand_and_dust}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_tech_bonus = {
+				name = ISRAE_special_forces
+				bonus = 1
+				uses = 2
+				technology = tech_special_forces
+			}
+			if = {
+				limit = { NOT = { has_tech = marines } }
+				set_technology = { marines = 1 }
+			}
+			add_tech_bonus = {
+				name = CAN_project_plough
+				bonus = 1
+				uses = 2
+				category = marine_tech
+				category = tp_tech
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Israels_place_in_the_world
+		icon=ISRA_Israels_place_in_the_world
+		x=75
+		y=10
+		prerequisite={focus=ISRAE_Expansion_of_the_police_force}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			complete_national_focus = ISRAE_Step_into_the_world
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+	}
+	focus={
+		id=ISRAE_Street_fighting_training
+		icon=ISRA_Street_fighting_training
+		x=71
+		y=11
+		prerequisite={focus=ISRAE_special_forces}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			army_experience = 60
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Army_ideas3
+				add_idea = ISR_Israeli_Army_ideas4
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Anti_tank_forces
+		icon=ISRA_Anti_tank_forces
+		x=73
+		y=11
+		prerequisite={focus=ISRAE_special_forces}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_tech_bonus = {
+				name = ISRAE_Anti_tank_forces
+				bonus = 1
+				uses = 1
+				category = cat_anti_tank
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 700
+				producer = GER
+			}
+			add_ideas = ISR_anti_tank_force_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Motorized_troops
+		icon=ISRA_Motorized_troops
+		x=75
+		y=11
+		prerequisite={focus=ISRAE_special_forces}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1 amount = 5000 producer = GER
+			}
+			add_tech_bonus = {
+				name = ISRAE_Motorized_troops
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Levantine_defense_program
+		icon=ISRA_Levantine_defense_program
+		x=77
+		y=7
+		prerequisite={focus=ISRAE_Israeli_Army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Levantine_defense_program_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Stick_to_the_strategic_checkpoint
+		icon=ISRA_Stick_to_the_strategic_checkpoint
+		x=79
+		y=8
+		prerequisite={focus=ISRAE_Levantine_defense_program}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Levantine_defense_program_ideas
+				add_idea = ISR_Levantine_defense_program_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Purchase_of_foreign_equipment
+		icon=ISRA_Purchase_of_foreign_equipment
+		x=78
+		y=9
+		prerequisite={focus=ISRAE_Stick_to_the_strategic_checkpoint}
+		mutually_exclusive={focus=ISRAE_Adhere_to_independent_production }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 12500
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 12500
+				producer = CAN
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 12500
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 12500
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 12500
+				producer = NFA
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Adhere_to_independent_production
+		icon=ISRA_Adhere_to_independent_production
+		x=80
+		y=9
+		prerequisite={focus=ISRAE_Stick_to_the_strategic_checkpoint}
+		mutually_exclusive={focus=ISRAE_Purchase_of_foreign_equipment }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Improvement_of_production_lines_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Focus_on_civil_defense
+		icon=ISRA_Focus_on_civil_defense
+		x=78
+		y=10
+		prerequisite={focus=ISRAE_Resistant_to_sand_and_dust}
+		prerequisite={focus=ISRAE_Purchase_of_foreign_equipment focus=ISRAE_Adhere_to_independent_production }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Levantine_defense_program_ideas1
+				add_idea = ISR_Levantine_defense_program_ideas2
+			}
+		}
+	}
+	focus={
+		id=ISRAE_High_Command_System
+		icon=ISRA_High_Command_System
+		x=77
+		y=11
+		prerequisite={focus=ISRAE_Focus_on_civil_defense}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_unit_leader = {
+				add_skill_level = 1
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_command_power = 100
+		}
+	}
+	focus={
+		id=ISRAE_The_watchman_at_the_crossroads
+		icon=ISRA_The_watchman_at_the_crossroads
+		x=79
+		y=11
+		prerequisite={focus=ISRAE_Focus_on_civil_defense}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Levantine_defense_program_ideas2
+				add_idea = ISR_Levantine_defense_program_ideas3
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Israeli_Air_Force
+		icon=ISRA_Israeli_Air_Force
+		x=87
+		y=6
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Israeli_Air_Force_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Solicitation_of_civilian_pilots
+		icon=ISRA_Solicitation_of_civilian_pilots
+		x=86
+		y=7
+		prerequisite={focus=ISRAE_Israeli_Air_Force}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			air_experience = 100
+			create_corps_commander = {
+				name = "lou lenart"
+				portrait_path = "gfx/leaders/PAL/Portrait_ISR_lou_lenart.png"
+				traits = { paratrooper war_hero skilled_staffer air_commander }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Maritime_airports
+		icon=ISRA_Maritime_airports
+		x=88
+		y=7
+		prerequisite={focus=ISRAE_Israeli_Air_Force}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			454 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Aviation_militia
+		icon=ISRA_Aviation_militia
+		x=86
+		y=8
+		prerequisite={focus=ISRAE_Solicitation_of_civilian_pilots}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Air_Force_ideas
+				add_idea = ISR_Israeli_Air_Force_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Expansion_of_the_Air_Force_Brigade
+		icon=ISRA_Expansion_of_the_Air_Force_Brigade
+		x=88
+		y=8
+		prerequisite={focus=ISRAE_Maritime_airports}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Expansion_of_the_Air_Force_Brigade_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Air_Alert_Troops
+		icon=ISRA_Air_Alert_Troops
+		x=87
+		y=9
+		prerequisite={focus=ISRAE_Aviation_militia}
+		prerequisite={focus=ISRAE_Expansion_of_the_Air_Force_Brigade}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Air_Force_ideas1
+				add_idea = ISR_Israeli_Air_Force_ideas2
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Defend_the_airport
+		icon=ISRA_Defend_the_airport
+		x=84
+		y=8
+		prerequisite={focus=ISRAE_Solicitation_of_civilian_pilots}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			air_experience = 100
+			add_ideas = ISR_defend_our_airports_ideas
+		}
+	}
+	focus={
+		id=ISRAE_The_last_value_of_the_flying_club
+		icon=ISRA_The_last_value_of_the_flying_club
+		x=85
+		y=9
+		prerequisite={focus=ISRAE_Defend_the_airport}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_flying_club_ideas
+			air_experience = 100
+		}
+	}
+	focus={
+		id=ISRAE_Ramat_David_air_base
+		icon=ISRA_Ramat_David_air_base
+		x=84
+		y=10
+		prerequisite={focus=ISRAE_Defend_the_airport}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			991 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Raise_the_Air_Forces_salary
+		icon=ISRA_Raise_the_Air_Forces_salary
+		x=86
+		y=10
+		prerequisite={focus=ISRAE_The_last_value_of_the_flying_club}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Raise_the_Air_Forces_salary_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Tel_Nof_air_base
+		icon=ISRA_Tel_Nof_air_base
+		x=90
+		y=8
+		prerequisite={focus=ISRAE_Maritime_airports}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			set_technology = {
+				radio_detection = 1
+				cavity_magnatron = 1
+			}
+			454 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = ISR_Increase_your_budget_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Construction_of_Air_Force_refueling_stations
+		icon=ISRA_Construction_of_Air_Force_refueling_stations
+		x=89
+		y=9
+		prerequisite={focus=ISRAE_Maritime_airports}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			if = {
+				limit = {
+					NOT = { has_tech = fuel_silos }
+				}
+				set_technology = { fuel_silos = 1 }
+			}
+			454 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = ISR_refuling_station_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Air_raid_drills
+		icon=ISRA_Air_raid_drills
+		x=91
+		y=9
+		prerequisite={focus=ISRAE_Maritime_airports}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			air_experience = 25
+			add_ideas = ISR_air_raid_drills_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Appointment_of_the_Governor_of_Civil_Defence
+		icon=ISRA_Appointment_of_the_Governor_of_Civil_Defence
+		x=90
+		y=10
+		prerequisite={focus=ISRAE_Construction_of_Air_Force_refueling_stations}
+		prerequisite={focus=ISRAE_Air_raid_drills}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_air_raid_drills_ideas
+				add_idea = ISR_air_raid_drills_ideas1
+			}
+			add_war_support = 0.05
+			air_experience = 90
+		}
+	}
+	focus={
+		id=ISRAE_Israeli_Navy
+		icon=ISRA_Israeli_Navy
+		x=83
+		y=12
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			navy_experience = 100
+			add_ideas = ISR_Israeli_Navy_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Naval_Examination_Office
+		icon=ISRA_Naval_Examination_Office
+		x=81
+		y=13
+		prerequisite={focus=ISRAE_Israeli_Navy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_naval_examination_office_ideas
+		}
+	}
+	focus={
+		id=ISRAE_A_new_vision_for_the_Navy
+		icon=ISRA_A_new_vision_for_the_Navy
+		x=83
+		y=13
+		prerequisite={focus=ISRAE_Israeli_Navy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Navy_ideas
+				add_idea = ISR_Israeli_Navy_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Defend_shipping
+		icon=ISRA_Defend_shipping
+		x=85
+		y=13
+		prerequisite={focus=ISRAE_Israeli_Navy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = ISRAE_Naval_Examination_Office
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_naval_examination_office_ideas
+				add_idea = ISR_naval_examination_office_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Escort_fleet
+		icon=ISRA_Escort_fleet
+		x=81
+		y=14
+		prerequisite={focus=ISRAE_Naval_Examination_Office}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_escort_force_ideas
+		}
+	}
+	focus={
+		id=ISRAE_The_role_of_submarine_forces
+		icon=ISRA_The_role_of_submarine_forces
+		x=83
+		y=14
+		prerequisite={focus=ISRAE_A_new_vision_for_the_Navy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Navy_ideas1
+				add_idea = ISR_Israeli_Navy_ideas2
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Faltering_naval_plans
+		icon=ISRA_Faltering_naval_plans
+		x=85
+		y=14
+		prerequisite={focus=ISRAE_Defend_shipping}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = ISRAE_The_role_of_submarine_forces
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Navy_ideas2
+				add_idea = ISR_Israeli_Navy_ideas3
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Protect_the_coastline
+		icon=ISRA_Protect_the_coastline
+		x=80
+		y=15
+		prerequisite={focus=ISRAE_Escort_fleet}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_escort_force_ideas
+				add_idea = ISR_escort_force_ideas1
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Buy_destroyers
+		icon=ISRA_Buy_destroyers
+		x=82
+		y=15
+		prerequisite={focus=ISRAE_Naval_Examination_Office}
+		prerequisite={focus=ISRAE_Defend_shipping}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Buy_destroyers_ideas
+		}
+	}
+	focus={
+		id=ISRAE_Recruit_captains
+		icon=ISRA_Recruit_captains
+		x=84
+		y=15
+		prerequisite={focus=ISRAE_Naval_Examination_Office}
+		prerequisite={focus=ISRAE_Defend_shipping}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_navy_leader = {
+				name = "Shmuel_Tankus"
+				portrait_path = "gfx/leaders/PAL/Portrait_ISR_Shmuel_Tankus.png"
+				traits = { blockade_runner crisis_magician arctic_water_expert }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 3
+				coordination_skill = 3
+			}
+
+
+			create_navy_leader = {
+				name = "Shlomo Shamir"
+				portrait_path = "gfx/leaders/PAL/Portrait_ISR_Shlomo_Shamir.png"
+				traits = { arctic_water_expert crisis_magician navy_media_personality }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				maneuvering_skill = 3
+				coordination_skill = 2
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Naval_Academy
+		icon=ISRA_Naval_Academy
+		x=86
+		y=15
+		prerequisite={focus=ISRAE_Faltering_naval_plans}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Navy_ideas3
+				add_idea = ISR_Israeli_Navy_ideas4
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Raids
+		icon=ISRA_Raids
+		x=81
+		y=16
+		prerequisite={focus=ISRAE_Protect_the_coastline}
+		prerequisite={focus=ISRAE_Naval_Academy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_escort_force_ideas1
+				add_idea = ISR_escort_force_ideas2
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Expansion_of_the_naval_base
+		icon=ISRA_Expansion_of_the_naval_base
+		x=83
+		y=16
+		prerequisite={focus=ISRAE_The_role_of_submarine_forces}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			454 = {
+				add_building_construction = {
+					type = naval_base
+					province = 373
+					level = 5
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Recruit_the_Fisherman
+		icon=ISRA_Recruit_the_Fisherman
+		x=85
+		y=16
+		prerequisite={focus=ISRAE_Protect_the_coastline}
+		prerequisite={focus=ISRAE_Naval_Academy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_manpower = 3500
+			navy_experience = 50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cl_tech
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 218
+				producer = ISR
+			}
+		}
+	}
+	focus={
+		id=ISRAE_Swim_in_the_Mediterranean
+		icon=ISRA_Swim_in_the_Mediterranean
+		x=83
+		y=17
+		prerequisite={focus=ISRAE_Raids}
+		prerequisite={focus=ISRAE_Expansion_of_the_naval_base}
+		prerequisite={focus=ISRAE_Recruit_the_Fisherman}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Israeli_Navy_ideas4
+				add_idea = ISR_Israeli_Navy_ideas5
+			}
+		}
+	}
+}

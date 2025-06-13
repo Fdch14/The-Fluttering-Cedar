@@ -1,0 +1,61 @@
+scripted_gui = {
+
+	Yemen_lib_GUI = {
+		context_type = decision_category
+		parent_window_token = politics_tab
+		window_name = "Yemen_lib_GUI"
+
+		ai_check = {
+			always = no
+		}
+
+		triggers = {
+			Riot_Level_visible = {
+				has_country_flag = A_new_imam_was_chosen
+			}
+			Salalat_ar_Rassid_button_n_visible = {
+				has_country_flag = A_new_imam_was_chosen
+			}
+		}
+		
+		visible = {
+		}
+
+		effects = {
+			Al_Harakat_al_Yamaniat_al_Hura_button_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = Al_Harakat_al_Yamaniat_al_Hura_button_vis
+						}
+					}
+					set_country_flag = Al_Harakat_al_Yamaniat_al_Hura_button_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = Al_Harakat_al_Yamaniat_al_Hura_button_vis
+					}
+					clr_country_flag = Al_Harakat_al_Yamaniat_al_Hura_button_vis
+				}
+			}
+			Salalat_ar_Rassid_button_n_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = Salalat_ar_Rassid_button_vis
+						}
+					}
+					set_country_flag = Salalat_ar_Rassid_button_vis
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = Salalat_ar_Rassid_button_vis
+					}
+					clr_country_flag = Salalat_ar_Rassid_button_vis
+				}
+			}
+		}
+	}
+}

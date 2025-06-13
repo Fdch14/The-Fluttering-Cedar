@@ -1,0 +1,14 @@
+#########################################################################
+# NR
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+#PAL
+opinion_modifiers = {
+	PAL_Suez_Exchange_Agreement_opinion_modifier = { trade = yes value = 30 }
+}

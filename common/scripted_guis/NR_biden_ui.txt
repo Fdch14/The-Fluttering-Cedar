@@ -1,0 +1,154 @@
+scripted_gui = {
+	NR_view_pm = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "NR_joe_biden_gui"
+
+		ai_check = {
+			always = no
+		}
+
+		triggers = {
+			NR_pm_frame_visible = {
+				OR = {
+					has_country_flag = NR_HOG_veiw
+					has_country_flag = NR_HOG_second_veiw
+				}
+				NOT = {
+					has_country_flag = NR_pm_is_hos
+				}
+			}
+			NR_leader_button_visible = {
+				NR_uses_leader_gui = yes
+			}
+			NR_second_leader_button_visible = {
+				NR_uses_double_leader_gui = yes
+			}
+			Sadr_al_Din_al_Sadr_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_country_leader = {
+						name = "Muhammad"
+						ruling_only = yes
+					}
+				}
+			}
+			Huseyin_Rauf_Orbay_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
+				}
+			}
+			Morris_Abraham_Cohen_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_idea = ISR_Morris_Abraham_Cohen_hog_rso
+				}
+			}
+			Husayn_al_Khalidi_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_idea = PAL_Husayn_al_Khalidi_hog_sde
+				}
+			}
+			Raghib_al_Nashashibi_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_idea = PAL_Raghib_al_Nashashibi_hog_mil
+				}
+			}
+			Hassan_Sidqi_al_Dajani_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_idea = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+				}
+			}
+			Ahmet_Ferit_Tek_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_idea = PAL_Ahmet_Ferit_Tek_hog_sco
+				}
+			}
+			Ali_Munif_Bey_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_country_leader = {
+						name = "Ottoman Administration"
+						ruling_only = yes
+					}
+				}
+			}
+			NR_pm_name_visible = {
+				has_country_flag = NR_HOG_veiw
+			}
+			
+			NR_second_pm_name_visible = {
+				has_country_flag = NR_HOG_second_veiw
+			}
+		}
+
+		visible = {
+			NR_uses_leader_gui = yes
+		}
+		
+		effects = {
+			NR_leader_button_click = {
+				if = {
+					limit = {
+						has_country_flag = NR_HOG_veiw
+					}
+					clr_country_flag = NR_HOG_veiw
+					else = {
+						set_country_flag = NR_HOG_veiw
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = NR_HOG_second_veiw
+					}
+					clr_country_flag = NR_HOG_second_veiw
+				}
+			}
+			
+			NR_second_leader_button_click = {
+				if = {
+					limit = {
+						has_country_flag = NR_HOG_second_veiw
+					}
+					clr_country_flag = NR_HOG_second_veiw
+					else = {
+						set_country_flag = NR_HOG_second_veiw
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = NR_HOG_veiw
+					}
+					clr_country_flag = NR_HOG_veiw
+				}
+			}
+		}
+	}
+}
+
+scripted_gui = {
+	NR_FOR_view_pm = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "NR_for_joe_biden_gui"
+
+		ai_check = {
+			always = no
+		}
+
+		triggers = {
+			NR_for_leader_button_visible = {
+				NR_uses_leader_gui = yes
+			}
+			
+			NR_for_second_leader_button_visible = {
+				NR_uses_double_leader_gui = yes
+			}
+		}	
+	}
+}

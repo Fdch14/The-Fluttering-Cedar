@@ -1,0 +1,446 @@
+guiTypes = {
+	containerWindowType = {
+		name = "THE_Arab_unit_GUI"
+		position = { x = 0 y = -180 }
+		size = { width = 275 height = 380 }
+		
+		instantTextboxType = {
+			name = "Algeria_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Algeria_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Algeria_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Algeria_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Readiness_for_the_Algerian_uprising_name"
+			position = { x = 0 y = 340 }
+			font = "hoi_18mbs"
+			text = "Readiness_for_the_Algerian_uprising_text"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Hejaz_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Hejaz_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Hejaz_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Hejaz_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Readiness_for_the_Hejaz_uprising_name"
+			position = { x = 0 y = 340 }
+			font = "hoi_18mbs"
+			text = "Readiness_for_the_Hejaz_uprising_text"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Iraq_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Iraq_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Iraq_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Iraq_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Readiness_for_the_Iraq_uprising_name"
+			position = { x = 0 y = 340 }
+			font = "hoi_18mbs"
+			text = "Readiness_for_the_Iraq_uprising_text"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Jabal_Shammar_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Jabal_Shammar_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Jabal_Shammar_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Jabal_Shammar_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Libya_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Libya_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Libya_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Libya_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Morocco_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Morocco_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Morocco_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Morocco_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Oman_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Oman_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Oman_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Oman_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Saudi_Arabia_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Saudi_Arabia_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Saudi_Arabia_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Saudi_Arabia_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Somalia_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Somalia_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Somalia_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Somalia_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Syria_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Syria_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Syria_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Syria_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Readiness_for_the_Syria_uprising_name"
+			position = { x = 0 y = 340 }
+			font = "hoi_18mbs"
+			text = "Readiness_for_the_Syria_uprising_text"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Tripolitania_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Tripolitania_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Tripolitania_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Tripolitania_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Readiness_for_the_Tripolitania_uprising_name"
+			position = { x = 0 y = 340 }
+			font = "hoi_18mbs"
+			text = "Readiness_for_the_Tripolitania_uprising_text"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Tunisia_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Tunisia_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Tunisia_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Tunisia_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Yeman_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Yeman_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Yeman_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Yeman_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Egypt_revolt"
+			position = { x = -10 y = 300 }
+			font = "hoi_18mbs"
+			text = "[Egypt_revolt_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		instantTextboxType = {
+			name = "Egypt_Owner"
+			position = { x = -10 y = 320 }
+			font = "hoi_18mbs"
+			text = "[Egypt_Owner_TEXT]"
+			maxWidth = 250
+			maxHeight = 50
+			format = center
+		}
+		
+		buttonType = {
+			name = "arab_gui_Algeria_n"
+			spriteType = "arab_gui_Algeria"	
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Algeria_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "arab_gui_Egypt_n"
+			spriteType = "arab_gui_Egypt"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Egypt_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "arab_gui_Hejaz_n"
+			spriteType = "arab_gui_Hejaz"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Hejaz_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "arab_gui_Iraq_n"
+			spriteType = "arab_gui_Iraq"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Iraq_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "arab_gui_Jabal_Shammar_n"
+			spriteType = "arab_gui_Jabal_Shammar"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Jabal_Shammar_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		buttonType = {
+			name = "arab_gui_Libya_n"
+			spriteType = "arab_gui_Libya"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Libya_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "arab_gui_Morocco_n"
+			spriteType = "arab_gui_Morocco"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Morocco_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "arab_gui_Oman_n"
+			spriteType = "arab_gui_Oman"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Oman_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "arab_gui_Saudi_Arabia_n"
+			spriteType = "arab_gui_Saudi_Arabia"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Saudi_Arabia_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		buttonType = {
+			name = "arab_gui_Somalia_n"
+			spriteType = "arab_gui_Somalia"		
+			position = { x = -180  y = -220 }
+			pdx_tooltip = "arab_gui_Somalia_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "arab_gui_Syria_n"
+			spriteType = "arab_gui_Syria"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Syria_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "arab_gui_Tripolitania_n"
+			spriteType = "arab_gui_Tripolitania"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Tripolitania_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "arab_gui_Tunisia_n"
+			spriteType = "arab_gui_Tunisia"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Tunisia_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		buttonType = {
+			name = "arab_gui_Yeman_n"
+			spriteType = "arab_gui_Yeman"		
+			position = { x = -180  y = -180 }
+			pdx_tooltip = "arab_gui_Yeman_tooltip"
+			pdx_tooltip_delayed = ""
+			orientation = center
+			scale = 0.6
+		}
+		
+		
+	}
+}
+
+

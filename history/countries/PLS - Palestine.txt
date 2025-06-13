@@ -1,0 +1,243 @@
+﻿capital = 454
+
+oob = "PLS"
+### Starting Technologies ###
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+set_technology = {
+	### General ###
+	electronic_mechanical_engineering = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	### Infantry ###
+	infantry_weapons = 1
+	basic_train = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "BAY_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			engines_1 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
+		}
+		BAY_BBA_air_variants = yes		
+	else = {
+		set_air_oob = "BAY_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			cv_early_fighter = 1
+			cv_CAS1 = 1
+			cv_naval_bomber1 = 1
+			fighter1 = 1
+			tactical_bomber1 = 1
+			strategic_bomber1 = 1
+			CAS1 = 1
+		}
+	}
+}
+
+set_research_slots = 3
+
+add_ideas = {
+	ISR_Avraham_Stern_hog_npo
+	ISR_Ya_akov_Meridor_for_pau
+	ISR_Nathan_Yellin_Mor_eco_pau
+	ISR_Eliyahu_Giladi_sec_npo
+}
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1941.6.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 0
+	syndicalist = 0
+	radical_socialist = 0
+	social_democrat = 0
+	social_liberal = 0
+	market_liberal = 0
+	social_conservative = 0
+	authoritarian_democrat = 100
+	paternal_autocrat = 0
+	national_populist = 0
+}
+
+create_country_leader = {
+	name = "al-Mujallis al-Ali el-Arabi"
+	picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+	expire = "1.1.1"
+	ideology = tot_left_nationalism_subtype
+}
+
+create_country_leader = {
+	name = "al-Mujallis al-Ali el-Arabi"
+	picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+	expire = "1.1.1"
+	ideology = syn_left_nationalism_subtype
+}
+
+create_country_leader = {
+	name = "al-Mujallis al-Ali el-Arabi"
+	picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+	expire = "1.1.1"
+	ideology = left_nationalism_subtype
+}
+
+create_country_leader = {
+	name = "al-Mujallis al-Ali el-Arabi"
+	picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+	expire = "1.1.1"
+	ideology = socdem_left_nationalism_subtype
+}
+
+create_country_leader = {
+	name = "al-Mujallis al-Ali el-Arabi"
+	picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+	expire = "1.1.1"
+	ideology = national_liberalism_subtype
+}
+
+create_country_leader = {
+	name = "al-Mujallis al-Ali el-Arabi"
+	picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+	expire = "1.1.1"
+	ideology = marlib_national_liberalism_subtype
+}
+
+create_country_leader = {
+	name = "al-Mujallis al-Ali el-Arabi"
+	picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+	expire = "1.1.1"
+	ideology = national_conservative_subtype
+}
+
+create_country_leader = {
+	name = "al-Mujallis al-Ali el-Arabi"
+	picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+	expire = "1.1.1"
+	ideology = authdem_national_conservative_subtype
+}
+
+create_country_leader = {
+	name = "al-Mujallis al-Ali el-Arabi"
+	picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+	expire = "1.1.1"
+	ideology = pataut_national_conservative_subtype
+}
+
+create_country_leader = {
+	name = "al-Mujallis al-Ali el-Arabi"
+	picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+	expire = "1.1.1"
+	ideology = natpop_popular_patriotism_subtype
+}
+
+### Field Marshals ###
+create_corps_commander = {
+	name = "Yusuf al-Azma"
+	portrait_path = "gfx/leaders/PLS/Portrait_PLS_Yusuf_al_Azma.png"
+	traits = {
+		artillery_officer
+		bearer_of_artillery
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Salah al-Din al-Sabbagh"
+	portrait_path = "gfx/leaders/PLS/Portrait_PLS_Salah_al_Din_al_Sabbagh.png"
+	traits = {
+		thorough_planner
+		organisational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Izz ad-Din al-Qassam"
+	portrait_path = "gfx/leaders/PLS/Portrait_PLS_Izz_ad_Din_al_Qassam.png"
+	traits = {
+		trait_mountaineer
+		thorough_planner
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Muhammad Nimr al-Hawari"
+	portrait_path = "gfx/leaders/PLS/Portrait_PLS_Muhammad_Nimr_al_Hawari.png"
+	traits = {
+		offensive_doctrine
+		trickster
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Kamil Shabib"
+	portrait_path = "gfx/leaders/PLS/Portrait_PLS_Kamil_Shabib.png"
+	traits = {
+		trait_engineer
+		organisational_leader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}

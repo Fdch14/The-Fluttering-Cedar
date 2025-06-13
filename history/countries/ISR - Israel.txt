@@ -1,0 +1,360 @@
+﻿capital = 454
+
+oob = "ISR"
+set_naval_oob= "ENG_naval"
+### Starting Technologies ###
+
+if = {
+	limit = { has_dlc_nsb = no }
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = { has_dlc_nsb = yes }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+set_technology = {
+	### General ###
+	basic_train = 1
+	electronic_mechanical_engineering = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+
+	### Infantry ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "ENG_air_bba"
+
+		set_technology = {
+			aa_lmg = 1
+			early_bombs = 1
+			engines_1 = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_medium_airframe = 1
+			air_torpedoe_1 = 1
+		}
+		ENG_BBA_air_variants = yes
+	else = {
+		set_air_oob = "ENG_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			strategic_bomber1 = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			cv_CAS1 = 1
+			CAS1 = 1
+		}
+	}
+}
+
+### Navy - MtG ###
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		panzerschiffe = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		cruiser_submarines = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		pre_dreadnoughts = 1
+		ship_hull_super_heavy = 1
+
+		basic_naval_mines = 1
+
+		## Modules##
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		sonar = 1
+
+		### Transport ###
+		mtg_transport = 1
+	}
+}
+
+### Navy - Non MtG ###
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_submarine = 1
+		basic_submarine = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battlecruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		heavy_battleship = 1
+		early_carrier = 1
+		basic_carrier = 1
+
+		### Transport ###
+		transport = 1
+	}
+}
+
+set_research_slots = 3
+
+add_ideas = {
+	ISR_Avraham_Stern_hog_tot
+	ISR_Ya_akov_Meridor_for_npo
+	ISR_Nathan_Yellin_Mor_eco_tot
+	ISR_Eliyahu_Giladi_sec_tot
+}
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1941.6.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 15
+	syndicalist = 5
+	radical_socialist = 5
+	social_democrat = 3
+	social_liberal = 7
+	market_liberal = 10
+	social_conservative = 10
+	authoritarian_democrat = 13
+	paternal_autocrat = 25
+	national_populist = 7
+}
+
+create_country_leader = {
+	name = "Shmuel Mikunis"
+	picture = "gfx/leaders/PAL/Portrait_ISR_Shmuel_Mikunis.png"
+	expire = "1.1.1"
+	ideology = authcom_subtype
+}
+
+create_country_leader = {
+	name = "Meir Ya'ari"
+	picture = "gfx/leaders/PAL/Portrait_PAL_meir_ya_ari.png"
+	expire = "1.1.1"
+	ideology = centralized_syndicalism_subtype
+}
+
+create_country_leader = {
+	name = "Ya'akov Hazan"
+	picture = "gfx/leaders/PAL/Portrait_ISR_Yaakov_Hazan.png"
+	expire = "1.1.1"
+	ideology = left_nationalism_subtype
+}
+
+create_country_leader = {
+	name = "Levi Eshkol"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Levi_Eshkol.png"
+	expire = "1.1.1"
+	ideology = revisionist_marxism_subtype
+}
+
+create_country_leader = {
+	name = "Golda Meir"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Golda_Meir.png"
+	expire = "1.1.1"
+	ideology = national_liberalism_subtype
+}
+
+create_country_leader = {
+	name = "Peretz Bernstein"
+	picture = "gfx/leaders/PAL/Portrait_ISR_Peretz_Bernstein.png"
+	expire = "1.1.1"
+	ideology = humanistic_capitalism_subtype
+}
+
+create_country_leader = {
+	name = "Haim-Moshe Shapira"
+	picture = "gfx/leaders/PAL/Portrait_ISR_Haim_Moshe_Shapira.png"
+	expire = "1.1.1"
+	ideology = soccon_zionism
+}
+
+create_country_leader = {
+	name = "Menachem Begin"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Menachem_Begin.png"
+	expire = "1.1.1"
+	ideology = authdem_national_conservative_subtype
+}
+
+create_country_leader = {
+	name = "Avraham Stern"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Avraham_Stern.png"
+	expire = "1.1.1"
+	ideology = red_tinted_autocracy_subtype
+}
+
+create_country_leader = {
+	name = "Avraham Stern"
+	picture = "gfx/leaders/PAL/Portrait_PAL_Avraham_Stern.png"
+	expire = "1.1.1"
+	ideology = legionarism_subtype
+}
+
+### Field Marshals ###
+create_field_marshal = {
+	name = "Avraham Stern"
+	portrait_path = "gfx/leaders/PAL/Portrait_PAL_Avraham_Stern.png"
+	traits = { offensive_doctrine thorough_planner old_guard}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+	id = 110472
+
+}
+create_field_marshal = {
+	name = "Moshe Dayan"
+	portrait_path = "gfx/leaders/PAL/Portrait_ISR_Moshe_Dayan.png"
+	traits = { offensive_doctrine thorough_planner artillery_officer}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Nathan Yellin-Mor"
+	portrait_path = "gfx/leaders/PAL/Portrait_ISR_Nathan_Yellin_Mor.png"
+	traits = {
+		artillery_officer
+		bearer_of_artillery
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Menachem Begin"
+	portrait_path = "gfx/leaders/PAL/Portrait_PAL_Menachem_Begin.png"
+	traits = {
+		thorough_planner
+		organisational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Yaakov Dori"
+	portrait_path = "gfx/leaders/PAL/Portrait_ISR_Yaakov_Dori.png"
+	traits = {
+		trait_mountaineer
+		thorough_planner
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Haim Laskov"
+	portrait_path = "gfx/leaders/PAL/Portrait_ISR_Haim_Laskov.png"
+	traits = {
+		offensive_doctrine
+		trickster
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Mordechai Maklef"
+	portrait_path = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+	traits = {
+		trait_engineer
+		organisational_leader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Yigal Allon"
+	portrait_path = "gfx/leaders/PAL/Portrait_ISR_Yigal_Allon.png"
+	traits = {
+		trait_mountaineer
+		organisational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Yigael Yadin"
+	portrait_path = "gfx/leaders/PAL/Portrait_ISR_Yigael_Yadin.png"
+	traits = {
+		trait_mountaineer
+		jungle_rat
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}

@@ -1,0 +1,44 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_SSNP_gui_no_unit"
+		texturefile = "gfx/interface/GUI/SSNP/SSNP_gui_no_unit.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SSNP_gui_freely"
+		texturefile = "gfx/interface/GUI/SSNP/SSNP_gui_freely.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SSNP_gui_liability"
+		texturefile = "gfx/interface/GUI/SSNP/SSNP_gui_liability.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SSNP_gui_discipline"
+		texturefile = "gfx/interface/GUI/SSNP/SSNP_gui_discipline.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SSNP_gui_power"
+		texturefile = "gfx/interface/GUI/SSNP/SSNP_gui_power.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SSNP_Antun_Saadeh_GUI"
+		texturefile = "gfx/interface/GUI/SSNP/SSNP_Antun_Saadeh_GUI.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SSNP_Great_Syria_Map_GUI"
+		texturefile = "gfx/interface/GUI/SSNP/SSNP_Great_Syria_Map_GUI.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SSNP_button_GUI"
+		texturefile = "gfx/interface/GUI/SSNP/SSNP_button_GUI.png"
+		transparencecheck = yes
+	}
+	
+}

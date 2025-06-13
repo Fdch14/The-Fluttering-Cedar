@@ -1,0 +1,100 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_idea_LEB_Adib_al_Shishakli_eco_pau"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Adib_al_Shishakli.png"
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Antoun_Sadeh_hog_pau"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Antoun_Sadeh.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_George_Abd_Messih_sec_pau"
+		texturefile = "gfx/interface/ministers/LEB/LEB_George_Abd_Messih.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Saeed_Taqi_al_Din_for_pau"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Saeed_Taqi_al_Din.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Pierre_Amine_Gemayel_hog_pau"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Pierre_Amine_Gemayel.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Alfred_Georges_Naccache_for_npo"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Alfred_Georges_Naccache.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Charles_Helou_eco_npo"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Charles_Helou.png"
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Fouad_Chehab_sec_npo"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Fouad_Chehab.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Akram_al_Haurani_hog_syn"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Akram_al_Haurani.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Michel_Aflaq_hog_rso"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Michel_Aflaq.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Amin_al_Hafiz_hog_pau"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Amin_al_Hafiz.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Munif_al_Razzaz_for_syn"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Munif_al_Razzaz.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Michel_Aflaq_for_syn"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Michel_Aflaq.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Salah_al_Din_al_Bitar_eco_syn"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Salah_al_Din_al_Bitar.png"
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Zaki_al_Arsuzi_sec_syn"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Zaki_al_Arsuzi.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Akram_al_Hourani_sec_rso"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Akram_al_Hourani.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Sadr_al_Din_al_Sadr_hog_sco"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Sadr_al_Din_al_Sadr.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Adel_Osseiran_for_sco"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Adel_Osseiran.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Sabri_Hamadeh_eco_sco"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Sabri_Hamadeh.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_LEB_Abdul_Hussein_Sharaf_Eddin_sec_sco"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Abdul_Hussein_Sharaf_Eddin.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_CYP_Fevzi_Cakmak_hog_ade"
+		texturefile = "gfx/interface/ministers/CYP/CYP_Fevzi_Cakmak.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_CYP_Ismet_Inonu_for_ade"
+		texturefile = "gfx/interface/ministers/CYP/CYP_Ismet_Inonu.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_CYP_Mahmut_Esat_Bozkurt_eco_ade"
+		texturefile = "gfx/interface/ministers/CYP/CYP_Mahmut_Esat_Bozkurt.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_CYP_Recep_Peker_sec_ade"
+		texturefile = "gfx/interface/ministers/CYP/CYP_Recep_Peker.png"			
+	}
+
+}

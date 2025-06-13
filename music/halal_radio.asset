@@ -1,0 +1,55 @@
+music = {
+	name = "majn_puljemjot"
+	file = "majn_puljemjot.ogg"
+	volume = 1.25
+}
+music = {
+	name = "Izmir_March"
+	file = "Izmir_March.ogg"
+	volume = 1.25
+}
+music = {
+	name = "ya_biladi_inhadi"
+	file = "ya_biladi_inhadi.ogg"
+	volume = 1.25
+}
+music = {
+	name = "The_flame_of_the_Baath_Party_is_my_dawn"
+	file = "The_flame_of_the_Baath_Party_is_my_dawn.ogg"
+	volume = 1.25
+}
+music = {
+	name = "Kataeb_Party"
+	file = "Kataeb_Party.ogg"
+	volume = 1.25
+}
+music = {
+	name = "aljil_alsaaeid"
+	file = "aljil_alsaaeid.ogg"
+	volume = 1.25
+}
+music = {
+	name = "Glory_be_to_you_Arab_flag"
+	file = "Glory_be_to_you_Arab_flag.ogg"
+	volume = 1.25
+}
+music = {
+	name = "lwatanal_akbar"
+	file = "lwatanal_akbar.ogg"
+	volume = 1.25
+}
+music = {
+	name = "La_Ilaha_Illallah"
+	file = "La_Ilaha_Illallah.ogg"
+	volume = 1.25
+}
+music = {
+	name = "Ima_Bosne"
+	file = "Ima_Bosne.ogg"
+	volume = 1.25
+}
+music = {
+	name = "Hayalim_Almonim"
+	file = "Hayalim_Almonim.ogg"
+	volume = 1.25
+}

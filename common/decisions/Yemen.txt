@@ -1,0 +1,274 @@
+YEM_Yemen_lib_decision = {
+	YEM_Free_Yemen_in_action_decision = {    
+		icon = bear
+		
+		activation = {                         
+			original_tag = YEM
+			has_country_flag = Free_Yemen_in_action_Flag
+		}                                    
+		available = {                           
+			NOT = {
+				has_country_flag = Free_Yemen_in_action_Flag
+			}
+		}
+		
+		is_good = no                      
+	
+		days_mission_timeout = 15
+		
+		timeout_effect = {                      
+			activate_mission = YEM_Free_Yemen_in_action_decision
+			add_to_variable = {
+				var = Dissatisfaction_Level_var
+				value = 0.1
+			}
+			if = {
+				limit = {
+					has_country_flag = A_new_imam_was_chosen
+				}
+				add_to_variable = {
+					var = Riot_Level_var
+					value = 0.1
+				}
+				custom_effect_tooltip = Riot_Level_var_tt
+			}
+			custom_effect_tooltip = Dissatisfaction_Level_var_tt
+		}
+		complete_effect = {                            
+		}
+	}
+	YEM_Fight_the_rebels_decision = {
+		icon = artillery
+		
+		available = {
+		}
+		
+		cost = 50
+			
+		fire_only_once = no	
+		
+		visible = {
+			has_country_flag = Al_Harakat_al_Yamaniat_al_Hura_button_vis
+		}
+		
+		complete_effect = {
+			add_stability = 0.01
+			
+		}
+
+		days_remove = 15
+		remove_effect = {
+			add_to_variable = {
+				var = Dissatisfaction_Level_var
+				value = -0.2
+			}
+			custom_effect_tooltip = Dissatisfaction_Level_var_lost_tt
+		}
+	}
+	YEM_Summoning_the_Governor_decision = {
+		icon = champagne_glass
+		
+		available = {
+			has_completed_focus = NYE_Summoning_the_governors_of_the_provinces
+		}
+		
+		cost = 25
+
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = NYE_Summoning_the_governors_of_the_provinces
+			has_country_flag = Al_Harakat_al_Yamaniat_al_Hura_button_vis
+		}
+		
+		complete_effect = {
+			add_stability = 0.01
+		}
+
+		days_remove = 10
+		remove_effect = {
+			random_owned_controlled_state={
+				prioritize = { }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state={
+				prioritize = { }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_to_variable = {
+				var = Dissatisfaction_Level_var
+				value = -0.1
+			}
+			custom_effect_tooltip = Dissatisfaction_Level_var_lost_tt
+		}
+	}
+	YEM_Draw_tribal_warriors_decision = {
+		icon = kolchak
+		
+		available = {
+			has_completed_focus = NYE_Draw_tribal_warriors
+		}
+		
+		cost = 75
+
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = NYE_Draw_tribal_warriors
+			has_country_flag = Al_Harakat_al_Yamaniat_al_Hura_button_vis
+		}
+		
+		complete_effect = {
+			add_stability = 0.01
+		}
+
+		days_remove = 15
+		
+		remove_effect = {
+			division_template = {
+				name = "Tribal warriors"
+				division_names_group = YEM_NRARMY_00
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Tribal warriors\" division_template = \"Tribal warriors\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = YEM
+				}
+				create_unit = {
+					division = "name = \"Tribal warriors\" division_template = \"Tribal warriors\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = YEM
+				}
+			}
+			add_to_variable = {
+				var = Dissatisfaction_Level_var
+				value = -0.1
+			}
+			custom_effect_tooltip = Dissatisfaction_Level_var_lost_tt
+		}
+	}
+	YEM_Attack_on_Rebel_Stronghold_decision = {
+		icon = plane
+		
+		available = {
+			has_completed_focus = NYE_Eliminate_the_Free_Yemen_Movement
+		}
+		
+		cost = 80
+		
+		visible = {
+			has_completed_focus = NYE_Eliminate_the_Free_Yemen_Movement
+			has_country_flag = Salalat_ar_Rassid_button_vis
+		}
+		
+		complete_effect = {
+			add_stability = 0.01
+		}
+
+		days_remove = 15
+		
+		remove_effect = {
+			random_owned_controlled_state={
+				prioritize = { }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction={
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_to_variable = {
+				var = Riot_Level_var
+				value = -0.1
+			}
+			custom_effect_tooltip = Riot_Level_var_lost_tt
+		}
+	}
+	YEM_Discrediting_Free_Yemen_decision = {
+		icon = radio
+		
+		available = {
+			has_completed_focus = NYE_Eliminate_the_Free_Yemen_Movement
+		}
+		
+		cost = 50
+		
+		visible = {
+			has_completed_focus = NYE_Eliminate_the_Free_Yemen_Movement
+			has_country_flag = Salalat_ar_Rassid_button_vis
+		}
+		
+		complete_effect = {
+			add_stability = 0.01
+		}
+
+		days_remove = 7
+		
+		remove_effect = {
+			add_to_variable = {
+				var = Riot_Level_var
+				value = -0.15
+			}
+			custom_effect_tooltip = Riot_Level_var_lost_tt
+		}
+	}
+	YEM_Crack_down_on_underground_trade_decision = {
+		icon = give_cash
+		
+		available = {
+			has_completed_focus = NYE_Eliminate_the_Free_Yemen_Movement
+		}
+		
+		cost = 75
+		
+		visible = {
+			has_completed_focus = NYE_Eliminate_the_Free_Yemen_Movement
+			has_country_flag = Salalat_ar_Rassid_button_vis
+		}
+		
+		complete_effect = {
+			add_stability = 0.01
+		}
+
+		days_remove = 15
+		
+		remove_effect = {
+			random_owned_controlled_state={
+				prioritize = { }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction={
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_to_variable = {
+				var = Riot_Level_var
+				value = -0.1
+			}
+			custom_effect_tooltip = Riot_Level_var_lost_tt
+		}
+	}
+}

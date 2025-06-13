@@ -1,0 +1,40 @@
+MOJ_INF_01 = {
+	name = "Güvenlik Jandarma"
+	for_countries = { PAL }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%d Güvenlik Jandarma"
+	ordered = {
+		1 = { "%dst Güvenlik Jandarma" }
+		2 = { "%dnd Güvenlik Jandarma" }
+		3 = { "%drd Güvenlik Jandarma" }
+		4 = { "%dth Güvenlik Jandarma" }
+		5 = { "%dth Güvenlik Jandarma" }
+		6 = { "%dth Güvenlik Jandarma" }
+		7 = { "%dth Güvenlik Jandarma" }
+		8 = { "%dth Güvenlik Jandarma" }
+		9 = { "%dth Güvenlik Jandarma" }
+		10 = { "%dth Güvenlik Jandarma" }
+		11 = { "%dth Güvenlik Jandarma" }
+	}
+}
+MOJ_INF_02 = {
+	name = "Mutasarrifate's guards"
+	for_countries = { PAL }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "Mutasarrifate's guards"
+	ordered = {
+		1 = { "Mutasarrifate's guards" }
+		2 = { "Mutasarrifate's guards" }
+		3 = { "Mutasarrifate's guards" }
+		4 = { "Mutasarrifate's guards" }
+		5 = { "Mutasarrifate's guards" }
+		6 = { "Mutasarrifate's guards" }
+		7 = { "Mutasarrifate's guards" }
+		8 = { "Mutasarrifate's guards" }
+		9 = { "Mutasarrifate's guards" }
+		10 = { "Mutasarrifate's guards" }
+		11 = { "Mutasarrifate's guards" }
+	}
+}

@@ -1,0 +1,78 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_decision_Arab_national_unit"
+		texturefile = "gfx/decisions/decisions_categories/Arab_national_unit.png"
+	}
+	spriteType = {
+		name = "arab_gui_Algeria"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Algeria.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Egypt"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Egypt.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Hejaz"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Hejaz.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Iraq"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Iraq.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Jabal_Shammar"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Jabal_Shammar.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Libya"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Libya.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Morocco"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Morocco.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Oman"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Oman.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Saudi_Arabia"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Saudi_Arabia.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Somalia"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Somalia.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Syria"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Syria.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Tripolitania"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Tripolitania.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Tunisia"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Tunisia.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "arab_gui_Yeman"
+		texturefile = "gfx/interface/GUI/Arab/arab_gui_Yeman.png"
+		transparencecheck = yes
+	}
+	
+}

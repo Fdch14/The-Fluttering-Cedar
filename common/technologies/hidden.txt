@@ -1,0 +1,21 @@
+technologies = {
+	desert_warfare = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+		#If you change these
+		#Change the custom tooltip too: desert_warfare_effect
+		category_light_infantry = {
+			desert = {
+				attack = 0.05
+				defence = 0.03
+				movement = 0.05
+			}
+		}
+	}
+}

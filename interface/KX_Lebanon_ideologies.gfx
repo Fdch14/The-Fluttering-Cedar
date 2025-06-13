@@ -1,0 +1,103 @@
+spriteTypes = {	
+	spriteType = {
+	name = "GFX_ideology_ustase_subtype"
+	texturefile = "gfx/interface/ideologies/ustase_subtype.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_arab_socialism"
+	texturefile = "gfx/interface/ideologies/arab_socialism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_radsoc_arab_socialism"
+	texturefile = "gfx/interface/ideologies/radsoc_arab_socialism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_soccon_kemalism_subtype"
+	texturefile = "gfx/interface/ideologies/soccon_kemalism_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_antoun_saadeh_thought_subtype"
+	texturefile = "gfx/interface/ideologies/antoun_saadeh_thought_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_envers_cult_of_personality"
+	texturefile = "gfx/interface/ideologies/envers_cult_of_personality.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_red_turanianism"
+	texturefile = "gfx/interface/ideologies/red_turanianism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_technocratic_pan_turkism"
+	texturefile = "gfx/interface/ideologies/technocratic_pan_turkism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_natpop_zionism"
+	texturefile = "gfx/interface/ideologies/natpop_zionism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_autdem_zionism"
+	texturefile = "gfx/interface/ideologies/autdem_zionism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_pataut_zionism"
+	texturefile = "gfx/interface/ideologies/pataut_zionism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_tot_zionism"
+	texturefile = "gfx/interface/ideologies/tot_zionism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_radsoc_zionism"
+	texturefile = "gfx/interface/ideologies/radsoc_zionism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_soccon_zionism"
+	texturefile = "gfx/interface/ideologies/soccon_zionism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_socdem_zionism"
+	texturefile = "gfx/interface/ideologies/socdem_zionism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_marlib_zionism"
+	texturefile = "gfx/interface/ideologies/marlib_zionism.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_ustase_subtype"
+	texturefile = "gfx/interface/ideologies/ustase_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_ustase_crusader_ideology_subtype"
+	texturefile = "gfx/interface/ideologies/ustase_crusader_ideology_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_ustase_fiumeism_subtype"
+	texturefile = "gfx/interface/ideologies/ustase_fiumeism_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_ustase_legionarism_subtype"
+	texturefile = "gfx/interface/ideologies/ustase_legionarism_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_croatian_socialism_subtype"
+	texturefile = "gfx/interface/ideologies/croatian_socialism_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_haganah_military_rule_subtype"
+	texturefile = "gfx/interface/ideologies/haganah_military_rule_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_pataut_haganah_military_rule_subtype"
+	texturefile = "gfx/interface/ideologies/pataut_haganah_military_rule_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_syn_haganah_military_rule_subtype"
+	texturefile = "gfx/interface/ideologies/syn_haganah_military_rule_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_socdem_haganah_military_rule_subtype"
+	texturefile = "gfx/interface/ideologies/socdem_haganah_military_rule_group.png"
+	}
+	
+}

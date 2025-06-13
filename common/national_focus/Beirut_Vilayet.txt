@@ -1,0 +1,6892 @@
+focus_tree = {
+id = LEB_starting
+    country = {
+        base = 0
+        modifier = {
+            add = 10
+            tag = LEB
+        }
+    }
+	
+
+##### beirut vilayet ######
+	id = Beirut_Vilayet
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LEB
+		}
+	}
+	default = no
+	focus = {
+		id = LEB_a_land_hard_to_govern
+		icon = GFX_goal_LEB_a_land_hard_to_govern
+		cost = 5.00
+		x = 14
+		y = 0
+			available = {
+					is_subject_of = TUR
+				}
+			completion_reward = {
+					add_political_power = 150
+					add_stability = 0.10
+					add_war_support = 0.10
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+					add_offsite_building = {
+							type = arms_factory
+							level = 2
+						}	
+					set_country_flag = LEB_religious_decisions
+					custom_effect_tooltip = LEB_unlock_decisions_a_land_hard_to_govern_tt
+				}
+
+	}
+	focus = {
+		id = LEB_the_fluttering_cedar
+		icon = GFX_goal_LEB_the_fluttering_cedar
+		cost = 1.00
+		prerequisite = {
+			focus = LEB_a_land_hard_to_govern
+		}
+		x = 14
+		y = 1
+			available = {
+					is_subject_of = TUR
+					has_idea = LEB_black_monday
+				}
+			completion_reward = {
+					add_stability = -0.05
+					custom_effect_tooltip = ottoman_lose_much_influence_tt
+					custom_effect_tooltip = shia_add_influence_tt
+					custom_effect_tooltip = maronite_add_influence_tt
+					custom_effect_tooltip = sunni_add_influence_tt
+					custom_effect_tooltip = ssnp_add_influence_tt
+			add_to_variable = {
+				var = LEB_ottoman_power
+				value = -20
+			}
+			add_to_variable = {
+				var = LEB_shia_power
+				value = 5
+			}
+			add_to_variable = {
+				var = LEB_maronite_power
+				value = 5
+			}
+			add_to_variable = {
+				var = LEB_sunni_power
+				value = 5
+			}
+			add_to_variable = {
+				var = LEB_ssnp_power
+				value = 5
+			}
+				}
+
+	}
+	focus = {
+		id = LEB_agricultural_subsidies
+		icon = GFX_goal_LEB_agricultural_subsidies
+		cost = 3.00
+		prerequisite = {
+			focus = LEB_the_fluttering_cedar
+		}
+		x = 12
+		y = 2
+			available = {
+					is_subject_of = TUR
+					
+						  has_idea = LEB_black_monday
+				}
+			completion_reward = {
+					553 = {
+							if = {
+									limit = {
+											is_owned_and_controlled_by = LEB
+										}
+									add_extra_state_shared_building_slots = 2
+								}
+							
+						
+				}
+swap_ideas = {
+							remove_idea = LEB_black_monday
+							add_idea = LEB_black_monday_1
+								}
+	}
+	}
+	focus = {
+		id = LEB_emergency_food_assistance
+		icon = GFX_goal_LEB_emergency_food_assistance
+		cost = 3.00
+		prerequisite = {
+			focus = LEB_agricultural_subsidies
+		}
+		x = 11
+		y = 3
+			available = {
+					is_subject_of = TUR
+					
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = LEB_food_assistance
+							days = 120
+						}
+					add_stability = 0.05
+					custom_effect_tooltip = ottoman_add_influence_tt
+					add_to_variable = {
+				var = LEB_ottoman_power
+				value = 5
+			}
+				}
+
+	}
+	focus = {
+		id = LEB_ottoman_gendarme
+		icon = GFX_goal_LEB_ottoman_gendarme
+		cost = 3.00
+		prerequisite = {
+			focus = LEB_the_fluttering_cedar
+		}
+		x = 16
+		y = 2
+			available = {
+					is_subject_of = TUR
+					has_idea = LEB_religious_riots
+				}
+			completion_reward = {
+					add_manpower = 5000
+					add_command_power = 50
+					swap_ideas = {
+							remove_idea = LEB_religious_riots
+							add_idea = LEB_religious_riots_1
+						}
+					add_tech_bonus = {
+							name = LEB_ottoman_gendarme_bonus
+							bonus = 3
+							uses = 1
+							category = military_police_tech
+						}
+					553 = {
+				if = {
+					limit = { is_owned_and_controlled_by = LEB }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}	
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 500
+							producer = TUR
+						}
+				}
+
+	}
+	focus = {
+		id = LEB_let_overseas_remittance_return
+		icon = GFX_goal_LEB_let_overseas_remittance_return
+		cost = 3.00
+		prerequisite = {
+			focus = LEB_ottoman_gendarme
+			focus = LEB_agricultural_subsidies
+		}
+		x = 14
+		y = 3
+			completion_reward = {
+					set_country_flag = LEB_overseas_remittance_return
+					add_stability = 0.03
+					add_political_power = -50
+					custom_effect_tooltip = LEB_unlock_decisions_overseas_remittance_tt
+					swap_ideas = {
+							remove_idea = LEB_black_monday_1
+							add_idea = LEB_black_monday_2
+						}
+				}
+			available = {
+					is_subject_of = TUR
+					
+					      has_idea = LEB_black_monday_1
+						  
+				}
+
+	}
+	focus = {
+		id = LEB_check_the_disorder
+		icon = GFX_goal_LEB_check_the_disorder
+		cost = 3.00
+		prerequisite = {
+			focus = LEB_ottoman_gendarme
+		}
+		x = 17
+		y = 3
+			completion_reward = {
+					add_command_power = 50
+					add_war_support = -0.05
+					add_stability = 0.1
+					add_manpower = -359
+					swap_ideas = {
+							remove_idea = LEB_religious_riots_1
+							add_idea = LEB_religious_clashes_mitigated
+						}
+					custom_effect_tooltip = ottoman_add_influence_tt
+					add_to_variable = {
+				var = LEB_ottoman_power
+				value = 5
+			}
+				}
+			available = {
+					is_subject_of = TUR
+					has_idea = LEB_religious_riots_1
+				}
+
+	}
+	focus = {
+		id = LEB_a_straw_from_capital
+		icon = GFX_goal_LEB_a_straw_from_capital
+		cost = 3.00
+		prerequisite = {
+			focus = LEB_emergency_food_assistance
+		}
+		prerequisite = {
+			focus = LEB_let_overseas_remittance_return
+		}
+		prerequisite = {
+			focus = LEB_check_the_disorder
+		}
+		x = 14
+		y = 4
+			available = {
+					is_subject_of = TUR
+					has_idea = LEB_black_monday_2
+					    
+				}
+			completion_reward = {
+					remove_ideas = LEB_black_monday_2
+				}
+
+	}
+	focus = {
+		id = LEB_storm_has_dissipated
+		icon = GFX_goal_LEB_storm_has_dissipated
+		cost = 3.00
+		prerequisite = {
+			focus = LEB_a_straw_from_capital
+		}
+		x = 14
+		y = 5
+			available = {
+					is_subject_of = TUR
+				}
+			completion_reward = {
+					add_stability = 0.1
+					add_ideas = LEB_an_new_era_for_vilayet
+					custom_effect_tooltip = ottoman_add_influence_tt
+					add_to_variable = {
+				var = LEB_ottoman_power
+				value = 5
+			}
+				}
+
+	}
+	focus = {
+		id = LEB_the_path_to_prosperous
+		icon = GFX_goal_LEB_the_path_to_prosperous
+		cost = 3.00
+		prerequisite = {
+			focus = LEB_storm_has_dissipated
+		}
+		x = 6
+		y = 6
+			available = {
+					
+					is_subject_of = TUR
+				}
+			completion_reward = {
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+			553 = {
+				if = {
+					limit = { is_owned_and_controlled_by = LEB }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}	
+				}
+
+	}
+	focus = {
+		id = LEB_reopen_the_bank
+		icon = GFX_goal_LEB_reopen_the_bank
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_path_to_prosperous
+		}
+		completion_reward = {
+		add_ideas = LEB_idea_reopen_the_bank
+		
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = LEB_micro_credit
+		icon = GFX_goal_LEB_micro_credit
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_reopen_the_bank
+		}
+		completion_reward = {
+		swap_ideas = { 
+				remove_idea = LEB_idea_reopen_the_bank
+				add_idea = LEB_idea_reopen_the_bank_1
+			}
+		}
+		x = 1
+		y = 8
+
+	}
+	focus = {
+		id = LEB_let_the_oil_flow
+		icon = GFX_goal_LEB_let_the_oil_flow
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_path_to_prosperous
+		}
+		completion_reward = {
+		add_resource = {
+						type = oil
+						amount = 15
+						state = 553
+						}
+							}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = LEB_the_dark_tide
+		icon = GFX_goal_LEB_the_dark_tide
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_storm_has_dissipated
+		}
+		completion_reward = {
+		add_political_power = 100
+		add_command_power = 50
+		add_stability = 0.05	
+		add_war_support = 0.05
+		custom_effect_tooltip = ottoman_add_influence_tt
+		custom_effect_tooltip = the_dark_tide_tt
+					add_to_variable = {
+				var = LEB_ottoman_power
+				value = 5
+			}
+			}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = LEB_industry_plan
+		icon = GFX_goal_LEB_industry_plan
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_dark_tide
+			focus = LEB_the_path_to_prosperous
+		}
+		completion_reward = {
+		553 = {
+							if = {
+									limit = {
+						is_owned_and_controlled_by = LEB
+										}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+								}
+								}
+		add_resource = {
+						type = steel
+						amount = 25
+						state = 553
+						}
+		add_resource = {
+						type = aluminium
+						amount = 10
+						state = 553
+						}				
+						
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = LEB_tyre_shipyard
+		icon = GFX_goal_LEB_tyre_shipyard
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_industry_plan
+		}
+		completion_reward = {
+		navy_experience = 25
+		553 = {
+							if = {
+									limit = {
+						is_owned_and_controlled_by = LEB
+										}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+								}
+								}
+			add_tech_bonus = {
+							name = LEB_ottoman_gendarme_bonus
+							bonus = 0.5
+							uses = 6
+							category = naval_equipment
+						}
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = LEB_tripoli_soap_factory
+		icon = GFX_goal_LEB_tripoli_soap_factory
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_industry_plan
+		}
+		completion_reward = {
+		553 = {
+							if = {
+									limit = {
+						is_owned_and_controlled_by = LEB
+										}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+								}
+								}
+			add_tech_bonus = {
+							name = LEB_ottoman_gendarme_bonus
+							bonus = 0.5
+							uses = 6
+							category = industry
+						}
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = LEB_beirut_ordnance
+		icon = GFX_goal_LEB_beirut_ordnance
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_tyre_shipyard
+		}
+		prerequisite = {
+			focus = LEB_tripoli_soap_factory
+		}
+		completion_reward = {
+		553 = {
+							if = {
+									limit = {
+						is_owned_and_controlled_by = LEB
+										}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+								}
+								}
+			add_tech_bonus = {
+							name = LEB_ottoman_gendarme_bonus
+							bonus = 1.0
+							uses = 3
+							category = infantry_weapons
+						}
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = LEB_expand_beirut_university
+		icon = GFX_goal_LEB_expand_beirut_university
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_beirut_ordnance
+		}
+		completion_reward = {
+		add_research_slot = 1
+		add_tech_bonus = {
+							name = LEB_ottoman_gendarme_bonus
+							bonus = 0.5
+							uses = 6
+							category = electronics
+						}
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = LEB_the_heir_of_antioch
+		icon = GFX_goal_LEB_the_heir_of_antioch
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_dark_tide
+		}
+		completion_reward = {
+		add_political_power = 25
+		add_manpower = 500
+		custom_effect_tooltip = maronite_lose_influence_tt
+			add_to_variable = {
+				var = LEB_maronite_power
+				value = -5
+			}
+			}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = LEB_operation_broken_spear
+		icon = GFX_goal_LEB_operation_broken_spear
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_heir_of_antioch
+		}
+		mutually_exclusive = {
+			focus = LEB_printing_factory_incident
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_operation_broken_spear_tt
+		add_command_power = 25
+		add_manpower = 500
+		add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 300
+							producer = TUR
+						}
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = LEB_the_gathering_whirlwind
+		icon = GFX_goal_LEB_the_gathering_whirlwind
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_dark_tide
+		}
+		completion_reward = {
+		add_political_power = 25
+		army_experience = 25
+		custom_effect_tooltip = ssnp_lose_influence_tt
+			add_to_variable = {
+				var = LEB_ssnp_power
+				value = -5
+			}
+			}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = LEB_printing_factory_incident
+		icon = GFX_goal_LEB_printing_factory_incident
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_heir_of_antioch
+		}
+		prerequisite = {
+			focus = LEB_the_gathering_whirlwind
+		}
+		mutually_exclusive = {
+			focus = LEB_operation_broken_spear
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_printing_factory_incident_tt
+		add_war_support = 0.10
+		add_political_power = 50
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = LEB_meet_patriarch
+		icon = GFX_goal_LEB_meet_patriarch
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_printing_factory_incident
+			focus = LEB_operation_broken_spear
+		}
+		mutually_exclusive = {
+			focus = LEB_meet_mujtahid
+		}
+		completion_reward = {
+		add_ideas = LEB_maronite_appeased
+		country_event = LEB.27
+		custom_effect_tooltip = maronite_add_influence_tt
+		custom_effect_tooltip = ssnp_lose_influence_tt
+		custom_effect_tooltip = ottoman_add_influence_tt
+		add_to_variable = {
+				var = LEB_maronite_power
+				value = 5
+	
+			}
+		add_to_variable = {
+				var = LEB_ssnp_power
+				value = -5
+			}
+		add_to_variable = {
+				var = LEB_ottoman_power
+				value = 5
+			}
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = LEB_operation_breezeless
+		icon = GFX_goal_LEB_operation_breezeless
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_gathering_whirlwind
+		}
+		mutually_exclusive = {
+			focus = LEB_operation_red_dusk
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_operation_breezeless_tt
+		add_command_power = 25
+		add_manpower = 500
+		add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 300
+							producer = TUR
+						}
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = LEB_the_red_devil
+		icon = GFX_goal_LEB_the_red_devil
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_dark_tide
+		}
+		completion_reward = {
+		add_political_power = 25
+		add_war_support = 0.05
+		custom_effect_tooltip = sunni_lose_influence_tt
+			add_to_variable = {
+				var = LEB_sunni_power
+				value = -5
+			}
+			}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = LEB_operation_red_dusk
+		icon = GFX_goal_LEB_operation_red_dusk
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_red_devil
+		}
+		mutually_exclusive = {
+			focus = LEB_operation_breezeless
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_operation_red_dusk_tt
+		add_command_power = 25
+		add_manpower = 500
+		add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 300
+							producer = TUR
+						}
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = LEB_the_shape_of_imam
+		icon = GFX_goal_LEB_the_shape_of_imam
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_dark_tide
+		}
+		completion_reward = {
+		add_political_power = 25
+		add_stability = 0.05
+		custom_effect_tooltip = shia_lose_influence_tt
+			add_to_variable = {
+				var = LEB_shia_power
+				value = -5
+			}
+			}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = LEB_anti_communist_mullah
+		icon = GFX_goal_LEB_anti_communist_mullah
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_shape_of_imam
+		}
+		prerequisite = {
+			focus = LEB_the_red_devil
+		}
+		mutually_exclusive = {
+			focus = LEB_operation_resurrection
+		}
+		completion_reward = {
+		custom_effect_tooltip = unlock_anti_communist_mullah_tt
+		add_war_support = 0.1
+		add_political_power = 50
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = LEB_operation_resurrection
+		icon = GFX_goal_LEB_operation_resurrection
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_shape_of_imam
+		}
+		mutually_exclusive = {
+			focus = LEB_anti_communist_mullah
+		}
+		
+		completion_reward = {
+		custom_effect_tooltip = unlock_operation_resurrection_tt
+		add_command_power = 25
+		add_equipment_to_stockpile = {
+							type = artillery_equipment_1
+							amount = 60
+							producer = TUR
+						}
+		}
+		x = 27
+		y = 8
+
+	}
+	focus = {
+		id = LEB_meet_mujtahid
+		icon = GFX_goal_LEB_meet_mujtahid
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_anti_communist_mullah
+			focus = LEB_operation_resurrection
+		}
+		
+		mutually_exclusive = {
+			focus = LEB_meet_patriarch
+		}
+		completion_reward = {
+		add_ideas = LEB_shia_appeased
+		country_event = LEB.26
+		custom_effect_tooltip = shia_add_influence_tt
+		custom_effect_tooltip = sunni_lose_influence_tt
+		custom_effect_tooltip = ottoman_add_influence_tt
+		add_to_variable = {
+				var = LEB_shia_power
+				value = 5
+	
+			}
+		add_to_variable = {
+				var = LEB_sunni_power
+				value = -5
+	
+			}
+		add_to_variable = {
+				var = LEB_ottoman_power
+				value = 5
+			}
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = LEB_the_calm_sea
+		icon = GFX_goal_LEB_the_calm_sea
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+					has_idea = LEB_religious_clashes_mitigated
+				}
+		prerequisite = {
+			focus = LEB_meet_patriarch
+			focus = LEB_meet_mujtahid
+
+		}
+		prerequisite = {
+			focus = LEB_operation_red_dusk
+			focus = LEB_operation_breezeless
+			}
+			
+		completion_reward = {
+		add_to_variable = {
+				var = LEB_ottoman_power
+				value = 15
+			}
+		swap_ideas = {
+		remove_idea = LEB_religious_clashes_mitigated
+		add_idea = LEB_religious_clashes_calmed
+		}
+		custom_effect_tooltip = ottoman_add_much_influence_tt
+		}
+		x = 22
+		y = 10
+
+	}
+	focus = {
+		id = LEB_revitalization_of_the_tourism
+		icon = GFX_goal_LEB_revitalization_of_the_tourism
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_the_path_to_prosperous
+		}
+		x = 6
+		y = 7
+			completion_reward = {
+			set_country_flag = LEB_tourism
+			add_ideas = LEB_idea_tourism
+			custom_effect_tooltip = LEB_revitalization_of_the_tourism_tt
+}
+
+	}
+	focus = {
+		id = LEB_casino_grand_prix
+		icon = GFX_goal_LEB_casino_grand_prix
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_reopen_the_bank
+			focus = LEB_revitalization_of_the_tourism
+		}
+		completion_reward = {
+		add_political_power = -25
+		add_ideas = LEB_gambling_industry
+		}
+		x = 3
+		y = 8
+
+	}
+	focus = {
+		id = LEB_ancient_ruins
+		icon = GFX_goal_LEB_ancient_ruins
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_revitalization_of_the_tourism
+		}
+		completion_reward = {
+		553 = {
+							if = {
+									limit = {
+						is_owned_and_controlled_by = LEB
+										}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+								}
+								}
+		add_tech_bonus = {
+							name = LEB_alpine_skiing_bonus
+							bonus = 0.5
+							uses = 4
+							category = construction_tech
+						}						
+		}
+		x = 5
+		y = 8
+
+	}
+	focus = {
+		id = LEB_alpine_skiing
+		icon = GFX_goal_LEB_alpine_skiing
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_revitalization_of_the_tourism
+		}
+		completion_reward = {
+		553 = {
+							if = {
+									limit = {
+						is_owned_and_controlled_by = LEB
+										}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+								}
+								}
+		add_tech_bonus = {
+							name = LEB_alpine_skiing_bonus
+							bonus = 0.5
+							uses = 4
+							category = support_tech
+						}
+		add_equipment_to_stockpile = {
+							type = support_equipment_1
+							amount = 250
+							producer = TUR
+						}
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = LEB_port_for_hajj
+		icon = GFX_goal_LEB_port_for_hajj
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_let_the_oil_flow
+			focus = LEB_revitalization_of_the_tourism
+		}
+		completion_reward = {
+		add_ideas = LEB_hajj_port
+		553 = {
+							if = {
+									limit = {
+											is_owned_and_controlled_by = LEB
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+								}
+		}
+
+	}
+	x = 9
+	y = 8
+	}
+	focus = {
+		id = LEB_1st_mid_east_trade_expo
+		icon = GFX_goal_LEB_1st_mid_east_trade_expo
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_international_airport
+		}
+		prerequisite = {
+			focus = LEB_beirut_racecourse
+		}
+		prerequisite = {
+			focus = LEB_countryside_revitalized
+		}
+		prerequisite = {
+			focus = LEB_the_new_jerusalam
+		}
+		prerequisite = {
+			focus = LEB_refining_industry
+		}
+		completion_reward = {
+		country_event = LEB.4
+		}
+		x = 6
+		y = 10
+
+	}
+	focus = {
+		id = LEB_countryside_revitalized
+		icon = GFX_goal_LEB_countryside_revitalized
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_micro_credit
+		}
+		completion_reward = {
+		add_stability = 0.15
+		553 = {
+				if = {
+					limit = { is_owned_and_controlled_by = LEB }
+				increase_state_category_by_one_level = yes	
+				}
+			}
+		
+		}
+		x = 1
+		y = 9
+
+	}
+	focus = {
+		id = LEB_the_new_jerusalam
+		icon = GFX_goal_LEB_the_new_jerusalam
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_port_for_hajj
+		}
+		completion_reward = {
+		swap_ideas = { remove_idea = LEB_hajj_port
+		add_idea = LEB_new_jerusalem
+		}
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = LEB_beirut_racecourse
+		icon = GFX_goal_LEB_beirut_racecourse
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_casino_grand_prix
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = LEB_gambling_industry
+		add_idea = LEB_gambling_industry_1
+		}
+		}
+		x = 3
+		y = 9
+
+	}
+	focus = {
+		id = LEB_international_airport
+		icon = GFX_goal_LEB_international_airport
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_alpine_skiing
+		}
+		prerequisite = {
+			focus = LEB_ancient_ruins
+		}
+		completion_reward = {  
+		553 = {
+				if = {
+					limit = { is_owned_and_controlled_by = LEB }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = air_base
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		add_tech_bonus = {
+							name = LEB_ottoman_gendarme_bonus
+							bonus = 1
+							uses = 3
+							category = air_equipment
+						}	
+			
+		}
+		x = 6
+		y = 9
+
+	}
+	focus = {
+		id = LEB_domestic_storage_facilities
+		icon = GFX_goal_LEB_domestic_storage_facilities
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_let_the_oil_flow
+		}
+		completion_reward = {
+		add_resource = {
+						type = oil
+						amount = 10
+						state = 553
+						}
+		add_ideas = LEB_oil_oil_oil
+		}
+	
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = LEB_refining_industry
+		icon = GFX_goal_LEB_refining_industry
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_domestic_storage_facilities
+		}
+		completion_reward = {
+		553 = {
+		if = {
+					limit = { is_owned_and_controlled_by = LEB }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery 
+						level = 1
+						instant_build = yes
+					}
+				}
+				}
+		add_resource = {
+						type = oil
+						amount = 8
+						state = 553
+						}
+		
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = LEB_model_vilayet
+		icon = GFX_goal_LEB_model_vilayet
+		cost = 3.00
+		available = {
+					
+					is_subject_of = TUR
+				}
+		prerequisite = {
+			focus = LEB_expand_beirut_university
+		}
+		prerequisite = {
+			focus = LEB_1st_mid_east_trade_expo
+		}
+		prerequisite = {
+			focus = LEB_the_calm_sea
+		}
+		completion_reward = {
+		add_political_power = 200
+		add_stability = 0.15
+		add_war_support = 0.15
+		custom_effect_tooltip = LEB_model_vilayet_tt
+		
+		hidden_effect = {
+		country_event = 
+		{ id = LEB.100
+			days = 3
+			}
+				}
+					}
+		x = 14
+		y = 11
+
+	}
+	focus={
+		id=SSNP_Ring_the_bell_of_nationalism
+		icon=NLEB_Ring_the_bell_of_nationalism
+		x=38
+		y=3
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = LEB_SSNP_WIN
+			has_country_flag = LEB_war_with_Ottman_Win
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.02
+		}
+	}
+	focus={
+		id=SSNP_Sweep_up_the_Maroon_faction_inferior_breeds
+		icon=NLEB_Sweep_up_the_Maroon_faction_inferior_breeds
+		x=-1
+		y=1
+		prerequisite={focus=SSNP_Ring_the_bell_of_nationalism}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = national_populist popularity = -1 }
+		}
+	}
+	focus={
+		id=SSNP_Crush_the_resistance
+		icon=NLEB_Crush_the_resistance
+		x=1
+		y=1
+		prerequisite={focus=SSNP_Ring_the_bell_of_nationalism}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = totalist popularity = -1 }
+			add_popularity = { ideology = syndicalist popularity = -1 }
+			add_popularity = { ideology = radical_socialist popularity = -1 }
+			add_popularity = { ideology = social_conservative popularity = -1 }
+		}
+	}
+	focus={
+		id=SSNP_Towards_the_ultimate_victory
+		icon=NLEB_Towards_the_ultimate_victory
+		x=0
+		y=2
+		prerequisite={focus=SSNP_Sweep_up_the_Maroon_faction_inferior_breeds}
+		prerequisite={focus=SSNP_Crush_the_resistance}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_the_rule_of_the_Socialist_National_Party_ideas
+		}
+	}
+	focus={
+		id=SSNP_freely
+		icon=NLEB_freely
+		x=-6
+		y=3
+		prerequisite={focus=SSNP_Towards_the_ultimate_victory}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_freely_ideas
+		}
+	}
+	focus={
+		id=SSNP_liability
+		icon=NLEB_liability
+		x=-2
+		y=3
+		prerequisite={focus=SSNP_Towards_the_ultimate_victory}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_liability_ideas
+		}
+	}
+	focus={
+		id=SSNP_discipline
+		icon=NLEB_discipline
+		x=2
+		y=3
+		prerequisite={focus=SSNP_Towards_the_ultimate_victory}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_discipline_ideas
+		}
+	}
+	focus={
+		id=SSNP_power
+		icon=NLEB_power
+		x=6
+		y=3
+		prerequisite={focus=SSNP_Towards_the_ultimate_victory}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_power_ideas
+		}
+	}
+	focus={
+		id=SSNP_Ensuring_womens_rights
+		icon=NLEB_Ensuring_womens_rights
+		x=-7
+		y=4
+		prerequisite={focus=SSNP_freely}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_progressive_ideas
+			hidden_effect = {
+				country_event = {
+					id = LEB.116
+					days = 2
+				}
+			}
+		}
+	}
+	focus={
+		id=SSNP_Agitation_of_Syrians_abroad
+		icon=NLEB_Agitation_of_Syrians_abroad
+		x=-7
+		y=5
+		prerequisite={focus=SSNP_Ensuring_womens_rights}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_progressive_ideas
+				add_idea = SSNP_progressive_ideas1
+			}
+		}
+	}
+	focus={
+		id=SSNP_The_relationship_between_the_individual_and_society
+		icon=NLEB_The_relationship_between_the_individual_and_society
+		x=-7
+		y=6
+		prerequisite={focus=SSNP_Agitation_of_Syrians_abroad}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_progressive_ideas1
+				add_idea = SSNP_progressive_ideas2
+			}
+		}
+	}
+	focus={
+		id=SSNP_War_in_Heaven
+		icon=NELEB_War_in_Heaven
+		x=-5
+		y=4
+		prerequisite={focus=SSNP_freely}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_freely_ideas
+				add_idea = SSNP_freely_ideas1
+			}
+			hidden_effect = {
+				country_event = {
+					id = LEB.117
+					days = 2
+				}
+			}
+		}
+	}
+	focus={
+		id=SSNP_Liquidate_reactionary_religious_forces
+		icon=NLEB_Liquidate_reactionary_religious_forces
+		x=-5
+		y=5
+		prerequisite={focus=SSNP_War_in_Heaven}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_freely_ideas1
+				add_idea = SSNP_freely_ideas2
+			}
+			hidden_effect = {
+				country_event = {
+					id = LEB.118
+					days = 2
+				}
+			}
+		}
+	}
+	focus={
+		id=SSNP_Secularization_of_the_country
+		icon=NLEB_Secularization_of_the_country
+		x=-5
+		y=6
+		prerequisite={focus=SSNP_Liquidate_reactionary_religious_forces}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_freely_ideas2
+				add_idea = SSNP_freely_ideas3
+			}
+		}
+	}
+	focus={
+		id=SSNP_Build_the_country_of_Syria
+		icon=NLEB_Build_the_country_of_Syria
+		x=-3
+		y=4
+		prerequisite={focus=SSNP_liability}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_Build_the_Motherland_ideas
+		}
+	}
+	focus={
+		id=SSNP_Industrialization_and_mechanization
+		icon=NLEB_Industrialization_and_mechanization
+		x=-3
+		y=5
+		prerequisite={focus=SSNP_Build_the_country_of_Syria}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		random_owned_controlled_state={
+			add_extra_state_shared_building_slots = 2
+			add_building_construction={
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		random_owned_controlled_state={
+			add_extra_state_shared_building_slots = 2
+			add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		random_owned_controlled_state={
+			add_extra_state_shared_building_slots = 2
+			add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = SSNP_Build_the_Motherland_ideas
+				add_idea = SSNP_Build_the_Motherland_ideas1
+			}
+		}
+	}
+	focus={
+		id=SSNP_Work_hard_for_the_country
+		icon=NLEB_Work_hard_for_the_countrypng
+		x=-3
+		y=6
+		prerequisite={focus=SSNP_Industrialization_and_mechanization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_Build_the_Motherland_ideas1
+				add_idea = SSNP_Build_the_Motherland_ideas2
+			}
+		}
+	}
+	focus={
+		id=SSNP_Relief_for_people_in_need
+		icon=NLEB_Relief_for_people_in_need
+		x=-1
+		y=4
+		prerequisite={focus=SSNP_liability}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_liability_ideas
+				add_idea = SSNP_liability_ideas1
+			}
+		}
+	}
+	focus={
+		id=SSNP_Compulsory_education_is_introduced
+		icon=NLEB_Compulsory_education_is_introduced
+		x=-1
+		y=5
+		prerequisite={focus=SSNP_Relief_for_people_in_need}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_liability_ideas1
+				add_idea = SSNP_liability_ideas2
+			}
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=SSNP_National_health_insurance
+		icon=NLEB_National_health_insurance
+		x=-1
+		y=6
+		prerequisite={focus=SSNP_Compulsory_education_is_introduced}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_liability_ideas2
+				add_idea = SSNP_liability_ideas3
+			}
+		}
+	}
+	focus={
+		id=SSNP_Rectify_the_partys_style
+		icon=NLEB_Rectify_the_partys_style
+		x=1
+		y=4
+		prerequisite={focus=SSNP_discipline}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_Rectification_ideas
+		}
+	}
+	focus={
+		id=SSNP_Restrain_the_troops
+		icon=NLEB_Restrain_the_troops
+		x=1
+		y=5
+		prerequisite={focus=SSNP_Rectify_the_partys_style}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_Rectification_ideas
+				add_idea = SSNP_Rectification_ideas1
+			}
+		}
+	}
+	focus={
+		id=SSNP_Loyalty_to_the_leader
+		icon=NLEB_Loyalty_to_the_leader
+		x=1
+		y=6
+		prerequisite={focus=SSNP_Restrain_the_troops}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_country_leader_trait = SSNP_Supreme_Leader
+		}
+	}
+	focus={
+		id=SSNP_Against_Zionism
+		icon=NLEB_Against_Zionism
+		x=3
+		y=4
+		prerequisite={focus=SSNP_discipline}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_discipline_ideas
+				add_idea = SSNP_discipline_ideas1
+			}
+		}
+	}
+	focus={
+		id=SSNP_Nationalism_took_root
+		icon=NLEB_Nationalism_took_root
+		x=3
+		y=5
+		prerequisite={focus=SSNP_Against_Zionism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_discipline_ideas1
+				add_idea = SSNP_discipline_ideas2
+			}
+		}
+	}
+	focus={
+		id=SSNP_Crush_the_imperialist_agents
+		icon=NLEB_Crush_the_imperialist_agents
+		x=3
+		y=6
+		prerequisite={focus=SSNP_Nationalism_took_root}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_discipline_ideas2
+				add_idea = SSNP_discipline_ideas3
+			}
+		}
+	}
+	focus={
+		id=SSNP_Confiscation_of_super_rich_assets
+		icon=NLEB_Confiscation_of_super_rich_assets
+		x=5
+		y=4
+		prerequisite={focus=SSNP_power}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_reform_ideas
+		}
+	}
+	focus={
+		id=SSNP_Implementation_of_agrarian_reform
+		icon=NLEB_Implementation_of_agrarian_reform
+		x=5
+		y=5
+		prerequisite={focus=SSNP_Confiscation_of_super_rich_assets}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_reform_ideas
+				add_idea = SSNP_reform_ideas1
+			}
+		}
+	}
+	focus={
+		id=SSNP_Supporting_local_businesses
+		icon=NLEB_Supporting_local_businessespng
+		x=5
+		y=6
+		prerequisite={focus=SSNP_Implementation_of_agrarian_reform}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_reform_ideas1
+				add_idea = SSNP_reform_ideas2
+			}
+		}
+	}
+	focus={
+		id=SSNP_Expand_the_Whirlwind_Eagle
+		icon=NLEB_Expand_the_Whirlwind_Eagle
+		x=7
+		y=4
+		prerequisite={focus=SSNP_power}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_power_ideas
+				add_idea = SSNP_power_ideas1
+			}
+		}
+	}
+	focus={
+		id=SSNP_Recruit_loyal_warriors
+		icon=NLEB_Recruit_loyal_warriors
+		x=7
+		y=5
+		prerequisite={focus=SSNP_Expand_the_Whirlwind_Eagle}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_power_ideas1
+				add_idea = SSNP_power_ideas2
+			}
+			hidden_effect = {
+				country_event = {
+					id = LEB.119
+					days = 3
+				}
+			}
+			division_template = {
+				name = "Gisch al-Muttuwain al-Souriyn"
+				division_names_group = LEB_NNRARMY_00
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				artillery_brigade  = { x = 3 y = 0 }
+				artillery_brigade  = { x = 3 y = 1 }
+				artillery_brigade  = { x = 3 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"1st Gisch al-Muttuwain al-Souriyn\" division_template = \"Gisch al-Muttuwain al-Souriyn\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = LEB
+				}
+				create_unit = {
+					division = "name = \"2nd Gisch al-Muttuwain al-Souriyn\" division_template = \"Gisch al-Muttuwain al-Souriyn\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = LEB
+				}
+				create_unit = {
+					division = "name = \"3rd Gisch al-Muttuwain al-Souriyn\" division_template = \"Gisch al-Muttuwain al-Souriyn\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = LEB
+				}
+				create_unit = {
+					division = "name = \"4th Gisch al-Muttuwain al-Souriyn\" division_template = \"Gisch al-Muttuwain al-Souriyn\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = LEB
+				}
+			}
+		}
+	}
+	focus={
+		id=SSNP_Expand_the_power_of_the_Social_Nationalist_Party
+		icon=NLEB_Expand_the_power_of_the_Social_Nationalist_Party
+		x=7
+		y=6
+		prerequisite={focus=SSNP_Recruit_loyal_warriors}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_power_ideas2
+				add_idea = SSNP_power_ideas3
+			}
+		}
+	}
+	focus={
+		id=SSNP_Fight_for_it_with_blood
+		icon=NLEB_Fight_for_it_with_blood
+		x=-6
+		y=7
+		prerequisite={focus=SSNP_The_relationship_between_the_individual_and_society}
+		prerequisite={focus=SSNP_Secularization_of_the_country}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_freely_ideas3
+				add_idea = SSNP_freely_ideas4
+			}
+		}
+	}
+	focus={
+		id=SSNP_End_the_chaos_of_poverty
+		icon=NLEB_End_the_chaos_of_poverty
+		x=-2
+		y=7
+		prerequisite={focus=SSNP_Work_hard_for_the_country}
+		prerequisite={focus=SSNP_National_health_insurance}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_liability_ideas3
+				add_idea = SSNP_liability_ideas4
+			}
+		}
+	}
+	focus={
+		id=SSNP_Syria_fight_for_yourself
+		icon=NLEB_Syria_fight_for_yourself
+		x=2
+		y=7
+		prerequisite={focus=SSNP_Loyalty_to_the_leader}
+		prerequisite={focus=SSNP_Crush_the_imperialist_agents}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_discipline_ideas3
+				add_idea = SSNP_discipline_ideas4
+			}
+		}
+	}
+	focus={
+		id=SSNP_Do_whatever_it_takes_for_the_sake_of_the_Motherland
+		icon=NLEB_Do_whatever_it_takes_for_the_sake_of_the_Motherland
+		x=6
+		y=7
+		prerequisite={focus=SSNP_Supporting_local_businesses}
+		prerequisite={focus=SSNP_Expand_the_power_of_the_Social_Nationalist_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_power_ideas3
+				add_idea = SSNP_power_ideas4
+			}
+		}
+	}
+	focus={
+		id=SSNP_Tell_the_Motherland_that_we_are_not_afraid_of_sacrifice
+		icon=NLEB_Tell_the_Motherland_that_we_are_not_afraid_of_sacrifice
+		x=0
+		y=8
+		prerequisite={focus=SSNP_Fight_for_it_with_blood}
+		prerequisite={focus=SSNP_End_the_chaos_of_poverty}
+		prerequisite={focus=SSNP_Syria_fight_for_yourself}
+		prerequisite={focus=SSNP_Do_whatever_it_takes_for_the_sake_of_the_Motherland}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Ring_the_bell_of_nationalism
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_the_rule_of_the_Socialist_National_Party_ideas
+				add_idea = SSNP_the_rule_of_the_Socialist_National_Party_ideas1
+			}
+		}
+	}
+	focus={
+		id=SSNP_Stand_up_Lebanon
+		icon=NLEB_Stand_up_Lebanon
+		x=57
+		y=3
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = LEB_SSNP_WIN
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		set_cosmetic_tag = LEB_ssnp2
+		add_state_claim = 992
+		add_state_claim = 455
+		add_state_claim = 554
+		add_state_claim = 995
+		add_state_claim = 680
+		add_state_claim = 677
+		add_state_claim = 344
+		add_state_claim = 183
+		add_state_claim = 350
+		add_state_claim = 676
+		add_state_claim = 352
+		add_state_claim = 819
+		add_state_claim = 349
+		add_state_claim = 291
+		add_state_claim = 812
+		add_state_claim = 417
+		add_state_claim = 421
+		add_state_claim = 413
+		add_state_claim = 753
+		add_state_claim = 453
+		add_state_claim = 454
+		}
+	}
+	focus={
+		id=SSNP_Extinguish_the_flame
+		icon=NLEB_Extinguish_the_flame
+		x=0
+		y=1
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = SSNP_Fight_for_it_with_blood
+				has_completed_focus = SSNP_End_the_chaos_of_poverty
+				has_completed_focus = SSNP_Syria_fight_for_yourself
+				has_completed_focus = SSNP_Do_whatever_it_takes_for_the_sake_of_the_Motherland
+			}
+		}
+		prerequisite={focus=SSNP_Stand_up_Lebanon}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = PER type = take_state_focus }
+			417 = { add_core_of = LEB }
+			421 = { add_core_of = LEB }
+			413 = { add_core_of = LEB }
+			add_ideas = SSNP_Persian_Council_ideas
+		}
+	}
+	focus={
+		id=SSNP_Leads_to_Euphrates
+		icon=NLEB_Leads_to_Euphrates
+		x=5
+		y=1
+		prerequisite={focus=SSNP_Stand_up_Lebanon}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = IRQ }
+				add_core_of = LEB
+			}
+		}
+	}
+	focus={
+		id=SSNP_Back_to_Syria
+		icon=NLEB_Back_to_Syria
+		x=3
+		y=2
+		prerequisite={focus=SSNP_Leads_to_Euphrates}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_Syrian_Committee_ideas
+			create_wargoal = {
+				target = 554.owner
+				type = take_state_focus
+			}
+			create_wargoal = { target = SYR type = take_state_focus }
+		}
+	}
+	focus={
+		id=SSNP_Integrate_resistance_fighters
+		icon=NELB_Integrate_resistance_fighters
+		x=2
+		y=3
+		prerequisite={focus=SSNP_Back_to_Syria}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			division_template = {
+				name = "Gisch Mekaouma al-Sauriyya"
+				division_names_group = LEB_NNRARMY_00
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				artillery_brigade  = { x = 3 y = 0 }
+				artillery_brigade  = { x = 3 y = 1 }
+				artillery_brigade  = { x = 3 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"1st Gisch Mekaouma al-Sauriyya\" division_template = \"Gisch Mekaouma al-Sauriyya\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = LEB
+				}
+				create_unit = {
+					division = "name = \"2nd Gisch Mekaouma al-Sauriyya\" division_template = \"Gisch Mekaouma al-Sauriyya\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = LEB
+				}
+				create_unit = {
+					division = "name = \"3rd Gisch Mekaouma al-Sauriyya\" division_template = \"Gisch Mekaouma al-Sauriyya\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = LEB
+				}
+				create_unit = {
+					division = "name = \"4th Gisch Mekaouma al-Sauriyya\" division_template = \"Gisch Mekaouma al-Sauriyya\" start_experience_factor = 1 start_equipment_factor = 1"
+					allow_spawning_on_enemy_provs = yes
+					owner = LEB
+				}
+			}
+		}
+	}
+	focus={
+		id=SSNP_Communicate_with_the_elite
+		icon=NELB_Communicate_with_the_elite
+		x=4
+		y=3
+		prerequisite={focus=SSNP_Back_to_Syria}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = { country_exists = SYR }
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			SYR = {
+				every_unit_leader = {
+					set_nationality = LEB
+				}
+			}
+			swap_ideas = {
+				remove_idea = SSNP_Syrian_Committee_ideas
+				add_idea = SSNP_Syrian_Committee_ideas1
+			}
+		}
+	}
+	focus={
+		id=SSNP_Establishment_of_the_Syrian_Council
+		icon=NELB_Establishment_of_the_Syrian_Council
+		x=4
+		y=4
+		prerequisite={focus=SSNP_Communicate_with_the_elite}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SSNP_Syrian_Committee_ideas1
+				add_idea = SSNP_Syrian_Committee_ideas2
+			}
+		}
+	}
+	focus={
+		id=SSNP_Compatriots_in_Mesopotamia
+		icon=NLEB_Compatriots_in_Mesopotamia
+		x=7
+		y=2
+		prerequisite={focus=SSNP_Leads_to_Euphrates}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = {
+				target = 291.owner
+				type = take_state_focus
+			}
+			create_wargoal = {
+				target = 812.owner
+				type = take_state_focus
+			}
+			create_wargoal = { target = IRQ type = take_state_focus }
+			add_ideas = SSNP_Iraq_Commission_ideas
+		}
+	}
+	focus={
+		id=SSNP_Elimination_of_Assyrian_influence
+		icon=NELB_Elimination_of_Assyrian_influence
+		x=7
+		y=3
+		prerequisite={focus=SSNP_Compatriots_in_Mesopotamia}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = ASY type = take_state_focus }
+			swap_ideas = {
+				remove_idea = SSNP_Iraq_Commission_ideas
+				add_idea = SSNP_Iraq_Commission_ideas1
+			}
+		}
+	}
+	focus={
+		id=SSNP_Second_Battle_of_the_Dabik_Steppe
+		icon=NLEB_Second_Battle_of_the_Dabik_Steppe
+		x=-5
+		y=1
+		prerequisite={focus=SSNP_Stand_up_Lebanon}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_completed_focus = SSNP_Fight_for_it_with_blood
+				has_completed_focus = SSNP_End_the_chaos_of_poverty
+				has_completed_focus = SSNP_Syria_fight_for_yourself
+				has_completed_focus = SSNP_Do_whatever_it_takes_for_the_sake_of_the_Motherland
+			}
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = TUR type = take_state_focus }
+			183 = { add_core_of = LEB }
+			344 = { add_core_of = LEB }
+			350 = { add_core_of = LEB }
+			819 = { add_core_of = LEB }
+			352 = { add_core_of = LEB }
+			add_ideas = SSNP_Revolt_against_the_Turks_ideas
+		}
+	}
+	focus={
+		id=SSNP_Travel_to_the_Nile
+		icon=NLEB_Travel_to_the_Nile
+		x=-7
+		y=2
+		prerequisite={focus=SSNP_Second_Battle_of_the_Dabik_Steppe}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = EGY type = take_state_focus }
+			add_ideas = SSNP_Egyptian_Committee
+			create_wargoal = {
+				target = 454.owner
+				type = take_state_focus
+			}
+			create_wargoal = {
+				target = 753.owner
+				type = take_state_focus
+			}
+		}
+	}
+	focus={
+		id=SSNP_Conquest_of_Arabia
+		icon=NLEB_Conquest_of_Arabia
+		x=-3
+		y=2
+		prerequisite={focus=SSNP_Second_Battle_of_the_Dabik_Steppe}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_Arab_Committee
+		}
+	}
+	focus={
+		id=SSNP_Destroy_the_Arab_monarchies
+		icon=NLEB_Destroy_the_Arab_monarchies
+		x=-4
+		y=3
+		prerequisite={focus=SSNP_Conquest_of_Arabia}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = SSNP_Eliminate_the_Ottoman_lackeys
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = {
+				target = 658.owner
+				type = take_state_focus
+			}
+			create_wargoal = {
+				target = 993.owner
+				type = take_state_focus
+			}
+			create_wargoal = { target = SAU type = take_state_focus }
+			create_wargoal = { target = OMA type = take_state_focus }
+			create_wargoal = { target = YEM type = take_state_focus }
+			swap_ideas = {
+				remove_idea = SSNP_Arab_Committee1
+				add_idea = SSNP_Arab_Committee2
+			}
+		}
+	}
+	focus={
+		id=SSNP_Eliminate_the_Ottoman_lackeys
+		icon=NLEB_Eliminate_the_Ottoman_lackeys
+		x=-2
+		y=3
+		prerequisite={focus=SSNP_Conquest_of_Arabia}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = {
+				target = 754.owner
+				type = take_state_focus
+			}
+			create_wargoal = { target = JBS type = take_state_focus }
+			swap_ideas = {
+				remove_idea = SSNP_Arab_Committee
+				add_idea = SSNP_Arab_Committee1
+			}
+		}
+	}
+	focus={
+		id=SSNP_Integration_of_the_Sinai_Peninsula
+		icon=NLEB_Integration_of_the_Sinai_Peninsula
+		x=-7
+		y=3
+		prerequisite={focus=SSNP_Travel_to_the_Nile}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SSNP_Stand_up_Lebanon
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			454 = { add_core_of = LEB }
+			453 = { add_core_of = LEB }
+			753 = { add_core_of = LEB }
+		}
+	}
+	focus={
+		id=KATP_For_the_Lebanese_nation
+		icon=NLEB_For_the_Lebanese_nation
+		x=38
+		y=13
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = LEB_Kataeb_Win
+			has_country_flag = LEB_war_with_Ottman_Win
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.02
+		}
+	}
+	focus={
+		id=KATP_Only_Lebanon
+		icon=NLEB_Only_Lebanon
+		x=-7
+		y=1
+		prerequisite={focus=KATP_For_the_Lebanese_nation}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_Lebanese_nationalism_ideas
+		}
+	}
+	focus={
+		id=KATP_Purge_of_the_Social_Nationalist_Party
+		icon=NLEB_Purge_of_the_Social_Nationalist_Party
+		x=-8
+		y=2
+		prerequisite={focus=KATP_Only_Lebanon}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = paternal_autocrat popularity = -1 }
+			add_stability = 0.02
+			country_event = {
+				id = LEB.142
+				days = 1
+			}
+		}
+	}
+	focus={
+		id=KATP_Expand_the_Ecclesia_Maronitarum
+		icon=NLEB_Expand_the_Marlon_Church
+		x=-6
+		y=2
+		prerequisite={focus=KATP_Only_Lebanon}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = national_populist popularity = 0.15 }
+			add_political_power = 150
+		}
+	}
+	focus={
+		id=KATP_Against_Jewish_power
+		icon=NLEB_Against_Jewish_power
+		x=-10
+		y=3
+		prerequisite={focus=KATP_Purge_of_the_Social_Nationalist_Party}
+		prerequisite={focus=KATP_Purge_of_the_Social_Nationalist_Party}
+		prerequisite={focus=KATP_Expand_the_Ecclesia_Maronitarum}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_Antisemitism_ideas
+		}
+	}
+	focus={
+		id=KATP_Raise_your_spear
+		icon=NLEB_Raise_your_spear
+		x=-10
+		y=4
+		prerequisite={focus=KATP_Against_Jewish_power}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Antisemitism_ideas
+				add_idea = KATP_Antisemitism_ideas1
+			}
+		}
+	}
+	focus={
+		id=KATP_Promote_individualism
+		icon=NLEB_Promote_individualism
+		x=-8
+		y=3
+		prerequisite={focus=KATP_Purge_of_the_Social_Nationalist_Party}
+		prerequisite={focus=KATP_Purge_of_the_Social_Nationalist_Party}
+		prerequisite={focus=KATP_Expand_the_Ecclesia_Maronitarum}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_individualism_ideas
+		}
+	}
+	focus={
+		id=KATP_Civil_society
+		icon=NLEB_Civil_society
+		x=-8
+		y=4
+		prerequisite={focus=KATP_Promote_individualism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_individualism_ideas
+				add_idea = KATP_individualism_ideas1
+			}
+		}
+	}
+	focus={
+		id=KATP_Lebanese_national_outlook
+		icon=NLEB_Lebanese_national_outlook
+		x=-6
+		y=3
+		prerequisite={focus=KATP_Expand_the_Ecclesia_Maronitarum}
+		prerequisite={focus=KATP_Purge_of_the_Social_Nationalist_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_New_Lebanese_Nation
+		}
+	}
+	focus={
+		id=KATP_Phoenicia_agreed
+		icon=NLEB_Phoenicia_agreed
+		x=-6
+		y=4
+		prerequisite={focus=KATP_Lebanese_national_outlook}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_New_Lebanese_Nation
+				add_idea = KATP_New_Lebanese_Nation1
+			}
+		}
+	}
+	focus={
+		id=KATP_Sweep_away_Islamic_influence
+		icon=NLEB_Sweep_away_Islamic_influencepng
+		x=-4
+		y=3
+		prerequisite={focus=KATP_Expand_the_Ecclesia_Maronitarum}
+		prerequisite={focus=KATP_Purge_of_the_Social_Nationalist_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_The_Maroonite_faction_dominates
+		}
+	}
+	focus={
+		id=KATP_Mastery_of_the_army
+		icon=NLEB_Mastery_of_the_army
+		x=-4
+		y=4
+		prerequisite={focus=KATP_Sweep_away_Islamic_influence}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_The_Maroonite_faction_dominates
+				add_idea = KATP_The_Maroonite_faction_dominates1
+			}
+		}
+	}
+	focus={
+		id=KATP_Defenders_of_the_cedars
+		icon=NLEB_Defenders_of_the_cedars
+		x=-7
+		y=5
+		prerequisite={focus=KATP_Raise_your_spear}
+		prerequisite={focus=KATP_Civil_society}
+		prerequisite={focus=KATP_Phoenicia_agreed}
+		prerequisite={focus=KATP_Mastery_of_the_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Lebanese_nationalism_ideas
+				add_idea = KATP_Lebanese_nationalism_ideas1
+			}
+		}
+	}
+	focus={
+		id=KATP_War_with_the_Jewish_devil
+		icon=NLEB_War_with_the_Jewish_devil
+		x=-7
+		y=6
+		prerequisite={focus=KATP_Defenders_of_the_cedars}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Antisemitism_ideas1
+				add_idea = KATP_Antisemitism_ideas2
+			}
+		}
+	}
+	focus={
+		id=KATP_Building_the_Lebanese_Fatherland
+		icon=NLEB_Building_the_Lebanese_Fatherland
+		x=0
+		y=2
+		prerequisite={focus=KATP_Only_Lebanon focus=KATP_Follow_the_Empire_of_the_Sun }
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state={
+				prioritize = { }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=KATP_Organize_the_workers_and_peasants
+		icon=NLEB_Organize_the_workers_and_peasants
+		x=-2
+		y=3
+		prerequisite={focus=KATP_Building_the_Lebanese_Fatherland}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_Organize_the_workers_and_peasants_ideas
+		}
+	}
+	focus={
+		id=KATP_Rooted_in_youth
+		icon=NLEB_Rooted_in_youth
+		x=-2
+		y=4
+		prerequisite={focus=KATP_Organize_the_workers_and_peasants}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Organize_the_workers_and_peasants_ideas
+				add_idea = KATP_Organize_the_workers_and_peasants_ideas1
+			}
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=KATP_Mobilize_the_masses
+		icon=NLEB_Mobilize_the_masses
+		x=0
+		y=3
+		prerequisite={focus=KATP_Building_the_Lebanese_Fatherland}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_Mobilize_the_masses_ideas
+		}
+	}
+	focus={
+		id=KATP_Industrialization_of_the_whole_country
+		icon=NLEB_Industrialization_of_the_whole_country
+		x=0
+		y=4
+		prerequisite={focus=KATP_Mobilize_the_masses}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Mobilize_the_masses_ideas
+				add_idea = KATP_Mobilize_the_masses_ideas1
+			}
+		}
+	}
+	focus={
+		id=KATP_Reorganize_the_Palangist_militia
+		icon=NLEB_Reorganize_the_Palangist_militia
+		x=2
+		y=3
+		prerequisite={focus=KATP_Building_the_Lebanese_Fatherland}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_Lebanese_Forces_nouvelles_ideas
+		}
+	}
+	focus={
+		id=KATP_Step_into_modernization
+		icon=NLEB_Step_into_modernization
+		x=2
+		y=4
+		prerequisite={focus=KATP_Reorganize_the_Palangist_militia}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus={
+		id=KATP_Agricultural_mechanization
+		icon=NLEB_Agricultural_mechanization
+		x=-1
+		y=5
+		prerequisite={focus=KATP_Rooted_in_youth}
+		prerequisite={focus=KATP_Industrialization_of_the_whole_country}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Mobilize_the_masses_ideas1
+				add_idea = KATP_Mobilize_the_masses_ideas2
+			}
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=KATP_Motorized_infantry
+		icon=NLEB_Motorized_infantry
+		x=1
+		y=5
+		prerequisite={focus=KATP_Industrialization_of_the_whole_country}
+		prerequisite={focus=KATP_Step_into_modernization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Lebanese_Forces_nouvelles_ideas
+				add_idea = KATP_Lebanese_Forces_nouvelles_ideas1
+			}
+		}
+	}
+	focus={
+		id=KATP_Artillery_Symphony
+		icon=NLEB_Artillery_Symphony
+		x=0
+		y=6
+		prerequisite={focus=KATP_Agricultural_mechanization}
+		prerequisite={focus=KATP_Motorized_infantry}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Lebanese_Forces_nouvelles_ideas1
+				add_idea = KATP_Lebanese_Forces_nouvelles_ideas2
+			}
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	focus={
+		id=KATP_Follow_the_Empire_of_the_Sun
+		icon=NLEB_Follow_the_Empire_of_the_Sun
+		x=7
+		y=1
+		prerequisite={focus=KATP_For_the_Lebanese_nation}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+	}
+	focus={
+		id=KATP_Progress_of_the_National_Syndicates
+		icon=NLEB_Progress_of_the_National_Syndicates
+		x=8
+		y=2
+		prerequisite={focus=KATP_Follow_the_Empire_of_the_Sun}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_Falangist_discipline_ideas
+		}
+	}
+	focus={
+		id=KATP_The_discipline_of_the_Falangists
+		icon=NLEB_The_discipline_of_the_Falangists
+		x=6
+		y=2
+		prerequisite={focus=KATP_Follow_the_Empire_of_the_Sun}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_National_syndicalist_progress_ideas
+		}
+	}
+	focus={
+		id=KATP_Hierarchy
+		icon=NLEB_Hierarchy
+		x=4
+		y=3
+		prerequisite={focus=KATP_The_discipline_of_the_Falangists}
+		prerequisite={focus=KATP_Progress_of_the_National_Syndicates}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_Dedication_ideas
+		}
+	}
+	focus={
+		id=KATP_Dedication
+		icon=NLEB_Dedication
+		x=4
+		y=4
+		prerequisite={focus=KATP_Hierarchy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Dedication_ideas
+				add_idea = KATP_Dedication_ideas1
+			}
+		}
+	}
+	focus={
+		id=KATP_Dissolution_of_parliament
+		icon=NLEB_Dissolution_of_parliament
+		x=6
+		y=3
+		prerequisite={focus=KATP_The_discipline_of_the_Falangists}
+		prerequisite={focus=KATP_Progress_of_the_National_Syndicates}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Falangist_discipline_ideas
+				add_idea = KATP_Falangist_discipline_ideas1
+			}
+		}
+	}
+	focus={
+		id=KATP_Unite_under_the_leadership_of_the_leader
+		icon=NLEB_Unite_under_the_leadership_of_the_leader
+		x=6
+		y=4
+		prerequisite={focus=KATP_Dissolution_of_parliament}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Falangist_discipline_ideas1
+				add_idea = KATP_Falangist_discipline_ideas2
+			}
+		}
+	}
+	focus={
+		id=KATP_Defend_workers_rights
+		icon=NLEB_Defend_workers_rights
+		x=8
+		y=3
+		prerequisite={focus=KATP_The_discipline_of_the_Falangists}
+		prerequisite={focus=KATP_Progress_of_the_National_Syndicates}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_National_syndicalist_progress_ideas
+				add_idea = KATP_National_syndicalist_progress_ideas1
+			}
+		}
+	}
+	focus={
+		id=KATP_Nationalization_was_carried_out
+		icon=NLEB_Nationalization_was_carried_out
+		x=8
+		y=4
+		prerequisite={focus=KATP_Defend_workers_rights}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_National_syndicalist_progress_ideas1
+				add_idea = KATP_National_syndicalist_progress_ideas2
+			}
+		}
+	}
+	focus={
+		id=KATP_Two_spears
+		icon=NLEB_Two_spears
+		x=10
+		y=3
+		prerequisite={focus=KATP_The_discipline_of_the_Falangists}
+		prerequisite={focus=KATP_Progress_of_the_National_Syndicates}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = KATP_Long_live_unity_ideas
+		}
+	}
+	focus={
+		id=KATP_Soak_up_the_sun
+		icon=NLEB_Soak_up_the_sun
+		x=10
+		y=4
+		prerequisite={focus=KATP_Two_spears}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Long_live_unity_ideas
+				add_idea = KATP_Long_live_unity_ideas1
+			}
+		}
+	}
+	focus={
+		id=KATP_Brotherhood
+		icon=NLEB_Brotherhood
+		x=7
+		y=5
+		prerequisite={focus=KATP_Dedication}
+		prerequisite={focus=KATP_Unite_under_the_leadership_of_the_leader}
+		prerequisite={focus=KATP_Nationalization_was_carried_out}
+		prerequisite={focus=KATP_Soak_up_the_sun}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 50
+			add_war_support = 0.1
+		}
+	}
+	focus={
+		id=KATP_Fire
+		icon=NLEB_Fire
+		x=7
+		y=6
+		prerequisite={focus=KATP_Brotherhood}
+		mutually_exclusive={focus=KATP_Left_and_right }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = CNT type = annex_everything }
+			create_wargoal = { target = SPR type = annex_everything }
+			create_wargoal = { target = CAR type = annex_everything }
+			every_state = {
+				limit = { is_core_of = SPR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = CNT }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = CAR }
+				add_core_of = LEB
+			}
+		}
+	}
+	focus={
+		id=KATP_God_Fatherland_Family
+		icon=NLEB_God_Fatherland_Family
+		x=0
+		y=7
+		prerequisite={focus=KATP_War_with_the_Jewish_devil}
+		prerequisite={focus=KATP_Artillery_Symphony}
+		prerequisite={focus=KATP_Fire }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = KATP_For_the_Lebanese_nation
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = KATP_Lebanese_nationalism_ideas1
+				add_idea = KATP_Lebanese_nationalism_ideas2
+			}
+		}
+	}
+	focus={
+		id=KATP_Enter_the_world
+		icon=NLEB_Enter_the_world
+		x=57
+		y=8
+		cost=0
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			OR = {
+				has_country_flag = LEB_Kataeb_Win
+				has_country_flag = LEB_Communism_Win
+				has_country_flag = Harakat_Amal_Win
+			}
+			has_country_flag = LEB_war_with_Ottman_Win
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 50
+		}
+	}
+	focus={
+		id=KATP_Attack_Syria
+		icon=NLEB_Back_to_Syria
+		x=-2
+		y=1
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		prerequisite={focus=KATP_Enter_the_world}
+		available_if_capitulated=yes
+		relative_position_id = KATP_Enter_the_world
+		search_filters={
+		}
+		completion_reward={
+			992 = { add_core_of = LEB }
+			455 = { add_core_of = LEB }
+			554 = { add_core_of = LEB }
+			995 = { add_core_of = LEB }
+			680 = { add_core_of = LEB }
+			677 = { add_core_of = LEB }
+			344 = { add_core_of = LEB }
+			454 = { add_core_of = LEB }
+			create_wargoal = {
+				target = 554.owner
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = 344.owner
+				type = annex_everything
+			}
+			if = {
+				limit = {
+					LEB = {
+						has_government = national_populist
+						has_country_flag = LEB_Kataeb_Win
+						is_ai = no
+					}
+				}
+				country_event = {
+					id = LEB.143
+					days = 2
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = LEB_Kataeb_Win
+				}
+				set_cosmetic_tag = LEB_maronite1
+			}
+			if = {
+				limit = {
+					has_country_flag = LEB_Communism_Win
+				}
+				set_cosmetic_tag = LEB_sunni1
+			}
+			if = {
+				limit = {
+					has_country_flag = Harakat_Amal_Win
+					OR = {
+						has_government = social_conservative
+						has_government = national_populist
+					}
+				}
+				set_cosmetic_tag = LEB_shia1
+			}
+			if = {
+				limit = {
+					has_country_flag = Harakat_Amal_Win
+					has_government = paternal_autocrat
+				}
+				set_cosmetic_tag = LEB_shia3
+			}
+		}
+	}
+	focus={
+		id=KATP_Assimilation_of_Syrians
+		icon=NLEB_Assimilation_of_Syrians
+		x=2
+		y=1
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			controls_state = 454
+			controls_state = 992
+			controls_state = 455
+			controls_state = 554
+			controls_state = 995
+			controls_state = 680
+			controls_state = 677
+			controls_state = 344
+		}
+		prerequisite={focus=KATP_Enter_the_world}
+		available_if_capitulated=yes
+		relative_position_id = KATP_Enter_the_world
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SSNP_Syrian_Committee_ideas1
+		}
+	}
+	focus={
+		id=KATP_Reconstruction_movement
+		icon=NLEB_Reconstruction_movement
+		x=2
+		y=2
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			controls_state = 454
+			controls_state = 992
+			controls_state = 455
+			controls_state = 554
+			controls_state = 995
+			controls_state = 680
+			controls_state = 677
+			controls_state = 344
+		}
+		prerequisite={focus=KATP_Assimilation_of_Syrians}
+		available_if_capitulated=yes
+		relative_position_id = KATP_Enter_the_world
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state={
+				prioritize = { 992 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state={
+				prioritize = { 455 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state={
+				prioritize = { 554 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state={
+				prioritize = { 995 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state={
+				prioritize = { 680 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state={
+				prioritize = { 677 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state={
+				prioritize = { 344 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=SOCL_Convening_of_a_national_workers_congress
+		icon=NELB_Convening_of_a_national_workers_congress
+		x=78
+		y=3
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = LEB_Communism_Win
+			has_country_flag = LEB_war_with_Ottman_Win
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = {
+				id = LEB.122
+				days = 1
+			}
+		}
+	}
+	focus={
+		id=SOCL_The_native_communists_won
+		icon=NELB_The_native_communists_won
+		x=-6
+		y=1
+		prerequisite={focus=SOCL_Convening_of_a_national_workers_congress}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_idea = LEB_Farid_Jubran_hog_rso
+		}
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_political_power = 200
+		add_stability = 0.02
+		}
+	}
+	focus={
+		id=SOCL_Forming_a_left_wing_coalition
+		icon=NELB_Forming_a_left_wing_coalition
+		x=-8
+		y=2
+		prerequisite={focus=SOCL_The_native_communists_won}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		add_popularity = { ideology = syndicalist popularity = 0.1 }
+		set_temp_variable = { coalition_partner_var = token:syndicalist }
+		add_to_coalition = yes 
+		add_popularity = { ideology = radical_socialist popularity = 0.1 }
+		set_temp_variable = { coalition_partner_var = token:radical_socialist }
+		add_to_coalition = yes 
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
+		set_temp_variable = { coalition_partner_var = token:social_democrat }
+		add_to_coalition = yes 
+		}
+	}
+	focus={
+		id=SOCL_Bridging_divisions
+		icon=NELB_Bridging_divisions
+		x=-9
+		y=3
+		prerequisite={focus=SOCL_Forming_a_left_wing_coalition}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Bridging_divisions_ideas
+		}
+	}
+	focus={
+		id=SOCL_Expulsion_of_reactionaries
+		icon=NELB_Expulsion_of_reactionaries
+		x=-7
+		y=3
+		prerequisite={focus=SOCL_Forming_a_left_wing_coalition}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = social_liberal popularity = -1 }
+			add_popularity = { ideology = market_liberal popularity = -1 }
+			add_popularity = { ideology = social_conservative popularity = -1 }
+			add_popularity = { ideology = authoritarian_democrat popularity = -1 }
+			add_popularity = { ideology = paternal_autocrat popularity = -1 }
+			add_popularity = { ideology = national_populist popularity = -1 }
+		}
+	}
+	focus={
+		id=SOCL_All_as_one
+		icon=NELB_All_as_one
+		x=-8
+		y=4
+		prerequisite={focus=SOCL_Bridging_divisions}
+		prerequisite={focus=SOCL_Expulsion_of_reactionaries}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Bridging_divisions_ideas
+				add_idea = SOCL_Bridging_divisions_ideas
+			}
+		}
+	}
+	focus={
+		id=SOCL_Adhere_to_Marxism
+		icon=NELB_Adhere_to_Marxism
+		x=-9
+		y=5
+		prerequisite={focus=SOCL_All_as_one}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Guiding_Marxism_ideas
+		}
+	}
+	focus={
+		id=SOCL_Workers_representation
+		icon=NELB_Workers_representation
+		x=-7
+		y=5
+		prerequisite={focus=SOCL_All_as_one}
+		prerequisite={focus=SOCL_Reorganization_of_the_workers_congress}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Workers_Congress_ideas
+				add_idea = SOCL_Workers_Congress_ideas1
+			}
+		}
+	}
+	focus={
+		id=SOCL_Build_a_classless_society
+		icon=NELB_Build_a_classless_society
+		x=-4
+		y=2
+		prerequisite={focus=SOCL_The_native_communists_won}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Classless_society_ideas
+		}
+	}
+	focus={
+		id=SOCL_Close_the_gap_between_rich_and_poor
+		icon=NELB_Close_the_gap_between_rich_and_poor
+		x=-5
+		y=3
+		prerequisite={focus=SOCL_Build_a_classless_society}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Ownership_reform_ideas
+		}
+	}
+	focus={
+		id=SOCL_Dispossession_of_the_wealthy
+		icon=NELB_Dispossession_of_the_wealthy
+		x=-3
+		y=3
+		prerequisite={focus=SOCL_Build_a_classless_society}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Classless_society_ideas
+				add_idea = SOCL_Classless_society_ideas1
+			}
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=SOCL_Integrate_social_resources
+		icon=NELB_Integrate_social_resources
+		x=-4
+		y=4
+		prerequisite={focus=SOCL_Close_the_gap_between_rich_and_poor}
+		prerequisite={focus=SOCL_Dispossession_of_the_wealthy}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Classless_society_ideas1
+				add_idea = SOCL_Classless_society_ideas2
+			}
+		}
+	}
+	focus={
+		id=SOCL_Advocate_the_union_of_workers_and_peasants
+		icon=NELB_Advocate_the_union_of_workers_and_peasants
+		x=-5
+		y=5
+		prerequisite={focus=SOCL_Integrate_social_resources}
+		prerequisite={focus=SOCL_Reorganization_of_the_workers_congress}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Ownership_reform_ideas
+				add_idea = SOCL_Ownership_reform_ideas1
+			}
+		}
+	}
+	focus={
+		id=SOCL_Wealth_redistribution
+		icon=NELB_Wealth_redistribution
+		x=-3
+		y=5
+		prerequisite={focus=SOCL_Integrate_social_resources}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Classless_society_ideas2
+				add_idea = SOCL_Classless_society_ideas3
+			}
+		}
+	}
+	focus={
+		id=SOCL_Reorganization_of_the_workers_congress
+		icon=NELB_Reorganization_of_the_workers_congress
+		x=-6
+		y=4
+		prerequisite={focus=SOCL_Expulsion_of_reactionaries focus=SOCL_Close_the_gap_between_rich_and_poor }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Workers_Congress_ideas
+		}
+	}
+	focus={
+		id=SOCL_Cedar_a_symbol_of_freedom
+		icon=NELB_Cedar_a_symbol_of_freedom
+		x=-6
+		y=6
+		prerequisite={focus=SOCL_Adhere_to_Marxism}
+		prerequisite={focus=SOCL_Workers_representation}
+		prerequisite={focus=SOCL_Advocate_the_union_of_workers_and_peasants}
+		prerequisite={focus=SOCL_Wealth_redistribution}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Ownership_reform_ideas
+				add_idea = SOCL_Ownership_reform_ideas1
+			}
+		}
+	}
+	focus={
+		id=SOCL_National_Industrial_Plan
+		icon=NLEB_National_Industrial_Plan
+		x=0
+		y=1
+		prerequisite={focus=SOCL_Convening_of_a_national_workers_congress}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			random_owned_controlled_state={
+				prioritize = { }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state={
+				prioritize = { }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction={
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state={
+				prioritize = { }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction={
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus={
+		id=SOCL_Set_off_a_construction_boom
+		icon=NLEB_Set_off_a_construction_boom
+		x=0
+		y=2
+		prerequisite={focus=SOCL_National_Industrial_Plan}
+		prerequisite={focus=SOCL_The_native_communists_won focus=SOCL_The_pan_Arab_flame_is_burning }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Build_the_Motherland_ideas
+		}
+	}
+	focus={
+		id=SOCL_Expansion_of_the_Port_of_Beirut
+		icon=NLEB_Expansion_of_the_Port_of_Beirut
+		x=-1
+		y=3
+		prerequisite={focus=SOCL_Set_off_a_construction_boom}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			553 = {
+				add_building_construction = {
+					type = naval_base
+					level = 5
+					instant_build = yes
+					province = 792
+				}
+			}
+			553 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					instant_build = yes
+					province = 792
+				}
+			}
+		}
+	}
+	focus={
+		id=SOCL_Comprehensive_agrarian_reform
+		icon=NLEB_Comprehensive_agrarian_reform
+		x=1
+		y=3
+		prerequisite={focus=SOCL_Set_off_a_construction_boom}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Build_the_Motherland_ideas
+				add_idea = SOCL_Build_the_Motherland_ideas1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_in_home_area = yes
+				}
+				increase_state_category_by_one_level = yes
+			}
+		}
+	}
+	focus={
+		id=SOCL_to_plan_into_the_modern_age
+		icon=NLEB_to_plan_into_the_modern_age
+		x=0
+		y=4
+		prerequisite={focus=SOCL_Expansion_of_the_Port_of_Beirut}
+		prerequisite={focus=SOCL_Comprehensive_agrarian_reform}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Build_the_Motherland_ideas1
+				add_idea = SOCL_Build_the_Motherland_ideas2
+			}
+		}
+	}
+	focus={
+		id=SOCL_Peoples_well_being_comes_first
+		icon=NLEB_Peoples_well_being_comes_first
+		x=-1
+		y=5
+		prerequisite={focus=SOCL_to_plan_into_the_modern_age}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Build_the_Motherland_ideas2
+				add_idea = SOCL_Build_the_Motherland_ideas3
+			}
+		}
+	}
+	focus={
+		id=SOCL_Improve_social_security
+		icon=NLEB_Improve_social_security
+		x=1
+		y=5
+		prerequisite={focus=SOCL_to_plan_into_the_modern_age}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Social_security_system_ideas
+		}
+	}
+	focus={
+		id=SOCL_Milk_and_honey_flowing
+		icon=NLEB_Milk_and_honey_flowing
+		x=0
+		y=6
+		prerequisite={focus=SOCL_Peoples_well_being_comes_first}
+		prerequisite={focus=SOCL_Improve_social_security}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Build_the_Motherland_ideas3
+				add_idea = SOCL_Build_the_Motherland_ideas4
+			}
+		}
+	}
+	focus={
+		id=SOCL_The_pan_Arab_flame_is_burning
+		icon=NELB_The_pan_Arab_flame_is_burning
+		x=6
+		y=1
+		prerequisite={focus=SOCL_Convening_of_a_national_workers_congress}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_idea = LEB_Akram_al_Haurani_hog_syn
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.02
+		}
+	}
+	focus={
+		id=SOCL_Strengthen_the_interests_of_workers_and_peasants
+		icon=NLEB_Strengthen_the_interests_of_workers_and_peasants
+		x=4
+		y=2
+		prerequisite={focus=SOCL_The_pan_Arab_flame_is_burning}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas
+		}
+	}
+	focus={
+		id=SOCL_Awakening_Arab_national_identity
+		icon=NLEB_Awakening_Arab_national_identity
+		x=3
+		y=3
+		prerequisite={focus=SOCL_Strengthen_the_interests_of_workers_and_peasants}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas
+				add_idea = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas1
+			}
+		}
+	}
+	focus={
+		id=SOCL_The_auxiliary_role_of_Islam
+		icon=NLEB_The_auxiliary_role_of_Islam
+		x=5
+		y=3
+		prerequisite={focus=SOCL_Strengthen_the_interests_of_workers_and_peasants}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Subsidiary_Islam_ideas
+		}
+	}
+	focus={
+		id=SOCL_Persist_in_taking_class_struggle_as_the_key_link
+		icon=NLEB_Persist_in_taking_class_struggle_as_the_key_link
+		x=4
+		y=4
+		prerequisite={focus=SOCL_Awakening_Arab_national_identity}
+		prerequisite={focus=SOCL_The_auxiliary_role_of_Islam}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			set_party_name = {
+				ideology = syndicalist
+				long_name = LEB_Arab_Socialist_Baath_party_long
+				name = LEB_Arab_Socialist_Baath_party
+			}
+			swap_ideas = {
+				remove_idea = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas1
+				add_idea = SOCL_Strengthen_the_interests_of_workers_and_peasants_ideas2
+			}
+			hidden_effect = {
+				country_event = {
+					id = LEB.141
+					days = 20
+				}
+			}
+		}
+	}
+	focus={
+		id=SOCL_Support_for_the_anti_colonial_policies_of_the_Third_International
+		icon=NLEB_Support_for_the_anti_colonial_policies_of_the_Third_International
+		x=3
+		y=5
+		prerequisite={focus=SOCL_Persist_in_taking_class_struggle_as_the_key_link }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Anti_colonialism_front_ideas
+		}
+	}
+	focus={
+		id=SOCL_Creation_of_the_Revival_Enlightenment_Committee
+		icon=NLEB_Creation_of_the_Revival_Enlightenment_Committee
+		x=5
+		y=5
+		prerequisite={focus=SOCL_Persist_in_taking_class_struggle_as_the_key_link}
+		prerequisite={focus=SOCL_Promotion_of_young_officers}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Subsidiary_Islam_ideas
+				add_idea = SOCL_Subsidiary_Islam_ideas1
+			}
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=SOCL_Summarize_the_partys_program
+		icon=NLEB_Summarize_the_partys_program
+		x=8
+		y=2
+		prerequisite={focus=SOCL_The_pan_Arab_flame_is_burning}
+		cost=3
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus={
+		id=SOCL_Expose_the_uselessness_of_democracy
+		icon=NLEB_Expose_the_uselessness_of_democracy
+		x=7
+		y=3
+		prerequisite={focus=SOCL_Summarize_the_partys_program}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_One_party_dominates_ideas
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=SOCL_National_avant_garde
+		icon=NLEB_National_avant_garde
+		x=9
+		y=3
+		prerequisite={focus=SOCL_Summarize_the_partys_program}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SOCL_Pan_Arab_Pioneer
+		}
+	}
+	focus={
+		id=SOCL_Call_for_Arab_unity
+		icon=NLEB_Call_for_Arab_unity
+		x=8
+		y=4
+		prerequisite={focus=SOCL_Expose_the_uselessness_of_democracy}
+		prerequisite={focus=SOCL_National_avant_garde}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Pan_Arab_Pioneer
+				add_idea = SOCL_Pan_Arab_Pioneer1
+			}
+		}
+	}
+	focus={
+		id=SOCL_The_positive_role_of_the_Social_National_Party
+		icon=NLEB_The_positive_role_of_the_Social_National_Party
+		x=7
+		y=5
+		prerequisite={focus=SOCL_Promotion_of_young_officers}
+		prerequisite={focus=SOCL_Call_for_Arab_unity}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
+			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
+			add_to_coalition = yes 
+			swap_ideas = {
+				remove_idea = SOCL_One_party_dominates_ideas
+				add_idea = SOCL_One_party_dominates_ideas1
+			}
+		}
+	}
+	focus={
+		id=SOCL_The_bond_of_the_fate_of_the_Arabs
+		icon=NLEB_The_bond_of_the_fate_of_the_Arabs
+		x=9
+		y=5
+		prerequisite={focus=SOCL_Call_for_Arab_unity}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Pan_Arab_Pioneer1
+				add_idea = SOCL_Pan_Arab_Pioneer2
+			}
+		}
+	}
+	focus={
+		id=SOCL_Promotion_of_young_officers
+		icon=NLEB_Promotion_of_young_officers
+		x=6
+		y=4
+		prerequisite={focus=SOCL_The_auxiliary_role_of_Islam focus=SOCL_Expose_the_uselessness_of_democracy }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			create_corps_commander = {
+				name = "Abdul Qadir al-Husayni"
+				portrait_path = "gfx/leaders/LEB/Portrait_LEB_Abdul_Qadir_al_Husayni.png"
+				traits = {
+					artillery_officer
+					bearer_of_artillery
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Amin al Hafiz"
+				portrait_path = "gfx/leaders/LEB/Portrait_LEB_Amin_al_Hafiz.png"
+				traits = {
+					thorough_planner
+					organisational_leader
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Fawzi al-Qawuqji"
+				portrait_path = "gfx/leaders/LEB/Portrait_LEB_Fawzi_al_Qawuqji.png"
+				traits = {
+					trait_mountaineer
+					thorough_planner
+				}
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+		}
+	}
+	focus={
+		id=SOCL_Solidarity_under_Arab_revival_and_socialism
+		icon=NLEB_Solidarity_under_Arab_revival_and_socialism
+		x=6
+		y=6
+		prerequisite={focus=SOCL_Support_for_the_anti_colonial_policies_of_the_Third_International}
+		prerequisite={focus=SOCL_Creation_of_the_Revival_Enlightenment_Committee}
+		prerequisite={focus=SOCL_The_positive_role_of_the_Social_National_Party}
+		prerequisite={focus=SOCL_The_bond_of_the_fate_of_the_Arabs}
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_One_party_dominates_ideas1
+				add_idea = SOCL_One_party_dominates_ideas2
+			}
+			set_cosmetic_tag = LEB_arab_republic1
+		}
+	}
+	focus={
+		id=SOCL_Praise_the_socialist_motherland
+		icon=NLEB_Praise_the_socialist_motherland
+		x=0
+		y=7
+		prerequisite={focus=SOCL_Milk_and_honey_flowing}
+		prerequisite={focus=SOCL_Cedar_a_symbol_of_freedom focus=SOCL_Solidarity_under_Arab_revival_and_socialism }
+		cost=5
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SOCL_Convening_of_a_national_workers_congress
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SOCL_Social_security_system_ideas
+				add_idea = SOCL_Social_security_system_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_The_flame_of_hope_ignites_Lebanon
+		icon=NLEB_The_flame_of_hope_ignites_Lebanon
+		x=73
+		y=11
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Harakat_Amal_Win
+			has_country_flag = LEB_war_with_Ottman_Win
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.02
+		}
+	}
+	focus={
+		id=HARA_Liquidation_of_the_nationalists
+		icon=NLEB_Liquidation_of_the_nationalists
+		x=-2
+		y=1
+		prerequisite={focus=HARA_The_flame_of_hope_ignites_Lebanon}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = national_populist popularity = -1 }
+			add_political_power = 200
+		}
+	}
+	focus={
+		id=HARA_Control_of_military_and_political_organs
+		icon=NLEB_Control_of_military_and_political_organs
+		x=0
+		y=1
+		prerequisite={focus=HARA_The_flame_of_hope_ignites_Lebanon}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Control_of_military_and_political_organs
+		}
+	}
+	focus={
+		id=HARA_Sweep_away_the_modernists
+		icon=NLEB_Sweep_away_the_modernists
+		x=2
+		y=1
+		prerequisite={focus=HARA_The_flame_of_hope_ignites_Lebanon}
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		search_filters={
+		}
+		completion_reward={
+			add_popularity = { ideology = paternal_autocrat popularity = -1 }
+			add_political_power = 200
+		}
+	}
+	focus={
+		id=HARA_Harakat_Amal_was_victorious
+		icon=NLEB_Harakat_Amal_was_victorious
+		x=0
+		y=2
+		prerequisite={focus=HARA_Liquidation_of_the_nationalists}
+		prerequisite={focus=HARA_Control_of_military_and_political_organs}
+		prerequisite={focus=HARA_Sweep_away_the_modernists}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		search_filters={
+		}
+		completion_reward={
+			country_event = LEB.144
+		}
+	}
+	focus={
+		id=HARA_The_Legacy_of_Ibn_Machi
+		icon=NLEB_The_Legacy_of_Ibn_Machi
+		x=0
+		y=3
+		prerequisite={focus=HARA_Harakat_Amal_was_victorious}
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_government = social_conservative
+			is_subject = no
+			has_country_flag = AMAL_WIN2
+		}
+		available_if_capitulated=yes
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus={
+		id=HARA_Lebanon_will_never_give_in
+		icon=NLEB_Lebanon_will_never_give_in
+		x=-3
+		y=4
+		prerequisite={focus=HARA_The_Legacy_of_Ibn_Machi}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Control_of_military_and_political_organs
+				add_idea = AMAL_Control_of_military_and_political_organs1
+			}
+		}
+	}
+	focus={
+		id=HARA_Strengthen_border_defenses
+		icon=NLEB_Strengthen_border_defenses
+		x=-5
+		y=5
+		prerequisite={focus=HARA_Lebanon_will_never_give_in}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Defend_the_Motherland_ideas
+		}
+	}
+	focus={
+		id=HARA_South_is_Haifa_City
+		icon=NLEB_South_is_Haifa_City
+		x=-6
+		y=6
+		prerequisite={focus=HARA_Strengthen_border_defenses}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Strengthen_your_defenses_ideas
+		}
+	}
+	focus={
+		id=HARA_Tripoli_to_the_north
+		icon=NLEB_Tripoli_to_the_north
+		x=-4
+		y=6
+		prerequisite={focus=HARA_Strengthen_border_defenses}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = HARA_South_is_Haifa_City
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Strengthen_your_defenses_ideas
+				add_idea = AMAL_Strengthen_your_defenses_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Capital_Defense_Forces
+		icon=NLEB_Capital_Defense_Forces
+		x=-5
+		y=7
+		prerequisite={focus=HARA_South_is_Haifa_City}
+		prerequisite={focus=HARA_Tripoli_to_the_north}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Defend_the_Motherland_ideas
+				add_idea = AMAL_Defend_the_Motherland_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Hire_a_foreign_military_attache
+		icon=NLEB_Hire_a_foreign_military_attache
+		x=-1
+		y=5
+		prerequisite={focus=HARA_Lebanon_will_never_give_in}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Foreign_Military_Advisory_Groups_ideas
+		}
+	}
+	focus={
+		id=HARA_Restructuring_of_the_militia
+		icon=GFX_goal_AFG_Reverse_Secularization
+		x=-1
+		y=6
+		prerequisite={focus=HARA_Hire_a_foreign_military_attache}
+		prerequisite={focus=HARA_Hire_Islamic_scholars}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Restructuring_of_the_militia_ideas
+		}
+	}
+	focus={
+		id=HARA_Lebanese_Mujahideen_Army
+		icon=GFX_goal_AFG_islamic_revolution
+		x=-1
+		y=7
+		prerequisite={focus=HARA_Restructuring_of_the_militia}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Restructuring_of_the_militia_ideas
+				add_idea = AMAL_Restructuring_of_the_militia_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Spear_of_Islam
+		icon=NLEB_Spear_of_Islam
+		x=-3
+		y=8
+		prerequisite={focus=HARA_Capital_Defense_Forces}
+		prerequisite={focus=HARA_Lebanese_Mujahideen_Army}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Restructuring_of_the_militia_ideas1
+				add_idea = AMAL_Restructuring_of_the_militia_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_Equality_and_justice
+		icon=NLEB_Equality_and_justice
+		x=3
+		y=4
+		prerequisite={focus=HARA_The_Legacy_of_Ibn_Machi}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Equality_and_justice_ideas
+		}
+	}
+	focus={
+		id=HARA_Hire_Islamic_scholars
+		icon = GFX_goal_AFG_Nod_Towards_Jadidism
+		x=2
+		y=5
+		prerequisite={focus=HARA_Equality_and_justice}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Islamic_scholars_ideas
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=HARA_Levy_tribute
+		icon = GFX_goal_AFG_Polish_the_Jewel
+		x=2
+		y=6
+		prerequisite={focus=HARA_Hire_Islamic_scholars}
+		prerequisite={focus=HARA_Hire_a_foreign_military_attache}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Levy_tribute_ideas
+		}
+	}
+	focus={
+		id=HARA_Pan_Islamic_education
+		icon = GFX_goal_AFG_Poetic_Cultural_Reformation
+		x=2
+		y=7
+		prerequisite={focus=HARA_Levy_tribute}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Islamic_scholars_ideas
+				add_idea = AMAL_Islamic_scholars_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Re_decide_on_administrative_divisions
+		icon = GFX_goal_AFG_ottoman_provide_refuge_industry
+		x=4
+		y=5
+		prerequisite={focus=HARA_Equality_and_justice}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Re_decide_on_administrative_divisions_ideas
+		}
+	}
+	focus={
+		id=HARA_Establishment_of_religious_districts
+		icon=NLEB_Establishment_of_religious_districts
+		x=4
+		y=6
+		prerequisite={focus=HARA_Re_decide_on_administrative_divisions}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Re_decide_on_administrative_divisions_ideas
+				add_idea = AMAL_Re_decide_on_administrative_divisions_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Denominational_Ruling_Act
+		icon=NLEB_Denominational_Ruling_Act
+		x=4
+		y=7
+		prerequisite={focus=HARA_Establishment_of_religious_districts}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Re_decide_on_administrative_divisions_ideas1
+				add_idea = AMAL_Re_decide_on_administrative_divisions_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_Believe_in_Allah_that_we_are_brothers
+		icon=GFX_goal_AFG_Conservative_Concessions_Coalition
+		x=3
+		y=8
+		prerequisite={focus=HARA_Pan_Islamic_education}
+		prerequisite={focus=HARA_Denominational_Ruling_Act}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Equality_and_justice_ideas
+				add_idea = AMAL_Equality_and_justice_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Islam_peace_and_goodness
+		icon=NLEB_Islam_peace_and_goodness
+		x=0
+		y=9
+		prerequisite={focus=HARA_Spear_of_Islam}
+		prerequisite={focus=HARA_Believe_in_Allah_that_we_are_brothers}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = KATP_Attack_Syria
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Control_of_military_and_political_organs1
+				add_idea = AMAL_Control_of_military_and_political_organs2
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				country_event = {
+					id = LEB.146
+					days = 3
+				}
+			}
+		}
+	}
+	focus={
+		id=HARA_Banuamilas_legacy
+		icon=NLEB_Banuamilas_legacy
+		x=-14
+		y=3
+		prerequisite={focus=HARA_Harakat_Amal_was_victorious}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_government = paternal_autocrat
+			is_subject = no
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus={
+		id=HARA_Tracing_the_legacy_of_the_Arab_nation
+		icon=NLEB_Tracing_the_legacy_of_the_Arab_nation
+		x=-19
+		y=4
+		prerequisite={focus=HARA_Banuamilas_legacy}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Arab_nationalism_ideas
+		}
+	}
+	focus={
+		id=HARA_Lessons_for_Arab_socialists
+		icon=NLEB_Lessons_for_Arab_socialists
+		x=-21
+		y=5
+		prerequisite={focus=HARA_Tracing_the_legacy_of_the_Arab_nation}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Arab_nationalism_ideas
+				add_idea = AMAL_Arab_nationalism_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Propaganda_of_pan_Arab_ideas
+		icon=NLEB_Propaganda_of_pan_Arab_ideas
+		x=-21
+		y=6
+		prerequisite={focus=HARA_Lessons_for_Arab_socialists}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Arab_nationalism_ideas1
+				add_idea = AMAL_Arab_nationalism_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_The_experience_of_Mount_Shermail
+		icon=NLEB_The_experience_of_Mount_Shermail
+		x=-17
+		y=5
+		prerequisite={focus=HARA_Tracing_the_legacy_of_the_Arab_nation}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_The_experience_of_Mount_Shermail_ideas
+		}
+	}
+	focus={
+		id=HARA_Establishment_of_the_Inquisition
+		icon=GFX_goal_AFG_Cavalry_Legacy
+		x=-17
+		y=6
+		prerequisite={focus=HARA_The_experience_of_Mount_Shermail}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_The_experience_of_Mount_Shermail_ideas
+				add_idea = AMAL_The_experience_of_Mount_Shermail_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_The_Salvation_of_White_Cedar
+		icon=GFX_goal_AFG_Traditionalism_Based_On_Rumis_Genius
+		x=-19
+		y=6
+		prerequisite={focus=HARA_Tracing_the_legacy_of_the_Arab_nation}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_White_Cedar_ideas
+		}
+	}
+	focus={
+		id=HARA_Pan_Arab_Islamic_Shield
+		icon=GFX_goal_EGY_Anti_European_Sentiment
+		x=-19
+		y=7
+		prerequisite={focus=HARA_Propaganda_of_pan_Arab_ideas}
+		prerequisite={focus=HARA_Establishment_of_the_Inquisition}
+		prerequisite={focus=HARA_The_Salvation_of_White_Cedar}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_White_Cedar_ideas
+				add_idea = AMAL_White_Cedar_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Planning_covert_operations
+		icon=GFX_goal_AFG_Ascension
+		x=-19
+		y=8
+		prerequisite={focus=HARA_Pan_Arab_Islamic_Shield}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_White_Cedar_ideas1
+				add_idea = AMAL_White_Cedar_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_The_shoe_is_on_the_other_foot
+		icon=GFX_AFG_traditional_roles
+		x=-14
+		y=4
+		prerequisite={focus=HARA_Banuamilas_legacy}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_war_support = 0.05
+			army_experience = 200
+			air_experience = 200
+			add_research_slot = 1
+		}
+	}
+	focus={
+		id=HARA_Learn_guerrilla_tactics
+		icon=GFX_goal_KIK_guerilla
+		x=-15
+		y=5
+		prerequisite={focus=HARA_The_shoe_is_on_the_other_foot}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Al_Sham_Arab_Liberation_Army_ideas
+		}
+	}
+	focus={
+		id=HARA_Al_Sham_Arab_Liberation_Army
+		icon=GFX_goal_SOM_Arabic_Primacy
+		x=-15
+		y=6
+		prerequisite={focus=HARA_Learn_guerrilla_tactics}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Al_Sham_Arab_Liberation_Army_ideas
+				add_idea = AMAL_Al_Sham_Arab_Liberation_Army_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_The_pan_Arab_sword_of_Islam
+		icon=GFX_goal_AFG_ottoman_ex_caucasus_war
+		x=-15
+		y=7
+		prerequisite={focus=HARA_Al_Sham_Arab_Liberation_Army}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Al_Sham_Arab_Liberation_Army_ideas1
+				add_idea = AMAL_Al_Sham_Arab_Liberation_Army_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_Purchase_of_German_munitions
+		icon=GFX_goal_AUS_tariff_germany
+		x=-13
+		y=5
+		prerequisite={focus=HARA_The_shoe_is_on_the_other_foot}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			GER = {
+				create_production_license = {
+					target = LEB
+					equipment = {
+						type = infantry_equipment_3
+					}
+					cost_factor = 0
+				}
+			}
+			GER = {
+				create_production_license = {
+					target = LEB
+					equipment = {
+						type = artillery_equipment_3
+					}
+					cost_factor = 0
+				}
+			}
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment_1
+				amount = 200000
+				producer = GER
+			}
+			add_equipment_to_stockpile = { 
+				type = artillery_equipment_1
+				amount = 20000
+				producer = GER
+			}
+			GER = {
+				add_political_power = 1000
+			}
+		}
+	}
+	focus={
+		id=HARA_Hire_a_German_consultant
+		icon=GFX_goal_AFG_Nonpartisan_Path_Progress
+		x=-13
+		y=6
+		prerequisite={focus=HARA_Purchase_of_German_munitions}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_German_consultant_ideas
+		}
+	}
+	focus={
+		id=HARA_German_Lebanese_Joint_Staff
+		icon=GFX_goal_OTT_All_Civilizing_Mission
+		x=-13
+		y=7
+		prerequisite={focus=HARA_Hire_a_German_consultant}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_German_consultant_ideas
+				add_idea = AMAL_German_consultant_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Be_prepared_to_be_proactive
+		icon=GFX_goal_AFG_Hurtling_Over_Mountaintops
+		x=-14
+		y=8
+		prerequisite={focus=HARA_The_pan_Arab_sword_of_Islam}
+		prerequisite={focus=HARA_German_Lebanese_Joint_Staff}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Al_Sham_Arab_Liberation_Army_ideas2
+				add_idea = AMAL_Al_Sham_Arab_Liberation_Army_ideas3
+			}
+		}
+	}
+	focus={
+		id=HARA_Clergy_in_politics
+		icon=NLEB_Clergy_in_politics
+		x=-10
+		y=4
+		prerequisite={focus=HARA_Banuamilas_legacy}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Lebanese_Order_ideas
+		}
+	}
+	focus={
+		id=HARA_Preparation_of_an_Islamic_constitution
+		icon = GFX_goal_AFG_Reimpose_Sharia
+		x=-11
+		y=5
+		prerequisite={focus=HARA_Clergy_in_politics}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Lebanese_Order_ideas
+				add_idea = AMAL_Lebanese_Order_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Exclusion_of_non_Shiites
+		icon=NLEB_Exclusion_of_non_Shiites
+		x=-11
+		y=6
+		prerequisite={focus=HARA_Preparation_of_an_Islamic_constitution}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Lebanese_Order_ideas1
+				add_idea = AMAL_Lebanese_Order_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_Lebanese_Order_style_dictatorship
+		icon=NLEB_Lebanese_Order_style_dictatorship
+		x=-11
+		y=7
+		prerequisite={focus=HARA_Exclusion_of_non_Shiites}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Lebanese_Order_ideas2
+				add_idea = AMAL_Lebanese_Order_ideas3
+			}
+		}
+	}
+	focus={
+		id=HARA_Religious_colleges_were_opened
+		icon=GFX_goal_AFG_ottoman_ex_brains_refuge
+		x=-9
+		y=5
+		prerequisite={focus=HARA_Clergy_in_politics}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Religious_colleges_were_opened_ideas
+		}
+	}
+	focus={
+		id=HARA_Nurturing_Imam_fanaticism
+		icon=NLEB_Nurturing_Imam_fanaticism
+		x=-9
+		y=6
+		prerequisite={focus=HARA_Religious_colleges_were_opened}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Religious_colleges_were_opened_ideas
+				add_idea = AMAL_Religious_colleges_were_opened_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Encourage_faith_fanaticism
+		icon=NLEB_Encourage_faith_fanaticism
+		x=-9
+		y=7
+		prerequisite={focus=HARA_Nurturing_Imam_fanaticism}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Religious_colleges_were_opened_ideas1
+				add_idea = AMAL_Religious_colleges_were_opened_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_Islamic_State_of_Lebanon
+		icon=NLEB_Islamic_State_of_Lebanon
+		x=-10
+		y=8
+		prerequisite={focus=HARA_Lebanese_Order_style_dictatorship}
+		prerequisite={focus=HARA_Encourage_faith_fanaticism}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Lebanese_Order_ideas3
+				add_idea = AMAL_Lebanese_Order_ideas4
+			}
+		}
+	}
+	focus={
+		id=HARA_Thunder_in_the_Malwa_Mountains
+		icon=NLEB_Thunder_in_the_Malwa_Mountains
+		x=-14
+		y=9
+		prerequisite={focus=HARA_Be_prepared_to_be_proactive}
+		prerequisite={focus=HARA_Planning_covert_operations}
+		prerequisite={focus=HARA_Islamic_State_of_Lebanon}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus =  KATP_Enter_the_world
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_White_Cedar_ideas2
+				add_idea = AMAL_White_Cedar_ideas3
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				country_event = {
+					id = LEB.145
+					days = 3
+				}
+			}
+		}
+	}
+	focus={
+		id=HARA_Revive_the_glory_of_Mount_Amir
+		icon=NLEB_Revive_the_glory_of_Mount_Amir
+		x=13
+		y=3
+		prerequisite={focus=HARA_Harakat_Amal_was_victorious}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_government = national_populist
+			is_subject = no
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_political_power = 200
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus={
+		id=HARA_The_twelve_imams_are_supreme
+		icon=NLEB_The_twelve_imams_are_supreme
+		x=10
+		y=4
+		prerequisite={focus=HARA_Revive_the_glory_of_Mount_Amir}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_imams_are_supreme_ideas
+		}
+	}
+	focus={
+		id=HARA_Heresy_Segregation
+		icon=NLEB_Heresy_Segregation
+		x=8
+		y=5
+		prerequisite={focus=HARA_The_twelve_imams_are_supreme}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Heresy_Segregation_ideas
+		}
+	}
+	focus={
+		id=HARA_First_Religious_Census
+		icon=NLEB_First_Religious_Census
+		x=7
+		y=6
+		prerequisite={focus=HARA_Heresy_Segregation}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Religious_Census_ideas
+		}
+	}
+	focus={
+		id=HARA_Empower_the_Faith_Police
+		icon=NLEB_Empower_the_Faith_Police
+		x=7
+		y=7
+		prerequisite={focus=HARA_First_Religious_Census}
+		prerequisite={focus=HARA_Renovation_of_Sunni_mosques}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Religious_Census_ideas
+				add_idea = AMAL_Religious_Census_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Renovation_of_Sunni_mosques
+		icon=NLEB_Renovation_of_Sunni_mosques
+		x=9
+		y=6
+		prerequisite={focus=HARA_Heresy_Segregation}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Heresy_Segregation_ideas
+				add_idea = AMAL_Heresy_Segregation_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Reward_the_converts
+		icon=GFX_goal_AFG_ottoman_rewarding_loyalty
+		x=9
+		y=7
+		prerequisite={focus=HARA_First_Religious_Census}
+		prerequisite={focus=HARA_Renovation_of_Sunni_mosques}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Heresy_Segregation_ideas1
+				add_idea = AMAL_Heresy_Segregation_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_The_green_cedar_stands_proudly
+		icon=NLEB_The_green_cedar_stands_proudly
+		x=8
+		y=8
+		prerequisite={focus=HARA_Empower_the_Faith_Police}
+		prerequisite={focus=HARA_Reward_the_converts}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Religious_Census_ideas1
+				add_idea = AMAL_Religious_Census_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_Shiites_are_encouraged_to_join_the_army
+		icon=NLEB_Shiites_are_encouraged_to_join_the_army
+		x=12
+		y=5
+		prerequisite={focus=HARA_The_twelve_imams_are_supreme}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_imams_are_supreme_ideas
+				add_idea = AMAL_imams_are_supreme_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Pioneering_Lebanese_tactics
+		icon=NLEB_Pioneering_Lebanese_tactics
+		x=11
+		y=6
+		prerequisite={focus=HARA_Shiites_are_encouraged_to_join_the_army}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_Lebanese_tactics_ideas
+		}
+	}
+	focus={
+		id=HARA_Imam_in_the_army
+		icon=NLEB_Imam_in_the_army
+		x=13
+		y=6
+		prerequisite={focus=HARA_Shiites_are_encouraged_to_join_the_army}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_imams_are_supreme_ideas1
+				add_idea = AMAL_imams_are_supreme_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_Alis_loyal_scimitar
+		icon=NLEB_Alis_loyal_scimitar
+		x=13
+		y=7
+		prerequisite={focus=HARA_Pioneering_Lebanese_tactics}
+		prerequisite={focus=HARA_Imam_in_the_army}
+		prerequisite={focus=HARA_Remember_the_shame_of_1785}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_imams_are_supreme_ideas2
+				add_idea = AMAL_imams_are_supreme_ideas3
+			}
+		}
+	}
+	focus={
+		id=HARA_The_sword_of_Islam
+		icon=NLEB_The_sword_of_Islam
+		x=13
+		y=8
+		prerequisite={focus=HARA_Alis_loyal_scimitar}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_imams_are_supreme_ideas3
+				add_idea = AMAL_imams_are_supreme_ideas4
+			}
+		}
+	}
+	focus={
+		id=HARA_The_atrocities_of_Jazar_Pasha
+		icon=NLEB_The_atrocities_of_Jazar_Pasha
+		x=16
+		y=4
+		prerequisite={focus=HARA_Revive_the_glory_of_Mount_Amir}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_1785_ideas
+		}
+	}
+	focus={
+		id=HARA_Promote_nationalist_education
+		icon=GFX_goal_AFG_Hand_In_Hand_With_True_Faith
+		x=15
+		y=5
+		prerequisite={focus=HARA_The_atrocities_of_Jazar_Pasha}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_1785_ideas
+				add_idea = AMAL_1785_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Remember_the_shame_of_1785
+		icon=NLEB_Remember_the_shame_of_1785
+		x=15
+		y=6
+		prerequisite={focus=HARA_Promote_nationalist_education}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_1785_ideas1
+				add_idea = AMAL_1785_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_The_warriors_of_Ikhwan
+		icon=NLEB_The_warriors_of_Ikhwan
+		x=17
+		y=5
+		prerequisite={focus=HARA_The_atrocities_of_Jazar_Pasha}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_warriors_idea
+		}
+	}
+	focus={
+		id=HARA_Volunteers_from_the_Western_world
+		icon=GFX_goal_AFG_Studying_Anglo_Afghan_Wars
+		x=17
+		y=6
+		prerequisite={focus=HARA_The_warriors_of_Ikhwan}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_warriors_idea
+				add_idea = AMAL_warriors_idea1
+			}
+		}
+	}
+	focus={
+		id=HARA_Incitement_to_ethnic_hatred
+		icon=GFX_AFG_end_bandits
+		x=17
+		y=7
+		prerequisite={focus=HARA_Volunteers_from_the_Western_world}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_warriors_idea1
+				add_idea = AMAL_warriors_idea2
+			}
+		}
+	}
+	focus={
+		id=HARA_Anti_Turkic_vanguard
+		icon=NLEB_Anti_Turkic_vanguard
+		x=17
+		y=8
+		prerequisite={focus=HARA_Incitement_to_ethnic_hatred}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_warriors_idea2
+				add_idea = AMAL_warriors_idea3
+			}
+		}
+	}
+	focus={
+		id=HARA_Red_white_and_green_fluttered_again
+		icon=NLEB_Red_white_and_green_fluttered_again
+		x=13
+		y=9
+		prerequisite={focus=HARA_The_green_cedar_stands_proudly}
+		prerequisite={focus=HARA_The_sword_of_Islam}
+		prerequisite={focus=HARA_Anti_Turkic_vanguard}
+		relative_position_id = HARA_The_flame_of_hope_ignites_Lebanon
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus =  KATP_Enter_the_world
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_warriors_idea3
+				add_idea = AMAL_warriors_idea4
+			}
+			country_event = {
+				id = LEB.147
+				days = 3
+			}
+		}
+	}
+	focus={
+		id=HARA_I_have_denied_the_Day_of_Retribution
+		icon=NLEB_I_have_denied_the_Day_of_Retribution
+		x=13
+		y=13
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = LEB_The_Prophet_has_returned
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = AMAL_The_Day_of_Retribution_ideas
+		}
+	}
+	focus={
+		id=HARA_Until_death_comes_upon_us
+		icon=NLEB_Until_death_comes_upon_us
+		x=0
+		y=1
+		prerequisite={focus=HARA_I_have_denied_the_Day_of_Retribution}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_The_Day_of_Retribution_ideas
+				add_idea = AMAL_The_Day_of_Retribution_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_The_trumpet_will_sound
+		icon=NLEB_The_trumpet_will_sound
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		x=2
+		y=0
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = LEB_The_Prophet_has_returned
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_research_slot = 10
+			add_ideas = AMAL_Allah_ideas
+		}
+	}
+	focus={
+		id=HARA_That_was_the_day_the_warning_was_fulfilled
+		icon=NLEB_That_was_the_day_the_warning_was_fulfilled
+		x=2
+		y=1
+		prerequisite={focus=HARA_The_trumpet_will_sound}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Allah_ideas
+				add_idea = AMAL_Allah_ideas1
+			}
+		}
+	}
+	focus={
+		id=HARA_Hidden_for_thousands_of_years_back_to_the_world
+		icon=NLEB_Hidden_for_thousands_of_years_back_to_the_world
+		x=1
+		y=2
+		prerequisite={focus=HARA_Until_death_comes_upon_us}
+		prerequisite={focus=HARA_That_was_the_day_the_warning_was_fulfilled}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_The_Day_of_Retribution_ideas1
+				add_idea = AMAL_The_Day_of_Retribution_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_Armed_with_the_Sword_of_Ali
+		icon=NLEB_Armed_with_the_Sword_of_Ali
+		x=0
+		y=3
+		prerequisite={focus=HARA_Hidden_for_thousands_of_years_back_to_the_world}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_The_Day_of_Retribution_ideas2
+				add_idea = AMAL_The_Day_of_Retribution_ideas3
+			}
+			create_corps_commander = {
+				name = "Ali Bin Abi Talib"
+				portrait_path = "gfx/leaders/LEB/Portrait_LEB_Ali_Bin_Abi_Talib.png"
+				traits = { offensive_doctrine trickster trait_engineer brilliant_strategist urban_assault_specialist ranger winter_specialist jungle_rat war_hero trait_mountaineer inspirational_leader artillery_officer bearer_of_artillery thorough_planner organisational_leader}
+				skill = 10
+				attack_skill = 10
+				defense_skill = 10
+				planning_skill = 10
+				logistics_skill = 10
+			}
+		}
+	}
+	focus={
+		id=HARA_Accompanied_by_the_Seven_Sleeping_Immortals
+		icon=NLEB_Accompanied_by_the_Seven_Sleeping_Immortals
+		x=0
+		y=4
+		prerequisite={focus=HARA_Armed_with_the_Sword_of_Ali}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_The_Day_of_Retribution_ideas3
+				add_idea = AMAL_The_Day_of_Retribution_ideas4
+			}
+		}
+	}
+	focus={
+		id=HARA_The_last_festival_of_Ashura
+		icon=NLEB_The_last_festival_of_Ashura
+		x=2
+		y=3
+		prerequisite={focus=HARA_Hidden_for_thousands_of_years_back_to_the_world}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Allah_ideas1
+				add_idea = AMAL_Allah_ideas2
+			}
+		}
+	}
+	focus={
+		id=HARA_Resurrection_of_the_martyr_Hussein
+		icon=NLEB_Resurrection_of_the_martyr_Hussein
+		x=2
+		y=4
+		prerequisite={focus=HARA_The_last_festival_of_Ashura}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Allah_ideas2
+				add_idea = AMAL_Allah_ideas3
+			}
+			create_corps_commander = {
+				name = "Hussein Bin Ali Bin Abi Talib"
+				portrait_path = "gfx/leaders/LEB/Portrait_LEB_Hussein_Bin_Ali_Bin_Abi_Talib.png"
+				traits = { offensive_doctrine trickster trait_engineer brilliant_strategist urban_assault_specialist ranger winter_specialist jungle_rat war_hero trait_mountaineer inspirational_leader artillery_officer bearer_of_artillery thorough_planner organisational_leader}
+				skill = 10
+				attack_skill = 10
+				defense_skill = 10
+				planning_skill = 10
+				logistics_skill = 10
+			}
+		}
+	}
+	focus={
+		id=HARA_They_thought_the_punishment_was_far_away
+		icon=NLEB_They_thought_the_punishment_was_far_away
+		x=1
+		y=5
+		prerequisite={focus=HARA_Accompanied_by_the_Seven_Sleeping_Immortals}
+		prerequisite={focus=HARA_Resurrection_of_the_martyr_Hussein}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_The_Day_of_Retribution_ideas4
+				add_idea = AMAL_The_Day_of_Retribution_ideas5
+			}
+		}
+	}
+	focus={
+		id=HARA_I_think_its_very_close
+		icon=NLEB_I_think_its_very_close
+		x=1
+		y=6
+		prerequisite={focus=HARA_They_thought_the_punishment_was_far_away}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=2
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_The_Day_of_Retribution_ideas5
+				add_idea = AMAL_The_Day_of_Retribution_ideas6
+			}
+		}
+	}
+	focus={
+		id=HARA_Pro_conquest_of_Galb
+		icon=NLEB_Pro_conquest_of_Galb
+		x=-2
+		y=7
+		prerequisite={focus=HARA_I_think_its_very_close}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_The_Day_of_Retribution_ideas6
+				add_idea = AMAL_The_Day_of_Retribution_ideas7
+			}
+		}
+	}
+	focus={
+		id=HARA_Destroy_the_Maghreb
+		icon=NLEB_Destroy_the_Maghreb
+		x=-2
+		y=8
+		prerequisite={focus=HARA_Pro_conquest_of_Galb}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = LBA }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = TRP }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = PAL }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_owned_and_controlled_by = NFA }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = NFA }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = MOR }
+				add_core_of = LEB
+			}
+			create_wargoal = { target = EGY type = annex_everything }
+			create_wargoal = { target = LBA type = annex_everything }
+			create_wargoal = { target = TRP type = annex_everything }
+			create_wargoal = { target = PAL type = annex_everything }
+			create_wargoal = { target = NFA type = annex_everything }
+			create_wargoal = { target = MOR type = annex_everything }
+		}
+	}
+	focus={
+		id=HARA_Stop_at_Al_Andalus
+		icon=NLEB_Stop_at_Al_Andalus
+		x=-2
+		y=9
+		prerequisite={focus=HARA_Destroy_the_Maghreb}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = POR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = SPR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = CNT }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = CAR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = FRA }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_owned_and_controlled_by = POR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_owned_and_controlled_by = SPR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_owned_and_controlled_by = CNT }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_owned_and_controlled_by = CAR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_owned_and_controlled_by = FRA }
+				add_core_of = LEB
+			}
+			create_wargoal = { target = POR type = annex_everything }
+			create_wargoal = { target = SPR type = annex_everything }
+			create_wargoal = { target = CNT type = annex_everything }
+			create_wargoal = { target = CAR type = annex_everything }
+			create_wargoal = { target = FRA type = annex_everything }
+		}
+	}
+	focus={
+		id=HARA_Capture_the_Kaba
+		icon=NLEB_Capture_the_Kaba
+		x=1
+		y=7
+		prerequisite={focus=HARA_I_think_its_very_close}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_Allah_ideas3
+				add_idea = AMAL_Allah_ideas4
+			}
+		}
+	}
+	focus={
+		id=HARA_Go_south_to_Sahada
+		icon=NLEB_Go_south_to_Sahada
+		x=0
+		y=8
+		prerequisite={focus=HARA_Capture_the_Kaba}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = YEM }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = SAU }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = JBS }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = OMA }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
+				add_core_of = LEB
+			}
+			create_wargoal = { target = SAU type = annex_everything }
+			create_wargoal = { target = JBS type = annex_everything }
+			create_wargoal = { target = OMA type = annex_everything }
+			create_wargoal = { target = HEJ type = annex_everything }
+			create_wargoal = { target = YEM type = annex_everything }
+		}
+	}
+	focus={
+		id=HARA_Turn_into_Kinana
+		icon=NLEB_Turn_into_Kinana
+		x=0
+		y=9
+		prerequisite={focus=HARA_Go_south_to_Sahada}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = ETH }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = SOM }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_owned_and_controlled_by = EGY }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_owned_and_controlled_by = ETH }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_owned_and_controlled_by = SOM }
+				add_core_of = LEB
+			}
+			create_wargoal = { target = EGY type = annex_everything }
+			create_wargoal = { target = ETH type = annex_everything }
+			create_wargoal = { target = SOM type = annex_everything }
+		}
+	}
+	focus={
+		id=HARA_Head_north_to_Anatoler
+		icon=NLEB_Head_north_to_Anatoler
+		x=2
+		y=8
+		prerequisite={focus=HARA_Capture_the_Kaba}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = TUR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_owned_and_controlled_by = TUR }
+				add_core_of = LEB
+			}
+			create_wargoal = { target = TUR type = annex_everything }
+		}
+	}
+	focus={
+		id=HARA_Marching_into_the_Ulupa
+		icon=NLEB_Marching_into_the_Ulupa
+		x=2
+		y=9
+		prerequisite={focus=HARA_Head_north_to_Anatoler}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = ALB }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = GRE }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = BUL }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = SER }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = ROM }
+				add_core_of = LEB
+			}
+			create_wargoal = { target = ALB type = annex_everything }
+			create_wargoal = { target = GRE type = annex_everything }
+			create_wargoal = { target = BUL type = annex_everything }
+			create_wargoal = { target = SER type = annex_everything }
+			create_wargoal = { target = ROM type = annex_everything }
+		}
+	}
+	focus={
+		id=HARA_Wave_Schalke
+		icon=NLEB_Wave_Schalke
+		x=4
+		y=7
+		prerequisite={focus=HARA_I_think_its_very_close}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=0
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_war_support = 1
+			add_stability = 1
+		}
+	}
+	focus={
+		id=HARA_Bloodbath_in_Khorasan
+		icon=NLEB_Bloodbath_in_Khorasan
+		x=4
+		y=8
+		prerequisite={focus=HARA_Wave_Schalke}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = PER }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = AFG }
+				add_core_of = LEB
+			}
+			create_wargoal = { target = PER type = annex_everything }
+			create_wargoal = { target = AFG type = annex_everything }
+		}
+	}
+	focus={
+		id=HARA_Liberation_of_Arsin
+		icon=NLEB_Liberation_of_Arsin
+		x=4
+		y=9
+		prerequisite={focus=HARA_Bloodbath_in_Khorasan}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = {
+				limit = { is_core_of = SIK }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = ETS }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = TAN }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = MON }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = TIB }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = XSM }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = SHX }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = SZC }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = YUN }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = HNN }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = GXC }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = LEP }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = CHI }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = QIE }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = SQI }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = ANQ }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = FNG }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = KOR }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = JAP }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = LEC }
+				add_core_of = LEB
+			}
+			create_wargoal = { target = ANQ type = annex_everything }
+			create_wargoal = { target = FNG type = annex_everything }
+			create_wargoal = { target = LEC type = annex_everything }
+			create_wargoal = { target = JAP type = annex_everything }
+			create_wargoal = { target = KOR type = annex_everything }
+			create_wargoal = { target = LEP type = annex_everything }
+			create_wargoal = { target = CHI type = annex_everything }
+			create_wargoal = { target = QIE type = annex_everything }
+			create_wargoal = { target = SQI type = annex_everything }
+			create_wargoal = { target = SIK type = annex_everything }
+			create_wargoal = { target = ETS type = annex_everything }
+			create_wargoal = { target = TAN type = annex_everything }
+			create_wargoal = { target = TIB type = annex_everything }
+			create_wargoal = { target = MON type = annex_everything }
+			create_wargoal = { target = XSM type = annex_everything }
+			create_wargoal = { target = SHX type = annex_everything }
+			create_wargoal = { target = YUN type = annex_everything }
+			create_wargoal = { target = HNN type = annex_everything }
+			create_wargoal = { target = GXC type = annex_everything }
+		}
+	}
+	focus={
+		id=HARA_Eternal_day
+		icon=NLEB_Eternal_day
+		x=1
+		y=10
+		prerequisite={focus=HARA_Turn_into_Kinana}
+		prerequisite={focus=HARA_Marching_into_the_Ulupa}
+		prerequisite={focus=HARA_Stop_at_Al_Andalus}
+		prerequisite={focus=HARA_Liberation_of_Arsin}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=7
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = AMAL_The_Day_of_Retribution_ideas7
+				add_idea = AMAL_The_Day_of_Retribution_ideas8
+			}
+		}
+	}
+	focus={
+		id=HARA_The_Last_Judgment
+		icon=NLEB_The_Last_Judgment
+		x=0
+		y=11
+		prerequisite={focus=HARA_Eternal_day}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=7
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_country = {
+				LEB = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+	focus={
+		id=HARA_The_word_of_Allah_echoes_throughout_the_world
+		icon=NLEB_The_word_of_Allah_echoes_throughout_the_world
+		x=2
+		y=11
+		prerequisite={focus=HARA_Eternal_day}
+		relative_position_id = HARA_I_have_denied_the_Day_of_Retribution
+		cost=7
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			every_state = { add_core_of = LEB }
+		}
+	}
+}

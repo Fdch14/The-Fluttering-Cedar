@@ -1,0 +1,4408 @@
+add_namespace = LEB
+add_namespace = leb_portrait_picker
+country_event = {
+	id = leb_portrait_picker.1
+	title = leb_portrait_picker.1.t 
+	desc = leb_portrait_picker.1.d 
+	picture = GFX_Nihal_Atsiz_Portrait
+
+	is_triggered_only = yes
+	
+	option = {
+		name = leb_portrait_picker.1.a
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Nihâl Atsız"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/LEB/Portrait_LEB_Nihal_Atsiz.png"
+			}
+		}
+	}
+	option = {
+		name = leb_portrait_picker.1.b
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Nihâl Atsız"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/LEB/Portrait_LEB_Nihal_Atsiz_shaman_imperfection.png"
+			}
+		}
+	}
+	option = {
+		name = leb_portrait_picker.1.c
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Nihâl Atsız"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/LEB/Portrait_LEB_Nihal_Atsiz_shaman.png"
+			}
+		}
+	}
+	option = {
+		name = leb_portrait_picker.1.e
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Nihâl Atsız"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/LEB/Portrait_LEB_Nihal_Atsiz_Adolf.png"
+			}
+		}
+	}
+}
+country_event = {
+	id = LEB.1
+	title = LEB.1.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.1.d
+	option = {
+	name = LEB.1.a
+
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.1"
+	}
+trigger = {
+		tag = LEB
+		date > 1936.1.1
+	}
+mean_time_to_happen = {
+		days = 1
+	}
+
+	}
+country_event = {
+	id = LEB.2
+	title = LEB.2.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.2.d
+	option = {
+	name = LEB.2.a
+		swap_ideas = {
+				add_idea = LEB_black_monday
+				remove_idea = LEB_gate_between_two_worlds
+			}
+
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.2"
+	}
+trigger = {
+		tag = LEB
+		date > 1936.2.5
+	}
+mean_time_to_happen = {
+		days = 1
+	}
+
+	}
+	
+	country_event = {
+	id = LEB.3
+	title = LEB.3.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.3.d
+	option = {
+	name = LEB.3.a
+swap_ideas = {
+				add_idea = LEB_religious_riots
+				remove_idea = LEB_religious_clashes
+			}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.3"
+	}
+
+	}
+
+country_event = {
+	id = LEB.4
+	title = LEB.4.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.4.d
+	option = {
+	name = LEB.4.a
+	add_political_power = 50
+	add_stability = 0.05
+	add_war_support = 0.05
+	add_offsite_building = {
+						type = industrial_complex
+						level = 3
+						}	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.4"
+	}
+
+	}
+	
+country_event = {
+	id = LEB.5
+	title = LEB.5.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.5.d
+	option = {
+	name = LEB.5.a
+	add_stability = 0.03
+	custom_effect_tooltip = maronite_add_influence_tt
+	add_to_variable = {
+				var = LEB_maronite_power
+				value = 5
+			}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.5"
+	}
+
+	}
+	
+country_event = {
+	id = LEB.6
+	title = LEB.6.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.6.d
+	option = {
+	name = LEB.6.a
+	add_war_support = 0.03
+	custom_effect_tooltip = ottoman_lose_influence_tt
+	add_to_variable = {
+				var = LEB_ottoman_power
+				value = -5
+			}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.6"
+	}
+
+	}
+	
+country_event = {
+	id = LEB.7
+	title = LEB.7.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.7.d
+	option = {
+	name = LEB.7.a
+	add_manpower = 250
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.7"
+	}
+
+	}
+	
+country_event = {
+	id = LEB.8
+	title = LEB.8.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.8.d
+	option = {
+	name = LEB.8.a
+	add_resource = {
+						type = oil
+						amount = 6
+						state = 553
+						}
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.8"
+	}
+
+	}
+	
+country_event = {
+	id = LEB.9
+	title = LEB.9.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.9.d
+	option = {
+	name = LEB.9.a
+	army_experience = 15
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.9"
+	}
+
+	}
+	
+country_event = {
+	id = LEB.10
+	title = LEB.10.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.10.d
+	option = {
+	name = LEB.10.a
+	add_tech_bonus = {
+							name = LEB_ottoman_gendarme_bonus
+							bonus = 0.40
+							uses = 1
+							category = infantry_weapons
+						}
+						
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.10"
+	}
+
+	}
+	
+	
+country_event = {
+	id = LEB.11
+	title = LEB.11.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.11.d
+	option = {
+	name = LEB.11.a
+	add_tech_bonus = {
+							name = LEB_ottoman_gendarme_bonus
+							bonus = 0.40
+							uses = 1
+							category = armor
+						}
+	custom_effect_tooltip = sunni_add_influence_tt
+	add_to_variable = {
+				var = LEB_sunni_power
+				value = 5
+			}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.11"
+	}
+
+	}
+	
+	
+country_event = {
+	id = LEB.12
+	title = LEB.12.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.12.d
+	option = {
+	name = LEB.12.a
+	add_stability = 0.05
+	custom_effect_tooltip = shia_add_influence_tt
+	add_to_variable = {
+				var = LEB_shia_power
+				value = 5
+			}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.12"
+	}
+
+	}
+
+### Flavor ###	
+
+### restaurant ###
+country_event = {
+	id = LEB.13
+	title = LEB.13.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.13.d
+	option = {
+	name = LEB.13.a
+	add_political_power = 5
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.13"
+	}
+
+	}
+	
+#### restaurant clashes ###
+country_event = {
+	id = LEB.14
+	title = LEB.14.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.14.d
+	option = {
+	name = LEB.14.a
+	custom_effect_tooltip = maronite_add_influence_tt
+	add_to_variable = {var = LEB_maronite_power
+	value = 5
+	}
+	}
+	option = {
+	name = LEB.14.b
+	custom_effect_tooltip = shia_add_influence_tt
+	add_to_variable = {var = LEB_shia_power
+	value = 5
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.14"
+	}
+
+	}
+
+
+### ssnp ###
+country_event = {
+	id = LEB.15
+	title = LEB.15.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.15.d
+	option = {
+	name = LEB.15.a
+	custom_effect_tooltip = ssnp_add_influence_tt
+	add_to_variable = {var = LEB_ssnp_power
+	value = 5
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.15"
+	}
+
+	}
+
+
+## commie strikes ###	
+country_event = {
+	id = LEB.16
+	title = LEB.16.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.16.d
+	option = {
+	name = LEB.16.a
+	custom_effect_tooltip = sunni_add_influence_tt
+	add_to_variable = {var = LEB_sunni_power
+	value = 5
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.16"
+	}
+
+	}
+	
+### monument ###
+country_event = {
+	id = LEB.17
+	title = LEB.17.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.17.d
+	option = {
+	name = LEB.17.a
+	add_political_power = 5
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.17"
+	}
+
+	}
+
+### sus tribe soldier###
+country_event = {
+	id = LEB.18
+	title = LEB.18.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.18.d
+	option = {
+	name = LEB.18.a
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.18"
+	}
+
+	}
+
+
+### pan-turkists booom###
+country_event = {
+	id = LEB.19
+	title = LEB.19.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.19.d
+	option = {
+	name = LEB.19.a
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.19"
+	}
+
+	}
+
+
+### operation resurrection ###
+country_event = {
+	id = LEB.20
+	title = LEB.20.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.20.d
+	option = {
+	name = LEB.20.a
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.20"
+	}
+
+	}
+	
+### operation broken spear ###
+country_event = {
+	id = LEB.21
+	title = LEB.21.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.21.d
+	option = {
+	name = LEB.21.a
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.21"
+	}
+
+	}	
+
+### operation breezeless ###
+
+country_event = {
+	id = LEB.22
+	title = LEB.22.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.22.d
+	option = {
+	name = LEB.22.a
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.22"
+	}
+
+	}
+
+### operation red dusk ###
+
+country_event = {
+	id = LEB.23
+	title = LEB.23.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.23.d
+	option = {
+	name = LEB.23.a
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.23"
+	}
+
+	}
+
+### cooperate with mullah ###
+
+country_event = {
+	id = LEB.24
+	title = LEB.24.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.24.d
+	option = {
+	name = LEB.24.a
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.24"
+	}
+
+	}
+
+### printing factory incident ###
+
+country_event = {
+	id = LEB.25
+	title = LEB.25.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.25.d
+	option = {
+	name = LEB.25.a
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.25"
+	}
+
+	}
+
+### meet with mujtahid ###
+
+country_event = {
+	id = LEB.26
+	title = LEB.26.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.26.d
+	option = {
+	name = LEB.26.a
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.26"
+	}
+
+	}
+
+### meet with partiarch ###
+
+country_event = {
+	id = LEB.27
+	title = LEB.27.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.27.d
+	option = {
+	name = LEB.27.a
+	
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.27"
+	}
+
+	}
+
+
+
+### Storm In Silence ###
+country_event = {
+	id = LEB.100
+	title = LEB.100.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.100.d
+	option = {
+		name = LEB.100.a
+		add_political_power = 5
+		hidden_effect = {
+			country_event = { 
+				id = LEB.101
+				days = 2	
+			}
+		}
+	}
+	immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.100"
+	}
+
+}
+	
+	
+	
+### Vali Has Been Assassinated ###
+country_event = {
+	id = LEB.101
+	title = LEB.101.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.101.d
+	option = {
+	name = LEB.101.a
+	add_political_power = -100
+	add_stability = -0.25
+	add_manpower = 300
+	custom_effect_tooltip = LEB_vali_die_tt
+	
+	hidden_effect = {
+	remove_ideas = LEB_an_new_era_for_vilayet
+	remove_ideas = LEB_idea_a_land_hard_to_govern
+	delete_unit_template_and_units = {
+	division_template = "Lubnan Vilayeti Milisleri"
+	disband = no
+	}
+	553 = {
+	set_demilitarized_zone = yes
+	}
+	kill_country_leader = yes
+	create_country_leader = {
+	name = "Emergency Committee Of Vilayet"
+	picture = "gfx/leaders/LEB/Portrait_Emergency_Committee.png"
+	expire = "1965.1.1"
+	ideology = oligarchy_subtype
+	
+	}
+	country_event = { id = LEB.102
+					days = 2	
+	}
+	}
+	
+	}
+
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.101"
+	}
+
+	}
+
+### Amal Is Attacking ###	
+country_event = {
+	id = LEB.102
+	title = LEB.102.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.102.d
+	option = {
+	name = LEB.102.a
+	custom_effect_tooltip = LEB_quran_1_tt
+	add_political_power = -25
+	
+	custom_effect_tooltip = shia_lose_influence_tt
+	add_to_variable = { var = LEB_shia_power
+						value = -5
+	}
+	
+	hidden_effect = {
+	
+	
+	country_event = { id = LEB.103
+					days = 2	
+	}
+	}
+	}
+	option = {
+	name = LEB.102.b
+	custom_effect_tooltip = LEB_quran_1_tt
+	add_political_power = 25
+	custom_effect_tooltip = shia_add_influence_tt
+	add_to_variable = { var = LEB_shia_power
+						value = 5
+	}
+	hidden_effect = {
+	country_event = { id = LEB.103
+					days = 2	
+	}
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.102"
+	}
+
+	}
+	
+	
+### Kataeb Moves ###
+country_event = {
+	id = LEB.103
+	title = LEB.103.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.103.d
+	option = {
+	name = LEB.103.a
+	custom_effect_tooltip = LEB_quran_2_tt
+	add_political_power = -25
+	custom_effect_tooltip = maronite_lose_influence_tt
+	add_to_variable = { var = LEB_maronite_power
+						value = -5
+	}
+	hidden_effect = {
+	country_event = { id = LEB.104
+					days = 2	
+	}
+	}
+	}
+	option = {
+	name = LEB.103.b
+	custom_effect_tooltip = LEB_quran_2_tt
+	add_political_power = 25
+	custom_effect_tooltip = maronite_add_influence_tt
+	add_to_variable = { var = LEB_maronite_power
+						value = 5
+	}
+	hidden_effect = {
+	country_event = { id = LEB.104
+					days = 2	
+	}
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.103"
+	}
+
+	}
+	
+### LCP Uprising ###
+country_event = {
+	id = LEB.104
+	title = LEB.104.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.104.d
+	option = {
+	name = LEB.104.a
+	custom_effect_tooltip = LEB_quran_3_tt
+	add_political_power = -25
+	custom_effect_tooltip = sunni_lose_influence_tt
+	add_to_variable = { var = LEB_sunni_power
+						value = -5
+	}
+	hidden_effect = {
+	country_event = { id = LEB.105
+					days = 2	
+	}
+	}
+	}
+	option = {
+	name = LEB.104.b
+	custom_effect_tooltip = LEB_quran_3_tt
+	add_political_power = 25
+	custom_effect_tooltip = sunni_add_influence_tt
+	add_to_variable = { var = LEB_sunni_power
+						value = 5
+	}
+	hidden_effect = {
+	country_event = { id = LEB.105
+					days = 2	
+	}
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.104"
+	}
+
+	}
+	
+	
+### SSNP Revolt ###
+country_event = {
+	id = LEB.105
+	title = LEB.105.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.105.d
+	option = {
+	name = LEB.105.a
+	custom_effect_tooltip = LEB_quran_4_tt
+	add_political_power = -25
+	custom_effect_tooltip = ssnp_lose_influence_tt
+	add_to_variable = { var = LEB_ssnp_power
+						value = -5
+	}
+	hidden_effect = {
+	country_event = { id = LEB.106
+					days = 2	
+	}
+	}
+	}
+	option = {
+	name = LEB.105.b
+	custom_effect_tooltip = LEB_quran_4_tt
+	add_political_power = 25
+	custom_effect_tooltip = ssnp_add_influence_tt
+	add_to_variable = { var = LEB_ssnp_power
+						value = 5
+	}
+	hidden_effect = {
+	country_event = { id = LEB.106
+					days = 2	
+	}
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.105"
+	}
+
+	}
+	
+	
+### Vilayet's Fate ###
+country_event = {
+	id = LEB.106
+	title = LEB.106.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.106.d
+	option = {
+	name = LEB.106.a
+	custom_effect_tooltip = LEB_quran_5_tt
+	clr_country_flag = NR_LEADER_GUI_VISIBLE
+	if = {
+			limit = {
+				check_variable = { LEB_shia_power > LEB_ottoman_power }
+				check_variable = { LEB_shia_power > LEB_maronite_power }
+				check_variable = { LEB_shia_power > LEB_sunni_power }
+				check_variable = { LEB_shia_power > LEB_ssnp_power }
+			}
+			hidden_effect = {
+	country_event = { id = LEB.107
+					days = 1	
+	}
+	}}
+		
+	if = {
+			limit = {
+				check_variable = { LEB_ottoman_power > LEB_shia_power }
+				check_variable = { LEB_ottoman_power > LEB_maronite_power }
+				check_variable = { LEB_ottoman_power > LEB_sunni_power }
+				check_variable = { LEB_ottoman_power > LEB_ssnp_power }
+			}
+			hidden_effect = {
+	country_event = { id = LEB.108
+					days = 1	
+	}
+	}
+		}
+	if = {
+			limit = {
+				check_variable = { LEB_maronite_power > LEB_shia_power }
+				check_variable = { LEB_maronite_power > LEB_ottoman_power }
+				check_variable = { LEB_maronite_power > LEB_sunni_power }
+				check_variable = { LEB_maronite_power > LEB_ssnp_power }
+			}
+			hidden_effect = {
+	country_event = { id = LEB.109
+					days = 1	
+	}
+	}
+		}
+	if = {
+			limit = {
+				check_variable = { LEB_sunni_power > LEB_shia_power }
+				check_variable = { LEB_sunni_power > LEB_ottoman_power }
+				check_variable = { LEB_sunni_power > LEB_maronite_power }
+				check_variable = { LEB_sunni_power > LEB_ssnp_power }
+			}
+			hidden_effect = {
+	country_event = { id = LEB.110
+					days = 1	
+	}
+	}
+		}
+	if = {
+			limit = {
+				check_variable = { LEB_ssnp_power > LEB_shia_power }
+				check_variable = { LEB_ssnp_power > LEB_ottoman_power }
+				check_variable = { LEB_ssnp_power > LEB_maronite_power }
+				check_variable = { LEB_ssnp_power > LEB_sunni_power }
+			}
+			hidden_effect = {
+	country_event = { id = LEB.111
+					days = 1	
+	}
+	}
+		}
+	if = {
+	
+	limit = {
+	NOT = 	{
+			OR = {	
+				AND = {
+				check_variable = { LEB_shia_power > LEB_ottoman_power }
+				check_variable = { LEB_shia_power > LEB_maronite_power }
+				check_variable = { LEB_shia_power > LEB_sunni_power }
+				check_variable = { LEB_shia_power > LEB_ssnp_power }
+						
+						}
+				AND = {
+				check_variable = { LEB_ottoman_power > LEB_shia_power }
+				check_variable = { LEB_ottoman_power > LEB_maronite_power }
+				check_variable = { LEB_ottoman_power > LEB_sunni_power }
+				check_variable = { LEB_ottoman_power > LEB_ssnp_power }
+						
+						}
+				AND = {
+				check_variable = { LEB_maronite_power > LEB_shia_power }
+				check_variable = { LEB_maronite_power > LEB_ottoman_power }
+				check_variable = { LEB_maronite_power > LEB_sunni_power }
+				check_variable = { LEB_maronite_power > LEB_ssnp_power }
+						
+						}
+				AND = {
+				check_variable = { LEB_sunni_power > LEB_shia_power }
+				check_variable = { LEB_sunni_power > LEB_ottoman_power }
+				check_variable = { LEB_sunni_power > LEB_maronite_power }
+				check_variable = { LEB_sunni_power > LEB_ssnp_power }
+						
+						}
+				AND = {
+				check_variable = { LEB_ssnp_power > LEB_shia_power }
+				check_variable = { LEB_ssnp_power > LEB_ottoman_power }
+				check_variable = { LEB_ssnp_power > LEB_maronite_power }
+				check_variable = { LEB_ssnp_power > LEB_sunni_power }
+						
+						}
+				}
+				
+			}
+			}
+		hidden_effect = {
+	country_event = { id = LEB.112
+					days = 1	
+	}
+	}
+	
+	}
+
+}
+		
+	}
+
+
+
+### amal movement seizes power ###
+country_event = {
+	id = LEB.107
+	title = LEB.107.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.107.d
+	option = {
+		name = LEB.107.a
+		clr_country_flag = LEB_vilayet
+		set_cosmetic_tag = LEB_shia
+		TUR = { end_puppet = LEB }
+		load_oob = "LEB_shia"
+		set_country_flag = Harakat_Amal_Win
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.35
+		}
+		clr_country_flag = NR_LEADER_GUI_VISIBLE
+		create_country_leader = {
+			name = "Sadr al-Din al-Sadr"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Sadr_al_Din_al_Sadr.png"
+			expire = "1965.1.1"
+			ideology = soccon_islamism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Sadr_al_Din_al_Sadr_hog_sco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = LEB_Adel_Osseiran_for_sco
+		remove_ideas_with_trait = economy_minister
+		add_ideas = LEB_Sabri_Hamadeh_eco_sco
+		remove_ideas_with_trait = security_minister
+		add_ideas = LEB_Abdul_Hussein_Sharaf_Eddin_sec_sco
+		add_stability = 0.15
+		hidden_effect = {
+			553 = {
+				set_demilitarized_zone = no
+			}
+			country_event = { id = LEB.200 #inpendence war
+			days = 2
+			}
+		}
+	
+	}
+}
+
+
+
+### ottoman vilayet "controls" ###				
+country_event = {
+	id = LEB.108
+	title = LEB.108.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.108.d
+	option = {
+	name = LEB.108.a
+	
+	add_stability = 0.15
+	hidden_effect = {
+553 = {
+	set_demilitarized_zone = no
+	}	
+	country_event = { 
+	id = LEB.113 #pan-turkists and tribes
+	days = 2
+	}
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.1"
+	}
+				}
+
+### kataeb seizes power ###				
+country_event = {
+	id = LEB.109
+	title = LEB.109.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.109.d
+	option = {
+	name = LEB.109.a
+	clr_country_flag = LEB_vilayet
+	set_cosmetic_tag = LEB_maronite
+	TUR = { end_puppet = LEB }
+	load_oob = "LEB_maronite"
+	set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+	add_popularity = {
+			ideology = national_populist
+			popularity = 0.25
+		}
+		clr_country_flag = NR_LEADER_GUI_VISIBLE
+		add_stability = 0.15
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Pierre_Amine_Gemayel_hog_pau
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = LEB_Alfred_Georges_Naccache_for_npo
+		remove_ideas_with_trait = economy_minister
+		add_ideas = LEB_Charles_Helou_eco_npo
+		remove_ideas_with_trait = security_minister
+		add_ideas = LEB_Fouad_Chehab_sec_npo
+		hidden_effect = {
+		553 = {
+	set_demilitarized_zone = no
+	}
+	set_country_flag = LEB_Kataeb_Win
+	country_event = { id = LEB.200 #inpendence war
+	days = 2
+	}
+	}
+	}
+
+				}
+		
+
+### lcp seizes power ###		
+country_event = {
+	id = LEB.110
+	title = LEB.110.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.110.d
+	option = {
+	name = LEB.110.a
+	clr_country_flag = LEB_vilayet
+	set_cosmetic_tag = LEB_sunni
+	TUR = { end_puppet = LEB }
+	load_oob = "LEB_sunni"
+	set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+	add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.25
+		}
+		clr_country_flag = NR_LEADER_GUI_VISIBLE
+		set_country_flag = LEB_Communism_Win
+	hidden_effect = {
+	553 = {
+	set_demilitarized_zone = no
+	}
+	country_event = { id = LEB.200 #inpendence war
+	days = 2
+	}
+	}
+		add_stability = 0.15
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.1"
+	}
+				}
+
+
+
+### ssnp seizes power ###				
+country_event = {
+	id = LEB.111
+	title = LEB.111.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.111.d
+	option = {
+		custom_effect_tooltip = LEB_NR_SSNP_WIN
+		set_country_flag = LEB_SSNP_WIN
+		clr_country_flag = LEB_vilayet
+		name = LEB.111.a
+		set_cosmetic_tag = LEB_ssnp
+		TUR = { end_puppet = LEB }
+		LEB = {
+			leave_faction = yes
+		}
+		load_oob = "LEB_ssnp"
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.25
+			}
+			hidden_effect = {
+				553 = {
+					set_demilitarized_zone = no
+			}
+				country_event = { id = LEB.200 #inpendence war
+				days = 2
+			}
+		}
+		add_stability = 0.15
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Antoun_Sadeh_hog_pau
+		remove_ideas_with_trait = economy_minister
+		add_ideas = LEB_Adib_al_Shishakli_eco_pau
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = LEB_Saeed_Taqi_al_Din_for_pau
+		remove_ideas_with_trait = security_minister
+		add_ideas = LEB_George_Abd_Messih_sec_pau
+		clr_country_flag = NR_LEADER_GUI_VISIBLE
+	}
+
+}
+
+
+### custom choose ###				
+country_event = {
+	id = LEB.112
+	title = LEB.112.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.112.d
+	option = {
+	hidden_effect = {
+	country_event = { id = LEB.107
+					days = 1	
+	}
+	}
+	}
+	option = {
+	name = LEB.112.b #ottoman
+			
+	hidden_effect = {
+	country_event = { id = LEB.108
+	days = 2
+	}
+	}
+	}
+	option = {
+	name = LEB.112.c #kataeb
+	TUR = { end_puppet = LEB }
+	hidden_effect = {
+	country_event = { id = LEB.109
+					days = 1	
+	}
+	}
+	}
+	
+	option = {
+	name = LEB.112.e #lcp
+	hidden_effect = {
+	country_event = { id = LEB.110
+					days = 1	
+	}
+	}
+	}
+	
+	option = {
+	name = LEB.112.f #ssnp
+	hidden_effect = {
+	country_event = { id = LEB.111
+					days = 1	
+	}
+	}
+	}
+
+				}
+				
+country_event = {
+	id = LEB.113
+	title = LEB.113.t
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.113.d
+	option = {
+	name = LEB.113.a
+	hidden_effect = {
+	country_event = {
+	id = LEB.114 
+	days = 2
+	}
+	}
+	}
+	option = {
+	name = LEB.113.b
+	hidden_effect = {
+	
+	country_event = {
+	id = LEB.115 #pan-turkists seizes power
+	days = 2
+	}
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.1"
+	}
+}
+	
+	
+	### hashemittes ###
+country_event = {
+	id = LEB.114
+	title = LEB.114.t
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.114.d
+	option = {
+	name = LEB.114.a
+	load_oob = "LEB_hashemite"
+	TUR = { end_puppet = LEB }
+	clr_country_flag = LEB_vilayet
+	set_cosmetic_tag = LEB_hashemite
+	clr_country_flag = NR_LEADER_GUI_VISIBLE
+	set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+	add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.25
+		}
+	set_party_name = {
+			ideology = paternal_autocrat
+			name = LEB_hashemite_party
+			long_name = LEB_hashemite_party_long
+		}
+	create_country_leader = {
+			name = "Faisal I"
+			picture = "gfx/leaders/LEB/Faisal_I.png"
+			expire = "1965.1.1"
+			ideology = absolute_monarchy_subtype
+		}
+		add_stability = 0.15
+	hidden_effect = {
+	553 = {
+	set_demilitarized_zone = no
+	}
+	
+	country_event = { id = LEB.200 
+	days = 2#inpendence war
+	
+	}
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.114"
+	}
+
+
+	}
+	### pan-turkists ###
+country_event = {
+	id = LEB.115
+	title = LEB.115.t
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.115.d
+	option = {
+	
+	name = LEB.115.a
+	TUR = { end_puppet = LEB }
+	load_oob = "LEB_panturk"
+	clr_country_flag = LEB_vilayet
+	set_cosmetic_tag = LEB_panturk
+	clr_country_flag = NR_LEADER_GUI_VISIBLE
+	set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+	set_party_name = {
+			ideology = national_populist
+			name = LEB_grey_wolfs_party
+			long_name = LEB_grey_wolfs_party_long
+		}
+	add_popularity = {
+			ideology = national_populist
+			popularity = 0.25
+		}
+	create_country_leader = {
+			name = "Necip Fazıl Kısakürek"
+			picture = "gfx/leaders/LEB/LEB_Necip_Fazil_Kisakurek.png"
+			expire = "1965.1.1"
+			ideology = pan_turkism_subtype
+		}
+		add_stability = 0.15
+	
+	hidden_effect = {
+	553 = {
+	set_demilitarized_zone = no
+	}
+	country_event = { id = LEB.200 #inpendence war
+	days = 2
+	}
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.115"
+	}
+
+
+	}
+	
+country_event = {
+	id = LEB.116
+	title = LEB.116.t
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.116.d
+	
+	option = {
+		name = LEB.116.a
+	}
+}
+country_event = {
+	id = LEB.117
+	title = LEB.117.t
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.117.d
+	
+	option = {
+		name = LEB.117.a
+	}
+}
+
+country_event = {
+	id = LEB.118
+	title = LEB.118.t
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.118.d
+	
+	option = {
+		name = LEB.118.a
+	}
+}
+country_event = {
+	id = LEB.119
+	title = LEB.119.t
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.119.d
+	
+	option = {
+		name = LEB.119.a
+	}
+}
+country_event = {
+	id = LEB.120
+	title = LEB.120.t
+	
+	trigger = {
+		tag = LEB
+		OR = {
+			has_country_flag = LEB_SSNP_WIN
+			has_country_flag = LEB_Kataeb_Win
+		}
+		FRA = {
+			has_war_with = GER
+		}
+	}
+	fire_only_once = yes
+	desc = LEB.120.d
+	
+	option = {
+		name = LEB.120.a
+		declare_war_on = { target = CAN type = take_state }
+		declare_war_on = { target = GER type = take_state }
+		create_wargoal = { target = GER type = take_state }
+	}
+	option = {
+		name = LEB.120.b
+		hidden_effect = {
+			country_event = {
+				id = LEB.121
+				days = 30
+			}
+		}
+	}
+	option = {
+		name = LEB.120.c
+	}
+}
+country_event = {
+	id = LEB.121
+	title = LEB.121.t
+	
+	is_triggered_only = yes
+	desc = LEB.121.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.121.a
+		declare_war_on = { target = CAN type = take_state }
+		declare_war_on = { target = GER type = take_state }
+	}
+	option = {
+		name = LEB.121.c
+	}
+}
+country_event = {
+	id = LEB.122
+	title = LEB.122.t
+	picture = GFX_decision_Democratic_Assembly
+	
+	is_triggered_only = yes
+	desc = LEB.122.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.122.a
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		add_popularity = { ideology = totalist popularity = 0.65 }
+		clr_country_flag = NR_LEADER_GUI_VISIBLE
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Farid_Jubran_hog_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = LEB_Youssef_Ibrahim_Yazbek_for_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = LEB_Artin_Madoyan_eco_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = LEB_Akram_al_Hourani_sec_rso
+	}
+	option = {
+		name = LEB.122.b
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		add_popularity = { ideology = syndicalist popularity = 0.65 }
+		clr_country_flag = NR_LEADER_GUI_VISIBLE
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Akram_al_Haurani_hog_syn
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = LEB_Michel_Aflaq_for_syn
+		remove_ideas_with_trait = economy_minister
+		add_ideas = LEB_Salah_al_Din_al_Bitar_eco_syn
+		remove_ideas_with_trait = security_minister
+		add_ideas = LEB_Zaki_al_Arsuzi_sec_syn
+		set_cosmetic_tag = LEB_arab_republic
+	}
+}
+
+country_event = {
+	id = LEB.123
+	title = LEB.123.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	is_triggered_only = yes
+	desc = LEB.123.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.123.a
+	}
+	option = {
+		name = LEB.123.b
+	}
+}
+
+country_event = {
+	id = LEB.124
+	title = LEB.124.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	is_triggered_only = yes
+	desc = LEB.124.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.124.a
+	}
+}
+
+country_event = {
+	id = LEB.125
+	title = LEB.125.t
+	picture = GFX_The_martyrdom_of_the_saints
+	
+	is_triggered_only = yes
+	desc = LEB.125.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.125.a
+	}
+}
+
+country_event = {
+	id = LEB.126
+	title = LEB.126.t
+	picture = GFX_decision_Croatian_Revolu_ionary_Movement
+	
+	trigger = {
+		tag = LEB
+		LEB = {
+			check_variable = { 
+				ALG_RFAU_var > 0.99
+			}
+		}
+	}
+	desc = LEB.126.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.126.a
+		ALG = {
+			transfer_state = 805
+			transfer_state = 459
+			transfer_state = 460
+			transfer_state = 513
+			transfer_state = 514
+			set_cosmetic_tag = ALG_arab_republic
+			hidden_effect = {
+				add_popularity = { ideology = syndicalist popularity = 1 }
+				set_politics = { ruling_party = syndicalist }
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 15000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = 500
+				producer = LEB
+			}
+			if = {
+				limit = { LEB = { has_country_flag = LEB_ALG_Dispatch_of_teaching_missions_Yes } }
+				division_template = {
+					name = "Lebanon Teaching Corps"
+					division_names_group = ALG_NRARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade  = { x = 3 y = 0 }
+						artillery_brigade  = { x = 3 y = 1 }
+						artillery_brigade  = { x = 3 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Lebanon Teaching Corps\" division_template = \"Lebanon Teaching Corps\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ALG
+						}
+						create_unit = {
+							division = "name = \"Lebanon Teaching Corps\" division_template = \"Lebanon Teaching Corps\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ALG
+						}
+					}
+				}
+				if = {
+				limit = { LEB = { has_country_flag = LEB_ALG_Training_resistance_fighters_Yes } }
+				division_template = {
+					name = "Algerian Resistance Army"
+					division_names_group = ALG_NRARMY_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Algerian Resistance Army\" division_template = \"Algerian Resistance Army\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ALG
+						}
+						create_unit = {
+							division = "name = \"Algerian Resistance Army\" division_template = \"Algerian Resistance Army\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = ALG
+						}
+					}
+				}
+				division_template = {
+					name = "Algerian uprising militia"
+					division_names_group = ALG_NRARMY_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Algerian uprising militia\" division_template = \"Algerian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ALG
+					}
+					create_unit = {
+						division = "name = \"Algerian uprising militia\" division_template = \"Algerian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ALG
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Algerian uprising militia\" division_template = \"Algerian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ALG
+					}
+					create_unit = {
+						division = "name = \"Algerian uprising militia\" division_template = \"Algerian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ALG
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Algerian uprising militia\" division_template = \"Algerian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ALG
+					}
+				}
+			}
+		TUN = {
+			transfer_state = 458
+			transfer_state = 665
+			set_cosmetic_tag = TUN_arab_republic
+			hidden_effect = {
+				add_popularity = { ideology = syndicalist popularity = 1 }
+				set_politics = { ruling_party = syndicalist }
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 15000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = 500
+				producer = LEB
+			}
+			if = {
+				limit = { LEB = { has_country_flag = LEB_ALG_Dispatch_of_teaching_missions_Yes } }
+				division_template = {
+					name = "Lebanon Teaching Corps"
+					division_names_group = ALG_NRARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade  = { x = 3 y = 0 }
+						artillery_brigade  = { x = 3 y = 1 }
+						artillery_brigade  = { x = 3 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Lebanon Teaching Corps\" division_template = \"Lebanon Teaching Corps\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = TUN
+						}
+						create_unit = {
+							division = "name = \"Lebanon Teaching Corps\" division_template = \"Lebanon Teaching Corps\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = TUN
+						}
+					}
+				}
+			if = {
+				limit = { LEB = { has_country_flag = LEB_ALG_Training_resistance_fighters_Yes } }
+				division_template = {
+					name = "Tunisian Resistance Army"
+					division_names_group = TUN_NRARMY_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Tunisian Resistance Army\" division_template = \"Tunisian Resistance Army\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = TUN
+						}
+						create_unit = {
+							division = "name = \"Tunisian Resistance Army\" division_template = \"Tunisian Resistance Army\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = TUN
+						}
+					}
+				}
+			division_template = {
+					name = "Tunisian rebel militia"
+					division_names_group = TUN_NRARMY_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tunisian rebel militia\" division_template = \"Tunisian rebel militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = TUN
+					}
+					create_unit = {
+						division = "name = \"Tunisian rebel militia\" division_template = \"Tunisian rebel militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = TUN
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tunisian rebel militia\" division_template = \"Tunisian rebel militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = TUN
+					}
+					create_unit = {
+						division = "name = \"Tunisian rebel militia\" division_template = \"Tunisian rebel militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = TUN
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tunisian rebel militia\" division_template = \"Tunisian rebel militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = TUN
+					}
+				}
+			NFA = {
+				declare_war_on = { target = ALG type = annex_everything }
+				declare_war_on = { target = TUN type = annex_everything }
+			}
+			ALG = {
+				create_faction = 北非抵抗阵线
+				add_to_faction = TUN
+			}
+			set_country_flag = The_Great_Algerian_Uprising
+			unlock_decision_category_tooltip = LEB_ALG_The_day_of_wrath
+		}
+	}
+}
+country_event = {
+	id = LEB.127
+	title = LEB.127.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	is_triggered_only = yes
+	desc = LEB.127.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.127.a
+		division_template = {
+			name = "Algerian uprising militia"
+			division_names_group = ALG_NRARMY_02
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Algerian uprising militia\" division_template = \"Algerian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = LEB
+			}
+			create_unit = {
+				division = "name = \"Algerian uprising militia\" division_template = \"Algerian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = LEB
+			}
+		}
+	}
+}
+country_event = {
+	id = LEB.128
+	title = LEB.128.t
+	picture = GFX_decision_Croatian_Revolu_ionary_Movement
+	
+	is_triggered_only = yes
+	desc = LEB.128.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.128.a
+		annex_country = { target = ALG transfer_troops = yes }
+		annex_country = { target = TUN transfer_troops = yes }
+		every_state = {
+			limit = { is_core_of = ALG }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TUN }
+			add_core_of = LEB
+		}
+	}
+}
+
+country_event = {
+	id = LEB.129
+	title = LEB.129.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	trigger = {
+		tag = LEB
+		LEB = {
+			check_variable = { 
+				TRP_RFTU_var > 0.99
+			}
+		}
+	}
+	desc = LEB.129.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.129.a
+		TRP = {
+			transfer_state = 273
+			transfer_state = 448
+			set_cosmetic_tag = TRP_arab_republic
+			hidden_effect = {
+				add_popularity = { ideology = syndicalist popularity = 1 }
+				set_politics = { ruling_party = syndicalist }
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 15000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = 500
+				producer = LEB
+			}
+			if = {
+				limit = { LEB = { has_country_flag = LEB_TRP_Training_resistance_fighters_Yes } }
+				division_template = {
+					name = "Lebanon Teaching Corps"
+					division_names_group = TRP_NRARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade  = { x = 3 y = 0 }
+						artillery_brigade  = { x = 3 y = 1 }
+						artillery_brigade  = { x = 3 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Lebanon Teaching Corps\" division_template = \"Lebanon Teaching Corps\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = TRP
+						}
+						create_unit = {
+							division = "name = \"Lebanon Teaching Corps\" division_template = \"Lebanon Teaching Corps\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = TRP
+						}
+					}
+				}
+			if = {
+				limit = { LEB = { has_country_flag = LEB_TRP_Dispatch_of_teaching_missions_Yes } }
+				division_template = {
+					name = "Resistance Army of Tripoli"
+					division_names_group = TRP_NRARMY_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Resistance Army of Tripoli\" division_template = \"Resistance Army of Tripoli\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = TRP
+						}
+						create_unit = {
+							division = "name = \"Resistance Army of Tripoli\" division_template = \"Resistance Army of Tripoli\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = TRP
+						}
+					}
+				}
+			division_template = {
+					name = "Tripoli uprising militia"
+					division_names_group = TRP_NRARMY_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tripoli uprising militia\" division_template = \"Tripoli uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = TRP
+					}
+					create_unit = {
+						division = "name = \"Tripoli uprising militia\" division_template = \"Tripoli uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = TRP
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tripoli uprising militia\" division_template = \"Tripoli uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = TRP
+					}
+					create_unit = {
+						division = "name = \"Tripoli uprising militia\" division_template = \"Tripoli uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = TRP
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Tripoli uprising militia\" division_template = \"Tripoli uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = TRP
+					}
+				}
+			TUR = {
+				declare_war_on = { target = TRP type = annex_everything }
+			}
+			LBA = {
+				declare_war_on = { target = TRP type = annex_everything }
+			}
+			set_country_flag = The_Great_Tripolitania_Uprising
+			unlock_decision_category_tooltip = LEB_TRP_The_day_of_Gods_wrath
+		}
+	}
+}
+country_event = {
+	id = LEB.130
+	title = LEB.130.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	is_triggered_only = yes
+	desc = LEB.130.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.130.a
+		division_template = {
+			name = "Tripoli uprising militia"
+			division_names_group = TRP_NRARMY_02
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Tripoli uprising militia\" division_template = \"Tripoli uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = LEB
+			}
+			create_unit = {
+				division = "name = \"Tripoli uprising militia\" division_template = \"Tripoli uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = LEB
+			}
+		}
+	}
+}
+country_event = {
+	id = LEB.131
+	title = LEB.131.t
+	picture = GFX_decision_Croatian_Revolu_ionary_Movement
+	
+	is_triggered_only = yes
+	desc = LEB.131.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.131.a
+		annex_country = { target = TRP transfer_troops = yes }
+		every_state = {
+			limit = { is_core_of = TRP }
+			add_core_of = LEB
+		}
+	}
+}
+country_event = {
+	id = LEB.132
+	title = LEB.132.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	trigger = {
+		tag = LEB
+		LEB = {
+			check_variable = { 
+				HEJ_RFHU_var > 0.99
+			}
+		}
+	}
+	desc = LEB.132.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.132.a
+		HEJ = {
+			transfer_state = 679
+			transfer_state = 754
+			set_cosmetic_tag = HEJ_arab_republic
+			hidden_effect = {
+				add_popularity = { ideology = syndicalist popularity = 1 }
+				set_politics = { ruling_party = syndicalist }
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 15000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = 500
+				producer = LEB
+			}
+			if = {
+				limit = { LEB = { has_country_flag = LEB_HEJ_Training_resistance_fighters_Yes } }
+				division_template = {
+					name = "Lebanon Teaching Corps"
+					division_names_group = HEJ_NRARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade  = { x = 3 y = 0 }
+						artillery_brigade  = { x = 3 y = 1 }
+						artillery_brigade  = { x = 3 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Lebanon Teaching Corps\" division_template = \"Lebanon Teaching Corps\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = HEJ
+						}
+						create_unit = {
+							division = "name = \"Lebanon Teaching Corps\" division_template = \"Lebanon Teaching Corps\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = HEJ
+						}
+					}
+				}
+			if = {
+				limit = { LEB = { has_country_flag = LEB_HEJ_Dispatch_of_teaching_missions_Yes } }
+				division_template = {
+					name = "Hejaz Resistance Army"
+					division_names_group = HEJ_NRARMY_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Hejaz Resistance Army\" division_template = \"Hejaz Resistance Army\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = HEJ
+						}
+						create_unit = {
+							division = "name = \"Hejaz Resistance Army\" division_template = \"Hejaz Resistance Army\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = HEJ
+						}
+					}
+				}
+			division_template = {
+					name = "Hejaz uprising militia"
+					division_names_group = HEJ_NRARMY_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Hejaz uprising militia\" division_template = \"Hejaz uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = HEJ
+					}
+					create_unit = {
+						division = "name = \"Hejaz uprising militia\" division_template = \"Hejaz uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = HEJ
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Hejaz uprising militia\" division_template = \"Hejaz uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = HEJ
+					}
+					create_unit = {
+						division = "name = \"Hejaz uprising militia\" division_template = \"Hejaz uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = HEJ
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Hejaz uprising militia\" division_template = \"Hejaz uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = HEJ
+					}
+				}
+			TUR = {
+				declare_war_on = { target = HEJ type = annex_everything }
+			}
+			YEM = {
+				declare_war_on = { target = HEJ type = annex_everything }
+			}
+			set_country_flag = The_Great_Tripolitania_Uprising
+			unlock_decision_category_tooltip = LEB_HEJ_The_day_of_Gods_wrath
+		}
+	}
+}
+country_event = {
+	id = LEB.133
+	title = LEB.133.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	is_triggered_only = yes
+	desc = LEB.133.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.133.a
+		division_template = {
+			name = "Hejaz uprising militia"
+			division_names_group = HEJ_NRARMY_02
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Hejaz uprising militia\" division_template = \"Hejaz uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = LEB
+			}
+			create_unit = {
+				division = "name = \"Hejaz uprising militia\" division_template = \"Hejaz uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = LEB
+			}
+		}
+	}
+}
+country_event = {
+	id = LEB.134
+	title = LEB.134.t
+	picture = GFX_decision_Croatian_Revolu_ionary_Movement
+	
+	is_triggered_only = yes
+	desc = LEB.134.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.134.a
+		annex_country = { target = HEJ transfer_troops = yes }
+		every_state = {
+			limit = { is_core_of = HEJ }
+			add_core_of = LEB
+		}
+	}
+}
+country_event = {
+	id = LEB.135
+	title = LEB.135.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	trigger = {
+		tag = LEB
+		LEB = {
+			check_variable = { 
+				SYR_RFSU_var > 0.99
+			}
+		}
+	}
+	desc = LEB.135.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.135.a
+		SYR = {
+			transfer_state = 992
+			transfer_state = 455
+			transfer_state = 554
+			transfer_state = 995
+			transfer_state = 680
+			transfer_state = 677
+			transfer_state = 344
+			344 = { add_core_of = SYR }
+			set_cosmetic_tag = SYR_arab_republic
+			hidden_effect = {
+				add_popularity = { ideology = syndicalist popularity = 1 }
+				set_politics = { ruling_party = syndicalist }
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 15000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = 500
+				producer = LEB
+			}
+			division_template = {
+				name = "Syrian Resistance Army"
+				division_names_group = SYR_NRARMY_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					}
+				support = {
+					artillery = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+						division = "name = \"Syrian Resistance Army\" division_template = \"Syrian Resistance Army\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = SYR
+					}
+					create_unit = {
+						division = "name = \"Syrian Resistance Army\" division_template = \"Syrian Resistance Army\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = SYR
+					}
+				}
+			random_owned_controlled_state = {
+				create_unit = {
+						division = "name = \"Syrian Resistance Army\" division_template = \"Syrian Resistance Army\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = SYR
+					}
+					create_unit = {
+						division = "name = \"Syrian Resistance Army\" division_template = \"Syrian Resistance Army\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = SYR
+					}
+				}
+			division_template = {
+					name = "Syrian uprising militia"
+					division_names_group = SYR_NRARMY_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Syrian uprising militia\" division_template = \"Syrian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = SYR
+					}
+					create_unit = {
+						division = "name = \"Syrian uprising militia\" division_template = \"Syrian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = SYR
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Syrian uprising militia\" division_template = \"Syrian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = SYR
+					}
+					create_unit = {
+						division = "name = \"Syrian uprising militia\" division_template = \"Syrian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = SYR
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Syrian uprising militia\" division_template = \"Syrian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = SYR
+					}
+					create_unit = {
+						division = "name = \"Syrian uprising militia\" division_template = \"Syrian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = SYR
+					}
+				}
+			TUR = {
+				declare_war_on = { target = SYR type = annex_everything }
+			}
+			YEM = {
+				declare_war_on = { target = SYR type = annex_everything }
+			}
+			set_country_flag = The_Great_Syria_Uprising
+			unlock_decision_category_tooltip = LEB_SYR_The_day_of_weeping
+		}
+	}
+}
+country_event = {
+	id = LEB.136
+	title = LEB.136.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	is_triggered_only = yes
+	desc = LEB.136.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.136.a
+		division_template = {
+			name = "Syrian uprising militia"
+			division_names_group = SYR_NRARMY_02
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Syrian uprising militia\" division_template = \"Syrian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = LEB
+			}
+			create_unit = {
+				division = "name = \"Syrian uprising militia\" division_template = \"Syrian uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = LEB
+			}
+		}
+	}
+}
+country_event = {
+	id = LEB.137
+	title = LEB.137.t
+	picture = GFX_decision_Croatian_Revolu_ionary_Movement
+	
+	is_triggered_only = yes
+	desc = LEB.137.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.137.a
+		annex_country = { target = SYR transfer_troops = yes }
+		every_state = {
+			limit = { is_core_of = SYR }
+			add_core_of = LEB
+		}
+	}
+}
+country_event = {
+	id = LEB.138
+	title = LEB.138.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	trigger = {
+		tag = LEB
+		LEB = {
+			check_variable = { 
+				IRQ_RFIU_var > 0.99
+			}
+		}
+	}
+	desc = LEB.138.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.138.a
+		IRQ = {
+			transfer_state = 349
+			transfer_state = 676
+			transfer_state = 291
+			transfer_state = 812
+			set_cosmetic_tag = IRQ_arab_republic
+			hidden_effect = {
+				add_popularity = { ideology = syndicalist popularity = 1 }
+				set_politics = { ruling_party = syndicalist }
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 15000
+				producer = LEB
+			}
+			add_equipment_to_stockpile = {
+				type =  artillery_equipment
+				amount = 500
+				producer = LEB
+			}
+			if = {
+				limit = { LEB = { has_country_flag = LEB_IRQ_Training_resistance_fighters_Yes } }
+				division_template = {
+					name = "Lebanon Teaching Corps"
+					division_names_group = IRQ_NRARMY_00
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade  = { x = 3 y = 0 }
+						artillery_brigade  = { x = 3 y = 1 }
+						artillery_brigade  = { x = 3 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Lebanon Teaching Corps\" division_template = \"Lebanon Teaching Corps\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = IRQ
+						}
+						create_unit = {
+							division = "name = \"Lebanon Teaching Corps\" division_template = \"Lebanon Teaching Corps\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = IRQ
+						}
+					}
+				}
+			if = {
+				limit = { LEB = { has_country_flag = LEB_IRQ_Dispatch_of_teaching_missions_Yes } }
+				division_template = {
+					name = "Iraqi Resistance Forces"
+					division_names_group = IRQ_NRARMY_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Iraqi Resistance Forces\" division_template = \"Iraqi Resistance Forces\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = IRQ
+						}
+						create_unit = {
+							division = "name = \"Iraqi Resistance Forces\" division_template = \"Iraqi Resistance Forces\" start_experience_factor = 1 start_equipment_factor = 1"
+							allow_spawning_on_enemy_provs = yes
+							owner = IRQ
+						}
+					}
+				}
+			division_template = {
+					name = "Iraqi uprising militia"
+					division_names_group = IRQ_NRARMY_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Iraqi uprising militia\" division_template = \"Iraqi uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = IRQ
+					}
+					create_unit = {
+						division = "name = \"Iraqi uprising militia\" division_template = \"Iraqi uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = IRQ
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Iraqi uprising militia\" division_template = \"Iraqi uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = IRQ
+					}
+					create_unit = {
+						division = "name = \"Iraqi uprising militia\" division_template = \"Iraqi uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = IRQ
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Iraqi uprising militia\" division_template = \"Iraqi uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = IRQ
+					}
+				}
+			TUR = {
+				declare_war_on = { target = IRQ type = annex_everything }
+			}
+			JBS = {
+				declare_war_on = { target = IRQ type = annex_everything }
+			}
+			set_country_flag = The_Great_Iraq_Uprising
+			unlock_decision_category_tooltip = LEB_IRQ_The_Day_of_Judgment
+		}
+	}
+}
+country_event = {
+	id = LEB.139
+	title = LEB.139.t
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	is_triggered_only = yes
+	desc = LEB.139.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.139.a
+		division_template = {
+			name = "Iraqi uprising militia"
+			division_names_group = IRQ_NRARMY_02
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Iraqi uprising militia\" division_template = \"Iraqi uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = LEB
+			}
+			create_unit = {
+				division = "name = \"Iraqi uprising militia\" division_template = \"Iraqi uprising militia\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = LEB
+			}
+		}
+	}
+}
+country_event = {
+	id = LEB.140
+	title = LEB.140.t
+	picture = GFX_decision_Croatian_Revolu_ionary_Movement
+	
+	is_triggered_only = yes
+	desc = LEB.140.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.140.a
+		annex_country = { target = IRQ transfer_troops = yes }
+		every_state = {
+			limit = { is_core_of = IRQ }
+			add_core_of = LEB
+		}
+	}
+}
+
+country_event = {
+	id = LEB.141
+	title = LEB.141.t
+	picture = GFX_decision_Lebanon_Mountain_Counter_Revolution
+	
+	is_triggered_only = yes
+	desc = LEB.141.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.141.a
+		swap_ideas = {
+			remove_idea = LEB_Michel_Aflaq_for_syn
+			add_idea = LEB_Munif_al_Razzaz_for_syn
+		}
+	}
+	option = {
+		name = LEB.141.b
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Michel_Aflaq_hog_rso
+		add_popularity = { ideology = radical_socialist popularity = 0.65 }
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+			name = LEB_Arab_Socialist_Baath_party
+			long_name = LEB_Arab_Socialist_Baath_party_long
+		}
+		create_country_leader = {
+			name = "Michel Aflaq"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Michel_Aflaq.png"
+			desc = "POLITICS_KHALID_BAKDASH_DESC"
+			expire = "1.1.1"
+			ideology = radsoc_arab_socialism
+		}
+	}
+	option = {
+		name = LEB.141.c
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Michel_Aflaq_hog_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = LEB_Munif_al_Razzaz_for_syn
+		add_popularity = { ideology = social_democrat popularity = 0.65 }
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+			name = LEB_Arab_Socialist_Baath_party
+			long_name = LEB_Arab_Socialist_Baath_party_long
+			last_election = "1941.6.15"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		create_country_leader = {
+			name = "Michel Aflaq"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Michel_Aflaq.png"
+			desc = "POLITICS_KHALID_BAKDASH_DESC"
+			expire = "1.1.1"
+			ideology = socdem_junta_subtype
+		}
+	}
+	option = {
+		name = LEB.141.e
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = LEB_Munif_al_Razzaz_for_syn
+		add_popularity = { ideology = paternal_autocrat popularity = 0.65 }
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			name = LEB_Baathist_junta_party
+			long_name = LEB_Baathist_junta_party_long
+		}
+		create_country_leader = {
+			name = "Amin al Hafiz"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Amin_al_Hafiz.png"
+			desc = "POLITICS_KHALID_BAKDASH_DESC"
+			expire = "1.1.1"
+			ideology = red_tinted_autocracy_subtype
+		}
+	}
+	option = {
+		name = LEB.141.f
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Amin_al_Hafiz_hog_pau
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = LEB_Munif_al_Razzaz_for_syn
+		add_popularity = { ideology = paternal_autocrat popularity = 0.65 }
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			name = LEB_Baathist_junta_party
+			long_name = LEB_Baathist_junta_party_long
+		}
+		create_country_leader = {
+			name = "Amin al Hafiz"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Amin_al_Hafiz.png"
+			desc = "POLITICS_KHALID_BAKDASH_DESC"
+			expire = "1.1.1"
+			ideology = junta_subtype
+		}
+	}
+}
+country_event = {
+	id = LEB.142
+	title = LEB.142.t
+	picture = GFX_The_Death_of_the_Eagle
+	
+	is_triggered_only = yes
+	desc = LEB.142.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.142.a
+		add_manpower = -145
+		custom_effect_tooltip = Antoun_Sadeh_Die
+		create_country_leader = {
+			name = "权力真空"
+			picture = "gfx/leaders/CNT/no_leader.png"
+			desc = "POLITICS_KHALID_BAKDASH_DESC"
+			expire = "1.1.1"
+			ideology = antoun_saadeh_thought_subtype
+		}
+	}
+}
+country_event = {
+	id = LEB.143
+	title = LEB.143.t
+	picture = GFX_The_last_empire_of_the_Phoenicians
+	
+	is_triggered_only = yes
+	desc = LEB.143.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.143.a
+		453 = { add_core_of = LEB }
+		753 = { add_core_of = LEB }
+		446 = { add_core_of = LEB }
+		447 = { add_core_of = LEB }
+		452 = { add_core_of = LEB }
+		663 = { add_core_of = LEB }
+		451 = { add_core_of = LEB }
+		450 = { add_core_of = LEB }
+		448 = { add_core_of = LEB }
+		665 = { add_core_of = LEB }
+		458 = { add_core_of = LEB }
+		460 = { add_core_of = LEB }
+		459 = { add_core_of = LEB }
+		805 = { add_core_of = LEB }
+		290 = { add_core_of = LEB }
+		461 = { add_core_of = LEB }
+		180 = { add_core_of = LEB }
+		181 = { add_core_of = LEB }
+		112 = { add_core_of = LEB }
+		179 = { add_core_of = LEB }
+		114 = { add_core_of = LEB }
+		1002 = { add_core_of = LEB }
+		183 = { add_core_of = LEB }
+		182 = { add_core_of = LEB }
+		create_wargoal = { target = SRD type = annex_everything }
+		create_wargoal = { target = CRE type = annex_everything }
+		create_wargoal = { target = POR type = annex_everything }
+		create_wargoal = { target = TUR type = annex_everything }
+		create_wargoal = { target = GER type = annex_everything }
+		create_wargoal = { target = EGY type = annex_everything }
+		create_wargoal = { target = LBA type = annex_everything }
+		create_wargoal = { target = TRP type = annex_everything }
+		create_wargoal = { target = MOR type = annex_everything }
+		create_wargoal = { target = ALG type = annex_everything }
+		create_wargoal = { target = NFA type = annex_everything }
+		set_cosmetic_tag = LEB_Phoenicians_empire
+	}
+	option = {
+		name = LEB.143.b
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = LEB.144
+	title = LEB.144.t
+	picture = GFX_A_clear_proof_of_the_bifurcation_of_the_riverbank
+	
+	is_triggered_only = yes
+	desc = LEB.144.d
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = LEB_social_conservative_party
+				long_name = LEB_social_conservative_party_long
+			}
+			create_country_leader = {
+				name = "Sadr al-Din al-Sadr"
+				picture = "gfx/leaders/LEB/Portrait_LEB_Sadr_al_Din_al_Sadr.png"
+				expire = "1965.1.1"
+				ideology = islamism_subtype
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = LEB_social_conservative_party
+				long_name = LEB_social_conservative_party_long
+			}
+			create_country_leader = {
+				name = "Sadr al-Din al-Sadr"
+				picture = "gfx/leaders/LEB/Portrait_LEB_Sadr_al_Din_al_Sadr.png"
+				expire = "1965.1.1"
+				ideology = pataut_islamism_subtype
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = LEB_social_conservative_party
+				long_name = LEB_social_conservative_party_long
+			}
+			create_country_leader = {
+				name = "Sadr al-Din al-Sadr"
+				picture = "gfx/leaders/LEB/Portrait_LEB_Sadr_al_Din_al_Sadr.png"
+				expire = "1965.1.1"
+				ideology = natpop_islamism_subtype
+			}
+		}
+	}
+	
+	option = {
+		name = LEB.144.a
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.65
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = LEB.144.b
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.05
+		}
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		set_country_flag = AMAL_WIN2
+	}
+	option = {
+		name = LEB.144.c
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.65
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+	}
+}
+country_event = {
+	id = LEB.145
+	title = LEB.145.t
+	picture = GFX_A_clear_proof_of_the_bifurcation_of_the_riverbank
+	
+	is_triggered_only = yes
+	desc = LEB.145.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.145.a
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			name = "LEB_Allah_party"
+			long_name = "LEB_Allah_party_long"
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 1
+		}
+		create_country_leader = {
+			name = "Muhammad"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Muhammad.png"
+			expire = "1965.1.1"
+			ideology = islamism_subtype
+		}
+		set_country_flag = NR_LEADER_GUI_VISIBLE
+		set_country_flag = LEB_The_Prophet_has_returned
+		set_cosmetic_tag = LEB_shia5
+	}
+	option = {
+		name = LEB.145.b
+		add_political_power = 150
+		add_stability = 0.05
+		country_event = {
+			id = LEB.147
+			days = 3
+		}
+	}
+}
+country_event = {
+	id = LEB.146
+	title = LEB.146.t
+	picture = GFX_Pan_Islamic_Map
+	
+	is_triggered_only = yes
+	desc = LEB.146.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.146.a
+		every_state = {
+			limit = { is_core_of = TUR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = HEJ }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = JBS }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SAU }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = PER }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = YEM }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = OMA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = IRQ }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = PAL }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = LBA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TRP }
+			add_core_of = LEB
+		}
+		753 = { add_core_of = LEB }
+		446 = { add_core_of = LEB }
+		447 = { add_core_of = LEB }
+		452 = { add_core_of = LEB }
+		552 = { add_core_of = LEB }
+		1008 = { add_core_of = LEB }
+		456 = { add_core_of = LEB }
+		457 = { add_core_of = LEB }
+		create_wargoal = { target = TUR type = annex_everything }
+		create_wargoal = { target = HEJ type = annex_everything }
+		create_wargoal = { target = JBS type = annex_everything }
+		create_wargoal = { target = SAU type = annex_everything }
+		create_wargoal = { target = PER type = annex_everything }
+		create_wargoal = { target = YEM type = annex_everything }
+		create_wargoal = { target = OMA type = annex_everything }
+		create_wargoal = { target = IRQ type = annex_everything }
+		create_wargoal = { target = PAL type = annex_everything }
+		create_wargoal = { target = GER type = annex_everything }
+		create_wargoal = { target = EGY type = annex_everything }
+		create_wargoal = { target = LBA type = annex_everything }
+		create_wargoal = { target = TRP type = annex_everything }
+		set_cosmetic_tag = LEB_shia2
+	}
+	option = {
+		name = LEB.146.b
+		every_state = {
+			limit = { is_core_of = TUR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = HEJ }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = JBS }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SAU }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = PER }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = YEM }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = OMA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = IRQ }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = PAL }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = LBA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TRP }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = EGY }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SOM }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = ETH }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = ALG }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MOR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TUN }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MRT }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MAL }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SEN }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = GNA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SIE }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = BFA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = NER }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = WAD }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = AFG }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = ALO }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = KYR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TRK }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = UZB }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = BOS }
+			add_core_of = LEB
+		}
+		753 = { add_core_of = LEB }
+		268 = { add_core_of = LEB }
+		1297 = { add_core_of = LEB }
+		290 = { add_core_of = LEB }
+		296 = { add_core_of = LEB }
+		618 = { add_core_of = LEB }
+		617 = { add_core_of = LEB }
+		1083 = { add_core_of = LEB }
+		619 = { add_core_of = LEB }
+		1085 = { add_core_of = LEB }
+		287 = { add_core_of = LEB }
+		897 = { add_core_of = LEB }
+		353 = { add_core_of = LEB }
+		604 = { add_core_of = LEB }
+		774 = { add_core_of = LEB }
+		348 = { add_core_of = LEB }
+		621 = { add_core_of = LEB }
+		616 = { add_core_of = LEB }
+		283 = { add_core_of = LEB }
+		441 = { add_core_of = LEB }
+		891 = { add_core_of = LEB }
+		444 = { add_core_of = LEB }
+		443 = { add_core_of = LEB }
+		550 = { add_core_of = LEB }
+		961 = { add_core_of = LEB }
+		1208 = { add_core_of = LEB }
+		create_wargoal = { target = TUR type = annex_everything }
+		create_wargoal = { target = HEJ type = annex_everything }
+		create_wargoal = { target = JBS type = annex_everything }
+		create_wargoal = { target = SAU type = annex_everything }
+		create_wargoal = { target = PER type = annex_everything }
+		create_wargoal = { target = YEM type = annex_everything }
+		create_wargoal = { target = OMA type = annex_everything }
+		create_wargoal = { target = IRQ type = annex_everything }
+		create_wargoal = { target = PAL type = annex_everything }
+		create_wargoal = { target = GER type = annex_everything }
+		create_wargoal = { target = EGY type = annex_everything }
+		create_wargoal = { target = LBA type = annex_everything }
+		create_wargoal = { target = TRP type = annex_everything }
+		create_wargoal = { target = SOM type = annex_everything }
+		create_wargoal = { target = ETH type = annex_everything }
+		create_wargoal = { target = MAF type = annex_everything }
+		create_wargoal = { target = ALG type = annex_everything }
+		create_wargoal = { target = TUN type = annex_everything }
+		create_wargoal = { target = MOR type = annex_everything }
+		create_wargoal = { target = SPR type = annex_everything }
+		create_wargoal = { target = POR type = annex_everything }
+		create_wargoal = { target = NFA type = annex_everything }
+		create_wargoal = { target = ALG type = annex_everything }
+		create_wargoal = { target = TUN type = annex_everything }
+		create_wargoal = { target = MRT type = annex_everything }
+		create_wargoal = { target = MAL type = annex_everything }
+		create_wargoal = { target = SEN type = annex_everything }
+		create_wargoal = { target = GNA type = annex_everything }
+		create_wargoal = { target = SIE type = annex_everything }
+		create_wargoal = { target = BFA type = annex_everything }
+		create_wargoal = { target = NER type = annex_everything }
+		create_wargoal = { target = WAD type = annex_everything }
+		create_wargoal = { target = AFG type = annex_everything }
+		create_wargoal = { target = SIK type = annex_everything }
+		create_wargoal = { target = XSM type = annex_everything }
+		create_wargoal = { target = CHI type = annex_everything }
+		create_wargoal = { target = QIE type = annex_everything }
+		create_wargoal = { target = ETS type = annex_everything }
+		create_wargoal = { target = UZB type = annex_everything }
+		create_wargoal = { target = ALO type = annex_everything }
+		create_wargoal = { target = TRK type = annex_everything }
+		create_wargoal = { target = KYR type = annex_everything }
+		create_wargoal = { target = RUS type = annex_everything }
+		create_wargoal = { target = TRM type = annex_everything }
+		create_wargoal = { target = CRO type = annex_everything }
+		create_wargoal = { target = BOS type = annex_everything }
+		create_wargoal = { target = AUS type = annex_everything }
+		create_wargoal = { target = DEH type = annex_everything }
+		create_wargoal = { target = PRF type = annex_everything }
+		create_wargoal = { target = BHC type = annex_everything }
+		set_cosmetic_tag = LEB_shia2
+	}
+	option = {
+		name = LEB.146.c
+		every_state = {
+			limit = { is_core_of = SQI }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = LEP }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = LEC }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = FNG }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = YUN }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SHX }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = HNN }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = GXC }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = CHI }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = QIE }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = PHI }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TUR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = HEJ }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = JBS }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SAU }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = PER }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = YEM }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = OMA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = IRQ }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = PAL }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = LBA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TRP }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = EGY }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SOM }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = ETH }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = ALG }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MOR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TUN }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MRT }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MAL }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SEN }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = GNA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SIE }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = BFA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = NER }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = WAD }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = AFG }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = ALO }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = KYR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TRK }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = UZB }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = BOS }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = HUN }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = AUS }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = CRO }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = ALB }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = GRE }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = ROM }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SER }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = BUL }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SPR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = POR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = LIB }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = CIV }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = NGR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = CEA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = KEN }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = KIK }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = DEH }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = BHC }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MAD }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = PRF }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = NEP }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = BHU }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = BRM }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SIA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = GEA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = INC }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = INS }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = LAO }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = DEI }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SAR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MLY }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = CAM }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = VIN }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SKM }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TIB }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SZC }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MON }
+			add_core_of = LEB
+		}
+		745 = { add_core_of = LEB }
+		858 = { add_core_of = LEB }
+		756 = { add_core_of = LEB }
+		321 = { add_core_of = LEB }
+		1208 = { add_core_of = LEB }
+		583 = { add_core_of = LEB }
+		588 = { add_core_of = LEB }
+		422 = { add_core_of = LEB }
+		753 = { add_core_of = LEB }
+		268 = { add_core_of = LEB }
+		1297 = { add_core_of = LEB }
+		290 = { add_core_of = LEB }
+		296 = { add_core_of = LEB }
+		618 = { add_core_of = LEB }
+		617 = { add_core_of = LEB }
+		1083 = { add_core_of = LEB }
+		619 = { add_core_of = LEB }
+		1085 = { add_core_of = LEB }
+		287 = { add_core_of = LEB }
+		897 = { add_core_of = LEB }
+		353 = { add_core_of = LEB }
+		604 = { add_core_of = LEB }
+		774 = { add_core_of = LEB }
+		348 = { add_core_of = LEB }
+		621 = { add_core_of = LEB }
+		616 = { add_core_of = LEB }
+		283 = { add_core_of = LEB }
+		441 = { add_core_of = LEB }
+		891 = { add_core_of = LEB }
+		444 = { add_core_of = LEB }
+		443 = { add_core_of = LEB }
+		550 = { add_core_of = LEB }
+		961 = { add_core_of = LEB }
+		1231 = { add_core_of = LEB }
+		1265 = { add_core_of = LEB }
+		1263 = { add_core_of = LEB }
+		218 = { add_core_of = LEB }
+		245 = { add_core_of = LEB }
+		238 = { add_core_of = LEB }
+		1264 = { add_core_of = LEB }
+		1226 = { add_core_of = LEB }
+		237 = { add_core_of = LEB }
+		1266 = { add_core_of = LEB }
+		234 = { add_core_of = LEB }
+		1227 = { add_core_of = LEB }
+		235 = { add_core_of = LEB }
+		137 = { add_core_of = LEB }
+		1220 = { add_core_of = LEB }
+		1191 = { add_core_of = LEB }
+		1189 = { add_core_of = LEB }
+		1187 = { add_core_of = LEB }
+		233 = { add_core_of = LEB }
+		1186 = { add_core_of = LEB }
+		787 = { add_core_of = LEB }
+		232 = { add_core_of = LEB }
+		1190 = { add_core_of = LEB }
+		1080 = { add_core_of = LEB }
+		1188 = { add_core_of = LEB }
+		231 = { add_core_of = LEB }
+		1082 = { add_core_of = LEB }
+		1081 = { add_core_of = LEB }
+		1267 = { add_core_of = LEB }
+		229 = { add_core_of = LEB }
+		990 = { add_core_of = LEB }
+		1304 = { add_core_of = LEB }
+		998 = { add_core_of = LEB }
+		1302 = { add_core_of = LEB }
+		1298 = { add_core_of = LEB }
+		1299 = { add_core_of = LEB }
+		1300 = { add_core_of = LEB }
+		1301 = { add_core_of = LEB }
+		1303 = { add_core_of = LEB }
+		230 = { add_core_of = LEB }
+		524 = { add_core_of = LEB }
+		612 = { add_core_of = LEB }
+		1221 = { add_core_of = LEB }
+		196 = { add_core_of = LEB }
+		1234 = { add_core_of = LEB }
+		228 = { add_core_of = LEB }
+		526 = { add_core_of = LEB }
+		create_wargoal = { target = SZC type = annex_everything }
+		create_wargoal = { target = MON type = annex_everything }
+		create_wargoal = { target = JAP type = annex_everything }
+		create_wargoal = { target = QIE type = annex_everything }
+		create_wargoal = { target = PHI type = annex_everything }
+		create_wargoal = { target = CHI type = annex_everything }
+		create_wargoal = { target = HNN type = annex_everything }
+		create_wargoal = { target = GXC type = annex_everything }
+		create_wargoal = { target = SHX type = annex_everything }
+		create_wargoal = { target = YUN type = annex_everything }
+		create_wargoal = { target = FNG type = annex_everything }
+		create_wargoal = { target = LEC type = annex_everything }
+		create_wargoal = { target = LEP type = annex_everything }
+		create_wargoal = { target = SQI type = annex_everything }
+		create_wargoal = { target = TIB type = annex_everything }
+		create_wargoal = { target = SKM type = annex_everything }
+		create_wargoal = { target = MLY type = annex_everything }
+		create_wargoal = { target = DEI type = annex_everything }
+		create_wargoal = { target = INC type = annex_everything }
+		create_wargoal = { target = INS type = annex_everything }
+		create_wargoal = { target = CAM type = annex_everything }
+		create_wargoal = { target = VIN type = annex_everything }
+		create_wargoal = { target = LAO type = annex_everything }
+		create_wargoal = { target = SIA type = annex_everything }
+		create_wargoal = { target = BRM type = annex_everything }
+		create_wargoal = { target = GEA type = annex_everything }
+		create_wargoal = { target = SAR type = annex_everything }
+		create_wargoal = { target = NEP type = annex_everything }
+		create_wargoal = { target = BHU type = annex_everything }
+		create_wargoal = { target = KLY type = annex_everything }
+		create_wargoal = { target = KEN type = annex_everything }
+		create_wargoal = { target = KIK type = annex_everything }
+		create_wargoal = { target = DKB type = annex_everything }
+		create_wargoal = { target = CRM type = annex_everything }
+		create_wargoal = { target = UKR type = annex_everything }
+		create_wargoal = { target = CNT type = annex_everything }
+		create_wargoal = { target = CAR type = annex_everything }
+		create_wargoal = { target = MTR type = annex_everything }
+		create_wargoal = { target = KUB type = annex_everything }
+		create_wargoal = { target = AZB type = annex_everything }
+		create_wargoal = { target = GEO type = annex_everything }
+		create_wargoal = { target = CIV type = annex_everything }
+		create_wargoal = { target = NGR type = annex_everything }
+		create_wargoal = { target = CEA type = annex_everything }
+		create_wargoal = { target = TUR type = annex_everything }
+		create_wargoal = { target = HEJ type = annex_everything }
+		create_wargoal = { target = JBS type = annex_everything }
+		create_wargoal = { target = SAU type = annex_everything }
+		create_wargoal = { target = PER type = annex_everything }
+		create_wargoal = { target = YEM type = annex_everything }
+		create_wargoal = { target = OMA type = annex_everything }
+		create_wargoal = { target = IRQ type = annex_everything }
+		create_wargoal = { target = PAL type = annex_everything }
+		create_wargoal = { target = GER type = annex_everything }
+		create_wargoal = { target = EGY type = annex_everything }
+		create_wargoal = { target = LBA type = annex_everything }
+		create_wargoal = { target = TRP type = annex_everything }
+		create_wargoal = { target = SOM type = annex_everything }
+		create_wargoal = { target = ETH type = annex_everything }
+		create_wargoal = { target = MAF type = annex_everything }
+		create_wargoal = { target = ALG type = annex_everything }
+		create_wargoal = { target = TUN type = annex_everything }
+		create_wargoal = { target = MOR type = annex_everything }
+		create_wargoal = { target = SPR type = annex_everything }
+		create_wargoal = { target = POR type = annex_everything }
+		create_wargoal = { target = NFA type = annex_everything }
+		create_wargoal = { target = ALG type = annex_everything }
+		create_wargoal = { target = TUN type = annex_everything }
+		create_wargoal = { target = MRT type = annex_everything }
+		create_wargoal = { target = MAL type = annex_everything }
+		create_wargoal = { target = SEN type = annex_everything }
+		create_wargoal = { target = GNA type = annex_everything }
+		create_wargoal = { target = SIE type = annex_everything }
+		create_wargoal = { target = BFA type = annex_everything }
+		create_wargoal = { target = NER type = annex_everything }
+		create_wargoal = { target = WAD type = annex_everything }
+		create_wargoal = { target = AFG type = annex_everything }
+		create_wargoal = { target = SIK type = annex_everything }
+		create_wargoal = { target = XSM type = annex_everything }
+		create_wargoal = { target = ETS type = annex_everything }
+		create_wargoal = { target = UZB type = annex_everything }
+		create_wargoal = { target = ALO type = annex_everything }
+		create_wargoal = { target = TRK type = annex_everything }
+		create_wargoal = { target = KYR type = annex_everything }
+		create_wargoal = { target = RUS type = annex_everything }
+		create_wargoal = { target = TRM type = annex_everything }
+		create_wargoal = { target = CRO type = annex_everything }
+		create_wargoal = { target = BOS type = annex_everything }
+		create_wargoal = { target = AUS type = annex_everything }
+		create_wargoal = { target = HUN type = annex_everything }
+		create_wargoal = { target = BUL type = annex_everything }
+		create_wargoal = { target = ROM type = annex_everything }
+		create_wargoal = { target = ALB type = annex_everything }
+		create_wargoal = { target = ROM type = annex_everything }
+		create_wargoal = { target = GRE type = annex_everything }
+		create_wargoal = { target = SER type = annex_everything }
+		create_wargoal = { target = DEH type = annex_everything }
+		create_wargoal = { target = PRF type = annex_everything }
+		create_wargoal = { target = BHC type = annex_everything }
+		create_wargoal = { target = LIB type = annex_everything }
+		set_cosmetic_tag = LEB_shia2
+	}
+}
+country_event = {
+	id = LEB.147
+	title = LEB.147.t
+	picture = GFX_Pan_Islamic_Map
+	
+	is_triggered_only = yes
+	desc = LEB.147.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.147.a
+		every_state = {
+			limit = { is_core_of = HEJ }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = JBS }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SAU }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = YEM }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = OMA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = IRQ }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = PAL }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = LBA }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TRP }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = EGY }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = ALG }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MOR }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = MRT }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = TUN }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = ETH }
+			add_core_of = LEB
+		}
+		every_state = {
+			limit = { is_core_of = SOM }
+			add_core_of = LEB
+		}
+		753 = { add_core_of = LEB }
+		446 = { add_core_of = LEB }
+		447 = { add_core_of = LEB }
+		452 = { add_core_of = LEB }
+		552 = { add_core_of = LEB }
+		1008 = { add_core_of = LEB }
+		456 = { add_core_of = LEB }
+		457 = { add_core_of = LEB }
+		993 = { add_core_of = LEB }
+		907 = { add_core_of = LEB }
+		658 = { add_core_of = LEB }
+		450 = { add_core_of = LEB }
+		268 = { add_core_of = LEB }
+		1297 = { add_core_of = LEB }
+		550 = { add_core_of = LEB }
+		961 = { add_core_of = LEB }
+		421 = { add_core_of = LEB }
+		413 = { add_core_of = LEB }
+		create_wargoal = { target = MAF type = annex_everything }
+		create_wargoal = { target = PER type = annex_everything }
+		create_wargoal = { target = ALG type = annex_everything }
+		create_wargoal = { target = ETH type = annex_everything }
+		create_wargoal = { target = SOM type = annex_everything }
+		create_wargoal = { target = SPR type = annex_everything }
+		create_wargoal = { target = MOR type = annex_everything }
+		create_wargoal = { target = TUN type = annex_everything }
+		create_wargoal = { target = MRT type = annex_everything }
+		create_wargoal = { target = TUR type = annex_everything }
+		create_wargoal = { target = HEJ type = annex_everything }
+		create_wargoal = { target = JBS type = annex_everything }
+		create_wargoal = { target = SAU type = annex_everything }
+		create_wargoal = { target = YEM type = annex_everything }
+		create_wargoal = { target = OMA type = annex_everything }
+		create_wargoal = { target = IRQ type = annex_everything }
+		create_wargoal = { target = PAL type = annex_everything }
+		create_wargoal = { target = GER type = annex_everything }
+		create_wargoal = { target = EGY type = annex_everything }
+		create_wargoal = { target = LBA type = annex_everything }
+		create_wargoal = { target = TRP type = annex_everything }
+		if = {
+			limit = {
+				has_completed_focus = HARA_Revive_the_glory_of_Mount_Amir
+			}
+			every_state = {
+				limit = { is_core_of = AFG }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = PER }
+				add_core_of = LEB
+			}
+			every_state = {
+				limit = { is_core_of = TUR }
+				add_core_of = LEB
+			}
+			create_wargoal = { target = AFG type = annex_everything }
+		}
+		set_cosmetic_tag = LEB_shia4
+	}
+	option = {
+		name = LEB.147.b
+	}
+}
+country_event = {
+	id = LEB.148
+	title = LEB.148.t
+	picture = GFX_Pan_Turkism
+	
+	is_triggered_only = yes
+	desc = LEB.148.d
+	fire_only_once = yes
+	
+	option = {
+		name = LEB.148.a
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = LEB_grey_wolfs_party
+			long_name = LEB_grey_wolfs_long_party
+		}
+		create_country_leader = {
+			name = "Alparslan Türkeş"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Alparslan_Turkes.png"
+			expire = "1965.1.1"
+			ideology = technocratic_pan_turkism
+		}
+	}
+	option = {
+		name = LEB.148.b
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = LEB_grey_wolfs_party
+			long_name = LEB_grey_wolfs_long_party
+		}
+		create_country_leader = {
+			name = "Nihâl Atsız"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Nihal_Atsiz.png"
+			expire = "1965.1.1"
+			ideology = pan_turkism
+		}
+	}
+	option = {
+		name = LEB.148.c
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = LEB_grey_wolfs_party
+			long_name = LEB_grey_wolfs_long_party
+		}
+		create_country_leader = {
+			name = "Reha Oğuz Türkkan"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Reha_Oguz_Turkkan.png"
+			expire = "1965.1.1"
+			ideology = red_turanianism
+		}
+	}
+}
+	
+	############### independence war ##########
+	add_namespace = LEB
+country_event = {
+	id = LEB.200
+	title = LEB.200.t
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.200.d
+	option = {
+	name = LEB.200.a
+	custom_effect_tooltip = LEB_60_DAYS
+	
+	
+	TUR = {
+	declare_war_on = {
+    target = LEB
+    type = annex_everything
+}
+}
+	
+	add_manpower = 4000
+	add_stability = -0.1
+	custom_effect_tooltip = ninty_days_tt
+	TUR = {
+	add_ideas = TUR_LEB_war
+	}
+	hidden_effect = {
+	country_event = { id = LEB.201 #overseas industry
+	days = 2
+	}
+	country_event = { id = LEB.202 #white peace
+	days = 60
+	}
+	}
+	
+	
+	}
+	
+	}
+	
+  ###### overseas industry ######
+add_namespace = LEB
+country_event = {
+	id = LEB.201
+	title = LEB.201.t
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.201.d
+	option = {
+	name = LEB.201.a
+	custom_effect_tooltip = overseas_tt
+	if = {
+	limit = {
+	check_variable = { LEB_overseas_remittance = 8 }
+	
+	}
+	add_offsite_building = {
+	type = arms_factory
+	level = 10
+	}
+	add_manpower = 10000
+	}
+	
+	if = {
+	limit = {
+	check_variable = { LEB_overseas_remittance = 7 }
+	
+	}
+	add_offsite_building = {
+	type = arms_factory
+	level = 7
+	}
+	add_manpower = 7000
+	}
+	
+	if = {
+	limit = {
+	check_variable = { LEB_overseas_remittance = 6 }
+	
+	}
+	add_offsite_building = {
+	type = arms_factory
+	level = 6
+	}
+	add_manpower = 6000
+	}
+	
+	if = {
+	limit = {
+	check_variable = { LEB_overseas_remittance = 5 }
+	
+	}
+	add_offsite_building = {
+	type = arms_factory
+	level = 5
+	}
+	add_manpower = 5000
+	}
+	if = {
+	limit = {
+	check_variable = { LEB_overseas_remittance = 4 }
+	
+	}
+	add_offsite_building = {
+	type = arms_factory
+	level = 4
+	}
+	add_manpower = 4000
+	}
+	if = {
+	limit = {
+	check_variable = { LEB_overseas_remittance = 3 }
+
+	}
+	add_offsite_building = {
+	type = arms_factory
+	level = 3
+	}
+	add_manpower = 3000
+	}
+	if = {
+	limit = {
+	check_variable = { LEB_overseas_remittance = 2 }
+	
+	}
+	add_offsite_building = {
+	type = arms_factory
+	level = 2
+	}
+	add_manpower = 2000
+	}
+	if = {
+	limit = {
+	check_variable = { LEB_overseas_remittance = 1 }
+	
+	}
+	add_offsite_building = {
+	type = arms_factory
+	level = 1
+	}
+	add_manpower = 1000
+	}
+	if = {
+	limit = {
+	check_variable = { LEB_overseas_remittance = 0 }
+	}
+	add_manpower = 100
+	custom_effect_tooltip = fuck_you_tt
+	}
+	
+	}
+	
+	
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.1"
+	}
+
+
+	}	
+	
+	
+country_event = {
+	id = LEB.202
+	title = LEB.202.t
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = LEB.202.d
+	option = {
+	name = LEB.202.a
+	TUR = {
+	remove_ideas = TUR_LEB_war
+	}
+	
+	white_peace = TUR
+	if = {
+		limit = {
+			LEB = {
+				is_subject = no
+			}
+		}
+		set_country_flag = LEB_war_with_Ottman_Win
+		separate_peace_all_wars = yes
+	}
+	}
+immediate = {
+		log = "[GetDateText]:[Root.GetName]:eventLEB.1"
+	}
+
+
+
+
+	}

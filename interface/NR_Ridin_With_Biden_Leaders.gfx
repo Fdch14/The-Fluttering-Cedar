@@ -1,0 +1,39 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_NR_pm_button"
+		texturefile = "gfx/interface/GRU_pm_button.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_OTT_Huseyin_Rauf"
+		texturefile = "gfx/leaders/MOJ/Portrait_OTT_Huseyin_Rauf.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ISR_Morris_Abraham_Cohen"
+		texturefile = "gfx/leaders/PAL/Portrait_ISR_Morris_Abraham_Cohen.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_LEB_Sadr_al_Din_al_Sadr"
+		texturefile = "gfx/leaders/LEB/Portrait_LEB_Sadr_al_Din_al_Sadr.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ali_Munif_Bey"
+		texturefile = "gfx/leaders/LEB/Portrait_Ali_Munif_Bey.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PAL_Husayn_al_Khalidi"
+		texturefile = "gfx/leaders/MOJ/Portrait_PAL_Husayn_al_Khalidi.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PAL_Raghib_al_Nashashibi"
+		texturefile = "gfx/leaders/MOJ/Portrait_PAL_Raghib_al_Nashashibi.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PAL_Ahmet_Ferit_Tek"
+		texturefile = "gfx/leaders/MOJ/Portrait_PAL_Ahmet_Ferit_Tek.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PAL_Hassan_Sidqi_al_Dajani"
+		texturefile = "gfx/leaders/MOJ/Portrait_PAL_Hassan_Sidqi_al_Dajani.png"
+	}
+
+}

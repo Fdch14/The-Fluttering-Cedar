@@ -1,0 +1,2016 @@
+add_namespace = Israel
+add_namespace = ISRC
+
+country_event = {
+	id = ISRC.1
+	title = ISRC.1.t
+	desc = ISRC.1.d
+	picture = GFX_Israeli_civil_war
+	
+	immediate = {
+		hidden_effect = {
+			PAL = {
+				OVERLORD =  {
+					end_puppet = ROOT
+				}
+				leave_faction = yes
+				set_country_flag = ISR_has_war_with_MOJ
+			}
+			ISR = {
+				transfer_state = 992
+				992 = { add_core_of = ISR}
+				454 = { add_core_of = ISR}
+				set_country_flag = ISR_has_war_with_MOJ
+				inherit_technology = ENG
+				division_template = {
+					name = "Israeli Armed Forces"
+						division_names_group = ISR_NRARMY_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade  = { x = 3 y = 0 }
+						artillery_brigade  = { x = 3 y = 1 }
+						artillery_brigade  = { x = 3 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Israeli Armed Forces\" division_template = \"Israeli Armed Forces\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+					create_unit = {
+						division = "name = \"Israeli Armed Forces\" division_template = \"Israeli Armed Forces\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+					create_unit = {
+						division = "name = \"Israeli Armed Forces\" division_template = \"Israeli Armed Forces\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+					create_unit = {
+						division = "name = \"Israeli Armed Forces\" division_template = \"Israeli Armed Forces\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+					create_unit = {
+						division = "name = \"Israeli Armed Forces\" division_template = \"Israeli Armed Forces\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+					create_unit = {
+						division = "name = \"Israeli Armed Forces\" division_template = \"Israeli Armed Forces\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+					create_unit = {
+						division = "name = \"Israeli Armed Forces\" division_template = \"Israeli Armed Forces\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+					create_unit = {
+						division = "name = \"Israeli Armed Forces\" division_template = \"Israeli Armed Forces\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = ISR
+					}
+				}
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = ISRC.1.a
+		PAL = {
+			declare_war_on = { target = ISR type = annex_everything }
+		}
+		hidden_effect = {
+			ISR = {
+				complete_national_focus = ISR_Stern_withstood_the_pressure
+			}
+		}
+	}
+	option = {
+		name = ISRC.1.b
+		PAL = {
+			declare_war_on = { target = ISR type = annex_everything }
+		}
+		hidden_effect = {
+			ISR = {
+				complete_national_focus = ISR_Stern_withstood_the_pressure
+			}
+		}
+		ISR = {
+			change_tag_from = PAL
+		}
+	}
+}
+country_event = {
+	id = ISRC.2
+	title = ISRC.2.t
+	desc = ISRC.2.d
+	picture = GFX_Israeli_civil_war
+	
+	trigger = {
+		tag = ISR
+		has_country_flag = ISR_has_war_with_MOJ
+		has_war_with = PAL
+		PAL = {
+			surrender_progress > 0.4
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = ISRC.2.a
+		ISR = {
+			white_peace = PAL
+			transfer_state = 454
+		}
+		PAL = {
+			transfer_state = 453
+			set_cosmetic_tag = PAL_sinai
+		}
+		TUR = {
+			set_autonomy = {
+				target = PAL
+				autonomy_state = kr_ottoman_international_zone
+			}
+		}
+	}
+}
+country_event = {
+	id = ISRC.3
+	title = ISRC.3.t
+	desc = ISRC.3.d
+	picture = GFX_Israeli_civil_war
+	
+	trigger = {
+		tag = PAL
+		has_country_flag = ISR_has_war_with_MOJ
+		NOT = { country_exists = ISR }
+	}
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	option = {
+		name = ISRC.2.a
+		TUR = {
+			add_to_faction = PAL
+		}
+	}
+}
+country_event = {
+	id = ISRC.4
+	title = ISRC.4.t
+	desc = ISRC.4.d
+	picture = GFX_Israeli_civil_war
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = PLS_has_war_with_ISR
+			hidden_effect = {
+				992 = {
+					add_building_construction = {
+						type = bunker
+						level = 10
+						instant_build = yes
+						province = 1065
+					}
+					add_building_construction = {
+						type = bunker
+						level = 10
+						instant_build = yes
+						province = 7107
+					}
+				}
+			}
+			PLS = {
+				transfer_state = 992
+				992 = { add_core_of = PLS}
+				454 = { add_core_of = PLS}
+				set_country_flag = PLS_has_war_with_ISR
+				inherit_technology = ISR
+				division_template = {
+					name = "Palestine Liberation Army"
+						division_names_group = PLS_NRARMY_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade  = { x = 3 y = 0 }
+						artillery_brigade  = { x = 3 y = 1 }
+						artillery_brigade  = { x = 3 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Palestine Liberation Army\" division_template = \"Palestine Liberation Army\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = PLS
+					}
+					create_unit = {
+						division = "name = \"Palestine Liberation Army\" division_template = \"Palestine Liberation Army\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = PLS
+					}
+					create_unit = {
+						division = "name = \"Palestine Liberation Army\" division_template = \"Palestine Liberation Army\" start_experience_factor = 1 start_equipment_factor = 1"
+						allow_spawning_on_enemy_provs = yes
+						owner = PLS
+					}
+				}
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = ISRC.4.a
+		ISR = {
+			declare_war_on = { target = PLS type = annex_everything }
+		}
+	}
+	option = {
+		name = ISRC.4.b
+		ISR = {
+			declare_war_on = { target = PLS type = annex_everything }
+		}
+		PLS = {
+			change_tag_from = ISR
+		}
+	}
+}
+country_event = {
+	id = ISRC.5
+	title = ISRC.5.t
+	desc = ISRC.5.d
+	picture = GFX_Israeli_civil_war
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = ISRC.5.a
+	}
+}
+country_event = {
+	id = ISRC.6
+	title = ISRC.6.t
+	desc = ISRC.6.d
+	picture = GFX_Israeli_civil_war
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = ISRC.6.a
+		add_manpower = -1500
+	}
+	option = {
+		name = ISRC.6.t
+		hidden_effect = {
+			country_event = {
+				id = ISRC.1
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Israel.1
+	title = Israel.1.t
+	desc = Israel.1.d
+	picture = GFX_Israeli_civil_war
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.1.a
+		country_event = {
+			id = Israel.3
+			days = 3
+		}
+	}
+	option = {
+		name = Israel.1.b
+		random_unit_leader = {
+			limit = { has_id = 110472 }			
+			remove_unit_leader = yes
+		}
+		country_event = {
+			id = Israel.4
+			days = 3
+		}
+	}
+}
+country_event = {
+	id = Israel.2
+	title = Israel.2.t
+	desc = Israel.2.d
+	picture = GFX_Israeli_civil_war
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.2.a
+	}
+}
+country_event = {
+	id = Israel.3
+	title = Israel.3.t
+	desc = Israel.3.d
+	picture = GFX_Israeli_civil_war
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.3.a
+		random_unit_leader = {
+			limit = { has_id = 110472 }			
+			remove_unit_leader = yes
+		}
+		country_event = {
+			id = Israel.23
+			days = 2
+		}
+	}
+	option = {
+		name = Israel.3.b
+		country_event = {
+			id = Israel.9
+			days = 2
+		}
+	}
+}
+country_event = {
+	id = Israel.4
+	title = Israel.4.t
+	desc = Israel.4.d
+	picture = GFX_Israeli_civil_war
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.4.a
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		hidden_effect = {
+			set_popularities = {
+				totalist = 35
+				syndicalist = 25
+				radical_socialist = 30
+				social_democrat = 10
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 0
+				authoritarian_democrat = 0
+				paternal_autocrat = 0
+				national_populist = 0
+			}
+		}
+		country_event = {
+			id = Israel.5
+			days = 2
+		}
+	}
+	option = {
+		name = Israel.4.b
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		hidden_effect = {
+			set_popularities = {
+				totalist = 0
+				syndicalist = 0
+				radical_socialist = 0
+				social_democrat = 0
+				social_liberal = 20
+				market_liberal = 25
+				social_conservative = 20
+				authoritarian_democrat = 35
+				paternal_autocrat = 0
+				national_populist = 0
+			}
+		}
+		country_event = {
+			id = Israel.20
+			days = 2
+		}
+	}
+}
+country_event = {
+	id = Israel.5
+	title = Israel.5.t
+	desc = Israel.5.d
+	picture = GFX_event_The_socialist_camp_won
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.5.a
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+			name = ISR_totalist_party
+			long_name = ISR_totalist_party_long
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			name = ISR_totalist_party
+			long_name = ISR_totalist_party_long
+		}
+		complete_national_focus = ICP_The_ICP_won_a_resounding_victory
+		has_country_flag = Flag_Israel_Communist_Party_Win
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Central_Peoples_Committee_hog_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Esther_Vilenska_eco_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Meir_Vilner_for_tot
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Adolf_Berman_sec_tot
+		set_cosmetic_tag = ISR_Peoples_Republic
+		create_country_leader = {
+			name = "Central People's Committee"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Israeli_Communist_Party.png"
+			expire = "1.1.1"
+			ideology = tot_zionism
+		}
+		create_country_leader = {
+			name = "Central People's Committee"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Israeli_Communist_Party.png"
+			expire = "1.1.1"
+			ideology = radsoc_zionism
+		}
+		hidden_effect = {
+			country_event = {
+				id = Israel.6
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = Israel.5.b
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+			name = ISR_radical_socialist_party
+			long_name = ISR_radical_socialist_party_long
+		}
+		set_party_name = {
+			ideology = syndicalist
+			name = ISR_radical_socialist_party
+			long_name = ISR_radical_socialist_party_long
+		}
+		set_party_name = {
+			ideology = social_democrat
+			name = ISR_radical_socialist_party
+			long_name = ISR_radical_socialist_party_long
+		}
+		set_country_flag = Flag_MAPAI_Win
+		set_cosmetic_tag = ISR_Syndicalist_Republic
+		complete_national_focus = MAPAI_Labour_Party_Win
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Central_Committee_of_the_Labour_Party_hog_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Menachem_Bader_eco_syn
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Yisrael_Galili_for_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Berl_Repetur_sec_sde
+		create_country_leader = {
+			name = "Central Committee of the Labour Party"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Central_Committee_of_the_Labour_Party.png"
+			expire = "1.1.1"
+			ideology = centralized_syndicalism_subtype
+		}
+		create_country_leader = {
+			name = "Central Committee of the Labour Party"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Central_Committee_of_the_Labour_Party.png"
+			expire = "1.1.1"
+			ideology = radsoc_zionism
+		}
+		create_country_leader = {
+			name = "Central Committee of the Labour Party"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Central_Committee_of_the_Labour_Party.png"
+			expire = "1.1.1"
+			ideology = socdem_zionism
+		}
+		hidden_effect = {
+			country_event = {
+				id = Israel.12
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = Israel.5.c
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+			name = ISR_social_democrat_party
+			long_name = ISR_social_democrat_party_long
+		}
+		set_party_name = {
+			ideology = radical_socialist
+			name = ISR_social_democrat_party
+			long_name = ISR_social_democrat_party_long
+		}
+		set_party_name = {
+			ideology = social_liberal
+			name = ISR_social_democrat_party
+			long_name = ISR_social_democrat_party_long
+		}
+		set_country_flag = United_Labour_Party_Victory_Flag
+		complete_national_focus = HAPO_Victory_for_the_United_Labour_Party
+		set_cosmetic_tag = ISR_Woker_Republic
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Central_Committee_of_the_United_Labour_Party_hog_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Yitzhak_Yitzhaky_eco_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Shimon_Kanovitch_for_sli
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Reuven_Arazi_sec_sde
+		create_country_leader = {
+			name = "Central Committee of the United Labour Party"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Central_Committee_of_the_United_Labour_Party.png"
+			expire = "1.1.1"
+			ideology = radsoc_zionism
+		}
+		create_country_leader = {
+			name = "Central Committee of the United Labour Party"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Central_Committee_of_the_United_Labour_Party.png"
+			expire = "1.1.1"
+			ideology = socdem_zionism
+		}
+		create_country_leader = {
+			name = "Central Committee of the United Labour Party"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Central_Committee_of_the_United_Labour_Party.png"
+			expire = "1.1.1"
+			ideology = national_liberalism_subtype
+		}
+		hidden_effect = {
+			country_event = {
+				id = Israel.13
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = Israel.5.e
+		set_cosmetic_tag = ISR_KMT
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+			name = ISR_national_party
+			long_name = ISR_national_party_long
+		}
+		add_popularity = { ideology = radical_socialist popularity = 1 }
+		create_country_leader = {
+			name = "Morris Abraham Cohen"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Morris_Abraham_Cohen.png"
+			expire = "1.1.1"
+			ideology = radsoc_tridemism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Central_Committee_of_the_Kuomintang_hog_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Joseph_Roth_eco_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Abraham_Kaufman_for_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Laura_Margolis_sec_rso
+		country_event = {
+			id = Israel.17
+			days = 1
+		}
+	}
+}
+country_event = {
+	id = Israel.6
+	title = Israel.6.t
+	desc = Israel.6.d
+	picture = GFX_event_Communist_internal_elections
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.6.a
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Shmuel Mikunis"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Shmuel_Mikunis.png"
+			expire = "1.1.1"
+			ideology = authcom_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Shmuel_Mikunis_hog_tot
+		add_popularity = { ideology = totalist popularity = 0.8 }
+		complete_national_focus = ICP_Shmuel_Mikunis
+	}
+	option = {
+		name = Israel.6.b
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Jakub Berman"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Jakub_Berman.png"
+			expire = "1.1.1"
+			ideology = hardliner_bolshevism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Jakub_Berman_hog_tot
+		add_popularity = { ideology = totalist popularity = 0.8 }
+		complete_national_focus = ICP_Jakub_Berman
+	}
+	option = {
+		name = Israel.6.c
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Moshe Sneh"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Moshe_Sneh.png"
+			expire = "1.1.1"
+			ideology = radsoc_communism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Moshe_Sneh_hog_rso
+		add_popularity = { ideology = radical_socialist popularity = 0.8 }
+		complete_national_focus = ICP_Moshe_Sneh
+	}
+	option = {
+		name = Israel.6.e
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Leopold Trepper"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Leopold_Trepper.png"
+			expire = "1.1.1"
+			ideology = bukharinist_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Leopold_Trepper_hog_rso
+		add_popularity = { ideology = radical_socialist popularity = 0.8 }
+		complete_national_focus = ICP_Leopold_Trepper
+	}
+	option = {
+		name = Israel.6.f
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+			name = ISR_totalist1_party
+			long_name = ISR_totalist1_party_long
+		}
+		create_country_leader = {
+			name = "Tony Cliff"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Tony_Cliff.png"
+			expire = "1.1.1"
+			ideology = internationalism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Tony_Cliff_hog_tot
+		add_popularity = { ideology = totalist popularity = 0.8 }
+		complete_national_focus = ICP_Tony_Cliff
+	}
+	option = {
+		name = Israel.6.g
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+			name = ISR_totalist2_party
+			long_name = ISR_totalist2_party_long
+		}
+		create_country_leader = {
+			name = "Arthur Koestler"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Arthur_Koestler.png"
+			expire = "1.1.1"
+			ideology = burnhamite_thought_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Arthur_Koestler_hog_tot
+		add_popularity = { ideology = totalist popularity = 0.8 }
+		complete_national_focus = ICP_Arthur_Koestler
+	}
+}
+country_event = {
+	id = Israel.7
+	title = Israel.7.t
+	desc = Israel.7.d
+	picture = GFX_Judah_Magnes_Back_Home
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.7.a
+	}
+}
+country_event = {
+	id = Israel.8
+	title = Israel.8.t
+	desc = Israel.8.d
+	picture = GFX_Abba_Ahimeir
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.8.a
+		set_country_flag = Abba_Ahimeir_Get_Power
+	}
+	option = {
+		name = Israel.8.b
+	}
+}
+country_event = {
+	id = Israel.9
+	title = Israel.9.t
+	desc = Israel.9.d
+	picture = GFX_lohamei_herut_israel
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.9.a
+		set_politics = {
+			ruling_party = totalist
+			name = ISR_national_populist_party
+			long_name = ISR_national_populist_party_long
+		}
+		set_cosmetic_tag = ISR_national_worker
+		create_country_leader = {
+			name = "Avraham Stern"
+			picture = "gfx/leaders/PAL/Portrait_GRU_Avraham_Stern.png"
+			expire = "1.1.1"
+			ideology = british_maximism_subtype
+		}
+		add_popularity = { ideology = totalist popularity = 1 }
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/PAL/Portrait_GRU_Avraham_Stern.png"
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Avraham_Stern_hog_tot
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Israel_Eldad_eco_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Aryeh_Ben_Eliezer_for_tot
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Eliyahu_Giladi_sec_tot
+		set_country_flag = Lehi_The_regime_is_solid_Flag
+		complete_national_focus = ISR_Stern_our_Savior
+	}
+	option = {
+		name = Israel.9.b
+		set_politics = {
+			ruling_party = totalist
+			name = ISR_national_populist_party
+			long_name = ISR_national_populist_party_long
+		}
+		set_cosmetic_tag = ISR_national_worker
+		create_country_leader = {
+			name = "Nathan Yellin-Mor"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Nathan_Yellin_Mor.png"
+			expire = "1.1.1"
+			ideology = tot_reformed_natsynd_subtype
+		}
+		add_popularity = { ideology = totalist popularity = 1 }
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Nathan_Yellin_Mor_hog_tot
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Israel_Eldad_eco_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Aryeh_Ben_Eliezer_for_tot
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Eliyahu_Giladi_sec_tot
+		set_country_flag = Lehi_The_regime_is_solid_Flag
+		complete_national_focus = ISR_Nathan_Yellin_returns_to_the_roots_of_national_syndicalism
+	}
+	option = {
+		name = Israel.9.c
+		trigger = {
+			has_country_flag = Abba_Ahimeir_Get_Power
+		}
+		set_politics = {
+			ruling_party = national_populist
+			name = ISR_national_populist_party
+			long_name = ISR_national_populist_party_long
+		}
+		set_cosmetic_tag = ISR_national_worker
+		create_country_leader = {
+			name = "Abba Ahimeir"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Abba_Ahimeir.png"
+			expire = "1.1.1"
+			ideology = natpop_zionism
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Abba_Ahimeir_hog_npo
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Mordechai_Olmert_eco_npo
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Ya_akov_Meridor_for_npo
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Dov_Gruner_sec_npo
+		add_popularity = { ideology = national_populist popularity = 1 }
+		set_country_flag = Lehi_The_regime_is_solid_Flag
+		complete_national_focus = ISR_Anti_Stern_coup
+	}
+}
+country_event = {
+	id = Israel.10
+	title = Israel.10.t
+	desc = Israel.10.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.10.a
+		hidden_effect = {
+			country_event = {
+				id = Israel.7
+				days = 50
+			}
+		}
+	}
+}
+country_event = {
+	id = Israel.11
+	title = Israel.11.t
+	desc = Israel.11.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.11.a
+	}
+}
+country_event = {
+	id = Israel.12
+	title = Israel.12.t
+	desc = Israel.12.d
+	picture = GFX_Mapai_internal_elections
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.12.a
+		set_politics = {
+			ruling_party = syndicalist
+		}
+		create_country_leader = {
+			name = "Meir Ya'ari"
+			picture = "gfx/leaders/PAL/Portrait_PAL_meir_ya_ari.png"
+			expire = "1.1.1"
+			ideology = centralized_syndicalism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Meir_Ya_ari_hog_syn
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Menachem_Bader_eco_syn
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Moshe_Erem_for_syn
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Yisrael_Bar_Yehuda_sec_syn
+		add_popularity = { ideology = syndicalist popularity = 1 }
+		complete_national_focus = MAPAI_Meir_Yaari
+	}
+	option = {
+		name = Israel.12.b
+		set_politics = {
+			ruling_party = radical_socialist
+		}
+		create_country_leader = {
+			name = "Ya'akov Hazan"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Yaakov_Hazan.png"
+			expire = "1.1.1"
+			ideology = radsoc_zionism
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Ya_akov_Hazan_hog_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Mordechai_Bentov_eco_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Yisrael_Galili_for_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Yitzhak_Ben_Aharon_sec_rso
+		add_popularity = { ideology = radical_socialist popularity = 1 }
+		complete_national_focus = MAPAI_Yaakov_Hazan
+	}
+	option = {
+		name = Israel.12.c
+		set_politics = {
+			ruling_party = social_democrat
+		}
+		create_country_leader = {
+			name = "Yizahk Tabenkin"
+			picture = "gfx/leaders/PAL/Portrait_PAL_Yitzhat_Tabenkin.png"
+			expire = "1.1.1"
+			ideology = socdem_zionism
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Yizahk_Tabenkin_hog_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Eliezer_Peri_for_sde
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Hannah_Lamdan_eco_sde
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Berl_Repetur_sec_sde
+		add_popularity = { ideology = social_democrat popularity = 1 }
+		complete_national_focus = MAPAI_Yizahk_Tabenkin
+	}
+}
+country_event = {
+	id = Israel.13
+	title = Israel.13.t
+	desc = Israel.13.d
+	picture = GFX_Mapam_internal_elections
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.13.a
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Yosef Sprinzak"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Yosef_Sprinzak.png"
+			expire = "1.1.1"
+			ideology = radsoc_austromarxism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Yosef_Sprinzak_hog_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Yitzhak_Yitzhaky_eco_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Yisrael_Barzilai_for_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Haim_Yehuda_sec_rso
+		add_popularity = { ideology = radical_socialist popularity = 1 }
+		complete_national_focus = HAPO_Yosef_Sprinzak
+	}
+	option = {
+		name = Israel.13.b
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Levi Eshkol"
+			picture = "gfx/leaders/PAL/Portrait_PAL_Levi_Eshkol.png"
+			expire = "1.1.1"
+			ideology = revisionist_marxism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Levi_Eshkol_hog_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Pinhas_Lavon_eco_sde
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Moshe_Sharett_for_sde
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Yigal_Allon_sec_sde
+		add_popularity = { ideology = social_democrat popularity = 1 }
+		complete_national_focus = HAPO_Levi_Eshkol
+	}
+	option = {
+		name = Israel.13.c
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Golda Meir"
+			picture = "gfx/leaders/PAL/Portrait_PAL_Golda_Meir.png"
+			expire = "1.1.1"
+			ideology = soclib_liberal_socialism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Golda_Meir_hog_sli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Rachel_Cohen_Kagan_eco_sli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Shimon_Kanovitch_for_sli
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Yitzhak_Hans_Klinghoffer_sec_sli
+		add_popularity = { ideology = social_liberal popularity = 1 }
+		complete_national_focus = HAPO_Golda_Meir
+	}
+	option = {
+		name = Israel.13.e
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Judah Leon Magnes"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Judah_Leon_Magnes.png"
+			expire = "1.1.1"
+			ideology = socdem_radical_progressivism_subtype
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Judah_Leon_Magnes_hog_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Shlomo_Rosen_eco_sde
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Natan_Peled_for_sde
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Reuven_Arazi_sec_sde
+		set_cosmetic_tag = ISR_Palestine
+		add_popularity = { ideology = social_democrat popularity = 1 }
+		complete_national_focus = HAPO_Judah_Leon_Magnes
+	}
+}
+country_event = {
+	id = Israel.14
+	title = Israel.14.t
+	desc = Israel.14.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.14.a
+	}
+	
+}
+country_event = {
+	id = Israel.15
+	title = Israel.15.t
+	desc = Israel.15.d
+	picture = GFX_Haganah_military_coup
+	
+	immediate = {
+		hidden_effect = {
+			set_popularities = {
+				totalist = 5
+				syndicalist = 13
+				radical_socialist = 5
+				social_democrat = 12
+				social_liberal = 5
+				market_liberal = 5
+				social_conservative = 8
+				authoritarian_democrat = 27
+				paternal_autocrat = 13
+				national_populist = 7
+			}
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+			complete_national_focus = HAGANAH_Save_Israel
+			remove_ideas_with_trait = head_of_government
+			add_ideas = ISR_Moshe_Dayan_hog_ade
+			remove_ideas_with_trait = economy_minister
+			add_ideas = ISR_Yigael_Yadin_eco_ade
+			remove_ideas_with_trait = foreign_minister
+			add_ideas = ISR_Yaakov_Dori_for_ade
+			remove_ideas_with_trait = security_minister
+			add_ideas = ISR_Haim_Laskov_sec_ade
+			create_country_leader = {
+				name = "Moshe Dayan"
+				picture = "gfx/leaders/PAL/Portrait_ISR_Moshe_Dayan.png"
+				expire = "1.1.1"
+				ideology = haganah_military_rule_subtype
+			}
+			set_cosmetic_tag = ISR_Haganah
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.15.a
+		hidden_effect = {
+			set_politics = {
+				ruling_party = syndicalist
+				elections_allowed = no
+				name = ISR_Haganah_party
+				long_name = ISR_Haganah_party_long
+			}
+			complete_national_focus = HAGANAH_Unexpected_collaboration
+			remove_ideas_with_trait = head_of_government
+			add_ideas = ISR_Meir_Ya_ari_hog_syn
+			create_country_leader = {
+				name = "Moshe Dayan"
+				picture = "gfx/leaders/PAL/Portrait_ISR_Moshe_Dayan.png"
+				expire = "1.1.1"
+				ideology = syn_haganah_military_rule_subtype
+			}
+			add_popularity = { ideology = syndicalist popularity = 0.52 }
+		}
+	}
+	option = {
+		name = Israel.15.b
+		hidden_effect = {
+			set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = no
+				name = ISR_Haganah_party
+				long_name = ISR_Haganah_party_long
+			}
+			complete_national_focus = HAGANAH_An_olive_branch_from_an_old_face
+			remove_ideas_with_trait = head_of_government
+			add_ideas = ISR_Levi_Eshkol_hog_sde
+			create_country_leader = {
+				name = "Moshe Dayan"
+				picture = "gfx/leaders/PAL/Portrait_ISR_Moshe_Dayan.png"
+				expire = "1.1.1"
+				ideology = socdem_haganah_military_rule_subtype
+			}
+			add_popularity = { ideology = social_democrat popularity = 0.53 }
+		}
+	}
+	option = {
+		name = Israel.15.c
+		hidden_effect = {
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+				name = ISR_Haganah2_party
+				long_name = ISR_Haganah2_party_long
+			}
+			complete_national_focus = HAGANAH_Haganah_is_in_charge
+			create_country_leader = {
+				name = "Moshe Dayan"
+				picture = "gfx/leaders/PAL/Portrait_ISR_Moshe_Dayan.png"
+				expire = "1.1.1"
+				ideology = haganah_military_rule_subtype
+			}
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.38 }
+		}
+	}
+	option = {
+		name = Israel.15.e
+		hidden_effect = {
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+				name = ISR_Haganah2_party
+				long_name = ISR_Haganah2_party_long
+			}
+			complete_national_focus = HAGANAH_The_dagger_of_revisionism
+			remove_ideas_with_trait = head_of_government
+			add_ideas = ISR_Benzion_Netanyahu_hog_pau
+			create_country_leader = {
+				name = "Moshe Dayan"
+				picture = "gfx/leaders/PAL/Portrait_ISR_Moshe_Dayan.png"
+				expire = "1.1.1"
+				ideology = pataut_haganah_military_rule_subtype
+			}
+			add_popularity = { ideology = paternal_autocrat popularity = 0.52 }
+		}
+	}
+}
+country_event = {
+	id = Israel.16
+	title = Israel.16.t
+	desc = Israel.16.d
+	picture = GFX_German_Map
+	
+	trigger = {
+		AND = {
+			tag = ISR
+			controls_state = 780
+			controls_state = 50
+			controls_state = 52
+			controls_state = 53
+			controls_state = 54
+			controls_state = 42
+			controls_state = 51
+			controls_state = 781
+			controls_state = 55
+			controls_state = 60
+			controls_state = 57
+			controls_state = 56
+			controls_state = 59
+			controls_state = 61
+			controls_state = 64
+			controls_state = 65
+			controls_state = 58
+			controls_state = 839
+			controls_state = 782
+			controls_state = 62
+			NOT = { country_exists = GER }
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.16.a
+		if = {
+			limit = {
+				OR = {
+					has_government = totalist
+					has_government = syndicalist
+					has_government = radical_socialist
+					has_government = social_democrat
+					AND = {
+						has_government = social_liberal
+						has_country_leader = {
+							name = "Golda Meir"
+							ruling_only = yes
+						}
+					}
+				}
+			}
+			WGR = {
+				transfer_state = 780
+				transfer_state = 50
+				transfer_state = 52
+				transfer_state = 53
+				transfer_state = 54
+				transfer_state = 42
+				transfer_state = 51
+				transfer_state = 781
+				transfer_state = 55
+				transfer_state = 60
+				transfer_state = 57
+				transfer_state = 56
+				transfer_state = 59
+				transfer_state = 61
+				transfer_state = 64
+				transfer_state = 65
+				transfer_state = 58
+				transfer_state = 839
+				transfer_state = 782
+				transfer_state = 62
+				every_state = {
+					limit = { is_core_of = GER }
+					add_core_of = WGR
+				}
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = ISR_German_people_government
+				ISR = {
+					set_autonomy = {
+						target = WGR
+						autonomy_state = kr_colonial_government
+					}
+				}
+				hidden_effect = {
+					set_party_name = {
+						ideology = totalist
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_party_name = {
+						ideology = radical_socialist
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_party_name = {
+						ideology = syndicalist
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_party_name = {
+						ideology = social_liberal
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_party_name = {
+						ideology = social_democrat
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_popularities = {
+						totalist = 20
+						syndicalist = 20
+						radical_socialist = 20
+						social_democrat = 20
+						social_liberal = 20
+						market_liberal = 0
+						social_conservative = 0
+						authoritarian_democrat = 0
+						paternal_autocrat = 0
+						national_populist = 0
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = tot_zionism
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = syn_red_junta_subtype
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = radsoc_colonial_govt_subtype
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = socdem_junta_subtype
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = soclib_liberal_socialism_subtype
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_government = market_liberal
+					has_government = social_conservative
+					has_government = authoritarian_democrat
+					has_government = paternal_autocrat
+					has_government = national_populist
+					AND = {
+						has_government = social_liberal
+						NOT = {
+							has_country_leader = {
+								name = "Golda Meir"
+								ruling_only = yes
+							}
+						}
+					}
+				}
+			}
+			WGR = {
+				transfer_state = 780
+				transfer_state = 50
+				transfer_state = 52
+				transfer_state = 53
+				transfer_state = 54
+				transfer_state = 42
+				transfer_state = 51
+				transfer_state = 781
+				transfer_state = 55
+				transfer_state = 60
+				transfer_state = 57
+				transfer_state = 56
+				transfer_state = 59
+				transfer_state = 61
+				transfer_state = 64
+				transfer_state = 65
+				transfer_state = 58
+				transfer_state = 839
+				transfer_state = 782
+				transfer_state = 62
+				every_state = {
+					limit = { is_core_of = GER }
+					add_core_of = WGR
+				}
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = ISR_Kaiser
+				ISR = {
+					set_autonomy = {
+						target = WGR
+						autonomy_state = kr_colonial_government
+					}
+				}
+				hidden_effect = {
+					set_party_name = {
+						ideology = market_liberal
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_party_name = {
+						ideology = authoritarian_democrat
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_party_name = {
+						ideology = social_conservative
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_party_name = {
+						ideology = social_liberal
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_party_name = {
+						ideology = national_populist
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						name = ISR_Martial_law_party
+						long_name = ISR_Martial_law_party_long
+					}
+					set_popularities = {
+						totalist = 0
+						syndicalist = 0
+						radical_socialist = 0
+						social_democrat = 0
+						social_liberal = 16
+						market_liberal = 16
+						social_conservative = 17
+						authoritarian_democrat = 17
+						paternal_autocrat = 17
+						national_populist = 17
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = soclib_warlordism_subtype
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = marlib_zionism
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = soccon_zionism
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = autdem_zionism
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = pataut_zionism
+					}
+					create_country_leader = {
+						name = "Mordechai Maklef"
+						picture = "gfx/leaders/PAL/Portrait_ISR_Mordechai_Maklef.png"
+						expire = "1.1.1"
+						ideology = natpop_zionism
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = Israel.16.b
+		random_owned_controlled_state={
+			add_extra_state_shared_building_slots = 2
+			add_building_construction={
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state={
+			add_extra_state_shared_building_slots = 2
+			add_building_construction={
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state={
+			add_extra_state_shared_building_slots = 2
+			add_building_construction={
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state={
+			add_extra_state_shared_building_slots = 2
+			add_building_construction={
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = Israel.17
+	title = Israel.17.t
+	desc = Israel.17.d
+	picture = GFX_Kuomintang_of_Israel
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.17.a
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+			name = ISR_national_party
+			long_name = ISR_national_party_long
+		}
+		add_popularity = { ideology = totalist popularity = 1 }
+		create_country_leader = {
+			name = "Hans Müller"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Hans_Muller.png"
+			expire = "1.1.1"
+			ideology = tot_tridemism_subtype
+		}
+		complete_national_focus = INP_Kuomintang_Israel
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Hans_Muller_hog_tot
+	}
+	option = {
+		name = Israel.17.b
+		complete_national_focus = INP_Kuomintang_Israel
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Morris_Abraham_Cohen_hog_rso
+	}
+}
+country_event = {
+	id = Israel.18
+	title = Israel.18.t
+	desc = Israel.18.d
+	picture = GFX_Cultists_scuffle
+	
+	
+	trigger = {
+		tag = ISR
+		date > 1938.12.25
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.18.a
+		add_stability = -0.05
+		add_ideas = ISR_national_judaism_ideas
+	}
+	option = {
+		name = Israel.18.b
+		add_war_support = -0.05
+		add_ideas = ISR_Conscription_orders_ideas
+	}
+	option = {
+		name = Israel.18.c
+		add_stability = -0.1
+		add_ideas = ISR_Forced_secularization_ideas
+	}
+}
+country_event = {
+	id = Israel.19
+	title = Israel.19.t
+	desc = Israel.19.d
+	picture = GFX_Cultists_scuffle
+	
+	trigger = {
+		tag = ISR
+		has_country_leader = {
+			name = "Morris Abraham Cohen"
+			ruling_only = yes
+		}
+		592 = { is_owned_by_ROOT_or_ally = yes } #Guangzhou
+		608 = { is_owned_by_ROOT_or_ally = yes } #Beijing
+		613 = { is_owned_by_ROOT_or_ally = yes } #Nanjing
+		1048 = { is_owned_by_ROOT_or_ally = yes } #Wuhan
+		716 = { is_owned_by_ROOT_or_ally = yes } #Shenyang
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.19.a
+		set_party_name = {
+			ideology = radical_socialist
+			name = CHI_pac_party
+			long_name = CHI_pac_party_long
+		}
+		set_cosmetic_tag = YUN_CHI_ROC
+		create_country_leader = {
+			name = "Song Qingling"
+			picture = "gfx/leaders/CHI/Portrait_CHI_Song_Qingling.png"
+			expire = "1.1.1"
+			ideology = radsoc_tridemism_subtype
+		}
+		set_country_flag = NR_LEADER_GUI_VISIBLE
+		set_capital = { state = 613 }
+	}
+}
+country_event = {
+	id = Israel.20
+	title = Israel.20.t
+	desc = Israel.20.d
+	picture = GFX_Democratic_Alliance
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.20.a
+		complete_national_focus = ILP_The_Liberals_won
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Peretz_Bernstein_hog_mli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Yosef_Serlin_eco_mli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Yosef_Sapir_for_mli
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Elimelekh_Shimon_Rimalt_sec_mli
+		hidden_effect = {
+			country_event = {
+				id = Israel.21
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = Israel.20.b
+		complete_national_focus = HERUT_Herut_won
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Haim_Moshe_Shapira_hog_sco
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Shlomo_Joseph_Burg_eco_sco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Moshe_Unna_for_sco
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Eliyahu_Moshe_Ganhovsky_sec_sco
+		hidden_effect = {
+			country_event = {
+				id = Israel.22
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = Israel.21
+	title = Israel.21.t
+	desc = Israel.21.d
+	picture = GFX_Miflaga_Libralit
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.21.a
+		complete_national_focus = ILP_Pinchas_Rosen
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+			name = ISR_market_liberal_party
+			long_name = ISR_market_liberal_party_long
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Pinchas_Rosen_hog_sli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Idov_Cohen_eco_sli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Moshe_Kol_for_sli
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Yizhar_Harari_sec_sli
+		add_popularity = { ideology = social_liberal popularity = 1 }
+		create_country_leader = {
+			name = "Pinchas Rosen"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Pinchas_Rosen.png"
+			expire = "1.1.1"
+			ideology = soclib_radical_progressivism_subtype
+		}
+	}
+	option = {
+		name = Israel.21.b
+		complete_national_focus = ILP_Peretz_Bernstein
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Peretz_Bernstein_hog_mli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Yosef_Serlin_eco_mli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Yosef_Sapir_for_mli
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Elimelekh_Shimon_Rimalt_sec_mli
+		add_popularity = { ideology = market_liberal popularity = 1 }
+		create_country_leader = {
+			name = "Peretz Bernstein"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Peretz_Bernstein.png"
+			expire = "1.1.1"
+			ideology = humanistic_capitalism_subtype
+		}
+	}
+}
+country_event = {
+	id = Israel.22
+	title = Israel.22.t
+	desc = Israel.22.d
+	picture = GFX_Herut_liberal
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.22.a
+		complete_national_focus = HERUT_Haim_Moshe_Shapira
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Haim_Moshe_Shapira_hog_sco
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Shlomo_Joseph_Burg_eco_sco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Moshe_Unna_for_sco
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Eliyahu_Moshe_Ganhovsky_sec_sco
+		add_popularity = { ideology = social_conservative popularity = 1 }
+		create_country_leader = {
+			name = "Haim-Moshe Shapira"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Haim_Moshe_Shapira.png"
+			expire = "1.1.1"
+			ideology = soccon_zionism
+		}
+	}
+	option = {
+		name = Israel.22.b
+		complete_national_focus = HERUT_Ze_ev_Jabotinsky
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Zeev_Jabotinsky_hog_ade
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Zorach_Warhaftig_eco_ade
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Aharon_Yaakov_Greenberg_for_ade
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Moshe_Kelmer_sec_ade
+		add_popularity = { ideology = authoritarian_democrat popularity = 1 }
+		create_country_leader = {
+			name = "Ze'ev Jabotinsky"
+			picture = "gfx/leaders/PAL/Portrait_PAL_Ze_ev_Jabotinsky.png"
+			expire = "1.1.1"
+			ideology = generic_national_democracy_subtype
+		}
+	}
+}
+country_event = {
+	id = Israel.23
+	title = Israel.23.t
+	desc = Israel.23.d
+	picture = GFX_Israeli_civil_war
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.23.a
+		complete_national_focus = HAGANAH_Save_Israel
+		complete_national_focus = HAGANAH_Haganah_is_in_charge
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+			name = ISR_Haganah2_party
+			long_name = ISR_Haganah2_party_long
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Moshe_Dayan_hog_ade
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Yigael_Yadin_eco_ade
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Yaakov_Dori_for_ade
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Haim_Laskov_sec_ade
+		add_popularity = { ideology = authoritarian_democrat popularity = 1 }
+		create_country_leader = {
+			name = "Moshe Dayan"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Moshe_Dayan.png"
+			expire = "1.1.1"
+			ideology = haganah_military_rule_subtype
+		}
+	}
+	option = {
+		name = Israel.23.b
+		complete_national_focus = IRGUN_Irgun_coup
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			name = ISR_Irgun_party
+			long_name = ISR_Irgun_party_long
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = ISR_Irgun_party
+			long_name = ISR_Irgun_party_long
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Benzion_Netanyahu_hog_pau
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Michael_Hasani_eco_pau
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Frija_Zoaretz_for_pau
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Yitzhak_Rafael_sec_pau
+		hidden_effect = {
+			set_popularities = {
+				totalist = 0
+				syndicalist = 0
+				radical_socialist = 0
+				social_democrat = 0
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 0
+				authoritarian_democrat = 0
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+		}
+		create_country_leader = {
+			name = "Benzion Netanyahu"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Benzion_Netanyahu.png"
+			expire = "1.1.1"
+			ideology = pataut_zionism
+		}
+		create_country_leader = {
+			name = "Menachem Begin"
+			picture = "gfx/leaders/PAL/Portrait_PAL_Menachem_Begin.png"
+			expire = "1.1.1"
+			ideology = natpop_zionism
+		}
+		country_event = {
+			id = Israel.24
+			days = 1
+		}
+	}
+}
+country_event = {
+	id = Israel.24
+	title = Israel.24.t
+	desc = Israel.24.d
+	picture = GFX_Israeli_civil_war
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Israel.24.a
+		complete_national_focus = IRGUN_Seasoned_Menachem
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+			name = ISR_Irgun_party
+			long_name = ISR_Irgun_party_long
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Menachem_Begin_hog_npo
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Eri_Jabotinsky_eco_npo
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Aryeh_Ben_Eliezer_national_for_npo
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Hillel_Kook_sec_npo
+		add_popularity = { ideology = national_populist popularity = 1 }
+		create_country_leader = {
+			name = "Menachem Begin"
+			picture = "gfx/leaders/PAL/Portrait_PAL_Menachem_Begin.png"
+			expire = "1.1.1"
+			ideology = natpop_zionism
+		}
+	}
+	option = {
+		name = Israel.24.b
+		complete_national_focus = IRGUN_Loyal_Yitzhak
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			name = ISR_Irgun_party
+			long_name = ISR_Irgun_party_long
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Yitzhak_Shamir_hog_pau
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Michael_Hasani_eco_pau
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Frija_Zoaretz_for_pau
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Yitzhak_Rafael_sec_pau
+		add_popularity = { ideology = paternal_autocrat popularity = 1 }
+		create_country_leader = {
+			name = "Yitzhak Shamir"
+			picture = "gfx/leaders/PAL/Portrait_PAL_Yitzhak_Shamir.png"
+			expire = "1.1.1"
+			ideology = red_tinted_autocracy_subtype
+		}
+	}
+	option = {
+		name = Israel.24.c
+		complete_national_focus = IRGUN_Knowledgeable_Benzion
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			name = ISR_Irgun_party
+			long_name = ISR_Irgun_party_long
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Benzion_Netanyahu_hog_pau
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Michael_Hasani_eco_pau
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Frija_Zoaretz_for_pau
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Yitzhak_Rafael_sec_pau
+		add_popularity = { ideology = paternal_autocrat popularity = 1 }
+		create_country_leader = {
+			name = "Benzion Netanyahu"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Benzion_Netanyahu.png"
+			expire = "1.1.1"
+			ideology = pataut_zionism
+		}
+	}
+}

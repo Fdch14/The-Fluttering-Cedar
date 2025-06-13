@@ -1,0 +1,101 @@
+music_station = "Halal_Radio"
+
+music = {
+	song = "majn_puljemjot"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "Izmir_March"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "ya_biladi_inhadi"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "The_flame_of_the_Baath_Party_is_my_dawn"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "Kataeb_Party"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "aljil_alsaaeid"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "Glory_be_to_you_Arab_flag"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "lwatanal_akbar"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "La_Ilaha_Illallah"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "Ima_Bosne"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "Hayalim_Almonim"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}

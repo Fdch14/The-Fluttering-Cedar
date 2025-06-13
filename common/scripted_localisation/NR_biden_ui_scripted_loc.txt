@@ -1,0 +1,297 @@
+
+defined_text = {
+  name = NRGUIHOGNAME
+  text = {
+    trigger = {
+		tag = LEB
+		has_country_leader = {
+			name = "Ottoman Administration"
+			ruling_only = yes
+		}
+    }
+    localization_key = NRGUIHOGNAME
+  }
+}
+defined_text = {
+	name = NRGetHOGTitle  #定义按钮名字
+	text = {
+	trigger = {
+      tag = ISR
+	  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
+    }
+    localization_key = ISR_OR_CHI
+  }
+  text = {
+    trigger = {
+      tag = PAL
+	  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
+    }
+    localization_key = PAL_OR_LEADER
+  }
+	text = {
+    trigger = {
+      tag = PAL
+	  has_idea = PAL_Husayn_al_Khalidi_hog_sde
+    }
+    localization_key = PAL_OR_LEADER
+  }
+  text = {
+    trigger = {
+      tag = PAL
+	  has_idea = PAL_Raghib_al_Nashashibi_hog_mil
+    }
+    localization_key = PAL_OR_LEADER
+  }
+  text = {
+    trigger = {
+      tag = PAL
+	  has_idea = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+    }
+    localization_key = PAL_OR_LEADER
+  }
+  text = {
+    trigger = {
+      tag = PAL
+	  has_idea = PAL_Ahmet_Ferit_Tek_hog_sco
+    }
+    localization_key = PAL_OR_LEADER
+  }
+	text = {
+    trigger = {
+      tag = LEB
+	  has_country_leader = {
+			name = "Muhammad"
+			ruling_only = yes
+		}
+	}
+    localization_key = LEB_OR_AMAL
+  }
+	text = {
+    trigger = {
+      tag = LEB
+	  has_country_leader = {
+			name = "Ottoman Administration"
+			ruling_only = yes
+		}
+	}
+    localization_key = LEB_OR_TUR
+  }
+}
+defined_text = {
+	name = NRGetFORHOGTitle  ##定义外交
+	text = {
+	trigger = {
+      tag = ISR
+	  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
+    }
+    localization_key = ISR_OR_CHI2
+  }
+	text = {
+    trigger = {
+      tag = PAL
+	  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
+    }
+    localization_key = PAL_OR_LEADER2
+  }
+	text = {
+    trigger = {
+      tag = PAL
+	  has_idea = PAL_Husayn_al_Khalidi_hog_sde
+    }
+    localization_key = PAL_OR_LEADER2
+  }
+  text = {
+    trigger = {
+      tag = PAL
+	  has_idea = PAL_Raghib_al_Nashashibi_hog_mil
+    }
+    localization_key = PAL_OR_LEADER2
+  }
+  text = {
+    trigger = {
+      tag = PAL
+	  has_idea = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+    }
+    localization_key = PAL_OR_LEADER2
+  }
+  text = {
+    trigger = {
+      tag = PAL
+	  has_idea = PAL_Ahmet_Ferit_Tek_hog_sco
+    }
+    localization_key = PAL_OR_LEADER2
+  }
+	text = {
+    trigger = {
+      tag = LEB
+	  has_country_leader = {
+			name = "Muhammad"
+			ruling_only = yes
+		}
+	}
+    localization_key = LEB_OR_AMAL2
+  }
+	text = {
+    trigger = {
+      tag = LEB
+	  has_country_leader = {
+			name = "Ottoman Administration"
+			ruling_only = yes
+		}
+	}
+    localization_key = LEB_OR_TUR2
+  }
+}
+
+defined_text = {
+	name = NRGetHeadDescription #定义副领袖介绍
+	text = {
+    trigger = {
+      tag = LEB
+	  has_country_leader = {
+			name = "Ottoman Administration"
+			ruling_only = yes
+		}
+    }
+    localization_key = POLITICS_ALI_MUNIF_BEY_DESC
+  }
+}
+
+defined_text = {
+	name = NRGetPrimeMinister  #定义副领袖名字
+	text = {
+    trigger = {
+	  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
+    }
+    localization_key = ISR_Morris_Abraham_Cohen_hog_rso
+  }
+	text = {
+    trigger = {
+	  has_idea = PAL_Husayn_al_Khalidi_hog_sde
+    }
+    localization_key = PAL_Husayn_al_Khalidi_hog_sde
+  }
+  text = {
+    trigger = {
+	  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
+    }
+    localization_key = PAL_Huseyin_Rauf_Orbay_hog_sco
+  }
+   text = {
+    trigger = {
+	  has_idea = PAL_Raghib_al_Nashashibi_hog_mil
+    }
+    localization_key = PAL_Raghib_al_Nashashibi_hog_mil
+  }
+   text = {
+    trigger = {
+	  has_idea = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+    }
+    localization_key = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+  }
+   text = {
+    trigger = {
+	  has_idea = PAL_Ahmet_Ferit_Tek_hog_sco
+    }
+    localization_key = PAL_Ahmet_Ferit_Tek_hog_sco
+  }
+	text = {
+    trigger = {
+      tag = LEB
+	  has_country_leader = {
+			name = "Muhammad"
+			ruling_only = yes
+		}
+	}
+    localization_key = LEB_Sadr_al_Din_al_Sadr_hog_sco
+  }
+	text = {
+    trigger = {
+      tag = LEB
+	  has_country_leader = {
+			name = "Ottoman Administration"
+			ruling_only = yes
+		}
+	}
+    localization_key = Portrait_Ali_Munif_Bey_Name
+  }
+}
+
+defined_text = {
+	name = NRGetPMPortrait   #定义图片
+	text = {
+    trigger = {
+	  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
+    }
+    localization_key = GFX_Portrait_ISR_Morris_Abraham_Cohen
+  }
+	text = {
+    trigger = {
+	  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
+    }
+    localization_key = GFX_Portrait_OTT_Huseyin_Rauf
+  }
+	text = {
+    trigger = {
+      tag = LEB
+	  has_country_leader = {
+			name = "Muhammad"
+			ruling_only = yes
+		}
+	}
+    localization_key = GFX_Portrait_LEB_Sadr_al_Din_al_Sadr
+  }
+   text = {
+    trigger = {
+	  has_idea = PAL_Husayn_al_Khalidi_hog_sde
+    }
+    localization_key = GFX_Portrait_PAL_Husayn_al_Khalidi
+  }
+   text = {
+    trigger = {
+	  has_idea = PAL_Raghib_al_Nashashibi_hog_mil
+    }
+    localization_key = GFX_Portrait_PAL_Raghib_al_Nashashibi
+  }
+   text = {
+    trigger = {
+	  has_idea = PAL_Hassan_Sidqi_al_Dajani_hog_sli
+    }
+    localization_key = GFX_Portrait_PAL_Hassan_Sidqi_al_Dajani
+  }
+   text = {
+    trigger = {
+	  has_idea = PAL_Ahmet_Ferit_Tek_hog_sco
+    }
+    localization_key = GFX_Portrait_PAL_Ahmet_Ferit_Tek
+  }
+	text = {
+    trigger = {
+      tag = LEB
+	  has_country_leader = {
+			name = "Ottoman Administration"
+			ruling_only = yes
+		}
+	}
+    localization_key = GFX_Portrait_Ali_Munif_Bey
+  }
+}
+
+defined_text = {
+	name = NRGetThirdLeaderTitle   #三头政府定义
+}
+defined_text = {
+	name = NRGetThirdLeaderHOGTitle  #定义第三领袖按钮名字
+}
+
+defined_text = {
+	name = NRGetThirdLeaderTitle  #第三领袖外交按钮
+}
+
+defined_text = {
+	name = NRGetOtherPrimeMinister  #第三领袖名字
+}
+
+defined_text = {
+	name = NRGetOtherPMPortrait  #第三领袖图片
+}

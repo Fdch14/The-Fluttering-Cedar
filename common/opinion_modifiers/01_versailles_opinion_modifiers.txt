@@ -1,0 +1,367 @@
+#########################################################################
+# THE GATES OF VERSAILLES - OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+#Czechia/Zapadoslavia
+opinion_modifiers = {
+	enemy_of_the_church = { value = -20 }
+}
+opinion_modifiers = {
+	slavic_enemy = { value = -250 trade = no }
+}
+opinion_modifiers = {
+	rogue_hostile_army = { value = -250 trade = no }
+}
+opinion_modifiers = {
+	opposing_government = { value = -150 trade = no }
+}
+
+#France
+opinion_modifiers = {
+	ENG_FRA_accusation_of_october_events = { value = -50 }
+}
+
+opinion_modifiers = {
+	FRA_agressive_diplomacy = { value = -25 }
+}
+
+opinion_modifiers = {
+	FRA_passive_diplomacy = { value = 25 }
+}
+
+opinion_modifiers = {
+	FRA_failure_of_deportation = { value = -100 }
+}
+
+opinion_modifiers = {
+	FRA_faction_restructuration = { value = -15 }
+}
+
+opinion_modifiers = {
+	FRA_kept_in_check = { value = -20 }
+}
+
+opinion_modifiers = {
+	FRA_investment_plan = { value = 50 }
+}
+
+opinion_modifiers = {
+	FRA_infiltration_tactics = { value = -50 }
+}
+
+opinion_modifiers = {
+	FRA_expressed_support = { value = 50 }
+}
+
+opinion_modifiers = {
+	FRA_recently_influenced = { value = 30 }
+}
+
+opinion_modifiers = {
+	FRA_abandoned_deliorman = { value = -30 months = 12 }
+}
+
+opinion_modifiers = {
+	FRA_protects_deliorman = { value = 10 }
+}
+
+opinion_modifiers = {
+	FRA_protects_deliorman_trade = { value = 10 trade = yes }
+}
+
+opinion_modifiers = {
+	FRA_continues_to_protect_deliorman = { value = 30 }
+}
+
+opinion_modifiers = {
+	FRA_continues_to_protect_deliorman_trade = { value = 30 trade = yes }
+}
+
+#Switzlerand (that use Belgium tag yeah ik right)
+opinion_modifiers = {
+	BEL_deportation_attempt = { value = -100 }
+}
+
+#Austria
+opinion_modifiers = {
+	vienna_meeting = { value = 30 }                                                
+}
+
+#Italy
+opinion_modifiers = {
+	anti_colonialism_campaign = { value = -45 }                                                
+}
+
+#Ethiopia
+opinion_modifiers = {
+	anti_colonialist = { value = -50 }
+}
+
+#Russia
+opinion_modifiers = {
+	established_embassy = { value = 5 }
+}
+opinion_modifiers = {
+	applied_pressure = { value = -50 }
+}
+opinion_modifiers = {
+	naval_exercise_on_coast = { value = -40 }
+}
+opinion_modifiers = {
+	followed_lead = { value = 35 }
+}
+opinion_modifiers = {
+	sought_advice = { value = 25 }
+}
+opinion_modifiers = {
+	sought_help = { value = 10 }
+}
+#Poland
+opinion_modifiers = {
+	reestablished_relations = { value = 50 }
+}
+opinion_modifiers = {
+	renewed_friendship = { value = 50 }
+}
+
+#Prussia
+
+opinion_modifiers = {
+	PRS_border_tensions = { value = -25 }
+}
+opinion_modifiers = {
+	PRS_anticolonial_fraternity = { value = 30 }
+}
+opinion_modifiers = {
+	PRS_socialist_fraternity = { value = 50 }
+}
+opinion_modifiers = {
+	PRS_violated_sovereignty = { value = -50 }
+}
+
+
+########
+opinion_modifiers = {
+	met_with_the_king = { value = 25 }
+}
+
+opinion_modifiers = {
+	found_a_compromise = { value = 50 }
+}
+
+opinion_modifiers = {
+	reached_a_deal = { value = 30 }
+}
+
+opinion_modifiers = {
+	secret_cooperation = { value = 40 }
+}
+
+opinion_modifiers = {
+	negative_stance = { value = -50 }
+}
+
+opinion_modifiers = {
+	supported_our_democracy = { value = 50 }
+}
+
+opinion_modifiers = {
+	a_pragmatic_alliance = { value = 50 }
+}
+opinion_modifiers = {
+	no_deal = { value = -20 }
+}
+opinion_modifiers = {
+	great_deal = { value = 20 }
+}
+opinion_modifiers = {
+	MON_traitor = { value = -40 }
+}
+opinion_modifiers = {
+	WST_ENG_positive_relation = { value = 35 }
+}
+opinion_modifiers = {
+	FRA_WST_betrayal = { value = -35 }
+}
+opinion_modifiers = {
+	FRA_bad_wur_unification = { value = -35 }
+}
+opinion_modifiers = {
+	renewed_deal = { value = 30 }
+}
+opinion_modifiers = {
+	good_intentions = { value = 25 }
+}
+opinion_modifiers = {
+	FRA_IRE_positive_relations = { value = 20 }
+}
+opinion_modifiers = {
+	IRE_FRA_positive_relations = { value = 20 }
+}
+opinion_modifiers = {
+	sent_weapons = { value = 15 }
+}
+opinion_modifiers = {
+	didnt_join_faction = { value = -30 }
+}
+opinion_modifiers = {
+	istria_deal_denied = { value = -35 }
+}
+opinion_modifiers = {
+	didnt_allow_south_tyrol = { value = -25 }
+}
+opinion_modifiers = {
+	didnt_allow_to_join_faction = { value = -20 }
+}
+opinion_modifiers = {
+	didnt_accept_deal = { value = -15 }
+}
+opinion_modifiers = {
+	friendship_treaty_accepted = { value = 40 }
+}
+opinion_modifiers = {
+	friendship_treaty_denied = { value = -20 }
+}
+opinion_modifiers = {
+	didnt_allow_maltese_subjugation = { value = -30 }
+}
+opinion_modifiers = {
+	ENG_FRA_speech_against_us = { value = -25 }
+}
+opinion_modifiers = {
+	ENG_WST_positive_relation = { value = 30 }
+}
+opinion_modifiers = {
+	TAN_denounced_imperialism = { value = -15 }
+}
+opinion_modifiers = {
+	AZR_oil_trading = { value = 20 }
+}
+opinion_modifiers = {
+	USA_failed_debt_payment = { value = -5 }
+}
+
+#USA
+
+opinion_modifiers = {
+	USA_condemn_AALPC = { value = 15 }
+}
+opinion_modifiers = {
+	USA_support_AALPC = { value = -15 }
+}
+opinion_modifiers = {
+	USA_Border_Raid1_condemn = { value = 15 }
+}
+opinion_modifiers = {
+	USA_Border_Raid1_supported = { value = -15 }
+}
+opinion_modifiers = {
+	USA_suppressing_AALPC = { value = 15 }
+}
+opinion_modifiers = {
+	USA_nothing_against_AALPC = { value = -15 }
+}
+opinion_modifiers = {
+	USA_Border_Raid2_condemn = { value = 15 }
+}
+opinion_modifiers = {
+	USA_Border_Raid2_supported = { value = -15 }
+}
+opinion_modifiers = {
+	USA_AALPC_fully_supported = { value = -40 }
+}
+opinion_modifiers = {
+	USA_Cheyenne_Discredit = { value = 15 }
+}
+opinion_modifiers = {
+	USA_Cheyenne_Control = { value = -15 }
+}
+opinion_modifiers = {
+	USA_Disband_AALPC = { value = 40 }
+}
+opinion_modifiers = {
+	USA_apology_bombing = { value = 20 }
+}
+opinion_modifiers = {
+	outraged_at_government = { value = -50 }
+}
+opinion_modifiers = {
+	withdrew_from_conventions = { trade = yes value = -50 }
+}
+opinion_modifiers = {
+	USA_chinese_immigration_act = { value = -50 }
+}
+opinion_modifiers = {
+	USA_european_exchange_opinion = { value = 25 }
+}
+opinion_modifiers = {
+	USA_scapegoating_Mexico = { value = -15 }
+}
+opinion_modifiers = {
+	USA_MEX_is_danger = { value = -15 }
+}
+opinion_modifiers = {
+	USA_MEX_accepted_trade_deals = { trade = yes value = 40 }
+}
+opinion_modifiers = {
+	USA_MEX_declined_trade_deals = { value = -25 }
+}
+opinion_modifiers = {
+	USA_MEX_declined_conference = { value = -15 }
+}
+opinion_modifiers = {
+	USA_promoted_free_trade = { trade = yes value = 30 }
+}
+opinion_modifiers = {
+	USA_signing_of_city_protocols = { value = 50 }
+}
+opinion_modifiers = {
+	USA_good_neightbour_policy = { value = 50 }
+}
+opinion_modifiers = {
+	QUE_very_good_cooperation = { value = 75 }
+}
+opinion_modifiers = {
+	USA_internationalist_outlook = { value = 40 }
+}
+opinion_modifiers = {
+	USA_non_intervention = { value = -75 }
+}
+
+#India
+opinion_modifiers = {
+	HYD_anti_maratha_policits_opinion = { value = -35 }
+}
+opinion_modifiers = {
+	MAH_hindu_nationalism_low_opinion = { value = -15 }
+}
+opinion_modifiers = {
+	MAH_hindu_nationalism_medium_opinion = { value = -25 }
+}
+opinion_modifiers = {
+	MAH_hindu_nationalism_high_opinion = { value = -35 }
+}
+
+#China
+opinion_modifiers = {
+	DLI_hanoi_lifeline_opinion = { value = 25 }
+}
+
+#Russia
+opinion_modifiers = {
+	RUS_widespread_russophilia = { value = 50 }
+}
+
+#Olympic
+opinion_modifiers = {
+	olympic_fiasco = { 
+		value = -100 
+		months = 24
+	}
+}

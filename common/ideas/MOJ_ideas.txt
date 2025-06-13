@@ -1,0 +1,227 @@
+ideas = {
+	##############
+	# Country ideas
+	##############
+		country = {
+			Kemalist_education_0 = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea Kemalist_education_0 "}
+				allowed = { always = no }
+				modifier = {
+					stability_weekly = 0.02
+					war_support_weekly = 0.02
+				}
+			}
+			MOJ_Ottoman_Development_economy_ideas = {
+				name = MOJ_Ottoman_Development_economy_ideas
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Ottoman_Development_economy_ideas"}
+				picture = corporatist_economy
+				allowed = { always = no }
+				modifier = {
+					local_building_slots_factor = 0.1
+					production_speed_buildings_factor = 0.1
+					production_speed_industrial_complex_factor = 0.1
+					production_factory_max_efficiency_factor = 0.1
+					production_factory_efficiency_gain_factor = 0.1
+				}
+			}
+			MOJ_Ottoman_Development_economy_ideas1 = {
+				name = MOJ_Ottoman_Development_economy_ideas
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Ottoman_Development_economy_ideas1"}
+				picture = corporatist_economy
+				allowed = { always = no }
+				modifier = {
+					local_building_slots_factor = 0.15
+					production_speed_buildings_factor = 0.15
+					production_speed_industrial_complex_factor = 0.15
+					production_factory_max_efficiency_factor = 0.15
+					production_factory_efficiency_gain_factor = 0.15
+				}
+			}
+			MOJ_The_new_king_of_Jerusalem_ideas = {
+				name = MOJ_The_new_king_of_Jerusalem_ideas
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_The_new_king_of_Jerusalem_ideas"}
+				picture = COR_protected_not_equal
+				allowed = { always = no }
+				modifier = {
+					attrition = -0.15
+					supply_factor = 0.15
+					supply_node_range = 0.15
+					local_org_regain = 0.15
+				}
+			}
+			MOJ_The_new_king_of_Jerusalem_ideas1 = {
+				name = MOJ_The_new_king_of_Jerusalem_ideas
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_The_new_king_of_Jerusalem_ideas1"}
+				picture = COR_protected_not_equal
+				allowed = { always = no }
+				modifier = {
+					attrition = -0.2
+					supply_factor = 0.2
+					supply_node_range = 0.2
+					local_org_regain = 0.2
+				}
+			}
+			pal_Talat_Government_reforms_ideas = {
+				name = pal_Talat_Government_reforms_ideas
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea pal_Talat_Government_reforms_ideas"}
+				picture = SKM_outdated_army
+				allowed = { always = no }
+				modifier = {
+					drift_defence_factor = 0.5
+					political_power_factor = 0.1
+					political_power_gain = 0.1
+					breakthrough_factor = 0.15
+				}
+			}
+			PAL_Remove_Kemalist_continued = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Remove_Kemalist_continued" }
+				name = PAL_Remove_Kemalist_continued
+				picture = TUR_ottoman_hegemony
+				allowed = { always = no }
+				modifier = {
+					authoritarian_democrat_drift = 0.05
+					local_resources_factor = 0.15
+					consumer_goods_factor = -0.25
+					drift_defence_factor = 0.5
+				}
+			}
+			PAL_Remove_Kemalist_continued1 = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Remove_Kemalist_continued1" }
+				name = PAL_Remove_Kemalist_continued
+				picture = TUR_ottoman_hegemony
+				allowed = { always = no }
+				modifier = {
+					authoritarian_democrat_drift = 0.1
+					local_resources_factor = 0.2
+					consumer_goods_factor = -0.3
+					consumer_goods = -0.15
+					drift_defence_factor = 0.5
+				}
+			}
+			PAL_Remove_Kemalist_continued2 = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Remove_Kemalist_continued2" }
+				name = PAL_Remove_Kemalist_continued2
+				picture = TUR_ottoman_hegemony
+				allowed = { always = no }
+				modifier = {
+					authoritarian_democrat_drift = 0.2
+					local_resources_factor = 0.25
+					consumer_goods_factor = -0.3
+					consumer_goods = -0.2
+					drift_defence_factor = 0.5
+					breakthrough_factor = 0.1
+					initiative_factor = 0.1
+				}
+			}
+			MOJ_J_centralization_ideas2 = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_J_centralization_ideas2" }
+				name = MOJ_J_centralization_ideas2
+				picture = OTT_solid_idea_icon
+				allowed = { always = no }
+				modifier = {
+					political_power_gain = 0.15
+					stability_weekly = 0.05	
+					political_power_cost = 0.15
+					industrial_capacity_factory = 0.25
+				}
+			}
+			MOJ_J_centralization_ideas3 = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_J_centralization_ideas3" }
+				name = MOJ_J_centralization_ideas3
+				picture = OTT_solid_idea_icon
+				allowed = { always = no }
+				modifier = {
+					political_power_gain = 0.2
+					stability_weekly = 0.05	
+					political_power_cost = 0.2
+					industrial_capacity_factory = 0.25
+					research_speed_factor = 0.1
+					line_change_production_efficiency_factor = 0.1
+				}
+			}
+			MOJ_J_centralization_ideas4 = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_J_centralization_ideas4" }
+				name = MOJ_J_centralization_ideas3
+				picture = OTT_solid_idea_icon
+				allowed = { always = no }
+				modifier = {
+					political_power_gain = 0.25
+					stability_weekly = 0.15
+					political_power_cost = 0.25
+					industrial_capacity_factory = 0.3
+					research_speed_factor = 0.2
+					line_change_production_efficiency_factor = 0.2
+				}
+			}
+			MOJ_J_centralization_ideas5 = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_J_centralization_ideas5" }
+				name = MOJ_J_centralization_ideas3
+				picture = OTT_solid_idea_icon
+				allowed = { always = no }
+				modifier = {
+					political_power_gain = 0.25
+					stability_weekly = 0.15
+					political_power_cost = 0.25
+					industrial_capacity_factory = 0.3
+					research_speed_factor = 0.2
+					line_change_production_efficiency_factor = 0.25
+					local_org_regain = 0.1
+					army_org_factor = 0.1
+					army_morale_factor = 0.1
+				}
+			}
+			MOJ_J_centralization_ideas6 = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_J_centralization_ideas6" }
+				name = MOJ_J_centralization_ideas3
+				picture = OTT_solid_idea_icon
+				allowed = { always = no }
+				modifier = {
+					political_power_gain = 0.25
+					stability_weekly = 0.15
+					political_power_cost = 0.25
+					industrial_capacity_factory = 0.3
+					research_speed_factor = 0.2
+					line_change_production_efficiency_factor = 0.25
+					local_org_regain = 0.1
+					army_org_factor = 0.15
+					army_morale_factor = 0.15
+					max_planning = 0.1
+					experience_loss_factor = 0.1
+					experience_gain_army_factor = 0.1
+				}
+			}
+			MOJ_J_centralization_ideas7 = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_J_centralization_ideas7" }
+				name = MOJ_J_centralization_ideas3
+				picture = OTT_solid_idea_icon
+				allowed = { always = no }
+				modifier = {
+					political_power_gain = 0.25
+					stability_weekly = 0.15
+					political_power_cost = 0.25
+					industrial_capacity_factory = 0.3
+					research_speed_factor = 0.25
+					line_change_production_efficiency_factor = 0.25
+					local_org_regain = 0.15
+					army_org_factor = 0.15
+					army_morale_factor = 0.15
+					max_planning = 0.15
+					experience_loss_factor = 0.15
+					experience_gain_army_factor = 0.15
+				}
+			}
+			MOJ_Immigration_Administration_ideas = {
+				on_add = { log = "[GetDateText]: [Root.GetName]: add idea MOJ_Immigration_Administration_ideas" }
+				name = MOJ_Immigration_Administration_ideas
+				picture = SYR_Ottoman_Military
+				allowed = { always = no }
+				modifier = {
+					conscription = 0.1
+					conscription_factor = 0.2
+					non_core_manpower = 0.2
+					monthly_population = 0.4
+					mobilization_speed = 0.2
+				}
+			}
+		}
+	}

@@ -1,0 +1,990 @@
+defined_text = {
+	name = Algeria_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 805
+			controls_state = 459
+			controls_state = 460
+			controls_state = 513
+			controls_state = 514
+		}
+	}
+    localization_key = Algeria_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 805
+		controls_state = 459
+		controls_state = 460
+		controls_state = 513
+		controls_state = 514
+	}
+    localization_key = Algeria_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Egypt_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 447
+			controls_state = 452
+			controls_state = 446
+			controls_state = 457
+			controls_state = 552
+			controls_state = 456
+			controls_state = 1008
+			controls_state = 1007
+			controls_state = 551
+			controls_state = 862
+			controls_state = 1011
+			controls_state = 1010
+			controls_state = 549
+			controls_state = 753
+			controls_state = 453
+		}
+	}
+    localization_key = Egypt_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 447
+		controls_state = 452
+		controls_state = 446
+		controls_state = 457
+		controls_state = 552
+		controls_state = 456
+		controls_state = 1008
+		controls_state = 1007
+		controls_state = 551
+		controls_state = 862
+		controls_state = 1011
+		controls_state = 1010
+		controls_state = 549
+		controls_state = 753
+		controls_state = 453
+	}
+    localization_key = Egypt_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Yeman_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 982
+			controls_state = 293
+			controls_state = 981
+			controls_state = 659
+			controls_state = 752
+		}
+	}
+    localization_key = Yeman_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 982
+		controls_state = 293
+		controls_state = 981
+		controls_state = 659
+		controls_state = 752
+	}
+    localization_key = Yeman_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Tunisia_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 458
+			controls_state = 665
+		}
+	}
+    localization_key = Tunisia_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 458
+		controls_state = 665
+	}
+    localization_key = Tunisia_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Tripolitania_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 273
+			controls_state = 448
+		}
+	}
+    localization_key = Tripolitania_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 273
+		controls_state = 448
+	}
+    localization_key = Tripolitania_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Syria_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 454
+			controls_state = 455
+			controls_state = 554
+			controls_state = 995
+			controls_state = 680
+			controls_state = 677
+			controls_state = 344
+		}
+	}
+    localization_key = Syria_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 454
+		controls_state = 455
+		controls_state = 554
+		controls_state = 995
+		controls_state = 680
+		controls_state = 677
+		controls_state = 344
+	}
+    localization_key = Syria_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Somalia_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 559
+			controls_state = 906
+			controls_state = 269
+		}
+	}
+    localization_key = Somalia_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 559
+		controls_state = 906
+		controls_state = 269
+	}
+    localization_key = Somalia_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Saudi_Arabia_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 675
+			controls_state = 991
+			controls_state = 656
+			controls_state = 292
+			controls_state = 678
+		}
+	}
+    localization_key = Saudi_Arabia_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 675
+		controls_state = 991
+		controls_state = 656
+		controls_state = 292
+		controls_state = 678
+	}
+    localization_key = Saudi_Arabia_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Oman_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 1024
+			controls_state = 859
+			controls_state = 294
+		}
+	}
+    localization_key = Oman_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 1024
+		controls_state = 859
+		controls_state = 294
+	}
+    localization_key = Oman_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Morocco_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 461
+			controls_state = 462
+		}
+	}
+    localization_key = Morocco_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 461
+		controls_state = 462
+	}
+    localization_key = Morocco_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Libya_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 1009
+			controls_state = 663
+			controls_state = 451
+		}
+	}
+    localization_key = Libya_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 1009
+		controls_state = 663
+		controls_state = 451
+	}
+    localization_key = Libya_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Jabal_Shammar_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 994
+			controls_state = 915
+			controls_state = 1035
+		}
+	}
+    localization_key = Jabal_Shammar_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 994
+		controls_state = 915
+		controls_state = 1035
+	}
+    localization_key = Jabal_Shammar_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Iraq_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 676
+			controls_state = 349
+			controls_state = 291
+			controls_state = 812
+		}
+	}
+    localization_key = Iraq_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 676
+		controls_state = 349
+		controls_state = 291
+		controls_state = 812
+	}
+    localization_key = Iraq_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Hejaz_Owner_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		NOT = {
+			controls_state = 754
+			controls_state = 679
+		}
+	}
+    localization_key = Hejaz_Owner_TEXT_enemy
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		controls_state = 754
+		controls_state = 679
+	}
+    localization_key = Hejaz_Owner_TEXT_Our
+  }
+}
+defined_text = {
+	name = Algeria_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Algeria_revolt_power = 0
+		}
+	}
+    localization_key = Algeria_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Algeria_revolt_power > 0
+		}
+		check_variable = { 
+			Algeria_revolt_power < 6
+		}
+	}
+    localization_key = Algeria_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Algeria_revolt_power > 5
+		}
+		check_variable = { 
+			Algeria_revolt_power < 11
+		}
+	}
+    localization_key = Algeria_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Algeria_revolt_power > 10
+		}
+	}
+    localization_key = Algeria_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Egypt_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Egypt_revolt_power = 0
+		}
+	}
+    localization_key = Egypt_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Egypt_revolt_power > 0
+		}
+		check_variable = { 
+			Egypt_revolt_power < 6
+		}
+	}
+    localization_key = Egypt_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Egypt_revolt_power > 5
+		}
+		check_variable = { 
+			Egypt_revolt_power < 11
+		}
+	}
+    localization_key = Egypt_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Egypt_revolt_power > 10
+		}
+	}
+    localization_key = Egypt_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Yeman_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Yeman_revolt_power = 0
+		}
+	}
+    localization_key = Yeman_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Yeman_revolt_power > 0
+		}
+		check_variable = { 
+			Yeman_revolt_power < 6
+		}
+	}
+    localization_key = Yeman_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Yeman_revolt_power > 5
+		}
+		check_variable = { 
+			Yeman_revolt_power < 11
+		}
+	}
+    localization_key = Yeman_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Yeman_revolt_power > 10
+		}
+	}
+    localization_key = Yeman_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Tunisia_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Tunisia_revolt_power = 0
+		}
+	}
+    localization_key = Tunisia_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Tunisia_revolt_power > 0
+		}
+		check_variable = { 
+			Tunisia_revolt_power < 6
+		}
+	}
+    localization_key = Tunisia_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Tunisia_revolt_power > 5
+		}
+		check_variable = { 
+			Tunisia_revolt_power < 11
+		}
+	}
+    localization_key = Tunisia_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Tunisia_revolt_power > 10
+		}
+	}
+    localization_key = Tunisia_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Tripolitania_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Tripolitania_revolt_power = 0
+		}
+	}
+    localization_key = Tripolitania_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Tripolitania_revolt_power > 0
+		}
+		check_variable = { 
+			Tripolitania_revolt_power < 6
+		}
+	}
+    localization_key = Tripolitania_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Tripolitania_revolt_power > 5
+		}
+		check_variable = { 
+			Tripolitania_revolt_power < 11
+		}
+	}
+    localization_key = Tripolitania_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Tripolitania_revolt_power > 10
+		}
+	}
+    localization_key = Tripolitania_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Syria_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Syria_revolt_power = 0
+		}
+	}
+    localization_key = Syria_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Syria_revolt_power > 0
+		}
+		check_variable = { 
+			Syria_revolt_power < 6
+		}
+	}
+    localization_key = Syria_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Syria_revolt_power > 5
+		}
+		check_variable = { 
+			Syria_revolt_power < 11
+		}
+	}
+    localization_key = Syria_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Syria_revolt_power > 10
+		}
+	}
+    localization_key = Syria_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Somalia_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Somalia_revolt_power = 0
+		}
+	}
+    localization_key = Somalia_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Somalia_revolt_power > 0
+		}
+		check_variable = { 
+			Somalia_revolt_power < 6
+		}
+	}
+    localization_key = Somalia_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Somalia_revolt_power > 5
+		}
+		check_variable = { 
+			Somalia_revolt_power < 11
+		}
+	}
+    localization_key = Somalia_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Somalia_revolt_power > 10
+		}
+	}
+    localization_key = Somalia_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Saudi_Arabia_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Saudi_Arabia_revolt_power = 0
+		}
+	}
+    localization_key = Saudi_Arabia_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Saudi_Arabia_revolt_power > 0
+		}
+		check_variable = { 
+			Saudi_Arabia_revolt_power < 6
+		}
+	}
+    localization_key = Saudi_Arabia_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Saudi_Arabia_revolt_power > 5
+		}
+		check_variable = { 
+			Saudi_Arabia_revolt_power < 11
+		}
+	}
+    localization_key = Saudi_Arabia_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Saudi_Arabia_revolt_power > 10
+		}
+	}
+    localization_key = Saudi_Arabia_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Oman_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Oman_revolt_power = 0
+		}
+	}
+    localization_key = Oman_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Oman_revolt_power > 0
+		}
+		check_variable = { 
+			Oman_revolt_power < 6
+		}
+	}
+    localization_key = Oman_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Oman_revolt_power > 5
+		}
+		check_variable = { 
+			Oman_revolt_power < 11
+		}
+	}
+    localization_key = Oman_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Oman_revolt_power > 10
+		}
+	}
+    localization_key = Oman_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Morocco_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Morocco_revolt_power = 0
+		}
+	}
+    localization_key = Morocco_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Morocco_revolt_power > 0
+		}
+		check_variable = { 
+			Morocco_revolt_power < 6
+		}
+	}
+    localization_key = Morocco_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Morocco_revolt_power > 5
+		}
+		check_variable = { 
+			Morocco_revolt_power < 11
+		}
+	}
+    localization_key = Morocco_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Morocco_revolt_power > 10
+		}
+	}
+    localization_key = Morocco_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Libya_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Libya_revolt_power = 0
+		}
+	}
+    localization_key = Libya_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Libya_revolt_power > 0
+		}
+		check_variable = { 
+			Libya_revolt_power < 6
+		}
+	}
+    localization_key = Libya_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Libya_revolt_power > 5
+		}
+		check_variable = { 
+			Libya_revolt_power < 11
+		}
+	}
+    localization_key = Libya_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Libya_revolt_power > 10
+		}
+	}
+    localization_key = Libya_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Jabal_Shammar_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Jabal_Shammar_revolt_power = 0
+		}
+	}
+    localization_key = Jabal_Shammar_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Jabal_Shammar_revolt_power > 0
+		}
+		check_variable = { 
+			Jabal_Shammar_revolt_power < 6
+		}
+	}
+    localization_key = Jabal_Shammar_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Jabal_Shammar_revolt_power > 5
+		}
+		check_variable = { 
+			Jabal_Shammar_revolt_power < 11
+		}
+	}
+    localization_key = Jabal_Shammar_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Jabal_Shammar_revolt_power > 10
+		}
+	}
+    localization_key = Jabal_Shammar_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Iraq_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Iraq_revolt_power = 0
+		}
+	}
+    localization_key = Iraq_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Iraq_revolt_power > 0
+		}
+		check_variable = { 
+			Iraq_revolt_power < 6
+		}
+	}
+    localization_key = Iraq_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Iraq_revolt_power > 5
+		}
+		check_variable = { 
+			Iraq_revolt_power < 11
+		}
+	}
+    localization_key = Iraq_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Iraq_revolt_power > 10
+		}
+	}
+    localization_key = Iraq_revolt_TEXT_highly
+  }
+}
+defined_text = {
+	name = Hejaz_revolt_TEXT
+	text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Hejaz_revolt_power = 0
+		}
+	}
+    localization_key = Hejaz_revolt_TEXT_No
+  }
+  text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Hejaz_revolt_power > 0
+		}
+		check_variable = { 
+			Hejaz_revolt_power < 6
+		}
+	}
+    localization_key = Hejaz_revolt_TEXT_mild
+  }
+   text = {
+    trigger = {
+		tag = LEB
+		check_variable = { 
+			Hejaz_revolt_power > 5
+		}
+		check_variable = { 
+			Hejaz_revolt_power < 11
+		}
+	}
+    localization_key = Hejaz_revolt_TEXT_medium
+  }
+  text = {
+	tag = LEB
+    trigger = {
+		check_variable = { 
+			Hejaz_revolt_power > 10
+		}
+	}
+    localization_key = Hejaz_revolt_TEXT_highly
+  }
+}

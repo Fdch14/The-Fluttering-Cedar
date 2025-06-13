@@ -1,0 +1,288 @@
+MOJ_attack_EGY = {
+	MOJ_attack_EGY_decision = {
+
+		icon = bomber
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  20
+		
+		available = {
+			date > 1938.9.30
+		}
+		
+		visible = {
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			declare_war_on = { target = EGY type = annex_everything }
+		}
+	}
+	MOJ_attack_EGY_decision2 = {
+
+		icon = trumpet
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  70
+		
+		available = {
+			controls_state = 452
+			controls_state = 447
+			controls_state = 446
+			controls_state = 457
+			controls_state = 1008
+			controls_state = 456
+			controls_state = 552
+			controls_state = 1007
+			controls_state = 551
+			controls_state = 1011
+			controls_state = 862
+			controls_state = 1010
+			controls_state = 549
+		}
+		
+		visible = {
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_completed_focus = MOJ_The_new_king_of_Jerusalem
+							has_completed_focus = MOJ_Talat_Pasha_became_the_new_Speaker
+						}
+					}
+				}
+				set_cosmetic_tag = EGYK
+				every_state = {
+					limit = { is_core_of = EGY }
+					add_core_of = PAL
+				}
+				every_state = {
+					limit = { is_core_of = SUD }
+					add_core_of = PAL
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_completed_focus = MOJ_The_new_king_of_Jerusalem
+						has_completed_focus = MOJ_Talat_Pasha_became_the_new_Speaker
+					}
+				}
+				EGY = {
+					set_cosmetic_tag = EGYK
+					transfer_state = 447
+					transfer_state = 452
+					transfer_state = 446
+					transfer_state = 457
+					transfer_state = 552
+					transfer_state = 456
+					transfer_state = 1008
+					transfer_state = 1007
+					transfer_state = 551
+					transfer_state = 862
+					transfer_state = 1011
+					transfer_state = 1010
+					transfer_state = 549
+						create_country_leader = {
+							name = "Abdullah Saad"
+							picture = "gfx/leaders/LEB/SYR_Abdullah_Saad.jpg"
+							desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+							expire = "1.1.1"
+							ideology = antoun_saadeh_thought_subtype
+						}
+					}
+				set_autonomy = { target = EGY autonomy_state = kr_ottoman_vilayet }	
+			}
+		}
+	}
+	MOJ_attack_OTT_decision = {
+
+		icon = bomber
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  20
+		
+		available = {
+			date > 1938.9.30
+			OR = {
+				has_completed_focus = MOJ_The_new_king_of_Jerusalem
+				has_completed_focus = MOJ_Talat_Pasha_became_the_new_Speaker
+			}
+			country_exists = SYR
+			country_exists = IRQ
+			TUR = {
+				has_war = no
+			}
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = MOJ_The_new_king_of_Jerusalem
+				has_completed_focus = MOJ_Talat_Pasha_became_the_new_Speaker
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			declare_war_on = { target = OTT type = annex_everything }
+			declare_war_on = { target = SYR type = annex_everything }
+			declare_war_on = { target = IRQ type = annex_everything }
+			declare_war_on = { target = LEB type = annex_everything }
+		}
+	}
+	MOJ_attack_OTT_decision2 = {
+
+		icon = trumpet
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  70
+		
+		available = {
+			OR = {
+				has_completed_focus = MOJ_The_new_king_of_Jerusalem
+				has_completed_focus = MOJ_Talat_Pasha_became_the_new_Speaker
+			}
+			controls_state = 448
+			controls_state = 450
+			controls_state = 273
+			controls_state = 187
+			controls_state = 164
+			controls_state = 341
+			controls_state = 773
+			controls_state = 1225
+			controls_state = 340
+			controls_state = 339
+			controls_state = 343
+			controls_state = 342
+			controls_state = 346
+			controls_state = 49
+			controls_state = 356
+			controls_state = 183
+			controls_state = 344
+			controls_state = 345
+			controls_state = 355
+			controls_state = 1001
+			controls_state = 1213
+			controls_state = 1000
+			controls_state = 354
+			controls_state = 352
+			controls_state = 350
+			controls_state = 819
+			controls_state = 349
+			controls_state = 676
+			controls_state = 291
+			controls_state = 812
+			controls_state = 993
+			controls_state = 907
+			controls_state = 658
+			controls_state = 677
+			controls_state = 995
+			controls_state = 680
+			controls_state = 554
+			controls_state = 455
+			controls_state = 992
+			controls_state = 754
+			controls_state = 679
+			controls_state = 553
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = MOJ_The_new_king_of_Jerusalem
+				has_completed_focus = MOJ_Talat_Pasha_became_the_new_Speaker
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			set_cosmetic_tag = OTT
+			448 = { add_core_of = PAL }
+			450 = { add_core_of = PAL }
+			273 = { add_core_of = PAL }
+			187 = { add_core_of = PAL }
+			164 = { add_core_of = PAL }
+			341 = { add_core_of = PAL }
+			773 = { add_core_of = PAL }
+			1225 = { add_core_of = PAL }
+			340 = { add_core_of = PAL }
+			339 = { add_core_of = PAL }
+			343 = { add_core_of = PAL }
+			342 = { add_core_of = PAL }
+			346 = { add_core_of = PAL }
+			49 = { add_core_of = PAL }
+			356 = { add_core_of = PAL }
+			183 = { add_core_of = PAL }
+			344 = { add_core_of = PAL }
+			345 = { add_core_of = PAL }
+			355 = { add_core_of = PAL }
+			1001 = { add_core_of = PAL }
+			1213 = { add_core_of = PAL }
+			1000 = { add_core_of = PAL }
+			354 = { add_core_of = PAL }
+			352 = { add_core_of = PAL }
+			350 = { add_core_of = PAL }
+			819 = { add_core_of = PAL }
+			349 = { add_core_of = PAL }
+			676 = { add_core_of = PAL }
+			291 = { add_core_of = PAL }
+			812 = { add_core_of = PAL }
+			993 = { add_core_of = PAL }
+			907 = { add_core_of = PAL }
+			658 = { add_core_of = PAL }
+			677 = { add_core_of = PAL }
+			995 = { add_core_of = PAL }
+			680 = { add_core_of = PAL }
+			554 = { add_core_of = PAL }
+			455 = { add_core_of = PAL }
+			992 = { add_core_of = PAL }
+			754 = { add_core_of = PAL }
+			679 = { add_core_of = PAL }
+			553 = { add_core_of = PAL }
+		}
+	}
+}
+
+ISR_coup_crisis_decision = {
+	Haganah_in_action_dec = {
+		icon = bear
+		activation = {                         
+			has_war_with = EGY
+		}                                    
+		available = {                           
+			controls_state = 446
+		}
+		
+		is_good = yes    
+		fire_only_once = yes
+		days_mission_timeout = 120
+		timeout_effect = {                      
+			country_event = Israel.15          
+		}
+		complete_effect = {
+		}
+	}
+}

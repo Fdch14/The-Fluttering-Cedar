@@ -1,0 +1,4348 @@
+ideas = {
+	country = {
+		ISR_the_great_jewish_revolt_ideas = {
+			name = ISR_the_great_jewish_revolt_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_the_great_jewish_revolt_ideas"}
+			picture = the_great_jewish_revolt_ideas
+			allowed = { always = no }
+            modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_speed_factor = 0.1
+				initiative_factor = 0.1
+			}
+		}
+		ISR_the_great_jewish_revolt_ideas1 = {
+			name = ISR_the_great_jewish_revolt_ideas1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_the_great_jewish_revolt_ideas1"}
+			picture = the_great_jewish_revolt_ideas
+			allowed = { always = no }
+            modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_speed_factor = 0.15
+				initiative_factor = 0.15
+			}
+		}
+		ISR_young_guard_ideas = {
+			name = ISR_young_guard_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_young_guard_ideas"}
+			picture = young_guard_ideas
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				repair_speed_arms_factory_factor = 0.1
+			}
+		}
+		ISR_young_guard_ideas1 = {
+			name = ISR_young_guard_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_young_guard_ideas1"}
+			picture = young_guard_ideas
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				repair_speed_arms_factory_factor = 0.15
+			}
+		}
+		ISR_young_guard_ideas2 = {
+			name = ISR_young_guard_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_young_guard_ideas2"}
+			picture = young_guard_ideas
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				repair_speed_arms_factory_factor = 0.2
+			}
+		}
+		ISR_denial_of_democracy_ideas = {
+			name = ISR_denial_of_democracy_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_denial_of_democracy_ideas"}
+			picture = denial_of_democracy_ideas
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ISR_denial_of_democracy_ideas1 = {
+			name = ISR_denial_of_democracy_ideas1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_denial_of_democracy_ideas1"}
+			picture = denial_of_democracy_ideas
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		ISR_National_Security_Agency_ideas = {
+			name = ISR_National_Security_Agency_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_Security_Agency_ideas"}
+			picture = national_security_agency_ideas
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.2
+				attrition = -0.1
+				mobilization_speed = 0.1
+				military_leader_cost_factor = -0.2
+			}
+		}
+		ISR_National_Security_Agency_ideas1 = {
+			name = ISR_National_Security_Agency_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_Security_Agency_ideas1"}
+			picture = national_security_agency_ideas
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.35
+				attrition = -0.2
+				mobilization_speed = 0.2
+				military_leader_cost_factor = -0.2
+				operation_outcome = 0.2
+				operative_slot = 1
+				new_operative_slot_bonus = 5
+			}
+		}
+		ISR_Unite_the_Israelites_ideas = {
+			name = ISR_Unite_the_Israelites_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Unite_the_Israelites_ideas"}
+			picture = unite_the_israelites_ideas
+			allowed = { always = no }
+            modifier = {
+				army_morale_factor = 0.1
+				mobilization_speed = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		ISR_Red_Terror_ideas = {
+			name = ISR_Red_Terror_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Red_Terror_ideas"}
+			picture = Red_Terror_ideas
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.3
+				experience_loss_factor = -0.1
+				breakthrough_factor = 0.1
+			}
+		}
+		ISR_Red_Terror_ideas1 = {
+			name = ISR_Red_Terror_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Red_Terror_ideas1"}
+			picture = Red_Terror_ideas
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.5
+				experience_loss_factor = -0.2
+				breakthrough_factor = 0.2
+				army_infantry_attack_factor = 0.15
+			}
+		}
+		ISR_British_aid_ideas = {
+			name = ISR_British_aid_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_British_aid_ideas"}
+			picture = british_aid_ideas
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ISR_Unite_the_Israelites_ideas1 = {
+			name = ISR_Unite_the_Israelites_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Unite_the_Israelites_ideas1"}
+			picture = unite_the_israelites_ideas
+			allowed = { always = no }
+            modifier = {
+				army_morale_factor = 0.2
+				mobilization_speed = 0.2
+				army_org_factor = 0.2
+			}
+		}
+		ISR_Raise_the_torch_ideas = {
+			name = ISR_Raise_the_torch_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Raise_the_torch_ideas"}
+			picture = third_temple_ideas
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.1
+				production_speed_nuclear_reactor_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_air_base_factor = 0.1
+				production_speed_bunker_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		ISR_Inciting_fanaticism_ideas = {
+			name = ISR_Inciting_fanaticism_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Inciting_fanaticism_ideas"}
+			picture = death_cult_ideas
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.1
+				conscription_factor = 0.2
+				experience_gain_factor = 0.2
+				war_support_weekly = 0.005
+			}
+		}
+		ISR_Inciting_fanaticism_ideas1 = {
+			name = ISR_Inciting_fanaticism_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Inciting_fanaticism_ideas1"}
+			picture = death_cult_ideas
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.2
+				conscription_factor = 0.3
+				experience_gain_factor = 0.3
+				war_support_weekly = 0.01
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		ISR_lehis_will_ideas = {
+			name = ISR_lehis_will_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_lehis_will_ideas"}
+			picture = lehis_will_ideas
+			allowed = { always = no }
+            modifier = {
+				resistance_decay = 0.1
+				compliance_growth = 0.1
+				required_garrison_factor = -0.15
+				attrition = -0.2
+			}
+		}
+		ISR_canaan_agreed_ideas = {
+			name = ISR_canaan_agreed_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_canaan_agreed_ideas"}
+			picture = canaan_agreed_ideas
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.005
+				attrition = -0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+		ISR_canaan_agreed_ideas1 = {
+			name = ISR_canaan_agreed_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_canaan_agreed_ideas1"}
+			picture = canaan_agreed_ideas
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.01
+				attrition = -0.2
+				supply_consumption_factor = -0.2
+			}
+		}
+		ISR_palestinian_israeli_reconciliation_ideas = {
+			name = ISR_palestinian_israeli_reconciliation_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_palestinian_israeli_reconciliation_ideas"}
+			picture = palestinian_israeli_reconciliation_ideas
+			allowed = { always = no }
+            modifier = {
+				resistance_decay = 0.15
+				compliance_growth = 0.15
+				required_garrison_factor = -0.15
+				conscription_factor = 0.2
+			}
+		}
+		ISR_palestinian_israeli_reconciliation_ideas1 = {
+			name = ISR_palestinian_israeli_reconciliation_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_palestinian_israeli_reconciliation_ideas1"}
+			picture = palestinian_israeli_reconciliation_ideas
+			allowed = { always = no }
+            modifier = {
+				resistance_decay = 0.3
+				compliance_growth = 0.3
+				required_garrison_factor = -0.3
+				conscription_factor = 0.35
+			}
+		}
+		ISR_youth_power_ideas = {
+			name = ISR_youth_power_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_youth_power_ideas"}
+			picture = youth_power_ideas
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		ISR_youth_power_ideas1 = {
+			name = ISR_youth_power_ideas1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_youth_power_ideas1"}
+			picture = youth_power_ideas
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
+		ISR_youth_power_ideas2 = {
+			name = ISR_youth_power_ideas1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_youth_power_ideas2"}
+			picture = youth_power_ideas
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.1
+				initiative_factor = 0.1
+				planning_speed = 0.1
+				max_planning = 0.1
+			}
+		}
+		ISR_eliminate_zionist_fervor_ideas = {
+			name = ISR_eliminate_zionist_fervor_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_eliminate_zionist_fervor_ideas"}
+			picture = eliminate_zionist_fervor_ideas
+			allowed = { always = no }
+            modifier = {
+				military_leader_cost_factor = -0.5
+				army_leader_start_level = 1
+				defensive_war_stability_factor = 0.1
+			}
+		}
+		ISR_eliminate_zionist_fervor_ideas1 = {
+			name = ISR_eliminate_zionist_fervor_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_eliminate_zionist_fervor_ideas1"}
+			picture = eliminate_zionist_fervor_ideas
+			allowed = { always = no }
+            modifier = {
+				military_leader_cost_factor = -1
+				army_leader_start_level = 2
+				defensive_war_stability_factor = 0.2
+				breakthrough_factor = 0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		ISR_attacks_on_palestinians_ideas = {
+			name = ISR_attacks_on_palestinians_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_attacks_on_palestinians_ideas"}
+			picture = attacks_on_palestinians_ideas
+			allowed = { always = no }
+            modifier = {
+				experience_loss_factor = -0.1
+				experience_gain_army_factor = 0.1
+				experience_gain_factor = 0.1
+			}
+		}
+		ISR_attacks_on_palestinians_ideas1 = {
+			name = ISR_attacks_on_palestinians_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_attacks_on_palestinians_ideas1"}
+			picture = attacks_on_palestinians_ideas
+			allowed = { always = no }
+            modifier = {
+				experience_loss_factor = -0.2
+				experience_gain_army_factor = 0.2
+				experience_gain_factor = 0.2
+			}
+		}
+		ISR_attacks_on_palestinians_ideas2 = {
+			name = ISR_attacks_on_palestinians_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_attacks_on_palestinians_ideas2"}
+			picture = attacks_on_palestinians_ideas
+			allowed = { always = no }
+            modifier = {
+				experience_loss_factor = -0.3
+				experience_gain_army_factor = 0.3
+				experience_gain_factor = 0.3
+				recon_factor = 0.2
+				land_reinforce_rate = 0.2
+				army_org_factor = 0.2
+			}
+		}
+		ISR_new_lehi_ideas = {
+			name = ISR_new_lehi_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_new_lehi_ideas"}
+			picture = new_lehi_ideas
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.25
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+			}
+		}
+		ISR_mobilize_the_israelis_ideas = {
+			name = ISR_mobilize_the_israelis_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_mobilize_the_israelis_ideas"}
+			picture = mobilize_the_israelis_ideas
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.1
+				conscription_factor = 0.2
+				non_core_manpower = 0.3
+				mobilization_speed = 0.2
+			}
+		}
+		ISR_radical_zionists_ideas = {
+			name = ISR_radical_zionists_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_radical_zionists_ideas"}
+			picture = radical_zionists_ideas
+			allowed = { always = no }
+            modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+		ISR_radical_zionists_ideas1 = {
+			name = ISR_radical_zionists_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_radical_zionists_ideas1"}
+			picture = radical_zionists_ideas
+			allowed = { always = no }
+            modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.2
+				war_support_weekly = 0.005
+				stability_weekly = 0.005
+			}
+		}
+		ISR_learn_the_iron_guard_ideas = {
+			name = ISR_learn_the_iron_guard_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_learn_the_iron_guard_ideas"}
+			picture = learn_the_iron_guard_ideas
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		ISR_learn_the_iron_guard_ideas1 = {
+			name = ISR_learn_the_iron_guard_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_learn_the_iron_guard_ideas1"}
+			picture = learn_the_iron_guard_ideas
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		ISR_Leninism_ideas = {
+			name = ISR_Leninism_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Leninism_ideas"}
+			picture = ALB_vanguard_reborn_leninism
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.2
+				monthly_population = 0.4
+				conscription = 0.05
+				conscription_factor = 0.2
+			}
+		}
+		ISR_Leninism_ideas1 = {
+			name = ISR_Leninism_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Leninism_ideas1"}
+			picture = ALB_vanguard_reborn_leninism
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.3
+				monthly_population = 0.4
+				conscription = 0.07
+				conscription_factor = 0.2
+				winter_attrition_factor = -0.2
+				heat_attrition_factor = -0.2
+			}
+		}
+		ISR_Leninism_ideas2 = {
+			name = ISR_Leninism_ideas
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Leninism_ideas2"}
+			picture = ALB_vanguard_reborn_leninism
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.3
+				monthly_population = 0.5
+				conscription = 0.1
+				conscription_factor = 0.25
+				winter_attrition_factor = -0.25
+				heat_attrition_factor = -0.25
+			}
+		}
+		ISR_democratic_centralism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_democratic_centralism_ideas" }
+			name = ISR_democratic_centralism_ideas
+			picture = democratic_centralism_1
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+				totalist_drift = 0.005
+				political_power_gain = 0.2
+				attrition = -0.12
+			}
+		}
+		ISR_democratic_centralism_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_democratic_centralism_ideas1" }
+			name = ISR_democratic_centralism_ideas
+			picture = democratic_centralism_1
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				political_power_factor = 0.15
+				totalist_drift = 0.007
+				political_power_gain = 0.25
+				attrition = -0.15
+			}
+		}
+		ISR_democratic_centralism_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_democratic_centralism_ideas2" }
+			name = ISR_democratic_centralism_ideas
+			picture = democratic_centralism_1
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				political_power_factor = 0.2
+				totalist_drift = 0.015
+				political_power_gain = 0.25
+				attrition = -0.2
+			}
+		}
+		ISR_Moderate_collectivization_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Moderate_collectivization_ideas" }
+			name = ISR_Moderate_collectivization_ideas
+			picture = collectivist_primacy_2
+			allowed = { always = no }
+			modifier = {
+				cas_damage_reduction = 0.1
+				planning_speed = 0.1
+				army_strength_factor = 0.05
+				political_power_factor = 0.1
+			}
+		}
+		ISR_Moderate_collectivization_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Moderate_collectivization_ideas1" }
+			name = ISR_Moderate_collectivization_ideas
+			picture = collectivist_primacy_2
+			allowed = { always = no }
+			modifier = {
+				cas_damage_reduction = 0.15
+				planning_speed = 0.15
+				army_strength_factor = 0.1
+				political_power_factor = 0.15
+			}
+		}
+		ISR_Mass_education = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Mass_education" }
+			name = ISR_Mass_education
+			picture = ALB_cultural_ideological_revolution
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				repair_speed_factor = 0.1
+			}
+		}
+		ISR_Mass_education1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Mass_education1" }
+			name = ISR_Mass_education
+			picture = ALB_cultural_ideological_revolution
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.2
+				local_resources_factor = 0.2
+				repair_speed_factor = 0.2
+			}
+		}
+		ISR_Rectify_the_partys_style_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Rectify_the_partys_style_ideas" }
+			name = ISR_Rectify_the_partys_style_ideas
+			picture = ALB_purge
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				drift_defence_factor = 0.5
+			}
+		}
+		ISR_Centralized_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Centralized_ideas" }
+			name = ISR_Centralized_ideas
+			picture = TEX_american_revovery_period
+			allowed = { always = no }
+			modifier = {
+				production_factory_start_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				repair_speed_industrial_complex_factor = 0.10
+				repair_speed_arms_factory_factor = 0.10
+			}
+		}
+		ISR_Centralized_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Centralized_ideas1" }
+			name = ISR_Centralized_ideas
+			picture = TEX_american_revovery_period
+			allowed = { always = no }
+			modifier = {
+				production_factory_start_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				repair_speed_industrial_complex_factor = 0.15
+				repair_speed_arms_factory_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		ISR_Labour_and_Defense_Committee_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Labour_and_Defense_Committee_ideas" }
+			name = ISR_Labour_and_Defense_Committee_ideas
+			picture = WHR_forced_labour
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				stability_weekly = 0.003
+				war_support_factor = 0.05
+			}
+		}
+		ISR_Labour_and_Defense_Committee_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Labour_and_Defense_Committee_ideas1" }
+			name = ISR_Labour_and_Defense_Committee_ideas
+			picture = WHR_forced_labour
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				stability_factor = 0.07
+				stability_weekly = 0.007
+				war_support_factor = 0.1
+			}
+		}
+		ISR_vanguard_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_vanguard_ideas" }
+			name = ISR_vanguard_ideas
+			picture = BBR_vanguard_party
+			allowed = { always = no }
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				repair_speed_industrial_complex_factor = 0.1
+				repair_speed_arms_factory_factor = 0.1
+			}
+		}
+		ISR_vanguard_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_vanguard_ideas1" }
+			name = ISR_vanguard_ideas
+			picture = BBR_vanguard_party
+			allowed = { always = no }
+			modifier = {
+				production_factory_start_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				repair_speed_industrial_complex_factor = 0.15
+				repair_speed_arms_factory_factor = 0.15
+				mobilization_speed = 0.2
+				local_resources_factor = 0.15
+			}
+		}
+		ISR_Promote_urbanization_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Promote_urbanization_ideas" }
+			name = ISR_Promote_urbanization_ideas
+			picture = KIK_urban_urchins_idea
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		ISR_Promote_urbanization_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Promote_urbanization_ideas1" }
+			name = ISR_Promote_urbanization_ideas
+			picture = KIK_urban_urchins_idea
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.2
+			}
+		}
+		ISR_Mass_collectivization_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Mass_collectivization_ideas" }
+			name = ISR_Mass_collectivization_ideas
+			picture = KIK_urban_urchins_idea
+			allowed = { always = no }
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		ISR_Israelis_come_first_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israelis_come_first_ideas" }
+			name = ISR_Israelis_come_first_ideas
+			picture = KIK_urban_urchins_idea
+			allowed = { always = no }
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				political_power_cost = 0.05
+				conscription_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		ISR_Israelis_come_first_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israelis_come_first_ideas1" }
+			name = ISR_Israelis_come_first_ideas
+			picture = KIK_urban_urchins_idea
+			allowed = { always = no }
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+				political_power_cost = 0.15
+				conscription_factor = 0.15
+				research_speed_factor = 0.15
+			}
+		}
+		ISR_Criticism_of_radical_Zionism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Criticism_of_radical_Zionism_ideas" }
+			name = ISR_Criticism_of_radical_Zionism_ideas
+			picture = ALB_renewed_vision_albania
+			allowed = { always = no }
+			modifier = {
+				attrition = -0.1
+				supply_factor = 0.1
+				supply_node_range = 0.1
+				local_org_regain = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		ISR_Criticism_of_radical_Zionism_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Criticism_of_radical_Zionism_ideas1" }
+			name = ISR_Criticism_of_radical_Zionism_ideas
+			picture = ALB_renewed_vision_albania
+			allowed = { always = no }
+			modifier = {
+				attrition = -0.2
+				supply_factor = 0.2
+				supply_node_range = 0.2
+				local_org_regain = 0.2
+				army_org_factor = 0.2
+				army_morale_factor = 0.2
+			}
+		}
+		ISR_Control_prices_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Control_prices_ideas" }
+			name = ISR_Control_prices_ideas
+			picture = ALB_rejuvenation_classes
+			allowed = { always = no }
+			modifier = {
+				pocket_penalty = -0.1
+				winter_attrition_factor = -0.1
+				heat_attrition_factor = -0.1
+				terrain_penalty_reduction = 0.1
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		ISR_Control_prices_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Control_prices_ideas1" }
+			name = ISR_Control_prices_ideas
+			picture = ALB_rejuvenation_classes
+			allowed = { always = no }
+			modifier = {
+				pocket_penalty = -0.1
+				winter_attrition_factor = -0.15
+				heat_attrition_factor = -0.15
+				terrain_penalty_reduction = 0.2
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.15
+			}
+		}
+		ISR_Control_prices_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Control_prices_ideas2" }
+			name = ISR_Control_prices_ideas
+			picture = ALB_rejuvenation_classes
+			allowed = { always = no }
+			modifier = {
+				pocket_penalty = -0.2
+				winter_attrition_factor = -0.2
+				heat_attrition_factor = -0.2
+				terrain_penalty_reduction = 0.2
+				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.25
+			}
+		}
+		ISR_Control_prices_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Control_prices_ideas3" }
+			name = ISR_Control_prices_ideas
+			picture = ALB_rejuvenation_classes
+			allowed = { always = no }
+			modifier = {
+				pocket_penalty = -0.3
+				winter_attrition_factor = -0.3
+				heat_attrition_factor = -0.3
+				terrain_penalty_reduction = 0.3
+				consumer_goods_factor = -0.3
+				consumer_goods_expected_value = -0.35
+			}
+		}
+		ISR_decentralization_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_decentralization_ideas" }
+			name = ISR_decentralization_ideas
+			picture = decentralized_planning
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				local_building_slots_factor = 0.1
+			}
+		}
+		ISR_decentralization_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_decentralization_ideas1" }
+			name = ISR_decentralization_ideas
+			picture = decentralized_planning
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				local_building_slots_factor = 0.2
+			}
+		}
+		ISR_decentralization_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_decentralization_ideas2" }
+			name = ISR_decentralization_ideas
+			picture = decentralized_planning
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = -0.2
+				stability_factor = 0.2
+				production_speed_buildings_factor = 0.25
+				local_building_slots_factor = 0.35
+			}
+		}
+		ISR_Unite_the_major_lefts_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Unite_the_major_lefts_ideas" }
+			name = ISR_Unite_the_major_lefts_ideas
+			picture = decentralized_planning
+			allowed = { always = no }
+			modifier = {
+				breakthrough_factor = 0.1
+				initiative_factor = 0.05
+				planning_speed = 0.05
+				max_planning = 0.05
+			}
+		}
+		ISR_Unite_the_major_lefts_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Unite_the_major_lefts_ideas1" }
+			name = ISR_Unite_the_major_lefts_ideas
+			picture = ALB_thousand_voices
+			allowed = { always = no }
+			modifier = {
+				breakthrough_factor = 0.2
+				initiative_factor = 0.1
+				planning_speed = 0.15
+				max_planning = 0.15
+			}
+		}
+		ISR_New_Economic_Policy_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_New_Economic_Policy_ideas" }
+			name = ISR_New_Economic_Policy_ideas
+			picture = ALB_socialisms_orchard
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				economy_cost_factor = -0.1
+				research_speed_factor = 0.1
+			}
+		}
+		ISR_New_Economic_Policy_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_New_Economic_Policy_ideas1" }
+			name = ISR_New_Economic_Policy_ideas
+			picture = ALB_socialisms_orchard
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				consumer_goods_factor = -0.15
+				economy_cost_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				research_speed_factor = 0.12
+			}
+		}
+		ISR_New_Economic_Policy_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_New_Economic_Policy_ideas2" }
+			name = ISR_New_Economic_Policy_ideas
+			picture = ALB_socialisms_orchard
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+				economy_cost_factor = -0.2
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				research_speed_factor = 0.15
+			}
+		}
+		ISR_Take_control_of_the_union_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Take_control_of_the_union_ideas" }
+			name = ISR_Take_control_of_the_union_ideas
+			picture = NEE_union_peace
+			allowed = { always = no }
+			modifier = {
+				radical_socialist_drift = 0.05
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		ISR_Take_control_of_the_union_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Take_control_of_the_union_ideas1" }
+			name = ISR_Take_control_of_the_union_ideas
+			picture = NEE_union_peace
+			allowed = { always = no }
+			modifier = {
+				radical_socialist_drift = 0.1
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				political_power_cost = -0.2
+			}
+		}
+		ISR_Redemption_of_private_businesses_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Redemption_of_private_businesses_ideas" }
+			name = ISR_Redemption_of_private_businesses_ideas
+			picture = ARZ_racial_unity_arizona
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		ISR_Redemption_of_private_businesses_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Redemption_of_private_businesses_ideas1" }
+			name = ISR_Redemption_of_private_businesses_ideas
+			picture = ARZ_racial_unity_arizona
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		ISR_League_of_Communists_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_League_of_Communists_ideas" }
+			name = ISR_League_of_Communists_ideas
+			picture = ALB_youth_leagues
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		ISR_League_of_Communists_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_League_of_Communists_ideas1" }
+			name = ISR_League_of_Communists_ideas
+			picture = ALB_youth_leagues
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				conscription = 0.05
+				conscription_factor = 0.1
+			}
+		}
+		ISR_rural_urban_disparities_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_rural_urban_disparities_ideas" }
+			name = ISR_rural_urban_disparities_ideas
+			picture = NFA_dispo
+			allowed = { always = no }
+			modifier = {
+				weekly_manpower = 500
+				command_power_gain_mult = 0.07
+				resistance_decay = 0.10
+				decryption_factor = 0.06
+				encryption_factor = 0.06
+			}
+		}
+		ISR_rural_urban_disparities_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_rural_urban_disparities_ideas1" }
+			name = ISR_rural_urban_disparities_ideas
+			picture = NFA_dispo
+			allowed = { always = no }
+			modifier = {
+				weekly_manpower = 1500
+				command_power_gain_mult = 0.2
+				resistance_decay = 0.2
+				decryption_factor = 0.15
+				encryption_factor = 0.15
+			}
+		}
+		ISR_Preservation_of_multiculturalism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Preservation_of_multiculturalism_ideas" }
+			name = ISR_Preservation_of_multiculturalism_ideas
+			picture = NFA_dispo
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.1
+				stability_weekly = 0.003
+				war_support_weekly = 0.003
+			}
+		}
+		ISR_Preservation_of_multiculturalism_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Preservation_of_multiculturalism_ideas1" }
+			name = ISR_Preservation_of_multiculturalism_ideas
+			picture = NFA_dispo
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.25
+				political_power_gain = 0.15
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				research_speed_factor = 0.1
+				local_resources_factor = 0.15
+				conscription = 0.05
+			}
+		}
+		ISR_Reborn_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Reborn_ideas" }
+			name = ISR_Reborn_ideas
+			picture = NIC_home_central_american_revolution
+			allowed = { always = no }
+			modifier = {
+				land_reinforce_rate = 0.1
+				military_leader_cost_factor = -0.20
+				army_leader_start_level = 1
+				acclimatization_hot_climate_gain_factor = 0.2
+			}
+		}
+		ISR_Reborn_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Reborn_ideas1" }
+			name = ISR_Reborn_ideas
+			picture = NIC_home_central_american_revolution
+			allowed = { always = no }
+			modifier = {
+				land_reinforce_rate = 0.2
+				military_leader_cost_factor = -0.50
+				army_leader_start_level = 1
+				acclimatization_hot_climate_gain_factor = 0.25
+				acclimatization_cold_climate_gain_factor = 0.25
+				no_supply_grace = 48
+			}
+		}
+		ISR_Reborn_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Reborn_ideas2" }
+			name = ISR_Reborn_ideas
+			picture = NIC_home_central_american_revolution
+			allowed = { always = no }
+			modifier = {
+				land_reinforce_rate = 0.4
+				military_leader_cost_factor = -1
+				army_leader_start_level = 2
+				acclimatization_hot_climate_gain_factor = 0.4
+				acclimatization_cold_climate_gain_factor = 0.4
+				no_supply_grace = 96
+			}
+		}
+		ISR_Revolutionary_economic_outlook_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Revolutionary_economic_outlook_ideas" }
+			name = ISR_Revolutionary_economic_outlook_ideas
+			picture = TEX_start_economic_revival
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ISR_Revolutionary_economic_outlook_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Revolutionary_economic_outlook_ideas1" }
+			name = ISR_Revolutionary_economic_outlook_ideas
+			picture = TEX_start_economic_revival
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.5
+				production_speed_buildings_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+				industrial_capacity_factory = 0.3
+			}
+		}
+		ISR_Vanguard_of_the_revolution_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Vanguard_of_the_revolution_ideas" }
+			name = ISR_Vanguard_of_the_revolution_ideas
+			picture = SOV_cultural_revolution
+			allowed = { always = no }
+			modifier = {
+				army_attack_speed_factor = 0.2
+				army_speed_factor = 0.2
+				initiative_factor = 0.2
+				generate_wargoal_tension = -0.5
+				justify_war_goal_time = -0.2
+			}
+		}
+		ISR_Vanguard_of_the_revolution_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Vanguard_of_the_revolution_ideas1" }
+			name = ISR_Vanguard_of_the_revolution_ideas
+			picture = SOV_cultural_revolution
+			allowed = { always = no }
+			modifier = {
+			totalist_drift = 0.05
+				army_attack_speed_factor = 0.25
+				army_speed_factor = 0.25
+				initiative_factor = 0.25
+				generate_wargoal_tension = -0.5
+				justify_war_goal_time = -0.2
+			}
+		}
+		ISR_Vanguard_of_the_revolution_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Vanguard_of_the_revolution_ideas2" }
+			name = ISR_Vanguard_of_the_revolution_ideas
+			picture = SOV_cultural_revolution
+			allowed = { always = no }
+			modifier = {
+			totalist_drift = 0.8
+				army_attack_speed_factor = 0.25
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				army_speed_factor = 0.25
+				initiative_factor = 0.25
+				generate_wargoal_tension = -0.7
+				justify_war_goal_time = -0.5
+			}
+		}
+		ISR_Step_into_modernization_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Step_into_modernization_ideas" }
+			name = ISR_Balancing_interests_ideas
+			picture = MON_foreign_modern
+			allowed = { always = no }
+			modifier = {
+			production_speed_arms_factory_factor = 0.15
+			production_speed_industrial_complex_factor = 0.15
+			local_building_slots_factor = 0.15
+			production_speed_infrastructure_factor = 0.12
+			command_power_gain_mult = 0.2
+			}
+		}
+		ISR_Patriotic_education_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Patriotic_education_ideas" }
+			name = ISR_Patriotic_education_ideas
+			picture = great_sprint_forward
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.1
+				war_support_weekly = 0.005
+				consumer_goods_factor = -0.1
+			}
+		}
+		ISR_Patriotic_education_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Patriotic_education_ideas1" }
+			name = ISR_Patriotic_education_ideas
+			picture = great_sprint_forward
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.2
+				war_support_weekly = 0.01
+				consumer_goods_factor = -0.25
+				tactic_relentless_assault_preferred_weight_factor = 1
+				terrain_penalty_reduction = 0.25
+			}
+		}
+		ISR_burnhams_economic_policy_ideas = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_burnhams_economic_policy_ideas"}
+			name = ISR_burnhams_economic_policy_ideas
+			picture = CSA_burnham_economic_policy
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.10
+				production_factory_start_efficiency_factor = 0.10
+				research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+		}
+		ISR_burnhams_economic_policy_ideas1 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_burnhams_economic_policy_ideas1"}
+			name = ISR_burnhams_economic_policy_ideas
+			picture = CSA_burnham_economic_policy
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				local_resources = 0.05
+				MONTHLY_POPULATION = 0.3
+				research_speed_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+		ISR_burnhams_economic_policy_ideas2 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_burnhams_economic_policy_ideas2"}
+			name = ISR_burnhams_economic_policy_ideas
+			picture = CSA_burnham_economic_policy
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				local_resources = 0.15
+				MONTHLY_POPULATION = 0.3
+				research_speed_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+		}
+		ISR_trade_unions_ideas = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_trade_unions_ideas"}
+			allowed = { always = no }
+			name = ISR_trade_unions_ideas
+			picture = NEE_union_peace
+            modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = 0.1
+				party_popularity_stability_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				local_resources_factor = 0.03
+			}
+		}
+		ISR_trade_unions_ideas1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_trade_unions_ideas1"}
+			allowed = { always = no }
+			name = ISR_trade_unions_ideas
+			picture = NEE_union_peace
+            modifier = {
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.15
+				party_popularity_stability_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				local_resources_factor = 0.1
+			}
+		}
+		ISR_proletariat_commander_ideas = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_proletariat_commander_ideas"}
+			picture = CSA_proletariat_commander
+			name = ISR_proletariat_commander_ideas
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.15
+				command_power_gain_mult = 0.15
+				stability_weekly = 0.01
+			}
+		}		
+		ISR_proletariat_commander_ideas1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_proletariat_commander_ideas1"}
+			picture = CSA_proletariat_commander
+			name = ISR_proletariat_commander_ideas
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.3
+				command_power_gain_mult = 0.3
+				stability_weekly = 0.02
+				encryption_factor = 0.05
+			}
+		}
+		ISR_Council_of_Technocrats_ideas = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_Council_of_Technocrats_ideas"}
+			name = ISR_Council_of_Technocrats_ideas
+			picture = CSA_twenty_four_techno_hours
+			allowed = { always = no }
+            modifier = {
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+				resistance_damage_to_garrison = -0.2
+				stability_factor = 0.05
+			}
+		}
+		ISR_Council_of_Technocrats_ideas1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_Council_of_Technocrats_ideas1"}
+			name = ISR_Council_of_Technocrats_ideas
+			picture = CSA_twenty_four_techno_hours
+			allowed = { always = no }
+            modifier = {
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+				resistance_damage_to_garrison = -0.2
+				stability_factor = 0.05
+				intelligence_agency_defense = 0.5
+				air_night_penalty = -0.2
+				land_night_attack = 0.25
+				initiative_factor = 0.2
+			}
+		}
+		ISR_Union_of_National_Unity_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Union_of_National_Unity_ideas" }
+			name = ISR_Union_of_National_Unity_ideas
+			picture = class_collaboration
+			allowed = { always = no }
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		ISR_Union_of_National_Unity_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Union_of_National_Unity_ideas1" }
+			name = ISR_Union_of_National_Unity_ideas
+			picture = class_collaboration
+			allowed = { always = no }
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				ARMY_SPEED_FACTOR = 0.05
+				REQUIRED_GARRISON_FACTOR = -0.1
+			}
+		}
+		ISR_Affirmative_society_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Affirmative_society_ideas" }
+			name = ISR_Affirmative_society_ideas
+			picture = TEX_protect_pioneer_women
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = 0.2
+				non_core_manpower = 0.2
+				mobilization_speed = 0.2
+			}
+		}
+		ISR_Affirmative_society_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Affirmative_society_ideas1" }
+			name = ISR_Affirmative_society_ideas
+			picture = TEX_protect_pioneer_women
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = 0.2
+				non_core_manpower = 0.2
+				mobilization_speed = 0.2
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				reassignment_duration_factor = -0.1
+			}
+		}
+		ISR_Affirmative_society_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Affirmative_society_ideas2" }
+			name = ISR_Affirmative_society_ideas
+			picture = TEX_protect_pioneer_women
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = 0.25
+				non_core_manpower = 0.25
+				mobilization_speed = 0.25
+				industrial_capacity_factory = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				reassignment_duration_factor = -0.2
+			}
+		}
+		ISR_Workers_Economic_Council_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Workers_Economic_Council_ideas" }
+			name = ISR_Workers_Economic_Council_ideas
+			picture = NOR_planned_economy
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		ISR_Workers_Economic_Council_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Workers_Economic_Council_ideas1" }
+			name = ISR_Workers_Economic_Council_ideas
+			picture = NOR_planned_economy
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.35
+				production_speed_buildings_factor = 0.12
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		ISR_Workers_Economic_Council_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Workers_Economic_Council_ideas1" }
+			name = ISR_Workers_Economic_Council_ideas
+			picture = NOR_planned_economy
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.35
+				production_speed_buildings_factor = 0.12
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		ISR_On_the_road_to_revolution_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_On_the_road_to_revolution_ideas" }
+			name = ISR_On_the_road_to_revolution_ideas
+			picture = CZE_revolution_idea
+			allowed = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		ISR_On_the_road_to_revolution_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_On_the_road_to_revolution_ideas1" }
+			name = ISR_On_the_road_to_revolution_ideas
+			picture = CZE_revolution_idea
+			allowed = { always = no }
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				land_reinforce_rate = 0.15
+			}
+		}
+		ISR_Middle_East_unity_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Middle_East_unity_ideas" }
+			name = ISR_Middle_East_unity_ideas
+			picture = united_cossacks
+			allowed = { always = no }
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+		ISR_Middle_East_unity_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Middle_East_unity_ideas1" }
+			name = ISR_Middle_East_unity_ideas
+			picture = united_cossacks
+			allowed = { always = no }
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.15
+				political_power_factor = 0.2
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = 0.15
+			}
+		}
+		ISR_The_fruits_of_the_Commune_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_The_fruits_of_the_Commune_ideas" }
+			name = ISR_The_fruits_of_the_Commune_ideas
+			picture = TIB_buddhist_communism
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		ISR_The_fruits_of_the_Commune_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_The_fruits_of_the_Commune_ideas1" }
+			name = ISR_The_fruits_of_the_Commune_ideas
+			picture = TIB_buddhist_communism
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.2
+			}
+		}
+		ISR_The_fruits_of_the_Commune_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_The_fruits_of_the_Commune_ideas2" }
+			name = ISR_The_fruits_of_the_Commune_ideas
+			picture = TIB_buddhist_communism
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.3
+				stability_popularity_factor = 0.2
+			}
+		}
+		ISR_Planning_and_Economic_Commission_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Planning_and_Economic_Commission_ideas" }
+			name = ISR_Planning_and_Economic_Commission_ideas
+			picture = WHR_goods_vouchers_community
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				research_speed_factor = 0.05
+				army_core_defence_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ISR_Planning_and_Economic_Commission_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Planning_and_Economic_Commission_ideas1" }
+			name = ISR_Planning_and_Economic_Commission_ideas
+			picture = WHR_goods_vouchers_community
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_factor = 0.1
+				research_speed_factor = 0.1
+				local_building_slots_factor = 0.1
+				army_core_defence_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ISR_Symbol_of_settlement_culture_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Symbol_of_settlement_culture_ideas" }
+			name = ISR_Symbol_of_settlement_culture_ideas
+			picture = COR_jewish_segregation
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.2
+				drift_defence_factor = 0.5
+			}
+		}
+		ISR_Symbol_of_settlement_culture_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Symbol_of_settlement_culture_ideas1" }
+			name = ISR_Symbol_of_settlement_culture_ideas
+			picture = COR_jewish_segregation
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.25
+				political_power_gain = 0.25
+				consumer_goods_factor = -0.4
+				drift_defence_factor = 1
+			}
+		}
+		ISR_Free_Country_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Free_Country_ideas" }
+			name = ISR_Free_Country_ideas
+			picture = BBR_free_thought_societies
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				conscription = 0.03
+				monthly_population = 0.2
+			}
+		}
+		ISR_Free_Country_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Free_Country_ideas1" }
+			name = ISR_Free_Country_ideas
+			picture = BBR_free_thought_societies
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.25
+				political_power_gain = 0.25
+				conscription = 0.07
+				monthly_population = 0.4
+				army_attack_factor = 0.2
+				army_attack_speed_factor = 0.2
+				army_speed_factor = 0.2
+			}
+		}
+		ISR_Maintain_settlements_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Maintain_settlements_ideas" }
+			name = ISR_Maintain_settlements_ideas
+			picture = CAN_rally_the_country
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ISR_Maintain_settlements_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Maintain_settlements_ideas1" }
+			name = ISR_Maintain_settlements_ideas
+			picture = CAN_rally_the_country
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.15
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				attrition = -0.2
+				supply_consumption_factor = -0.2
+			}
+		}
+		ISR_Maintain_settlements_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Maintain_settlements_ideas2" }
+			name = ISR_Maintain_settlements_ideas
+			picture = CAN_rally_the_country
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.15
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				attrition = -0.2
+				supply_consumption_factor = -0.2
+				generate_wargoal_tension = -0.5
+				justify_war_goal_time = -0.3
+				army_attack_speed_factor = 0.1
+			}
+		}
+		ISR_Committee_of_Cooperatives_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Committee_of_Cooperatives_ideas" }
+			name = ISR_Committee_of_Cooperatives_ideas
+			picture = BBR_communal_econ
+			allowed = { always = no }
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		ISR_Committee_of_Cooperatives_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Committee_of_Cooperatives_ideas1" }
+			name = ISR_Committee_of_Cooperatives_ideas
+			picture = BBR_communal_econ
+			allowed = { always = no }
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				research_speed_factor = 0.15
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ISR_Liberate_the_people_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Liberate_the_people_ideas" }
+			name = ISR_Liberate_the_people_ideas
+			picture = WHR_theology_of_liberation
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.05
+				army_artillery_attack_factor = 0.05
+				initiative_factor = 0.1
+				pocket_penalty = -0.1
+			}
+		}
+		ISR_Liberate_the_people_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Liberate_the_people_ideas1" }
+			name = ISR_Liberate_the_people_ideas
+			picture = WHR_theology_of_liberation
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.15
+				army_artillery_attack_factor = 0.1
+				initiative_factor = 0.2
+				pocket_penalty = -0.2
+			}
+		}
+		ISR_Practical_diplomacy_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Practical_diplomacy_ideas" }
+			name = ISR_Practical_diplomacy_ideas
+			picture = MEX_freedom_of_practice_idea
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.1
+				drift_defence_factor = 0.3
+				attrition = -0.1
+			}
+		}
+		ISR_Practical_diplomacy_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Practical_diplomacy_ideas1" }
+			name = ISR_Practical_diplomacy_ideas
+			picture = MEX_freedom_of_practice_idea
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.2
+				drift_defence_factor = 0.5
+				attrition = -0.2
+			}
+		}
+		ISR_National_Parliament_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_Parliament_ideas" }
+			name = ISR_National_Parliament_ideas
+			picture = GUA_appease_socialists
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.005
+				weekly_manpower = 1000
+				compliance_growth = 0.01
+				research_speed_factor = 0.1
+			}
+		}
+		ISR_National_Parliament_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_Parliament_ideas1" }
+			name = ISR_National_Parliament_ideas
+			picture = GUA_appease_socialists
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.005
+				weekly_manpower = 2500
+				research_speed_factor = 0.1
+				compliance_growth = 0.1
+				resistance_target = -0.2
+			}
+		}
+		ISR_National_Parliament_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_Parliament_ideas2" }
+			name = ISR_National_Parliament_ideas
+			picture = GUA_appease_socialists
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.005
+				weekly_manpower = 2500
+				research_speed_factor = 0.1
+				compliance_growth = 0.1
+				resistance_target = -0.2
+				supply_consumption_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+			}
+		}
+		ISR_Israel_agrees_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israel_agrees_ideas" }
+			name = ISR_Israel_agrees_ideas
+			picture = NEE_atomic_age
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ISR_Israel_agrees_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israel_agrees_ideas1" }
+			name = ISR_Israel_agrees_ideas
+			picture = NEE_atomic_age
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.2
+				conversion_cost_civ_to_mil_factor= -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+				production_speed_buildings_factor = 0.2
+				intelligence_agency_defense = 0.2
+			}
+		}
+		ISR_Medicare_plans_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Medicare_plans_ideas" }
+			name = ISR_Medicare_plans_ideas
+			picture = medicare
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+				line_change_production_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		ISR_Medicare_plans_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Medicare_plans_ideas1" }
+			name = ISR_Medicare_plans_ideas
+			picture = medicare
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.1
+				research_speed_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				line_change_production_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		ISR_The_two_countries_reconciled_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_The_two_countries_reconciled_ideas" }
+			name = ISR_The_two_countries_reconciled_ideas
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				justify_war_goal_time = -0.1
+				army_defence_against_major_factor = 0.1
+				army_attack_against_major_factor = 0.1
+			}
+		}
+		ISR_The_two_countries_reconciled_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_The_two_countries_reconciled_ideas1" }
+			name = ISR_The_two_countries_reconciled_ideas
+			picture = NFA_unity_gov
+			allowed = { always = no }
+			modifier = {
+				justify_war_goal_time = -0.1
+				army_defence_against_major_factor = 0.1
+				army_attack_against_major_factor = 0.1
+				cavalry_attack_factor = -0.1
+				max_planning = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		ISR_One_big_union_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_One_big_union_ideas" }
+			name = ISR_One_big_union_ideas
+			picture = FOP_labour
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				conscription = 0.01
+			}
+		}
+		ISR_One_big_union_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_One_big_union_ideas1" }
+			name = ISR_One_big_union_ideas
+			picture = FOP_labour
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				conscription = 0.05
+				army_attack_factor = 0.07
+			}
+		}
+		ISR_One_big_union_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_One_big_union_ideas2" }
+			name = ISR_One_big_union_ideas2
+			picture = FOP_labour
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				conscription = 0.1
+				army_attack_factor = 0.12
+				max_planning = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		ISR_National_Engineering_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_Engineering_ideas" }
+			name = ISR_National_Engineering_ideas
+			picture = social_engineering
+			allowed = { always = no }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				local_building_slots_factor = 0.15
+				local_resources_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+		}
+		ISR_National_Engineering_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_Engineering_ideas1" }
+			name = ISR_National_Engineering_ideas
+			picture = social_engineering
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.15
+				weekly_manpower = 2000
+				production_speed_industrial_complex_factor = 0.15
+				local_building_slots_factor = 0.2
+				local_resources_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+		}
+		ISR_State_Housing_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_State_Housing_ideas" }
+			name = ISR_State_Housing_ideas
+			picture = GRU_COMMUNAL_HOUSE
+			allowed = { always = no }
+			modifier = {
+				faction_trade_opinion_factor = 0.3
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		ISR_State_Housing_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_State_Housing_ideas1" }
+			name = ISR_State_Housing_ideas
+			picture = GRU_COMMUNAL_HOUSE
+			allowed = { always = no }
+			modifier = {
+				faction_trade_opinion_factor = 0.5
+				industrial_capacity_factory = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		ISR_Fight_for_the_bi_nation_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Fight_for_the_bi_nation_ideas" }
+			name = ISR_Fight_for_the_bi_nation_ideas
+			picture = TEX_american_revovery_period
+			allowed = { always = no }
+			modifier = {
+				non_core_manpower = 0.1
+				monthly_population = 0.1
+				conscription_factor = 0.05
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.05
+			}
+		}
+		ISR_Fight_for_the_bi_nation_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Fight_for_the_bi_nation_ideas1" }
+			name = ISR_Fight_for_the_bi_nation_ideas
+			picture = TEX_american_revovery_period
+			allowed = { always = no }
+			modifier = {
+				non_core_manpower = 0.25
+				monthly_population = 0.25
+				conscription_factor = 0.1
+				army_attack_factor = 0.1
+				breakthrough_factor = 0.1
+			}
+		}
+		ISR_Unite_the_Jewish_community_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Unite_the_Jewish_community_ideas" }
+			name = ISR_Unite_the_Jewish_community_ideas
+			picture = FRA_communard_spirit
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+		ISR_Unite_the_Jewish_community_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Unite_the_Jewish_community_ideas1" }
+			name = ISR_Unite_the_Jewish_community_ideas
+			picture = FRA_communard_spirit
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.2
+				political_power_gain = 0.25
+				industrial_capacity_factory = 0.15
+				experience_loss_factor = -0.15
+				supply_consumption_factor = -0.1
+			}
+		}
+		ISR_Unite_the_Jewish_community_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Unite_the_Jewish_community_ideas2" }
+			name = ISR_Unite_the_Jewish_community_ideas
+			picture = FRA_communard_spirit
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.2
+				political_power_gain = 0.25
+				industrial_capacity_factory = 0.2
+				experience_loss_factor = -0.2
+				supply_consumption_factor = -0.2
+				mobilization_speed = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		ISR_Market_economy_system_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Market_economy_system_ideas" }
+			name = ISR_Market_economy_system_ideas
+			picture = market_efficiency_2
+			allowed = { always = no }
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		ISR_Market_economy_system_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Market_economy_system_ideas1" }
+			name = ISR_Market_economy_system_ideas
+			picture = market_efficiency_2
+			allowed = { always = no }
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				consumer_goods_expected_value = -0.3
+				consumer_goods_factor = -0.25
+			}
+		}
+		ISR_Board_of_Education_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Board_of_Education_ideas" }
+			name = ISR_Board_of_Education_ideas
+			picture = public_education
+			allowed = { always = no }
+			modifier = {
+				local_resources_factor = 0.1
+				research_speed_factor = 0.1
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ISR_Board_of_Education_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Board_of_Education_ideas1" }
+			name = ISR_Board_of_Education_ideas
+			picture = public_education
+			allowed = { always = no }
+			modifier = {
+				local_resources_factor = 0.2
+				research_speed_factor = 0.2
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		ISR_Conciliation_Commission_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Conciliation_Commission_ideas" }
+			name = ISR_Conciliation_Commission_ideas
+			picture = bloated_bureaucracy
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.05
+				IMPROVE_RELATIONS_MAINTAIN_COST_FACTOR = -0.25
+				compliance_growth = 0.01
+				army_core_attack_factor = 0.1
+			}
+		}
+		ISR_Conciliation_Commission_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Conciliation_Commission_ideas1" }
+			name = ISR_Conciliation_Commission_ideas
+			picture = bloated_bureaucracy
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.1
+				IMPROVE_RELATIONS_MAINTAIN_COST_FACTOR = -0.5
+				compliance_growth = 0.05
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+		ISR_Iron_Man_Politics_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Iron_Man_Politics_ideas" }
+			name = ISR_Iron_Man_Politics_ideas
+			picture = ARZ_government_big_iron
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+				weekly_manpower = 2000
+				local_resources_factor = 0.1
+			}
+		}
+		ISR_Iron_Man_Politics_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Iron_Man_Politics_ideas1" }
+			name = ISR_Iron_Man_Politics_ideas
+			picture = ARZ_government_big_iron
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+				weekly_manpower = 4000
+				local_resources_factor = 0.2
+				supply_consumption_factor = -0.2
+			}
+		}
+		ISR_Iron_Man_Politics_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Iron_Man_Politics_ideas2" }
+			name = ISR_Iron_Man_Politics_ideas
+			picture = ARZ_government_big_iron
+			allowed = { always = no }
+			modifier = {
+				max_command_power = 2000
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				weekly_manpower = 4000
+				supply_consumption_factor = -0.25
+				local_resources_factor = 0.25
+				planning_speed = 0.05
+				max_planning = 0.05
+			}
+		}
+		ISR_Workers_Councils_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Workers_Councils_ideas" }
+			name = ISR_Workers_Councils_ideas
+			picture = BBR_workers_market
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		ISR_Workers_Councils_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Workers_Councils_ideas1" }
+			name = ISR_Workers_Councils_ideas
+			picture = BBR_workers_market
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.25
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
+		ISR_Fundraising_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Fundraising_ideas" }
+			name = ISR_Fundraising_ideas
+			picture = GER_fund_farmers
+			allowed = { always = no }
+			modifier = {
+				local_resources_factor = 0.1
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				pocket_penalty = -0.1
+			}
+		}
+		ISR_Fundraising_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Fundraising_ideas1" }
+			name = ISR_Fundraising_ideas
+			picture = GER_fund_farmers
+			allowed = { always = no }
+			modifier = {
+				local_resources_factor = 0.2
+				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.3
+				pocket_penalty = -0.2
+			}
+		}
+		ISR_national_judaism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_national_judaism_ideas" }
+			name = ISR_national_judaism_ideas
+			picture = national_judaism
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ISR_Conscription_orders_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Conscription_orders_ideas" }
+			name = ISR_Conscription_orders_ideas
+			picture = GER_quenched_militarism
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		ISR_Forced_secularization_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Forced_secularization_ideas" }
+			name = ISR_Forced_secularization_ideas
+			picture = GRU_FDP_secular_state
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		ISR_political_tutelage_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_political_tutelage_ideas"}
+			name = ISR_political_tutelage_ideas
+			picture = state_economy
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.15
+				political_power_cost = -0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+		ISR_political_tutelage_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_political_tutelage_ideas1"}
+			name = ISR_political_tutelage_ideas
+			picture = state_economy
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.25
+				political_power_cost = -0.2
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.2
+			}
+		}
+		ISR_sanmin_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_sanmin_ideas"}
+			name = ISR_sanmin_ideas
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				conscription_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_expected_value = -0.1	
+			}
+		}
+		ISR_sanmin_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_sanmin_ideas1"}
+			name = ISR_sanmin_ideas
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				conscription_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_expected_value = -0.1	
+				production_speed_buildings_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+			}
+		}
+		ISR_national_revolution_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_national_revolution_ideas"}
+			name = ISR_national_revolution_ideas
+			picture = NZL_chiefs
+			allowed = { always = no }
+            modifier = {
+				local_resources_factor = 0.1
+				research_speed_factor = 0.1
+				attrition = -0.1
+				supply_factor = 0.1
+				supply_node_range = 0.1
+			}
+		}
+		ISR_national_revolution_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_national_revolution_ideas1"}
+			name = ISR_national_revolution_ideas
+			picture = NZL_chiefs
+			allowed = { always = no }
+            modifier = {
+				local_resources_factor = 0.1
+				research_speed_factor = 0.1
+				attrition = -0.2
+				supply_factor = 0.2
+				supply_node_range = 0.2
+				terrain_penalty_reduction = 0.2
+				air_night_penalty = -0.2
+				pocket_penalty = -0.2
+			}
+		}
+		ISR_Rapprochement_with_the_Arabs_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Rapprochement_with_the_Arabs_ideas" }
+			name = ISR_Rapprochement_with_the_Arabs_ideas
+			picture = union_ties
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.2
+				local_building_slots_factor = 0.15
+				industrial_concern_cost_factor = -0.15
+			}
+		}
+		ISR_Rapprochement_with_the_Arabs_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Rapprochement_with_the_Arabs_ideas1" }
+			name = ISR_Rapprochement_with_the_Arabs_ideas
+			picture = union_ties
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.1
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = -0.25
+				local_building_slots_factor = 0.2
+				industrial_concern_cost_factor = -0.2
+			}
+		}
+		ISR_Election_of_judges_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Election_of_judges_ideas" }
+			name = ISR_Election_of_judges_ideas
+			picture = government
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				conscription = 0.2
+				conscription_factor = 0.2
+			}
+		}
+		ISR_Election_of_judges_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Election_of_judges_ideas1" }
+			name = ISR_Election_of_judges_ideas
+			picture = government
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.22
+				political_power_gain = 0.22
+				mobilization_speed = 0.25
+				conscription = 0.2
+				conscription_factor = 0.2
+			}
+		}
+		ISR_Election_of_judges_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Election_of_judges_ideas2" }
+			name = ISR_Election_of_judges_ideas
+			picture = government
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.22
+				political_power_gain = 0.22
+				mobilization_speed = 0.25
+				conscription = 0.2
+				conscription_factor = 0.2
+				attrition = -0.1
+				resistance_target = -0.1
+				compliance_growth = 0.1
+				supply_factor = 0.1
+				supply_node_range = 0.1
+			}
+		}
+		ISR_Supporting_multinational_corporations_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Supporting_multinational_corporations_ideas" }
+			name = ISR_Supporting_multinational_corporations_ideas
+			picture = USA_civil_war_eco_aftermath_2
+			allowed = { always = no }
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		ISR_Supporting_multinational_corporations_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Supporting_multinational_corporations_ideas1" }
+			name = ISR_Supporting_multinational_corporations_ideas
+			picture = USA_civil_war_eco_aftermath_2
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.1
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		ISR_Establish_a_just_government_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Establish_a_just_government_ideas" }
+			name = ISR_Establish_a_just_government_ideas
+			picture = ARZ_true_frontier_justice
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.15
+				drift_defence_factor = 0.5
+				production_speed_buildings_factor = 0.2
+				army_leader_start_level = 1
+			}
+		}
+		ISR_Establish_a_just_government_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Establish_a_just_government_ideas1" }
+			name = ISR_Establish_a_just_government_ideas
+			picture = ARZ_true_frontier_justice
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.15
+				drift_defence_factor = 0.5
+				production_speed_buildings_factor = 0.2
+				army_leader_start_level = 1
+				no_supply_grace = 48
+				org_loss_when_moving = -0.2
+				breakthrough_factor = 0.2
+				land_reinforce_rate = 0.2
+			}
+		}
+		ISR_Promote_the_separation_of_church_and_state_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Promote_the_separation_of_church_and_state_ideas" }
+			name = ISR_Promote_the_separation_of_church_and_state_ideas
+			picture = MEX_Church_Question
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				stability_weekly = 0.002
+				consumer_goods_factor = -0.15
+			}
+		}
+		ISR_Promote_the_separation_of_church_and_state_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Promote_the_separation_of_church_and_state_ideas1" }
+			name = ISR_Promote_the_separation_of_church_and_state_ideas
+			picture = MEX_Church_Question
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				stability_weekly = 0.005
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		ISR_Trade_importance_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Trade_importance_ideas" }
+			name = ISR_Trade_importance_ideas
+			picture = free_trade
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.05
+				local_resources_factor = 0.15
+				attrition = -0.05
+				conscription = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ISR_Trade_importance_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Trade_importance_ideas1" }
+			name = ISR_Trade_importance_ideas
+			picture = free_trade
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.1
+				local_resources_factor = 0.2
+				attrition = -0.1
+				conscription = 0.1
+				industrial_capacity_factory = 0.15
+			}
+		}
+		ISR_Trade_importance_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Trade_importance_ideas2" }
+			name = ISR_Trade_importance_ideas
+			picture = free_trade
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.15
+				local_resources_factor = 0.25
+				attrition = -0.15
+				conscription = 0.15
+				industrial_capacity_factory = 0.2
+				conscription_factor = 0.1
+				resistance_decay = 0.2
+			}
+		}
+		ISR_Entrepreneurship_is_encouraged_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Entrepreneurship_is_encouraged_ideas" }
+			name = ISR_Entrepreneurship_is_encouraged_ideas
+			picture = backward_industry
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+		ISR_Entrepreneurship_is_encouraged_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Entrepreneurship_is_encouraged_ideas1" }
+			name = ISR_Entrepreneurship_is_encouraged_ideas
+			picture = backward_industry
+			allowed = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		ISR_Independent_diplomacy_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Independent_diplomacy_ideas" }
+			name = ISR_Independent_diplomacy_ideas
+			picture = ALB_nationalization
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = 0.03
+				war_support_weekly = 0.002
+				army_attack_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+		ISR_Independent_diplomacy_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Independent_diplomacy_ideas1" }
+			name = ISR_Independent_diplomacy_ideas
+			picture = ALB_nationalization
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = 0.03
+				war_support_weekly = 0.005
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				army_attack_factor = 0.15
+				army_core_attack_factor = 0.15
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+		ISR_Against_military_organizations_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Against_military_organizations_ideas"}
+			allowed = { always = no }
+			name = ISR_Against_military_organizations_ideas
+			picture = NFA_milice_state
+			modifier = {
+				army_org_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+		ISR_Against_military_organizations_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Against_military_organizations_ideas1"}
+			allowed = { always = no }
+			name = ISR_Against_military_organizations_ideas
+			picture = NFA_milice_state
+			modifier = {
+				army_org_factor = 0.1
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
+				experience_loss_factor = -0.15
+				cas_damage_reduction = 0.1
+				breakthrough_factor = 0.1
+			}
+		}
+		ISR_Traditions_and_commandments_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Traditions_and_commandments_ideas"}
+			allowed = { always = no }
+			name = ISR_Traditions_and_commandments_ideas
+			picture = IRE_catholic
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.1
+				non_core_manpower = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+		ISR_Traditions_and_commandments_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Traditions_and_commandments_ideas1"}
+			allowed = { always = no }
+			name = ISR_Traditions_and_commandments_ideas
+			picture = IRE_catholic
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.1
+				non_core_manpower = 0.2
+				mobilization_speed = 0.2
+				supply_consumption_factor = -0.1
+				compliance_growth = 0.01
+				drift_defence_factor = 0.2
+			}
+		}
+		ISR_Traditions_and_commandments_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Traditions_and_commandments_ideas2"}
+			allowed = { always = no }
+			name = ISR_Traditions_and_commandments_ideas
+			picture = IRE_catholic
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.1
+				non_core_manpower = 0.2
+				mobilization_speed = 0.2
+				supply_consumption_factor = -0.15
+				compliance_growth = 0.04
+				drift_defence_factor = 0.5
+				research_speed_factor = 0.1
+			}
+		}
+		ISR_Market_dynamism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Market_dynamism_ideas"}
+			allowed = { always = no }
+			name = ISR_Market_dynamism_ideas
+			picture = COR_free_market_approach
+			modifier = {
+				local_resources_factor = 0.1
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ISR_Market_dynamism_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Market_dynamism_ideas1"}
+			allowed = { always = no }
+			name = ISR_Market_dynamism_ideas
+			picture = COR_free_market_approach
+			modifier = {
+				local_resources_factor = 0.1
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		ISR_Parliament_reigns_supreme_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Parliament_reigns_supreme_ideas"}
+			allowed = { always = no }
+			name = ISR_Parliament_reigns_supreme_ideas
+			picture = national_political_machine
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				political_power_cost = -0.1
+				max_command_power_mult = 1
+			}
+		}
+		ISR_Parliament_reigns_supreme_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Parliament_reigns_supreme_ideas1"}
+			allowed = { always = no }
+			name = ISR_Parliament_reigns_supreme_ideas
+			picture = national_political_machine
+			modifier = {
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				political_power_cost = -0.1
+				max_command_power_mult = 1
+				training_time_army_factor = -0.15
+				required_garrison_factor = -0.1
+			}
+		}
+		ISR_Principles_of_the_Ten_Commandments_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Principles_of_the_Ten_Commandments_ideas"}
+			allowed = { always = no }
+			name = ISR_Principles_of_the_Ten_Commandments_ideas
+			picture = vertical_command_structure
+			modifier = {
+				recon_factor = 0.15
+				land_reinforce_rate = 0.1
+				air_night_penalty = -0.1
+				land_night_attack = 0.1
+			}
+		}
+		ISR_Principles_of_the_Ten_Commandments_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Principles_of_the_Ten_Commandments_ideas1"}
+			allowed = { always = no }
+			name = ISR_Principles_of_the_Ten_Commandments_ideas
+			picture = vertical_command_structure
+			modifier = {
+				recon_factor = 0.15
+				land_reinforce_rate = 0.1
+				air_night_penalty = -0.1
+				land_night_attack = 0.1
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_speed_factor = 0.15
+				org_loss_when_moving = -0.2
+			}
+		}
+		ISR_Land_self_defense_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Land_self_defense_ideas"}
+			allowed = { always = no }
+			name = ISR_Land_self_defense_ideas
+			picture = carm_elastic_defense_icon
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		ISR_Land_self_defense_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Land_self_defense_ideas1"}
+			allowed = { always = no }
+			name = ISR_Land_self_defense_ideas
+			picture = carm_elastic_defense_icon
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				acclimatization_hot_climate_gain_factor = 0.2
+				acclimatization_cold_climate_gain_factor = 0.2
+				no_supply_grace = 36
+				supply_consumption_factor = -0.1
+			}
+		}
+		ISR_Land_self_defense_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Land_self_defense_ideas2"}
+			allowed = { always = no }
+			name = ISR_Land_self_defense_ideas
+			picture = carm_elastic_defense_icon
+			modifier = {
+				conscription = 0.15
+				conscription_factor = 0.2
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				acclimatization_hot_climate_gain_factor = 0.2
+				acclimatization_cold_climate_gain_factor = 0.2
+				no_supply_grace = 72
+				supply_consumption_factor = -0.15
+			}
+		}
+		ISR_Corporatist_economy_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Corporatist_economy_ideas"}
+			allowed = { always = no }
+			name = ISR_Corporatist_economy_ideas
+			picture = American_corporatism
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		ISR_Corporatist_economy_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Corporatist_economy_ideas1"}
+			allowed = { always = no }
+			name = ISR_Corporatist_economy_ideas
+			picture = American_corporatism
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+			}
+		}
+		ISR_Strict_law_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Strict_law_ideas"}
+			allowed = { always = no }
+			name = ISR_Strict_law_ideas
+			picture = NGR_at_lawlesness
+			modifier = {
+				resistance_target = -0.1
+				compliance_growth = 0.05
+				required_garrison_factor = -0.1
+				stability_weekly = 0.005
+			}
+		}
+		ISR_Strict_law_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Strict_law_ideas1"}
+			allowed = { always = no }
+			name = ISR_Strict_law_ideas
+			picture = NGR_at_lawlesness
+			modifier = {
+				resistance_target = -0.2
+				compliance_growth = 0.05
+				required_garrison_factor = -0.15
+				stability_weekly = 0.01
+				justify_war_goal_time = -0.25
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		ISR_Anti_Ottoman_position_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Anti_Ottoman_position_ideas" }
+			name = ISR_Anti_Ottoman_position_ideas
+			picture = CAL_army_without_sons
+			allowed = { always = no }
+			modifier = {
+				justify_war_goal_time = -0.2
+				conscription = 0.05
+				conscription_factor = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+		ISR_Anti_Ottoman_position_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Anti_Ottoman_position_ideas" }
+			name = ISR_Anti_Ottoman_position_ideas
+			picture = CAL_army_without_sons
+			allowed = { always = no }
+			modifier = {
+				justify_war_goal_time = -0.5
+				conscription = 0.1
+				conscription_factor = 0.15
+				army_attack_factor = 0.15
+				army_core_defence_factor = 0.1
+			}
+		}
+		ISR_Globalized_terrorist_attacks_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Globalized_terrorist_attacks_ideas"}
+			allowed = { always = no }
+			name = ISR_Globalized_terrorist_attacks_ideas
+			picture = terror_in_the_knight
+			modifier = {
+				mobilization_speed = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ISR_Globalized_terrorist_attacks_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Globalized_terrorist_attacks_ideas1"}
+			allowed = { always = no }
+			name = ISR_Globalized_terrorist_attacks_ideas
+			picture = terror_in_the_knight
+			modifier = {
+				mobilization_speed = 0.2
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ISR_Globalized_terrorist_attacks_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Globalized_terrorist_attacks_ideas2"}
+			allowed = { always = no }
+			name = ISR_Globalized_terrorist_attacks_ideas
+			picture = terror_in_the_knight
+			modifier = {
+				mobilization_speed = 0.2
+				production_factory_efficiency_gain_factor = 0.12
+				line_change_production_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				initiative_factor = 0.15
+				breakthrough_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+		ISR_National_Purification_Campaign_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_Purification_Campaign_ideas"}
+			allowed = { always = no }
+			name = ISR_National_Purification_Campaign_ideas
+			picture = COR_truly_christian_return
+			modifier = {
+				resistance_decay = 0.1
+				resistance_target = -0.1
+				required_garrison_factor = -0.1
+				war_support_weekly = 0.01
+				consumer_goods_expected_value = -0.2
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		ISR_National_Purification_Campaign_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_Purification_Campaign_ideas1"}
+			allowed = { always = no }
+			name = ISR_National_Purification_Campaign_ideas
+			picture = COR_truly_christian_return
+			modifier = {
+				resistance_decay = 0.15
+				resistance_target = -0.15
+				org_loss_when_moving = -0.05
+				required_garrison_factor = -0.1
+				war_support_weekly = 0.01
+				consumer_goods_expected_value = -0.2
+				production_factory_start_efficiency_factor = 0.1
+				reassignment_duration_factor = -0.2
+			}
+		}
+		ISR_Domination_and_domination_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Domination_and_domination_ideas"}
+			allowed = { always = no }
+			name = ISR_Domination_and_domination_ideas
+			picture = COR_universal_slavery
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		ISR_Domination_and_domination_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Domination_and_domination_ideas1"}
+			allowed = { always = no }
+			name = ISR_Domination_and_domination_ideas
+			picture = COR_universal_slavery
+			modifier = {
+				production_factory_start_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		ISR_Blood_Pact_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Blood_Pact_ideas"}
+			allowed = { always = no }
+			name = ISR_Blood_Pact_ideas
+			picture = COR_knights_white
+			modifier = {
+				army_leader_start_level = 1
+				military_leader_cost_factor = -0.2
+				command_power_gain = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		ISR_Blood_Pact_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Blood_Pact_ideas1"}
+			allowed = { always = no }
+			name = ISR_Blood_Pact_ideas
+			picture = COR_knights_white
+			modifier = {
+				army_leader_start_level = 1
+				military_leader_cost_factor = -0.2
+				command_power_gain = 0.1
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+		ISR_Show_your_iron_fist_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Show_your_iron_fist_ideas"}
+			allowed = { always = no }
+			name = ISR_Show_your_iron_fist_ideas
+			picture = ARZ_government_big_iron
+			modifier = {
+				breakthrough_factor = 0.05
+				initiative_factor = 0.05
+				planning_speed = 0.05
+				experience_loss_factor = -0.05
+			}
+		}
+		ISR_Show_your_iron_fist_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Show_your_iron_fist_ideas1"}
+			allowed = { always = no }
+			name = ISR_Show_your_iron_fist_ideas
+			picture = ARZ_government_big_iron
+			modifier = {
+				breakthrough_factor = 0.05
+				initiative_factor = 0.05
+				planning_speed = 0.1
+				experience_loss_factor = -0.05
+				land_reinforce_rate = 0.05
+				mobilization_speed = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ISR_Show_your_iron_fist_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Show_your_iron_fist_ideas2"}
+			allowed = { always = no }
+			name = ISR_Show_your_iron_fist_ideas
+			picture = ARZ_government_big_iron
+			modifier = {
+				breakthrough_factor = 0.05
+				initiative_factor = 0.05
+				planning_speed = 0.1
+				experience_loss_factor = -0.05
+				land_reinforce_rate = 0.05
+				mobilization_speed = 0.1
+				industrial_capacity_factory = 0.1
+				justify_war_goal_time = -0.2
+				equipment_capture_factor = 0.1
+				pocket_penalty = -0.1
+				terrain_penalty_reduction = -0.05
+			}
+		}
+		ISR_International_crooks_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_International_crooks_ideas"}
+			allowed = { always = no }
+			name = ISR_International_crooks_ideas
+			picture = ISR_International_crooks
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.03
+				equipment_capture_factor = 0.25
+			}
+		}
+		ISR_International_crooks_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_International_crooks_ideas1"}
+			allowed = { always = no }
+			name = ISR_International_crooks_ideas
+			picture = ISR_International_crooks
+			modifier = {
+				consumer_goods_expected_value = -0.25
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				repair_speed_industrial_complex_factor = 0.05
+				repair_speed_arms_factory_factor = 0.05
+				repair_speed_rail_way_factor = 0.05
+				equipment_capture_factor = 0.25
+			}
+		}
+		ISR_Aesthetics_of_violence_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Aesthetics_of_violence_ideas" }
+			name = ISR_Aesthetics_of_violence_ideas
+			picture = FRA_violence
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.1
+				winter_attrition_factor = -0.1
+				heat_attrition_factor = -0.1
+				terrain_penalty_reduction = 0.1
+				equipment_capture_factor = 0.15
+			}
+		}
+		ISR_Aesthetics_of_violence_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Aesthetics_of_violence_ideas1" }
+			name = ISR_Aesthetics_of_violence_ideas
+			picture = FRA_violence
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.2
+				winter_attrition_factor = -0.15
+				heat_attrition_factor = -0.15
+				terrain_penalty_reduction = 0.2
+				equipment_capture_factor = 0.3
+				offensive_war_stability_factor = 0.2
+			}
+		}
+		ISR_international_support_welfarey_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_international_support_welfarey_ideas" }
+			name = ISR_international_support_welfarey_ideas
+			picture = FOP_bandido_internationalism
+			allowed = { always = no }
+			modifier = {
+				local_org_regain = 0.1
+				army_org_factor = 0.15
+				reassignment_duration_factor = -0.25
+				training_time_army_factor = -0.1
+				justify_war_goal_time = -1
+			}
+		}
+		ISR_international_support_welfarey_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_international_support_welfarey_ideas1" }
+			name = ISR_international_support_welfarey_ideas
+			picture = FOP_bandido_internationalism
+			allowed = { always = no }
+			modifier = {
+				local_org_regain = 0.2
+				army_org_factor = 0.3
+				reassignment_duration_factor = -0.3
+				training_time_army_factor = -0.15
+				supply_factor = 0.15
+				justify_war_goal_time = -1
+			}
+		}
+		ISR_National_barriers_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_barriers_ideas" }
+			name = ISR_National_barriers_ideas
+			picture = USA_barrack_capitalism
+			allowed = { always = no }
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ISR_National_barriers_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_barriers_ideas1" }
+			name = ISR_National_barriers_ideas
+			picture = USA_barrack_capitalism
+			allowed = { always = no }
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ISR_National_barriers_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_National_barriers_ideas2" }
+			name = ISR_National_barriers_ideas
+			picture = USA_barrack_capitalism
+			allowed = { always = no }
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				line_change_production_efficiency_factor = 0.2
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		ISR_New_Israeli_Culture_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_New_Israeli_Culture_ideas" }
+			name = ISR_New_Israeli_Culture_ideas
+			picture = cultural_liberalism
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				terrain_penalty_reduction = 0.2
+				war_support_weekly = 0.01
+			}
+		}
+		ISR_New_Israeli_Culture_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_New_Israeli_Culture_ideas1" }
+			name = ISR_New_Israeli_Culture_ideas
+			picture = cultural_liberalism
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.2
+				terrain_penalty_reduction = 0.3
+				war_support_weekly = 0.01
+				compliance_growth = 0.05
+			}
+		}
+		ISR_Three_knives_on_both_sides_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Three_knives_on_both_sides_ideas"}
+			allowed = { always = no }
+			name = ISR_Three_knives_on_both_sides_ideas
+			picture = CAN_mounties_knight_idea
+			modifier = {
+				breakthrough_factor = 0.05
+				recon_factor = 0.05
+				land_reinforce_rate = 0.05
+				cas_damage_reduction = 0.1
+			}
+		}
+		ISR_Three_knives_on_both_sides_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Three_knives_on_both_sides_ideas1"}
+			allowed = { always = no }
+			name = ISR_Three_knives_on_both_sides_ideas
+			picture = CAN_mounties_knight_idea
+			modifier = {
+				breakthrough_factor = 0.05
+				recon_factor = 0.05
+				land_reinforce_rate = 0.1
+				cas_damage_reduction = 0.1
+				initiative_factor = 0.1
+				planning_speed = 0.1
+				max_planning = 0.1
+			}
+		}
+		ISR_International_Aid_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_International_Aid_ideas"}
+			allowed = { always = no }
+			name = ISR_International_Aid_ideas
+			picture = FRA_home_of_the_international_revolution
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+		ISR_International_Aid_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_International_Aid_ideas1"}
+			allowed = { always = no }
+			name = ISR_International_Aid_ideas
+			picture = FRA_home_of_the_international_revolution
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.15
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				attrition = -0.1
+			}
+		}
+		ISR_International_Aid_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_International_Aid_ideas2"}
+			allowed = { always = no }
+			name = ISR_International_Aid_ideas
+			picture = FRA_home_of_the_international_revolution
+			modifier = {
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.2
+				research_speed_factor = 0.15
+				local_resources_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				attrition = -0.15
+			}
+		}
+		ISR_Kibbutz_Syndicate_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Kibbutz_Syndicate_ideas"}
+			allowed = { always = no }
+			name = ISR_Kibbutz_Syndicate_ideas
+			picture = SOV_soviet_syndicalism_idea
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		ISR_Kibbutz_Syndicate_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Kibbutz_Syndicate_ideas1"}
+			allowed = { always = no }
+			name = ISR_Kibbutz_Syndicate_ideas
+			picture = SOV_soviet_syndicalism_idea
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		ISR_Kibbutz_Syndicate_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Kibbutz_Syndicate_ideas2"}
+			allowed = { always = no }
+			name = ISR_Kibbutz_Syndicate_ideas
+			picture = SOV_soviet_syndicalism_idea
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+			}
+		}
+		ISR_Kibbutz_Syndicate_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Kibbutz_Syndicate_ideas3"}
+			allowed = { always = no }
+			name = ISR_Kibbutz_Syndicate_ideas
+			picture = SOV_soviet_syndicalism_idea
+			modifier = {
+				line_change_production_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.25
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+			}
+		}
+		ISR_Praise_to_the_workers_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Praise_to_the_workers_ideas"}
+			allowed = { always = no }
+			name = ISR_Praise_to_the_workers_ideas
+			picture = SOV_workers
+			modifier = {
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		ISR_Praise_to_the_workers_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Praise_to_the_workers_ideas1"}
+			allowed = { always = no }
+			name = ISR_Praise_to_the_workers_ideas
+			picture = SOV_workers
+			modifier = {
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_dockyard_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		ISR_Praise_to_the_workers_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Praise_to_the_workers_ideas2"}
+			allowed = { always = no }
+			name = ISR_Praise_to_the_workers_ideas
+			picture = SOV_workers
+			modifier = {
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_dockyard_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		ISR_Praise_to_the_workers_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Praise_to_the_workers_ideas2"}
+			allowed = { always = no }
+			name = ISR_Praise_to_the_workers_ideas
+			picture = SOV_workers
+			modifier = {
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_dockyard_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		ISR_reeducate_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_reeducate_ideas"}
+			allowed = { always = no }
+			name = ISR_reeducate_ideas
+			picture = educate_rural_whites
+			modifier = {
+				breakthrough_factor = 0.1
+				recon_factor = 0.1
+				land_reinforce_rate = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+		ISR_reeducate_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_reeducate_ideas1"}
+			allowed = { always = no }
+			name = ISR_reeducate_ideas
+			picture = educate_rural_whites
+			modifier = {
+				breakthrough_factor = 0.15
+				recon_factor = 0.15
+				land_reinforce_rate = 0.15
+				army_attack_factor = 0.15
+				local_org_regain = 0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+		ISR_reeducate_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_reeducate_ideas2"}
+			allowed = { always = no }
+			name = ISR_reeducate_ideas
+			picture = educate_rural_whites
+			modifier = {
+				breakthrough_factor = 0.2
+				recon_factor = 0.2
+				land_reinforce_rate = 0.2
+				army_attack_factor = 0.15
+				local_org_regain = 0.15
+				supply_consumption_factor = -0.15
+			}
+		}
+		ISR_Military_industrial_complex_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Military_industrial_complex_ideas"}
+			allowed = { always = no }
+			name = ISR_Military_industrial_complex_ideas
+			picture = GRU_heavy_industry
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		ISR_Military_industrial_complex_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Military_industrial_complex_ideas1"}
+			allowed = { always = no }
+			name = ISR_Military_industrial_complex_ideas
+			picture = GRU_heavy_industry
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				fortification_collateral_chance = 0.1
+				local_building_slots_factor = 0.1
+			}
+		}
+		ISR_Military_industrial_complex_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Military_industrial_complex_ideas2"}
+			allowed = { always = no }
+			name = ISR_Military_industrial_complex_ideas
+			picture = GRU_heavy_industry
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.2
+				fortification_collateral_chance = 0.15
+				local_building_slots_factor = 0.15
+			}
+		}
+		ISR_Military_industrial_complex_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Military_industrial_complex_ideas3"}
+			allowed = { always = no }
+			name = ISR_Military_industrial_complex_ideas
+			picture = GRU_heavy_industry
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.2
+				fortification_collateral_chance = 0.2
+				local_building_slots_factor = 0.2
+			}
+		}
+		ISR_Honor_the_heroes_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Honor_the_heroes_ideas"}
+			allowed = { always = no }
+			name = ISR_Honor_the_heroes_ideas
+			picture = NFA_heroic_idealism
+			modifier = {
+				drift_defence_factor = 0.2
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				political_power_cost = -0.1
+			}
+		}
+		ISR_Honor_the_heroes_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Honor_the_heroes_ideas1"}
+			allowed = { always = no }
+			name = ISR_Honor_the_heroes_ideas
+			picture = NFA_heroic_idealism
+			modifier = {
+				drift_defence_factor = 0.5
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				political_power_cost = -0.15
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+			}
+		}
+		ISR_Honor_the_heroes_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Honor_the_heroes_ideas2"}
+			allowed = { always = no }
+			name = ISR_Honor_the_heroes_ideas
+			picture = NFA_heroic_idealism
+			modifier = {
+				drift_defence_factor = 0.5
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				political_power_cost = -0.2
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.15
+			}
+		}
+		ISR_Military_politics_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Military_politics_ideas"}
+			allowed = { always = no }
+			name = ISR_Military_politics_ideas
+			picture = NFA_milice_state
+			modifier = {
+				attrition = 0.1
+				supply_factor = 0.1
+				supply_node_range = 0.1
+				training_time_army_factor = -0.1
+			}
+		}
+		ISR_Military_politics_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Military_politics_ideas1"}
+			allowed = { always = no }
+			name = ISR_Military_politics_ideas
+			picture = NFA_milice_state
+			modifier = {
+				attrition = 0.15
+				supply_factor = 0.15
+				supply_node_range = 0.15
+				training_time_army_factor = -0.15
+				land_reinforce_rate = 0.1
+				experience_gain_army_factor = 0.05
+			}
+		}
+		ISR_Military_politics_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Military_politics_ideas2"}
+			allowed = { always = no }
+			name = ISR_Military_politics_ideas
+			picture = NFA_milice_state
+			modifier = {
+				attrition = 0.2
+				supply_factor = 0.2
+				supply_node_range = 0.2
+				training_time_army_factor = -0.15
+				land_reinforce_rate = 0.15
+				experience_gain_army_factor = 0.1
+			}
+		}
+		ISR_Military_politics_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Military_politics_ideas3"}
+			allowed = { always = no }
+			name = ISR_Military_politics_ideas
+			picture = NFA_milice_state
+			modifier = {
+				attrition = 0.2
+				supply_factor = 0.2
+				supply_node_range = 0.25
+				training_time_army_factor = -0.2
+				land_reinforce_rate = 0.2
+				experience_gain_army_factor = 0.15
+			}
+		}
+		ISR_militarism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_militarism_ideas"}
+			allowed = { always = no }
+			name = ISR_militarism_ideas
+			picture = CAN_militarism_idea
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.1
+				non_core_manpower = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+		ISR_militarism_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_militarism_ideas1"}
+			allowed = { always = no }
+			name = ISR_militarism_ideas
+			picture = CAN_militarism_idea
+			modifier = {
+				conscription = 0.15
+				conscription_factor = 0.15
+				non_core_manpower = 0.15
+				mobilization_speed = 0.15
+				experience_loss_factor = -0.1
+				experience_gain_factor = 0.1
+			}
+		}
+		ISR_militarism_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_militarism_ideas2"}
+			allowed = { always = no }
+			name = ISR_militarism_ideas
+			picture = CAN_militarism_idea
+			modifier = {
+				conscription = 0.15
+				conscription_factor = 0.2
+				non_core_manpower = 0.2
+				mobilization_speed = 0.2
+				experience_loss_factor = -0.15
+				experience_gain_factor = 0.15
+			}
+		}
+		ISR_Second_Napoleon_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Second_Napoleon_ideas"}
+			allowed = { always = no }
+			name = ISR_Second_Napoleon_ideas
+			picture = CEA_napoleon_idea
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				org_loss_when_moving = -0.1
+			}
+		}
+		ISR_Second_Napoleon_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Second_Napoleon_ideas1"}
+			allowed = { always = no }
+			name = ISR_Second_Napoleon_ideas
+			picture = CEA_napoleon_idea
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_speed_factor = 0.15
+				org_loss_when_moving = -0.15
+				army_bonus_air_superiority_factor = 0.1
+				no_supply_grace = 24
+			}
+		}
+		ISR_Second_Napoleon_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Second_Napoleon_ideas2"}
+			allowed = { always = no }
+			name = ISR_Second_Napoleon_ideas
+			picture = CEA_napoleon_idea
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.2
+				org_loss_when_moving = -0.15
+				army_bonus_air_superiority_factor = 0.15
+				no_supply_grace = 48
+			}
+		}
+		ISR_Gears_of_War_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Gears_of_War_ideas"}
+			allowed = { always = no }
+			name = ISR_Gears_of_War_ideas
+			picture = CEA_napoleon_idea
+			modifier = {
+				initiative_factor = 0.1
+				planning_speed = 0.1
+				max_planning = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		ISR_Gears_of_War_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Gears_of_War_ideas1"}
+			allowed = { always = no }
+			name = ISR_Gears_of_War_ideas
+			picture = CEA_napoleon_idea
+			modifier = {
+				initiative_factor = 0.15
+				planning_speed = 0.15
+				max_planning = 0.15
+				army_org_factor = 0.15
+				army_strength_factor = 0.1
+				dig_in_speed_factor = 0.1
+			}
+		}
+		ISR_Gears_of_War_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Gears_of_War_ideas2"}
+			allowed = { always = no }
+			name = ISR_Gears_of_War_ideas
+			picture = CEA_napoleon_idea
+			modifier = {
+				initiative_factor = 0.2
+				planning_speed = 0.2
+				max_planning = 0.2
+				army_org_factor = 0.15
+				army_strength_factor = 0.15
+				dig_in_speed_factor = 0.15
+			}
+		}
+		ISR_Gears_of_War_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Gears_of_War_ideas3"}
+			allowed = { always = no }
+			name = ISR_Gears_of_War_ideas
+			picture = CEA_napoleon_idea
+			modifier = {
+				initiative_factor = 0.2
+				planning_speed = 0.25
+				max_planning = 0.2
+				army_org_factor = 0.2
+				army_strength_factor = 0.2
+				dig_in_speed_factor = 0.2
+			}
+		}
+		ISR_The_party_state_is_one_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_The_party_state_is_one_ideas"}
+			allowed = { always = no }
+			name = ISR_The_party_state_is_one_ideas
+			picture = YUC_state_of_the_cross_idea
+			modifier = {
+				org_loss_at_low_org_factor = -0.1
+				army_attack_speed_factor = 0.1
+				pocket_penalty = -0.1
+				terrain_penalty_reduction = 0.1
+			}
+		}
+		ISR_The_party_state_is_one_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_The_party_state_is_one_ideas1"}
+			allowed = { always = no }
+			name = ISR_The_party_state_is_one_ideas
+			picture = YUC_state_of_the_cross_idea
+			modifier = {
+				org_loss_at_low_org_factor = -0.15
+				army_attack_speed_factor = 0.15
+				pocket_penalty = -0.15
+				terrain_penalty_reduction = 0.15
+				field_officer_promotion_penalty = -0.1
+				justify_war_goal_time = -0.1
+			}
+		}
+		ISR_The_party_state_is_one_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_The_party_state_is_one_ideas2"}
+			allowed = { always = no }
+			name = ISR_The_party_state_is_one_ideas
+			picture = YUC_state_of_the_cross_idea
+			modifier = {
+				org_loss_at_low_org_factor = -0.2
+				army_attack_speed_factor = 0.2
+				pocket_penalty = -0.2
+				terrain_penalty_reduction = 0.15
+				field_officer_promotion_penalty = -0.15
+				justify_war_goal_time = -0.15
+			}
+		}
+		ISR_Anti_colonialism_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Anti_colonialism_ideas"}
+			allowed = { always = no }
+			name = ISR_Anti_colonialism_ideas
+			picture = NGR_Angry_Colonials
+			modifier = {
+				resistance_target_on_our_occupied_states = 0.15
+				resistance_target = -0.15
+				resistance_growth_on_our_occupied_states = 0.05
+				compliance_growth = 0.05
+			}
+		}
+		ISR_Liberators_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Liberators_ideas"}
+			allowed = { always = no }
+			name = ISR_Liberators_ideas
+			picture = MON_easing_purges_spreading_liberty
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				war_support_weekly = 0.005
+			}
+		}
+		ISR_Middle_East_Agents_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Middle_East_Agents_ideas"}
+			allowed = { always = no }
+			name = ISR_Middle_East_Agents_ideas
+			picture = LIB_african1
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ISR_Middle_East_Agents_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Middle_East_Agents_ideas1"}
+			allowed = { always = no }
+			name = ISR_Middle_East_Agents_ideas
+			picture = LIB_african1
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.05
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ISR_rent_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_rent_ideas"}
+			allowed = { always = no }
+			name = ISR_rent_ideas
+			picture = give_money
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				consumer_goods_factor = -0.15
+				local_resources_factor = 0.05
+			}
+		}
+		ISR_rent_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_rent_ideas1"}
+			allowed = { always = no }
+			name = ISR_rent_ideas
+			picture = give_money
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				consumer_goods_factor = -0.15
+				local_resources_factor = 0.05
+				experience_gain_army_factor = 0.05
+				experience_gain_factor = 0.05
+				training_time_army_factor = -0.05
+			}
+		}
+		ISR_Funding_from_the_Delhi_government_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Funding_from_the_Delhi_government_ideas"}
+			allowed = { always = no }
+			name = ISR_Funding_from_the_Delhi_government_ideas
+			picture = give_money
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		ISR_Funding_from_the_Delhi_government_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Funding_from_the_Delhi_government_ideas1"}
+			allowed = { always = no }
+			name = ISR_Funding_from_the_Delhi_government_ideas
+			picture = give_money
+			modifier = {
+				consumer_goods_expected_value = -0.25
+				consumer_goods_factor = -0.25
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		ISR_Israeli_Army_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Army_ideas"}
+			allowed = { always = no }
+			name = ISR_Israeli_Army_ideas
+			picture = ISR_Israeli_Army
+			modifier = {
+				experience_gain_army_factor = 0.05
+				experience_gain_factor = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		ISR_Israeli_Army_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Army_ideas1"}
+			allowed = { always = no }
+			name = ISR_Israeli_Army_ideas
+			picture = ISR_Israeli_Army
+			modifier = {
+				experience_gain_army_factor = 0.1
+				experience_gain_factor = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.05
+			}
+		}
+		ISR_Israeli_Army_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Army_ideas2"}
+			allowed = { always = no }
+			name = ISR_Israeli_Army_ideas
+			picture = ISR_Israeli_Army
+			modifier = {
+				experience_gain_army_factor = 0.1
+				experience_gain_factor = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.05
+				recruitable_population = 0.05
+				training_time_army_factor = -0.05
+				attrition = -0.05
+				required_garrison_factor = -0.05
+			}
+		}
+		ISR_Israeli_Army_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Army_ideas3"}
+			allowed = { always = no }
+			name = ISR_Israeli_Army_ideas
+			picture = ISR_Israeli_Army
+			modifier = {
+				experience_gain_army_factor = 0.1
+				experience_gain_factor = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.1
+				recruitable_population = 0.1
+				training_time_army_factor = -0.1
+				attrition = -0.05
+				required_garrison_factor = -0.05
+				conscription = 0.05
+				conscription_factor = 0.05
+				mobilization_speed = 0.05
+			}
+		}
+		ISR_Israeli_Army_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Army_ideas4"}
+			allowed = { always = no }
+			name = ISR_Israeli_Army_ideas
+			picture = ISR_Israeli_Army
+			modifier = {
+				experience_gain_army_factor = 0.15
+				experience_gain_factor = 0.15
+				army_org_factor = 0.2
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.2
+				recruitable_population = 0.1
+				training_time_army_factor = -0.1
+				attrition = -0.1
+				required_garrison_factor = -0.1
+				conscription = 0.05
+				conscription_factor = 0.05
+				mobilization_speed = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		ISR_Resistant_to_sand_and_dust_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Resistant_to_sand_and_dust_ideas"}
+			name = ISR_Resistant_to_sand_and_dust_ideas
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+            modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				dig_in_speed_factor = 0.16
+				max_dig_in_factor = 0.15
+				acclimatization_hot_climate_gain_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+		ISR_anti_tank_force_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_anti_tank_force_ideas"}
+			allowed = { always = no }
+			name = ISR_anti_tank_force_ideas
+			picture = generic_acquire_tanks
+			modifier = {
+				army_artillery_attack_factor = 0.1
+				army_artillery_defence_factor = 0.1
+			}
+			equipment_bonus = {
+				anti_tank_equipment = {
+					hard_attack = 0.10
+					instant = yes
+				}
+			}
+		}
+		ISR_Levantine_defense_program_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Levantine_defense_program_ideas"}
+			allowed = { always = no }
+			name = ISRAE_Levantine_defense_program
+			picture = carm_static_defense_icon
+			modifier = {
+				army_core_defence_factor = 0.05
+				ai_focus_defense_factor = 0.25
+				production_speed_bunker_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.05
+			}
+		}
+		
+		ISR_Levantine_defense_program_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Levantine_defense_program_ideas1"}
+			allowed = { always = no }
+			name = ISRAE_Levantine_defense_program
+			picture = carm_static_defense_icon
+			modifier = {
+				army_core_defence_factor = 0.05
+				ai_focus_defense_factor = 0.25
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				army_speed_factor = 0.1
+				acclimatization_hot_climate_gain_factor = 0.1
+			}
+		}
+		
+		ISR_Levantine_defense_program_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Levantine_defense_program_ideas2"}
+			allowed = { always = no }
+			name = ISRAE_Levantine_defense_program
+			picture = carm_static_defense_icon
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				ai_focus_defense_factor = 0.25
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				army_speed_factor = 0.15
+				acclimatization_hot_climate_gain_factor = 0.15
+			}
+		}
+		
+		ISR_Levantine_defense_program_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Levantine_defense_program_ideas3"}
+			allowed = { always = no }
+			name = ISRAE_Levantine_defense_program
+			picture = carm_static_defense_icon
+			modifier = {
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
+				ai_focus_defense_factor = 0.25
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				army_speed_factor = 0.2
+				acclimatization_hot_climate_gain_factor = 0.2
+			}
+		}
+		ISR_Improvement_of_production_lines_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Levantine_defense_program_ideas3"}
+			allowed = { always = no }
+			name = ISR_Improvement_of_production_lines_ideas
+			picture = CSA_reinforced_weapons
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+			}
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.15
+					reliability = 0.15
+					instant = yes
+				}
+			}
+		}
+		ISR_Israeli_Air_Force_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Air_Force_ideas"}
+			allowed = { always = no }
+			name = ISR_Israeli_Air_Force_ideas
+			picture = ISR_Israeli_Air_force
+			modifier = {
+				air_ace_generation_chance_factor = 0.2
+				air_superiority_efficiency = 0.05
+				air_accidents_factor = -0.05
+				air_attack_factor = 0.05
+				air_weather_penalty = -0.05
+			}
+		}
+		ISR_Israeli_Air_Force_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Air_Force_ideas1"}
+			allowed = { always = no }
+			name = ISR_Israeli_Air_Force_ideas
+			picture = ISR_Israeli_Air_force
+			modifier = {
+				air_ace_generation_chance_factor = 0.2
+				air_superiority_efficiency = 0.05
+				air_accidents_factor = -0.05
+				air_attack_factor = 0.05
+				air_weather_penalty = -0.05
+				air_range_factor = 0.1
+				air_cas_present_factor = 0.1
+				air_night_penalty = -0.1
+				air_intercept_efficiency = 0.05
+			}
+		}
+		ISR_Israeli_Air_Force_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Air_Force_ideas2"}
+			allowed = { always = no }
+			name = ISR_Israeli_Air_Force_ideas
+			picture = ISR_Israeli_Air_force
+			modifier = {
+				air_ace_generation_chance_factor = 0.2
+				air_superiority_efficiency = 0.1
+				air_accidents_factor = -0.1
+				air_attack_factor = 0.1
+				air_weather_penalty = -0.1
+				air_range_factor = 0.1
+				air_cas_present_factor = 0.15
+				air_night_penalty = -0.15
+				air_intercept_efficiency = 0.1
+			}
+		}
+		ISR_Expansion_of_the_Air_Force_Brigade_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Expansion_of_the_Air_Force_Brigade_ideas"}
+			allowed = { always = no }
+			picture = Thomas_Morse_Aircraft_Corporation
+			name = ISR_Expansion_of_the_Air_Force_Brigade_ideas
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				cv_small_plane_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				cv_small_plane_cas_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		ISR_jaffa_seaplane_base_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_jaffa_seaplane_base_ideas"}
+			allowed = { always = no }
+			picture = cair_naval_aviation_icon
+			name = ISR_jaffa_seaplane_base_ideas
+			equipment_bonus = {
+				screen_ship = {
+					surface_detection = 0.2
+					sub_detection = 0.2
+					instant = yes
+				}
+				capital_ship = {
+					surface_detection = 0.2
+					sub_detection = 0.2
+					instant = yes
+				}
+			}
+		}
+		ISR_defend_our_airports_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_defend_our_airports_ideas"}
+			picture = NORDIC_airforce_democratic
+			name = ISR_defend_our_airports_ideas
+			allowed = { always = no }
+			modifier = {
+				enemy_army_bonus_air_superiority_factor = -0.25
+				industry_air_damage_factor = -0.25
+			}
+			equipment_bonus = {	anti_air_equipment = {	build_cost_ic = -0.25 instant = yes } }
+		}
+		ISR_flying_club_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_flying_club_ideas"}
+			allowed = { always = no }
+			name = ISR_flying_club_ideas
+			picture = KSV_rule_from_the_air_idea
+            modifier = {
+				air_weather_penalty = -0.15
+				army_bonus_air_superiority_factor = 0.15
+			}
+		}
+		ISR_Raise_the_Air_Forces_salary_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Raise_the_Air_Forces_salary_ideas"}
+			allowed = { always = no }
+			name = ISR_Raise_the_Air_Forces_salary_ideas
+			picture = WHR_goods_vouchers_community
+            modifier = {
+				air_cas_present_factor = 0.05
+				air_accidents = -0.05
+				air_weather_penalty = -0.05
+				air_attack_factor = 0.05
+				army_fuel_consumption_factor = -0.1
+			}
+		}
+		ISR_Increase_your_budget_ideas = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_Increase_your_budget_ideas"}
+			name = ISR_Increase_your_budget_ideas
+			picture = Knights_of_the_Grail
+			allowed = { always = no }
+            modifier = {
+				production_speed_air_base_factor = 0.15
+				experience_gain_air_factor = 0.05
+				air_agility_factor = 0.05
+			}
+		}
+		ISR_refuling_station_ideas = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_refuling_station_ideas"}
+			allowed = { always = no }
+			name = ISR_refuling_station_ideas
+			picture = generic_fuel_reserves
+			modifier = {
+				fuel_gain_factor = 0.1
+				max_fuel_factor = 0.1
+				base_fuel_gain = 5
+				repair_speed_fuel_silo_factor = 0.15
+			}
+		}
+		ISR_air_raid_drills_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_air_raid_drills_ideas"}
+			allowed = { always = no }
+			name = ISR_air_raid_drills_ideas
+			picture = GEN_air_bombadrment
+			modifier = {
+				enemy_army_bonus_air_superiority_factor = -0.10
+				air_defence_factor = 0.05
+				production_speed_bunker_factor = 0.04 
+				weekly_casualties_war_support = 0.006
+			}
+			equipment_bonus = {
+				anti_air_equipment = {
+					air_attack = 0.05
+					hard_attack = 0.05
+					instant = yes
+				}
+			}
+		}
+		ISR_air_raid_drills_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_air_raid_drills_ideas1"}
+			allowed = { always = no }
+			name = ISR_air_raid_drills_ideas
+			picture = GEN_air_bombadrment
+			modifier = {
+				enemy_army_bonus_air_superiority_factor = -0.15
+				air_defence_factor = 0.15
+				production_speed_bunker_factor = 0.1
+				weekly_casualties_war_support = 0.01
+				air_accidents_factor = -0.15
+				air_interception_detect_factor = 0.1
+			}
+			equipment_bonus = {
+				anti_air_equipment = {
+					air_attack = 0.05
+					hard_attack = 0.05
+					instant = yes
+				}
+			}
+		}
+		ISR_Israeli_Navy_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Navy_ideas"}
+			allowed = { always = no }
+			name = ISR_Israeli_Navy_ideas
+			picture = ISR_Israeli_Navy
+			modifier = {
+				positioning = 0.05
+				spotting_chance = 0.05
+				sortie_efficiency = 0.05
+				naval_retreat_speed = 0.05
+				navy_fuel_consumption_factor = -0.05
+			}
+		}
+		ISR_Israeli_Navy_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Navy_ideas1"}
+			allowed = { always = no }
+			name = ISR_Israeli_Navy_ideas
+			picture = ISR_Israeli_Navy
+			modifier = {
+				positioning = 0.05
+				spotting_chance = 0.05
+				sortie_efficiency = 0.05
+				naval_retreat_speed = 0.05
+				navy_fuel_consumption_factor = -0.05
+				screening_efficiency = 0.05
+				navy_max_range_factor = 0.1
+				naval_damage_factor = 0.05
+				naval_defense_factor = 0.05
+				naval_speed_factor = 0.05
+			}
+		}
+		ISR_Israeli_Navy_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Navy_ideas2"}
+			allowed = { always = no }
+			name = ISR_Israeli_Navy_ideas
+			picture = ISR_Israeli_Navy
+			modifier = {
+				positioning = 0.05
+				spotting_chance = 0.05
+				sortie_efficiency = 0.1
+				naval_retreat_speed = 0.1
+				navy_fuel_consumption_factor = -0.1
+				screening_efficiency = 0.05
+				navy_max_range_factor = 0.1
+				naval_damage_factor = 0.05
+				naval_defense_factor = 0.05
+				naval_speed_factor = 0.05
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				navy_capital_ship_attack_factor = 0.05
+			}
+		}
+		ISR_Israeli_Navy_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Navy_ideas3"}
+			allowed = { always = no }
+			name = ISR_Israeli_Navy_ideas
+			picture = ISR_Israeli_Navy
+			modifier = {
+				positioning = 0.1
+				spotting_chance = 0.05
+				sortie_efficiency = 0.1
+				naval_retreat_speed = 0.1
+				navy_fuel_consumption_factor = -0.1
+				screening_efficiency = 0.05
+				navy_max_range_factor = 0.1
+				naval_damage_factor = 0.1
+				naval_defense_factor = 0.1
+				naval_speed_factor = 0.1
+				navy_screen_attack_factor = 0.1
+				navy_screen_defence_factor = 0.1
+				navy_capital_ship_attack_factor = 0.05
+			}
+		}
+		ISR_Israeli_Navy_ideas4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Navy_ideas4"}
+			allowed = { always = no }
+			name = ISR_Israeli_Navy_ideas
+			picture = ISR_Israeli_Navy
+			modifier = {
+				positioning = 0.15
+				spotting_chance = 0.1
+				sortie_efficiency = 0.15
+				naval_retreat_speed = 0.1
+				navy_fuel_consumption_factor = -0.15
+				screening_efficiency = 0.1
+				navy_max_range_factor = 0.15
+				naval_damage_factor = 0.15
+				naval_defense_factor = 0.1
+				naval_speed_factor = 0.1
+				navy_screen_attack_factor = 0.1
+				navy_screen_defence_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+			}
+		}
+		ISR_Israeli_Navy_ideas5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Israeli_Navy_ideas5"}
+			allowed = { always = no }
+			name = ISR_Israeli_Navy_ideas
+			picture = ISR_Israeli_Navy
+			modifier = {
+				positioning = 0.15
+				spotting_chance = 0.15
+				sortie_efficiency = 0.15
+				naval_retreat_speed = 0.1
+				navy_fuel_consumption_factor = -0.15
+				screening_efficiency = 0.15
+				navy_max_range_factor = 0.15
+				naval_damage_factor = 0.15
+				naval_defense_factor = 0.15
+				naval_speed_factor = 0.15
+				navy_screen_attack_factor = 0.15
+				navy_screen_defence_factor = 0.15
+				navy_capital_ship_attack_factor = 0.1
+			}
+		}
+		ISR_naval_examination_office_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_naval_examination_office_ideas"}
+			allowed = { always = no }
+			name = ISRAE_Naval_Examination_Office
+			picture = generic_coastal_defense_ships
+			modifier = {
+				convoy_escort_efficiency = 0.2
+				production_speed_coastal_bunker_factor = 0.15
+			}
+			equipment_bonus = {
+				screen_ship = {
+					reliability = 0.1
+				}
+			}
+			equipment_bonus = {
+				convoy = {
+					reliability = 0.1
+				}
+			}
+		}
+		ISR_naval_examination_office_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_naval_examination_office_ideas1"}
+			allowed = { always = no }
+			name = ISRAE_Naval_Examination_Office
+			picture = generic_coastal_defense_ships
+			modifier = {
+				convoy_escort_efficiency = 0.25
+				production_speed_coastal_bunker_factor = 0.15
+				repair_speed_naval_base_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				repair_speed_dockyard_factor = 0.1
+			}
+			equipment_bonus = {
+				screen_ship = {
+					reliability = 0.1
+				}
+			}
+			equipment_bonus = {
+				convoy = {
+					reliability = 0.1
+				}
+			}
+		}
+		ISR_escort_force_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_escort_force_ideas"}
+			allowed = { always = no }
+			name = ISR_escort_force_ideas
+			picture = escort_effort_focus
+			modifier = {
+				convoy_escort_efficiency = 0.25
+				sortie_efficiency = 0.1
+				screening_efficiency = 0.1
+			}
+		}
+		ISR_escort_force_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_escort_force_ideas1"}
+			allowed = { always = no }
+			name = ISR_escort_force_ideas
+			picture = escort_effort_focus
+			modifier = {
+				convoy_escort_efficiency = 0.25
+				sortie_efficiency = 0.15
+				screening_efficiency = 0.15
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+				convoy = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+			}
+		}
+		ISR_escort_force_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_escort_force_ideas2"}
+			allowed = { always = no }
+			name = ISR_escort_force_ideas
+			picture = escort_effort_focus
+			modifier = {
+				convoy_escort_efficiency = 0.25
+				sortie_efficiency = 0.2
+				screening_efficiency = 0.15
+				navy_screen_attack_factor = 0.1
+				navy_max_range_factor = 0.1
+				positioning = 0.1
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+				convoy = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+			}
+		}
+		ISR_Buy_destroyers_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Buy_destroyers_ideas" }
+			allowed = { always = no }
+			picture = liberty_ships_focus
+			name = ISR_Buy_destroyers_ideas
+			modifier = {
+				spotting_chance = 0.05
+				naval_coordination = 0.05
+				navy_max_range_factor = 0.05
+				production_speed_naval_base_factor = 0.05
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1072 @@
+ideas = {
+
+	country = {
+		YEM_Free_Yemen_Riots = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_black_monday"}
+			picture = riot
+
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.4
+				consumer_goods_factor = 0.1
+			}
+		}
+		YEM_black_monday = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_black_monday"}
+			picture = great_depression
+
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.05
+				social_conservative_drift = 0.02
+				social_liberal_drift = 0.01
+			}
+		}
+		YEM_black_monday2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_black_monday2"}
+			picture = great_depression
+
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		YEM_black_monday3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_black_monday3"}
+			picture = BBR_communal_econ
+
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		YEM_Palace_Committee = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Palace_Committee"}
+			picture = GAL_karol_olbracht
+             name = 	YEM_Palace_Committee
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.001
+				authoritarian_democrat_drift = -0.02
+			}
+		}
+		YEM_Palace_Committee2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Palace_Committee2"}
+			picture = GAL_karol_olbracht
+            name = YEM_Palace_Committee2
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.002
+				authoritarian_democrat_drift = -0.04
+			}
+		}
+		YEM_Sana_Educational_Institute = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Sana_Educational_Institute"}
+			picture = CZE_education
+             name = YEM_Sana_Educational_Institute
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		YEM_black_monday_P = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_black_monday0"}
+			picture = great_depression
+
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = -0.03
+				industrial_capacity_factory = -0.06
+				production_speed_buildings_factor = -0.02
+				social_conservative_drift = 0.08
+				social_liberal_drift = 0.08
+			}
+		}
+		YEM_Food_exports = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Food_exports"}
+			picture = DEI_solid_foodsystem
+
+			allowed = { always = no }
+            modifier = {
+				monthly_population = 0.15
+			}
+		}
+		YEM_Slave_economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Slave_economy"}
+			picture = slave_economy
+
+			allowed = { always = no }
+            modifier = {
+				production_speed_arms_factory_factor = -0.2
+	            production_speed_industrial_complex_factor = -0.2
+				production_factory_max_efficiency_factor = -0.1
+	            production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+		YEM_Slave_economy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Slave_economy"}
+			picture = slave_economy
+
+			allowed = { always = no }
+            modifier = {
+				production_speed_arms_factory_factor = -0.1
+	            production_speed_industrial_complex_factor = -0.1
+			}
+		}
+		YEM_Imam_stable_rule = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_black_monday"}
+			picture = LPD_work_for_self_rule_idea
+
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.1
+			}
+		}
+		YEM_Modern_Eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Eco"}
+			picture = economic_control_icon
+
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = -0.175
+			}
+		}
+
+		YEM_Unified_Eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Unified_Eco"}
+			picture = economic_control_icon
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		YEM_Merchant_Fleet = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Merchant_Fleet"}
+			picture = economic_control_icon
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		YEM_Ottoman_Rule = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Ottoman_Rule"}
+			available = {
+				is_subject_of = TUR
+			}
+			picture = saf_history_of_segregation_2
+			allowed = { always = no }
+            modifier = {
+				political_power_cost = 0.3
+				conscription_factor = -0.2
+			}
+		}
+
+		YEM_Ottoman_Rule_weak = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Ottoman_Rule_weak"}
+			available = {
+				is_subject_of = TUR
+			}
+			picture = saf_history_of_segregation
+			allowed = { always = no }
+            modifier = {
+				conscription_factor = -0.2
+			}
+		}
+
+		YEM_Ottoman_Rule_Split = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Ottoman_Rule_Split"}
+			available = {
+				is_subject_of = TUR
+			}
+			picture = saf_history_of_segregation
+			allowed = { always = no }
+            modifier = {
+				political_power_cost = 0.3
+			}
+		}
+
+		YEM_Anarchy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Anarchy"}
+			picture = raj_marginalized_muslim_community
+			available = {
+				is_subject_of = TUR
+			}
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.20
+			}
+		}
+
+		YEM_Anarchy_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Anarchy_2"}
+			picture = raj_marginalized_muslim_community
+			available = {
+				is_subject_of = TUR
+			}
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.10
+			}
+		}
+
+		YEM_ToughGuy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_ToughGuy"}
+			available = {
+				is_subject_of = TUR
+			}
+			picture = raj_marginalized_muslim_community
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.13
+			}
+		}
+
+		YEM_PostalService = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_PostalService"}
+			available = {
+				is_subject_of = TUR
+			}
+			picture = protesters_shot_icon
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.10
+				political_power_gain = 0.1
+			}
+		}
+
+		YEM_NiceGuy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_NiceGuy"}
+			available = {
+				is_subject_of = TUR
+			}
+			picture = raj_marginalized_muslim_community
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+
+		YEM_Gendarmes = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Gendarmes"}
+			picture = OTT_gendarmerie_idea_icon
+			allowed = { always = no }
+            modifier = {
+				resistance_damage_to_garrison = -0.1
+			}
+		}
+
+		YEM_Thicc_Gendarmes = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Thicc_Gendarmes"}
+			picture = OTT_gendarmerie_idea_icon
+			allowed = { always = no }
+            modifier = {
+				resistance_damage_to_garrison = -0.15
+				army_morale_factor = 0.05
+			}
+		}
+
+		YEM_Old_Army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Old_Army"}
+			picture = generic_army_war_college
+			allowed = { always = no }
+            modifier = {
+				army_org_factor = -0.1
+				land_reinforce_rate = -0.15
+				max_planning = -0.1
+			}
+		}
+
+		YEM_Modern_Plans = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Plans"}
+			picture = generic_army_war_college
+			allowed = { always = no }
+            modifier = {
+				army_org_factor = 0.025
+				max_planning = 0.05
+			}
+		}
+
+		YEM_HorsieBoyes = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_HorsieBoyes"}
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = { always = no }
+            modifier = {
+				cavalry_attack_factor = 0.10
+				cavalry_defence_factor = 0.10
+			}
+		}
+
+		YEM_forts = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_forts"}
+			picture = generic_wall_line
+			allowed = { always = no }
+            modifier = {
+				production_speed_bunker_factor = 0.05
+				fortification_collateral_chance = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+
+		YEM_Rifle_Guilds_Temp = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Rifle_Guilds_Temp"}
+			allowed = { always = no }
+			picture = generic_infantry_bonus
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		YEM_Purges = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Purges"}
+			picture = ENG_the_war_to_end_all_wars
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = -0.05
+				army_morale_factor = -0.02
+				political_power_cost = 0.25
+			}
+		}
+
+		YEM_Yemen_On_Fire = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Yemen_On_Fire"}
+			picture = can_patriation
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = -0.005
+				conscription_factor = -0.25
+				resistance_damage_to_garrison = 0.1
+				consumer_goods_factor = 0.3
+			}
+		}
+
+		YEM_Nepotism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Nepotism"}
+			picture = can_patriation
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = -0.002
+				conscription_factor = -0.2
+				resistance_damage_to_garrison = 0.05
+				consumer_goods_factor = 0.3
+			}
+		}
+
+		YEM_Devotion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Devotion"}
+			picture = can_patriation
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = -0.001
+				conscription_factor = -0.1
+				resistance_damage_to_garrison = 0.05
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		YEM_Humane = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Humane"}
+			picture = can_patriation
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.001
+				conscription_factor = 0.1
+			}
+		}
+
+		YEM_Prepared_Army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Prepared_Army"}
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.01
+			}
+		}
+
+		YEM_Troop_Movement = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Troop_Movement"}
+			picture = FRA_army_of_aggression_focus
+			allowed = { always = no }
+            modifier = {
+				army_speed_factor = 0.1
+			}
+		}
+
+		YEM_Eternal_Saana = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Eternal_Saana"}
+			picture = generic_constitutional_guarantees
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		YEM_Common_Law = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Common_Law"}
+			picture = raj_marginalized_muslim_community_happy
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = -0.003
+				conscription_factor = -0.10
+				consumer_goods_factor = 0.3
+			}
+		}
+
+		YEM_President = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_President"}
+			picture = generic_pp_unity_bonus
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = -0.001
+				conscription_factor = -0.01
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		YEM_Euro_Zone = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Euro_Zone"}
+			picture = can_wartime_prices_and_trade_board
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.15
+				local_resources_factor = 0.25
+			}
+		}
+
+		YEM_New_Laws = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_New_Laws"}
+			picture = neutrality_idea
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = -0.003
+				conscription_factor = -0.10
+				consumer_goods_factor = 0.155
+			}
+		}
+
+		YEM_Local = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Local"}
+			picture = generic_democratic_drift_bonus
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = -0.001
+				conscription_factor = -0.025
+				consumer_goods_factor = 0.11
+			}
+		}
+
+		YEM_Pol_Indust = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Pol_Indust"}
+			picture = generic_agrarian_reform
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		YEM_Farm_boye = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Farm_boye"}
+			picture = generic_agrarian_reform
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.11
+			}
+		}
+
+		YEM_embrace_nahda = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_embrace_nahda"}
+			picture = raj_marginalized_muslim_community
+			allowed = { always = no }
+            modifier = {
+				political_power_cost = -0.05
+			}
+		}
+
+		YEM_local_admin = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_local_admin"}
+			picture = generic_victors_of_ww1
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		YEM_pan_arab_thot = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_pan_arab_thot"}
+			picture = generic_volunteer_expedition_bonus
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				political_power_cost = -0.05
+				conscription_factor = 0.1
+				justify_war_goal_time = -0.50
+			}
+		}
+
+
+		YEM_disloyal_vassal = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_disloyal_vassal"}
+			available = {
+				is_subject_of = TUR
+			}
+			allowed = { always = no }
+            modifier = {
+				ai_call_ally_desire_factor = -1000
+				ai_join_ally_desire_factor = -1000
+			}
+			picture = FRA_scw_intervention_nationalists_focus
+		}
+
+		#Rassid ideas
+		YEM_arabian_integration = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_arabian_integration"}
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.25
+				political_power_cost = 0.35
+				conscription_factor = -0.25
+			}
+		}
+
+		YEM_arabian_integration_rebuild = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_arabian_integration_rebuild"}
+			picture = IRE_medium_industry
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.15
+				political_power_cost = 0.35
+				conscription_factor = -0.10
+			}
+		}
+
+		YEM_arabian_integration_dissent = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_arabian_integration_dissent"}
+			picture = FRA_matignon_agreements
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.15
+				political_power_cost = 0.25
+				conscription_factor = -0.10
+			}
+		}
+
+		YEM_arabian_integration_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_arabian_integration_2"}
+			picture = raj_marginalized_muslim_community_happy
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.15
+				political_power_cost = 0.15
+				conscription_factor = -0.02
+			}
+		}
+
+		YEM_arabian_integration_administration = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_arabian_integration_administration"}
+			picture = HUN_treaty_of_triannon
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.15
+				political_power_cost = 0.05
+				conscription_factor = -0.02
+			}
+		}
+
+		YEM_arabian_integration_rashids = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_arabian_integration_rashids"}
+			picture = generic_deal_with_the_devil2
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.07
+				political_power_cost = 0.05
+				conscription_factor = -0.02
+			}
+		}
+
+		YEM_arabian_integration_arabian_spirit = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_arabian_integration_arabian_spirit"}
+			picture = generic_volunteer_expedition_bonus
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				political_power_cost = -0.15
+				conscription_factor = 0.10
+			}
+		}
+		YEM_Officers_Come_Home_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Officers_Come_Home_ideas"}
+			picture = BBR_officer_training
+			name = YEM_Officers_Come_Home_ideas
+			allowed = { always = no }
+            modifier = {
+				army_leader_start_level = 1
+				breakthrough_factor = 0.05
+				army_infantry_attack_factor = 0.05
+			}
+		}
+		YEM_This_Is_My_Boomstick_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_This_Is_My_Boomstick_ideas"}
+			picture = PAN_gunpic
+			name = YEM_This_Is_My_Boomstick_ideas
+			allowed = { always = no }
+            modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.15
+					reliability = 0.15
+					instant = yes
+				}
+			}
+		}
+		YEM_Modern_Naval_Transports_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas"}
+			picture = GEN_navy_capital_ships
+			name = YEM_Modern_Naval_Transports_ideas
+			allowed = { always = no }
+            modifier = {
+				naval_defense_factor = 0.05
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.2
+					reliability = -0.05
+					instant = yes
+				}
+			}
+		}
+		YEM_Modern_Naval_Transports_ideas1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = YEM_Modern_Naval_Transports_ideas
+			allowed = { always = no }
+            modifier = {
+				naval_defense_factor = 0.05
+				sortie_efficiency = 0.1
+				spotting_chance = 0.1
+				screening_efficiency = 0.1
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.2
+					reliability = -0.05
+					instant = yes
+				}
+			}
+		}
+		YEM_Implementing_Islamic_law = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = YEM_Implementing_Islamic_law
+			allowed = { always = no }
+            modifier = {
+				political_advisor_cost_factor = 0.05
+				industrial_concern_cost_factor = 0.05
+				conscription_factor = 0.1
+	            non_core_manpower = 0.15
+				stability_weekly = 0.002
+			}
+		}
+		YEM_Local_representation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = YEM_Local_representation
+			allowed = { always = no }
+            modifier = {
+				authoritarian_democrat_drift = 0.03
+	            local_building_slots_factor = 0.2
+	            production_speed_buildings_factor = 0.12
+			}
+		}
+		YEM_Implementing_Islamic_law2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = YEM_Implementing_Islamic_law2
+			allowed = { always = no }
+            modifier = {
+				political_advisor_cost_factor = 0.2
+				industrial_concern_cost_factor = 0.2
+				conscription_factor = 0.2
+	            non_core_manpower = 0.3
+				stability_weekly = 0.006
+				industrial_capacity_factory = 0.1
+	            industrial_capacity_dockyard = 0.1
+	            production_factory_max_efficiency_factor = 0.15
+	            production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		YEM_Implementing_Islamic_law3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = YEM_Implementing_Islamic_law3
+			allowed = { always = no }
+            modifier = {
+				political_advisor_cost_factor = 0.2
+				industrial_concern_cost_factor = 0.2
+				conscription_factor = 0.2
+	            non_core_manpower = 0.3
+				stability_weekly = 0.006
+				industrial_capacity_factory = 0.15
+	            industrial_capacity_dockyard = 0.15
+	            production_factory_max_efficiency_factor = 0.2
+	            production_factory_efficiency_gain_factor = 0.2
+				trade_laws_cost_factor  = -0.2
+	            economy_cost_factor = -0.2
+			}
+		}
+		YEM_Local_representation2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = YEM_Local_representation2 
+			allowed = { always = no }
+            modifier = {
+				authoritarian_democrat_drift = 0.05
+	            local_building_slots_factor = 0.5
+	            production_speed_buildings_factor = 0.3
+				resistance_decay = 0.2
+				drift_defence_factor = 0.15
+			}
+		}
+		YEM_Local_representation3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = YEM_Local_representation3
+			allowed = { always = no }
+            modifier = {
+				authoritarian_democrat_drift = 0.05
+	            local_building_slots_factor = 0.5
+	            production_speed_buildings_factor = 0.4
+				resistance_decay = 0.25
+				drift_defence_factor = 0.2
+				opinion_gain_monthly_factor = 0.3
+	            consumer_goods_factor = -0.2
+	            min_export = 0.1
+			}
+		}
+		YEM_Eternal_Yemeni_Brothers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = 	YEM_Eternal_Yemeni_Brothers
+			allowed = { always = no }
+            modifier = {
+				army_org_factor = 0.1
+				army_core_attack_factor = 0.1
+	            army_core_defence_factor = 0.1
+	            army_attack_factor = 0.1
+	            army_defence_factor = 0.1
+			}
+		}
+		YEM_Theocratic_tradition = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = 	YEM_Theocratic_tradition
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = -0.1
+	            line_change_production_efficiency_factor = 0.2
+	            industrial_capacity_factory = 0.15
+				stability_weekly = -0.002
+			}
+		}
+		YEM_Unified_Centralized_Process = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = 	YEM_Unified_Centralized_Process
+			allowed = { always = no }
+            modifier = {
+				compliance_growth = 0.2
+	            required_garrison_factor = -0.4
+				drift_defence_factor = 0.2
+				paternal_autocrat_drift = 0.01
+				national_populist_drift = 0.01
+			}
+		}
+		YEM_Theocratic_tradition2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = 	YEM_Theocratic_tradition2
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = -0.2
+	            line_change_production_efficiency_factor = 0.2
+	            industrial_capacity_factory = 0.3
+				stability_weekly = -0.002
+				political_advisor_cost_factor = -0.1
+	            tank_manufacturer_cost_factor =  -0.1
+	            naval_manufacturer_cost_factor =  -0.1
+	            aircraft_manufacturer_cost_factor =  -0.1
+	            materiel_manufacturer_cost_factor =  -0.1
+	            industrial_concern_cost_factor =  -0.1
+			}
+		}
+		YEM_Unified_Centralized_Process2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = 	YEM_Unified_Centralized_Process2
+			allowed = { always = no }
+            modifier = {
+				compliance_growth = 0.2
+	            required_garrison_factor = -0.4
+				drift_defence_factor = 0.2
+				paternal_autocrat_drift = 0.01
+				national_populist_drift = 0.01
+				army_infantry_attack_factor = 0.1
+	            army_infantry_defence_factor = 0.1
+
+			}
+		}
+		YEM_Theocratic_tradition3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = 	YEM_Theocratic_tradition3
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = -0.2
+	            line_change_production_efficiency_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+	            production_factory_efficiency_gain_factor = 0.1
+	            industrial_capacity_factory = 0.3
+				stability_weekly = -0.002
+				political_advisor_cost_factor = -0.1
+	            tank_manufacturer_cost_factor =  -0.1
+	            naval_manufacturer_cost_factor =  -0.1
+	            aircraft_manufacturer_cost_factor =  -0.1
+	            materiel_manufacturer_cost_factor =  -0.1
+	            industrial_concern_cost_factor =  -0.1
+			}
+		}
+		YEM_Universal_suffrage = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = 	YEM_Universal_suffrage
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.02
+				stability_factor = 0.1
+			}
+		}
+		YEM_Universal_suffrage2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = 	YEM_Universal_suffrage2
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.03
+				stability_factor = 0.2
+			}
+		}
+		YEM_Promote_a_planned_economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = YEM_Promote_a_planned_economy
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.1
+	            production_factory_efficiency_gain_factor = 0.1
+				political_power_cost = -0.1
+			}
+		}
+		YEM_Lift_the_ban_on_partisanship = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = 	YEM_Lift_the_ban_on_partisanship
+			allowed = { always = no }
+            modifier = {
+				totalist_drift = 0.01
+				syndicalist_drift = 0.01
+				radical_socialist = 0.01
+				social_liberal_drift = 0.01
+				market_liberal_drift = 0.01
+				social_conservative_drift = 0.01
+			}
+		}
+		YEM_Lift_the_ban_on_partisanship2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Naval_Transports_ideas1"}
+			picture = GEN_navy_capital_ships
+			name = 	YEM_Lift_the_ban_on_partisanship2
+			allowed = { always = no }
+            modifier = {
+				social_liberal_drift = 0.02
+				market_liberal_drift = 0.02
+				social_conservative_drift = 0.02
+			}
+		}
+		YEM_Modern_Law = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Law"}
+			picture = YEM_Modern_Law
+			name = 	YEM_Modern_Law
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.003
+				research_speed_factor = 0.1
+	            local_resources_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+	            production_speed_industrial_complex_factor = 0.2
+			}
+		}
+		YEM_Modern_Law2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Law2"}
+			picture = YEM_Modern_Law2
+			name = 	YEM_Modern_Law
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.003
+				research_speed_factor = 0.1
+	            local_resources_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+	            production_speed_industrial_complex_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+	            production_factory_efficiency_gain_factor = 0.1
+				political_advisor_cost_factor = -0.05
+	            tank_manufacturer_cost_factor =  -0.05
+	            naval_manufacturer_cost_factor = -0.05
+	            aircraft_manufacturer_cost_factor =  -0.05
+			}
+		}
+		YEM_Modern_Law3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Modern_Law3"}
+			picture = YEM_Modern_Law3
+			name = 	YEM_Modern_Law
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.005
+				research_speed_factor = 0.1
+	            local_resources_factor = 0.1
+				production_speed_arms_factory_factor = 0.4
+	            production_speed_industrial_complex_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+	            production_factory_efficiency_gain_factor = 0.1
+				political_advisor_cost_factor = -0.05
+	            tank_manufacturer_cost_factor =  -0.05
+	            naval_manufacturer_cost_factor = -0.05
+	            aircraft_manufacturer_cost_factor =  -0.05
+			}
+		}
+		YEM_Anti_slavery_education = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Anti_slavery_education"}
+			picture = YEM_Modern_Law
+			name = 	YEM_Anti_slavery_education
+			allowed = { always = no }
+            modifier = {
+	        war_support_weekly = 0.005
+			army_attack_factor = 0.05
+	        army_defence_factor = 0.05
+	        army_speed_factor = 0.05
+    	    army_bonus_air_superiority_factor = 0.05
+			production_speed_arms_factory_factor = 0.05
+	        production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		YEM_Anti_slavery_education2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Anti_slavery_education2"}
+			picture = YEM_Modern_Law
+			name = 	YEM_Anti_slavery_education2
+			allowed = { always = no }
+            modifier = {
+	        war_support_weekly = 0.005
+			army_attack_factor = 0.05
+	        army_defence_factor = 0.05
+	        army_speed_factor = 0.05
+    	    army_bonus_air_superiority_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+	        production_speed_industrial_complex_factor = 0.1
+			local_building_slots_factor = 0.05
+	        production_speed_buildings_factor = 0.1
+			}
+		}
+		YEM_Atheist_society = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Atheist_society"}
+			picture = YEM_Modern_Law
+			name = 	YEM_Atheist_society
+			allowed = { always = no }
+            modifier = {
+	     	stability_factor = 0.2
+			surrender_limit = 0.4
+			consumer_goods_expected_value = -0.1
+			consumer_goods_factor = -0.15
+			}
+		}
+		YEM_Atheist_society1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Atheist_society1"}
+			picture = YEM_Modern_Law
+			name = 	YEM_Atheist_society
+			allowed = { always = no }
+            modifier = {
+	     	stability_factor = 0.25
+			surrender_limit = 0.5
+			consumer_goods_expected_value = -0.25
+			consumer_goods_factor = -0.2
+			}
+		}
+		YEM_Fight_against_landlords = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Fight_against_landlords"}
+			picture = YEM_Modern_Law
+			name = 	YEM_Fight_against_landlords
+			allowed = { always = no }
+            modifier = {
+	     	stability_factor = -0.3
+			consumer_goods_factor = 0.2
+			}
+		}
+		YEM_Ruling_with_an_iron_fist = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_Ruling_with_an_iron_fist"}
+			picture = generic_iron_fist
+			name = 	YEM_Ruling_with_an_iron_fist
+			allowed = { always = no }
+            modifier = {
+	     	production_speed_buildings_factor = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+			production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		YEM_The_battle_for_survival = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_The_battle_for_survival"}
+			picture = SER_super_help
+			name = 	YEM_The_battle_for_survival
+			allowed = { always = no }
+            modifier = {
+	     	production_speed_buildings_factor = 0.15
+			production_factory_max_efficiency_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+			consumer_goods_expected_value = -0.25
+			consumer_goods_factor = -0.15
+			}
+		}
+		YEM_White_Cedar_ideas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea YEM_White_Cedar_ideas" }
+			name = YEM_White_Cedar_ideas
+			picture = LEB_White_Cedar
+			allowed = { always = no }
+			modifier = {
+				army_org_factor = 0.25
+				surrender_limit = 0.15
+				consumer_goods_factor = -0.25
+				field_officer_promotion_penalty = -0.25
+				local_building_slots_factor = 0.1
+			}
+		}
+	}
+}

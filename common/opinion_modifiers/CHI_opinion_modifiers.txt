@@ -1,0 +1,21 @@
+#########################################################################
+# THE GATES OF VERSAILLES - OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+#CSR
+opinion_modifiers = {
+	CSR_hate_all_crowns = { value = -100 }
+}
+opinion_modifiers = {
+	TAI_hate_the_csr = { value = -100 }
+}
+#Tianjing
+opinion_modifiers = {
+	TAI_papers_leaked_opinion = { value = -75 }
+}

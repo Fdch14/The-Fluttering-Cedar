@@ -1,0 +1,44 @@
+SSNP_The_party_Unit = {
+	icon = GFX_decision_SSNP_party_unit
+	allowed = {
+		original_tag = LEB
+		is_subject = no
+	}
+	visible = {
+		tag = LEB
+		has_country_flag = LEB_SSNP_WIN
+	}
+	visible_when_empty = yes
+	scripted_gui = THE_SSNP_unit_GUI
+	
+	priority = 1000
+}
+LEB_Arab_National_Unit = {
+	icon = GFX_decision_Arab_national_unit
+	allowed = {
+		original_tag = LEB
+		is_subject = no
+	}
+	visible = {
+		tag = LEB
+		has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		is_ai = no
+	}
+	visible_when_empty = yes
+	scripted_gui = THE_Arab_unit_GUI
+	
+	priority = 12000
+}
+LEB_Arab_War = {
+	icon = GFX_decision_Arab_national_unit
+	allowed = {
+		tag = LEB
+	}
+	visible = {
+		tag = LEB
+		has_completed_focus = SOCL_The_pan_Arab_flame_is_burning
+		is_ai = no
+	}
+	
+	priority = 10000
+}

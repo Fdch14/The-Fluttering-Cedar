@@ -1,0 +1,68 @@
+#########################################################################
+# THE GATES OF VERSAILLES - OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+#FRA
+##STARTING OPINION MODIFIERS
+opinion_modifiers = {
+	FRA_hates_prussian_socialism = { value = -80 }
+}
+opinion_modifiers = {
+	PRS_hates_french_imperialism = { value = -80 }
+}
+opinion_modifiers = {
+	FRA_russia_rival = { value = -30 }
+}
+opinion_modifiers = {
+	RUS_france_rival = { value = -30 }
+}
+opinion_modifiers = {
+	FRA_hates_english_republicanism = { value = -55 }
+}
+opinion_modifiers = {
+	ENG_hates_french_imperialism = { value = -55 }
+}
+opinion_modifiers = {
+	FRA_FID_our_colony = { value = 150 }
+}
+opinion_modifiers = {
+	FRA_FID_our_overlord = { value = 150 }
+}
+##BAINVILLE OPINION MODIFIERS
+opinion_modifiers = {
+	FRANCE_continuing_foreign_policy = { value = -10 }
+}
+opinion_modifiers = {
+	FRA_FID_abandonning_lost_cause = { value = -200 }
+}
+opinion_modifiers = {
+	FRA_FID_great_betrayal = { value = -200 }
+}
+opinion_modifiers = {
+	FRA_CHN_big_loan = { value = 30 }
+}
+opinion_modifiers = {
+	FRA_CHN_no_loan = { value = -15 }
+}
+opinion_modifiers = {
+	FRA_AUS_HUN_full_support = { value = 30 }
+}
+opinion_modifiers = {
+	FRA_AUS_HUN_minimal_support = { value = 15 }
+}
+opinion_modifiers = {
+	FRA_AUS_HUN_bare_minimum_support = { value = -15 }
+}
+opinion_modifiers = { #For those who's wondering, this is when France decide to not help both
+	FRA_AUS_HUN_special_support_status = { value = -50 }
+}
+
+opinion_modifiers = { #For those who's wondering, this is when France decide to not help both
+	FRA_ZPD_recent_sabotage_attempt = { value = -75 }
+}
