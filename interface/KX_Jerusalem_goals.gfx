@@ -2715,5 +2715,113 @@ SpriteTypes = {
 		name = "PALS_Import_of_foreign_aircraft"
 		texturefile = "gfx/interface/goals/PALS_Import_of_foreign_aircraft.png"
 	}
+	SpriteType = {
+		name = "PALS_Between_Arabia_and_Islam"
+		texturefile = "gfx/interface/goals/PALS_Between_Arabia_and_Islam.png"
+	}
+	SpriteType = {
+		name = "PALS_Palestine_was_given_a_respite"
+		texturefile = "gfx/interface/goals/PALS_Palestine_was_given_a_respite.png"
+	}
+	SpriteType = {
+		name = "PALS_Rebuild_the_political_system"
+		texturefile = "gfx/interface/goals/PALS_Rebuild_the_political_system.png"
+	}
+	SpriteType = {
+		name = "PALS_Erase_the_traces_of_colonization"
+		texturefile = "gfx/interface/goals/PALS_Erase_the_traces_of_colonization.png"
+	}
+	SpriteType = {
+		name = "PALS_Pacify_the_tribes"
+		texturefile = "gfx/interface/goals/PALS_Pacify_the_tribes.png"
+	}
+	SpriteType = {
+		name = "PALS_Maintain_public_order"
+		texturefile = "gfx/interface/goals/PALS_Maintain_public_order.png"
+	}
+	SpriteType = {
+		name = "PALS_Unveil_it"
+		texturefile = "gfx/interface/goals/PALS_Unveil_it.png"
+	}
+	SpriteType = {
+		name = "PALS_Deepening_anti_colonial_awareness"
+		texturefile = "gfx/interface/goals/PALS_Deepening_anti_colonial_awareness.png"
+	}
+	SpriteType = {
+		name = "PALS_Allah_not_democracy"
+		texturefile = "gfx/interface/goals/PALS_Allah_not_democracy.png"
+	}
+	SpriteType = {
+		name = "PALS_Socialization_of_the_Islamic_faith"
+		texturefile = "gfx/interface/goals/PALS_Socialization_of_the_Islamic_faith.png"
+	}
+	SpriteType = {
+		name = "PALS_Victory_in_Palestine"
+		texturefile = "gfx/interface/goals/PALS_Victory_in_Palestine.png"
+	}
+	SpriteType = {
+		name = "PALS_integration"
+		texturefile = "gfx/interface/goals/PALS_integration.png"
+	}
+	SpriteType = {
+		name = "PALS_Centralize_local_power"
+		texturefile = "gfx/interface/goals/PALS_Centralize_local_power.png"
+	}
+	SpriteType = {
+		name = "PALS_Reform_the_mobilization_system"
+		texturefile = "gfx/interface/goals/PALS_Reform_the_mobilization_system.png"
+	}
+	SpriteType = {
+		name = "PALS_The_future_of_the_Alliance"
+		texturefile = "gfx/interface/goals/PALS_The_future_of_the_Alliance.png"
+	}
+	SpriteType = {
+		name = "PALS_Modern_jihad"
+		texturefile = "gfx/interface/goals/PALS_Modern_jihad.png"
+	}
+	SpriteType = {
+		name = "PALS_Hail_to_Haji"
+		texturefile = "gfx/interface/goals/PALS_Hail_to_Haji.png"
+	}
+	SpriteType = {
+		name = "PALS_The_spirit_of_sacrifice"
+		texturefile = "gfx/interface/goals/PALS_The_spirit_of_sacrifice.png"
+	}
+	SpriteType = {
+		name = "PALS_Agitation_of_nationalism"
+		texturefile = "gfx/interface/goals/PALS_Agitation_of_nationalism.png"
+	}
+	SpriteType = {
+		name = "PALS_Struggle_Labor_Obey"
+		texturefile = "gfx/interface/goals/PALS_Struggle_Labor_Obey.png"
+	}
+	SpriteType = {
+		name = "PALS_Expansion_of_the_Muslim_Brotherhood"
+		texturefile = "gfx/interface/goals/PALS_Expansion_of_the_Muslim_Brotherhood.png"
+	}
+	SpriteType = {
+		name = "PALS_Islamic_Police"
+		texturefile = "gfx/interface/goals/PALS_Islamic_Police.png"
+	}
+	SpriteType = {
+		name = "PALS_Social_justice"
+		texturefile = "gfx/interface/goals/PALS_Social_justice.png"
+	}
+	SpriteType = {
+		name = "PALS_Refuting_Western_thought"
+		texturefile = "gfx/interface/goals/PALS_Refuting_Western_thought.png"
+	}
+	SpriteType = {
+		name = "PALS_Correcting_the_Pan_Arab_Movement"
+		texturefile = "gfx/interface/goals/PALS_Correcting_the_Pan_Arab_Movement.png"
+	}
+	SpriteType = {
+		name = "PALS_Stop_the_depravity_and_countercurrent"
+		texturefile = "gfx/interface/goals/PALS_Stop_the_depravity_and_countercurrent.png"
+	}
+	SpriteType = {
+		name = "PALS_Spiritual_mobilization"
+		texturefile = "gfx/interface/goals/PALS_Spiritual_mobilization.png"
+	}
 	
 }
