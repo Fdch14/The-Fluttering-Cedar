@@ -11,6 +11,7 @@ ideologies = {
 	totalist = {
 		types = {
 			totalist_subtype = {} #generic
+			arab_legionism_subtype = {can_be_randomly_selected = no}
 			tot_zionism = {can_be_randomly_selected = no}
 			natsynd_subtype = {can_be_randomly_selected = no} #National Syndicalism
 			authcom_subtype = {can_be_randomly_selected = no} #Authoritarian Communist
@@ -927,6 +928,7 @@ ideologies = {
 
 	national_populist = {
 		types = {
+			islamic_legionism_subtype = {can_be_randomly_selected = no}
 			ustase_crusader_ideology_subtype = {can_be_randomly_selected = no}
 			ustase_fiumeism_subtype = {can_be_randomly_selected = no}
 			ustase_legionarism_subtype = {can_be_randomly_selected = no}

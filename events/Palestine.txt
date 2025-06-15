@@ -219,3 +219,152 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = Palestine.4
+	title = Palestine.4.t
+	desc = Palestine.4.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.4.a
+		set_party_name = {
+			ideology = totalist
+			name = PLS_totalist_party1
+			long_name = PLS_totalist_party1_long
+		}
+		set_party_name = {
+			ideology = syndicalist
+			name = PLS_syndicalist_party1
+			long_name = PLS_syndicalist_party1_long
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+			name = PLS_radical_socialist_party1
+			long_name = PLS_radical_socialist_party1_long
+		}
+		set_party_name = {
+			ideology = social_democrat
+			name = PLS_social_democrat_party1
+			long_name = PLS_social_democrat_party1_long
+		}
+		set_party_name = {
+			ideology = social_liberal
+			name = PLS_social_liberal_party1
+			long_name = PLS_social_liberal_party1_long
+		}
+		set_party_name = {
+			ideology = market_liberal
+			name = PLS_market_liberal_party1
+			long_name = PLS_market_liberal_party1_long
+		}
+		set_party_name = {
+			ideology = social_conservative
+			name = PLS_social_conservative_party1
+			long_name = PLS_social_conservative_party1_long
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			name = PLS_authoritarian_democrat_party1
+			long_name = PLS_authoritarian_democrat_party1_long
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			name = PLS_paternal_autocrat_party1
+			long_name = PLS_paternal_autocrat_party1_long
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+			name = PLS_national_populist_party1
+			long_name = PLS_national_populist_party1_long
+		}
+		hidden_effect = {
+			set_popularities = {
+				totalist = 5
+				syndicalist = 15
+				radical_socialist = 5
+				social_democrat = 5
+				social_liberal = 5
+				market_liberal = 10
+				social_conservative = 15
+				authoritarian_democrat = 10
+				paternal_autocrat = 10
+				national_populist = 20
+			}
+		}
+		create_country_leader = {
+			name = "Younis Saleh Bahri"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			expire = "1.1.1"
+			ideology = arab_legionism_subtype
+		}
+
+		create_country_leader = {
+			name = "Muhammad Najati Sidqi"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			expire = "1.1.1"
+			ideology = centralized_syndicalism_subtype
+		}
+
+		create_country_leader = {
+			name = "Muhammad Najati Sidqi"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			expire = "1.1.1"
+			ideology = radsoc_national_communism_subtype
+		}
+
+		create_country_leader = {
+			name = "Hussein Khalidi"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			expire = "1.1.1"
+			ideology = authoritarian_social_democracy_subtype
+		}
+
+		create_country_leader = {
+			name = "Hussein Khalidi"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			expire = "1.1.1"
+			ideology = national_liberalism_subtype
+		}
+
+		create_country_leader = {
+			name = "Izzat Darwaza"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			expire = "1.1.1"
+			ideology = humanistic_capitalism_subtype
+		}
+
+		create_country_leader = {
+			name = "Izzat Darwaza"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			expire = "1.1.1"
+			ideology = national_conservative_subtype
+		}
+
+		create_country_leader = {
+			name = "Yaqub al-Ghusayn"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			expire = "1.1.1"
+			ideology = islamism_subtype
+		}
+
+		create_country_leader = {
+			name = "Hassan Salama"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			expire = "1.1.1"
+			ideology = junta_subtype
+		}
+
+		create_country_leader = {
+			name = "Amin Husseini"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			expire = "1.1.1"
+			ideology = islamic_legionism_subtype
+		}
+	}
+}

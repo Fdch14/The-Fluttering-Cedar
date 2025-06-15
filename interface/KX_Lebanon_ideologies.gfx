@@ -99,5 +99,13 @@ spriteTypes = {
 	name = "GFX_ideology_socdem_haganah_military_rule_subtype"
 	texturefile = "gfx/interface/ideologies/socdem_haganah_military_rule_group.png"
 	}
+	spriteType = {
+	name = "GFX_ideology_arab_legionism_subtype"
+	texturefile = "gfx/interface/ideologies/arab_legionism_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_islamic_legionism_subtype"
+	texturefile = "gfx/interface/ideologies/islamic_legionism_group.png"
+	}
 	
 }

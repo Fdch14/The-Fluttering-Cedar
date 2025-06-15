@@ -140,5 +140,9 @@ spriteTypes = {
 		name = "GFX_International_Volunteer_Army"
 		texturefile = "gfx/interface/decision/International_Volunteer_Army.png"
 	}
+	SpriteType = {
+		name = "GFX_The_Palestinian_crisis"
+		texturefile = "gfx/interface/decision/The_Palestinian_crisis.png"
+	}
 
 }
