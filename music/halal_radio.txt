@@ -1,6 +1,24 @@
 music_station = "Halal_Radio"
 
 music = {
+	song = "Suria_ya_Dhat_Almajd"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "lahat_ruuws_alhirab"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
 	song = "majn_puljemjot"
 
 	chance = {

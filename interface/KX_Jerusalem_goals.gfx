@@ -2896,8 +2896,108 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/PALS_Give_the_mufti_a_place.png"
 	}
 	SpriteType = {
+		name = "PALS_Preparing_for_the_general_election"
+		texturefile = "gfx/interface/goals/PALS_Preparing_for_the_general_election.png"
+	}
+	SpriteType = {
 		name = "PALS_Unexpected_contenders"
 		texturefile = "gfx/interface/goals/PALS_Unexpected_contenders.png"
+	}
+	SpriteType = {
+		name = "PALS_Campaigning_for_reconstruction"
+		texturefile = "gfx/interface/goals/PALS_Campaigning_for_reconstruction.png"
+	}
+	SpriteType = {
+		name = "PALS_Enlist_the_support_of_the_wealthy_family"
+		texturefile = "gfx/interface/goals/PALS_Enlist_the_support_of_the_wealthy_family.png"
+	}
+	SpriteType = {
+		name = "PALS_Inspire_a_sense_of_democracy"
+		texturefile = "gfx/interface/goals/PALS_Inspire_a_sense_of_democracy.png"
+	}
+	SpriteType = {
+		name = "PALS_End_of_mission"
+		texturefile = "gfx/interface/goals/PALS_End_of_mission.png"
+	}
+	SpriteType = {
+		name = "PALS_Spring_in_Palestine"
+		texturefile = "gfx/interface/goals/PALS_Spring_in_Palestine.png"
+	}
+	SpriteType = {
+		name = "PALS_Youth_Congress_victory"
+		texturefile = "gfx/interface/goals/PALS_Youth_Congress_victory.png"
+	}
+	SpriteType = {
+		name = "PALS_The_Reform_Party_wins"
+		texturefile = "gfx/interface/goals/PALS_The_Reform_Party_wins.png"
+	}
+	SpriteType = {
+		name = "PALS_The_Independence_Party_wins"
+		texturefile = "gfx/interface/goals/PALS_The_Independence_Party_wins.png"
+	}
+	SpriteType = {
+		name = "PALS_Admission_of_the_Islamic_Party"
+		texturefile = "gfx/interface/goals/PALS_Admission_of_the_Islamic_Party.png"
+	}
+	SpriteType = {
+		name = "PALS_Invite_the_Great_Mufti"
+		texturefile = "gfx/interface/goals/PALS_Invite_the_Great_Mufti.png"
+	}
+	SpriteType = {
+		name = "PALS_Insist_on_nationalism"
+		texturefile = "gfx/interface/goals/PALS_Insist_on_nationalism.png"
+	}
+	SpriteType = {
+		name = "PALS_Reorganization_of_the_militia"
+		texturefile = "gfx/interface/goals/PALS_Reorganization_of_the_militia.png"
+	}
+	SpriteType = {
+		name = "PALS_Reiterate_anti_Semitic_positions"
+		texturefile = "gfx/interface/goals/PALS_Reiterate_anti_Semitic_positions.png"
+	}
+	SpriteType = {
+		name = "PALS_Dialogue_with_the_Sheikh"
+		texturefile = "gfx/interface/goals/PALS_Dialogue_with_the_Sheikh.png"
+	}
+	SpriteType = {
+		name = "PALS_The_edifying_role_of_Islam"
+		texturefile = "gfx/interface/goals/PALS_The_edifying_role_of_Islam.png"
+	}
+	SpriteType = {
+		name = "PALS_Responsibility_for_tradition"
+		texturefile = "gfx/interface/goals/PALS_Responsibility_for_tradition.png"
+	}
+	SpriteType = {
+		name = "PALS_In_collaboration_with_Hashem"
+		texturefile = "gfx/interface/goals/PALS_In_collaboration_with_Hashem.png"
+	}
+	SpriteType = {
+		name = "PALS_Against_colonialism"
+		texturefile = "gfx/interface/goals/PALS_Against_colonialism.png"
+	}
+	SpriteType = {
+		name = "PALS_Promote_progressive_taxation"
+		texturefile = "gfx/interface/goals/PALS_Promote_progressive_taxation.png"
+	}
+	SpriteType = {
+		name = "PALS_land_reform"
+		texturefile = "gfx/interface/goals/PALS_land_reform.png"
+	}
+	SpriteType = {
+		name = "PALS_Liberalization_reforms"
+		texturefile = "gfx/interface/goals/PALS_Liberalization_reforms.png"
+	}
+	SpriteType = {
+		name = "PALS_Secularization_attempts"
+		texturefile = "gfx/interface/goals/PALS_Secularization_attempts.png"
+	}
+	SpriteType = {
+		name = "PALS_Maintain_an_anti_Zion_stance"
+		texturefile = "gfx/interface/goals/PALS_Maintain_an_anti_Zion_stance.png"
+	}
+	SpriteType = {
+		name = "PALS_Real_commitment"
+		texturefile = "gfx/interface/goals/PALS_Real_commitment.png"
 	}
 	
 }

@@ -1650,6 +1650,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Preparing_for_the_general_election
+		icon=PALS_Preparing_for_the_general_election
 		x=50
 		y=7
 		prerequisite={focus=PLS_Unveil_it}
@@ -1665,6 +1666,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Campaigning_for_reconstruction
+		icon=PALS_Campaigning_for_reconstruction
 		x=47
 		y=8
 		prerequisite={focus=PLS_Preparing_for_the_general_election}
@@ -1680,6 +1682,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Enlist_the_support_of_the_wealthy_family
+		icon=PALS_Enlist_the_support_of_the_wealthy_family
 		x=49
 		y=8
 		prerequisite={focus=PLS_Preparing_for_the_general_election}
@@ -1695,6 +1698,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Inspire_a_sense_of_democracy
+		icon=PALS_Inspire_a_sense_of_democracy
 		x=51
 		y=8
 		prerequisite={focus=PLS_Preparing_for_the_general_election}
@@ -1710,6 +1714,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_End_of_mission
+		icon=PALS_End_of_mission
 		x=53
 		y=8
 		prerequisite={focus=PLS_Preparing_for_the_general_election}
@@ -1725,6 +1730,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Spring_in_Palestine
+		icon=PALS_Spring_in_Palestine
 		x=50
 		y=9
 		prerequisite={focus=PLS_Campaigning_for_reconstruction}
@@ -1743,6 +1749,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Youth_Congress_victory
+		icon=PALS_Youth_Congress_victory
 		x=46
 		y=10
 		prerequisite={focus=PLS_Spring_in_Palestine}
@@ -1758,6 +1765,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Admission_of_the_Islamic_Party
+		icon=PALS_Admission_of_the_Islamic_Party
 		x=45
 		y=11
 		prerequisite={focus=PLS_Youth_Congress_victory}
@@ -1773,6 +1781,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Invite_the_Great_Mufti
+		icon=PALS_Invite_the_Great_Mufti
 		x=45
 		y=12
 		prerequisite={focus=PLS_Admission_of_the_Islamic_Party}
@@ -1788,6 +1797,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Insist_on_nationalism
+		icon=PALS_Insist_on_nationalism
 		x=47
 		y=11
 		prerequisite={focus=PLS_Youth_Congress_victory}
@@ -1803,6 +1813,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Reorganization_of_the_militia
+		icon=PALS_Reorganization_of_the_militia
 		x=47
 		y=12
 		prerequisite={focus=PLS_Insist_on_nationalism}
@@ -1818,6 +1829,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Reiterate_anti_Semitic_positions
+		icon=PALS_Reiterate_anti_Semitic_positions
 		x=46
 		y=13
 		prerequisite={focus=PLS_Invite_the_Great_Mufti}
@@ -1834,6 +1846,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_The_Independence_Party_wins
+		icon=PALS_The_Independence_Party_wins
 		x=50
 		y=10
 		prerequisite={focus=PLS_Spring_in_Palestine}
@@ -1849,6 +1862,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Dialogue_with_the_Sheikh
+		icon=PALS_Dialogue_with_the_Sheikh
 		x=49
 		y=11
 		prerequisite={focus=PLS_The_Independence_Party_wins}
@@ -1864,6 +1878,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_The_edifying_role_of_Islam
+		icon=PALS_The_edifying_role_of_Islam
 		x=49
 		y=12
 		prerequisite={focus=PLS_Dialogue_with_the_Sheikh}
@@ -1879,6 +1894,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Responsibility_for_tradition
+		icon=PALS_Responsibility_for_tradition
 		x=51
 		y=11
 		prerequisite={focus=PLS_The_Independence_Party_wins}
@@ -1894,6 +1910,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_In_collaboration_with_Hashem
+		icon=PALS_In_collaboration_with_Hashem
 		x=51
 		y=12
 		prerequisite={focus=PLS_Responsibility_for_tradition}
@@ -1909,6 +1926,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Against_colonialism
+		icon=PALS_Against_colonialism
 		x=50
 		y=13
 		prerequisite={focus=PLS_The_edifying_role_of_Islam}
@@ -1925,6 +1943,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_The_Reform_Party_wins
+		icon=PALS_The_Reform_Party_wins
 		x=54
 		y=10
 		prerequisite={focus=PLS_Spring_in_Palestine}
@@ -1940,6 +1959,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Promote_progressive_taxation
+		icon=PALS_Promote_progressive_taxation
 		x=53
 		y=11
 		prerequisite={focus=PLS_The_Reform_Party_wins}
@@ -1955,6 +1975,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_land_reform
+		icon=PALS_land_reform
 		x=53
 		y=12
 		prerequisite={focus=PLS_Promote_progressive_taxation}
@@ -1970,6 +1991,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Liberalization_reforms
+		icon=PALS_Liberalization_reforms
 		x=55
 		y=11
 		prerequisite={focus=PLS_The_Reform_Party_wins}
@@ -1985,6 +2007,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Secularization_attempts
+		icon=PALS_Secularization_attempts
 		x=55
 		y=12
 		prerequisite={focus=PLS_Liberalization_reforms}
@@ -2000,6 +2023,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Maintain_an_anti_Zion_stance
+		icon=PALS_Maintain_an_anti_Zion_stance
 		x=54
 		y=13
 		prerequisite={focus=PLS_land_reform}
@@ -2016,11 +2040,10 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Real_commitment
+		icon=PALS_Real_commitment
 		x=50
 		y=14
-		prerequisite={focus=PLS_Reiterate_anti_Semitic_positions}
-		prerequisite={focus=PLS_Against_colonialism}
-		prerequisite={focus=PLS_Maintain_an_anti_Zion_stance}
+		prerequisite={focus=PLS_Reiterate_anti_Semitic_positions focus=PLS_Against_colonialism focus=PLS_Maintain_an_anti_Zion_stance}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2032,7 +2055,7 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id127
+		id=PLS_The_guidance_of_socialism
 		x=62
 		y=7
 		prerequisite={focus=PLS_Unveil_it}
@@ -2047,11 +2070,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id128
+		id=PLS_Follow_Syndicate_International
 		x=60
 		y=8
-		prerequisite={focus=default_id127}
-		mutually_exclusive={focus=default_id135 }
+		prerequisite={focus=PLS_The_guidance_of_socialism}
+		mutually_exclusive={focus=PLS_The_figure_of_Lenin }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2063,10 +2086,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id129
+		id=PLS_Islamic_socialism
 		x=58
 		y=9
-		prerequisite={focus=default_id128}
+		prerequisite={focus=PLS_Follow_Syndicate_International}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2078,10 +2101,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id130
+		id=PLS_Integrate_the_education_system
 		x=58
 		y=10
-		prerequisite={focus=default_id129}
+		prerequisite={focus=PLS_Islamic_socialism}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2093,10 +2116,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id131
+		id=PLS_Workers_are_self_managed
 		x=60
 		y=9
-		prerequisite={focus=default_id128}
+		prerequisite={focus=PLS_Follow_Syndicate_International}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2108,10 +2131,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id132
+		id=PLS_Civic_cognition
 		x=60
 		y=10
-		prerequisite={focus=default_id131}
+		prerequisite={focus=PLS_Workers_are_self_managed}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2123,10 +2146,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id133
+		id=PLS_Remembrance_of_the_martyrs
 		x=62
 		y=9
-		prerequisite={focus=default_id128 focus=default_id135 }
+		prerequisite={focus=PLS_Follow_Syndicate_International focus=PLS_The_figure_of_Lenin }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2138,10 +2161,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id134
+		id=PLS_Revolutionary_mobilization
 		x=62
 		y=10
-		prerequisite={focus=default_id133}
+		prerequisite={focus=PLS_Remembrance_of_the_martyrs}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2153,11 +2176,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id135
+		id=PLS_The_figure_of_Lenin
 		x=64
 		y=8
-		prerequisite={focus=default_id127}
-		mutually_exclusive={focus=default_id128 }
+		prerequisite={focus=PLS_The_guidance_of_socialism}
+		mutually_exclusive={focus=PLS_Follow_Syndicate_International }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2169,10 +2192,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id136
+		id=PLS_Congress_system
 		x=64
 		y=9
-		prerequisite={focus=default_id135}
+		prerequisite={focus=PLS_The_figure_of_Lenin}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2184,10 +2207,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id137
+		id=PLS_Full_centralization
 		x=64
 		y=10
-		prerequisite={focus=default_id136}
+		prerequisite={focus=PLS_Congress_system}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2199,10 +2222,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id138
+		id=PLS_Downplay_religious_influences
 		x=66
 		y=9
-		prerequisite={focus=default_id135}
+		prerequisite={focus=PLS_The_figure_of_Lenin}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2214,10 +2237,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id139
+		id=PLS_compulsory_education
 		x=66
 		y=10
-		prerequisite={focus=default_id138}
+		prerequisite={focus=PLS_Downplay_religious_influences}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2229,12 +2252,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id140
+		id=PLS_Revolutionary_mobilization
 		x=60
 		y=11
-		prerequisite={focus=default_id130}
-		prerequisite={focus=default_id132}
-		prerequisite={focus=default_id134}
+		prerequisite={focus=PLS_Integrate_the_education_system}
+		prerequisite={focus=PLS_Civic_cognition}
+		prerequisite={focus=PLS_Revolutionary_mobilization}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2246,12 +2269,12 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id141
+		id=PLS_Arabization
 		x=64
 		y=11
-		prerequisite={focus=default_id134}
-		prerequisite={focus=default_id137}
-		prerequisite={focus=default_id139}
+		prerequisite={focus=PLS_Revolutionary_mobilization}
+		prerequisite={focus=PLS_Full_centralization}
+		prerequisite={focus=PLS_compulsory_education}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2263,10 +2286,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id142
+		id=PLS_Proclamation_of_Palestine
 		x=65
 		y=12
-		prerequisite={focus=default_id140 focus=default_id141 }
+		prerequisite={focus=PLS_Revolutionary_mobilization focus=PLS_Arabization }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2278,10 +2301,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id143
+		id=PLS_Dismantle_the_Muslim_Brotherhood
 		x=64
 		y=13
-		prerequisite={focus=default_id142}
+		prerequisite={focus=PLS_Proclamation_of_Palestine}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2293,10 +2316,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id144
+		id=PLS_Incorporate_the_Jihadist_Army
 		x=64
 		y=14
-		prerequisite={focus=default_id143}
+		prerequisite={focus=PLS_Dismantle_the_Muslim_Brotherhood}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2308,10 +2331,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id145
+		id=PLS_Annexation_of_the_Mapai
 		x=66
 		y=13
-		prerequisite={focus=default_id142}
+		prerequisite={focus=PLS_Proclamation_of_Palestine}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2323,10 +2346,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id146
+		id=PLS_Banning_Jewish_military_organizations
 		x=66
 		y=14
-		prerequisite={focus=default_id145}
+		prerequisite={focus=PLS_Annexation_of_the_Mapai}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -2338,11 +2361,11 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id147
+		id=PLS_The_heart_of_the_Arab_Revolution
 		x=65
 		y=15
-		prerequisite={focus=default_id144}
-		prerequisite={focus=default_id146}
+		prerequisite={focus=PLS_Incorporate_the_Jihadist_Army}
+		prerequisite={focus=PLS_Banning_Jewish_military_organizations}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3536,10 +3559,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id234
+		id=PLS_Save_the_Revolution
 		x=59
 		y=12
-		prerequisite={focus=default_id140 focus=default_id141 }
+		prerequisite={focus=PLS_Revolutionary_mobilization focus=PLS_Arabization }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3551,10 +3574,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id235
+		id=PLS_Expand_the_advisory_authority
 		x=57
 		y=13
-		prerequisite={focus=default_id234}
+		prerequisite={focus=PLS_Save_the_Revolution}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3566,10 +3589,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id236
+		id=PLS_French_advanced_experience
 		x=56
 		y=14
-		prerequisite={focus=default_id235}
+		prerequisite={focus=PLS_Expand_the_advisory_authority}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3581,10 +3604,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id237
+		id=PLS_Technological_indoctrination
 		x=58
 		y=14
-		prerequisite={focus=default_id235}
+		prerequisite={focus=PLS_Expand_the_advisory_authority}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3596,10 +3619,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id238
+		id=PLS_The_mission_of_socialist_enlightenment
 		x=61
 		y=13
-		prerequisite={focus=default_id234}
+		prerequisite={focus=PLS_Save_the_Revolution}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3611,10 +3634,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id239
+		id=PLS_Total_control
 		x=60
 		y=14
-		prerequisite={focus=default_id238}
+		prerequisite={focus=PLS_The_mission_of_socialist_enlightenment}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3626,10 +3649,10 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id240
+		id=PLS_No_more_jihad
 		x=62
 		y=14
-		prerequisite={focus=default_id238}
+		prerequisite={focus=PLS_The_mission_of_socialist_enlightenment}
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3641,13 +3664,33 @@ focus_tree={
 		}
 	}
 	focus={
-		id=default_id241
-		x=59
+		id=PLS_Paris_took_over_in_full
+		x=58
 		y=15
-		prerequisite={focus=default_id236}
-		prerequisite={focus=default_id237}
-		prerequisite={focus=default_id239}
-		prerequisite={focus=default_id240}
+		prerequisite={focus=PLS_French_advanced_experience}
+		prerequisite={focus=PLS_Technological_indoctrination}
+		prerequisite={focus=PLS_Total_control}
+		prerequisite={focus=PLS_No_more_jihad}
+		mutually_exclusive={focus=PLS_Wear_white_gloves }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=PLS_Wear_white_gloves
+		x=60
+		y=15
+		prerequisite={focus=PLS_Total_control}
+		prerequisite={focus=PLS_French_advanced_experience}
+		prerequisite={focus=PLS_Technological_indoctrination}
+		prerequisite={focus=PLS_No_more_jihad}
+		mutually_exclusive={focus=PLS_Paris_took_over_in_full }
 		cost=10
 		ai_will_do={
 			factor=1
