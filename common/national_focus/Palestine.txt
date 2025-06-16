@@ -2252,7 +2252,7 @@ focus_tree={
 		}
 	}
 	focus={
-		id=PLS_Revolutionary_mobilization
+		id=PLS_Create_community
 		x=60
 		y=11
 		prerequisite={focus=PLS_Integrate_the_education_system}
@@ -2289,7 +2289,7 @@ focus_tree={
 		id=PLS_Proclamation_of_Palestine
 		x=65
 		y=12
-		prerequisite={focus=PLS_Revolutionary_mobilization focus=PLS_Arabization }
+		prerequisite={focus=PLS_Create_community focus=PLS_Arabization }
 		cost=10
 		ai_will_do={
 			factor=1
@@ -3562,7 +3562,7 @@ focus_tree={
 		id=PLS_Save_the_Revolution
 		x=59
 		y=12
-		prerequisite={focus=PLS_Revolutionary_mobilization focus=PLS_Arabization }
+		prerequisite={focus=PLS_Create_community focus=PLS_Arabization }
 		cost=10
 		ai_will_do={
 			factor=1

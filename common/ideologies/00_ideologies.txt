@@ -11,6 +11,7 @@ ideologies = {
 	totalist = {
 		types = {
 			totalist_subtype = {} #generic
+			tot_islamism_subtype = {can_be_randomly_selected = no}
 			arab_legionism_subtype = {can_be_randomly_selected = no}
 			tot_zionism = {can_be_randomly_selected = no}
 			natsynd_subtype = {can_be_randomly_selected = no} #National Syndicalism

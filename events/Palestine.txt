@@ -299,70 +299,70 @@ country_event = {
 		}
 		create_country_leader = {
 			name = "Younis Saleh Bahri"
-			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Younis_Saleh_Bahri.png"
 			expire = "1.1.1"
 			ideology = arab_legionism_subtype
 		}
 
 		create_country_leader = {
 			name = "Muhammad Najati Sidqi"
-			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Muhammad_Najati_Sidqi.png"
 			expire = "1.1.1"
 			ideology = centralized_syndicalism_subtype
 		}
 
 		create_country_leader = {
 			name = "Muhammad Najati Sidqi"
-			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Muhammad_Najati_Sidqi.png"
 			expire = "1.1.1"
 			ideology = radsoc_national_communism_subtype
 		}
 
 		create_country_leader = {
 			name = "Hussein Khalidi"
-			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Hussein_Khalidi.png"
 			expire = "1.1.1"
 			ideology = authoritarian_social_democracy_subtype
 		}
 
 		create_country_leader = {
 			name = "Hussein Khalidi"
-			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Hussein_Khalidi.png"
 			expire = "1.1.1"
 			ideology = national_liberalism_subtype
 		}
 
 		create_country_leader = {
 			name = "Izzat Darwaza"
-			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Izzat_Darwaza.png"
 			expire = "1.1.1"
 			ideology = humanistic_capitalism_subtype
 		}
 
 		create_country_leader = {
 			name = "Izzat Darwaza"
-			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Izzat_Darwaza.png"
 			expire = "1.1.1"
 			ideology = national_conservative_subtype
 		}
 
 		create_country_leader = {
 			name = "Yaqub al-Ghusayn"
-			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			picture = "gfx/leaders/PLS/Portrait_PLS_Yaqub_al_Ghusayn.png"
 			expire = "1.1.1"
 			ideology = islamism_subtype
 		}
 
 		create_country_leader = {
 			name = "Hassan Salama"
-			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			picture = "gfx/leaders/PLS/Portrait_PAL_Hasan_Salama.png"
 			expire = "1.1.1"
 			ideology = junta_subtype
 		}
 
 		create_country_leader = {
 			name = "Amin Husseini"
-			picture = "gfx/leaders/PLS/Portrait_PLS_Arab_Supreme_Council.png"
+			picture = "gfx/leaders/PLS/Portrait_PAL_The_Mufti.png"
 			expire = "1.1.1"
 			ideology = islamic_legionism_subtype
 		}

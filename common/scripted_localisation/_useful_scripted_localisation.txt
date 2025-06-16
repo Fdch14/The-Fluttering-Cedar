@@ -201,6 +201,12 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			has_country_leader_ideology = tot_islamism_subtype
+		}
+		localization_key = tot_islamism_subtype
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = arab_legionism_subtype
 		}
 		localization_key = arab_legionism_subtype
