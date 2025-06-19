@@ -2999,5 +2999,125 @@ SpriteTypes = {
 		name = "PALS_Real_commitment"
 		texturefile = "gfx/interface/goals/PALS_Real_commitment.png"
 	}
+	SpriteType = {
+		name = "PALS_The_heart_of_the_Arab_Revolution"
+		texturefile = "gfx/interface/goals/PALS_The_heart_of_the_Arab_Revolution.png"
+	}
+	SpriteType = {
+		name = "PALS_Banning_Jewish_military_organizations"
+		texturefile = "gfx/interface/goals/PALS_Banning_Jewish_military_organizations.png"
+	}
+	SpriteType = {
+		name = "PALS_Incorporate_the_Jihadist_Army"
+		texturefile = "gfx/interface/goals/PALS_Incorporate_the_Jihadist_Army.png"
+	}
+	SpriteType = {
+		name = "PALS_Annexation_of_the_Mapai"
+		texturefile = "gfx/interface/goals/PALS_Annexation_of_the_Mapai.png"
+	}
+	SpriteType = {
+		name = "PALS_Dismantle_the_Muslim_Brotherhood"
+		texturefile = "gfx/interface/goals/PALS_Dismantle_the_Muslim_Brotherhood.png"
+	}
+	SpriteType = {
+		name = "PALS_Proclamation_of_Palestine"
+		texturefile = "gfx/interface/goals/PALS_Proclamation_of_Palestine.png"
+	}
+	SpriteType = {
+		name = "PALS_Wear_white_gloves"
+		texturefile = "gfx/interface/goals/PALS_Wear_white_gloves.png"
+	}
+	SpriteType = {
+		name = "PALS_Paris_took_over_in_full"
+		texturefile = "gfx/interface/goals/PALS_Paris_took_over_in_full.png"
+	}
+	SpriteType = {
+		name = "PALS_No_more_jihad"
+		texturefile = "gfx/interface/goals/PALS_No_more_jihad.png"
+	}
+	SpriteType = {
+		name = "PALS_Total_control"
+		texturefile = "gfx/interface/goals/PALS_Total_control.png"
+	}
+	SpriteType = {
+		name = "PALS_The_mission_of_socialist_enlightenment"
+		texturefile = "gfx/interface/goals/PALS_The_mission_of_socialist_enlightenment.png"
+	}
+	SpriteType = {
+		name = "PALS_Technological_indoctrination"
+		texturefile = "gfx/interface/goals/PALS_Technological_indoctrination.png"
+	}
+	SpriteType = {
+		name = "PALS_French_advanced_experience"
+		texturefile = "gfx/interface/goals/PALS_French_advanced_experience.png"
+	}
+	SpriteType = {
+		name = "PALS_Expand_the_advisory_authority"
+		texturefile = "gfx/interface/goals/PALS_Expand_the_advisory_authority.png"
+	}
+	SpriteType = {
+		name = "PALS_Save_the_Revolution"
+		texturefile = "gfx/interface/goals/PALS_Save_the_Revolution.png"
+	}
+	SpriteType = {
+		name = "PALS_Arabization"
+		texturefile = "gfx/interface/goals/PALS_Arabization.png"
+	}
+	SpriteType = {
+		name = "PALS_Create_community"
+		texturefile = "gfx/interface/goals/PALS_Create_community.png"
+	}
+	SpriteType = {
+		name = "PALS_Workers_are_self_managed"
+		texturefile = "gfx/interface/goals/PALS_Workers_are_self_managed.png"
+	}
+	SpriteType = {
+		name = "PALS_compulsory_education"
+		texturefile = "gfx/interface/goals/PALS_compulsory_education.png"
+	}
+	SpriteType = {
+		name = "PALS_Downplay_religious_influences"
+		texturefile = "gfx/interface/goals/PALS_Downplay_religious_influences.png"
+	}
+	SpriteType = {
+		name = "PALS_Full_centralization"
+		texturefile = "gfx/interface/goals/PALS_Full_centralization.png"
+	}
+	SpriteType = {
+		name = "PALS_Congress_system"
+		texturefile = "gfx/interface/goals/PALS_Congress_system.png"
+	}
+	SpriteType = {
+		name = "PALS_Revolutionary_mobilization"
+		texturefile = "gfx/interface/goals/PALS_Revolutionary_mobilization.png"
+	}
+	SpriteType = {
+		name = "PALS_Remembrance_of_the_martyrs"
+		texturefile = "gfx/interface/goals/PALS_Remembrance_of_the_martyrs.png"
+	}
+	SpriteType = {
+		name = "PALS_Civic_cognition"
+		texturefile = "gfx/interface/goals/PALS_Civic_cognition.png"
+	}
+	SpriteType = {
+		name = "PALS_Integrate_the_education_system"
+		texturefile = "gfx/interface/goals/PALS_Integrate_the_education_system.png"
+	}
+	SpriteType = {
+		name = "PALS_Islamic_socialism"
+		texturefile = "gfx/interface/goals/PALS_Islamic_socialism.png"
+	}
+	SpriteType = {
+		name = "PALS_The_figure_of_Lenin"
+		texturefile = "gfx/interface/goals/PALS_The_figure_of_Lenin.png"
+	}
+	SpriteType = {
+		name = "PALS_Follow_Syndicate_International"
+		texturefile = "gfx/interface/goals/PALS_Follow_Syndicate_International.png"
+	}
+	SpriteType = {
+		name = "PALS_The_guidance_of_socialism"
+		texturefile = "gfx/interface/goals/PALS_The_guidance_of_socialism.png"
+	}
 	
 }

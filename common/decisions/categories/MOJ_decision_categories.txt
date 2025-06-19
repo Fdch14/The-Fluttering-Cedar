@@ -32,20 +32,8 @@ YEM_Yemen_lib_decision = {
 	
 	allowed = {
 		original_tag = YEM
-		OR = {
-			NOT = {
-				has_completed_focus = NYE_The_new_constitution_of_Yemen
-			}
-			NOT = {
-				has_completed_focus = NYE_Reconciliation_with_Free_Yemen
-			}
-			NOT = {
-				has_completed_focus = NYE_The_victory_of_the_Free_Yemeni_Movement
-			}
-		}
 	}
 	visible = {
-		original_tag = YEM
 		OR = {
 			NOT = {
 				has_completed_focus = NYE_The_new_constitution_of_Yemen

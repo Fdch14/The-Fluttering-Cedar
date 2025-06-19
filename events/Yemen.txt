@@ -1610,6 +1610,7 @@ country_event = {
 		982 = { remove_core_of = LYE }
 		981 = { remove_core_of = LYE }
 		add_popularity = { ideology = market_liberal popularity = 0.6 }
+		clr_country_flag = Free_Yemen_in_action_Flag
 		set_cosmetic_tag = YEM_Free
 		remove_ideas = YEM_Free_Yemen_Riots
 		remove_ideas = YEM_Ottoman_Rule
@@ -1690,7 +1691,7 @@ country_event = {
 			ruling_party = syndicalist
 			elections_allowed = no
 		}
-		complete_national_focus = NYE_Yemen_fighting_for_the_freedom
+		complete_national_focus = NYE_Yemen_fighting_for_the_people
 		hidden_effect = {
 			add_ideas = YEM_Mohammed_Ali_Al_Jafri_hog_syn
 		}
@@ -1712,6 +1713,7 @@ country_event = {
 			elections_allowed = no
 		}
 		add_popularity = { ideology = social_democrat popularity = 0.6 }
+		complete_national_focus = NYE_Yemen_fighting_for_the_freedom
 	}
 	option = {
 		name = yemen.55.b
@@ -1720,6 +1722,7 @@ country_event = {
 			elections_allowed = no
 		}
 		add_popularity = { ideology = social_liberal popularity = 0.6 }
+		complete_national_focus = NYE_Yemen_fighting_for_the_freedom
 	}
 	option = {
 		name = yemen.55.c
@@ -1728,6 +1731,7 @@ country_event = {
 			elections_allowed = no
 		}
 		add_popularity = { ideology = market_liberal popularity = 0.6 }
+		complete_national_focus = NYE_Yemen_fighting_for_the_freedom
 	}
 	option = {
 		name = yemen.55.e
@@ -1736,5 +1740,6 @@ country_event = {
 			elections_allowed = no
 		}
 		add_popularity = { ideology = social_conservative popularity = 0.6 }
+		complete_national_focus = NYE_Yemen_fighting_for_the_freedom
 	}
 }
