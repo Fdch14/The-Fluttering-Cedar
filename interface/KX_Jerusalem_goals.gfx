@@ -3119,5 +3119,93 @@ SpriteTypes = {
 		name = "PALS_The_guidance_of_socialism"
 		texturefile = "gfx/interface/goals/PALS_The_guidance_of_socialism.png"
 	}
+	SpriteType = {
+		name = "PALS_Nationalization_of_immigrants_property"
+		texturefile = "gfx/interface/goals/PALS_Nationalization_of_immigrants_property.png"
+	}
+	SpriteType = {
+		name = "PALS_Secularization_in_an_orderly_manner"
+		texturefile = "gfx/interface/goals/PALS_Secularization_in_an_orderly_manner.png"
+	}
+	SpriteType = {
+		name = "PALS_Inventory_operations"
+		texturefile = "gfx/interface/goals/PALS_Inventory_operations.png"
+	}
+	SpriteType = {
+		name = "PALS_Only_Palestinians"
+		texturefile = "gfx/interface/goals/PALS_Only_Palestinians.png"
+	}
+	SpriteType = {
+		name = "PALS_A_holy_place_for_all"
+		texturefile = "gfx/interface/goals/PALS_A_holy_place_for_all.png"
+	}
+	SpriteType = {
+		name = "PALS_Resumption_of_land"
+		texturefile = "gfx/interface/goals/PALS_Resumption_of_land.png"
+	}
+	SpriteType = {
+		name = "PALS_Burning_the_books"
+		texturefile = "gfx/interface/goals/PALS_Burning_the_books.png"
+	}
+	SpriteType = {
+		name = "PALS_Shelling_of_the_Wailing_Wall"
+		texturefile = "gfx/interface/goals/PALS_Shelling_of_the_Wailing_Wall.png"
+	}
+	SpriteType = {
+		name = "PALS_Operation_Yellow"
+		texturefile = "gfx/interface/goals/PALS_Operation_Yellow.png"
+	}
+	SpriteType = {
+		name = "PALS_Operation_Gray"
+		texturefile = "gfx/interface/goals/PALS_Operation_Gray.png"
+	}
+	SpriteType = {
+		name = "PALS_Operation_Red"
+		texturefile = "gfx/interface/goals/PALS_Operation_Red.png"
+	}
+	SpriteType = {
+		name = "PALS_Total_revenge_on_Zionism"
+		texturefile = "gfx/interface/goals/PALS_Total_revenge_on_Zionism.png"
+	}
+	SpriteType = {
+		name = "PALS_Break_away_from_Judass_hand"
+		texturefile = "gfx/interface/goals/PALS_Break_away_from_Judass_hand.png"
+	}
+	SpriteType = {
+		name = "PALS_End_the_delivery_of_greed"
+		texturefile = "gfx/interface/goals/PALS_End_the_delivery_of_greed.png"
+	}
+	SpriteType = {
+		name = "PALS_Zionism_is_capitalism"
+		texturefile = "gfx/interface/goals/PALS_Zionism_is_capitalism.png"
+	}
+	SpriteType = {
+		name = "PALS_Recognition_of_title_deeds"
+		texturefile = "gfx/interface/goals/PALS_Recognition_of_title_deeds.png"
+	}
+	SpriteType = {
+		name = "PALS_Restoration_of_Judaism"
+		texturefile = "gfx/interface/goals/PALS_Restoration_of_Judaism.png"
+	}
+	SpriteType = {
+		name = "PALS_Hunt_for_the_Lehi"
+		texturefile = "gfx/interface/goals/PALS_Hunt_for_the_Lehi.png"
+	}
+	SpriteType = {
+		name = "PALS_Work_with_the_Haredi_people"
+		texturefile = "gfx/interface/goals/PALS_Work_with_the_Haredi_people.png"
+	}
+	SpriteType = {
+		name = "PALS_End_the_cycle_of_hatred"
+		texturefile = "gfx/interface/goals/PALS_End_the_cycle_of_hatred.png"
+	}
+	SpriteType = {
+		name = "PALS_End_the_Aria_Movement"
+		texturefile = "gfx/interface/goals/PALS_End_the_Aria_Movement.png"
+	}
+	SpriteType = {
+		name = "PALS_The_Jewish_Question"
+		texturefile = "gfx/interface/goals/PALS_The_Jewish_Question.png"
+	}
 	
 }
