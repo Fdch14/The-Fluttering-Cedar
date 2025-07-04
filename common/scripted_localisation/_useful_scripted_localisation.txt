@@ -423,9 +423,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = nazbol_subtype
+			has_country_leader_ideology = molotovism_subtype
 		}
-		localization_key = nazbol_subtype
+		localization_key = molotovism_subtype
 	}
 	text = {
 		trigger = {
@@ -831,6 +831,18 @@ defined_text = {
 		}
 		localization_key = left_boulangism_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = zinovievism_subtype 
+		}
+		localization_key = zinovievism_subtype 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = council_communism_subtype 
+		}
+		localization_key = council_communism_subtype 
+	}
         
 	text = {
 		trigger = {
@@ -1137,6 +1149,30 @@ defined_text = {
 			has_country_leader_ideology = syn_sandinismo_subtype
 		}
 		localization_key =  syn_sandinismo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_utopian_technocracy_subtype
+		}
+		localization_key =  syn_utopian_technocracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_broad_communism_subtype
+		}
+		localization_key =  syn_broad_communism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_popcom_subtype
+		}
+		localization_key =  syn_popcom_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_council_communism_subtype 
+		}
+		localization_key =  syn_council_communism_subtype 
 	}
 
 	text = {
@@ -1631,6 +1667,42 @@ defined_text = {
 		}
 		localization_key = radsoc_syndicalist_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_jeffersonianism_subtype
+		}
+		localization_key = radsoc_jeffersonianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_kritarchy_subtype
+		}
+		localization_key = radsoc_kritarchy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = laborismo_esperantista_subtype
+		}
+		localization_key = laborismo_esperantista_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_council_communism_subtype 
+		}
+		localization_key = radsoc_council_communism_subtype 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = matswanism_subtype 
+		}
+		localization_key = matswanism_subtype 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = francoism_subtype 
+		}
+		localization_key = francoism_subtype 
+	}
 
 	text = {
 		trigger = {
@@ -2088,6 +2160,30 @@ defined_text = {
 		}
 		localization_key = chinese_federalism_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_normal_dixiecrat_subtype
+		}
+		localization_key = socdem_normal_dixiecrat_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_iberian_federalism_subtype
+		}
+		localization_key = socdem_iberian_federalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_paneuropeanism_subtype
+		}
+		localization_key = socdem_paneuropeanism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = batllismo_subtype
+		}
+		localization_key = batllismo_subtype
+	}
 
 	text = {
 		trigger = {
@@ -2449,6 +2545,48 @@ defined_text = {
 		}
 		localization_key = lerrouxismo_subtype   
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_sicilianism_subtype 
+		}
+		localization_key = soclib_sicilianism_subtype   
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_liberal_feminism_subtype 
+		}
+		localization_key = soclib_liberal_feminism_subtype   
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_liberal_conservative_subtype 
+		}
+		localization_key = soclib_liberal_conservative_subtype   
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_normal_dixiecrat_subtype 
+		}
+		localization_key = soclib_normal_dixiecrat_subtype   
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socialist_federalism_subtype 
+		}
+		localization_key = socialist_federalism_subtype   
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_georgism_subtype 
+		}
+		localization_key = soclib_georgism_subtype   
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = community_movement_subtype 
+		}
+		localization_key = community_movement_subtype   
+	}
  
 	text = {
 		trigger = {
@@ -2755,6 +2893,24 @@ defined_text = {
 			has_country_leader_ideology = marlib_lerrouxismo_subtype
 		}
 		localization_key = marlib_lerrouxismo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_internationalism_subtype
+		}
+		localization_key = marlib_internationalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_whiggism_subtype
+		}
+		localization_key = marlib_whiggism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = liberal_feminism_subtype 
+		}
+		localization_key = liberal_feminism_subtype   
 	}
 
 	text = {
@@ -3110,6 +3266,30 @@ defined_text = {
 			has_country_leader_ideology = soccon_maurism_subtype
 		}
 		localization_key = soccon_maurism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_populist_dixiecrat_subtype
+		}
+		localization_key = soccon_populist_dixiecrat_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_popular_patriotism_subtype
+		}
+		localization_key = soccon_popular_patriotism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = herrerismo_subtype
+		}
+		localization_key = herrerismo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = conservative_feminism_subtype
+		}
+		localization_key = conservative_feminism_subtype
 	}
 
 	text = {
@@ -3525,6 +3705,30 @@ defined_text = {
 			has_country_leader_ideology = authdem_solidarism_subtype
 		}
 		localization_key = authdem_solidarism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_iberian_federalism_subtype
+		}
+		localization_key = authdem_iberian_federalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_red_tinted_autocracy_subtype
+		}
+		localization_key = authdem_red_tinted_autocracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = peronism_subtype
+		}
+		localization_key = peronism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_conservative_feminism_subtype
+		}
+		localization_key = authdem_conservative_feminism_subtype
 	}
 
 	text = {
@@ -4012,6 +4216,48 @@ defined_text = {
 			has_country_leader_ideology = pataut_toryism_subtype
 		}
 		localization_key = pataut_toryism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_agrarianism_subtype 
+		}
+		localization_key = pataut_agrarianism_subtype 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_iberian_federalism_subtype
+		}
+		localization_key = pataut_iberian_federalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_solidarism_subtype
+		}
+		localization_key = pataut_solidarism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = terrismo_subtype
+		}
+		localization_key = terrismo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = nuevo_ideal_nacional_subtype
+		}
+		localization_key = nuevo_ideal_nacional_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_conservative_feminism_subtype
+		}
+		localization_key = pataut_conservative_feminism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = duplessism_subtype
+		}
+		localization_key = duplessism_subtype
 	}
 
 	text = {
@@ -4626,6 +4872,18 @@ defined_text = {
 			has_country_leader_ideology = liberating_nationalism_subtype
 		}
 		localization_key = liberating_nationalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_conservative_feminism_subtype
+		}
+		localization_key = natpop_conservative_feminism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = nacionalismo_subtype 
+		}
+		localization_key = nacionalismo_subtype 
 	}
 	
 	### YOU GO IN THE CORNER OF SHAME ###
