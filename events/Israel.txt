@@ -21,7 +21,7 @@ country_event = {
 				992 = { add_core_of = ISR}
 				454 = { add_core_of = ISR}
 				set_country_flag = ISR_has_war_with_MOJ
-				inherit_technology = ENG
+				inherit_technology = PAL
 				division_template = {
 					name = "Israeli Armed Forces"
 						division_names_group = ISR_NRARMY_01
@@ -207,6 +207,20 @@ country_event = {
 				992 = { add_core_of = PLS}
 				454 = { add_core_of = PLS}
 				set_country_flag = PLS_has_war_with_ISR
+				hidden_effect = {
+					country_event = {
+						id = Palestine.40
+						days = 1
+					}
+					country_event = {
+						id = Palestine.1
+						days = 3
+					}
+					country_event = {
+						id = Palestine.2
+						days = 2
+					}
+				}
 				inherit_technology = ISR
 				division_template = {
 					name = "Palestine Liberation Army"
@@ -300,7 +314,7 @@ country_event = {
 		add_manpower = -1500
 	}
 	option = {
-		name = ISRC.6.t
+		name = ISRC.6.a
 		hidden_effect = {
 			country_event = {
 				id = ISRC.1

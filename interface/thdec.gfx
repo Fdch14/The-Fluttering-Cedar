@@ -144,5 +144,21 @@ spriteTypes = {
 		name = "GFX_The_Palestinian_crisis"
 		texturefile = "gfx/interface/decision/The_Palestinian_crisis.png"
 	}
+	SpriteType = {
+		name = "GFX_decision_Palestinian_Civil_War"
+		texturefile = "gfx/interface/decision/Palestinian_Civil_War.png"
+	}
+	SpriteType = {
+		name = "GFX_bilibilishenren"
+		texturefile = "gfx/interface/decision/bilibilishenren.png"
+	}
+	SpriteType = {
+		name = "GFX_Croatian_Muslims"
+		texturefile = "gfx/interface/decision/Croatian_Muslims.png"
+	}
+	SpriteType = {
+		name = "GFX_Aliyah_Movement"
+		texturefile = "gfx/interface/decision/Aliyah_Movement.png"
+	}
 
 }

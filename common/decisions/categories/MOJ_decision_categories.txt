@@ -64,3 +64,15 @@ ISR_coup_crisis_decision = {
 	}
 	priority = 500
 }
+PLS_Palestinian_Civil_War_decision = {
+	icon = GFX_decision_cat_caf_rebelion
+	picture = GFX_decision_Palestinian_Civil_War
+	allowed = {
+		tag = PLS
+	}
+	visible = {
+		tag = PLS
+	}
+	priority = 500
+	visible_when_empty = yes
+}

@@ -3207,5 +3207,113 @@ SpriteTypes = {
 		name = "PALS_The_Jewish_Question"
 		texturefile = "gfx/interface/goals/PALS_The_Jewish_Question.png"
 	}
+	SpriteType = {
+		name = "PALS_But_dont_forget_who_we_are"
+		texturefile = "gfx/interface/goals/PALS_But_dont_forget_who_we_are.png"
+	}
+	SpriteType = {
+		name = "PALS_Integrate_the_Jihadist_Army"
+		texturefile = "gfx/interface/goals/PALS_Integrate_the_Jihadist_Army.png"
+	}
+	SpriteType = {
+		name = "PALS_Unite_the_national_communists"
+		texturefile = "gfx/interface/goals/PALS_Unite_the_national_communists.png"
+	}
+	SpriteType = {
+		name = "PALS_Dialogue_with_Egypt"
+		texturefile = "gfx/interface/goals/PALS_Dialogue_with_Egypt.png"
+	}
+	SpriteType = {
+		name = "PALS_Support_the_Baathists"
+		texturefile = "gfx/interface/goals/PALS_Support_the_Baathists.png"
+	}
+	SpriteType = {
+		name = "PALS_Reorganization_of_the_NLF"
+		texturefile = "gfx/interface/goals/PALS_Reorganization_of_the_NLF.png"
+	}
+	SpriteType = {
+		name = "PALS_Jewish_capital_conspiracy_theories"
+		texturefile = "gfx/interface/goals/PALS_Jewish_capital_conspiracy_theories.png"
+	}
+	SpriteType = {
+		name = "PALS_Secret_Police_Department"
+		texturefile = "gfx/interface/goals/PALS_Secret_Police_Department.png"
+	}
+	SpriteType = {
+		name = "PALS_Gunfire_solo"
+		texturefile = "gfx/interface/goals/PALS_Gunfire_solo.png"
+	}
+	SpriteType = {
+		name = "PALS_Commissar_of_the_army"
+		texturefile = "gfx/interface/goals/PALS_Commissar_of_the_army.png"
+	}
+	SpriteType = {
+		name = "PALS_Hello_Arabs"
+		texturefile = "gfx/interface/goals/PALS_Hello_Arabs.png"
+	}
+	SpriteType = {
+		name = "PALS_Cultural_Revolution"
+		texturefile = "gfx/interface/goals/PALS_Cultural_Revolution.png"
+	}
+	SpriteType = {
+		name = "PALS_The_Youth_League_was_formed"
+		texturefile = "gfx/interface/goals/PALS_The_Youth_League_was_formed.png"
+	}
+	SpriteType = {
+		name = "PALS_Subvert_the_system_of_power"
+		texturefile = "gfx/interface/goals/PALS_Subvert_the_system_of_power.png"
+	}
+	SpriteType = {
+		name = "PALS_Continue_to_march"
+		texturefile = "gfx/interface/goals/PALS_Continue_to_march.png"
+	}
+	SpriteType = {
+		name = "PALS_Revolution_at_sea"
+		texturefile = "gfx/interface/goals/PALS_Revolution_at_sea.png"
+	}
+	SpriteType = {
+		name = "PALS_Maintain_the_military_and_political_system"
+		texturefile = "gfx/interface/goals/PALS_Maintain_the_military_and_political_system.png"
+	}
+	SpriteType = {
+		name = "PALS_The_guidelines_of_the_totalist_charter"
+		texturefile = "gfx/interface/goals/PALS_The_guidelines_of_the_totalist_charter.png"
+	}
+	SpriteType = {
+		name = "PALS_The_absolute_leadership_of_young_officers"
+		texturefile = "gfx/interface/goals/PALS_The_absolute_leadership_of_young_officers.png"
+	}
+	SpriteType = {
+		name = "PALS_Nationalist_marquee"
+		texturefile = "gfx/interface/goals/PALS_Nationalist_marquee.png"
+	}
+	SpriteType = {
+		name = "PALS_Establishment_of_the_Free_Arab_Legion"
+		texturefile = "gfx/interface/goals/PALS_Establishment_of_the_Free_Arab_Legion.png"
+	}
+	SpriteType = {
+		name = "PALS_Solidarity_with_the_struggle"
+		texturefile = "gfx/interface/goals/PALS_Solidarity_with_the_struggle.png"
+	}
+	SpriteType = {
+		name = "PALS_Absorption_of_Arab_parties"
+		texturefile = "gfx/interface/goals/PALS_Absorption_of_Arab_parties.png"
+	}
+	SpriteType = {
+		name = "PALS_Cut_the_influence_of_the_Great_Mufti"
+		texturefile = "gfx/interface/goals/PALS_Cut_the_influence_of_the_Great_Mufti.png"
+	}
+	SpriteType = {
+		name = "PALS_Reinterpreting_the_Quran"
+		texturefile = "gfx/interface/goals/PALS_Reinterpreting_the_Quran.png"
+	}
+	SpriteType = {
+		name = "PALS_Cultural_openness_policy"
+		texturefile = "gfx/interface/goals/PALS_Cultural_openness_policy.png"
+	}
+	SpriteType = {
+		name = "PALS_Coup_by_Officers"
+		texturefile = "gfx/interface/goals/PALS_Coup_by_Officers.png"
+	}
 	
 }

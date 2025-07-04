@@ -2421,6 +2421,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Coup_by_Officers
+		icon=PALS_Coup_by_Officers
 		x=74
 		y=7
 		prerequisite={focus=PLS_Unveil_it}
@@ -2436,6 +2437,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Cultural_openness_policy
+		icon=PALS_Cultural_openness_policy
 		x=69
 		y=8
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2452,6 +2454,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Reinterpreting_the_Quran
+		icon=PALS_Reinterpreting_the_Quran
 		x=71
 		y=8
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2468,6 +2471,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Cut_the_influence_of_the_Great_Mufti
+		icon=PALS_Cut_the_influence_of_the_Great_Mufti
 		x=73
 		y=8
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2484,6 +2488,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Absorption_of_Arab_parties
+		icon=PALS_Absorption_of_Arab_parties
 		x=75
 		y=8
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2500,6 +2505,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Solidarity_with_the_struggle
+		icon=PALS_Solidarity_with_the_struggle
 		x=77
 		y=8
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2516,6 +2522,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Establishment_of_the_Free_Arab_Legion
+		icon=PALS_Establishment_of_the_Free_Arab_Legion
 		x=79
 		y=8
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2532,6 +2539,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Nationalist_marquee
+		icon=PALS_Nationalist_marquee
 		x=71
 		y=9
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2548,6 +2556,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_The_absolute_leadership_of_young_officers
+		icon=PALS_The_absolute_leadership_of_young_officers
 		x=73
 		y=9
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2564,6 +2573,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_The_guidelines_of_the_totalist_charter
+		icon=PALS_The_guidelines_of_the_totalist_charter
 		x=75
 		y=9
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2580,6 +2590,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Maintain_the_military_and_political_system
+		icon=PALS_Maintain_the_military_and_political_system
 		x=77
 		y=9
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2596,6 +2607,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Revolution_at_sea
+		icon=PALS_Revolution_at_sea
 		x=71
 		y=10
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2612,6 +2624,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Subvert_the_system_of_power
+		icon=PALS_Subvert_the_system_of_power
 		x=69
 		y=11
 		prerequisite={focus=PLS_Revolution_at_sea}
@@ -2627,6 +2640,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Cultural_Revolution
+		icon=PALS_Cultural_Revolution
 		x=69
 		y=12
 		prerequisite={focus=PLS_Subvert_the_system_of_power}
@@ -2642,6 +2656,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_The_Youth_League_was_formed
+		icon=PALS_The_Youth_League_was_formed
 		x=71
 		y=11
 		prerequisite={focus=PLS_Revolution_at_sea}
@@ -2657,6 +2672,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Hello_Arabs
+		icon=PALS_Hello_Arabs
 		x=71
 		y=12
 		prerequisite={focus=PLS_The_Youth_League_was_formed}
@@ -2672,6 +2688,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Continue_to_march
+		icon=PALS_Continue_to_march
 		x=77
 		y=10
 		prerequisite={focus=PLS_Coup_by_Officers}
@@ -2688,6 +2705,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Commissar_of_the_army
+		icon=PALS_Commissar_of_the_army
 		x=77
 		y=11
 		prerequisite={focus=PLS_Continue_to_march}
@@ -2703,6 +2721,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Gunfire_solo
+		icon=PALS_Gunfire_solo
 		x=77
 		y=12
 		prerequisite={focus=PLS_Commissar_of_the_army}
@@ -2718,6 +2737,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Secret_Police_Department
+		icon=PALS_Secret_Police_Department
 		x=79
 		y=11
 		prerequisite={focus=PLS_Continue_to_march}
@@ -2733,6 +2753,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Jewish_capital_conspiracy_theories
+		icon=PALS_Jewish_capital_conspiracy_theories
 		x=79
 		y=12
 		prerequisite={focus=PLS_Secret_Police_Department}
@@ -2748,6 +2769,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Reorganization_of_the_NLF
+		icon=PALS_Reorganization_of_the_NLF
 		x=74
 		y=11
 		prerequisite={focus=PLS_Revolution_at_sea focus=PLS_Continue_to_march }
@@ -2763,6 +2785,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Support_the_Baathists
+		icon=PALS_Support_the_Baathists
 		x=73
 		y=12
 		prerequisite={focus=PLS_Reorganization_of_the_NLF}
@@ -2777,7 +2800,8 @@ focus_tree={
 		}
 	}
 	focus={
-		id=PLS_Connection_with_Nasser
+		id=PLS_Dialogue_with_Egypt
+		icon=PALS_Dialogue_with_Egypt
 		x=73
 		y=13
 		prerequisite={focus=PLS_Support_the_Baathists}
@@ -2793,6 +2817,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Unite_the_national_communists
+		icon=PALS_Unite_the_national_communists
 		x=75
 		y=12
 		prerequisite={focus=PLS_Reorganization_of_the_NLF}
@@ -2808,6 +2833,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Integrate_the_Jihadist_Army
+		icon=PALS_Integrate_the_Jihadist_Army
 		x=75
 		y=13
 		prerequisite={focus=PLS_Unite_the_national_communists}
@@ -2823,9 +2849,10 @@ focus_tree={
 	}
 	focus={
 		id=PLS_But_dont_forget_who_we_are
+		icon=PALS_But_dont_forget_who_we_are
 		x=74
 		y=14
-		prerequisite={focus=PLS_Connection_with_Nasser}
+		prerequisite={focus=PLS_Dialogue_with_Egypt}
 		prerequisite={focus=PLS_Integrate_the_Jihadist_Army}
 		cost=10
 		ai_will_do={

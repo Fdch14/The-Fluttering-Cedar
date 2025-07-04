@@ -297,6 +297,12 @@ country_event = {
 				national_populist = 20
 			}
 		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.8
+				days = 2
+			}
+		}
 		create_country_leader = {
 			name = "Younis Saleh Bahri"
 			picture = "gfx/leaders/PLS/Portrait_PLS_Younis_Saleh_Bahri.png"
@@ -357,7 +363,7 @@ country_event = {
 			name = "Hassan Salama"
 			picture = "gfx/leaders/PLS/Portrait_PAL_Hasan_Salama.png"
 			expire = "1.1.1"
-			ideology = junta_subtype
+			ideology = pataut_savinkovism_subtype
 		}
 
 		create_country_leader = {
@@ -365,6 +371,824 @@ country_event = {
 			picture = "gfx/leaders/PLS/Portrait_PAL_The_Mufti.png"
 			expire = "1.1.1"
 			ideology = islamic_legionism_subtype
+		}
+	}
+}
+country_event = {
+	id = Palestine.5
+	title = Palestine.5.t
+	desc = Palestine.5.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.5.a
+	}
+}
+country_event = {
+	id = Palestine.6
+	title = Palestine.6.t
+	desc = Palestine.6.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.6.a
+	}
+}
+country_event = {
+	id = Palestine.7
+	title = Palestine.7.t
+	desc = Palestine.7.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.7.a
+	}
+}
+country_event = {
+	id = Palestine.8
+	title = Palestine.8.t
+	desc = Palestine.8.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.8.a
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.9
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.8.b
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.9
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.9
+	title = Palestine.9.t
+	desc = Palestine.9.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.9.a
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.10
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.9.b
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.10
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.10
+	title = Palestine.10.t
+	desc = Palestine.10.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.10.a
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.11
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.10.b
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.11
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.11
+	title = Palestine.11.t
+	desc = Palestine.11.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.11.a
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.12
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.11.b
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+	}
+	option = {
+		name = Palestine.11.c
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.12
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.12
+	title = Palestine.12.t
+	desc = Palestine.12.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.12.a
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.13
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.12.b
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.13
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.13
+	title = Palestine.13.t
+	desc = Palestine.13.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.13.a
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.14
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.13.b
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.14
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.14
+	title = Palestine.14.t
+	desc = Palestine.14.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.14.a
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.15
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.14.b
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.15
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.14.c
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.15
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.15
+	title = Palestine.15.t
+	desc = Palestine.15.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.15.a
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.16
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.15.b
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.16
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.16
+	title = Palestine.16.t
+	desc = Palestine.16.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.16.a
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.17
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.16.b
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.17
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.17
+	title = Palestine.17.t
+	desc = Palestine.17.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.17.a
+		custom_effect_tooltip = PLS_Revolutionary_Armed_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Revolutionary_Armed_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.18
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.17.b
+		custom_effect_tooltip = PLS_All_Palestinian_Government_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_All_Palestinian_Government_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.18
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = Palestine.17.c
+		custom_effect_tooltip = PLS_Republican_Defence_Forces_unrest_get_power
+		add_to_variable = {
+			var = PLS.PLS_Republican_Defence_Forces_unrest
+			value = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = Palestine.18
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = Palestine.18
+	title = Palestine.18.t
+	desc = Palestine.18.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.18.a
+	}
+}
+country_event = {
+	id = Palestine.19
+	title = Palestine.19.t
+	desc = Palestine.19.d
+	picture = GFX_bilibilishenren
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.19.a
+	}
+}
+country_event = {
+	id = Palestine.20
+	title = Palestine.20.t
+	desc = Palestine.20.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.20.a
+	}
+}
+country_event = {
+	id = Palestine.21
+	title = Palestine.21.t
+	desc = Palestine.21.d
+	picture = GFX_Croatian_Muslims
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.21.a
+	}
+}
+country_event = {
+	id = Palestine.22
+	title = Palestine.22.t
+	desc = Palestine.22.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.22.a
+	}
+}
+country_event = {
+	id = Palestine.23
+	title = Palestine.23.t
+	desc = Palestine.23.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.23.a
+	}
+}
+country_event = {
+	id = Palestine.24
+	title = Palestine.24.t
+	desc = Palestine.24.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.24.a
+		trigger = {
+			NOT = {
+				has_government = totalist
+			}
+		}
+	}
+	option = {
+		name = Palestine.24.b
+		trigger = {
+			has_government = totalist
+		}
+	}
+}
+country_event = {
+	id = Palestine.25
+	title = Palestine.25.t
+	desc = Palestine.25.d
+	picture = GFX_Aliyah_Movement
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.25.a
+	}
+}
+country_event = {
+	id = Palestine.26
+	title = Palestine.26.t
+	desc = Palestine.26.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.26.a
+	}
+}
+country_event = {
+	id = Palestine.27
+	title = Palestine.27.t
+	desc = Palestine.27.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.27.a
+	}
+}
+country_event = {
+	id = Palestine.28
+	title = Palestine.28.t
+	desc = Palestine.28.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.28.a
+	}
+}
+country_event = {
+	id = Palestine.29
+	title = Palestine.29.t
+	desc = Palestine.29.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.29.a
+	}
+}
+country_event = {
+	id = Palestine.30
+	title = Palestine.30.t
+	desc = Palestine.30.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.30.a
+	}
+}
+country_event = {
+	id = Palestine.31
+	title = Palestine.31.t
+	desc = Palestine.31.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.31.a
+	}
+}
+country_event = {
+	id = Palestine.32
+	title = Palestine.32.t
+	desc = Palestine.32.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.32.a
+	}
+	option = {
+		name = Palestine.32.b
+	}
+}
+country_event = {
+	id = Palestine.33
+	title = Palestine.33.t
+	desc = Palestine.33.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.33.a
+	}
+}
+country_event = {
+	id = Palestine.34
+	title = Palestine.34.t
+	desc = Palestine.34.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.34.a
+	}
+}
+country_event = {
+	id = Palestine.35
+	title = Palestine.35.t
+	desc = Palestine.35.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.35.a
+	}
+}
+country_event = {
+	id = Palestine.36
+	title = Palestine.36.t
+	desc = Palestine.36.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.36.a
+	}
+	option = {
+		name = Palestine.36.b
+	}
+}
+country_event = {
+	id = Palestine.37
+	title = Palestine.37.t
+	desc = Palestine.37.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.37.a
+	}
+}
+country_event = {
+	id = Palestine.38
+	title = Palestine.38.t
+	desc = Palestine.38.d
+	picture = GFX_Otto_Skorzney
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.38.a
+	}
+}
+country_event = {
+	id = Palestine.39
+	title = Palestine.39.t
+	desc = Palestine.39.d
+	picture = GFX_Otto_Skorzney
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.39.a
+	}
+}
+country_event = {
+	id = Palestine.40
+	title = Palestine.40.t
+	desc = Palestine.40.d
+	picture = GFX_The_Palestinian_crisis
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = Palestine.40.a
+		add_manpower = 50000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 15000
+			producer = PLS
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 2000
+			producer = PLS
 		}
 	}
 }
