@@ -3315,5 +3315,129 @@ SpriteTypes = {
 		name = "PALS_Coup_by_Officers"
 		texturefile = "gfx/interface/goals/PALS_Coup_by_Officers.png"
 	}
+	SpriteType = {
+		name = "PALS_Utilize_location_advantages"
+		texturefile = "gfx/interface/goals/PALS_Utilize_location_advantages.png"
+	}
+	SpriteType = {
+		name = "PALS_Encourage_investment"
+		texturefile = "gfx/interface/goals/PALS_Encourage_investment.png"
+	}
+	SpriteType = {
+		name = "PALS_Envoys_sent_to_various_countries"
+		texturefile = "gfx/interface/goals/PALS_Envoys_sent_to_various_countries.png"
+	}
+	SpriteType = {
+		name = "PALS_Work_with_landlords"
+		texturefile = "gfx/interface/goals/PALS_Work_with_landlords.png"
+	}
+	SpriteType = {
+		name = "PALS_Maintain_market_order"
+		texturefile = "gfx/interface/goals/PALS_Maintain_market_order.png"
+	}
+	SpriteType = {
+		name = "PALS_Imitate_the_Western_world"
+		texturefile = "gfx/interface/goals/PALS_Imitate_the_Western_world.png"
+	}
+	SpriteType = {
+		name = "PALS_Standardize_factory_discipline"
+		texturefile = "gfx/interface/goals/PALS_Standardize_factory_discipline.png"
+	}
+	SpriteType = {
+		name = "PALS_The_social_obligation_of_the_mosque"
+		texturefile = "gfx/interface/goals/PALS_The_social_obligation_of_the_mosque.png"
+	}
+	SpriteType = {
+		name = "PALS_Zero_interest_rate"
+		texturefile = "gfx/interface/goals/PALS_Zero_interest_rate.png"
+	}
+	SpriteType = {
+		name = "PALS_Zakat_promotes_equality"
+		texturefile = "gfx/interface/goals/PALS_Zakat_promotes_equality.png"
+	}
+	SpriteType = {
+		name = "PALS_Crack_down_on_hoarding"
+		texturefile = "gfx/interface/goals/PALS_Crack_down_on_hoarding.png"
+	}
+	SpriteType = {
+		name = "PALS_Economy_under_Sharia"
+		texturefile = "gfx/interface/goals/PALS_Economy_under_Sharia.png"
+	}
+	SpriteType = {
+		name = "PALS_Reducing_the_urban_rural_gap"
+		texturefile = "gfx/interface/goals/PALS_Reducing_the_urban_rural_gap.png"
+	}
+	SpriteType = {
+		name = "PALS_Promoshin_Ben_Kuperatifs"
+		texturefile = "gfx/interface/goals/PALS_Promoshin_Ben_Kuperatifs.png"
+	}
+	SpriteType = {
+		name = "PALS_Socialization_of_the_land"
+		texturefile = "gfx/interface/goals/PALS_Socialization_of_the_land.png"
+	}
+	SpriteType = {
+		name = "PALS_Nationalization_of_land"
+		texturefile = "gfx/interface/goals/PALS_Nationalization_of_land.png"
+	}
+	SpriteType = {
+		name = "PALS_The_syndicalist_model"
+		texturefile = "gfx/interface/goals/PALS_The_syndicalist_model.png"
+	}
+	SpriteType = {
+		name = "PALS_The_communist_model"
+		texturefile = "gfx/interface/goals/PALS_The_communist_model.png"
+	}
+	SpriteType = {
+		name = "PALS_Socialist_transformation"
+		texturefile = "gfx/interface/goals/PALS_Socialist_transformation.png"
+	}
+	SpriteType = {
+		name = "PALS_Industrial_leap_forward"
+		texturefile = "gfx/interface/goals/PALS_Industrial_leap_forward.png"
+	}
+	SpriteType = {
+		name = "PALS_Pooling_national_resources"
+		texturefile = "gfx/interface/goals/PALS_Pooling_national_resources.png"
+	}
+	SpriteType = {
+		name = "PALS_Develop_a_five_year_plan"
+		texturefile = "gfx/interface/goals/PALS_Develop_a_five_year_plan.png"
+	}
+	SpriteType = {
+		name = "PALS_Militarization_of_the_economy"
+		texturefile = "gfx/interface/goals/PALS_Militarization_of_the_economy.png"
+	}
+	SpriteType = {
+		name = "PALS_Introduction_of_the_corporation_system"
+		texturefile = "gfx/interface/goals/PALS_Introduction_of_the_corporation_system.png"
+	}
+	SpriteType = {
+		name = "PALS_Will_wins"
+		texturefile = "gfx/interface/goals/PALS_Will_wins.png"
+	}
+	SpriteType = {
+		name = "PALS_Economic_development_strategy"
+		texturefile = "gfx/interface/goals/PALS_Economic_development_strategy.png"
+	}
+	SpriteType = {
+		name = "PALS_Clean_up_the_mess"
+		texturefile = "gfx/interface/goals/PALS_Clean_up_the_mess.png"
+	}
+	SpriteType = {
+		name = "PALS_Reopening_of_the_factory"
+		texturefile = "gfx/interface/goals/PALS_Reopening_of_the_factory.png"
+	}
+	SpriteType = {
+		name = "PALS_Restore_infrastructure"
+		texturefile = "gfx/interface/goals/PALS_Restore_infrastructure.png"
+	}
+	SpriteType = {
+		name = "PALS_Leveling_the_land"
+		texturefile = "gfx/interface/goals/PALS_Leveling_the_land.png"
+	}
+	SpriteType = {
+		name = "PALS_economic_recovery"
+		texturefile = "gfx/interface/goals/PALS_economic_recovery.png"
+	}
 	
 }

@@ -2866,6 +2866,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_economic_recovery
+		icon=PALS_economic_recovery
 		x=90
 		y=7
 		prerequisite={focus=PLS_Unveil_it}
@@ -2881,6 +2882,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Leveling_the_land
+		icon=PALS_Leveling_the_land
 		x=88
 		y=8
 		prerequisite={focus=PLS_economic_recovery}
@@ -2896,6 +2898,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Restore_infrastructure
+		icon=PALS_Restore_infrastructure
 		x=90
 		y=8
 		prerequisite={focus=PLS_economic_recovery}
@@ -2911,6 +2914,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Reopening_of_the_factory
+		icon=PALS_Reopening_of_the_factory
 		x=92
 		y=8
 		prerequisite={focus=PLS_economic_recovery}
@@ -2926,6 +2930,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Clean_up_the_mess
+		icon=PALS_Clean_up_the_mess
 		x=90
 		y=9
 		prerequisite={focus=PLS_Leveling_the_land}
@@ -2943,6 +2948,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Economic_development_strategy
+		icon=PALS_Economic_development_strategy
 		x=90
 		y=10
 		prerequisite={focus=PLS_Clean_up_the_mess}
@@ -2958,6 +2964,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Will_wins
+		icon=PALS_Will_wins
 		x=83
 		y=11
 		prerequisite={focus=PLS_Economic_development_strategy}
@@ -2973,6 +2980,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Introduction_of_the_corporation_system
+		icon=PALS_Introduction_of_the_corporation_system
 		x=82
 		y=12
 		prerequisite={focus=PLS_Will_wins}
@@ -2988,6 +2996,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Militarization_of_the_economy
+		icon=PALS_Militarization_of_the_economy
 		x=82
 		y=13
 		prerequisite={focus=PLS_Introduction_of_the_corporation_system}
@@ -3003,6 +3012,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Develop_a_five_year_plan
+		icon=PALS_Develop_a_five_year_plan
 		x=84
 		y=12
 		prerequisite={focus=PLS_Will_wins focus=PLS_Socialist_transformation }
@@ -3018,6 +3028,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Pooling_national_resources
+		icon=PALS_Pooling_national_resources
 		x=84
 		y=13
 		prerequisite={focus=PLS_Develop_a_five_year_plan}
@@ -3033,6 +3044,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Industrial_leap_forward
+		icon=PALS_Industrial_leap_forward
 		x=83
 		y=14
 		prerequisite={focus=PLS_Militarization_of_the_economy}
@@ -3049,6 +3061,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Socialist_transformation
+		icon=PALS_Socialist_transformation
 		x=88
 		y=11
 		prerequisite={focus=PLS_Economic_development_strategy}
@@ -3064,6 +3077,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_The_communist_model
+		icon=PALS_The_communist_model
 		x=87
 		y=12
 		prerequisite={focus=PLS_Socialist_transformation}
@@ -3080,6 +3094,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_The_syndicalist_model
+		icon=PALS_The_syndicalist_model
 		x=89
 		y=12
 		prerequisite={focus=PLS_Socialist_transformation}
@@ -3096,6 +3111,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Nationalization_of_land
+		icon=PALS_Nationalization_of_land
 		x=86
 		y=13
 		prerequisite={focus=PLS_The_communist_model}
@@ -3112,6 +3128,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Socialization_of_the_land
+		icon=PALS_Socialization_of_the_land
 		x=88
 		y=13
 		prerequisite={focus=PLS_The_communist_model focus=PLS_The_syndicalist_model }
@@ -3128,6 +3145,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Promoshin_Ben_Kuperatifs
+		icon=PALS_Promoshin_Ben_Kuperatifs
 		x=90
 		y=13
 		prerequisite={focus=PLS_The_syndicalist_model}
@@ -3144,6 +3162,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Reducing_the_urban_rural_gap
+		icon=PALS_Reducing_the_urban_rural_gap
 		x=88
 		y=14
 		prerequisite={focus=PLS_Pooling_national_resources}
@@ -3160,6 +3179,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Economy_under_Sharia
+		icon=PALS_Economy_under_Sharia
 		x=93
 		y=11
 		prerequisite={focus=PLS_Economic_development_strategy}
@@ -3175,6 +3195,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Crack_down_on_hoarding
+		icon=PALS_Crack_down_on_hoarding
 		x=91
 		y=12
 		prerequisite={focus=PLS_Economy_under_Sharia}
@@ -3190,6 +3211,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Zakat_promotes_equality
+		icon=PALS_Zakat_promotes_equality
 		x=93
 		y=12
 		prerequisite={focus=PLS_Economy_under_Sharia}
@@ -3205,6 +3227,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Zero_interest_rate
+		icon=PALS_Zero_interest_rate
 		x=95
 		y=12
 		prerequisite={focus=PLS_Economy_under_Sharia}
@@ -3220,6 +3243,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_The_social_obligation_of_the_mosque
+		icon=PALS_The_social_obligation_of_the_mosque
 		x=92
 		y=13
 		prerequisite={focus=PLS_Crack_down_on_hoarding}
@@ -3236,6 +3260,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Standardize_factory_discipline
+		icon=PALS_Standardize_factory_discipline
 		x=94
 		y=13
 		prerequisite={focus=PLS_Zakat_promotes_equality}
@@ -3252,6 +3277,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Imitate_the_Western_world
+		icon=PALS_Imitate_the_Western_world
 		x=98
 		y=11
 		prerequisite={focus=PLS_Economic_development_strategy}
@@ -3267,6 +3293,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Maintain_market_order
+		icon=PALS_Maintain_market_order
 		x=97
 		y=12
 		prerequisite={focus=PLS_Imitate_the_Western_world}
@@ -3282,6 +3309,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Envoys_sent_to_various_countries
+		icon=PALS_Envoys_sent_to_various_countries
 		x=97
 		y=13
 		prerequisite={focus=PLS_Maintain_market_order}
@@ -3297,6 +3325,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Work_with_landlords
+		icon=PALS_Work_with_landlords
 		x=99
 		y=12
 		prerequisite={focus=PLS_Imitate_the_Western_world}
@@ -3312,6 +3341,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Encourage_investment
+		icon=PALS_Encourage_investment
 		x=99
 		y=13
 		prerequisite={focus=PLS_Work_with_landlords}
@@ -3327,6 +3357,7 @@ focus_tree={
 	}
 	focus={
 		id=PLS_Utilize_location_advantages
+		icon=PALS_Utilize_location_advantages
 		x=98
 		y=14
 		prerequisite={focus=PLS_Envoys_sent_to_various_countries}
