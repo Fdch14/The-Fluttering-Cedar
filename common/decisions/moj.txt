@@ -286,3 +286,358 @@ ISR_coup_crisis_decision = {
 		}
 	}
 }
+PLS_Palestinian_Civil_War_decision = {
+	PLS_Necessary_evil = {
+
+		icon = trumpet
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  150
+		
+		available = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+			controls_state = 454
+		}
+		
+		visible = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			454 = {
+				add_manpower = -3500
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	PLS_Necessary_evil1 = {
+
+		icon = trumpet
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  150
+		
+		available = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+			controls_state = 554
+		}
+		
+		visible = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			554 = {
+				add_manpower = -3500
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	PLS_Necessary_evil2 = {
+
+		icon = trumpet
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  150
+		
+		available = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+			controls_state = 291
+		}
+		
+		visible = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			291 = {
+				add_manpower = -3500
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	PLS_Necessary_evil3 = {
+
+		icon = trumpet
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  150
+		
+		available = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+			controls_state = 915
+		}
+		
+		visible = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			915 = {
+				add_manpower = -3500
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	PLS_Necessary_evil4 = {
+
+		icon = trumpet
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  150
+		
+		available = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+			controls_state = 292
+		}
+		
+		visible = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			292 = {
+				add_manpower = -3500
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	PLS_Necessary_evil5 = {
+
+		icon = trumpet
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  150
+		
+		available = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+			controls_state = 293
+		}
+		
+		visible = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			293 = {
+				add_manpower = -3500
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	PLS_Necessary_evil6 = {
+
+		icon = trumpet
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		cost =  150
+		
+		available = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+			controls_state = 294
+		}
+		
+		visible = {
+			has_country_flag = PLS_Sacrificial_myths_Flag
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			294 = {
+				add_manpower = -3500
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	PLS_Join_the_Third_International = {
+
+		icon = generic_agreement
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		available = {
+		}
+		
+		visible = {
+			has_completed_focus = PLS_The_heart_of_the_Arab_Revolution
+		}
+		
+		fire_only_once = yes
+		days_remove = 15
+
+		remove_effect = {
+			FRA = {
+				add_to_faction = PLS
+			}
+		}
+	}
+}

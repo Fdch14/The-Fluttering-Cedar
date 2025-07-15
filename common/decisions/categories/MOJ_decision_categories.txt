@@ -72,6 +72,7 @@ PLS_Palestinian_Civil_War_decision = {
 	}
 	visible = {
 		tag = PLS
+		has_country_flag = Palestinian_Civil_War_Flag
 	}
 	priority = 500
 	visible_when_empty = yes

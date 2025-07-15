@@ -139,6 +139,10 @@ country_event = {
 	
 	option = {
 		name = ISRC.2.a
+		country_event = {
+			id = ISRC.4
+			days = 5
+		}
 		ISR = {
 			white_peace = PAL
 			transfer_state = 454
@@ -219,6 +223,10 @@ country_event = {
 					country_event = {
 						id = Palestine.2
 						days = 2
+					}
+					country_event = {
+						id = Palestine.31
+						days = 5
 					}
 				}
 				inherit_technology = ISR

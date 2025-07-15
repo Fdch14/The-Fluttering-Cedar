@@ -3439,5 +3439,81 @@ SpriteTypes = {
 		name = "PALS_economic_recovery"
 		texturefile = "gfx/interface/goals/PALS_economic_recovery.png"
 	}
+	SpriteType = {
+		name = "PALS_The_crown_of_the_Hejaz"
+		texturefile = "gfx/interface/goals/PALS_The_crown_of_the_Hejaz.png"
+	}
+	SpriteType = {
+		name = "PALS_Reborn_in_blood_and_fire"
+		texturefile = "gfx/interface/goals/PALS_Reborn_in_blood_and_fire.png"
+	}
+	SpriteType = {
+		name = "PALS_The_New_Order_in_the_Middle_East"
+		texturefile = "gfx/interface/goals/PALS_The_New_Order_in_the_Middle_East.png"
+	}
+	SpriteType = {
+		name = "PALS_Arab_National_Revolution"
+		texturefile = "gfx/interface/goals/PALS_Arab_National_Revolution.png"
+	}
+	SpriteType = {
+		name = "PALS_End_the_colonial_order"
+		texturefile = "gfx/interface/goals/PALS_End_the_colonial_order.png"
+	}
+	SpriteType = {
+		name = "PALS_Arab_national_revival"
+		texturefile = "gfx/interface/goals/PALS_Arab_national_revival.png"
+	}
+	SpriteType = {
+		name = "PALS_The_legacy_of_the_Great_Uprising"
+		texturefile = "gfx/interface/goals/PALS_The_legacy_of_the_Great_Uprising.png"
+	}
+	SpriteType = {
+		name = "PALS_Pan_Arab_cooperation"
+		texturefile = "gfx/interface/goals/PALS_Pan_Arab_cooperation.png"
+	}
+	SpriteType = {
+		name = "PALS_Claim_Greater_Syria"
+		texturefile = "gfx/interface/goals/PALS_Claim_Greater_Syria.png"
+	}
+	SpriteType = {
+		name = "PALS_Hashem_holds_the_glory"
+		texturefile = "gfx/interface/goals/PALS_Hashem_holds_the_glory.png"
+	}
+	SpriteType = {
+		name = "PALS_And_then_there_are_all_Muslims"
+		texturefile = "gfx/interface/goals/PALS_And_then_there_are_all_Muslims.png"
+	}
+	SpriteType = {
+		name = "PALS_Start_with_Arabia"
+		texturefile = "gfx/interface/goals/PALS_Start_with_Arabia.png"
+	}
+	SpriteType = {
+		name = "PALS_Allah_alone"
+		texturefile = "gfx/interface/goals/PALS_Allah_alone.png"
+	}
+	SpriteType = {
+		name = "PALS_The_ultimate_solution"
+		texturefile = "gfx/interface/goals/PALS_The_ultimate_solution.png"
+	}
+	SpriteType = {
+		name = "PALS_jihad"
+		texturefile = "gfx/interface/goals/PALS_jihad.png"
+	}
+	SpriteType = {
+		name = "PALS_Claim_the_Islamic_State_of_Arabia"
+		texturefile = "gfx/interface/goals/PALS_Claim_the_Islamic_State_of_Arabia.png"
+	}
+	SpriteType = {
+		name = "PALS_Cooperation_with_Egypt"
+		texturefile = "gfx/interface/goals/PALS_Cooperation_with_Egypt.png"
+	}
+	SpriteType = {
+		name = "PALS_Creation_of_the_PTO"
+		texturefile = "gfx/interface/goals/PALS_Creation_of_the_PTO.png"
+	}
+	SpriteType = {
+		name = "PALS_Future_proof"
+		texturefile = "gfx/interface/goals/PALS_Future_proof.png"
+	}
 	
 }

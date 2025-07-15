@@ -788,6 +788,150 @@ ideas = {
 				hog_pragmatic_intriguer
 			}
 		}
+		PLS_Fuad_Nassar_hog_syn = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Fuad_Nassar_hog_syn"
+			}
+			traits = {
+				head_of_government
+				syndicalist
+				hog_ambitious_union_boss
+			}
+		}
+		PLS_Musa_Alami_hog_rso = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Musa_Alami_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_architect_of_the_union
+			}
+		}
+		PLS_Hussein_Khalidi_hog_sli = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Hussein_Khalidi_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_reformist_soldier
+			}
+		}
+		PLS_Abdullah_I_bin_Al_Hussein_hog_sco = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Abdullah_I_bin_Al_Hussein_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_plodding_bureaucrat
+			}
+		}
+		PLS_Fahmi_al_Abboushi_hog_sco = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Fahmi_al_Abboushi_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_silent_workhorse
+			}
+		}
+		PLS_Rafiq_al_Tamimi_hog_ade = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Rafiq_al_Tamimi_hog_ade"
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_influential_intellectual
+			}
+		}
+		PLS_Hasan_Salama_hog_pau = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Hasan_Salama_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_old_general
+			}
+		}
+		PLS_Amin_housaini_hog_npo = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Amin_housaini_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_great_mufti
+			}
+		}
 	}
 	person_of_influence = {
 		ISR_Meir_Vilner_for_tot = {
@@ -2158,6 +2302,218 @@ ideas = {
 				sec_prince_of_terror
 			}
 		}
-		
+		PLS_Younis_al_Sabawi_eco_tot = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Younis_al_Sabawi_eco_tot"
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_theoretical_scientist
+			}
+		}
+		PLS_Institute_of_Islamic_Studies_eco_sco = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Institute_of_Islamic_Studies_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_research_institute
+			}
+		}
+		PLS_Hassan_al_Banna_eco_npo = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Hassan_al_Banna_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_military_entrepreneur
+			}
+		}
+		PLS_Ministry_of_Economy_eco = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Ministry_of_Economy_eco"
+			}
+			traits = {
+				economy_minister
+				eco_ministry_of_economy
+			}
+		}
+		PLS_Muin_al_Madi_for_sli = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Muin_al_Madi_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_apologetic_clerk
+			}
+		}
+		PLS_Akram_Zuaiter_for_pau = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Akram_Zuaiter_for_pau"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_agitator
+			}
+		}
+		PLS_Jamal_al_Husayni_for_npo = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Jamal_al_Husayni_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_iron_fisted_brute
+			}
+		}
+		PLS_Ministry_of_Foreign_for = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Ministry_of_Foreign_for"
+			}
+			traits = {
+				foreign_minister
+				for_ministry_of_foreign
+			}
+		}
+		PLS_Younis_Bahri_sec_tot = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Younis_Bahri_sec_tot"
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_absurd_revolutionaries
+			}
+		}
+		PLS_Sayyid_Qutb_sec_npo = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Sayyid_Qutb_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_back_stabber
+			}
+		}
+		PLS_Amin_housaini_sec_npo = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Amin_housaini_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				hog_great_mufti
+			}
+		}
+		PLS_Ministry_of_Interior_sec = {
+			allowed = { original_tag = PLS }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea PLS_Ministry_of_Interior_sec"
+			}
+			traits = {
+				security_minister
+				sec_ministry_of_interior
+			}
+		}
 	}
 }

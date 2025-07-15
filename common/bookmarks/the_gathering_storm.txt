@@ -237,6 +237,22 @@ bookmarks = {
 			}
 		}
 		
+		"PLS" = {
+			minor = yes
+			history = "PLS_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				PLS_Arab_centrism_idea
+				PLS_Arabic_only_idea
+				PLS_The_Great_Mufti_Cult_of_Personality_idea
+			}
+			focuses = {
+				PLS_Between_Arabia_and_Islam 
+				PLS_Responsible_Parliament 
+				PLS_Economy_under_Sharia
+			}
+		}
+		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

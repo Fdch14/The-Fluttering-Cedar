@@ -116,6 +116,30 @@ spriteTypes = {
 		name = "GFX_idea_ISR_Israeli_Navy"
 		texturefile = "gfx/interface/ideas/ISR_Israeli_Navy.png"
 	}
+	spriteType = {
+		name = "GFX_idea_PLS_black_flag"
+		texturefile = "gfx/interface/ideas/PLS_black_flag.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_arab_flag"
+		texturefile = "gfx/interface/ideas/PLS_arab_flag.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_rad_flag"
+		texturefile = "gfx/interface/ideas/PLS_rad_flag.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Pan_Arabism"
+		texturefile = "gfx/interface/ideas/PLS_Pan_Arabism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Islamism"
+		texturefile = "gfx/interface/ideas/PLS_Islamism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_The_Great_Mufti_Cult_of_Personality"
+		texturefile = "gfx/interface/ideas/PLS_The_Great_Mufti_Cult_of_Personality.png"
+	}
 
 }
 

@@ -79,10 +79,10 @@ if = {
 set_research_slots = 3
 
 add_ideas = {
-	ISR_Avraham_Stern_hog_npo
-	ISR_Ya_akov_Meridor_for_pau
-	ISR_Nathan_Yellin_Mor_eco_pau
-	ISR_Eliyahu_Giladi_sec_npo
+	PLS_Amin_housaini_hog_npo
+	PLS_Hassan_al_Banna_eco_npo
+	PLS_Jamal_al_Husayni_for_npo
+	PLS_Sayyid_Qutb_sec_npo
 }
 
 set_politics = {

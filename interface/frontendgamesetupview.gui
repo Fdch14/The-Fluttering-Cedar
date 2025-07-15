@@ -713,7 +713,7 @@ guiTypes = {
 		
 		
 		instantTextBoxType = {
-			name = "nigeria"
+			name = "Israel_name"
 			position = { x = 0 y = 836 }
 			textureFile = ""
 			font = "hoi_20b"
@@ -725,7 +725,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "westafrika"
+			name = "Cyprus_name"
 			position = { x = 199 y = 836 }
 			textureFile = ""
 			font = "hoi_20b"
@@ -737,7 +737,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "kenya"
+			name = "Yemen_name"
 			position = { x = 367 y = 836 }
 			textureFile = ""
 			font = "hoi_20b"
@@ -749,7 +749,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "haiti"
+			name = "Suez_name"
 			position = { x = 539 y = 836 }
 			textureFile = ""
 			font = "hoi_20b"
@@ -761,7 +761,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "honduras_entry"
+			name = "Jerusalem_name"
 			position = { x = 709 y = 836 }
 			textureFile = ""
 			font = "hoi_20b"
@@ -779,6 +779,18 @@ guiTypes = {
 			font = "hoi_20b"
 			borderSize = {x = 0 y = -226}
 			text = "Beirut Vilayet"
+			maxWidth = 340
+			maxHeight = 30	
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "nicraragua"
+			position = { x = 1048 y = 836 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = -226}
+			text = "Palestine"
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre

@@ -96,5 +96,85 @@ spriteTypes = {
 		name = "GFX_idea_CYP_Recep_Peker_sec_ade"
 		texturefile = "gfx/interface/ministers/CYP/CYP_Recep_Peker.png"			
 	}
+	spriteType = {
+		name = "GFX_idea_PLS_Amin_housaini_hog_npo"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Amin_housaini.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Hassan_al_Banna_eco_npo"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Hassan_al_Banna.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Jamal_al_Husayni_for_npo"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Jamal_al_Husayni.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Sayyid_Qutb_sec_npo"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Sayyid_Qutb.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Abdullah_I_bin_Al_Hussein_hog_sco"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Abdullah_I_bin_Al_Hussein.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Institute_of_Islamic_Studies_eco_sco"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Government_departments.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Muin_al_Madi_for_sli"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Muin_al_Madi.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Amin_housaini_sec_npo"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Amin_housaini.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Rafiq_al_Tamimi_hog_ade"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Rafiq_al_Tamimi.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Ministry_of_Economy_eco"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Government_departments.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Ministry_of_Foreign_for"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Government_departments.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Ministry_of_Interior_sec"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Government_departments.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Fahmi_al_Abboushi_hog_sco"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Fahmi_al_Abboushi.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Hussein_Khalidi_hog_sli"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Hussein_Khalidi.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Fuad_Nassar_hog_syn"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Fuad_Nassar.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Musa_Alami_hog_rso"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Musa_Alami.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Hasan_Salama_hog_pau"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Hasan_Salama.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Younis_al_Sabawi_eco_tot"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Younis_al_Sabawi.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Akram_Zuaiter_for_pau"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Akram_Zuaiter.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_PLS_Younis_Bahri_sec_tot"
+		texturefile = "gfx/interface/ministers/PLS/PLS_Younis_Bahri.png"			
+	}
 
 }
