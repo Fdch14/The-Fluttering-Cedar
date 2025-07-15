@@ -20,6 +20,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -42,6 +43,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -64,6 +66,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -100,6 +103,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -126,6 +130,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -151,6 +156,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -173,6 +179,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -211,6 +218,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -234,6 +242,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -256,6 +265,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -294,6 +304,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -320,6 +331,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -347,6 +359,7 @@ focus_tree={
 		bypass = {
 			NOT = {
 				has_war_with = ISR
+				NOT = { country_exists = ISR }
 			}
 		}
 		available_if_capitulated=yes
@@ -5454,6 +5467,9 @@ focus_tree={
 		cost=4
 		ai_will_do={
 			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_Coup_by_Officers
 		}
 		available_if_capitulated=yes
 		search_filters={
