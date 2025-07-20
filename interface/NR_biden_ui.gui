@@ -6,6 +6,11 @@ guiTypes = {
 		orientation = upper_left
 		
 		iconType = {
+			name = "Ahmed_Hussein" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_EGY_Ahmed_Hussein"
+		}
+		iconType = {
 			name = "Morris_Abraham_Cohen" 
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_ISR_Morris_Abraham_Cohen"

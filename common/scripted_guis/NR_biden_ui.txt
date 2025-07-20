@@ -24,6 +24,12 @@ scripted_gui = {
 			NR_second_leader_button_visible = {
 				NR_uses_double_leader_gui = yes
 			}
+			Ahmed_Hussein_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_idea = EGY_Ahmed_Hussein_hog_npo
+				}
+			}
 			Sadr_al_Din_al_Sadr_visible = {
 				AND = {
 					has_country_flag = NR_HOG_veiw

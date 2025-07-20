@@ -1772,6 +1772,7 @@ country_event = {
 	
 	option = {
 		name = Palestine.51.a
+		clr_country_flag = PLS_A_battle_of_life_and_death_Flag
 		complete_national_focus = PLS_Palestine_was_given_a_respite
 		hidden_effect = {
 			remove_ideas = PLS_An_existential_battle_idea

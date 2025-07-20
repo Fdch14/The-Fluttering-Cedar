@@ -170,11 +170,107 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_PLS_Akram_Zuaiter_for_pau"
-		texturefile = "gfx/interface/ministers/PLS/PLS_Akram_Zuaiter.png"			
+		texturefile = "gfx/interface/ministers/PLS/PLS_Akram_Zuaiter.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PLS_Younis_Bahri_sec_tot"
-		texturefile = "gfx/interface/ministers/PLS/PLS_Younis_Bahri.png"			
+		texturefile = "gfx/interface/ministers/PLS/PLS_Younis_Bahri.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Shuhdi_Atiya_ash_Shafi_hog_rso"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Shuhdi_Atiya_ash_Shafi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ismail_Sabri_Abdullah_eco_rso"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Ismail_Sabri_Abdullah.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hosni_al_Arabi_for_rso"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Hosni_al_Arabi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Henri_Curiel_sec_rso"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Henri_Curiel.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Abbas_Halim_hog_syn"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Abbas_Halim.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Youssef_Siddiq_eco_syn"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Youssef_Siddiq.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Youssef_Darwish_for_syn"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Youssef_Darwish.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Zaki_Murad_sec_syn"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Zaki_Murad.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ibrahim_Shoukry_hog_tot"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Ibrahim_Shoukry.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ali_Sabri_eco_tot"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Ali_Sabri.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Adel_Hussein_for_tot"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Adel_Hussein.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Mustafa_Kamel_Murad_sec_tot"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Mustafa_Kamel_Murad.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Ahmed_Hussein_hog_npo"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Ahmed_Hussein.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hussein_El_Shafei_eco_npo"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Hussein_El_Shafei.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Fathi_Radwan_for_npo"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Fathi_Radwan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Dear_Ali_Al_Masry_sec_npo"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Dear_Ali_Al_Masry.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Khaled_Mohieddin_hog_rso"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Khaled_Mohieddin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Abdel_Hakim_Amer_eco_rso"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Abdel_Hakim_Amer.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Salah_Nasr_for_rso"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Salah_Nasr.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Kamal_el_Din_Hussein_sec_rso"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Kamal_el_Din_Hussein.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Anwar_Sadat_hog_pau"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Anwar_Sadat.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Hosni_Mubarak_eco_pau"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Hosni_Mubarak.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Abdel_Latif_Boghdadi_for_pau"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Abdel_Latif_Boghdadi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Zakaria_Mohieddin_sec_pau"
+		texturefile = "gfx/interface/ministers/EGY/EGY_Zakaria_Mohieddin.png"
 	}
 
 }

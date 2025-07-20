@@ -140,6 +140,14 @@ spriteTypes = {
 		name = "GFX_idea_PLS_The_Great_Mufti_Cult_of_Personality"
 		texturefile = "gfx/interface/ideas/PLS_The_Great_Mufti_Cult_of_Personality.png"
 	}
+	spriteType = {
+		name = "GFX_idea_EGY_Defend_Greater_Egypt"
+		texturefile = "gfx/interface/ideas/EGY_Defend_Greater_Egypt.png"
+	}
+	spriteType = {
+		name = "GFX_idea_EGY_Arab_liberators"
+		texturefile = "gfx/interface/ideas/EGY_Arab_liberators.png"
+	}
 
 }
 

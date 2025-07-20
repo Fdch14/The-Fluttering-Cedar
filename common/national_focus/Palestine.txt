@@ -19,8 +19,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -42,8 +41,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -65,8 +63,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -102,8 +99,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -129,8 +125,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -155,8 +150,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -178,8 +172,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -217,8 +210,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -241,8 +233,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -264,8 +255,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -303,8 +293,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -330,8 +319,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -358,8 +346,7 @@ focus_tree={
 		}
 		bypass = {
 			NOT = {
-				has_war_with = ISR
-				NOT = { country_exists = ISR }
+				has_country_flag = PLS_A_battle_of_life_and_death_Flag
 			}
 		}
 		available_if_capitulated=yes
@@ -1713,6 +1700,9 @@ focus_tree={
 		cost=4
 		ai_will_do={
 			factor=1
+		}
+		available = {
+			has_completed_focus = PLS_The_spirit_of_sacrifice
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -4298,6 +4288,7 @@ focus_tree={
 			OR = {
 				has_government = syndicalist
 				has_completed_focus = PLS_Save_the_Revolution
+				has_completed_focus = PLS_Revolution_at_sea
 			}
 		}
 		available_if_capitulated=yes
@@ -4887,6 +4878,7 @@ focus_tree={
 			550 = { add_core_of = PLS }
 			961 = { add_core_of = PLS }
 			268 = { add_core_of = PLS }
+			450 = { add_core_of = PLS }
 			1297 = { add_core_of = PLS }
 			every_state = {
 				limit = {
@@ -5083,6 +5075,7 @@ focus_tree={
 			961 = { add_core_of = PLS }
 			268 = { add_core_of = PLS }
 			1297 = { add_core_of = PLS }
+			450 = { add_core_of = PLS }
 			every_state = {
 				limit = {
 				OR = {
@@ -5215,6 +5208,9 @@ focus_tree={
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = PLS_Unexpected_contenders
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
@@ -5343,12 +5339,17 @@ focus_tree={
 		create_wargoal = { target = KUR type = annex_everything }
 		create_wargoal = { target = JBS type = annex_everything }
 		create_wargoal = { target = SAU type = annex_everything }
+		create_wargoal = { target = HEJ type = annex_everything }
 		create_wargoal = { target = LBA type = annex_everything }
 		create_wargoal = { target = TRP type = annex_everything }
 		create_wargoal = { target = TUR type = annex_everything }
 		create_wargoal = { target = PER type = annex_everything }
 			every_state = {
 				limit = { is_core_of = OMA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = HEJ }
 				add_core_of = PLS
 			}
 			every_state = {
@@ -5380,6 +5381,7 @@ focus_tree={
 			658 = { add_core_of = PLS }
 			350 = { add_core_of = PLS }
 			352 = { add_core_of = PLS }
+			450 = { add_core_of = PLS }
 		}
 	}
 	focus={
@@ -5585,6 +5587,7 @@ focus_tree={
 			961 = { add_core_of = PLS }
 			268 = { add_core_of = PLS }
 			1297 = { add_core_of = PLS }
+			450 = { add_core_of = PLS }
 			every_state = {
 				limit = {
 				OR = {

@@ -1,4 +1,19 @@
 music = {
+	name = "Ulif_Bisimaha"
+	file = "Ulif_Bisimaha.ogg"
+	volume = 1.25
+}
+music = {
+	name = "lwatanal_akbar_2"
+	file = "lwatanal_akbar_2.ogg"
+	volume = 1.25
+}
+music = {
+	name = "baeth_alnashid"
+	file = "baeth_alnashid.ogg"
+	volume = 1.25
+}
+music = {
 	name = "Suria_ya_Dhat_Almajd"
 	file = "Suria_ya_Dhat_Almajd.ogg"
 	volume = 1.25

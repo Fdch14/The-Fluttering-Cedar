@@ -40,5 +40,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/GUI/SSNP/SSNP_button_GUI.png"
 		transparencecheck = yes
 	}
+	spriteType = {
+		name = "GFX_notices_GUI"
+		texturefile = "gfx/interface/GUI/notices.png"
+		transparencecheck = yes
+	}
 	
 }

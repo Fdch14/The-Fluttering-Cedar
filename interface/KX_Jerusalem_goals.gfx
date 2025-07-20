@@ -3515,5 +3515,221 @@ SpriteTypes = {
 		name = "PALS_Future_proof"
 		texturefile = "gfx/interface/goals/PALS_Future_proof.png"
 	}
+	SpriteType = {
+		name = "REVEGY_Back_to_Arabia"
+		texturefile = "gfx/interface/goals/REVEGY_Back_to_Arabia.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Reform_policy"
+		texturefile = "gfx/interface/goals/REVEGY_Reform_policy.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Genuine_Islamist_movement"
+		texturefile = "gfx/interface/goals/REVEGY_Genuine_Islamist_movement.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Blossom"
+		texturefile = "gfx/interface/goals/REVEGY_Blossom.png"
+	}
+	SpriteType = {
+		name = "REVEGY_A_national_political_party"
+		texturefile = "gfx/interface/goals/REVEGY_A_national_political_party.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Islamic_Labor_Party"
+		texturefile = "gfx/interface/goals/REVEGY_Islamic_Labor_Party.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Egyptian_national_identity"
+		texturefile = "gfx/interface/goals/REVEGY_Egyptian_national_identity.png"
+	}
+	SpriteType = {
+		name = "REVEGY_End_of_foreign_capital"
+		texturefile = "gfx/interface/goals/REVEGY_End_of_foreign_capital.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Xenophobia_is_encouraged"
+		texturefile = "gfx/interface/goals/REVEGY_Xenophobia_is_encouraged.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Leader_Worship"
+		texturefile = "gfx/interface/goals/REVEGY_Leader_Worship.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Shaping_the_myth_of_violence"
+		texturefile = "gfx/interface/goals/REVEGY_Shaping_the_myth_of_violence.png"
+	}
+	SpriteType = {
+		name = "REVEGY_The_rise_of_Islam_in_society"
+		texturefile = "gfx/interface/goals/REVEGY_The_rise_of_Islam_in_society.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Worship_fanaticism"
+		texturefile = "gfx/interface/goals/REVEGY_Worship_fanaticism.png"
+	}
+	SpriteType = {
+		name = "REVEGY_The_power_of_the_Green_Shirts"
+		texturefile = "gfx/interface/goals/REVEGY_The_power_of_the_Green_Shirts.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Institutional_problems"
+		texturefile = "gfx/interface/goals/REVEGY_Institutional_problems.png"
+	}
+	SpriteType = {
+		name = "REVEGY_National_industrial_system"
+		texturefile = "gfx/interface/goals/REVEGY_National_industrial_system.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Encourage_the_youth"
+		texturefile = "gfx/interface/goals/REVEGY_Encourage_the_youth.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Traditional_law"
+		texturefile = "gfx/interface/goals/REVEGY_Traditional_law.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Integration_of_the_Muslim_Brotherhood"
+		texturefile = "gfx/interface/goals/REVEGY_Integration_of_the_Muslim_Brotherhood.png"
+	}
+	SpriteType = {
+		name = "REVEGY_National_Islamic_Party"
+		texturefile = "gfx/interface/goals/REVEGY_National_Islamic_Party.png"
+	}
+	SpriteType = {
+		name = "REVEGY_The_future_of_the_revolution"
+		texturefile = "gfx/interface/goals/REVEGY_The_future_of_the_revolution.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Revolutionary_emergency"
+		texturefile = "gfx/interface/goals/REVEGY_Revolutionary_emergency.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Purge_the_Egyptian_royal_family"
+		texturefile = "gfx/interface/goals/REVEGY_Purge_the_Egyptian_royal_family.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Egyptian_Revolution"
+		texturefile = "gfx/interface/goals/REVEGY_Egyptian_Revolution.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Revolutionary_Military_Council"
+		texturefile = "gfx/interface/goals/REVEGY_Revolutionary_Military_Council.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Anti_leftist"
+		texturefile = "gfx/interface/goals/REVEGY_Anti_leftist.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Freedom_of_the_market"
+		texturefile = "gfx/interface/goals/REVEGY_Freedom_of_the_market.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Formal_democracy"
+		texturefile = "gfx/interface/goals/REVEGY_Formal_democracy.png"
+	}
+	SpriteType = {
+		name = "REVEGY_The_secularism_pandemic"
+		texturefile = "gfx/interface/goals/REVEGY_The_secularism_pandemic.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Secularization_of_the_country"
+		texturefile = "gfx/interface/goals/REVEGY_Secularization_of_the_country.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Promote_military_modernization"
+		texturefile = "gfx/interface/goals/REVEGY_Promote_military_modernization.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Solidarity_with_the_cause"
+		texturefile = "gfx/interface/goals/REVEGY_Solidarity_with_the_cause.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Pan_Arab_Revolution"
+		texturefile = "gfx/interface/goals/REVEGY_Pan_Arab_Revolution.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Cultural_Revolution"
+		texturefile = "gfx/interface/goals/REVEGY_Cultural_Revolution.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Workers_politics"
+		texturefile = "gfx/interface/goals/REVEGY_Workers_politics.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Arab_unity"
+		texturefile = "gfx/interface/goals/REVEGY_Arab_unity.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Grassroots_democracy"
+		texturefile = "gfx/interface/goals/REVEGY_Grassroots_democracy.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Socialist_Party_of_Egypt"
+		texturefile = "gfx/interface/goals/REVEGY_Socialist_Party_of_Egypt.png"
+	}
+	SpriteType = {
+		name = "REVEGY_General_Confederation_of_Labour"
+		texturefile = "gfx/interface/goals/REVEGY_General_Confederation_of_Labour.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Progressive_League"
+		texturefile = "gfx/interface/goals/REVEGY_Progressive_League.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Red_Education"
+		texturefile = "gfx/interface/goals/REVEGY_Red_Education.png"
+	}
+	SpriteType = {
+		name = "REVEGY_welfare_state"
+		texturefile = "gfx/interface/goals/REVEGY_welfare_state.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Egypt_of_the_whole_nation"
+		texturefile = "gfx/interface/goals/REVEGY_Egypt_of_the_whole_nation.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Left_unity"
+		texturefile = "gfx/interface/goals/REVEGY_Left_unity.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Continued_decentralization"
+		texturefile = "gfx/interface/goals/REVEGY_Continued_decentralization.png"
+	}
+	SpriteType = {
+		name = "REVEGY_General_strike"
+		texturefile = "gfx/interface/goals/REVEGY_General_strike.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Savage_physique"
+		texturefile = "gfx/interface/goals/REVEGY_Savage_physique.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Syndicate_life"
+		texturefile = "gfx/interface/goals/REVEGY_Syndicate_life.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Red_Sultan"
+		texturefile = "gfx/interface/goals/REVEGY_Red_Sultan.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Strengthen_Egyptian_identity"
+		texturefile = "gfx/interface/goals/REVEGY_Strengthen_Egyptian_identity.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Arab_identity"
+		texturefile = "gfx/interface/goals/REVEGY_Arab_identity.png"
+	}
+	SpriteType = {
+		name = "REVEGY_Protect_your_homeland"
+		texturefile = "gfx/interface/goals/REVEGY_Protect_your_homeland.png"
+	}
+	SpriteType = {
+		name = "REVEGY_The_role_of_Islam"
+		texturefile = "gfx/interface/goals/REVEGY_The_role_of_Islam.png"
+	}
+	SpriteType = {
+		name = "REVEGY_A_beating_hear"
+		texturefile = "gfx/interface/goals/REVEGY_A_beating_hear.png"
+	}
 	
 }

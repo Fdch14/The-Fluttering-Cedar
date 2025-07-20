@@ -108,16 +108,6 @@ guiTypes = {
 			pdx_tooltip = "GFX_SSNP_button_tooltip"
 		}
 		
-		instantTextboxType = {
-			name = "SSNP_button_name"
-			position = { x = 125 y = 330 }
-			font = "hoi_18mbs"
-			text = "执行我们的正义"
-			maxWidth = 250
-			maxHeight = 50
-			format = center
-		}
-		
 		iconType = {
 			name = "SSNP_gui_no_unit_name"
 			spriteType = "GFX_SSNP_gui_no_unit"		

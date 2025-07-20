@@ -1,0 +1,1342 @@
+### Egypt ideas
+ideas = {
+### Country Spirits ###
+	country = {# National Spirits
+		EGY_Traditional_precepts_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Traditional_precepts_idea"}
+			picture = generic_traditional_values
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				political_power_cost = -0.1
+				attrition = -0.1
+			}
+		}
+		EGY_Traditional_precepts_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Traditional_precepts_idea1"}
+			picture = generic_traditional_values
+			allowed = { always = no }
+			name = EGY_Traditional_precepts_idea
+			modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				political_power_cost = -0.2
+				attrition = -0.15
+				compliance_growth = 0.02
+				supply_factor = 0.1
+			}
+		}
+		EGY_Traditional_precepts_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Traditional_precepts_idea2"}
+			picture = generic_traditional_values
+			allowed = { always = no }
+			name = EGY_Traditional_precepts_idea
+			modifier = {
+				political_power_factor = 0.25
+				political_power_gain = 0.25
+				political_power_cost = -0.25
+				attrition = -0.2
+				compliance_growth = 0.05
+				supply_factor = 0.2
+			}
+		}
+		EGY_Production_struggles_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Production_struggles_idea"}
+			picture = practical_trade_1
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+		EGY_Production_struggles_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Production_struggles_idea1"}
+			picture = practical_trade_1
+			allowed = { always = no }
+			name = EGY_Production_struggles_idea
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				mobilization_speed = 0.2
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		EGY_Green_Shirt_Army_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Green_Shirt_Army_idea"}
+			picture = POL_Mercenary_Army
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+			}
+		}
+		EGY_Green_Shirt_Army_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Green_Shirt_Army_idea1"}
+			picture = POL_Mercenary_Army
+			allowed = { always = no }
+			name = EGY_Green_Shirt_Army_idea
+			modifier = {
+				stability_weekly = 0.007
+				war_support_weekly = 0.007
+				command_power_gain_mult = 0.2
+				max_command_power_mult = 0.2
+				resistance_decay = 0.02
+				required_garrison_factor = -0.1
+			}
+		}
+		EGY_violent_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Green_Shirt_Army_idea"}
+			picture = FRA_violence
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+		EGY_violent_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Green_Shirt_Army_idea1"}
+			picture = FRA_violence
+			allowed = { always = no }
+			name = EGY_violent_idea
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_speed_factor = 0.15
+				experience_loss_factor = -0.15
+				experience_gain_army_factor = 0.1
+				experience_gain_factor = 0.1
+			}
+		}
+		EGY_violent_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Green_Shirt_Army_idea2"}
+			picture = FRA_violence
+			allowed = { always = no }
+			name = EGY_violent_idea
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_speed_factor = 0.15
+				experience_loss_factor = -0.15
+				experience_gain_army_factor = 0.15
+				experience_gain_factor = 0.15
+				conscription = 0.05
+				conscription_factor = 0.1
+				recruitable_population = 0.15
+			}
+		}
+		EGY_Egypt_reigns_supreme_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Egypt_reigns_supreme_idea"}
+			picture = EGY_promoting_pharaonism
+			allowed = { always = no }
+			modifier = {
+				mobilization_speed = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		EGY_Egypt_reigns_supreme_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Egypt_reigns_supreme_idea1"}
+			picture = EGY_promoting_pharaonism
+			allowed = { always = no }
+			name = EGY_Egypt_reigns_supreme_idea
+			modifier = {
+				mobilization_speed = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				supply_factor = 0.1
+				supply_node_range = 0.1
+			}
+		}
+		EGY_national_political_party_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_national_political_party_idea"}
+			picture = BAN_shaken_nation
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				political_power_cost = -0.1
+				breakthrough_factor = 0.1
+			}
+		}
+		EGY_national_political_party_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_national_political_party_idea1"}
+			picture = BAN_shaken_nation
+			allowed = { always = no }
+			name = EGY_national_political_party_idea
+			modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				political_power_cost = -0.2
+				breakthrough_factor = 0.1
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		EGY_national_political_party_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_national_political_party_idea2"}
+			picture = BAN_shaken_nation
+			allowed = { always = no }
+			name = EGY_national_political_party_idea
+			modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				political_power_cost = -0.2
+				breakthrough_factor = 0.1
+				command_power_gain_mult = 0.2
+				max_command_power_mult = 0.2
+				production_speed_buildings_factor = 0.15
+				local_building_slots_factor = 0.1
+				war_support_weekly = 0.005
+			}
+		}
+		EGY_Genuine_Islamist_movement_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Genuine_Islamist_movement_idea"}
+			picture = islam
+			allowed = { always = no }
+			modifier = {
+				local_resources_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				research_speed_factor = 0.1
+				monthly_population = 0.2
+			}
+		}
+		EGY_Genuine_Islamist_movement_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Genuine_Islamist_movement_idea1"}
+			picture = islam
+			allowed = { always = no }
+			name = EGY_Genuine_Islamist_movement_idea
+			modifier = {
+				local_resources_factor = 0.2
+				production_lack_of_resource_penalty_factor = -0.2
+				research_speed_factor = 0.1
+				monthly_population = 0.4
+				consumer_goods_expected_value = -0.2
+				consumer_goods_factor = -0.1
+			}
+		}
+		EGY_Defend_Greater_Egypt_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Defend_Greater_Egypt_idea"}
+			picture = EGY_Defend_Greater_Egypt
+			allowed = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				pocket_penalty = -0.1
+				field_officer_promotion_penalty = -0.1
+			}
+		}
+		EGY_Defend_Greater_Egypt_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Defend_Greater_Egypt_idea1"}
+			picture = EGY_Defend_Greater_Egypt
+			allowed = { always = no }
+			name = EGY_Defend_Greater_Egypt_idea
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				pocket_penalty = -0.15
+				field_officer_promotion_penalty = -0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.1
+			}
+		}
+		EGY_Arab_liberators_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Arab_liberators_idea"}
+			picture = EGY_Arab_liberators
+			allowed = { always = no }
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				heat_attrition_factor = -0.1
+				conscription = 0.05
+			}
+		}
+		EGY_Arab_liberators_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Arab_liberators_idea1"}
+			picture = EGY_Arab_liberators
+			allowed = { always = no }
+			name = EGY_Arab_liberators_idea
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_speed_factor = 0.15
+				heat_attrition_factor = -0.1
+				terrain_penalty_reduction = 0.1
+				production_resource_need_factor = -0.1
+				conscription = 0.05
+			}
+		}
+		EGY_Stability_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Stability_idea"}
+			picture = CAN_anti_syndicalism_decree
+			allowed = { always = no }
+			modifier = {
+				totalist_drift = -0.1
+				syndicalist_drift = -0.1
+				radical_socialist_drift = -0.1
+				social_democrat_drift = -0.1
+				stability_weekly = 0.005
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		EGY_Stability_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Stability_idea1"}
+			picture = CAN_anti_syndicalism_decree
+			allowed = { always = no }
+			name = EGY_Stability_idea
+			modifier = {
+				totalist_drift = -0.1
+				syndicalist_drift = -0.1
+				radical_socialist_drift = -0.1
+				social_democrat_drift = -0.1
+				stability_weekly = 0.005
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		EGY_Stability_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Stability_idea2"}
+			picture = CAN_anti_syndicalism_decree
+			allowed = { always = no }
+			name = EGY_Stability_idea
+			modifier = {
+				totalist_drift = -0.1
+				syndicalist_drift = -0.1
+				radical_socialist_drift = -0.1
+				social_democrat_drift = -0.1
+				stability_weekly = 0.005
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		EGY_secularism_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_secularism_idea"}
+			picture = IRE_secular
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				drift_defence_factor = 0.2
+				command_power_gain_mult = 0.1
+			}
+		}
+		EGY_secularism_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_secularism_idea1"}
+			picture = IRE_secular
+			allowed = { always = no }
+			name = EGY_secularism_idea
+			modifier = {
+				research_speed_factor = 0.2
+				local_resources_factor = 0.2
+				drift_defence_factor = 0.5
+				command_power_gain_mult = 0.2
+				max_command_power_mult = 0.1
+				compliance_growth = 0.02
+			}
+		}
+		EGY_Arabia_entered_the_modern_era_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Arabia_entered_the_modern_era_idea"}
+			picture = SKM_modern_army
+			allowed = { always = no }
+			modifier = {
+				supply_node_range = 0.1
+				local_org_regain = 0.1
+				army_org_factor = 0.1
+				supply_consumption_factor = -0.1
+				no_supply_grace = 48
+			}
+		}
+		EGY_Arabia_entered_the_modern_era_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Arabia_entered_the_modern_era_idea1"}
+			picture = SKM_modern_army
+			allowed = { always = no }
+			name = EGY_Arabia_entered_the_modern_era_idea
+			modifier = {
+				supply_node_range = 0.2
+				local_org_regain = 0.2
+				army_org_factor = 0.2
+				supply_consumption_factor = -0.2
+				no_supply_grace = 48
+				initiative_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+		EGY_Arabia_entered_the_modern_era_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Arabia_entered_the_modern_era_idea2"}
+			picture = SKM_modern_army
+			allowed = { always = no }
+			name = EGY_Arabia_entered_the_modern_era_idea
+			modifier = {
+				supply_node_range = 0.2
+				local_org_regain = 0.2
+				army_org_factor = 0.2
+				supply_consumption_factor = -0.2
+				no_supply_grace = 48
+				initiative_factor = 0.15
+				planning_speed = 0.15
+				max_planning = 0.1
+				army_bonus_air_superiority_factor = 0.1
+				cas_damage_reduction = 0.1
+				army_artillery_attack_factor = 0.1
+				army_artillery_defence_factor = 0.1
+			}
+		}
+		EGY_Socialist_Politics_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Socialist_Politics_idea"}
+			picture = KIV_socialist_democracy_idea
+			allowed = { always = no }
+			modifier = {
+				political_power_cost = 0.1
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				attrition = -0.1
+			}
+		}
+		EGY_Socialist_Politics_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Socialist_Politics_idea1"}
+			picture = KIV_socialist_democracy_idea
+			allowed = { always = no }
+			name = EGY_Socialist_Politics_idea
+			modifier = {
+				political_power_cost = 0.1
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				attrition = -0.1
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		EGY_Socialist_Politics_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Socialist_Politics_idea2"}
+			picture = KIV_socialist_democracy_idea
+			allowed = { always = no }
+			name = EGY_Socialist_Politics_idea
+			modifier = {
+				political_power_cost = 0.2
+				political_power_factor = 0.1
+				political_power_gain = 0.2
+				attrition = -0.2
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.2
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		EGY_Unity_and_patriotism_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Unity_and_patriotism_idea"}
+			picture = GRU_RED_PATRIOT
+			allowed = { always = no }
+			modifier = {
+				drift_defence_factor = 0.2
+				defensive_war_stability_factor = 0.2
+				war_support_weekly = 0.005
+				production_speed_infrastructure_factor = 0.1
+				repair_speed_industrial_complex_factor = 0.1
+				repair_speed_arms_factory_factor = 0.1
+			}
+		}
+		EGY_Unity_and_patriotism_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Unity_and_patriotism_idea1"}
+			picture = GRU_RED_PATRIOT
+			allowed = { always = no }
+			name = EGY_Unity_and_patriotism_idea
+			modifier = {
+				drift_defence_factor = 0.2
+				defensive_war_stability_factor = 0.2
+				war_support_weekly = 0.005
+				production_speed_infrastructure_factor = 0.2
+				repair_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+				local_resources_factor = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		EGY_Unity_and_patriotism_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Unity_and_patriotism_idea2"}
+			picture = GRU_RED_PATRIOT
+			allowed = { always = no }
+			name = EGY_Unity_and_patriotism_idea
+			modifier = {
+				drift_defence_factor = 0.5
+				defensive_war_stability_factor = 0.5
+				war_support_weekly = 0.005
+				production_speed_infrastructure_factor = 0.2
+				repair_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+				local_resources_factor = 0.2
+				research_speed_factor = 0.2
+				syndicalist_drift = 0.1
+				radical_socialist_drift = 0.4
+				social_democrat_drift = 0.1
+			}
+		}
+		EGY_Prosperity_strength_and_harmony_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Prosperity_strength_and_harmony_idea"}
+			picture = COR_true_american_progress
+			allowed = { always = no }
+			modifier = {
+				attrition = -0.1
+				supply_factor = 0.1
+				experience_loss_factor = -0.1
+				sickness_chance = -0.5
+				army_morale_factor = 0.1
+			}
+		}
+		EGY_Prosperity_strength_and_harmony_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Prosperity_strength_and_harmony_idea1"}
+			picture = COR_true_american_progress
+			allowed = { always = no }
+			name = EGY_Prosperity_strength_and_harmony_idea
+			modifier = {
+				attrition = -0.1
+				supply_factor = 0.15
+				experience_loss_factor = -0.15
+				sickness_chance = -0.5
+				army_morale_factor = 0.1
+				industrial_capacity_factory = 0.1
+				resistance_target = -0.2
+				compliance_growth = 0.03
+				resistance_decay = 0.03
+			}
+		}
+		EGY_Continued_decentralization_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Continued_decentralization_idea"}
+			picture = progressive_society
+			allowed = { always = no }
+			name = EGY_Continued_decentralization
+			modifier = {
+				truck_attrition_factor = -0.1
+				supply_node_range = 0.1
+				compliance_starting_value = 0.2
+				required_garrison_factor = -0.1
+				repair_speed_rail_way_factor = 1
+			}
+		}
+		EGY_Continued_decentralization_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Continued_decentralization_idea1"}
+			picture = progressive_society
+			allowed = { always = no }
+			name = EGY_Continued_decentralization
+			modifier = {
+				truck_attrition_factor = -0.1
+				supply_node_range = 0.1
+				compliance_starting_value = 0.2
+				required_garrison_factor = -0.1
+				repair_speed_rail_way_factor = 1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		EGY_Savage_physique_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Savage_physique_idea"}
+			picture = RUS_savnat
+			allowed = { always = no }
+			name = EGY_Savage_physique
+			modifier = {
+				recruitable_population_factor = 0.15
+				non_core_manpower =  0.2
+				mobilization_speed =  0.15
+				resistance_damage_to_garrison = -0.2
+				army_attack_factor =  0.1
+				army_defence_factor =  0.1
+			}
+		}
+		EGY_Savage_physique_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Savage_physique_idea1"}
+			picture = RUS_savnat
+			allowed = { always = no }
+			name = EGY_Savage_physique
+			modifier = {
+				recruitable_population_factor = 0.15
+				non_core_manpower =  0.2
+				mobilization_speed =  0.15
+				resistance_damage_to_garrison = -0.2
+				army_attack_factor =  0.15
+				army_defence_factor =  0.15
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		EGY_Correctional_camps_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Correctional_camps_idea"}
+			picture = work_camps
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.05
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		EGY_death_penalty_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_Correctional_camps_idea"}
+			picture = SER_Unity_death
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.005
+				attrition = -0.1
+				resistance_target = -0.2
+			}
+		}
+		EGY_black_monday = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_black_monday"}
+			picture = national_produce
+			allowed = { always = no }
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		EGY_backwards_economy_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_backwards_economy_1"}
+			picture = national_produce
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = -0.2
+			}
+		}
+		EGY_backwards_economy_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_backwards_economy_2"}
+			picture = national_produce
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.05
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		EGY_illiterate_populace = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_illiterate_populace"}
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = -0.2
+				political_power_cost = 0.2
+			}
+			picture = GUA_illiteracy
+		}
+		EGY_illiterate_populace_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_illiterate_populace_2"}
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = -0.15
+				political_power_cost = 0.15
+			}
+			picture = GUA_illiteracy
+		}
+		EGY_illiterate_populace_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_illiterate_populace_3"}
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = -0.1
+				political_power_cost = 0.10
+			}
+			picture = GUA_illiteracy
+		}
+		EGY_illiterate_populace_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_illiterate_populace_4"}
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = -0.05
+				political_power_cost = 0.05
+			}
+			picture = GUA_illiteracy
+		}
+		EGY_inexperinced_officer_corps = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_inexperinced_officer_corps"}
+			allowed = { always = no }
+			modifier = {
+				army_org_factor = -0.05
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				planning_speed = -0.1
+			}
+			picture = PER_untrained_officer
+		}
+		EGY_inexperinced_officer_corps_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_inexperinced_officer_corps_2"}
+			allowed = { always = no }
+			modifier = {
+				army_org_factor = -0.02
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				planning_speed = -0.05
+			}
+			picture = PER_untrained_officer
+		}
+		EGY_iqta = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_iqta"}
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.03
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.05
+			}
+			picture = SYR_Sunni_Elite_Domination
+		}
+		EGY_iqta_nationalized = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_iqta_nationalized"}
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				local_resources_factor = -0.05
+			}
+			picture = SYR_Sunni_Elite_Domination
+		}
+		EGY_shendi_cavalry_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_shendi_cavalry_idea"}
+			picture = ast_volunteer_defence_corps
+			allowed = { always = no }
+			modifier = {
+				cavalry_attack_factor = 0.10
+				cavalry_defence_factor = 0.10
+			}
+		}
+		EGY_desert_mobility_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_desert_mobility_idea"}
+			picture = ast_volunteer_defence_corps
+			allowed = { always = no }
+			modifier = {
+				army_speed_factor = 0.1
+				army_morale_factor = 0.03
+				army_attack_factor = 0.1
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+			}
+		}
+		EGY_desert_training_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_desert_training_idea"}
+			picture = generic_desert
+			allowed = { always = no }
+			modifier = {
+				heat_attrition_factor = -0.3
+			}
+		}
+		EGY_medjay = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_medjay"}
+			picture = YUG_federal_defense_council
+			allowed = { always = no }
+			modifier = {
+				resistance_damage_to_garrison = -0.2
+				political_power_gain = 0.1
+				conscription_factor = 0.05
+			}
+		}
+		EGY_military_schools = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_military_schools"}
+			picture = generic_war_preparation
+			allowed = { always = no }
+			modifier = {
+				planning_speed = 0.05
+				army_org_factor = 0.05
+				max_planning = 0.05
+			}
+		}
+		EGY_general_staff = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_general_staff"}
+			picture = generic_war_preparation
+			allowed = { always = no }
+			modifier = {
+				planning_speed = 0.1
+				army_org_factor = 0.1
+				max_planning = 0.1
+			}
+		}
+		EGY_modernized_agriculture_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_modernized_agriculture_idea"}
+			picture = generic_agrarian_reform
+			allowed = { always = no }
+			modifier = {
+				monthly_population = 0.40
+				supply_consumption_factor = -0.05
+				consumer_goods_factor = -0.1
+				conscription = 0.01
+			}
+		}
+		EGY_industrial_modernization_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_industrial_modernization_idea"}
+			picture = ast_all_in
+			allowed = { always = no }
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+		EGY_economic_aid_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_economic_aid_idea"}
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.3
+			}
+			picture = generic_production_bonus
+		}
+		EGY_german_investments = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_german_investments"}
+			on_remove = {
+				country_event = egy.26
+				EGY = { country_event = egy.25 }
+			}
+			available = {
+				country_exists = EGY
+				NOT = { has_war_with = EGY }
+			}
+			modifier = {
+				consumer_goods_factor = -0.11
+			}
+			allowed = { always = no }
+			picture = generic_production_bonus
+		}
+		EGY_german_tourists = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_german_tourists"}
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.11
+			}
+			picture = generic_tourism
+		}
+		EGY_building_costs = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_building_costs"}
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+			picture = generic_production_bonus
+		}
+		SUD_mahdist_warriors1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SUD_mahdist_warriors1"}
+			picture = generic_war_preparation
+			allowed = { always = no }
+			modifier = {
+				army_morale_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				conscription = 0.01
+			}
+		}
+		SUD_mahdist_warriors2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SUD_mahdist_warriors2"}
+			picture = generic_war_preparation
+			allowed = { always = no }
+			modifier = {
+				army_morale_factor = 0.02
+				army_core_attack_factor = 0.02
+				army_core_defence_factor = 0.02
+				conscription = 0.01
+			}
+		}
+		EGY_merchant_marine_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_merchant_marine_idea"}
+			modifier = { convoy_escort_efficiency = 0.1 }
+			allowed = { always = no }
+			equipment_bonus = {	convoy = { build_cost_ic = -0.1 instant = yes }	}
+			picture = liberty_ships_focus
+		}
+		EGY_military_mission = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_military_mission"}
+			allowed = { always = no }
+			modifier = {
+				army_morale_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+			picture = MEX_revolutionary_army
+		}
+		
+		EGY_free_independant_egypt = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_free_independant_egypt"}
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.02
+				monthly_population = 0.4
+				production_speed_arms_factory_factor = 0.03
+				production_speed_industrial_complex_factor = 0.02
+				local_resources_factor = 0.03
+			}
+			picture = EGY_free_independent_egypt
+		}
+		EGY_free_independant_egypt_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_free_independant_egypt_2"}
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.04
+				monthly_population = 0.6
+				production_speed_arms_factory_factor = 0.04
+				production_speed_industrial_complex_factor = 0.06
+				experience_gain_army_factor = 0.03
+				local_resources_factor = 0.05
+			}
+			name = EGY_free_independant_egypt
+			picture = EGY_free_independent_egypt
+		}
+		EGY_free_independant_egypt_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_free_independant_egypt_3"}
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.07
+				monthly_population = 0.8
+				production_speed_arms_factory_factor = 0.07
+				production_speed_industrial_complex_factor = 0.08
+				experience_gain_army_factor = 0.06
+				local_resources_factor = 0.09
+				min_export = -0.1
+			}
+			name = EGY_free_independant_egypt
+			picture = EGY_free_independent_egypt
+		}
+	
+		EGY_modern_society_of_the_nile = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_modern_society_of_the_nile"}
+			allowed = { always = no }
+			modifier = {
+				monthly_population = 0.1
+				industrial_capacity_factory = 0.03
+				required_garrison_factor = -0.04
+			}
+			picture = EGY_modern_society_nile
+		}
+		EGY_modern_society_of_the_nile_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_modern_society_of_the_nile_2"}
+			allowed = { always = no }
+			modifier = {
+				monthly_population = 0.4
+				industrial_capacity_factory = 0.05
+				required_garrison_factor = -0.06
+				research_speed_factor = 0.02
+				consumer_goods_factor = -0.05
+				land_doctrine_cost_factor = -0.03
+			}
+			name = EGY_modern_society_of_the_nile
+			picture = EGY_modern_society_nile
+		}
+		EGY_modern_society_of_the_nile_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_modern_society_of_the_nile_3"}
+			allowed = { always = no }
+			modifier = {
+				monthly_population = 0.7
+				industrial_capacity_factory = 0.08
+				required_garrison_factor = -0.08
+				research_speed_factor = 0.04
+				consumer_goods_factor = -0.08
+				land_doctrine_cost_factor = -0.06
+			}
+			name = EGY_modern_society_of_the_nile
+			picture = EGY_modern_society_nile
+		}
+	
+		EGY_model_democracy_of_the_arab_world = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_model_democracy_of_the_arab_world"}
+			allowed = { always = no }
+			modifier = {
+				supply_consumption_factor = -0.1
+				production_oil_factor = 0.03
+				min_export = 0.05
+			}
+			picture = EGY_model_democracy_arab_world
+		}
+		EGY_model_democracy_of_the_arab_world_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_model_democracy_of_the_arab_world_2"}
+			allowed = { always = no }
+			modifier = {	
+				supply_consumption_factor = -0.1
+				dig_in_speed_factor	= 0.1
+				production_oil_factor = 0.06
+				min_export = 0.05
+				resistance_activity = -0.05
+				global_building_slots_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.04
+				defense_bonus_against = 0.04 
+			}
+			name = EGY_model_democracy_of_the_arab_world
+			picture = EGY_model_democracy_arab_world
+		}
+		EGY_model_democracy_of_the_arab_world_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_model_democracy_of_the_arab_world_3"}
+			allowed = { always = no }
+			modifier = {
+				supply_consumption_factor = -0.15
+				dig_in_speed_factor	= 0.2
+				production_oil_factor = 0.09
+				min_export = 0.1
+				resistance_activity = -0.10
+				global_building_slots_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.06
+				defense_bonus_against = 0.06
+			}
+			name = EGY_model_democracy_of_the_arab_world
+			picture = EGY_model_democracy_arab_world
+		}
+		
+		EGY_egyptian_islamic_democracy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_egyptian_islamic_democracy"}
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.06
+				stability_factor = 0.05
+				weekly_manpower = 15
+				offensive_war_stability_factor = 0.2
+				compliance_growth = 0.05
+				resistance_growth = -0.05
+			}
+			picture = EGY_egyptian_islamic_democracy
+		}
+		EGY_egyptian_islamic_democracy_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_egyptian_islamic_democracy_2"}
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.06
+				stability_factor = 0.08
+				party_popularity_stability_factor = 0.05
+				weekly_manpower = 40
+				offensive_war_stability_factor = 0.2
+				compliance_growth = 0.1
+				resistance_growth = -0.1
+			}
+			name = EGY_egyptian_islamic_democracy
+			picture = EGY_egyptian_islamic_democracy
+		}
+		EGY_egyptian_islamic_democracy_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_egyptian_islamic_democracy_3"}
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.07
+				stability_factor = 0.11
+				party_popularity_stability_factor = 0.10
+				weekly_manpower = 80
+				offensive_war_stability_factor = 0.5
+				compliance_growth = 0.1
+				resistance_growth = -0.1
+				opinion_gain_monthly = 0.2
+			}
+			name = EGY_egyptian_islamic_democracy
+			picture = EGY_egyptian_islamic_democracy
+		}
+		
+		EGY_prophet_egypt = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_prophet_egypt"}
+			allowed = { always = no }
+			modifier = {
+				global_building_slots_factor = 0.05
+				army_morale_factor = 0.04
+				land_reinforce_rate = 0.02
+				conscription_factor = 0.04
+				root_out_resistance_effectiveness_factor = 0.1
+			}
+			picture = EGY_light_prophet_his_teachings
+		}
+		EGY_prophet_egypt_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_prophet_egypt_2"}
+			allowed = { always = no }
+			modifier = {
+				global_building_slots_factor = 0.10
+				army_morale_factor = 0.07
+				land_reinforce_rate = 0.03
+				max_command_power_mult = 0.15
+				conscription_factor = 0.08
+				root_out_resistance_effectiveness_factor = 0.2
+			}
+			name = EGY_prophet_egypt
+			picture = EGY_light_prophet_his_teachings
+		}
+		EGY_prophet_egypt_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_prophet_egypt_3"}
+			allowed = { always = no }
+			modifier = {
+				global_building_slots_factor = 0.15
+				army_morale_factor = 0.11
+				land_reinforce_rate = 0.04
+				max_command_power_mult = 0.30
+				conscription_factor = 0.08
+				root_out_resistance_effectiveness_factor = 0.3
+				resistance_damage_to_garrison_on_our_occupied_states = 0.1
+			}
+			name = EGY_prophet_egypt
+			picture = EGY_light_prophet_his_teachings
+		}
+		
+		EGY_farouk_egypt = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_farouk_egypt"}
+			allowed = { always = no }
+			modifier = {
+				paternal_autocrat_drift = 0.01
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+				army_org_regain = 0.03
+				production_factory_start_efficiency_factor = 0.06
+			}
+			picture = EGY_farouks_personal_domain
+		}
+		EGY_farouk_egypt_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_farouk_egypt_2"}
+			allowed = { always = no }
+			modifier = {
+				paternal_autocrat_drift = 0.04
+				stability_factor = 0.03
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				army_org_regain = 0.06
+				production_factory_start_efficiency_factor = 0.08
+				production_lack_of_resource_penalty_factor = -0.05
+				intel_network_gain_factor = 0.02
+				foreign_subversive_activites = -0.05
+			}
+			name = EGY_farouk_egypt
+			picture = EGY_farouks_personal_domain
+		}
+		EGY_farouk_egypt_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_farouk_egypt_3"}
+			allowed = { always = no }
+			modifier = {
+				paternal_autocrat_drift = 0.06
+				stability_factor = 0.06
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
+				army_org_regain = 0.07
+				production_factory_start_efficiency_factor = 0.10
+				production_lack_of_resource_penalty_factor = -0.08
+				operative_slot = 1
+				intel_network_gain_factor = 0.05
+				foreign_subversive_activites = -0.06
+			}
+			name = EGY_farouk_egypt
+			picture = EGY_farouks_personal_domain
+		}
+		
+		EGY_pharaonism_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_pharaonism_idea"}
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.03
+				max_command_power_mult = 0.08
+				surrender_limit = 0.06
+				compliance_gain = 0.04
+				local_intel_to_enemies = -0.2
+				mobilization_speed = 0.15
+			}
+			picture = EGY_promoting_pharaonism
+		}
+		EGY_state_awqaf_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_state_awqaf_idea"}
+			allowed = { always = no }
+			modifier = {	
+				political_power_cost = -0.05
+				party_popularity_stability_factor = 0.10
+				conscription_factor = 0.04
+				resistance_decay = 0.03
+				stability_weekly = 0.002
+				encryption_factor = 0.05
+			}
+			picture = EGY_state_awqaf
+		}
+	}
+
+	industrial_concern = {# Industrial Manufacturer
+		heliopolis_chemical = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea heliopolis_chemical"}
+			allowed = {original_tag = EGY }
+			available = { has_completed_focus = EGY_civilian_investments }
+			traits = { chemical_producer }
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.1
+			}
+		}
+		egyptian_telephone_telegraph = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea egyptian_telephone_telegraph"}
+			allowed = {original_tag = EGY }
+			available = { has_completed_focus = EGY_egyptian_radio }
+			traits = { electronics_manufacturer }
+			modifier = {
+				production_speed_radar_station_factor = 0.1
+			}
+			research_bonus = {
+				electronics = 0.1
+				industry = 0.1
+			}
+		}
+		maadi_engineering = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea maadi_engineering"}
+			allowed = {original_tag = EGY }
+			available = { has_completed_focus = EGY_civilian_investments }
+			traits = { industrial_manufacturer }
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+	}
+	tank_manufacturer = {
+		designer = yes
+		hanomag_egypt = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hanomag_egypt"}
+			allowed = { original_tag = EGY }
+			available = {
+				GER = { has_idea = EGY_german_investments }
+			}
+			traits = { small_tank_producer_defense_0 }
+			research_bonus = { motorized_equipment = 0.1 }
+		}
+	}
+	materiel_manufacturer = {# Weapons Manufacturer
+		designer = yes
+		shoubra_engineering = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea shoubra_engineering"}
+			allowed = { original_tag = EGY }
+			available = { has_completed_focus = EGY_domestic_gunsmiths }
+			traits = { infantry_equipment_producer_offense_0 }
+			research_bonus = { infantry_weapons = 0.1 }
+		}
+		mauser_egypt = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea mauser_egypt"}
+			allowed = { original_tag = EGY }
+			available = {
+				GER = { has_idea = EGY_german_investments }
+			}
+			traits = { infantry_equipment_producer_offense_1 }
+			research_bonus = { infantry_weapons = 0.1 }
+		}
+		walther_egypt = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea walther_egypt"}
+			allowed = { original_tag = EGY }
+			available = {
+				GER = { has_idea = EGY_german_investments }
+			}
+			traits = { infantry_equipment_producer_allround_1 }
+			research_bonus = { infantry_weapons = 0.1 }
+		}
+
+		egyptian_engineering = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea egyptian_engineering"}
+			allowed = { original_tag = EGY }
+			available = { has_completed_focus = EGY_domestic_gunsmiths }
+			traits = { artillery_producer_mass_0 }
+			research_bonus = { artillery = 0.1 }
+		}
+
+		opel_egypt = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea opel_egypt"}
+			allowed = { original_tag = EGY }
+			available = {
+				GER = { has_idea = EGY_german_investments }
+			}
+			traits = { motorised_equipment_producer_mass_1 }
+			research_bonus = { motorized_equipment = 0.1 }
+		}
+
+		krupp_egypt = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea krupp_egypt"}
+			allowed = { original_tag = EGY }
+			available = {
+				GER = { has_idea = EGY_german_investments }
+			}
+			traits = { artillery_producer_offense_1 }
+			research_bonus = { artillery = 0.1 }
+		}
+
+	}
+	naval_manufacturer = {
+		designer = yes
+
+		deutsche_ost_afrika_linie_egypt = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea deutsche_ost_afrika_linie_egypt"}
+			allowed = { original_tag = EGY }
+			available = {
+				GER = { has_idea = EGY_german_investments }
+			}
+			traits = { small_ship_producer_mass_1 }
+			research_bonus = { naval_equipment = 0.1 }
+		}
+
+		suez_canal_company = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea suez_canal_company"}
+			allowed = { original_tag = EGY }
+			available = { owns_state = 753 }
+			traits = { cruiser_producer_defense_1 }
+			research_bonus = { naval_equipment = 0.1 }
+		}
+
+		red_sea_ports_authority = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea red_sea_ports_authority"}
+			allowed = { original_tag = EGY }
+			available = { has_completed_focus = EGY_red_see_trade }
+			traits = { small_ship_producer_defense_0 }
+			research_bonus = { naval_equipment = 0.1 }
+		}
+
+		alexandria_shipyard = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea alexandria_shipyard"}
+			allowed = { original_tag = EGY }
+			available = { has_completed_focus = EGY_dockyards_of_alexandria }
+			traits = { small_ship_producer_offense_0 }
+			research_bonus = { naval_equipment = 0.1 }
+		}
+
+	}
+
+	aircraft_manufacturer = {
+		designer = yes
+
+		egypt_air = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea egypt_air"}
+			allowed = { original_tag = EGY }
+			available = { has_completed_focus = EGY_egyptian_airports }
+			traits = { fighter_producer_mass_0 }
+			research_bonus = { air_equipment = 0.1 }
+		}
+
+		sudan_airways = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea sudan_airways"}
+			allowed = { original_tag = EGY }
+			available = { has_completed_focus = EGY_airports_for_sudan }
+			traits = { bomber_producer_mass_0 }
+			research_bonus = { air_equipment = 0.1 }
+		}
+
+	}
+
+}

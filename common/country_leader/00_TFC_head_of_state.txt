@@ -24,5 +24,13 @@ leader_traits = {
 		army_speed_factor = 0.1
 		mobilization_speed = 0.15
 	}
+	EGY_The_Red_Sultan = {
+		random = no
+		local_resources_factor = 0.1
+		political_power_gain = 0.12
+		consumer_goods_factor = -0.2
+		research_speed_factor = 0.1
+		war_support_factor = 0.07
+	}
 	
 }

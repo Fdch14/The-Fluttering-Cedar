@@ -207,6 +207,7 @@ country_event = {
 				}
 			}
 			PLS = {
+				set_country_flag = PLS_A_battle_of_life_and_death_Flag
 				transfer_state = 992
 				992 = { add_core_of = PLS}
 				454 = { add_core_of = PLS}
@@ -322,7 +323,7 @@ country_event = {
 		add_manpower = -1500
 	}
 	option = {
-		name = ISRC.6.a
+		name = ISRC.6.b
 		hidden_effect = {
 			country_event = {
 				id = ISRC.1

@@ -23,6 +23,13 @@ defined_text = {
   }
   text = {
     trigger = {
+      tag = EGY
+	  has_idea = EGY_Ahmed_Hussein_hog_npo
+    }
+    localization_key = SUL_OR_PM
+  }
+  text = {
+    trigger = {
       tag = PAL
 	  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
     }
@@ -85,6 +92,13 @@ defined_text = {
 	  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
     }
     localization_key = ISR_OR_CHI2
+  }
+  text = {
+    trigger = {
+      tag = EGY
+	  has_idea = EGY_Ahmed_Hussein_hog_npo
+    }
+    localization_key = SUL_OR_PM2
   }
 	text = {
     trigger = {
@@ -165,6 +179,12 @@ defined_text = {
     }
     localization_key = ISR_Morris_Abraham_Cohen_hog_rso
   }
+  text = {
+    trigger = {
+	  has_idea = EGY_Ahmed_Hussein_hog_npo
+    }
+    localization_key = EGY_Ahmed_Hussein_hog_npo
+  }
 	text = {
     trigger = {
 	  has_idea = PAL_Husayn_al_Khalidi_hog_sde
@@ -224,6 +244,12 @@ defined_text = {
 	  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
     }
     localization_key = GFX_Portrait_ISR_Morris_Abraham_Cohen
+  }
+  text = {
+    trigger = {
+	  has_idea = EGY_Ahmed_Hussein_hog_npo
+    }
+    localization_key = GFX_Portrait_EGY_Ahmed_Hussein
   }
 	text = {
     trigger = {

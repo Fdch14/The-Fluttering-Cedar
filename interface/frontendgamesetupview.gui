@@ -5,7 +5,7 @@ guiTypes = {
 		position = { x=0 y =0}	
 		size = { width=1 height =1}
 	}
-
+	
 	### bookmark entry
 	containerWindowType = {
 		name = "bookmark_entry"
@@ -710,8 +710,6 @@ guiTypes = {
 		
 		#### Minors ####
 		
-		
-		
 		instantTextBoxType = {
 			name = "Israel_name"
 			position = { x = 0 y = 836 }
@@ -791,6 +789,18 @@ guiTypes = {
 			font = "hoi_20b"
 			borderSize = {x = 0 y = -226}
 			text = "Palestine"
+			maxWidth = 340
+			maxHeight = 30	
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "mittelafrika"
+			position = { x = 1219 y = 836 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = -226}
+			text = "Egypt"
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre
@@ -1078,6 +1088,36 @@ guiTypes = {
 			maxHeight = 213
 			format = left
 			scrollbarType = standardtext_slider		
+		}
+		iconType = {
+			name = "GFX_Israel_notices_GUI_name"
+			spriteType = "GFX_notices_GUI"		
+			position = { x = 245  y = 505 }
+			pdx_tooltip = "GFX_Israel_notices_GUI_tooltip"
+		}
+		iconType = {
+			name = "GFX_Cyprus_notices_GUI_name"
+			spriteType = "GFX_notices_GUI"		
+			position = { x = 415  y = 505 }
+			pdx_tooltip = "GFX_Cyprus_notices_GUI_tooltip"
+		}
+		iconType = {
+			name = "GFX_Lebanon_notices_GUI_name"
+			spriteType = "GFX_notices_GUI"		
+			position = { x = 1095  y = 505 }
+			pdx_tooltip = "GFX_Lebanon_notices_GUI_tooltip"
+		}
+		iconType = {
+			name = "GFX_Palestine_notices_GUI_name"
+			spriteType = "GFX_notices_GUI"		
+			position = { x = 1265  y = 505 }
+			pdx_tooltip = "GFX_Palestine_notices_GUI_tooltip"
+		}
+		iconType = {
+			name = "GFX_Egypt_notices_GUI_name"
+			spriteType = "GFX_notices_GUI"		
+			position = { x = 1435  y = 505 }
+			pdx_tooltip = "GFX_Egypt_notices_GUI_tooltip"
 		}
 	}
 

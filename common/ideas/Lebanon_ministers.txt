@@ -1,5 +1,113 @@
 ideas = {
 	head_of_government = {
+		EGY_Ibrahim_Shoukry_hog_tot = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Ibrahim_Shoukry_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_influential_intellectual
+			}
+		}
+		EGY_Abbas_Halim_hog_syn = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Abbas_Halim_hog_syn"
+			}
+			traits = {
+				head_of_government
+				syndicalist
+				hog_architect_of_the_union
+			}
+		}
+		EGY_Shuhdi_Atiya_ash_Shafi_hog_rso = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Shuhdi_Atiya_ash_Shafi_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_ambitious_union_boss
+			}
+		}
+		EGY_Khaled_Mohieddin_hog_rso = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Khaled_Mohieddin_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_moderate_socialist
+			}
+		}
+		EGY_Anwar_Sadat_hog_pau = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Anwar_Sadat_hog_pau"
+			}
+			traits = {
+				head_of_government
+				paternal_autocrat
+				hog_supreme_ruler
+			}
+		}
+		EGY_Ahmed_Hussein_hog_npo = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Ahmed_Hussein_hog_npo"
+			}
+			traits = {
+				head_of_government
+				national_populist
+				hog_revelatory_speaker
+			}
+		}
 		ISR_Shmuel_Mikunis_hog_tot = {
 			allowed = { original_tag = ISR }
 			available = {
@@ -934,6 +1042,330 @@ ideas = {
 		}
 	}
 	person_of_influence = {
+		EGY_Ali_Sabri_eco_tot = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Ali_Sabri_eco_tot"
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_unionist
+			}
+		}
+		EGY_Adel_Hussein_for_tot = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Adel_Hussein_for_tot"
+			}
+			traits = {
+				foreign_minister
+				totalist
+				for_leading_diplomat
+			}
+		}
+		EGY_Mustafa_Kamel_Murad_sec_tot = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Mustafa_Kamel_Murad_sec_tot"
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_public_works_administrator
+			}
+		}
+		EGY_Youssef_Siddiq_eco_syn = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Youssef_Siddiq_eco_syn"
+			}
+			traits = {
+				economy_minister
+				syndicalist
+				eco_administrative_genius
+			}
+		}
+		EGY_Youssef_Darwish_for_syn = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Youssef_Darwish_for_syn"
+			}
+			traits = {
+				foreign_minister
+				syndicalist
+				for_apologetic_clerk
+			}
+		}
+		EGY_Zaki_Murad_sec_syn = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Zaki_Murad_sec_syn"
+			}
+			traits = {
+				security_minister
+				syndicalist
+				sec_compassionate_gentleman
+			}
+		}
+		EGY_Ismail_Sabri_Abdullah_eco_rso = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Ismail_Sabri_Abdullah_eco_rso"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_balanced_budget_economy
+			}
+		}
+		EGY_Hosni_al_Arabi_for_rso = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Hosni_al_Arabi_for_rso"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_ideological_crusader
+			}
+		}
+		EGY_Henri_Curiel_sec_rso = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Henri_Curiel_sec_rso"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_great_soul
+			}
+		}
+		EGY_Abdel_Hakim_Amer_eco_rso = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Abdel_Hakim_Amer_eco_rso"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_technocrat
+			}
+		}
+		EGY_Salah_Nasr_for_rso = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Salah_Nasr_for_rso"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_anti_imperialist_crusader
+			}
+		}
+		EGY_Kamal_el_Din_Hussein_sec_rso = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Kamal_el_Din_Hussein_sec_rso"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_young_guard
+			}
+		}
+		EGY_Hosni_Mubarak_eco_pau = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Hosni_Mubarak_eco_pau"
+			}
+			traits = {
+				economy_minister
+				paternal_autocrat
+				eco_construction_magnate
+			}
+		}
+		EGY_Abdel_Latif_Boghdadi_for_pau = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Abdel_Latif_Boghdadi_for_pau"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_tireless_organiser
+			}
+		}
+		EGY_Zakaria_Mohieddin_sec_pau = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Zakaria_Mohieddin_sec_pau"
+			}
+			traits = {
+				security_minister
+				paternal_autocrat
+				sec_organic_doctrinaire
+			}
+		}
+		EGY_Hussein_El_Shafei_eco_npo = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Hussein_El_Shafei_eco_npo"
+			}
+			traits = {
+				economy_minister
+				national_populist
+				eco_master_engineer
+			}
+		}
+		EGY_Fathi_Radwan_for_npo = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Fathi_Radwan_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_master_diplomat
+			}
+		}
+		EGY_Dear_Ali_Al_Masry_sec_npo = {
+			allowed = { original_tag = EGY }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea EGY_Dear_Ali_Al_Masry_sec_npo"
+			}
+			traits = {
+				security_minister
+				national_populist
+				sec_paramilitary_leader
+			}
+		}
 		ISR_Meir_Vilner_for_tot = {
 			allowed = { original_tag = ISR }
 			available = {

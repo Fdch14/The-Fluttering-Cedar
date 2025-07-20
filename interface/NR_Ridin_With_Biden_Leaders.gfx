@@ -4,6 +4,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/GRU_pm_button.png"
 	}
 	spriteType = {
+		name = "GFX_Portrait_EGY_Ahmed_Hussein"
+		texturefile = "gfx/leaders/EGY/Portrait_EGY_Ahmed_Hussein.png"
+	}
+	spriteType = {
 		name = "GFX_Portrait_OTT_Huseyin_Rauf"
 		texturefile = "gfx/leaders/MOJ/Portrait_OTT_Huseyin_Rauf.png"
 	}

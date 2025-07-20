@@ -885,6 +885,22 @@ country_event = { #Victory in the Mashriq
 				}
 			}
 		}
+		if = {
+			limit = {
+				PLS = { is_ai = yes }
+			}
+			add_to_faction = PLS
+			PLS = {
+				complete_national_focus = PLS_Cooperation_with_Egypt
+			}
+			transfer_state = 453
+		}
+		if = {
+			limit = {
+				SUE = { is_ai = yes }
+			}
+			annex_country = { target = SUE transfer_troops = no }
+		}
 	}
 
 	option = {	#Keep promise of self-determination

@@ -2223,7 +2223,7 @@ ideas = {
 		}
 		PAL_Communism_principles_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Syndicalism_principles_ideas" }
-			name = PAL_Syndicalism_principles_ideas
+			name = PAL_Communism_principles_ideas
 			picture = left_krestostrel
 			allowed = {always = no}
 			modifier = {
@@ -2235,7 +2235,7 @@ ideas = {
 		}
 		PAL_Communism_principles_ideas1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Syndicalism_principles_ideas1" }
-			name = PAL_Syndicalism_principles_ideas
+			name = PAL_Communism_principles_ideas
 			picture = left_krestostrel
 			allowed = {always = no}
 			modifier = {
@@ -2249,7 +2249,7 @@ ideas = {
 		}
 		PAL_Communism_principles_ideas2 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Syndicalism_principles_ideas2" }
-			name = PAL_Syndicalism_principles_ideas
+			name = PAL_Communism_principles_ideas
 			picture = left_krestostrel
 			allowed = {always = no}
 			modifier = {
@@ -2267,7 +2267,7 @@ ideas = {
 		}
 		PAL_Communism_principles_ideas3 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAL_Syndicalism_principles_ideas3" }
-			name = PAL_Syndicalism_principles_ideas
+			name = PAL_Communism_principles_ideas
 			picture = left_krestostrel
 			allowed = {always = no}
 			modifier = {

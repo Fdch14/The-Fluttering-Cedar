@@ -160,5 +160,29 @@ spriteTypes = {
 		name = "GFX_Aliyah_Movement"
 		texturefile = "gfx/interface/decision/Aliyah_Movement.png"
 	}
+	SpriteType = {
+		name = "GFX_Egyptian_Revolution"
+		texturefile = "gfx/interface/decision/Egyptian_Revolution.png"
+	}
+	SpriteType = {
+		name = "GFX_Youth_Egypt"
+		texturefile = "gfx/interface/decision/Youth_Egypt.png"
+	}
+	SpriteType = {
+		name = "GFX_Free_officer"
+		texturefile = "gfx/interface/decision/Free_officer.png"
+	}
+	SpriteType = {
+		name = "GFX_revolutionary_elections"
+		texturefile = "gfx/interface/decision/revolutionary_elections.png"
+	}
+	SpriteType = {
+		name = "GFX_Left_Alliance"
+		texturefile = "gfx/interface/decision/Left_Alliance.png"
+	}
+	SpriteType = {
+		name = "GFX_suit_faruq"
+		texturefile = "gfx/interface/decision/suit_faruq.png"
+	}
 
 }
