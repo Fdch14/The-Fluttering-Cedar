@@ -464,6 +464,69 @@ country_event = {
 		name = revegy.10.a
 	}
 }
+country_event = {
+	id = revegy.11
+	title = revegy.11.t
+	desc = revegy.11.d
+	picture = GFX_Egyptian_Revolution
+
+	trigger = {
+		tag = EGY
+		country_exists = PAL
+		date > 1938.10.1
+	}
+	
+	option = {
+		name = revegy.11.a
+		PLS = {
+			country_event = revegy.12
+		}
+	}
+}
+country_event = {
+	id = revegy.12
+	title = revegy.12.t
+	desc = revegy.12.d
+	picture = GFX_Egyptian_Revolution
+
+	is_triggered_only = yes
+
+	option = {
+		name = revegy.12.a
+		ai_chance = {
+			factor = 100
+		}
+		EGY = {
+			add_to_faction = PLS
+		}
+		PLS = {
+			complete_national_focus = PLS_Cooperation_with_Egypt
+		}
+	}
+	option = {
+		name = revegy.12.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = revegy.13
+	title = revegy.13.t
+	desc = revegy.13.d
+	picture = GFX_Egyptian_Revolution
+
+	trigger = {
+		tag = EGY
+		country_exists = ISR
+		date > 1938.10.1
+	}
+	
+	option = {
+		name = revegy.13.a
+		create_wargoal = { target = annex_everything type = ISR }
+	}
+}
 country_event = { # Introduction Event
 	id = egy.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event egy.1" }
