@@ -2,6 +2,1405 @@ add_namespace = pal
 add_namespace = MOJ
 add_namespace = MOJ_News
 add_namespace = sand_war
+add_namespace = palcon
+add_namespace = palnews
+add_namespace = palkur
+
+country_event = {	#Sheikh Mahmud Barzinji in talks with [PER.GetName]
+	id = palkur.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palkur.1" }
+	title = palkur.1.t
+	desc = palkur.1.d
+
+	picture = GFX_OTT_Oil1
+
+	trigger = {
+		PER = {
+			can_declare_war_on = TUR
+		}
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = palkur.1.a
+		add_political_power = -20
+		hidden_effect = {
+			country_event = {
+				id = palkur.2
+				days = 30
+			}
+			country_event = {
+				id = palkur.3
+				days = 45
+			}
+			country_event = {
+				id = palkur.4
+				days = 60
+			}
+			PER = {
+				country_event = {
+					id = palkur.5
+					days = 70
+				}
+			}
+			country_event = {
+				id = palkur.6
+				days = 80
+			}
+			PER = {
+				country_event = {
+					id = palkur.7
+					days = 90
+				}
+			}
+		}
+	}
+}
+
+country_event = {	#Chaos amidst the Jaf
+	id = palkur.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palkur.2" }
+	title = palkur.2.t
+	desc = palkur.2.d
+
+	picture = GFX_OTT_Sheikh_Sait
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = palkur.2.a
+		819 = {
+			ott_increase_revolt_risk = yes
+		}
+	}
+}
+
+country_event = {	#Rising dissent in Iraqi Kurdistan
+	id = palkur.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palkur.3" }
+	title = palkur.3.t
+	desc = palkur.3.d
+
+	picture = GFX_OTT_Arabs_Angry
+
+	trigger = {
+		PER = {
+			can_declare_war_on = TUR
+		}
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = palkur.3.a
+		819 = {
+			ott_increase_revolt_risk = yes
+		}
+	}
+}
+
+country_event = {	#Sheikh Mahmud arrives in Sulaymanyiah
+	id = palkur.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palkur.4" }
+	title = palkur.4.t
+	desc = palkur.4.d
+
+	picture = GFX_OTT_Rize2
+
+	trigger = {
+		PER = {
+			can_declare_war_on = TUR
+		}
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = palkur.4.a
+		add_political_power = -20
+		819 = {
+			ott_increase_revolt_risk = yes
+		}
+	}
+}
+
+country_event = {	#Border Conflict in Kurdistan
+	id = palkur.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palkur.5" }
+	title = palkur.5.t
+	desc = palkur.5.d
+
+	picture = GFX_OTT_Sheikh_Sait
+
+	trigger = {
+		PER = {
+			can_declare_war_on = TUR
+		}
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = palkur.5.a
+		add_political_power = -20
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = -500
+		}
+	}
+}
+
+country_event = {	#Iran denies any responsibility
+	id = palkur.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palkur.6" }
+	title = palkur.6.t
+	desc = palkur.6.d
+
+	picture = GFX_OTT_Raid_Porte
+
+	trigger = {
+		PER = {
+			can_declare_war_on = TUR
+		}
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = palkur.6.a
+		add_political_power = -10
+		add_opinion_modifier = {
+			target = PER
+			modifier = ott_per_issue
+		}
+		PER = {
+			add_opinion_modifier = {
+				target = TUR
+				modifier = ott_per_issue
+			}
+		}
+	}
+}
+
+country_event = {	#Return of Simqi
+	id = palkur.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palkur.7" }
+	title = palkur.7.t
+	desc = palkur.7.d
+
+	picture = GFX_OTT_Raid_Porte
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = palkur.7.a
+		TUR = {
+			country_event = {
+				id = palkur.8
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = palkur.7.b
+		add_stability = -0.10
+	}
+}
+
+country_event = {	#Iran issues an ultimatum
+	id = palkur.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palkur.8" }
+	title = palkur.8.t
+	desc = palkur.8.d
+
+	picture = GFX_OTT_Raid_Porte
+
+	trigger = {
+		PER = {
+			can_declare_war_on = TUR
+		}
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = palkur.8.a
+		PER = {
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			#country_event = {  #Moved to decision
+			#	id = kur.2
+			#	days = 7
+			#}
+		}
+	}
+}
+
+#####################
+### OPERATION ABU ###
+#####################
+add_namespace = palabu
+
+country_event = {	#Operation Abu'l-A'war
+	id = palabu.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palabu.1" }
+	title = palabu.1.t
+	desc = palabu.1.d
+
+	picture = GFX_OTT_Basra_Port
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = palabu.1.a
+		hidden_effect = {
+			country_event = {
+				id = palabu.2
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {	#The Fairey Swordfish
+	id = palabu.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palabu.2" }
+	title = palabu.2.t
+	desc = palabu.2.d
+
+	picture = GFX_report_event_OTT_Naval_Bomber
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = palabu.2.a
+		add_political_power = -20
+		ENG = {
+			add_political_power = 20
+		}
+		add_equipment_to_stockpile = {
+			type = small_plane_naval_bomber_airframe_0
+			amount = 30
+			producer = ENG
+		}
+		set_country_flag = operation_abu_ready
+	}
+	option = {
+		name = palabu.2.b
+
+	}
+}
+
+country_event = {	#Succesful Raid on Beirut
+	id = palabu.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palabu.3" }
+	title = palabu.3.t
+	desc = palabu.3.d
+
+	picture = GFX_report_event_OTT_Beirut_Assault
+
+	is_triggered_only = yes
+
+	trigger = {
+		EGY = {
+			has_country_flag = operation_abu_ready
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		trigger = {
+			tag = TUR
+		}
+		name = palabu.3.ott
+		if = {
+			limit = {
+				tag = TUR
+			}
+			hidden_effect = {
+				transfer_ship = {
+					prefer_name = "OHG Sultan Abdulhamid-i Sani"
+					type = heavy_cruiser 
+					target = XXA
+				}
+				transfer_ship = {
+					prefer_name = "OHG Istanköy"
+					type = light_cruiser 
+					target = XXA
+				}
+				destroy_ships = {
+					type = destroyer
+					count = 2
+				}
+				destroy_ships = {
+					type = ship_hull_heavy_1
+					count = 1
+				}
+				country_event = {
+					id = palabu.5
+					days = 180
+				}
+			}
+			custom_effect_tooltip = abu_raid_tt
+			183 = {
+				ott_increase_revolt_risk = yes
+			}
+			164 = {
+				ott_increase_revolt_risk = yes
+			}
+			187 = {
+				ott_increase_revolt_risk = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			tag = EGY
+		}
+		name = palabu.3.egy
+		add_war_support = 0.05
+		custom_effect_tooltip = abu_raid_tt
+		hidden_effect = {
+			add_equipment_to_stockpile = {
+				type = small_plane_naval_bomber_airframe
+				amount = -8
+				producer = ENG
+			}
+		}
+	}
+}
+
+country_event = {	#Failed Raid on Beirut
+	id = palabu.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palabu.4" }
+	title = palabu.4.t
+	desc = palabu.4.d
+
+	picture = GFX_report_event_OTT_Beirut_Assault
+
+	is_triggered_only = yes
+
+	trigger = {
+		EGY = {
+			has_country_flag = operation_abu_ready
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		trigger = {
+			tag = TUR
+		}
+		name = palabu.4.ott
+		if = {
+			limit = {
+				tag = TUR
+			}
+			992 = {
+				ott_decrease_revolt_risk = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			tag = EGY
+		}
+		name = palabu.4.egy
+		add_war_support = -0.05
+		hidden_effect = {
+			add_equipment_to_stockpile = {
+				type = small_plane_naval_bomber_airframe
+				amount = -15
+				producer = ENG
+			}
+		}
+	}
+}
+
+country_event = {	#Repairs completed
+	id = palabu.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palabu.5" }
+	title = palabu.5.t
+	desc = palabu.5.d
+
+	picture = GFX_report_event_JAP_battleship_kongo
+
+	is_triggered_only = yes
+
+	option = {
+		name = palabu.5.a
+		NSW = {
+			transfer_ship = {
+				prefer_name = "OHG Sultan Abdulhamid-i Sani"
+				type = heavy_cruiser 
+				target = TUR
+			}
+			transfer_ship = {
+				prefer_name = "OHG Istanköy"
+				type = light_cruiser 
+				target = TUR
+			}
+		}
+		custom_effect_tooltip = abu_repaired_tt
+	}
+}
+news_event = {	#American Forces depart the M.O.J.
+	id = palnews.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palnews.1" }
+	title = palnews.1.t
+	desc = palnews.1.d
+
+	picture = GFX_news_event_PAL_americans
+
+	is_triggered_only = yes
+
+	major = yes
+
+	show_major = {
+		OR = {
+			tag = TUR
+			tag = LBA
+			tag = EGY
+			tag = SAU
+			tag = JBS
+			tag = YEM
+			tag = OMA
+		}
+	}
+
+	option = {
+		name = palnews.1.a
+	}
+}
+
+news_event = {	#Protests escalate in Jerusalem
+	id = palnews.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palnews.2" }
+	title = palnews.2.t
+	desc = palnews.2.d
+
+	picture = GFX_news_event_PAL_riots
+
+	is_triggered_only = yes
+
+	major = yes
+
+	show_major = {
+		OR = {
+			tag = TUR
+			tag = LBA
+			tag = EGY
+			tag = SAU
+			tag = JBS
+			tag = YEM
+			tag = OMA
+		}
+	}
+
+	option = {
+		name = palnews.2.a
+	}
+}
+
+news_event = {	#Council closes off further Jewish immigration
+	id = palnews.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palnews.3" }
+	title = palnews.3.t
+	desc = palnews.3.d
+
+	picture = GFX_news_event_PAL_jewish_migration_halted
+
+	is_triggered_only = yes
+
+	major = yes
+
+	show_major = {
+		OR = {
+			tag = TUR
+			tag = LBA
+			tag = EGY
+			tag = SAU
+			tag = JBS
+			tag = YEM
+			tag = OMA
+		}
+	}
+
+	option = {
+		name = palnews.3.a
+	}
+}
+
+news_event = {	#General Strike in Palestine
+	id = palnews.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palnews.4" }
+	title = palnews.4.t
+	desc = palnews.4.d
+
+	picture = GFX_news_event_PAL_general_strike
+
+	is_triggered_only = yes
+
+	major = yes
+
+	show_major = {
+		OR = {
+			tag = TUR
+			tag = LBA
+			tag = EGY
+			tag = SAU
+			tag = JBS
+			tag = YEM
+			tag = OMA
+		}
+	}
+
+	option = {
+		name = palnews.4.a
+	}
+}
+
+news_event = {	#Congress of Haifa opens its doors
+	id = palnews.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palnews.5" }
+	title = palnews.5.t
+	desc = palnews.5.d
+
+	picture = GFX_news_event_PAL_haifa
+
+	is_triggered_only = yes
+
+	major = yes
+
+	show_major = {
+		OR = {
+			tag = TUR
+			tag = LBA
+			tag = EGY
+			tag = SAU
+			tag = JBS
+			tag = YEM
+			tag = OMA
+		}
+	}
+
+	option = {
+		name = palnews.5.a
+	}
+}
+
+news_event = {	#International Council votes for the abolishment of the M.O.J.
+	id = palnews.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palnews.6" }
+	title = palnews.6.t
+	desc = palnews.6.d
+
+	picture = GFX_news_event_PAL_ottos
+
+	is_triggered_only = yes
+
+	major = yes
+
+	show_major = {
+		OR = {
+			tag = LBA
+			tag = SAU
+			tag = JBS
+			tag = YEM
+			tag = OMA
+			tag = TUR
+		}
+	}
+
+	option = {
+		name = palnews.6.a
+		trigger = {
+			tag = TUR
+		}
+	}
+	option = {
+		name = palnews.6.b
+		trigger = {
+			NOT = { tag = TUR }
+		}
+	}
+}
+
+news_event = {	#Coup d'État in Cairo
+	id = palnews.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palnews.7" }
+	title = palnews.7.t
+	desc = palnews.7.d
+
+	picture = GFX_news_event_PAL_egy
+
+	is_triggered_only = yes
+
+	major = yes
+
+	show_major = {
+		OR = {
+			tag = TUR
+			tag = LBA
+			tag = SAU
+			tag = JBS
+			tag = YEM
+			tag = OMA
+		}
+	}
+
+	option = {
+		name = palnews.7.a
+		trigger = {
+			NOT = {
+				tag = TUR
+			}
+		}
+	}
+	option = {
+		name = palnews.7.b
+		trigger = {
+			tag = TUR
+		}
+	}
+}
+country_event = {	#The Third Arab Congress
+	id = palcon.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.1" }
+	title = palcon.1.t
+	desc = palcon.1.d
+
+	picture = GFX_report_event_MLT_arab
+
+	is_triggered_only = yes
+
+	option = {
+		name = palcon.1.a
+		set_global_flag = Arab_Congress
+		var:292.owner = {
+			country_event = {
+				id = palcon.2
+				hours = 4
+			}
+		}
+		country_event = {
+			id = palcon.4
+			days = 2
+		}
+		hidden_effect = {
+			country_event = {
+				id = palcon.6
+				days = 10
+			}
+			country_event = {
+				id = palcon.7
+				days = 13
+			}
+			country_event = {
+				id = palcon.8
+				days = 16
+			}
+			country_event = {
+				id = palcon.9
+				days = 19
+			}
+			country_event = {
+				id = palcon.10
+				days = 22
+			}
+			country_event = {
+				id = palcon.11
+				days = 25
+			}
+			country_event = {
+				id = palcon.12
+				days = 28
+			}
+			country_event = {
+				id = palcon.16
+				days = 32
+			}
+			country_event = {
+				id = palcon.17
+				days = 36
+			}
+		}
+	}
+}
+
+country_event = {	#Arabs receive invitation
+	id = palcon.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.2" }
+	title = palcon.2.t
+	desc = palcon.2.d
+
+	picture = GFX_report_event_MLT_arab
+
+	trigger = {
+		OR = {
+			tag = SAU
+			tag = JBS
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = palcon.2.a
+		EGY = {
+			country_event = {
+				id = palcon.3
+				hours = 4
+			}
+		}
+	}
+}
+
+country_event = {	#[FROM.GetName] has accepted our invitation
+	id = palcon.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.3" }
+	title = palcon.3.t
+	desc = palcon.3.d
+
+	picture = GFX_report_event_JBS_Barzan
+
+	is_triggered_only = yes
+
+	option = {
+		name = palcon.3.a
+		add_opinion_modifier = {
+			target = FROM
+			modifier = arabcon
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = arabcon
+			}
+		}
+	}
+}
+
+country_event = {	#Yemen sends representatives
+	id = palcon.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.4" }
+	title = palcon.4.t
+	desc = palcon.4.d
+
+	picture = GFX_report_event_SOM_Yemen
+
+	trigger = {
+		country_exists = YEM
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = palcon.4.a
+		add_opinion_modifier = {
+			target = YEM
+			modifier = arabcon
+		}
+		YEM = {
+			add_opinion_modifier = {
+				target = EGY
+				modifier = arabcon
+			}
+		}
+	}
+}
+
+country_event = {	#Iran sends a delegation
+	id = palcon.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.5" }
+	title = palcon.5.t
+	desc = palcon.5.d
+
+	picture = GFX_report_event_PER_starting_event
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = EGY
+			tag = PER
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.5.a
+		trigger = {
+			NOT = {
+				tag = PER
+			}
+		}
+		add_political_power = -5
+		if = {
+			limit = { tag = EGY }
+			reverse_add_opinion_modifier = {
+				target = YEM
+				modifier = arabconletiranin
+			}
+			if = {
+				limit = { country_exists = JBS }
+				reverse_add_opinion_modifier = {
+					target = JBS
+					modifier = arabconletiranin
+				}
+			}
+			else = {
+				reverse_add_opinion_modifier = {
+					target = SAU
+					modifier = arabconletiranin
+				}
+			}
+			reverse_add_opinion_modifier = {
+				target = HEJ
+				modifier = arabconletiranin
+			}
+			reverse_add_opinion_modifier = {
+				target = IRQ
+				modifier = arabconletiranin
+			}
+			reverse_add_opinion_modifier = {
+				target = SYR
+				modifier = arabconletiranin
+			}
+		}
+	}
+	option = {
+		name = palcon.5.b
+		trigger = {
+			tag = PER
+		}
+		add_political_power = 5
+	}
+}
+
+country_event = {	#Idris I arrives in Cairo
+	id = palcon.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.6" }
+	title = palcon.6.t
+	desc = palcon.6.d
+
+	picture = GFX_OTT_Idris_Back
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = EGY
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.6.a
+	}
+}
+
+country_event = {	#Syrian delegation speaks
+	id = palcon.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.7" }
+	title = palcon.7.t
+	desc = palcon.7.d
+
+	picture = GFX_OTT_Arab_Protest_Indoors
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = EGY
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.7.a
+	}
+}
+
+country_event = {	#Iraqi delegation speaks
+	id = palcon.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.8" }
+	title = palcon.8.t
+	desc = palcon.8.d
+
+	picture = GFX_OTT_Arab_Protest_Indoors
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = EGY
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.8.a
+	}
+}
+
+country_event = {	#Ghazi bin Faisal speaks
+	id = palcon.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.9" }
+	title = palcon.9.t
+	desc = palcon.9.d
+
+	picture = GFX_OTT_Arab_Protest_Indoors
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = EGY
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.9.a
+		add_political_power = -5
+	}
+}
+
+country_event = {	#Farouk I condemns the Zionist settlers
+	id = palcon.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.10" }
+	title = palcon.10.t
+	desc = palcon.10.d
+
+	picture = GFX_OTT_Arab_Protest_Indoors
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = EGY
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.10.a
+	}
+}
+
+country_event = {	#Idris pleads for help
+	id = palcon.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.11" }
+	title = palcon.11.t
+	desc = palcon.11.d
+
+	picture = GFX_OTT_Idris_Back
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = EGY
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			"LBA" = {
+				country_event = libya.3
+			}
+		}
+	}
+
+	option = {
+		name = palcon.11.a
+		ai_chance = {
+			factor = 70
+		}
+		"LBA" = {
+			add_to_variable = {
+				var = idris_support
+				value = 30
+			}
+		}
+	}
+	option = {
+		name = palcon.11.b
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+country_event = {	#The Egyptian ambitions
+	id = palcon.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.12" }
+	title = palcon.12.t
+	desc = palcon.12.d
+
+	picture = GFX_report_event_EGY_egypt_levant
+
+	is_triggered_only = yes
+
+	option = {
+		name = palcon.12.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = EGY_syria
+					option = EGY_SYR_Republic
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = EGY_syria
+					option = EGY_SYR_Monarchy
+				}
+			}
+		}
+		set_global_flag = EGY_cunts
+		add_state_claim = 454
+		add_state_claim = 455
+		add_state_claim = 992
+		add_state_claim = 553
+		add_state_claim = 554
+		add_state_claim = 680
+		add_state_claim = 995
+		hidden_effect = {
+			country_event = palcon.13
+		}
+	}
+	option = {
+		name = palcon.12.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = EGY_syria
+					option = EGY_SYR_Annexed
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = palcon.14
+		}
+	}
+}
+
+country_event = {	#Egypt announces its goals
+	id = palcon.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.13" }
+	title = palcon.13.t
+	desc = palcon.13.d
+
+	picture = GFX_report_event_EGY_egypt_levant
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = PER
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.13.a
+		if = {
+			limit = { tag = PER }
+			country_event = {
+				id = palcon.15
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {	#Egypt announces its goals
+	id = palcon.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.14" }
+	title = palcon.14.t
+	desc = palcon.14.d
+
+	picture = GFX_report_event_EGY_egypt_levant
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = PER
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.14.a
+		if = {
+			limit = { tag = PER }
+			country_event = {
+				id = palcon.15
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {	#Iran leaves the conference
+	id = palcon.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.15" }
+	title = palcon.15.t
+	desc = palcon.15.d
+
+	picture = GFX_report_event_PER_starting_event
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = EGY
+			tag = PER
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.15.a
+		trigger = {
+			NOT = {
+				tag = PER
+			}
+		}
+	}
+	option = {
+		name = palcon.15.b
+		trigger = {
+			tag = PER
+		}
+	}
+}
+
+country_event = {	#The matter of Socialist support
+	id = palcon.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.16" }
+	title = palcon.16.t
+	desc = palcon.16.d
+
+	picture = GFX_report_event_EGY_egyptian_palace
+	
+	trigger = {
+		country_exists = FRA
+		FRA = { has_capitulated = no }
+	}
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = EGY
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.16.a
+		ai_chance = {
+			factor = 60
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+		hidden_effect = {
+			if = {
+				limit = { tag = EGY }
+				give_resource_rights = { receiver = FRA state = 552 }
+				give_resource_rights = { receiver = FRA state = 447 }
+			}
+			else_if = {
+				limit = { tag = YEM }
+				give_resource_rights = { receiver = FRA state = 293 }
+			}
+			else = {
+				give_resource_rights = { receiver = FRA state = 292 }
+			}
+		}
+	}
+	option = {
+		name = palcon.16.b
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+country_event = {	#Creation of the Cairo Pact
+	id = palcon.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.17" }
+	title = palcon.17.t
+	desc = palcon.17.d
+
+	picture = GFX_report_event_MLT_arab
+
+	is_triggered_only = yes
+
+	option = {
+		name = palcon.17.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = SAU
+			NOT = {
+				JBS = {
+					has_war_with = SAU
+				}
+			}
+		}
+		set_country_flag = joined_cairo_pact
+	}
+	option = {
+		name = palcon.17.b
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			OR = {
+				tag = SAU
+				tag = JBS
+				tag = YEM
+			}
+		}
+		add_war_support = -0.05
+	}
+	option = {
+		name = palcon.17.c
+		trigger = {
+			tag = EGY
+		}
+		create_faction = "Cairo Axis"
+		var:292.owner = {
+			if = {
+				limit = {
+					OR = {
+						tag = SAU
+						tag = JBS
+					}
+				}
+				country_event = {
+					id = palcon.17
+					days = 1
+				}
+			}
+		}
+		YEM = {
+			country_event = {
+				id = palcon.17
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = palcon.17.e
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = YEM
+		}
+		#join CP later on
+	}
+}
+
+country_event = {	#The Conference draws to an end
+	id = palcon.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event palcon.18" }
+	title = palcon.18.t
+	desc = palcon.18.d
+
+	picture = GFX_report_event_EGY_egyptian_palace
+
+	is_triggered_only = yes
+	
+	major = yes
+	show_major = {
+		OR = {
+			tag = EGY
+			tag = SAU
+			tag = YEM
+			tag = JBS
+		}
+	}
+
+	option = {
+		name = palcon.18.a
+	}
+}
 country_event = {	#Introduction Event
 	id = pal.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event pal.1" }
@@ -123,6 +1522,26 @@ country_event = {	#Black Monday hits the M.O.J.
 		add_stability = -0.2
 		add_ideas = pal_black_monday
 		set_country_flag = pal_black_monday_flag
+	}
+}
+country_event = {	#Radio Palestine (EGY)
+	id = pal.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event pal.7" }
+	title = pal.7.t
+	desc = pal.7.d
+	picture = GFX_report_event_EGY_egypt_levant
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = pal.7.a
+		add_war_support = 0.03
+		PAL = {
+			decrease_ruling_party_popularity_by_5 = yes
+			add_ideas = pal_arab_broadcasts
+		}
 	}
 }
 news_event = {
