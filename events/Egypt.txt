@@ -475,6 +475,7 @@ country_event = {
 		country_exists = PAL
 		date > 1938.10.1
 	}
+	
 	fire_only_once = yes
 	
 	option = {
@@ -522,6 +523,7 @@ country_event = {
 		country_exists = ISR
 		date > 1938.10.1
 	}
+	
 	fire_only_once = yes
 	
 	option = {
