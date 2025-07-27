@@ -267,6 +267,1247 @@ MOJ_attack_EGY = {
 }
 
 ISR_coup_crisis_decision = {
+	ISR_Rebuild_Hyksos = {
+
+		icon = soldierly_discipline
+
+		available = {
+			453 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			446 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			447 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			452 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			552 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1008 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			456 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			457 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = EGY }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_Chariots_in_the_Land_of_Hyksos
+		}
+
+		complete_effect = {	
+			EGY = {
+				set_cosmetic_tag = EGY_hyksos
+				transfer_state = 453
+				transfer_state = 446
+				transfer_state = 447
+				transfer_state = 452
+				transfer_state = 552
+				transfer_state = 1008
+				transfer_state = 456
+				transfer_state = 457
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = EGY autonomy_state = autonomous_territory }
+			hidden_effect = {
+				EGY = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Nubian = {
+
+		icon = soldierly_discipline
+
+		available = {
+			862 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			551 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1007 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1011 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1010 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			549 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = SUD }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_Nubian_Pyramids
+		}
+
+		complete_effect = {	
+			SUD = {
+				set_cosmetic_tag = SUD_Nubian
+				transfer_state = 862
+				transfer_state = 551
+				transfer_state = 1007
+				transfer_state = 1011
+				transfer_state = 1010
+				transfer_state = 549
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			}
+			set_autonomy = { target = SUD autonomy_state = autonomous_territory }
+			hidden_effect = {
+				SUD = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Amazigh = {
+
+		icon = soldierly_discipline
+
+		available = {
+			451 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			663 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1009 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			448 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			273 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			450 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = LBA }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_Berber_Brothers
+		}
+
+		complete_effect = {	
+			LBA = {
+				set_cosmetic_tag = LBA_Amazigh
+				transfer_state = 451
+				transfer_state = 663
+				transfer_state = 1009
+				transfer_state = 448
+				transfer_state = 273
+				transfer_state = 450
+				every_state = {
+					limit = { is_core_of = TRP }
+					add_core_of = LBA
+				}
+				450 = { add_core_of = LBA }
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			}
+			set_autonomy = { target = LBA autonomy_state = autonomous_territory }
+			hidden_effect = {
+				LBA = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Carthage = {
+
+		icon = soldierly_discipline
+
+		available = {
+			665 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			458 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			460 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			459 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			805 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			513 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			514 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = TUN }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_The_Sign_of_Tanit_above_Carthage_Once_Again
+		}
+
+		complete_effect = {	
+			TUN = {
+				set_cosmetic_tag = TUN_Carthage
+				transfer_state = 665
+				transfer_state = 458
+				transfer_state = 460
+				transfer_state = 459
+				transfer_state = 805
+				transfer_state = 513
+				transfer_state = 514
+				every_state = {
+					limit = { is_core_of = ALG }
+					add_core_of = TUN
+				}
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			}
+			set_autonomy = { target = TUN autonomy_state = autonomous_territory }
+			hidden_effect = {
+				TUN = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Numidia = {
+
+		icon = soldierly_discipline
+
+		available = {
+			290 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			461 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			462 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1318 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			699 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = MOR }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_The_Numidians_Return_to_the_Fold
+		}
+
+		complete_effect = {	
+			MOR = {
+				set_cosmetic_tag = MOR_Numidia
+				transfer_state = 290
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 1318
+				transfer_state = 699
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			}
+			set_autonomy = { target = MOR autonomy_state = autonomous_territory }
+			hidden_effect = {
+				MOR = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Puntland = {
+
+		icon = soldierly_discipline
+
+		available = {
+			550 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			961 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			923 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			921 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			920 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			924 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			271 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			922 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			919 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			944 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			268 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			906 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1297 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			269 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			559 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = SOM }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_Canaanites_Within_Punt
+		}
+
+		complete_effect = {	
+			SOM = {
+				set_cosmetic_tag = SOM_Puntland
+				transfer_state = 550
+				transfer_state = 961
+				transfer_state = 923
+				transfer_state = 921
+				transfer_state = 920
+				transfer_state = 924
+				transfer_state = 271
+				transfer_state = 922
+				transfer_state = 919
+				transfer_state = 944
+				transfer_state = 268
+				transfer_state = 906
+				transfer_state = 1297
+				transfer_state = 269
+				transfer_state = 559
+				every_state = {
+					limit = { is_core_of = ETH }
+					add_core_of = SOM
+				}
+				every_state = {
+					limit = { is_core_of = ERI }
+					add_core_of = SOM
+				}
+				268 = { add_core_of = SOM }
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			}
+			set_autonomy = { target = SOM autonomy_state = autonomous_territory }
+			hidden_effect = {
+				SOM = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Himyar = {
+
+		icon = soldierly_discipline
+
+		available = {
+			982 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			981 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			293 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			752 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			659 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = YEM }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_Cross_to_Himyar
+		}
+
+		complete_effect = {	
+			YEM = {
+				set_cosmetic_tag = YEM_Himyar
+				transfer_state = 982
+				transfer_state = 981
+				transfer_state = 293
+				transfer_state = 752
+				transfer_state = 659
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			}
+			set_autonomy = { target = YEM autonomy_state = autonomous_territory }
+			hidden_effect = {
+				YEM = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Phoenicia = {
+
+		icon = soldierly_discipline
+
+		available = {
+			553 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = LEB }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_The_Phoenician_Purple_Must_Flow
+		}
+
+		complete_effect = {	
+			LEB = {
+				set_cosmetic_tag = LEB_Phoenicia
+				transfer_state = 553
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = NR_LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = LEB autonomy_state = autonomous_territory }
+			hidden_effect = {
+				LEB = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Aram = {
+
+		icon = soldierly_discipline
+
+		available = {
+			554 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			995 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			680 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			677 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			344 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			350 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = SYR }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_The_Exiled_Returns_as_a_Liberator
+		}
+
+		complete_effect = {	
+			SYR = {
+				set_cosmetic_tag = SYR_Aram
+				transfer_state = 554
+				transfer_state = 995
+				transfer_state = 680
+				transfer_state = 677
+				transfer_state = 344
+				transfer_state = 350
+				350 = { add_core_of = SYR }
+				344 = { add_core_of = SYR }
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = SYR autonomy_state = autonomous_territory }
+			hidden_effect = {
+				SYR = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Babylonian = {
+
+		icon = soldierly_discipline
+
+		available = {
+			812 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			291 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			349 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			676 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			819 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			352 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = IRQ }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_The_Exiled_Returns_as_a_Liberator
+		}
+
+		complete_effect = {	
+			IRQ = {
+				set_cosmetic_tag = IRQ_Babylonian
+				transfer_state = 812
+				transfer_state = 291
+				transfer_state = 349
+				transfer_state = 676
+				transfer_state = 819
+				transfer_state = 352
+				819 = { add_core_of = IRQ }
+				352 = { add_core_of = IRQ }
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = IRQ autonomy_state = autonomous_territory }
+			hidden_effect = {
+				IRQ = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Lydia = {
+
+		icon = soldierly_discipline
+
+		available = {
+			341 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1225 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			773 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			340 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			343 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			339 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			187 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			164 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			342 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			346 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			49 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			356 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			355 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			345 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			354 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1000 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1213 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1001 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = TUR }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_The_Exiled_Returns_as_a_Liberator
+		}
+
+		complete_effect = {	
+			TUR = {
+				set_cosmetic_tag = TUR_Lydia
+				transfer_state = 341
+				transfer_state = 1225
+				transfer_state = 773
+				transfer_state = 340
+				transfer_state = 343
+				transfer_state = 339
+				transfer_state = 187
+				transfer_state = 164
+				transfer_state = 342
+				transfer_state = 346
+				transfer_state = 49
+				transfer_state = 356
+				transfer_state = 355
+				transfer_state = 345
+				transfer_state = 354
+				transfer_state = 1000
+				transfer_state = 1213
+				transfer_state = 1001
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = TUR autonomy_state = autonomous_territory }
+			hidden_effect = {
+				TUR = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Edom = {
+
+		icon = soldierly_discipline
+
+		available = {
+			455 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = PLS }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_The_Exiled_Returns_as_a_Liberator
+		}
+
+		complete_effect = {	
+			PLS = {
+				set_cosmetic_tag = PLS_Edom
+				transfer_state = 455
+				455 = { add_core_of = PLS }
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = PLS autonomy_state = autonomous_territory }
+			hidden_effect = {
+				PLS = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Qedar = {
+
+		icon = soldierly_discipline
+
+		available = {
+			1035 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			994 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			915 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			675 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			991 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			292 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			656 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			678 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			907 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			993 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			658 = { is_owned_and_controlled_by_ROOT_or_subject = yes }]
+			NOT = { country_exists = SAU }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_Whispers_of_the_Desert
+		}
+
+		complete_effect = {	
+			SAU = {
+				set_cosmetic_tag = SAU_Qedar
+				transfer_state = 1035
+				transfer_state = 994
+				transfer_state = 915
+				transfer_state = 675
+				transfer_state = 991
+				transfer_state = 292
+				transfer_state = 656
+				transfer_state = 678
+				transfer_state = 907
+				transfer_state = 993
+				transfer_state = 658
+				every_state = {
+					limit = { is_core_of = OMA }
+					add_core_of = SAU
+				}
+				every_state = {
+					limit = { is_core_of = JBS }
+					add_core_of = SAU
+				}
+				every_state = {
+					limit = { is_core_of = TRU }
+					add_core_of = SAU
+				}
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = SAU autonomy_state = autonomous_territory }
+			hidden_effect = {
+				SAU = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Nabataean = {
+
+		icon = soldierly_discipline
+
+		available = {
+			754 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			679 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = HEJ }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_Whispers_of_the_Desert
+		}
+
+		complete_effect = {	
+			HEJ = {
+				set_cosmetic_tag = HEJ_Nabataean
+				transfer_state = 754
+				transfer_state = 679
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = HEJ autonomy_state = autonomous_territory }
+			hidden_effect = {
+				HEJ = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Maka = {
+
+		icon = soldierly_discipline
+
+		available = {
+			1024 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			859 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			294 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			347 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = OMA }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_Liberation_of_Maka
+		}
+
+		complete_effect = {	
+			OMA = {
+				set_cosmetic_tag = OMA_Maka
+				transfer_state = 1024
+				transfer_state = 859
+				transfer_state = 294
+				transfer_state = 347
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = OMA autonomy_state = autonomous_territory }
+			hidden_effect = {
+				OMA = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Hadast = {
+
+		icon = soldierly_discipline
+
+		available = {
+			1336 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			169 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			795 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			118 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			173 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1343 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			168 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1316 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1337 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			175 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1342 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			170 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			951 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			171 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			174 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			793 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1339 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1344 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			176 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			41 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1340 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1341 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			167 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			166 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1338 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			172 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			940 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			165 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1313 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			177 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			178 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = SPR }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_Hannibals_Triumph
+		}
+
+		complete_effect = {	
+			SPR = {
+				set_cosmetic_tag = SPR_Hadast
+				transfer_state = 1336
+				transfer_state = 169
+				transfer_state = 795
+				transfer_state = 118
+				transfer_state = 173
+				transfer_state = 1343
+				transfer_state = 168
+				transfer_state = 1316
+				transfer_state = 1337
+				transfer_state = 175
+				transfer_state = 1342
+				transfer_state = 170
+				transfer_state = 951
+				transfer_state = 171
+				transfer_state = 174
+				transfer_state = 793
+				transfer_state = 1339
+				transfer_state = 1344
+				transfer_state = 176
+				transfer_state = 41
+				transfer_state = 1340
+				transfer_state = 1341
+				transfer_state = 167
+				transfer_state = 166
+				transfer_state = 1338
+				transfer_state = 172
+				transfer_state = 940
+				transfer_state = 165
+				transfer_state = 1313
+				transfer_state = 177
+				transfer_state = 178
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = SPR autonomy_state = autonomous_territory }
+			hidden_effect = {
+				SPR = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Zarephath = {
+
+		icon = soldierly_discipline
+
+		available = {
+			817 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			984 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			1334 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			19 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			31 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			22 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			21 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			762 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			763 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			735 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			32 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			26 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			25 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			23 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			20 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			983 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			14 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			30 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			33 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			27 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			18 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			785 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			980 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			17 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			24 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			16 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			15 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = FRA }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_Elephants_in_Gaul_Once_Again
+		}
+
+		complete_effect = {	
+			FRA = {
+				set_cosmetic_tag = FRA_Zarephath
+				transfer_state = 817
+				transfer_state = 984
+				transfer_state = 1334
+				transfer_state = 19
+				transfer_state = 31
+				transfer_state = 22
+				transfer_state = 21
+				transfer_state = 762
+				transfer_state = 763
+				transfer_state = 735
+				transfer_state = 32
+				transfer_state = 26
+				transfer_state = 25
+				transfer_state = 23
+				transfer_state = 20
+				transfer_state = 983
+				transfer_state = 14
+				transfer_state = 30
+				transfer_state = 33
+				transfer_state = 27
+				transfer_state = 18
+				transfer_state = 785
+				transfer_state = 980
+				transfer_state = 17
+				transfer_state = 24
+				transfer_state = 16
+				transfer_state = 15
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = FRA autonomy_state = autonomous_territory }
+			hidden_effect = {
+				FRA = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
+	ISR_Rebuild_Tartessos = {
+
+		icon = soldierly_discipline
+
+		available = {
+			180 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			181 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			112 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			179 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			697 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			698 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
+			NOT = { country_exists = POR }
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = CNA_A_Colony_Forgotten_Long_Ago
+		}
+
+		complete_effect = {	
+			POR = {
+				set_cosmetic_tag = POR_Tartessos
+				transfer_state = 180
+				transfer_state = 181
+				transfer_state = 112
+				transfer_state = 179
+				transfer_state = 697
+				transfer_state = 698
+				create_country_leader = {
+					name = "Administrative Agency"
+					picture = "gfx/leaders/PAL/Portrait_ISR_Canaanist_Leader.png"
+					desc = "POLITICS_ANTOINE_PETER_ARIDA_DESC"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+			set_autonomy = { target = POR autonomy_state = autonomous_territory }
+			hidden_effect = {
+				POR = {
+					add_popularity = { ideology = paternal_autocrat popularity = 1 }
+					set_politics = {
+						ruling_party = paternal_autocrat
+						name = ISR_administrative_agency_party
+						long_name = ISR_administrative_agency_party_long
+						elections_allowed = no
+					}
+				}
+			}
+		}
+	}
 	Haganah_in_action_dec = {
 		icon = bear
 		activation = {                         

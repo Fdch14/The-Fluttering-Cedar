@@ -111,5 +111,21 @@ spriteTypes = {
 	name = "GFX_ideology_tot_islamism_subtype"
 	texturefile = "gfx/interface/ideologies/tot_islamism_group.png"
 	}
+	spriteType = {
+	name = "GFX_ideology_canaanist_subtype"
+	texturefile = "gfx/interface/ideologies/canaanist_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_socdem_canaanist_subtype"
+	texturefile = "gfx/interface/ideologies/socdem_canaanist_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_soclib_canaanist_subtype"
+	texturefile = "gfx/interface/ideologies/soclib_canaanist_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_natpop_canaanist_subtype"
+	texturefile = "gfx/interface/ideologies/natpop_canaanist_group.png"
+	}
 	
 }

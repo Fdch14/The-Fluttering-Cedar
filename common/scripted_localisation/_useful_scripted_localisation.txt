@@ -201,6 +201,30 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			has_country_leader_ideology = canaanist_subtype
+		}
+		localization_key = canaanist_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_canaanist_subtype
+		}
+		localization_key = socdem_canaanist_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_canaanist_subtype
+		}
+		localization_key = soclib_canaanist_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_canaanist_subtype
+		}
+		localization_key = natpop_canaanist_subtype
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = tot_islamism_subtype
 		}
 		localization_key = tot_islamism_subtype

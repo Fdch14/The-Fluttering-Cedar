@@ -60,7 +60,6 @@ ISR_coup_crisis_decision = {
 	}
 	visible = {
 		tag = ISR
-		has_war_with = EGY
 	}
 	priority = 500
 }
@@ -76,4 +75,16 @@ PLS_Palestinian_Civil_War_decision = {
 	}
 	priority = 500
 	visible_when_empty = yes
+}
+CYP_Cyprus_revolt = {
+	icon = GFX_decision_cat_caf_rebelion
+	allowed = {
+		tag = CYP
+	}
+	visible = {
+		tag = CYP
+	}
+	priority = 500
+	visible_when_empty = yes
+	scripted_gui = Cyprus_ui_window
 }

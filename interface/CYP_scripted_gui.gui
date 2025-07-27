@@ -1,0 +1,66 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Cyprus_ui_window"
+		position = { x = 0 y = -100 }
+		size = { width = 500 height = 320 }
+		
+		buttonType = {
+			name = "Famagusta_Map"
+			spriteType = "GFX_decision_CYP_famagusta"		
+			position = { x = 20  y = -145 }
+			pdx_tooltip = "CYP_Famagusta_tt"
+			pdx_tooltip_delayed = "CYP_Famagusta_TITLE"
+			orientation = center
+			scale = 0.9
+		}
+		buttonType = {
+			name = "Kyrenia_Map"
+			spriteType = "GFX_decision_CYP_kyrenia"		
+			position = { x = -100  y = -75 }
+			pdx_tooltip = "CYP_Kyrenia_tt"
+			pdx_tooltip_delayed = "CYP_Kyrenia_TITLE"
+			orientation = center
+			scale = 0.9
+		}
+		buttonType = {
+			name = "Larnaca_Map"
+			spriteType = "GFX_decision_CYP_larnaca"		
+			position = { x = -60  y = -10 }
+			pdx_tooltip = "CYP_Larnaca_tt"
+			pdx_tooltip_delayed = "CYP_Larnaca_TITLE"
+			orientation = center
+			scale = 0.9
+		}
+		buttonType = {
+			name = "Limassol_Map"
+			spriteType = "GFX_decision_CYP_limassol"		
+			position = { x = -158  y = 25 }
+			pdx_tooltip = "CYP_Limassol_tt"
+			pdx_tooltip_delayed = "CYP_Limassol_TITLE"
+			orientation = center
+			scale = 0.9
+		}
+		buttonType = {
+			name = "Nicosia_Map"
+			spriteType = "GFX_decision_CYP_nicosia"		
+			position = { x = -170  y = -48 }
+			pdx_tooltip = "CYP_Nicosia_tt"
+			pdx_tooltip_delayed = "CYP_Nicosia_TITLE"
+			orientation = center
+			scale = 0.9
+		}
+		buttonType = {
+			name = "Paphos_Map"
+			spriteType = "GFX_decision_CYP_paphos"		
+			position = { x = -230  y = -26 }
+			pdx_tooltip = "CYP_Paphos_tt"
+			pdx_tooltip_delayed = "CYP_Paphos_TITLE"
+			orientation = center
+			scale = 0.9
+		}
+		
+		
+	}
+}
+
+

@@ -1,0 +1,40 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_decision_CYP_famagusta"
+		texturefile = "gfx/interface/GUI/Cyprus/CYP_famagusta.png"
+		transparencecheck = yes
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_decision_CYP_kyrenia"
+		texturefile = "gfx/interface/GUI/Cyprus/CYP_kyrenia.png"
+		transparencecheck = yes
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_decision_CYP_larnaca"
+		texturefile = "gfx/interface/GUI/Cyprus/CYP_larnaca.png"
+		transparencecheck = yes
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_decision_CYP_limassol"
+		texturefile = "gfx/interface/GUI/Cyprus/CYP_limassol.png"
+		transparencecheck = yes
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_decision_CYP_nicosia"
+		texturefile = "gfx/interface/GUI/Cyprus/CYP_nicosia.png"
+		transparencecheck = yes
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_decision_CYP_paphos"
+		texturefile = "gfx/interface/GUI/Cyprus/CYP_paphos.png"
+		transparencecheck = yes
+		noOfFrames = 3
+	}
+	
+}

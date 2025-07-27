@@ -128,6 +128,7 @@ ideologies = {
 	syndicalist = {
 		types = {
 			syndicalist_subtype = {} #generic
+			canaanist_subtype = {can_be_randomly_selected = no}
 			syn_haganah_military_rule_subtype = {can_be_randomly_selected = no}
 			arab_socialism = {can_be_randomly_selected = no} #Arab Socialism
 			anarcho_syndicalist_subtype = {can_be_randomly_selected = no} #AnSynd
@@ -340,6 +341,7 @@ ideologies = {
 	social_democrat = {
 		types = {
 			social_democrat_subtype = {}
+			socdem_canaanist_subtype = {can_be_randomly_selected = no}
 			socdem_haganah_military_rule_subtype = {can_be_randomly_selected = no}
 			socdem_zionism = {can_be_randomly_selected = no}
 			syndie_social_democrat_subtype = {can_be_randomly_selected = no}
@@ -456,6 +458,7 @@ ideologies = {
 	social_liberal = {
 		types = {
 			social_liberal_subtype = {}
+			soclib_canaanist_subtype = {can_be_randomly_selected = no}
 			centrist_subtype = {can_be_randomly_selected = no}
 			soclib_agrarianism_subtype = {can_be_randomly_selected = no}
 			soclib_true_whigs_subtype = {can_be_randomly_selected = no}
@@ -970,6 +973,7 @@ ideologies = {
 
 	national_populist = {
 		types = {
+			natpop_canaanist_subtype = {can_be_randomly_selected = no}
 			islamic_legionism_subtype = {can_be_randomly_selected = no}
 			ustase_crusader_ideology_subtype = {can_be_randomly_selected = no}
 			ustase_fiumeism_subtype = {can_be_randomly_selected = no}

@@ -1,6 +1,287 @@
 add_namespace = Israel
 add_namespace = ISRC
+add_namespace = Canaan
 
+country_event = {
+	id = Canaan.1
+	title = Canaan.1.t
+	desc = Canaan.1.d
+	picture = GFX_Canaanite_conspiracy
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = Canaan.1.a
+		set_politics = {
+			ruling_party = totalist
+			name = ISR_national_populist_party
+			long_name = ISR_national_populist_party_long
+		}
+		set_cosmetic_tag = ISR_national_worker
+		create_country_leader = {
+			name = "Avraham Stern"
+			picture = "gfx/leaders/PAL/Portrait_GRU_Avraham_Stern.png"
+			expire = "1.1.1"
+			ideology = british_maximism_subtype
+		}
+		add_popularity = { ideology = totalist popularity = 1 }
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/PAL/Portrait_GRU_Avraham_Stern.png"
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = ISR_Avraham_Stern_hog_tot
+		remove_ideas_with_trait = economy_minister
+		add_ideas = ISR_Israel_Eldad_eco_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = ISR_Aryeh_Ben_Eliezer_for_tot
+		remove_ideas_with_trait = security_minister
+		add_ideas = ISR_Eliyahu_Giladi_sec_tot
+		set_country_flag = Lehi_The_regime_is_solid_Flag
+		complete_national_focus = ISR_Stern_our_Savior
+	}
+	option = {
+		name = Canaan.1.b
+		set_cosmetic_tag = ISR_Canaan
+		set_politics = {
+			ruling_party = totalist
+			name = ISR_canaanist_party
+			long_name = ISR_canaanist_party_long
+		}
+		create_country_leader = {
+			name = "Nathan Yellin-Mor"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Nathan_Yellin_Mor.png"
+			expire = "1.1.1"
+			ideology = tot_reformed_natsynd_subtype
+		}
+		set_party_name = {
+			ideology = syndicalist
+			name = ISR_canaanist_party
+			long_name = ISR_canaanist_party_long
+		}
+		set_party_name = {
+			ideology = social_democrat
+			name = ISR_canaanist_party
+			long_name = ISR_canaanist_party_long
+		}
+		set_party_name = {
+			ideology = social_liberal
+			name = ISR_canaanist_party
+			long_name = ISR_canaanist_party_long
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = ISR_canaanist_party
+			long_name = ISR_canaanist_party_long
+		}
+		create_country_leader = {
+			name = "Amos Kenan"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Amos_Kenan.png"
+			expire = "1.1.1"
+			ideology = canaanist_subtype
+		}
+		create_country_leader = {
+			name = "Boaz Evron"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Boaz_Evron.png"
+			expire = "1.1.1"
+			ideology = socdem_canaanist_subtype
+		}
+		create_country_leader = {
+			name = "Uri Avnery"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Uri_Avnery.png"
+			expire = "1.1.1"
+			ideology = soclib_canaanist_subtype
+		}
+		create_country_leader = {
+			name = "Yonatan Ratosh"
+			picture = "gfx/leaders/PAL/Portrait_ISR_Yonatan_Ratosh.png"
+			expire = "1.1.1"
+			ideology = natpop_canaanist_subtype
+		}
+		complete_national_focus = CNA_The_Curved_Sword_is_Sharpened
+		has_country_flag = Canaan_Flag
+		hidden_effect = {
+			set_popularities = {
+				totalist = 20
+				syndicalist = 25
+				radical_socialist = 0
+				social_democrat = 10
+				social_liberal = 15
+				market_liberal = 0
+				social_conservative = 0
+				authoritarian_democrat = 0
+				paternal_autocrat = 0
+				national_populist = 30
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = Canaan.2
+	title = Canaan.2.t
+	desc = Canaan.2.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = Canaan.2.a
+		every_country = {
+			limit = {
+				is_puppet_of = ISR
+			}
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = Canaan.2.b
+		annex_country = { target = MOR transfer_troops = yes }
+		annex_country = { target = TUN transfer_troops = yes }
+		annex_country = { target = LBA transfer_troops = yes }
+		annex_country = { target = EGY transfer_troops = yes }
+		annex_country = { target = SUD transfer_troops = yes }
+		annex_country = { target = SOM transfer_troops = yes }
+		annex_country = { target = HEJ transfer_troops = yes }
+		annex_country = { target = SAU transfer_troops = yes }
+		annex_country = { target = YEM transfer_troops = yes }
+		annex_country = { target = OMA transfer_troops = yes }
+		annex_country = { target = IRQ transfer_troops = yes }
+		annex_country = { target = SYR transfer_troops = yes }
+		annex_country = { target = PLS transfer_troops = yes }
+		annex_country = { target = TUR transfer_troops = yes }
+		annex_country = { target = SRD transfer_troops = yes }
+		annex_country = { target = LEB transfer_troops = yes }
+		every_state = {
+			limit = { is_core_of = MOR }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = TUN }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = LBA }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = EGY }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = SUD }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = SOM }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = HEJ }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = SAU }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = YEM }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = OMA }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = IRQ }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = SYR }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = PLS }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = TUR }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = SRD }
+			add_core_of = ISR
+		}
+		every_state = {
+			limit = { is_core_of = LEB }
+			add_core_of = ISR
+		}
+				
+	}
+	
+}
+country_event = {
+	id = Canaan.3
+	title = Canaan.3.t
+	desc = Canaan.3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = Canaan.3.a
+	}
+	
+}
+country_event = {
+	id = Canaan.4
+	title = Canaan.4.t
+	desc = Canaan.4.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = Canaan.4.a
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		complete_national_focus = CNA_From_the_Furnace_a_Nation_Forged
+	}
+	option = {
+		name = Canaan.4.b
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+		}
+		complete_national_focus = CNA_The_Covenant_of_the_Living
+	}
+	option = {
+		name = Canaan.4.c
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		complete_national_focus = CNA_To_Speak_Hebrew_Is_Not_Enough
+	}
+	option = {
+		name = Canaan.4.e
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		complete_national_focus = CNA_Cast_Off_the_Chains_of_Israel
+	}
+	
+}
 country_event = {
 	id = ISRC.1
 	title = ISRC.1.t

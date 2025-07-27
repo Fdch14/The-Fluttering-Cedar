@@ -1,0 +1,47 @@
+scripted_gui = {
+
+	Cyprus_ui_window = {
+		context_type = decision_category
+		window_name = "Cyprus_ui_window"
+
+		ai_check = {
+			always = no
+		}
+
+		triggers = {
+		}
+		
+		visible = {
+		}
+		
+		properties = {
+			Famagusta_Map = {
+				image = "GFX_decision_CYP_famagusta"
+				frame = Famagusta_Map_frame
+			}
+			Kyrenia_Map = {
+				image = "GFX_decision_CYP_kyrenia"
+				frame = Kyrenia_Map_frame
+			}
+			Larnaca_Map = {
+				image = "GFX_decision_CYP_larnaca"
+				frame = Larnaca_Map_frame
+			}
+			Limassol_Map = {
+				image = "GFX_decision_CYP_limassol"
+				frame = Limassol_Map_frame
+			}
+			Nicosia_Map = {
+				image = "GFX_decision_CYP_nicosia"
+				frame = Nicosia_Map_frame
+			}
+			Paphos_Map = {
+				image = "GFX_decision_CYP_paphos"
+				frame = Paphos_Map_frame
+			}
+		}
+
+		effects = {
+		}
+	}
+}

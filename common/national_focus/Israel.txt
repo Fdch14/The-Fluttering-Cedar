@@ -9,6 +9,904 @@ focus_tree={
 	}
 	default=no
 	focus={
+		id=CNA_The_Curved_Sword_is_Sharpened
+		icon=CANAAN_The_Curved_Sword_is_Sharpened
+		x=15
+		y=19
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			add_ideas = ISR_Sharp_blade_swung_idea
+		}
+	}
+	focus={
+		id=CNA_Chariots_in_the_Land_of_Hyksos
+		icon=CANAAN_Chariots_in_the_Land_of_Hyksos
+		x=13
+		y=21
+		prerequisite={focus=CNA_The_Hidden_Flame}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = EGY type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Hyksos
+		}
+	}
+	focus={
+		id=CNA_Berber_Brothers
+		icon=CANAAN_Berber_Brothers
+		x=12
+		y=22
+		prerequisite={focus=CNA_Chariots_in_the_Land_of_Hyksos}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = LBA type = annex_everything }
+			create_wargoal = { target = TRP type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Amazigh
+		}
+	}
+	focus={
+		id=CNA_The_Sign_of_Tanit_above_Carthage_Once_Again
+		icon=CANAAN_The_Sign_of_Tanit_above_Carthage_Once_Again
+		x=12
+		y=23
+		prerequisite={focus=CNA_Berber_Brothers}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = NFA type = annex_everything }
+			create_wargoal = { target = ALG type = annex_everything }
+			create_wargoal = { target = TUN type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Carthage
+			add_ideas = ISR_Modern_Elephant_idea
+		}
+	}
+	focus={
+		id=CNA_The_Numidians_Return_to_the_Fold
+		icon=CANAAN_The_Numidians_Return_to_the_Fold
+		x=12
+		y=24
+		prerequisite={focus=CNA_The_Sign_of_Tanit_above_Carthage_Once_Again}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = MOR type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Numidia
+		}
+	}
+	focus={
+		id=CNA_Nubian_Pyramids
+		icon=CANAAN_Nubian_Pyramids
+		x=14
+		y=22
+		prerequisite={focus=CNA_Chariots_in_the_Land_of_Hyksos}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = SUD type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Nubian
+		}
+	}
+	focus={
+		id=CNA_Canaanites_Within_Punt
+		icon=CANAAN_Canaanites_Within_Punt
+		x=14
+		y=23
+		prerequisite={focus=CNA_Nubian_Pyramids}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = SOM type = annex_everything }
+			create_wargoal = { target = ETH type = annex_everything }
+			create_wargoal = { target = DJI type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Puntland
+		}
+	}
+	focus={
+		id=CNA_Cross_to_Himyar
+		icon=CANAAN_Cross_to_Himyar
+		x=14
+		y=24
+		prerequisite={focus=CNA_Canaanites_Within_Punt}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = YEM type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Himyar
+		}
+	}
+	focus={
+		id=CNA_The_Phoenician_Purple_Must_Flow
+		icon=CANAAN_The_Phoenician_Purple_Must_Flow
+		x=17
+		y=21
+		prerequisite={focus=CNA_The_Hidden_Flame}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = LEB type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Phoenicia
+		}
+	}
+	focus={
+		id=CNA_Cedar_Ships_in_Sherden
+		icon=CANAAN_Cedar_Ships_in_Sherden
+		x=18
+		y=23
+		prerequisite={focus=CNA_The_Phoenician_Purple_Must_Flow}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = SRD type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Sherden
+		}
+	}
+	focus={
+		id=CNA_The_Exiled_Returns_as_a_Liberator
+		icon=CANAAN_The_Exiled_Returns_as_a_Liberator
+		x=16
+		y=23
+		prerequisite={focus=CNA_The_Phoenician_Purple_Must_Flow}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = TUR type = annex_everything }
+			create_wargoal = { target = SYR type = annex_everything }
+			create_wargoal = { target = IRQ type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Aram
+			unlock_decision_tooltip = ISR_Rebuild_Lydia
+			unlock_decision_tooltip = ISR_Rebuild_Babylonian
+			unlock_decision_tooltip = ISR_Rebuild_Edom
+		}
+	}
+	focus={
+		id=CNA_The_Hidden_Flame
+		icon=CANAAN_The_Hidden_Flame
+		x=15
+		y=20
+		prerequisite={focus=CNA_The_Curved_Sword_is_Sharpened}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Sharp_blade_swung_idea
+				add_idea = ISR_Sharp_blade_swung_idea1
+			}
+			create_intelligence_agency = yes
+		}
+	}
+	focus={
+		id=CNA_Whispers_of_the_Desert
+		icon=CANAAN_Whispers_of_the_Desert
+		x=17
+		y=22
+		prerequisite={focus=CNA_The_Phoenician_Purple_Must_Flow}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = SAU type = annex_everything }
+			create_wargoal = { target = JBS type = annex_everything }
+			create_wargoal = { target = TRU type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Qedar
+			unlock_decision_tooltip = ISR_Rebuild_Nabataean
+		}
+	}
+	focus={
+		id=CNA_Liberation_of_Maka
+		icon=CANAAN_Liberation_of_Maka
+		x=17
+		y=24
+		prerequisite={focus=CNA_Cedar_Ships_in_Sherden}
+		prerequisite={focus=CNA_The_Exiled_Returns_as_a_Liberator}
+		prerequisite={focus=CNA_Whispers_of_the_Desert}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = OMA type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Maka
+		}
+	}
+	focus={
+		id=CNA_Canaanites_Reunited_Under_the_Alef
+		icon=CANAAN_Canaanites_Reunited_Under_the_Alef
+		x=15
+		y=25
+		prerequisite={focus=CNA_The_Numidians_Return_to_the_Fold}
+		prerequisite={focus=CNA_Cross_to_Himyar}
+		prerequisite={focus=CNA_Liberation_of_Maka}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			MOR = {
+				is_puppet_of = ISR
+			}
+			TUN = {
+				is_puppet_of = ISR
+			}
+			LBA = {
+				is_puppet_of = ISR
+			}
+			EGY = {
+				is_puppet_of = ISR
+			}
+			SUD = {
+				is_puppet_of = ISR
+			}
+			TUR = {
+				is_puppet_of = ISR
+			}
+			SYR = {
+				is_puppet_of = ISR
+			}
+			IRQ = {
+				is_puppet_of = ISR
+			}
+			PLS = {
+				is_puppet_of = ISR
+			}
+			YEM = {
+				is_puppet_of = ISR
+			}
+			SOM = {
+				is_puppet_of = ISR
+			}
+			HEJ = {
+				is_puppet_of = ISR
+			}
+			SAU = {
+				is_puppet_of = ISR
+			}
+			OMA = {
+				is_puppet_of = ISR
+			}
+			SRD = {
+				is_puppet_of = ISR
+			}
+			LEB = {
+				is_puppet_of = ISR
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Canaan.2
+		}
+	}
+	focus={
+		id=CNA_Attack_of_the_Sea_Peoples
+		icon=CANAAN_Attack_of_the_Sea_Peoples
+		x=23
+		y=19
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = CNA_Canaanites_Reunited_Under_the_Alef
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_faction = tyre_pact
+			add_ideas = ISR_The_anger_of_the_sea_people_idea
+		}
+	}
+	focus={
+		id=CNA_Hannibals_Triumph
+		icon=CANAAN_Hannibals_Triumph
+		x=22
+		y=20
+		prerequisite={focus=CNA_Attack_of_the_Sea_Peoples}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = SPR type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Hadast
+		}
+	}
+	focus={
+		id=CNA_Elephants_in_Gaul_Once_Again
+		icon=CANAAN_Elephants_in_Gaul_Once_Again
+		x=22
+		y=21
+		prerequisite={focus=CNA_Hannibals_Triumph}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = FRA type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Zarephath
+		}
+	}
+	focus={
+		id=CNA_A_Colony_Forgotten_Long_Ago
+		icon=CANAAN_A_Colony_Forgotten_Long_Ago
+		x=22
+		y=22
+		prerequisite={focus=CNA_Elephants_in_Gaul_Once_Again}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = POR type = annex_everything }
+			unlock_decision_tooltip = ISR_Rebuild_Tartessos
+		}
+	}
+	focus={
+		id=CNA_Baal_an_Gael
+		icon=CANAAN_Baal_an_Gael
+		x=22
+		y=23
+		prerequisite={focus=CNA_A_Colony_Forgotten_Long_Ago}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = IRE type = annex_everything }
+		}
+	}
+	focus={
+		id=CNA_Right_the_Wrongs_of_History
+		icon=CANAAN_Right_the_Wrongs_of_History
+		x=24
+		y=20
+		prerequisite={focus=CNA_Attack_of_the_Sea_Peoples}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Canaan.3
+			swap_ideas = {
+				remove_idea = ISR_The_anger_of_the_sea_people_idea
+				add_idea = ISR_The_anger_of_the_sea_people_idea1
+			}
+		}
+	}
+	focus={
+		id=CNA_Antiochus_Folly
+		icon=CANAAN_Antiochus_Folly
+		x=24
+		y=21
+		prerequisite={focus=CNA_Right_the_Wrongs_of_History}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = GRE type = annex_everything }
+		}
+	}
+	focus={
+		id=CNA_Scipios_Flame_Returned
+		icon=CANAAN_Scipios_Flame_Returned
+		x=24
+		y=22
+		prerequisite={focus=CNA_Antiochus_Folly}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = ITA type = annex_everything }
+			create_wargoal = { target = SIC type = annex_everything }
+			create_wargoal = { target = PAP type = annex_everything }
+		}
+	}
+	focus={
+		id=CNA_Our_Oldest_Ally
+		icon=CANAAN_Our_Oldest_Ally
+		x=24
+		y=23
+		prerequisite={focus=CNA_Scipios_Flame_Returned}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = PER type = annex_everything }
+		}
+	}
+	focus={
+		id=CNA_Across_the_Great_Purple
+		icon=CANAAN_Across_the_Great_Purple
+		x=23
+		y=24
+		prerequisite={focus=CNA_Baal_an_Gael}
+		prerequisite={focus=CNA_Our_Oldest_Ally}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			create_wargoal = { target = USA type = annex_everything }
+			create_wargoal = { target = CSA type = annex_everything }
+			create_wargoal = { target = BBR type = annex_everything }
+			create_wargoal = { target = TEX type = annex_everything }
+			create_wargoal = { target = WCC type = annex_everything }
+			create_wargoal = { target = CAL type = annex_everything }
+			create_wargoal = { target = COR type = annex_everything }
+			every_state = {
+				limit = { is_core_of = USA }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = CSA }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = COR }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = BBR }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = TEX }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = WCC }
+				add_core_of = ISR
+			}
+			every_state = {
+				limit = { is_core_of = CAL }
+				add_core_of = ISR
+			}
+		}
+	}
+	focus={
+		id=CNA_Democracy_in_Canaan
+		icon=CANAAN_Democracy_in_Canaan
+		x=35
+		y=19
+		cost=1
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Canaan_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			country_event = Canaan.4
+		}
+	}
+	focus={
+		id=CNA_From_the_Furnace_a_Nation_Forged
+		icon=CANAAN_From_the_Furnace_a_Nation_Forged
+		x=29
+		y=20
+		prerequisite={focus=CNA_Democracy_in_Canaan}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			add_ideas = ISR_Hebrew_Worker_Rebirth_idea
+		}
+	}
+	focus={
+		id=CNA_Tammuz_Walks_Among_the_Peasants
+		icon=CANAAN_Tammuz_Walks_Among_the_Peasants
+		x=28
+		y=21
+		prerequisite={focus=CNA_From_the_Furnace_a_Nation_Forged}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+			swap_ideas = {
+				remove_idea = ISR_Hebrew_Worker_Rebirth_idea
+				add_idea = ISR_Hebrew_Worker_Rebirth_idea1
+			}
+		}
+	}
+	focus={
+		id=CNA_The_Council_of_the_Burning_Ones
+		icon=CANAAN_The_Council_of_the_Burning_Ones
+		x=30
+		y=21
+		prerequisite={focus=CNA_From_the_Furnace_a_Nation_Forged}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Council_of_Syndicates_idea
+		}
+	}
+	focus={
+		id=CNA_The_Red_Sun_of_the_Desert
+		icon=CANAAN_The_Red_Sun_of_the_Desert
+		x=29
+		y=22
+		prerequisite={focus=CNA_Tammuz_Walks_Among_the_Peasants}
+		prerequisite={focus=CNA_The_Council_of_the_Burning_Ones}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Council_of_Syndicates_idea
+				add_idea = ISR_Council_of_Syndicates_idea1
+			}
+		}
+	}
+	focus={
+		id=CNA_The_Covenant_of_the_Living
+		icon=CANAAN_The_Covenant_of_the_Living
+		x=33
+		y=20
+		prerequisite={focus=CNA_Democracy_in_Canaan}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			add_ideas = ISR_Republican_Constitution_idea
+		}
+	}
+	focus={
+		id=CNA_Between_Jerusalem_and_Athens
+		icon=CANAAN_Between_Jerusalem_and_Athens
+		x=32
+		y=21
+		prerequisite={focus=CNA_The_Covenant_of_the_Living}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Republican_Constitution_idea
+				add_idea = ISR_Republican_Constitution_idea1
+			}
+		}
+	}
+	focus={
+		id=CNA_The_Tablets_Are_Broken_Again
+		icon=CANAAN_The_Tablets_Are_Broken_Again
+		x=34
+		y=21
+		prerequisite={focus=CNA_The_Covenant_of_the_Living}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Civic_mythology_idea
+		}
+	}
+	focus={
+		id=CNA_Jericho_Without_Walls
+		icon=CANAAN_Jericho_Without_Walls
+		x=33
+		y=22
+		prerequisite={focus=CNA_Between_Jerusalem_and_Athens}
+		prerequisite={focus=CNA_The_Tablets_Are_Broken_Again}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Civic_mythology_idea
+				add_idea = ISR_Civic_mythology_idea1
+			}
+		}
+	}
+	focus={
+		id=CNA_To_Speak_Hebrew_Is_Not_Enough
+		icon=CANAAN_To_Speak_Hebrew_Is_Not_Enough
+		x=37
+		y=20
+		prerequisite={focus=CNA_Democracy_in_Canaan}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			add_ideas = ISR_Cultural_awakening_idea
+		}
+	}
+	focus={
+		id=CNA_The_Great_Unlearning
+		icon=CANAAN_The_Great_Unlearning
+		x=36
+		y=21
+		prerequisite={focus=CNA_To_Speak_Hebrew_Is_Not_Enough}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Cultural_awakening_idea
+				add_idea = ISR_Cultural_awakening_idea1
+			}
+		}
+	}
+	focus={
+		id=CNA_Canaan_Is_Not_a_Dream
+		icon=CANAAN_Canaan_Is_Not_a_Dream
+		x=38
+		y=21
+		prerequisite={focus=CNA_To_Speak_Hebrew_Is_Not_Enough}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_completed_focus = CNA_The_Great_Unlearning
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Cultural_awakening_idea1
+				add_idea = ISR_Cultural_awakening_idea2
+			}
+		}
+	}
+	focus={
+		id=CNA_Canaan_Belongs_to_the_Living
+		icon=CANAAN_Canaan_Belongs_to_the_Living
+		x=37
+		y=22
+		prerequisite={focus=CNA_The_Great_Unlearning}
+		prerequisite={focus=CNA_Canaan_Is_Not_a_Dream}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = ISR_Cultural_awakening_idea2
+				add_idea = ISR_Cultural_awakening_idea3
+			}
+		}
+	}
+	focus={
+		id=CNA_Cast_Off_the_Chains_of_Israel
+		icon=CANAAN_Cast_Off_the_Chains_of_Israel
+		x=41
+		y=20
+		prerequisite={focus=CNA_Democracy_in_Canaan}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+			add_ideas = ISR_Civic_mythology_idea
+		}
+	}
+	focus={
+		id=CNA_The_Tablets_Were_Lies
+		icon=CANAAN_The_Tablets_Were_Lies
+		x=40
+		y=21
+		prerequisite={focus=CNA_Cast_Off_the_Chains_of_Israel}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Hebrew_Worker_Rebirth_idea
+		}
+	}
+	focus={
+		id=CNA_El_Returns_to_His_Throne
+		icon=CANAAN_El_Returns_to_His_Throne
+		x=42
+		y=21
+		prerequisite={focus=CNA_Cast_Off_the_Chains_of_Israel}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Cultural_awakening_idea
+		}
+	}
+	focus={
+		id=CNA_The_Canaanite_State_Is_Born_Again
+		icon=CANAAN_The_Canaanite_State_Is_Born_Again
+		x=41
+		y=22
+		prerequisite={focus=CNA_The_Tablets_Were_Lies}
+		prerequisite={focus=CNA_El_Returns_to_His_Throne}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = ISR_Republican_Constitution_idea
+		}
+	}
+	focus={
 		id=ISR_Stern_withstood_the_pressure
 		icon=Lehi_Stern_withstood_the_pressure
 		x=8
@@ -691,6 +1589,10 @@ focus_tree={
 			swap_ideas = {
 				remove_idea = ISR_youth_power_ideas1
 				add_idea = ISR_youth_power_ideas2
+			}
+			country_event = {
+				id = Canaan.4
+				days = 5
 			}
 		}
 	}
@@ -6453,7 +7355,7 @@ focus_tree={
 						}
 					}
 				}
-				every_state = { add_core_of = LEB }
+				every_state = { add_core_of = ISR }
 			}
 		}
 	}

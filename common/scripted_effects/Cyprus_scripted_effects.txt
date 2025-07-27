@@ -1,0 +1,277 @@
+	
+	CYP_scope_of_influence = {
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_famagusta < 0 } }
+					set_variable = { CYP_villaye_influence_famagusta = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_famagusta < 0 } }
+					set_variable = { CYP_socialist_influence_famagusta = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_famagusta < 0 } }
+					set_variable = { CYP_greek_influence_famagusta = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_kyrenia < 0 } }
+					set_variable = { CYP_villaye_influence_kyrenia = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_kyrenia < 0 } }
+					set_variable = { CYP_socialist_influence_kyrenia = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_kyrenia < 0 } }
+					set_variable = { CYP_greek_influence_kyrenia = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_larnaca < 0 } }
+					set_variable = { CYP_villaye_influence_larnaca = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_larnaca < 0 } }
+					set_variable = { CYP_socialist_influence_larnaca = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_larnaca < 0 } }
+					set_variable = { CYP_greek_influence_larnaca = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_limassol < 0 } }
+					set_variable = { CYP_villaye_influence_limassol = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_limassol < 0 } }
+					set_variable = { CYP_socialist_influence_limassol = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_limassol < 0 } }
+					set_variable = { CYP_greek_influence_limassol = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_nicosia < 0 } }
+					set_variable = { CYP_villaye_influence_nicosia = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_nicosia < 0 } }
+					set_variable = { CYP_socialist_influence_nicosia = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_nicosia < 0 } }
+					set_variable = { CYP_greek_influence_nicosia = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_paphos < 0 } }
+					set_variable = { CYP_villaye_influence_paphos = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_paphos < 0 } }
+					set_variable = { CYP_socialist_influence_paphos = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_paphos < 0 } }
+					set_variable = { CYP_greek_influence_paphos = 0 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_famagusta > 1 } }
+					set_variable = { CYP_villaye_influence_famagusta = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_famagusta > 1 } }
+					set_variable = { CYP_socialist_influence_famagusta = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_famagusta > 1 } }
+					set_variable = { CYP_greek_influence_famagusta = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_kyrenia > 1 } }
+					set_variable = { CYP_villaye_influence_kyrenia = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_kyrenia > 1 } }
+					set_variable = { CYP_socialist_influence_kyrenia = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_kyrenia > 1 } }
+					set_variable = { CYP_greek_influence_kyrenia = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_larnaca > 1 } }
+					set_variable = { CYP_villaye_influence_larnaca = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_larnaca > 1 } }
+					set_variable = { CYP_socialist_influence_larnaca = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_larnaca > 1 } }
+					set_variable = { CYP_greek_influence_larnaca = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_limassol > 1 } }
+					set_variable = { CYP_villaye_influence_limassol = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_limassol > 1 } }
+					set_variable = { CYP_socialist_influence_limassol = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_limassol > 1 } }
+					set_variable = { CYP_greek_influence_limassol = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_nicosia > 1 } }
+					set_variable = { CYP_villaye_influence_nicosia = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_nicosia > 1 } }
+					set_variable = { CYP_socialist_influence_nicosia = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_nicosia > 1 } }
+					set_variable = { CYP_greek_influence_nicosia = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_villaye_influence_paphos > 1 } }
+					set_variable = { CYP_villaye_influence_paphos = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_socialist_influence_paphos > 1 } }
+					set_variable = { CYP_socialist_influence_paphos = 1 }
+				}
+				if = {
+					limit = { check_variable = { CYP_greek_influence_paphos > 1 } }
+					set_variable = { CYP_greek_influence_paphos = 1 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_villaye_influence_famagusta > CYP_socialist_influence_famagusta }
+						check_variable = { CYP_villaye_influence_famagusta > CYP_greek_influence_famagusta }
+					}
+					set_variable = { THIS.Famagusta_Map_frame = 1 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_socialist_influence_famagusta > CYP_villaye_influence_famagusta }
+						check_variable = { CYP_socialist_influence_famagusta > CYP_greek_influence_famagusta }
+					}
+					set_variable = { THIS.Famagusta_Map_frame = 2 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_greek_influence_famagusta > CYP_socialist_influence_famagusta }
+						check_variable = { CYP_greek_influence_famagusta > CYP_villaye_influence_famagusta }
+					}
+					set_variable = { THIS.Famagusta_Map_frame = 3 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_villaye_influence_kyrenia > CYP_socialist_influence_kyrenia }
+						check_variable = { CYP_villaye_influence_kyrenia > CYP_greek_influence_kyrenia }
+					}
+					set_variable = { THIS.Kyrenia_Map_frame = 1 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_socialist_influence_kyrenia > CYP_villaye_influence_kyrenia }
+						check_variable = { CYP_socialist_influence_kyrenia > CYP_greek_influence_kyrenia }
+					}
+					set_variable = { THIS.Kyrenia_Map_frame = 2 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_greek_influence_kyrenia > CYP_socialist_influence_kyrenia }
+						check_variable = { CYP_greek_influence_kyrenia > CYP_villaye_influence_kyrenia }
+					}
+					set_variable = { THIS.Kyrenia_Map_frame = 3 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_villaye_influence_larnaca > CYP_socialist_influence_larnaca }
+						check_variable = { CYP_villaye_influence_larnaca > CYP_greek_influence_larnaca }
+					}
+					set_variable = { THIS.Larnaca_Map_frame = 1 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_socialist_influence_larnaca > CYP_villaye_influence_larnaca }
+						check_variable = { CYP_socialist_influence_larnaca > CYP_greek_influence_larnaca }
+					}
+					set_variable = { THIS.Larnaca_Map_frame = 2 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_greek_influence_larnaca > CYP_socialist_influence_larnaca }
+						check_variable = { CYP_greek_influence_larnaca > CYP_villaye_influence_larnaca }
+					}
+					set_variable = { THIS.Larnaca_Map_frame = 3 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_villaye_influence_limassol > CYP_socialist_influence_limassol }
+						check_variable = { CYP_villaye_influence_limassol > CYP_greek_influence_limassol }
+					}
+					set_variable = { THIS.Limassol_Map_frame = 1 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_socialist_influence_limassol > CYP_villaye_influence_limassol }
+						check_variable = { CYP_socialist_influence_limassol > CYP_greek_influence_limassol }
+					}
+					set_variable = { THIS.Limassol_Map_frame = 2 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_greek_influence_limassol > CYP_socialist_influence_limassol }
+						check_variable = { CYP_greek_influence_limassol > CYP_villaye_influence_limassol }
+					}
+					set_variable = { THIS.Limassol_Map_frame = 3 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_villaye_influence_nicosia > CYP_socialist_influence_nicosia }
+						check_variable = { CYP_villaye_influence_nicosia > CYP_greek_influence_nicosia }
+					}
+					set_variable = { THIS.Nicosia_Map_frame = 1 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_socialist_influence_nicosia > CYP_villaye_influence_nicosia }
+						check_variable = { CYP_socialist_influence_nicosia > CYP_greek_influence_nicosia }
+					}
+					set_variable = { THIS.Nicosia_Map_frame = 2 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_greek_influence_nicosia > CYP_socialist_influence_nicosia }
+						check_variable = { CYP_greek_influence_nicosia > CYP_villaye_influence_nicosia }
+					}
+					set_variable = { THIS.Nicosia_Map_frame = 3 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_villaye_influence_paphos > CYP_socialist_influence_paphos }
+						check_variable = { CYP_villaye_influence_paphos > CYP_greek_influence_paphos }
+					}
+					set_variable = { THIS.Paphos_Map_frame = 1 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_socialist_influence_paphos > CYP_villaye_influence_paphos }
+						check_variable = { CYP_socialist_influence_paphos > CYP_greek_influence_paphos }
+					}
+					set_variable = { THIS.Paphos_Map_frame = 2 }
+				}
+				if = {
+					limit = {
+						check_variable = { CYP_greek_influence_paphos > CYP_socialist_influence_paphos }
+						check_variable = { CYP_greek_influence_paphos > CYP_villaye_influence_paphos }
+					}
+					set_variable = { THIS.Paphos_Map_frame = 3 }
+				}
+			}
+		}
+	}

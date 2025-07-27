@@ -3731,5 +3731,174 @@ SpriteTypes = {
 		name = "REVEGY_A_beating_hear"
 		texturefile = "gfx/interface/goals/REVEGY_A_beating_hear.png"
 	}
+	SpriteType = {
+		name = "CANAAN_The_Curved_Sword_is_Sharpened"
+		texturefile = "gfx/interface/goals/CANAAN_The_Curved_Sword_is_Sharpened.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Hidden_Flame"
+		texturefile = "gfx/interface/goals/CANAAN_The_Hidden_Flame.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Chariots_in_the_Land_of_Hyksos"
+		texturefile = "gfx/interface/goals/CANAAN_Chariots_in_the_Land_of_Hyksos.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Berber_Brothers"
+		texturefile = "gfx/interface/goals/CANAAN_Berber_Brothers.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Sign_of_Tanit_above_Carthage_Once_Again"
+		texturefile = "gfx/interface/goals/CANAAN_The_Sign_of_Tanit_above_Carthage_Once_Again.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Numidians_Return_to_the_Fold"
+		texturefile = "gfx/interface/goals/CANAAN_The_Numidians_Return_to_the_Fold.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Nubian_Pyramids"
+		texturefile = "gfx/interface/goals/CANAAN_Nubian_Pyramids.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Canaanites_Within_Punt"
+		texturefile = "gfx/interface/goals/CANAAN_Canaanites_Within_Punt.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Cross_to_Himyar"
+		texturefile = "gfx/interface/goals/CANAAN_Cross_to_Himyar.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Phoenician_Purple_Must_Flow"
+		texturefile = "gfx/interface/goals/CANAAN_The_Phoenician_Purple_Must_Flow.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Exiled_Returns_as_a_Liberator"
+		texturefile = "gfx/interface/goals/CANAAN_The_Exiled_Returns_as_a_Liberator.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Whispers_of_the_Desert"
+		texturefile = "gfx/interface/goals/CANAAN_Whispers_of_the_Desert.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Cedar_Ships_in_Sherden"
+		texturefile = "gfx/interface/goals/CANAAN_Cedar_Ships_in_Sherden.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Liberation_of_Maka"
+		texturefile = "gfx/interface/goals/CANAAN_Liberation_of_Maka.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Canaanites_Reunited_Under_the_Alef"
+		texturefile = "gfx/interface/goals/CANAAN_Canaanites_Reunited_Under_the_Alef.png"
+	}
+	SpriteType = {
+		name = "CANAAN_El_Returns_to_His_Throne"
+		texturefile = "gfx/interface/goals/CANAAN_El_Returns_to_His_Throne.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Tablets_Were_Lies"
+		texturefile = "gfx/interface/goals/CANAAN_The_Tablets_Were_Lies.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Canaanite_State_Is_Born_Again"
+		texturefile = "gfx/interface/goals/CANAAN_The_Canaanite_State_Is_Born_Again.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Cast_Off_the_Chains_of_Israel"
+		texturefile = "gfx/interface/goals/CANAAN_Cast_Off_the_Chains_of_Israel.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Jericho_Without_Walls"
+		texturefile = "gfx/interface/goals/CANAAN_Jericho_Without_Walls.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Between_Jerusalem_and_Athens"
+		texturefile = "gfx/interface/goals/CANAAN_Between_Jerusalem_and_Athens.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Tablets_Are_Broken_Again"
+		texturefile = "gfx/interface/goals/CANAAN_The_Tablets_Are_Broken_Again.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Covenant_of_the_Living"
+		texturefile = "gfx/interface/goals/CANAAN_The_Covenant_of_the_Living.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Canaan_Belongs_to_the_Living"
+		texturefile = "gfx/interface/goals/CANAAN_Canaan_Belongs_to_the_Living.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Canaan_Is_Not_a_Dream"
+		texturefile = "gfx/interface/goals/CANAAN_Canaan_Is_Not_a_Dream.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Great_Unlearning"
+		texturefile = "gfx/interface/goals/CANAAN_The_Great_Unlearning.png"
+	}
+	SpriteType = {
+		name = "CANAAN_To_Speak_Hebrew_Is_Not_Enough"
+		texturefile = "gfx/interface/goals/CANAAN_To_Speak_Hebrew_Is_Not_Enough.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Red_Sun_of_the_Desert"
+		texturefile = "gfx/interface/goals/CANAAN_The_Red_Sun_of_the_Desert.png"
+	}
+	SpriteType = {
+		name = "CANAAN_The_Council_of_the_Burning_Ones"
+		texturefile = "gfx/interface/goals/CANAAN_The_Council_of_the_Burning_Ones.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Tammuz_Walks_Among_the_Peasants"
+		texturefile = "gfx/interface/goals/CANAAN_Tammuz_Walks_Among_the_Peasants.png"
+	}
+	SpriteType = {
+		name = "CANAAN_From_the_Furnace_a_Nation_Forged"
+		texturefile = "gfx/interface/goals/CANAAN_From_the_Furnace_a_Nation_Forged.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Democracy_in_Canaan"
+		texturefile = "gfx/interface/goals/CANAAN_Democracy_in_Canaan.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Across_the_Great_Purple"
+		texturefile = "gfx/interface/goals/CANAAN_Across_the_Great_Purple.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Our_Oldest_Ally"
+		texturefile = "gfx/interface/goals/CANAAN_Our_Oldest_Ally.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Scipios_Flame_Returned"
+		texturefile = "gfx/interface/goals/CANAAN_Scipios_Flame_Returned.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Antiochus_Folly"
+		texturefile = "gfx/interface/goals/CANAAN_Antiochus_Folly.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Right_the_Wrongs_of_History"
+		texturefile = "gfx/interface/goals/CANAAN_Right_the_Wrongs_of_History.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Baal_an_Gael"
+		texturefile = "gfx/interface/goals/CANAAN_Baal_an_Gael.png"
+	}
+	SpriteType = {
+		name = "CANAAN_A_Colony_Forgotten_Long_Ago"
+		texturefile = "gfx/interface/goals/CANAAN_A_Colony_Forgotten_Long_Ago.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Elephants_in_Gaul_Once_Again"
+		texturefile = "gfx/interface/goals/CANAAN_Elephants_in_Gaul_Once_Again.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Hannibals_Triumph"
+		texturefile = "gfx/interface/goals/CANAAN_Hannibals_Triumph.png"
+	}
+	SpriteType = {
+		name = "CANAAN_Attack_of_the_Sea_Peoples"
+		texturefile = "gfx/interface/goals/CANAAN_Attack_of_the_Sea_Peoples.png"
+	}
+	
 	
 }

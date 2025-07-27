@@ -85,6 +85,32 @@ add_ideas = {
 	CYP_turkish_cypriots
 }
 
+set_variable = { CYP_villaye_influence_famagusta = 0.4 }
+set_variable = { CYP_socialist_influence_famagusta = 0.5 }
+set_variable = { CYP_greek_influence_famagusta = 0.1 }
+set_variable = { Famagusta_Map_frame = 3 }
+set_variable = { CYP_villaye_influence_kyrenia = 0.55 }
+set_variable = { CYP_socialist_influence_kyrenia = 0.35 }
+set_variable = { CYP_greek_influence_kyrenia = 0.1 }
+set_variable = { Kyrenia_Map_frame = 1 }
+set_variable = { CYP_villaye_influence_larnaca = 0.6 }
+set_variable = { CYP_socialist_influence_larnaca = 0.15 }
+set_variable = { CYP_greek_influence_larnaca = 0.45 }
+set_variable = { Larnaca_Map_frame = 1 }
+set_variable = { CYP_villaye_influence_limassol = 0.7 }
+set_variable = { CYP_socialist_influence_limassol = 0.2 }
+set_variable = { CYP_greek_influence_limassol = 0.1}
+set_variable = { Limassol_Map_frame = 1 }
+set_variable = { CYP_villaye_influence_nicosia = 0.9 }
+set_variable = { CYP_socialist_influence_nicosia = 0.05 }
+set_variable = { CYP_greek_influence_nicosia = 0.05 }
+set_variable = { Nicosia_Map_frame = 1 }
+set_variable = { CYP_villaye_influence_paphos = 0.25 }
+set_variable = { CYP_socialist_influence_paphos = 0.35 }
+set_variable = { CYP_greek_influence_paphos = 0.4 }
+set_variable = { Paphos_Map_frame = 2 }
+
+
 create_country_leader = {
 	name = "Ploutis Servas"
 	picture = "gfx/leaders/CYP/Portrait_Cyprus_Ploutis_Servas.png"

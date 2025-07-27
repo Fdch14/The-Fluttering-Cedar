@@ -4770,6 +4770,7 @@ focus_tree={
 		completion_reward={
 			set_cosmetic_tag = PLS_Arab_nationalism1
 			add_ideas = PAL_What_we_desire_ideas
+			create_wargoal = { target = TRU type = annex_everything }
 			create_wargoal = { target = OMA type = annex_everything }
 			create_wargoal = { target = SAU type = annex_everything }
 			create_wargoal = { target = JBS type = annex_everything }
@@ -4793,6 +4794,10 @@ focus_tree={
 			create_wargoal = { target = PAL type = annex_everything }
 			every_state = {
 				limit = { is_core_of = OMA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TRU }
 				add_core_of = PLS
 			}
 			every_state = {
@@ -4967,6 +4972,7 @@ focus_tree={
 		}
 		completion_reward={
 			create_wargoal = { target = OMA type = annex_everything }
+			create_wargoal = { target = TRU type = annex_everything }
 			create_wargoal = { target = SAU type = annex_everything }
 			create_wargoal = { target = JBS type = annex_everything }
 			create_wargoal = { target = HEJ type = annex_everything }
@@ -4989,6 +4995,10 @@ focus_tree={
 			create_wargoal = { target = PAL type = annex_everything }
 			every_state = {
 				limit = { is_core_of = OMA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TRU }
 				add_core_of = PLS
 			}
 			every_state = {
@@ -5334,6 +5344,7 @@ focus_tree={
 		search_filters={
 		}
 		completion_reward={
+		create_wargoal = { target = TRU type = annex_everything }
 		create_wargoal = { target = OMA type = annex_everything }
 		create_wargoal = { target = YEM type = annex_everything }
 		create_wargoal = { target = KUR type = annex_everything }
@@ -5346,6 +5357,10 @@ focus_tree={
 		create_wargoal = { target = PER type = annex_everything }
 			every_state = {
 				limit = { is_core_of = OMA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TRU }
 				add_core_of = PLS
 			}
 			every_state = {
@@ -5479,6 +5494,7 @@ focus_tree={
 		completion_reward={
 			set_cosmetic_tag = YEM_Arab
 			create_wargoal = { target = OMA type = annex_everything }
+			create_wargoal = { target = TRU type = annex_everything }
 			create_wargoal = { target = SAU type = annex_everything }
 			create_wargoal = { target = JBS type = annex_everything }
 			create_wargoal = { target = HEJ type = annex_everything }
@@ -5501,6 +5517,10 @@ focus_tree={
 			create_wargoal = { target = PAL type = annex_everything }
 			every_state = {
 				limit = { is_core_of = OMA }
+				add_core_of = PLS
+			}
+			every_state = {
+				limit = { is_core_of = TRU }
 				add_core_of = PLS
 			}
 			every_state = {
