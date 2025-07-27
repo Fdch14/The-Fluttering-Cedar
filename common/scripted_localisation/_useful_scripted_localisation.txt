@@ -201,6 +201,30 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			has_country_leader_ideology = tot_arab_baathism_subtype
+		}
+		localization_key = tot_arab_baathism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = radsoc_arab_baathism_subtype
+		}
+		localization_key = radsoc_arab_baathism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = arab_baathism_subtype
+		}
+		localization_key = arab_baathism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_arab_baathism_subtype
+		}
+		localization_key = pataut_arab_baathism_subtype
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = canaanist_subtype
 		}
 		localization_key = canaanist_subtype
@@ -867,6 +891,12 @@ defined_text = {
 		}
 		localization_key = council_communism_subtype 
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = peasant_charterism_subtype 
+		}
+		localization_key = peasant_charterism_subtype 
+	}
         
 	text = {
 		trigger = {
@@ -1197,6 +1227,12 @@ defined_text = {
 			has_country_leader_ideology = syn_council_communism_subtype 
 		}
 		localization_key =  syn_council_communism_subtype 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = syn_matswanism_subtype 
+		}
+		localization_key =  syn_matswanism_subtype 
 	}
 
 	text = {
@@ -2208,6 +2244,12 @@ defined_text = {
 		}
 		localization_key = batllismo_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_venizelism_subtype
+		}
+		localization_key = socdem_venizelism_subtype
+	}
 
 	text = {
 		trigger = {
@@ -2611,6 +2653,24 @@ defined_text = {
 		}
 		localization_key = community_movement_subtype   
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = laurentism_subtype 
+		}
+		localization_key = laurentism_subtype   
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib_oligarchy_subtype
+		}
+		localization_key = soclib_oligarchy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = venizelism_subtype
+		}
+		localization_key = venizelism_subtype
+	}
  
 	text = {
 		trigger = {
@@ -2935,6 +2995,24 @@ defined_text = {
 			has_country_leader_ideology = liberal_feminism_subtype 
 		}
 		localization_key = liberal_feminism_subtype   
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_radical_progressivism_subtype
+		}
+		localization_key = marlib_radical_progressivism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_venizelism_subtype
+		}
+		localization_key = marlib_venizelism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_clientelism_subtype
+		}
+		localization_key = marlib_clientelism_subtype
 	}
 
 	text = {
@@ -3314,6 +3392,24 @@ defined_text = {
 			has_country_leader_ideology = conservative_feminism_subtype
 		}
 		localization_key = conservative_feminism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_chosid_nyi_subtype
+		}
+		localization_key = soccon_chosid_nyi_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = metaxism_subtype
+		}
+		localization_key = metaxism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = yan_xishan_thought_subtype 
+		}
+		localization_key = yan_xishan_thought_subtype 
 	}
 
 	text = {
@@ -3753,6 +3849,12 @@ defined_text = {
 			has_country_leader_ideology = authdem_conservative_feminism_subtype
 		}
 		localization_key = authdem_conservative_feminism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = authdem_chosid_nyi_subtype
+		}
+		localization_key = authdem_chosid_nyi_subtype
 	}
 
 	text = {
@@ -4282,6 +4384,12 @@ defined_text = {
 			has_country_leader_ideology = duplessism_subtype
 		}
 		localization_key = duplessism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = chosid_nyi_subtype
+		}
+		localization_key = chosid_nyi_subtype
 	}
 
 	text = {
@@ -4909,26 +5017,50 @@ defined_text = {
 		}
 		localization_key = nacionalismo_subtype 
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_chosid_nyi_subtype
+		}
+		localization_key = natpop_chosid_nyi_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_national_conservative_subtype
+		}
+		localization_key = natpop_national_conservative_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_tribal_councilism_subtype
+		}
+		localization_key = natpop_tribal_councilism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = shintaisei_subtype
+		}
+		localization_key = shintaisei_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = consistent_way_subtype
+		}
+		localization_key = consistent_way_subtype
+	}
 	
 	### YOU GO IN THE CORNER OF SHAME ###
 	
 	text = {
 		trigger = {
-			has_country_leader_ideology = toy_santaism_subtype
+			has_country_leader_ideology = heat_miserism_subtype
 		}
-		localization_key = toy_santaism_subtype
+		localization_key = heat_miserism_subtype
 	}
-		text = {
+	text = {
 		trigger = {
-			has_country_leader_ideology = snow_miserism_subtype
+			has_country_leader_ideology = commie_elfism_subtype
 		}
-		localization_key = snow_miserism_subtype
-	}
-		text = {
-		trigger = {
-			has_country_leader_ideology = grinchism_subtype
-		}
-		localization_key = grinchism_subtype
+		localization_key = commie_elfism_subtype
 	}
 	text = {
 		trigger = {
@@ -4944,14 +5076,20 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = heat_miserism_subtype
+			has_country_leader_ideology = snow_miserism_subtype
 		}
-		localization_key = heat_miserism_subtype
+		localization_key = snow_miserism_subtype
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = commie_elfism_subtype
+			has_country_leader_ideology = grinchism_subtype
 		}
-		localization_key = commie_elfism_subtype
+		localization_key = grinchism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = toy_santaism_subtype
+		}
+		localization_key = toy_santaism_subtype
 	}
 }

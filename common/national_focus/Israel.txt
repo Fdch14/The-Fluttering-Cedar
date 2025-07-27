@@ -1591,7 +1591,7 @@ focus_tree={
 				add_idea = ISR_youth_power_ideas2
 			}
 			country_event = {
-				id = Canaan.4
+				id = Canaan.1
 				days = 5
 			}
 		}

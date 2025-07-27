@@ -127,5 +127,21 @@ spriteTypes = {
 	name = "GFX_ideology_natpop_canaanist_subtype"
 	texturefile = "gfx/interface/ideologies/natpop_canaanist_group.png"
 	}
+	spriteType = {
+	name = "GFX_ideology_tot_arab_baathism_subtype"
+	texturefile = "gfx/interface/ideologies/tot_arab_baathism_group​.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_radsoc_arab_baathism_subtype"
+	texturefile = "gfx/interface/ideologies/radsoc_arab_baathism_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_arab_baathism_subtype"
+	texturefile = "gfx/interface/ideologies/arab_baathism_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_pataut_arab_baathism_subtype"
+	texturefile = "gfx/interface/ideologies/pataut_arab_baathism_group.png"
+	}
 	
 }

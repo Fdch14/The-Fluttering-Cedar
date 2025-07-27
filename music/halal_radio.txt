@@ -10,6 +10,15 @@ music = {
 	}
 }
 music = {
+	song = "Nashid_hizb_albaeth_alearabii"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
 	song = "Yafim_haleilot_bikhnaan"
 
 	chance = {

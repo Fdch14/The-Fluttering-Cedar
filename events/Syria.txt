@@ -1,0 +1,332 @@
+﻿#############################
+# KR Syria Events by Jeankedezeehond
+#############################
+
+#######################
+# GREAT SYRIAN REVOLT #
+#######################
+
+add_namespace = syrrev
+
+country_event = {	#Syrian Revolt
+	id = syrrev.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event syrrev.1" }
+	title = syrrev.1.t
+	desc = syrrev.1.d
+
+	picture = GFX_IRQ_Machine_Gun
+
+	trigger = {
+		tag = TUR
+		has_war_with = EGY
+		NOT = { has_completed_focus = OTT_Union_Party_State }
+		is_subject = no
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					554 = {
+						is_owned_and_controlled_by = TUR
+					}
+				}
+				554 = {
+					force_disable_resistance = { clear = yes }
+				}
+				SYR = {
+					transfer_state = 554
+					hidden_effect = {
+						load_oob = OTT_great_syrian_revolt
+						remove_all_ministers = yes
+						add_ideas = {
+							SYR_Haqqi_al_Azm_hog_ade
+							SYR_Charles_Helou_for_ade
+							SYR_Hussein_Al_Oweini_eco_ade
+							SYR_Mohamed_Safi_El_Din_sec_ade
+						}
+					}
+					create_country_leader = {
+						name = "Sultan al-Atrash"
+						desc = "POLITICS_SULTAN_ATRASH_DESC"
+						picture = "gfx/leaders/SYR/Portrait_SYR_Atrash.png"
+						expire = "1.1.1"
+						ideology = authoritarian_democrat_subtype
+					}
+					set_politics = {
+						ruling_party = authoritarian_democrat
+						elections_allowed = no
+					}
+					declare_war_on = {
+						target = TUR
+						type = annex_everything
+					}
+					add_ideas = ott_syrian_uprising
+				}
+				EGY = {
+					add_to_faction = SYR
+				}
+				news_event = {
+					id = worldnews.426
+					days = 1
+				}
+			}
+			random_list = {
+				66 = {
+					EGY = {
+						country_event = {
+							id = palabu.3
+							days = 7
+						}
+					}
+					TUR = {
+						country_event = {
+							id = palabu.3
+							days = 7
+						}
+					}
+				}
+				33 = {
+					EGY = {
+						country_event = {
+							id = palabu.4
+							days = 7
+						}
+					}
+					TUR = {
+						country_event = {
+							id = palabu.4
+							days = 7
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = syrrev.1.a
+		custom_effect_tooltip = ott_syr_spread
+		custom_effect_tooltip = tooltip_white_line
+		set_global_flag = OTT_Syria_Revolt
+		every_owned_state = {
+			limit = {
+				is_core_of = SYR
+			}
+			ott_increase_revolt_risk = yes
+		}
+
+		#Egypt
+		custom_effect_tooltip = tooltip_white_line
+		EGY = {
+			add_ideas = ott_arab_revolt_support
+		}
+	}
+	option = {
+		name = syrrev.2.b
+		custom_effect_tooltip = ott_syr_spread
+		custom_effect_tooltip = tooltip_white_line
+		set_global_flag = OTT_Syria_Revolt
+		every_owned_state = {
+			limit = {
+				is_core_of = SYR
+			}
+			ott_increase_revolt_risk = yes
+		}
+		SYR = {
+			change_tag_from = TUR
+		}
+		#Egypt
+		custom_effect_tooltip = tooltip_white_line
+		EGY = {
+			add_ideas = ott_arab_revolt_support
+		}
+	}
+}
+
+### GENERIC SYRIANS
+# Generic Revolters
+country_event = {	#Al-Karak joins the revolt
+	id = syrrev.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event syrrev.3" }
+	title = syrrev.3.t
+	desc = syrrev.3.d
+
+	trigger = {
+		has_war_with = SYR
+		owns_state = 455
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			455 = {
+				force_disable_resistance = { clear = yes }
+				create_unit = {
+					division = "name = \"Syrian Rebels\" division_template = \"Militia Damascus\"  start_experience_factor = 0.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = SYR
+				}
+			}
+			SYR = { transfer_state = 455 }
+		}
+	}
+
+	option = {
+		name = syrrev.3.a
+		custom_effect_tooltip = ott_syr_spread
+	}
+}
+
+country_event = {	#Halep joins the revolt
+	id = syrrev.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event syrrev.5" }
+	title = syrrev.5.t
+	desc = syrrev.5.d
+
+	trigger = {
+		has_war_with = SYR
+		owns_state = 677
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			677 = {
+				force_disable_resistance = { clear = yes }
+				create_unit = {
+					division = "name = \"Syrian Rebels\" division_template = \"Militia Damascus\"  start_experience_factor = 0.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = SYR
+				}
+				create_unit = {
+					division = "name = \"Syrian Rebels\" division_template = \"Militia Damascus\"  start_experience_factor = 0.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = SYR
+				}
+			}
+			SYR = { transfer_state = 677 }
+		}
+	}
+
+	option = {
+		name = syrrev.5.a
+		custom_effect_tooltip = ott_syr_spread
+	}
+}
+
+country_event = {	#Homs joins the revolt
+	id = syrrev.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event syrrev.6" }
+	title = syrrev.6.t
+	desc = syrrev.6.d
+
+	trigger = {
+		country_exists = SYR
+		has_war_with = SYR
+		owns_state = 995
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			995 = {
+				force_disable_resistance = { clear = yes }
+				create_unit = {
+					division = "name = \"Syrian Rebels\" division_template = \"Militia Damascus\"  start_experience_factor = 0.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = SYR
+				}
+			}
+			SYR = { transfer_state = 995 }
+		}
+	}
+
+	option = {
+		name = syrrev.6.a
+		custom_effect_tooltip = ott_syr_spread
+	}
+}
+
+country_event = {	#Haifa joins the revolt
+	id = syrrev.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event syrrev.7" }
+	title = syrrev.7.t
+	desc = syrrev.7.d
+
+	trigger = {
+		country_exists = SYR
+		has_war_with = SYR
+		owns_state = 992
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			992 = {
+				force_disable_resistance = { clear = yes }
+				create_unit = {
+					division = "name = \"Syrian Rebels\" division_template = \"Militia Damascus\"  start_experience_factor = 0.0"
+					allow_spawning_on_enemy_provs = yes
+					owner = SYR
+				}
+			}
+			SYR = { transfer_state = 992 }
+		}
+	}
+
+	option = {
+		name = syrrev.6.a
+		custom_effect_tooltip = ott_syr_spread
+	}
+}
+
+#Crushed Insurrection
+country_event = {	#Arab Revolt Crushed
+	id = syrrev.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event syrrev.8" }
+	title = syrrev.8.t
+	desc = syrrev.8.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		has_global_flag = OTT_Syria_Revolt
+		OR = {
+			NOT = { country_exists = SYR }
+			has_subject = SYR
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		clr_global_flag = OTT_Syria_Revolt
+	}
+
+	option = {
+		name = syrrev.8.a
+		add_political_power = 100
+	}
+}

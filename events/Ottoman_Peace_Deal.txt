@@ -1008,6 +1008,11 @@ country_event = { #Victory in the Mashriq
 
 	option = {	#Annex Syria
 		name = cp.2.b
+		trigger = {
+			SYR = {
+				is_ai = no
+			}
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -1153,6 +1158,11 @@ country_event = { #Future of Syria
 	}
 
 	option = {
+		trigger = {
+			SYR = {
+				is_ai = no
+			}
+		}
 		name = cp.4.a
 		ai_chance = {
 			factor = 50
@@ -1217,6 +1227,11 @@ country_event = { #Future of Syria
 	}
 
 	option = {
+		trigger = {
+			SYR = {
+				is_ai = no
+			}
+		}
 		name = cp.4.b
 		ai_chance = {
 			factor = 50
@@ -1292,35 +1307,38 @@ country_event = { #Future of Syria
 			factor = 0
 		}
 		SYR = {
-			create_country_leader = {
-				name = "Said al-Jazairi"
-				desc = "POLITICS_SAID_JAZAIRI_DESC"
-				picture = "gfx/leaders/SYR/Portrait_SYR_Said_Jazairi.png"
-				expire = "1.1.1"
-				ideology = social_liberal_subtype
-			}
-			set_politics = {
-				ruling_party = social_liberal
-				last_election = "1935.6.15"
-				election_frequency = 48
-				elections_allowed = yes
-			}
-			hidden_effect = {
-				set_popularities = {
-					totalist = 5
-					syndicalist = 5
-					radical_socialist = 2
-					social_democrat = 0
-					social_liberal = 16
-					market_liberal = 20
-					social_conservative = 44
-					authoritarian_democrat = 0
-					paternal_autocrat = 0
-					national_populist = 8
-				}
-			}
-			country_event = { id = syrrep.1 days = 1 }
 			change_tag_from = ROOT
+		}
+		hidden_effect = {
+			IRQ = {
+				leave_faction = yes
+			}
+			SYR = {
+				leave_faction = yes
+			}
+			JBS = {
+				leave_faction = yes
+			}
+			SAU = {
+				leave_faction = yes
+			}
+			YEM = {
+				leave_faction = yes
+			}
+			OMA = {
+				leave_faction = yes
+			}
+		}
+	}
+	option = {
+		name = cp.4.e
+		trigger = {
+			EGY = {
+				is_ai = yes
+			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 		hidden_effect = {
 			IRQ = {
