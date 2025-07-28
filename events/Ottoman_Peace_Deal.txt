@@ -909,6 +909,9 @@ country_event = { #Victory in the Mashriq
 			factor = 100
 			modifier = {
 				factor = 0
+				SYR = {
+					is_ai = no
+				}
 				has_game_rule = {
 					rule = EGY_syria
 					option = EGY_SYR_Annexed
@@ -1008,15 +1011,13 @@ country_event = { #Victory in the Mashriq
 
 	option = {	#Annex Syria
 		name = cp.2.b
-		trigger = {
-			SYR = {
-				is_ai = no
-			}
-		}
 		ai_chance = {
 			factor = 0
 			modifier = {
 				add = 100
+				SYR = {
+					is_ai = yes
+				}
 				has_game_rule = {
 					rule = EGY_syria
 					option = EGY_SYR_Annexed
@@ -1158,15 +1159,13 @@ country_event = { #Future of Syria
 	}
 
 	option = {
-		trigger = {
-			SYR = {
-				is_ai = no
-			}
-		}
 		name = cp.4.a
 		ai_chance = {
 			factor = 50
 			modifier = {
+				SYR = {
+					is_ai = no
+				}
 				factor = 0
 				has_game_rule = {
 					rule = EGY_syria
@@ -1227,15 +1226,13 @@ country_event = { #Future of Syria
 	}
 
 	option = {
-		trigger = {
-			SYR = {
-				is_ai = no
-			}
-		}
 		name = cp.4.b
 		ai_chance = {
 			factor = 50
 			modifier = {
+				SYR = {
+					is_ai = no
+				}
 				factor = 0
 				has_game_rule = {
 					rule = EGY_syria
@@ -1332,13 +1329,8 @@ country_event = { #Future of Syria
 	}
 	option = {
 		name = cp.4.e
-		trigger = {
-			EGY = {
-				is_ai = yes
-			}
-		}
 		ai_chance = {
-			factor = 100
+			factor = 10000
 		}
 		hidden_effect = {
 			IRQ = {

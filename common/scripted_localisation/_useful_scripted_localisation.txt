@@ -201,6 +201,24 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			has_country_leader_ideology = tot_antoun_saadeh_thought_subtype
+		}
+		localization_key = tot_antoun_saadeh_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = thaw_antoun_saadeh_thought_subtype
+		}
+		localization_key = thaw_antoun_saadeh_thought_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = revision_antoun_saadeh_thought_subtype
+		}
+		localization_key = revision_antoun_saadeh_thought_subtype
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = tot_arab_baathism_subtype
 		}
 		localization_key = tot_arab_baathism_subtype

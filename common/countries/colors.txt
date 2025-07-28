@@ -1041,8 +1041,8 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 SYR = {
-	color = rgb { 126 203 120 }
-	color_ui = rgb { 126 203 120 }
+	color = rgb { 199 152 91 }
+	color_ui = rgb { 199 152 91 }
 }
 SZC = {
 	color = rgb { 154 115 56 }

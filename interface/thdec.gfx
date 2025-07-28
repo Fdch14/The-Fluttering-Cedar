@@ -188,5 +188,17 @@ spriteTypes = {
 		name = "GFX_Canaanite_conspiracy"
 		texturefile = "gfx/interface/decision/Canaanite_conspiracy.png"
 	}
+	SpriteType = {
+		name = "GFX_sultan_atrash"
+		texturefile = "gfx/interface/decision/sultan_atrash.png"
+	}
+	SpriteType = {
+		name = "GFX_antun_saadeh"
+		texturefile = "gfx/interface/decision/antun_saadeh.png"
+	}
+	SpriteType = {
+		name = "GFX_adib_shishakli"
+		texturefile = "gfx/interface/decision/adib_shishakli.png"
+	}
 
 }

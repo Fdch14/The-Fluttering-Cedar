@@ -1,0 +1,17 @@
+focus_tree = {
+	id = syria_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SYR
+		}
+	}
+	default = no
+
+	continuous_focus_position = {
+		x = 2300
+		y = 1000
+	}
+
+}

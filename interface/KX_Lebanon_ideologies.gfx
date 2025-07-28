@@ -143,5 +143,17 @@ spriteTypes = {
 	name = "GFX_ideology_pataut_arab_baathism_subtype"
 	texturefile = "gfx/interface/ideologies/pataut_arab_baathism_group.png"
 	}
+	spriteType = {
+	name = "GFX_ideology_tot_antoun_saadeh_thought_subtype"
+	texturefile = "gfx/interface/ideologies/tot_antoun_saadeh_thought_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_thaw_antoun_saadeh_thought_subtype"
+	texturefile = "gfx/interface/ideologies/thaw_antoun_saadeh_thought_group.png"
+	}
+	spriteType = {
+	name = "GFX_ideology_revision_antoun_saadeh_thought_subtype"
+	texturefile = "gfx/interface/ideologies/revision_antoun_saadeh_thought_group.png"
+	}
 	
 }

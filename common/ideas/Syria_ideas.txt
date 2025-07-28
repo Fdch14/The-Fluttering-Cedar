@@ -1,0 +1,112 @@
+###################################
+# KR Syria Ideas by Jeankedezeehond
+###################################
+ideas = {
+
+### Country Ideas ###
+
+	country = {
+		SYR_Greater_Syria_Uprising_idea = {
+			name = SYR_Greater_Syria_Uprising
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Greater_Syria_Uprising_idea"}
+			picture = syrian_uprising
+			allowed = { always = no }
+            modifier = {
+				army_core_attack_factor = 0.35
+				army_core_defence_factor = 0.35
+				terrain_penalty_reduction = 0.2
+				land_night_attack = 0.25
+				breakthrough_factor = 0.2
+				pocket_penalty = -0.15
+			}
+		}
+		SYR_Political_division_idea = {
+			name = SYR_Political_division_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Political_division_idea"}
+			picture = USA_political_crisis
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = -0.2
+				political_power_gain = -0.2
+				stability_factor = -0.1
+				drift_defence_factor = -0.25
+			}
+		}
+		SYR_illiterate_army_idea = {
+			name = SYR_illiterate_army_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_illiterate_army_idea"}
+			picture = SIA_military_expenditure_cut
+			allowed = { always = no }
+            modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				planning_speed = -0.1
+				max_planning = 0.05
+				land_reinforce_rate = -0.05
+			}
+		}
+		SYR_chaotic_economy_idea = {
+			name = SYR_chaotic_economy_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_chaotic_economy_idea"}
+			picture = YUC_unclear_economy
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.15
+				production_factory_start_efficiency_factor = -0.1
+				fortification_collateral_chance = -0.15
+			}
+		}
+		SYR_Ottoman_reparations_idea = {
+			name = SYR_Ottoman_reparations_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Ottoman_reparations_idea"}
+			picture = give_money
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SYR_Ottoman_reparations_idea1 = {
+			name = SYR_Ottoman_reparations_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Ottoman_reparations_idea1"}
+			picture = give_money
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.35
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+		SYR_reparations_idea = {
+			name = SYR_reparations_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_reparations_idea"}
+			picture = give_money
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		SYR_reparations_idea1 = {
+			name = SYR_reparations_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_reparations_idea1"}
+			picture = give_money
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+	}
+
+### Companies ###
+
+}

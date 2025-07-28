@@ -7,6 +7,7 @@
 #######################
 
 add_namespace = syrrev
+add_namespace = syr
 
 country_event = {	#Syrian Revolt
 	id = syrrev.1
@@ -41,8 +42,21 @@ country_event = {	#Syrian Revolt
 					force_disable_resistance = { clear = yes }
 				}
 				SYR = {
+					add_equipment_to_stockpile = { 
+						type = infantry_equipment
+						amount = 200000
+						producer = EGY
+					}
+					add_equipment_to_stockpile = { 
+						type = artillery_equipment_1
+						amount = 20000
+						producer = EGY
+					}
+					add_manpower = 300000
 					transfer_state = 554
+					inherit_technology = TUR
 					hidden_effect = {
+						set_cosmetic_tag = SYR_uprising_troops
 						load_oob = OTT_great_syrian_revolt
 						remove_all_ministers = yes
 						add_ideas = {
@@ -57,7 +71,7 @@ country_event = {	#Syrian Revolt
 						desc = "POLITICS_SULTAN_ATRASH_DESC"
 						picture = "gfx/leaders/SYR/Portrait_SYR_Atrash.png"
 						expire = "1.1.1"
-						ideology = authoritarian_democrat_subtype
+						ideology = authdem_junta_subtype
 					}
 					set_politics = {
 						ruling_party = authoritarian_democrat
@@ -67,7 +81,7 @@ country_event = {	#Syrian Revolt
 						target = TUR
 						type = annex_everything
 					}
-					add_ideas = ott_syrian_uprising
+					add_ideas = SYR_Greater_Syria_Uprising_idea
 				}
 				EGY = {
 					add_to_faction = SYR
@@ -129,7 +143,7 @@ country_event = {	#Syrian Revolt
 		}
 	}
 	option = {
-		name = syrrev.2.b
+		name = syrrev.1.b
 		custom_effect_tooltip = ott_syr_spread
 		custom_effect_tooltip = tooltip_white_line
 		set_global_flag = OTT_Syria_Revolt
@@ -164,8 +178,10 @@ country_event = {	#Al-Karak joins the revolt
 	}
 
 	fire_only_once = yes
-
-	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 10
+	}
 
 	immediate = {
 		hidden_effect = {
@@ -199,8 +215,10 @@ country_event = {	#Halep joins the revolt
 	}
 
 	fire_only_once = yes
-
-	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 15
+	}
 
 	immediate = {
 		hidden_effect = {
@@ -240,8 +258,10 @@ country_event = {	#Homs joins the revolt
 	}
 
 	fire_only_once = yes
-
-	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 20
+	}
 
 	immediate = {
 		hidden_effect = {
@@ -254,42 +274,6 @@ country_event = {	#Homs joins the revolt
 				}
 			}
 			SYR = { transfer_state = 995 }
-		}
-	}
-
-	option = {
-		name = syrrev.6.a
-		custom_effect_tooltip = ott_syr_spread
-	}
-}
-
-country_event = {	#Haifa joins the revolt
-	id = syrrev.7
-	immediate = { log = "[GetDateText]: [Root.GetName]: event syrrev.7" }
-	title = syrrev.7.t
-	desc = syrrev.7.d
-
-	trigger = {
-		country_exists = SYR
-		has_war_with = SYR
-		owns_state = 992
-	}
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			992 = {
-				force_disable_resistance = { clear = yes }
-				create_unit = {
-					division = "name = \"Syrian Rebels\" division_template = \"Militia Damascus\"  start_experience_factor = 0.0"
-					allow_spawning_on_enemy_provs = yes
-					owner = SYR
-				}
-			}
-			SYR = { transfer_state = 992 }
 		}
 	}
 
@@ -328,5 +312,825 @@ country_event = {	#Arab Revolt Crushed
 	option = {
 		name = syrrev.8.a
 		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = syr.1
+	title = syr.1.t
+	desc = syr.1.d
+	picture = GFX_IRQ_Machine_Gun
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SYR
+		NOT = {
+			has_war_with = TUR
+		}
+	}
+
+	option = {
+		name = syr.1.a
+		remove_ideas = SYR_Greater_Syria_Uprising_idea
+		drop_cosmetic_tag = yes
+		553 = { add_core_of = SYR }
+		680 = { add_core_of = SYR }
+		country_event = {
+			id = syr.2
+			days = 2
+		}
+		country_event = {
+			id = syr.9
+			days = 30
+		}
+	}
+}
+country_event = {
+	id = syr.2
+	title = syr.2.t
+	desc = syr.2.d
+	picture = GFX_sultan_atrash
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.2.a
+		set_party_name = {
+			ideology = authoritarian_democrat
+			name = SYR_authoritarian_democrat_party1
+			long_name = SYR_authoritarian_democrat_party1_long
+		}
+		create_country_leader = {
+			name = "Husni al-Za'im"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Husni_al_Zaim.png"
+			expire = "1.1.1"
+			ideology = authdem_junta_subtype
+		}
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.25 }
+		country_event = {
+			id = syr.3
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = syr.3
+	title = syr.3.t
+	desc = syr.3.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.3.a
+		add_stability = -0.02
+		country_event = {
+			id = syr.4
+			days = 2
+		}
+	}
+}
+
+country_event = {
+	id = syr.4
+	title = syr.4.t
+	desc = syr.4.d
+	picture = GFX_antun_saadeh
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.4.a
+		country_event = {
+			id = syr.5
+			days = 2
+		}
+	}
+}
+
+country_event = {
+	id = syr.5
+	title = syr.5.t
+	desc = syr.5.d
+	picture = GFX_adib_shishakli
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.5.a
+		set_party_name = {
+			ideology = authoritarian_democrat
+			name = SYR_paternal_autocrat_party
+			long_name = SYR_paternal_autocrat_party_long
+		}
+		set_party_name = {
+			ideology = national_populist
+			name = SYR_paternal_autocrat_party
+			long_name = SYR_paternal_autocrat_party_long
+		}
+		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
+		add_to_coalition = yes 
+		set_temp_variable = { coalition_partner_var = token:national_populist }
+		add_to_coalition = yes 
+	}
+}
+
+country_event = {
+	id = syr.6
+	title = syr.6.t
+	desc = syr.6.d
+	picture = GFX_antun_saadeh
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.6.a
+		country_event = {
+			id = syr.7
+			days = 2
+		}
+	}
+}
+
+country_event = {
+	id = syr.7
+	title = syr.7.t
+	desc = syr.7.d
+	picture = GFX_antun_saadeh
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.7.a
+		country_event = {
+			id = syr.8
+			days = 2
+		}
+	}
+}
+
+country_event = {
+	id = syr.8
+	title = syr.8.t
+	desc = syr.8.d
+	picture = GFX_antun_saadeh
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.8.a
+	}
+}
+
+country_event = {
+	id = syr.9
+	title = syr.9.t
+	desc = syr.9.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.9.a
+		add_timed_idea = {
+			idea = SYR_Ottoman_reparations_idea
+			days = 360
+		}
+		add_political_power = -50
+		TUR = {
+			country_event = {
+				id = syr.10
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = syr.9.b
+		add_timed_idea = {
+			idea = SYR_Ottoman_reparations_idea1
+			days = 720
+		}
+		add_political_power = -100
+		TUR = {
+			add_opinion_modifier = {
+				target = SYR
+				modifier = large_decrease
+			}
+		}
+		TUR = {
+			country_event = {
+				id = syr.11
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = syr.10
+	title = syr.10.t
+	desc = syr.10.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.10.a
+		add_timed_idea = {
+			idea = SYR_reparations_idea
+			days = 360
+		}
+	}
+}
+
+country_event = {
+	id = syr.11
+	title = syr.11.t
+	desc = syr.11.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.11.a
+		add_timed_idea = {
+			idea = SYR_reparations_idea1
+			days = 720
+		}
+	}
+}
+
+country_event = {
+	id = syr.12
+	title = syr.12.t
+	desc = syr.12.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SYR
+		owns_state = 350
+		NOT = {
+			has_war_with = TUR
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = syr.12.a
+		350 = { add_core_of = SYR }
+	}
+}
+
+country_event = {
+	id = syr.13
+	title = syr.13.t
+	desc = syr.13.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SYR
+		owns_state = 344
+		NOT = {
+			has_war_with = TUR
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+
+	option = {
+		name = syr.13.a
+		344 = { add_core_of = SYR }
+		hidden_effect = {
+			country_event = {
+				id = syr.14
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = syr.14
+	title = syr.14.t
+	desc = syr.14.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.14.a
+		country_event = {
+			id = syr.15
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = syr.15
+	title = syr.15.t
+	desc = syr.15.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.15.a
+		hidden_effect = {
+			country_event = {
+				id = syr.18
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = syr.15.b
+		hidden_effect = {
+			country_event = {
+				id = syr.16
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = syr.16
+	title = syr.16.t
+	desc = syr.16.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.16.a
+		set_party_name = {
+			ideology = authoritarian_democrat
+			name = SYR_authoritarian_democrat_party1
+			long_name = SYR_authoritarian_democrat_party1_long
+		}
+		create_country_leader = {
+			name = "Husni al-Za'im"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Husni_al_Zaim.png"
+			expire = "1.1.1"
+			ideology = authdem_junta_subtype
+		}
+		remove_natpop_from_coalition = yes
+		remove_pataut_from_coalition = yes
+		country_event = {
+			id = syr.17
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = syr.17
+	title = syr.17.t
+	desc = syr.17.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.17.a
+		country_event = {
+			id = syr.19
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = syr.18
+	title = syr.18.t
+	desc = syr.18.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.18.a
+		hidden_effect = {
+			country_event = {
+				id = syr.20
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = syr.19
+	title = syr.19.t
+	desc = syr.19.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.19.a
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+		}
+		add_popularity = { ideology = social_liberal popularity = 0.45 }
+	}
+	option = {
+		name = syr.19.b
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = no
+		}
+		add_popularity = { ideology = market_liberal popularity = 0.45 }
+	}
+	option = {
+		name = syr.19.c
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		add_popularity = { ideology = social_conservative popularity = 0.45 }
+	}
+}
+
+country_event = {
+	id = syr.20
+	title = syr.20.t
+	desc = syr.20.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.20.a
+		hidden_effect = {
+			country_event = {
+				id = syr.23
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = syr.20.b
+		hidden_effect = {
+			country_event = {
+				id = syr.21
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = syr.21
+	title = syr.21.t
+	desc = syr.21.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.21.a
+		country_event = {
+			id = syr.22
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = syr.22
+	title = syr.22.t
+	desc = syr.22.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.22.a
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		hidden_effect = {
+			set_popularities = {
+				totalist = 10
+				syndicalist = 25
+				radical_socialist = 30
+				social_democrat = 25
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 0
+				authoritarian_democrat = 5
+				paternal_autocrat = 5
+				national_populist = 0
+			}
+		}
+		remove_natpop_from_coalition = yes
+		remove_pataut_from_coalition = yes
+	}
+}
+country_event = {
+	id = syr.23
+	title = syr.23.t
+	desc = syr.23.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.23.a
+		country_event = {
+			id = syr.24
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = syr.24
+	title = syr.24.t
+	desc = syr.24.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.24.a
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			name = SYR_paternal_autocrat_party
+			long_name = SYR_paternal_autocrat_party
+		}
+		create_country_leader = {
+			name = "Antun Saadeh"
+			desc = "POLITICS_ANTUN_SAADEH_DESC"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh.png"
+			expire = "1.1.1"
+			ideology = antoun_saadeh_thought_subtype
+		}
+		add_popularity = { ideology = paternal_autocrat popularity = 1 }
+		set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
+		add_to_coalition = yes
+		set_temp_variable = { coalition_partner_var = token:national_populist }
+		add_to_coalition = yes
+		set_cosmetic_tag = SYR_ssnp
+		hidden_effect = {
+			country_event = {
+				id = syr.28
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = syr.25
+	title = syr.25.t
+	desc = syr.25.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.25.a
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		add_popularity = { ideology = radical_socialist popularity = 0.45 }
+	}
+	option = {
+		name = syr.25.b
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		set_cosmetic_tag = SYR_arab
+		add_popularity = { ideology = syndicalist popularity = 0.45 }
+	}
+	option = {
+		name = syr.25.c
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		set_cosmetic_tag = SYR_arab
+		add_popularity = { ideology = social_democrat popularity = 0.45 }
+		country_event = {
+			id = syr.26
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = syr.26
+	title = syr.26.t
+	desc = syr.26.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.26.a
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = syr.26.b
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+			name = SYR_baath_soclist_party
+			long_name = SYR_baath_soclist_party_long
+		}
+		create_country_leader = {
+			name = "Zaki Al-Arsuzi"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Zaki_Al_Arsuzi.png"
+			expire = "1.1.1"
+			ideology = radsoc_arab_baathism_subtype
+		}
+		add_popularity = { ideology = radical_socialist popularity = 0.45 }
+	}
+	option = {
+		name = syr.26.c
+		country_event = syr.27
+	}
+}
+
+country_event = {
+	id = syr.27
+	title = syr.27.t
+	desc = syr.27.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.27.a
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+			name = SYR_social_democrat_party
+			long_name = SYR_social_democrat_party_long
+		}
+		create_country_leader = {
+			name = "Salah Jadid"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Salah_Jadid.png"
+			expire = "1.1.1"
+			ideology = tot_arab_baathism_subtype
+		}
+		add_popularity = { ideology = totalist popularity = 0.45 }
+	}
+	option = {
+		name = syr.27.b
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			name = SYR_social_democrat_party
+			long_name = SYR_social_democrat_party_long
+		}
+		create_country_leader = {
+			name = "Amin al-Hafiz"
+			picture = "gfx/leaders/LEB/Portrait_LEB_Amin_al_Hafiz.png"
+			expire = "1.1.1"
+			ideology = pataut_arab_baathism_subtype
+		}
+		add_popularity = { ideology = paternal_autocrat popularity = 0.45 }
+	}
+}
+
+country_event = {
+	id = syr.28
+	title = syr.28.t
+	desc = syr.28.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.28.a
+	}
+	option = {
+		name = syr.28.b
+		country_event = syr.29
+	}
+}
+
+country_event = {
+	id = syr.29
+	title = syr.29.t
+	desc = syr.29.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.29.a
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+			name = SYR_paternal_autocrat_party
+			long_name = SYR_paternal_autocrat_party
+		}
+		create_country_leader = {
+			name = "Husni al-Za'im"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Salah_Jadid.png"
+			expire = "1.1.1"
+			ideology = thaw_antoun_saadeh_thought_subtype
+		}
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.45 }
+		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
+		add_to_coalition = yes
+		set_temp_variable = { coalition_partner_var = token:national_populist }
+		add_to_coalition = yes
+	}
+	option = {
+		name = syr.29.b
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+			name = SYR_paternal_autocrat_party
+			long_name = SYR_paternal_autocrat_party
+		}
+		create_country_leader = {
+			name = "Adib al-Shishakli"
+			picture = "gfx/leaders/SYR/SYR_adib_idb_hassan_al_shishakli.png"
+			expire = "1.1.1"
+			ideology = revision_antoun_saadeh_thought_subtype
+		}
+		add_popularity = { ideology = national_populist popularity = 0.45 }
+		set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
+		add_to_coalition = yes
+		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
+		add_to_coalition = yes
+	}
+	option = {
+		name = syr.29.c
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+			name = SYR_paternal_autocrat_party
+			long_name = SYR_paternal_autocrat_party
+		}
+		create_country_leader = {
+			name = "Ghassan Jadid"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Ghassan_Jadid.png"
+			expire = "1.1.1"
+			ideology = tot_antoun_saadeh_thought_subtype
+		}
+		add_popularity = { ideology = totalist popularity = 0.45 }
+		set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
+		add_to_coalition = yes
+		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
+		add_to_coalition = yes
+		set_temp_variable = { coalition_partner_var = token:national_populist }
+		add_to_coalition = yes
 	}
 }

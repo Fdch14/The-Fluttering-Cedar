@@ -148,6 +148,10 @@ spriteTypes = {
 		name = "GFX_idea_EGY_Arab_liberators"
 		texturefile = "gfx/interface/ideas/EGY_Arab_liberators.png"
 	}
+	spriteType = {
+		name = "GFX_idea_syrian_uprising"
+		texturefile = "gfx/interface/ideas/syrian_uprising.png"
+	}
 
 }
 
