@@ -898,7 +898,7 @@ country_event = {
 			ruling_party = paternal_autocrat
 			elections_allowed = no
 			name = SYR_paternal_autocrat_party
-			long_name = SYR_paternal_autocrat_party
+			long_name = SYR_paternal_autocrat_party_long
 		}
 		create_country_leader = {
 			name = "Antun Saadeh"
@@ -1077,7 +1077,7 @@ country_event = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = no
 			name = SYR_paternal_autocrat_party
-			long_name = SYR_paternal_autocrat_party
+			long_name = SYR_paternal_autocrat_party_long
 		}
 		create_country_leader = {
 			name = "Husni al-Za'im"
@@ -1085,7 +1085,7 @@ country_event = {
 			expire = "1.1.1"
 			ideology = thaw_antoun_saadeh_thought_subtype
 		}
-		add_popularity = { ideology = authoritarian_democrat popularity = 0.45 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.60 }
 		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
 		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:national_populist }
@@ -1097,7 +1097,7 @@ country_event = {
 			ruling_party = national_populist
 			elections_allowed = no
 			name = SYR_paternal_autocrat_party
-			long_name = SYR_paternal_autocrat_party
+			long_name = SYR_paternal_autocrat_party_long
 		}
 		create_country_leader = {
 			name = "Adib al-Shishakli"
@@ -1105,7 +1105,7 @@ country_event = {
 			expire = "1.1.1"
 			ideology = revision_antoun_saadeh_thought_subtype
 		}
-		add_popularity = { ideology = national_populist popularity = 0.45 }
+		add_popularity = { ideology = national_populist popularity = 0.60 }
 		set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
 		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
@@ -1117,7 +1117,7 @@ country_event = {
 			ruling_party = totalist
 			elections_allowed = no
 			name = SYR_paternal_autocrat_party
-			long_name = SYR_paternal_autocrat_party
+			long_name = SYR_paternal_autocrat_party_long
 		}
 		create_country_leader = {
 			name = "Ghassan Jadid"
@@ -1125,7 +1125,7 @@ country_event = {
 			expire = "1.1.1"
 			ideology = tot_antoun_saadeh_thought_subtype
 		}
-		add_popularity = { ideology = totalist popularity = 0.45 }
+		add_popularity = { ideology = totalist popularity = 0.60 }
 		set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
 		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
