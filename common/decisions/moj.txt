@@ -171,7 +171,6 @@ MOJ_attack_EGY = {
 			controls_state = 164
 			controls_state = 341
 			controls_state = 773
-			controls_state = 1225
 			controls_state = 340
 			controls_state = 339
 			controls_state = 343
@@ -227,7 +226,6 @@ MOJ_attack_EGY = {
 			164 = { add_core_of = PAL }
 			341 = { add_core_of = PAL }
 			773 = { add_core_of = PAL }
-			1225 = { add_core_of = PAL }
 			340 = { add_core_of = PAL }
 			339 = { add_core_of = PAL }
 			343 = { add_core_of = PAL }
@@ -909,7 +907,6 @@ ISR_coup_crisis_decision = {
 
 		available = {
 			341 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
-			1225 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 			773 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 			340 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 			343 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
@@ -948,7 +945,6 @@ ISR_coup_crisis_decision = {
 			TUR = {
 				set_cosmetic_tag = TUR_Lydia
 				transfer_state = 341
-				transfer_state = 1225
 				transfer_state = 773
 				transfer_state = 340
 				transfer_state = 343

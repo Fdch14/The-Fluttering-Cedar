@@ -7288,7 +7288,6 @@ SSNP_The_party_Unit = {
 
 		available = {
 			341 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
-			1225 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 			773 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 			340 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
 			343 = { is_owned_and_controlled_by_ROOT_or_subject = yes }
@@ -7336,7 +7335,6 @@ SSNP_The_party_Unit = {
 		TUR = {
 			set_cosmetic_tag = TUR_KLZF
 			transfer_state = 341
-			transfer_state = 1225
 			transfer_state = 773
 			transfer_state = 340
 			transfer_state = 343

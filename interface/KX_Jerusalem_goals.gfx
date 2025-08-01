@@ -3899,6 +3899,142 @@ SpriteTypes = {
 		name = "CANAAN_Attack_of_the_Sea_Peoples"
 		texturefile = "gfx/interface/goals/CANAAN_Attack_of_the_Sea_Peoples.png"
 	}
+	SpriteType = {
+		name = "SYRIA_Protect_the_banking_sector"
+		texturefile = "gfx/interface/goals/SYRIA_Protect_the_banking_sector.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Developing_oil_refining_technology"
+		texturefile = "gfx/interface/goals/SYRIA_Developing_oil_refining_technology.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Syrian_army"
+		texturefile = "gfx/interface/goals/SYRIA_Syrian_army.png"
+	}
+	SpriteType = {
+		name = "SYRIA_cruiser"
+		texturefile = "gfx/interface/goals/SYRIA_cruiser.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Develop_air_power"
+		texturefile = "gfx/interface/goals/SYRIA_Develop_air_power.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Mediterranean_Fleet"
+		texturefile = "gfx/interface/goals/SYRIA_Mediterranean_Fleet.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Anti_imperialist_struggle"
+		texturefile = "gfx/interface/goals/SYRIA_Anti_imperialist_struggle.png"
+	}
+	SpriteType = {
+		name = "SYRIA_National_syndicalism"
+		texturefile = "gfx/interface/goals/SYRIA_National_syndicalism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_social_security"
+		texturefile = "gfx/interface/goals/SYRIA_social_security.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Attack_the_wealthy_families"
+		texturefile = "gfx/interface/goals/SYRIA_Attack_the_wealthy_families.png"
+	}
+	SpriteType = {
+		name = "SYRIA_secularism"
+		texturefile = "gfx/interface/goals/SYRIA_secularism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_The_original_goodness"
+		texturefile = "gfx/interface/goals/SYRIA_The_original_goodness.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Tempering_and_forging"
+		texturefile = "gfx/interface/goals/SYRIA_Tempering_and_forging.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Gather_compatriots"
+		texturefile = "gfx/interface/goals/SYRIA_Gather_compatriots.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Do_not_forget_the_four_major_guidelines"
+		texturefile = "gfx/interface/goals/SYRIA_Do_not_forget_the_four_major_guidelines.png"
+	}
+	SpriteType = {
+		name = "SYRIA_National_patriotism"
+		texturefile = "gfx/interface/goals/SYRIA_National_patriotism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Anti_socialism"
+		texturefile = "gfx/interface/goals/SYRIA_Anti_socialism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Total_jihad_agains_Judaism"
+		texturefile = "gfx/interface/goals/SYRIA_Total_jihad_agains_Judaism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_The_dream_of_Greater_Syria"
+		texturefile = "gfx/interface/goals/SYRIA_The_dream_of_Greater_Syria.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Moral_national_democracy"
+		texturefile = "gfx/interface/goals/SYRIA_Moral_national_democracy.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Semi_democracy"
+		texturefile = "gfx/interface/goals/SYRIA_Semi_democracy.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Retain_a_limited_parliament"
+		texturefile = "gfx/interface/goals/SYRIA_Retain_a_limited_parliament.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Overhead_SSNP"
+		texturefile = "gfx/interface/goals/SYRIA_Overhead_SSNP.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Ghassan_National_Revolution"
+		texturefile = "gfx/interface/goals/SYRIA_Ghassan_National_Revolution.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Sadeh_reigns_forever"
+		texturefile = "gfx/interface/goals/SYRIA_Sadeh_reigns_forever.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Shishaklis_revenge"
+		texturefile = "gfx/interface/goals/SYRIA_Shishaklis_revenge.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Zaims_vision_for_democracy"
+		texturefile = "gfx/interface/goals/SYRIA_Zaims_vision_for_democracy.png"
+	}
+	SpriteType = {
+		name = "SYRIA_SSNP_Next"
+		texturefile = "gfx/interface/goals/SYRIA_SSNP_Next.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Kick_out_Parliament"
+		texturefile = "gfx/interface/goals/SYRIA_Kick_out_Parliament.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Enemies_of_Zionism"
+		texturefile = "gfx/interface/goals/SYRIA_Enemies_of_Zionism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Ensure_leadership_authority"
+		texturefile = "gfx/interface/goals/SYRIA_Ensure_leadership_authority.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Eradicate_pan_Arabists"
+		texturefile = "gfx/interface/goals/SYRIA_Eradicate_pan_Arabists.png"
+	}
+	SpriteType = {
+		name = "SYRIA_The_party_commands_the_army"
+		texturefile = "gfx/interface/goals/SYRIA_The_party_commands_the_army.png"
+	}
+	SpriteType = {
+		name = "SYRIA_SSNP_won_a_big_victory"
+		texturefile = "gfx/interface/goals/SYRIA_SSNP_won_a_big_victory.png"
+	}
 	
 	
 }

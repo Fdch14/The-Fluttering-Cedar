@@ -929,8 +929,6 @@ country_event = {
 				AND = {
 					check_variable = { PLS.PLS_Republican_Defence_Forces_unrest > PLS_All_Palestinian_Government_unrest }
 					check_variable = { PLS.PLS_Republican_Defence_Forces_unrest > PLS_Revolutionary_Armed_Forces_unrest }
-					check_variable = { PLS.PLS_All_Palestinian_Government_unrest < 3 }
-					check_variable = { PLS.PLS_Revolutionary_Armed_Forces_unrest < 3 }
 				}
 			}
 			set_politics = {
@@ -953,8 +951,6 @@ country_event = {
 				AND = {
 					check_variable = { PLS.PLS_Revolutionary_Armed_Forces_unrest > PLS_All_Palestinian_Government_unrest }
 					check_variable = { PLS.PLS_Revolutionary_Armed_Forces_unrest > PLS_Republican_Defence_Forces_unrest }
-					check_variable = { PLS.PLS_All_Palestinian_Government_unrest < 3 }
-					check_variable = { PLS.PLS_Republican_Defence_Forces_unrest < 3 }
 				}
 			}
 			complete_national_focus = PLS_The_guidance_of_socialism

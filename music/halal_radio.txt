@@ -1,6 +1,51 @@
 music_station = "Halal_Radio"
 
 music = {
+	song = "nasheed_mekaouma"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "hazbak_ya_saade_qaddua"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "Anthem_of_the_SSNP"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "we_are_the_eagles"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
+	song = "anhoud_ya_chaabi_min_nomek"
+
+	chance = {
+		modifier = {
+			factor = 5
+		}
+	}
+}
+music = {
 	song = "Ulif_Bisimaha"
 
 	chance = {

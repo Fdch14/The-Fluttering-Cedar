@@ -47,7 +47,7 @@ if = {
 }
 
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = authoritarian_democrat
 	last_election = "1935.12.31"
 	election_frequency = 48
 	elections_allowed = no
@@ -57,11 +57,11 @@ set_popularities = {
 	totalist = 0
 	syndicalist = 3
 	radical_socialist = 4
-	social_democrat = 1
-	social_liberal = 15
-	market_liberal = 0
-	social_conservative = 39
-	authoritarian_democrat = 17
+	social_democrat = 10
+	social_liberal = 10
+	market_liberal = 5
+	social_conservative = 20
+	authoritarian_democrat = 27
 	paternal_autocrat = 19
 	national_populist = 2
 }
@@ -99,8 +99,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Michel Aflaq"
-	picture = "gfx/leaders/SYR/Portrait_SYR_Aflaq.png"
+	name = "Zaki Al-Arsuzi"
+	picture = "gfx/leaders/SYR/Portrait_SYR_Zaki_Al_Arsuzi.png"
 	expire = "1.1.1"
 	ideology = arab_baathism_subtype
 }

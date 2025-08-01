@@ -8,6 +8,136 @@
 
 add_namespace = syrrev
 add_namespace = syr
+add_namespace = syrfor
+
+country_event = {	#Invitation to the Arab League
+	id = syrfor.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event syrfor.1" }
+	title = syrfor.1.t
+	desc = syrfor.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = syrfor.1.a
+		ai_chance = {
+			base = 100
+		}
+		LOA_join_syrian_sphere = yes
+		SYR = { country_event = syrfor.2 }
+
+		### give effects of Iraqi foci
+		if = {
+			limit = {
+				SYR = {
+					has_completed_focus = SYR_Economic_Social_Council
+				}
+			}
+			add_ideas = IRQ_Economic_Social_Council
+		}
+		if = {
+			limit = {
+				SYR = {
+					has_completed_focus = SYR_Arab_Unified_Command
+				}
+			}
+			add_ideas = IRQ_Unified_Arab_Command
+		}
+		if = {
+			limit = {
+				SYR = {
+					has_completed_focus = SYR_Arab_Parliament
+				}
+			}
+			SYR = {
+				puppet = ROOT
+				add_to_faction = ROOT
+			}
+		}
+		if = {
+			limit = {
+				SYR = {
+					has_completed_focus = SYR_Council_of_Social_Affairs
+				}
+			}
+			add_ideas = IRQ_Council_Social_Affairs
+		}
+		if = {
+			limit = {
+				SYR = {
+					has_completed_focus = SYR_Arab_Federation
+				}
+			}
+			every_unit_leader = { set_nationality = SYR }
+			SYR = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = syrfor.1.b
+		ai_chance = {
+			base = 0
+		}
+		SYR = {
+			country_event = syrfor.3
+		}
+	}
+}
+country_event = {	#Invitation accepted
+	id = syrfor.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event syrfor.2" }
+	title = syrfor.2.t
+	desc = syrfor.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = syrfor.2.a
+		add_political_power = 10
+	}
+}
+country_event = {	#Invitation refused
+	id = syrfor.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event syrfor.3" }
+	title = syrfor.3.t
+	desc = syrfor.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = syrfor.3.a
+		add_political_power = -10
+		FROM = {
+			set_country_flag = refused_loa
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = OMA
+				}
+			}
+			create_wargoal = {
+				target = OMA
+				type = topple_government
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = YEM
+				}
+			}
+			create_wargoal = {
+				target = YEM
+				type = topple_government
+			}
+		}
+	}
+}
 
 country_event = {	#Syrian Revolt
 	id = syrrev.1
@@ -988,8 +1118,8 @@ country_event = {
 			long_name = SYR_baath_soclist_party_long
 		}
 		create_country_leader = {
-			name = "Zaki Al-Arsuzi"
-			picture = "gfx/leaders/SYR/Portrait_SYR_Zaki_Al_Arsuzi.png"
+			name = "Michel Aflaq"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Aflaq.png"
 			expire = "1.1.1"
 			ideology = radsoc_arab_baathism_subtype
 		}

@@ -1,4 +1,29 @@
 music = {
+	name = "nasheed_mekaouma"
+	file = "nasheed_mekaouma.ogg"
+	volume = 1.25
+}
+music = {
+	name = "hazbak_ya_saade_qaddua"
+	file = "hazbak_ya_saade_qaddua.ogg"
+	volume = 1.25
+}
+music = {
+	name = "Anthem_of_the_SSNP"
+	file = "Anthem_of_the_SSNP.ogg"
+	volume = 1.25
+}
+music = {
+	name = "we_are_the_eagles"
+	file = "we_are_the_eagles.ogg"
+	volume = 1.25
+}
+music = {
+	name = "anhoud_ya_chaabi_min_nomek"
+	file = "anhoud_ya_chaabi_min_nomek.ogg"
+	volume = 1.25
+}
+music = {
 	name = "Ulif_Bisimaha"
 	file = "Ulif_Bisimaha.ogg"
 	volume = 1.25
