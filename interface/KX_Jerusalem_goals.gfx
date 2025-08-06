@@ -4035,6 +4035,298 @@ SpriteTypes = {
 		name = "SYRIA_SSNP_won_a_big_victory"
 		texturefile = "gfx/interface/goals/SYRIA_SSNP_won_a_big_victory.png"
 	}
+	SpriteType = {
+		name = "SYRIA_Marxist_Leninist_base_area"
+		texturefile = "gfx/interface/goals/SYRIA_Marxist_Leninist_base_area.png"
+	}
+	SpriteType = {
+		name = "SYRIA_The_hometown_of_syndicalism"
+		texturefile = "gfx/interface/goals/SYRIA_The_hometown_of_syndicalism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Limited_democracy"
+		texturefile = "gfx/interface/goals/SYRIA_Limited_democracy.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Crush_the_enemies_of_the_revolution"
+		texturefile = "gfx/interface/goals/SYRIA_Crush_the_enemies_of_the_revolution.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Shield_of_Syria"
+		texturefile = "gfx/interface/goals/SYRIA_Shield_of_Syria.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Calling_patriotic_children"
+		texturefile = "gfx/interface/goals/SYRIA_Calling_patriotic_children.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Maintain_military_governance"
+		texturefile = "gfx/interface/goals/SYRIA_Maintain_military_governance.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Absorb_the_jihadists"
+		texturefile = "gfx/interface/goals/SYRIA_Absorb_the_jihadists.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Martial_law_is_normalized"
+		texturefile = "gfx/interface/goals/SYRIA_Martial_law_is_normalized.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Weaken_the_power_of_civil_servants"
+		texturefile = "gfx/interface/goals/SYRIA_Weaken_the_power_of_civil_servants.png"
+	}
+	SpriteType = {
+		name = "SYRIA_The_right_path_in_the_world"
+		texturefile = "gfx/interface/goals/SYRIA_The_right_path_in_the_world.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Embrace_the_regional_revolution"
+		texturefile = "gfx/interface/goals/SYRIA_Embrace_the_regional_revolution.png"
+	}
+	SpriteType = {
+		name = "SYRIA_The_wisdom_of_the_SSNP"
+		texturefile = "gfx/interface/goals/SYRIA_The_wisdom_of_the_SSNP.png"
+	}
+	SpriteType = {
+		name = "SYRIA_National_vanguard"
+		texturefile = "gfx/interface/goals/SYRIA_National_vanguard.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Communist_program"
+		texturefile = "gfx/interface/goals/SYRIA_Communist_program.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Syria_first"
+		texturefile = "gfx/interface/goals/SYRIA_Syria_first.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Defense_counterattack"
+		texturefile = "gfx/interface/goals/SYRIA_Defense_counterattack.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Social_justice"
+		texturefile = "gfx/interface/goals/SYRIA_Social_justice.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Anti_colonial_vanguard"
+		texturefile = "gfx/interface/goals/SYRIA_Anti_colonial_vanguard.png"
+	}
+	SpriteType = {
+		name = "SYRIA_The_farmer_owns_the_land"
+		texturefile = "gfx/interface/goals/SYRIA_The_farmer_owns_the_land.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Ideological_enlightenment"
+		texturefile = "gfx/interface/goals/SYRIA_Ideological_enlightenment.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Socialist_bridgehead"
+		texturefile = "gfx/interface/goals/SYRIA_Socialist_bridgehead.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Death_and_rebirth"
+		texturefile = "gfx/interface/goals/SYRIA_Death_and_rebirth.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Arm_the_people"
+		texturefile = "gfx/interface/goals/SYRIA_Arm_the_people.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Spread_Baathlism"
+		texturefile = "gfx/interface/goals/SYRIA_Spread_Baathlism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Guard_of_the_Arabs"
+		texturefile = "gfx/interface/goals/SYRIA_Guard_of_the_Arabs.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Encourage_sacrifice"
+		texturefile = "gfx/interface/goals/SYRIA_Encourage_sacrifice.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Transform_political_parties"
+		texturefile = "gfx/interface/goals/SYRIA_Transform_political_parties.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Gentle_and_united"
+		texturefile = "gfx/interface/goals/SYRIA_Gentle_and_united.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Progressive_Alliance"
+		texturefile = "gfx/interface/goals/SYRIA_Progressive_Alliance.png"
+	}
+	SpriteType = {
+		name = "SYRIA_End_exploitation"
+		texturefile = "gfx/interface/goals/SYRIA_End_exploitation.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Oppose_extremist_ideology"
+		texturefile = "gfx/interface/goals/SYRIA_Oppose_extremist_ideology.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Arab_reformism"
+		texturefile = "gfx/interface/goals/SYRIA_Arab_reformism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Protect_the_revolution"
+		texturefile = "gfx/interface/goals/SYRIA_Protect_the_revolution.png"
+	}
+	SpriteType = {
+		name = "SYRIA_The_old_party_is_reborn"
+		texturefile = "gfx/interface/goals/SYRIA_The_old_party_is_reborn.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Arab_Revolution"
+		texturefile = "gfx/interface/goals/SYRIA_Arab_Revolution.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Arab_unity"
+		texturefile = "gfx/interface/goals/SYRIA_Arab_unity.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Onl_one_party"
+		texturefile = "gfx/interface/goals/SYRIA_Onl_one_party.png"
+	}
+	SpriteType = {
+		name = "SYRIA_The_dawn_of_the_new_century"
+		texturefile = "gfx/interface/goals/SYRIA_The_dawn_of_the_new_century.png"
+	}
+	SpriteType = {
+		name = "SYRIA_A_fire_of_hope"
+		texturefile = "gfx/interface/goals/SYRIA_A_fire_of_hope.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Unite_the_people"
+		texturefile = "gfx/interface/goals/SYRIA_Unite_the_people.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Wash_the_spirit"
+		texturefile = "gfx/interface/goals/SYRIA_Wash_the_spirit.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Mobilize_intellectuals"
+		texturefile = "gfx/interface/goals/SYRIA_Mobilize_intellectuals.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Glory_to_the_Arab_flag"
+		texturefile = "gfx/interface/goals/SYRIA_Glory_to_the_Arab_flag.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Democratic_barriers"
+		texturefile = "gfx/interface/goals/SYRIA_Democratic_barriers.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Politics_for_all"
+		texturefile = "gfx/interface/goals/SYRIA_Politics_for_all.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Everyone_participates"
+		texturefile = "gfx/interface/goals/SYRIA_Everyone_participates.png"
+	}
+	SpriteType = {
+		name = "SYRIA_A_united_government"
+		texturefile = "gfx/interface/goals/SYRIA_A_united_government.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Only_Syria"
+		texturefile = "gfx/interface/goals/SYRIA_Only_Syria.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Reconciliation_with_the_Ottomans"
+		texturefile = "gfx/interface/goals/SYRIA_Reconciliation_with_the_Ottomans.png"
+	}
+	SpriteType = {
+		name = "SYRIA_True_national_independence"
+		texturefile = "gfx/interface/goals/SYRIA_True_national_independence.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Working_with_reformists"
+		texturefile = "gfx/interface/goals/SYRIA_Working_with_reformists.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Counter_revolutionary_revolutionaries"
+		texturefile = "gfx/interface/goals/SYRIA_Counter_revolutionary_revolutionaries.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Defend_democratic_power"
+		texturefile = "gfx/interface/goals/SYRIA_Defend_democratic_power.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Limit_pan_Arabism"
+		texturefile = "gfx/interface/goals/SYRIA_Limit_pan_Arabism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Suppression_of_Damascus"
+		texturefile = "gfx/interface/goals/SYRIA_Suppression_of_Damascus.png"
+	}
+	SpriteType = {
+		name = "SYRIA_The_elite_governed"
+		texturefile = "gfx/interface/goals/SYRIA_The_elite_governed.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Market_and_national_freedom"
+		texturefile = "gfx/interface/goals/SYRIA_Market_and_national_freedom.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Appoint_social_elites"
+		texturefile = "gfx/interface/goals/SYRIA_Appoint_social_elites.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Protect_landlords"
+		texturefile = "gfx/interface/goals/SYRIA_Protect_landlords.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Autonomous_regions"
+		texturefile = "gfx/interface/goals/SYRIA_Autonomous_regions.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Recognize_the_Alawites"
+		texturefile = "gfx/interface/goals/SYRIA_Recognize_the_Alawites.png"
+	}
+	SpriteType = {
+		name = "SYRIA_National_reconciliation"
+		texturefile = "gfx/interface/goals/SYRIA_National_reconciliation.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Healthy_politics"
+		texturefile = "gfx/interface/goals/SYRIA_Healthy_politics.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Towards_social_progress"
+		texturefile = "gfx/interface/goals/SYRIA_Towards_social_progress.png"
+	}
+	SpriteType = {
+		name = "SYRIA_fellow_Algerians"
+		texturefile = "gfx/interface/goals/SYRIA_fellow_Algerians.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Eliminate_division"
+		texturefile = "gfx/interface/goals/SYRIA_Eliminate_division.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Characteristic_secularism"
+		texturefile = "gfx/interface/goals/SYRIA_Characteristic_secularism.png"
+	}
+	SpriteType = {
+		name = "SYRIA_New_Sultanate"
+		texturefile = "gfx/interface/goals/SYRIA_New_Sultanate.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Ethnic_groups"
+		texturefile = "gfx/interface/goals/SYRIA_Ethnic_groups.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Aleppo_faction"
+		texturefile = "gfx/interface/goals/SYRIA_Aleppo_faction.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Damascus_faction"
+		texturefile = "gfx/interface/goals/SYRIA_Damascus_faction.png"
+	}
+	SpriteType = {
+		name = "SYRIA_victory_of_democracy"
+		texturefile = "gfx/interface/goals/SYRIA_victory_of_democracy.png"
+	}
 	
 	
 }

@@ -1,0 +1,5150 @@
+focus_tree = {
+	id = syria_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SYR
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 500
+		y = 3500
+	}
+	focus={
+		id=SYR_Start_rebuilding
+		icon=REVEGY_Revolutionary_emergency
+		x=2
+		y=0
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_war_with = TUR
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_chaotic_economy_idea
+				add_idea = SYR_chaotic_economy_idea1
+			}
+		}
+	}
+	focus={
+		id=SYR_Protect_the_banking_sector
+		icon=SYRIA_Protect_the_banking_sector
+		x=1
+		y=1
+		prerequisite={focus=SYR_Start_rebuilding}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Find_a_market
+		icon=PALS_Leveling_the_land
+		x=0
+		y=2
+		prerequisite={focus=SYR_Protect_the_banking_sector}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Product_diversification
+		icon=PALS_Imitate_the_Western_world
+		x=1
+		y=3
+		prerequisite={focus=SYR_Find_a_market}
+		prerequisite={focus=SYR_Liberal_plan focus=SYR_State_regulation }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Formulate_a_policy
+		icon=PALS_Reducing_the_urban_rural_gap
+		x=4
+		y=1
+		prerequisite={focus=SYR_Start_rebuilding}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Liberal_plan
+		icon=PALS_Solidarity_with_the_struggle
+		x=2
+		y=2
+		prerequisite={focus=SYR_Formulate_a_policy}
+		mutually_exclusive={focus=SYR_State_regulation }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_State_regulation
+		icon=PALS_Reopening_of_the_factory
+		x=6
+		y=2
+		prerequisite={focus=SYR_Formulate_a_policy}
+		mutually_exclusive={focus=SYR_Liberal_plan }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Open_free_market
+		icon=PALS_Envoys_sent_to_various_countries
+		x=3
+		y=3
+		prerequisite={focus=SYR_Liberal_plan}
+		mutually_exclusive={focus=SYR_Protect_national_enterprises }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Protect_national_enterprises
+		icon=PALS_Standardize_factory_discipline
+		x=5
+		y=3
+		prerequisite={focus=SYR_State_regulation}
+		mutually_exclusive={focus=SYR_Open_free_market }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Foreign_capital_was_introduced
+		icon=PALS_Pooling_national_resources
+		x=2
+		y=4
+		prerequisite={focus=SYR_Open_free_market}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Deepen_trade_cooperation
+		icon=PALS_Work_with_landlords
+		x=1
+		y=5
+		prerequisite={focus=SYR_Foreign_capital_was_introduced}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Encourage_economic_investment
+		icon=PALS_Encourage_investment
+		x=3
+		y=5
+		prerequisite={focus=SYR_Foreign_capital_was_introduced}
+		mutually_exclusive={focus=SYR_Develop_national_industry }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Limit_large_enterprises
+		icon=PALS_Zakat_promotes_equality
+		x=4
+		y=4
+		prerequisite={focus=SYR_Protect_national_enterprises}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Develop_national_industry
+		icon=PALS_Industrial_leap_forward
+		x=5
+		y=5
+		prerequisite={focus=SYR_Limit_large_enterprises}
+		mutually_exclusive={focus=SYR_Encourage_economic_investment }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Full_recovery
+		icon=PALS_Socialization_of_the_land
+		x=4
+		y=6
+		prerequisite={focus=SYR_Develop_national_industry focus=SYR_Encourage_economic_investment }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Interest_free_loans
+		icon=PALS_Zero_interest_rate
+		x=7
+		y=3
+		prerequisite={focus=SYR_Liberal_plan focus=SYR_State_regulation }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Quality_comes_first
+		icon=PALS_Maintain_market_order
+		x=6
+		y=4
+		prerequisite={focus=SYR_Interest_free_loans}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Develop_industry
+		icon=PALS_Will_wins
+		x=8
+		y=4
+		prerequisite={focus=SYR_Interest_free_loans}
+		prerequisite={focus=SYR_Open_free_market focus=SYR_Protect_national_enterprises }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Developing_oil_refining_technology
+		icon=SYRIA_Developing_oil_refining_technology
+		x=7
+		y=5
+		prerequisite={focus=SYR_Develop_industry}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Agricultural_mechanization
+		icon=PALS_Promoshin_Ben_Kuperatifs
+		x=9
+		y=5
+		prerequisite={focus=SYR_Develop_industry}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Syrian_army
+		icon=SYRIA_Syrian_army
+		x=16
+		y=0
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			NOT = {
+				has_war_with = TUR
+			}
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Defend_the_Motherland
+		icon=PALS_Claim_Greater_Syria
+		x=14
+		y=1
+		prerequisite={focus=SYR_Syrian_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Defense_Industry
+		icon=PALS_Crack_down_on_hoarding
+		x=13
+		y=2
+		prerequisite={focus=SYR_Defend_the_Motherland}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Special_operations
+		icon=ISRA_special_forces
+		x=13
+		y=3
+		prerequisite={focus=SYR_Defense_Industry}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Desert_infantry
+		icon=ISRA_Resistant_to_sand_and_dust
+		x=12
+		y=4
+		prerequisite={focus=SYR_Special_operations}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Mountain_training
+		icon=ISRA_The_watchman_at_the_crossroads
+		x=13
+		y=5
+		prerequisite={focus=SYR_Special_operations}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Cavalry_modernization
+		icon=PALS_Traditional_troops
+		x=15
+		y=2
+		prerequisite={focus=SYR_Defend_the_Motherland}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Develop_armored_forces
+		icon=PALS_Armor_tests
+		x=15
+		y=3
+		prerequisite={focus=SYR_Cavalry_modernization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Assault_tactics
+		icon=ISRA_Stick_to_the_strategic_checkpoint
+		x=14
+		y=4
+		prerequisite={focus=SYR_Develop_armored_forces}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Develop_electronic_intelligence_systems
+		icon=ISRA_Expansion_of_the_police_force
+		x=16
+		y=4
+		prerequisite={focus=SYR_Develop_armored_forces}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Lightning_fast
+		icon=ISRA_Motorized_troops
+		x=15
+		y=5
+		prerequisite={focus=SYR_Assault_tactics}
+		prerequisite={focus=SYR_Develop_electronic_intelligence_systems}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Military_Academy
+		icon=PALS_Surprisingly_winning
+		x=13
+		y=6
+		prerequisite={focus=SYR_Mountain_training}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Protect_the_Red_Sea
+		icon=PALS_Unscrupulously
+		x=18
+		y=1
+		prerequisite={focus=SYR_Syrian_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Build_the_Red_Sea_Fleet
+		icon=ISRA_Expansion_of_the_naval_base
+		x=17
+		y=2
+		prerequisite={focus=SYR_Protect_the_Red_Sea}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Mine_tactics
+		icon=ISRA_Escort_fleet
+		x=17
+		y=3
+		prerequisite={focus=SYR_Build_the_Red_Sea_Fleet}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Red_Sea_Guardian
+		icon=ISRA_Faltering_naval_plans
+		x=18
+		y=4
+		prerequisite={focus=SYR_Protect_the_Red_Sea}
+		prerequisite={focus=SYR_Latakia_shipyard focus=SYR_Mine_tactics }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Transjordan_shipyard
+		icon=ISRA_Defend_shipping
+		x=19
+		y=2
+		prerequisite={focus=SYR_Protect_the_Red_Sea }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Latakia_shipyard
+		icon=ISRA_Defend_the_airport
+		x=19
+		y=3
+		prerequisite={focus=SYR_Transjordan_shipyard }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Mediterranean_Fleet
+		icon=SYRIA_Mediterranean_Fleet
+		x=22
+		y=1
+		prerequisite={focus=SYR_Syrian_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Adana_Shipyard
+		icon=ISRA_Buy_destroyers
+		x=21
+		y=2
+		prerequisite={focus=SYR_Mediterranean_Fleet}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Modernized_submarine_forces
+		icon=ISRA_The_role_of_submarine_forces
+		x=21
+		y=3
+		prerequisite={focus=SYR_Adana_Shipyard}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_cruiser
+		icon=SYRIA_cruiser
+		x=20
+		y=4
+		prerequisite={focus=SYR_Modernized_submarine_forces}
+		prerequisite={focus=SYR_Latakia_shipyard}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Mediterranean_hunter
+		icon=ISRA_Raids
+		x=22
+		y=4
+		prerequisite={focus=SYR_Modernized_submarine_forces}
+		prerequisite={focus=SYR_Latakia_shipyard}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Dominated_the_Mediterranean
+		icon=ISRA_Protect_the_coastline
+		x=21
+		y=5
+		prerequisite={focus=SYR_cruiser}
+		prerequisite={focus=SYR_Mediterranean_hunter}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Develop_air_power
+		icon=SYRIA_Develop_air_power
+		x=25
+		y=1
+		prerequisite={focus=SYR_Syrian_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Flying_artillery
+		icon=ISRA_Aviation_militia
+		x=24
+		y=2
+		prerequisite={focus=SYR_Develop_air_power}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Air_Force_Academy
+		icon=ISRA_Air_Alert_Troops
+		x=26
+		y=2
+		prerequisite={focus=SYR_Develop_air_power}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Theoretical_construction
+		icon=ISRA_Expansion_of_the_Air_Force_Brigade
+		x=23
+		y=3
+		prerequisite={focus=SYR_Develop_air_power}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Expansion_of_the_aviation_industry
+		icon=ISRA_Levantine_defense_program
+		x=25
+		y=3
+		prerequisite={focus=SYR_Develop_air_power}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Death_fell_from_the_sky
+		icon=ISRA_Anti_tank_forces
+		x=24
+		y=4
+		prerequisite={focus=SYR_Expansion_of_the_aviation_industry}
+		prerequisite={focus=SYR_Flying_artillery}
+		mutually_exclusive={focus=SYR_Sweep_the_airspace }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Sweep_the_airspace
+		icon=ISRA_Ramat_David_air_base
+		x=26
+		y=4
+		prerequisite={focus=SYR_Theoretical_construction}
+		prerequisite={focus=SYR_Air_Force_Academy}
+		mutually_exclusive={focus=SYR_Death_fell_from_the_sky }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus = {# The Defence of Natural Syria
+		id = SYR_defend_natural_syria
+		icon = GFX_goal_demobilization
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = TUR
+			}
+			OR = {
+				has_completed_focus = SYR_centralise_authority
+				has_completed_focus = SYR_syrian_federation
+				has_completed_focus = SYR_military_mandate
+			}
+		}
+
+		mutually_exclusive = {
+			focus = SYR_arab_leadership
+		}
+
+		cost = 3
+
+		x = 38
+		y = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_defend_natural_syria"
+			add_ideas = syr_defence_natural_syria
+		}
+	}
+	focus = {# Greater Syrian Nationalism
+		id = SYR_greater_syrian_nationalism
+		icon = GFX_goal_OTT_Land_Reform
+
+		available = {
+			has_government = national_populist
+			is_subject = no
+		}
+
+		prerequisite = {
+			focus = SYR_defend_natural_syria
+		}
+
+		cost = 3
+
+		x = -8
+		y = 1
+		relative_position_id = SYR_defend_natural_syria
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_greater_syrian_nationalism"
+			add_state_claim = 453
+			add_state_claim = 183
+			add_state_claim = 819
+			add_state_claim = 349
+			add_state_claim = 676
+			add_state_claim = 291
+			add_state_claim = 812
+		}
+	}
+	focus = {# The Cypriot Claim
+		id = SYR_cypriot_claim
+		icon = GFX_goal_generic_wolf_pack
+
+		available = {
+			has_government = national_populist
+			is_subject = no
+			OR = {
+				GRE = {
+					owns_state = 183
+				}
+				CYP = {
+					owns_state = 183
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_greater_syrian_nationalism
+		}
+
+		cost = 3
+
+		x = 0
+		y = 1
+		relative_position_id = SYR_greater_syrian_nationalism
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_cypriot_claim"
+			if = {
+				limit = {
+					GRE = {
+						owns_state = 183
+					}
+				}
+				create_wargoal = {
+					target = GRE
+					type = take_claimed_state
+				}
+			}
+			else = {
+				create_wargoal = {
+					target = CYP
+					type = take_claimed_state
+				}
+			}
+			add_timed_idea = {
+				idea = syr_taking_cyprus
+				days = 100
+			}
+		}
+	}
+	focus = {# Reclaim Cillcia
+		id = SYR_reclaim_cillcia
+		icon = GFX_goal_generic_territory_or_war
+
+		available = {
+			has_government = national_populist
+			is_subject = no
+			can_declare_war_on = TUR
+			TUR = { owns_state = 344 }
+		}
+
+		prerequisite = {
+			focus = SYR_greater_syrian_nationalism
+		}
+
+		cost = 3
+
+		x = -1
+		y = 2
+		relative_position_id = SYR_greater_syrian_nationalism
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_reclaim_cillcia"
+				create_wargoal = {
+					target = TUR
+					type = take_claimed_state
+				generator = { 344 }
+			}
+			add_timed_idea = {
+				idea = syr_taking_cilicia
+				days = 100
+			}
+		}
+	}
+	focus = {# Unite Syria and Assyria
+		id = SYR_syria_assyria
+		icon = GFX_goal_generic_forceful_treaty
+
+		available = {
+			has_government = national_populist
+			is_subject = no
+			IRQ = {
+				owns_state = 291
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_greater_syrian_nationalism
+		}
+
+		cost = 3
+
+		x = 1
+		y = 2
+		relative_position_id = SYR_greater_syrian_nationalism
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_syria_assyria"
+			create_wargoal = {
+				target = IRQ
+				type = take_claimed_state
+			}
+		}
+	}
+	focus = {# Cooperate with the International
+		id = SYR_international
+		icon = GFX_goal_comfrance
+
+		available = {
+			is_subject = no
+			OR = {
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			FRA = {
+				is_faction_leader = yes
+				has_capitulated = no
+				NOT = {
+					has_war_with = SYR
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_defend_natural_syria
+		}
+
+		mutually_exclusive = {
+			focus = SYR_reichspakt
+			focus = SYR_cairo_pact
+		}
+
+		cost = 3
+		x = -6
+		y = 1
+		relative_position_id = SYR_defend_natural_syria
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_international"
+			every_country = {
+				limit = {
+					is_in_faction_with = FRA
+				}
+				add_opinion_modifier = {
+					target = SYR
+					modifier = small_increase
+				}
+			}
+			custom_effect_tooltip = tooltip_white_line
+			add_tech_bonus = {
+				name = SYR_international
+				category = air_equipment
+				bonus = 1
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = SYR_international
+				category = land_doctrine
+				bonus = 1.5
+				uses = 2
+			}
+			custom_effect_tooltip = tooltip_white_line
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 100
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe
+				amount = 75
+				producer = FRA
+			}
+		}
+	}
+	focus = {# Join the Phalanstere International
+		id = SYR_phalanstere
+		icon = GFX_goal_commune_politics
+
+		available = {
+			is_subject = no
+			OR = {
+				has_government = social_liberal
+				has_government = social_democrat
+			}
+			FRA = {
+				is_faction_leader = yes
+				has_capitulated = no
+				NOT = {
+					has_war_with = SYR
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_international
+		}
+
+		cost = 3
+
+		x = 0
+		y = 1
+		relative_position_id = SYR_international
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_phalanstere"
+			random_owned_controlled_state = {
+				limit = {
+					state_population > 500000
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					state_population > 500000
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {# Cooperate with the Reichspakt
+		id = SYR_reichspakt
+		icon = GFX_goal_germany
+
+		available = {
+			is_subject = no
+			has_socialist_government = no
+			GER = {
+				exists = yes
+				NOT = {
+					has_war_with = SYR
+					has_capitulated = yes
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_defend_natural_syria
+		}
+
+		mutually_exclusive = {
+			focus = SYR_international
+			focus = SYR_cairo_pact
+		}
+
+		cost = 3
+
+		x = -4
+		y = 1
+		relative_position_id = SYR_defend_natural_syria
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_reichspakt"
+			every_country = {
+				limit = {
+					is_in_faction_with = GER
+				}
+				add_opinion_modifier = {
+					target = SYR
+					modifier = small_increase
+				}
+			}
+			custom_effect_tooltip = tooltip_white_line
+			add_tech_bonus = {
+				name = SYR_reichspakt
+				category = armor
+				bonus = 1
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = SYR_reichspakt
+				category = land_doctrine
+				bonus = 1.5
+				uses = 2
+			}
+			custom_effect_tooltip = tooltip_white_line
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 100
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe
+				amount = 75
+				producer = GER
+			}
+		}
+	}
+	focus = {# Destroyers for Bases
+		id = SYR_destroyers_forbases
+		icon = GFX_goal_generic_navy_cruiser
+
+		available = {
+			is_subject = no
+			has_socialist_government = no
+			GER = {
+				exists = yes
+				NOT = {
+					has_war_with = SYR
+					has_capitulated = yes
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_reichspakt
+		}
+
+		cost = 3
+
+		x = 0
+		y = 2
+		relative_position_id = SYR_reichspakt
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_destroyers_forbases"
+			GER = {
+				diplomatic_relation = {
+					country = SYR
+					relation = docking_rights
+					active = yes
+				}
+			}
+			add_offsite_building = {
+				type = dockyard
+				level = 2
+			}	
+		}
+	}
+	focus = {# Encourge Foreign Investors
+		id = SYR_foreign_investors
+		icon = GFX_goal_OTT_Loosen_Policy
+
+		available = {
+			has_war = no
+		}
+
+		prerequisite = {
+			focus = SYR_international
+			focus = SYR_reichspakt
+			focus = SYR_cairo_pact
+		}
+
+		cost = 3
+
+		x = 1
+		y = 1
+		relative_position_id = SYR_reichspakt
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_foreign_investors"
+			add_timed_idea = {
+				idea = SYR_Foreign_Aid
+				days = 300
+			}
+		}
+	}
+	focus = {# Cooperate with the Cairo Pact
+		id = SYR_cairo_pact
+		icon = GFX_goal_EGY_heritage
+
+		available = {
+			is_subject = no
+			EGY = {
+				is_faction_leader = yes
+				has_capitulated = no
+				NOT = {
+					has_war_with = SYR
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_defend_natural_syria
+		}
+
+		mutually_exclusive = {
+			focus = SYR_reichspakt
+			focus = SYR_international
+		}
+
+		cost = 3
+
+		x = -2
+		y = 1
+		relative_position_id = SYR_defend_natural_syria
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_cairo_pact"
+			every_country = {
+				limit = {
+					is_in_faction_with = EGY
+				}
+				add_opinion_modifier = {
+					target = SYR
+					modifier = small_increase
+				}
+			}
+			custom_effect_tooltip = tooltip_white_line
+			add_tech_bonus = {
+				name = SYR_cairo_pact
+				category = infantry_weapons
+				bonus = 1
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = SYR_cairo_pact
+				category = land_doctrine
+				bonus = 1.5
+				uses = 2
+			}
+			custom_effect_tooltip = tooltip_white_line
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 3000
+				producer = EGY
+			}
+		}
+	}
+	focus = {# Refurbish the Cairo-Damascus Line
+		id = SYR_ciaro_damascus_line
+		icon = GFX_goal_generic_construct_infrastructure
+
+		available = {
+			is_subject = no
+			EGY = {
+				is_faction_leader = yes
+				has_capitulated = no
+				NOT = {
+					has_war_with = SYR
+				}
+			}
+			446 = {
+				is_controlled_by = EGY
+			}
+			554 = {
+				is_controlled_by = SYR
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_cairo_pact
+		}
+
+		cost = 3
+
+		x = 0
+		y = 2
+		relative_position_id = SYR_cairo_pact
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_ciaro_damascus_line"
+			554 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			992 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			454 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			453 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			446 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {# Defend Syrian National Interests
+		id = SYR_defend_syrian_national_interests
+		icon = GFX_goal_COS_War
+
+		available = {
+			is_subject = no
+			OR = {
+				AND = {
+					has_socialist_government = no
+					GER = {
+						exists = yes
+						NOT = {
+							has_war_with = SYR
+							has_capitulated = yes
+						}
+					}
+				}
+				EGY = {
+					exists = yes
+					NOT = {
+						has_war_with = SYR
+						has_capitulated = yes
+					}
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_destroyers_forbases
+			focus = SYR_ciaro_damascus_line
+		}
+		mutually_exclusive = {
+			focus = SYR_pursue_neutrality
+		}
+
+		cost = 3
+
+		x = -3
+		y = 3
+		relative_position_id = SYR_cairo_pact
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_defend_syrian_national_interests"
+			custom_effect_tooltip = syr_join_faction
+		}
+	}
+	focus = {# Pursue Neutrality
+		id = SYR_pursue_neutrality
+		icon = GFX_goal_COS_Peace
+
+		available = {
+
+		}
+
+		prerequisite = {
+			focus = SYR_ciaro_damascus_line
+			focus = SYR_destroyers_forbases
+		}
+		mutually_exclusive = {
+			focus = SYR_defend_syrian_national_interests
+		}
+
+		cost = 3
+
+		x = 1
+		y = 3
+		relative_position_id = SYR_cairo_pact
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_pursue_neutrality"
+			swap_ideas = {
+				remove_idea = syr_defence_natural_syria
+				add_idea = syr_defence_natural_syria2
+			}
+		}
+	}
+	focus = {# Standardize Small Arms
+		id = SYR_standard_small_arms
+		icon = GFX_goal_generic_small_arms
+
+		prerequisite = {
+			focus = SYR_arab_leadership
+			focus = SYR_defend_natural_syria
+		}
+
+		cost = 3
+
+		x = 1
+		y = 1
+		relative_position_id = SYR_defend_natural_syria
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_standard_small_arms"
+			add_tech_bonus = {
+				name = SYR_standard_small_arms
+				category = infantry_weapons
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {# Re-open the Ottoman Military Colleges
+		id = SYR_military_colleges
+		icon = GFX_goal_generic_army_doctrines
+
+		prerequisite = {
+			focus = SYR_arab_leadership
+			focus = SYR_defend_natural_syria
+		}
+
+		cost = 3
+
+		x = 3
+		y = 1
+		relative_position_id = SYR_defend_natural_syria
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		bypass = {
+			NOT = {
+				has_idea = syr_ottoman_military
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_military_colleges"
+			remove_ideas = syr_ottoman_military
+			country_event = syrrep.14
+		}
+	}
+	focus = {# Refurbish the Aleppan Munition Factories
+		id = SYR_munution_factories
+		icon = GFX_goal_generic_construct_mil_factory
+
+		available = {
+			controls_state = 677
+		}
+
+		prerequisite = {
+			focus = SYR_standard_small_arms
+		}
+		prerequisite = {
+			focus = SYR_military_colleges
+		}
+
+		cost = 3
+
+		x = 1
+		y = 1
+		relative_position_id = SYR_standard_small_arms
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		bypass = {
+			NOT = {
+				owns_state = 677
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_munution_factories"
+			677 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {# Domestic Arms Production
+		id = SYR_domestic_arms_production
+		icon = GFX_focus_generic_license_production
+
+		available = {
+			controls_state = 554
+		}
+
+		prerequisite = {
+			focus = SYR_munution_factories
+		}
+
+		cost = 3
+
+		x = 0
+		y = 1
+		relative_position_id = SYR_munution_factories
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_domestic_arms_production"
+			554 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {# The Lion of Syria
+		id = SYR_lion_of_syria
+		icon = GFX_goal_SYR_Lion_of_Syria
+
+		prerequisite = {
+			focus = SYR_domestic_arms_production
+		}
+
+		cost = 3
+
+		x = -1
+		y = 2
+		relative_position_id = SYR_munution_factories
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_lion_of_syria"
+			add_ideas = syr_lion_of_syria
+		}
+	}
+	focus = {# The Hawk of Quarash
+		id = SYR_hawk_of_qurash
+		icon = GFX_goal_SYR_Hawk_of_Syria
+
+		prerequisite = {
+			focus = SYR_domestic_arms_production
+		}
+
+		cost = 3
+
+		x = 1
+		y = 2
+		relative_position_id = SYR_munution_factories
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_hawk_of_qurash"
+			add_ideas = syr_hawk_of_quraish
+		}
+	}
+	focus = {# Expand Phonecian Shipbuilding
+		id = SYR_phoncian_shipbuilding
+		icon = GFX_goal_generic_sea_focused_navy
+
+		available = {
+			553 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		prerequisite = {
+			focus = SYR_munution_factories
+		}
+
+		cost = 3
+
+		x = -2
+		y = 1
+		relative_position_id = SYR_munution_factories
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_phoncian_shipbuilding"
+			add_tech_bonus = {
+				name = SYR_phoncian_shipbuilding
+				category = naval_equipment
+				bonus = 1
+				uses = 2
+			}
+			553 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {# Open the Syrian Naval academy
+		id = SYR_syrian_naval_academy
+		icon = GFX_goal_SYR_Navy
+
+		prerequisite = {
+			focus = SYR_phoncian_shipbuilding
+		}
+
+		cost = 3
+
+		x = -2
+		y = 3
+		relative_position_id = SYR_munution_factories
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_syrian_naval_academy"
+			add_tech_bonus = {
+				name = SYR_syrian_naval_academy
+				category = naval_doctrine
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	### Leadership of the Arab Movement ###
+	focus = {# Assume leadership of the Arab Movement
+		id = SYR_arab_leadership
+		icon = GFX_goal_islamic_government
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_government = national_populist
+				has_war_with = TUR
+			}
+			OR = {
+				has_completed_focus = SYR_centralise_authority
+				has_completed_focus = SYR_syrian_federation
+				has_completed_focus = SYR_military_mandate
+			}
+		}
+
+		mutually_exclusive = {
+			focus = SYR_defend_natural_syria
+		}
+
+		cost = 3
+
+		x = 4
+		y = 0
+		relative_position_id = SYR_defend_natural_syria
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_arab_leadership"
+			add_ideas = syr_vanguard_of_arabia
+			EGY = {
+				remove_from_faction = SYR
+			}
+		}
+	}
+
+	focus = {
+		id = SYR_League_of_Arab_States
+		icon = GFX_goal_OTT_caliph
+
+		cost = 3
+
+		prerequisite = {
+			focus = SYR_arab_leadership
+		}
+
+		available = {
+			NOT = {
+				is_in_faction = yes
+			}
+			is_subject = no
+			NOT = {
+				IRQ = {
+					has_completed_focus = IRQ_League_of_Arab_States
+				}
+			}
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = SYR_arab_leadership
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_League_of_Arab_States"
+			set_variable = {
+				var_LOA_members = 0.05
+			}
+			add_dynamic_modifier = {
+				modifier = SYR_League_of_Arab_States_dynamic_modifier
+				scope = SYR
+			}
+			custom_effect_tooltip = syr_league_arab_states
+			hidden_effect = {
+				remove_dynamic_modifier = {
+					modifier = EGY_League_of_Arab_States_dynamic_modifier
+				}
+				set_country_flag = left_FAC
+				remove_ideas = IRQ_Economic_Social_Council
+				EGY = {
+					add_to_variable = {
+						var = var_FAC_members
+						value = -0.01
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SYR_Economic_Social_Council
+		icon = GFX_goal_OTT_Tithe
+
+		cost = 3
+
+		prerequisite = {
+			focus = SYR_League_of_Arab_States
+		}
+
+		available = {
+			is_subject = no
+			has_dynamic_modifier = {
+				modifier = SYR_League_of_Arab_States_dynamic_modifier
+				scope = SYR
+			}
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = SYR_League_of_Arab_States
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_Economic_Social_Council"
+			custom_effect_tooltip = irq_memberstates_buff
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+				}
+				add_ideas = IRQ_Economic_Social_Council
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+					add_ideas = IRQ_Economic_Social_Council
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SYR_Arab_Customs_Union
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+
+		cost = 3
+
+		prerequisite = {
+			focus = SYR_Economic_Social_Council
+		}
+
+		available = {
+			is_subject = no
+			has_dynamic_modifier = {
+				modifier = SYR_League_of_Arab_States_dynamic_modifier
+				scope = SYR
+			}
+		}
+
+		x = -1
+		y = 2
+		relative_position_id = SYR_League_of_Arab_States
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_Arab_Customs_Union"
+			custom_effect_tooltip = irq_memberstates_buff
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+				}
+				add_political_power = 100
+				add_tech_bonus = {
+					name = SYR_Arab_Customs_Union
+					category = excavation_tech
+					bonus = 1
+					uses = 1
+				}
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+					add_political_power = 100
+					add_tech_bonus = {
+						name = SYR_Arab_Customs_Union
+						category = excavation_tech
+						bonus = 1
+						uses = 1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SYR_Joint_Defence_Council
+		icon = GFX_EGY_Coordinate_with_Al_Ahd
+
+		cost = 3
+
+		prerequisite = {
+			focus = SYR_League_of_Arab_States
+		}
+
+		available = {
+			is_subject = no
+			has_dynamic_modifier = {
+				modifier = SYR_League_of_Arab_States_dynamic_modifier
+				scope = SYR
+			}
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = SYR_League_of_Arab_States
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_Joint_Defence_Council"
+			custom_effect_tooltip = irq_memberstates_buff
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+				}
+				army_experience = 50
+				air_experience = 50
+				navy_experience = 50
+				add_doctrine_cost_reduction = {
+					name = SYR_Joint_Defence_Council
+					category = land_doctrine
+					cost_reduction = 1
+					uses = 1
+				}
+				add_doctrine_cost_reduction = {
+					name = SYR_Joint_Defence_Council
+					category = air_doctrine
+					cost_reduction = 1
+					uses = 1
+				}
+				add_doctrine_cost_reduction = {
+					name = SYR_Joint_Defence_Council
+					category = naval_doctrine
+					cost_reduction = 1
+					uses = 1
+				}
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+					army_experience = 50
+					air_experience = 50
+					navy_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SYR_Joint_Defence_Council
+						category = land_doctrine
+						cost_reduction = 1
+						uses = 1
+					}
+					add_doctrine_cost_reduction = {
+						name = SYR_Joint_Defence_Council
+						category = air_doctrine
+						cost_reduction = 1
+						uses = 1
+					}
+					add_doctrine_cost_reduction = {
+						name = SYR_Joint_Defence_Council
+						category = naval_doctrine
+						cost_reduction = 1
+						uses = 1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SYR_Arab_Unified_Command
+		icon = GFX_EGY_Palestine_Defence
+
+		cost = 3
+
+		prerequisite = {
+			focus = SYR_Joint_Defence_Council
+		}
+
+		available = {
+			is_subject = no
+			has_dynamic_modifier = {
+				modifier = SYR_League_of_Arab_States_dynamic_modifier
+				scope = SYR
+			}
+		}
+
+		x = 1
+		y = 2
+		relative_position_id = SYR_League_of_Arab_States
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_Arab_Unified_Command"
+			custom_effect_tooltip = irq_memberstates_buff
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+				}
+				add_ideas = IRQ_Unified_Arab_Command
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+					add_ideas = IRQ_Unified_Arab_Command
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SYR_Arab_Parliament
+		icon = GFX_goal_government_icon
+
+		cost = 3
+
+		prerequisite = {
+			focus = SYR_Arab_Customs_Union
+		}
+		prerequisite = {
+			focus = SYR_Arab_Unified_Command
+		}
+
+		available = {
+			is_subject = no
+			has_dynamic_modifier = {
+				modifier = SYR_League_of_Arab_States_dynamic_modifier
+				scope = SYR
+			}
+		}
+
+		x = 0
+		y = 3
+		relative_position_id = SYR_League_of_Arab_States
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_Arab_Parliament"
+			custom_effect_tooltip = irq_memberstates_puppet
+			hidden_effect = {
+				if = {
+					limit = {
+						IRQ = {
+							has_dynamic_modifier = {
+								modifier = SYR_League_of_Arab_States_dynamic_modifier
+								scope = SYR
+							}
+						}
+					}
+					IRQ = {
+						get_current_government_type = yes
+						SYR = {
+							puppet = IRQ
+						}
+						restore_previous_government_type = yes
+					}
+				}
+				if = {
+					limit = {
+						HEJ = {
+							has_dynamic_modifier = {
+								modifier = SYR_League_of_Arab_States_dynamic_modifier
+								scope = SYR
+							}
+						}
+					}
+					HEJ = {
+						get_current_government_type = yes
+						SYR = {
+							puppet = HEJ
+						}
+						restore_previous_government_type = yes
+					}
+				}
+				if = {
+					limit = {
+						YEM = {
+							has_dynamic_modifier = {
+								modifier = SYR_League_of_Arab_States_dynamic_modifier
+								scope = SYR
+							}
+						}
+					}
+					YEM = {
+						get_current_government_type = yes
+						SYR = {
+							puppet = YEM
+						}
+						restore_previous_government_type = yes
+					}
+				}
+				if = {
+					limit = {
+						OMA = {
+							has_dynamic_modifier = {
+								modifier = SYR_League_of_Arab_States_dynamic_modifier
+								scope = SYR
+							}
+						}
+					}
+					OMA = {
+						get_current_government_type = yes
+						SYR = {
+							puppet = OMA
+						}
+						restore_previous_government_type = yes
+					}
+				}
+				if = {
+					limit = {
+						JBS = {
+							has_dynamic_modifier = {
+								modifier = SYR_League_of_Arab_States_dynamic_modifier
+								scope = SYR
+							}
+						}
+					}
+					JBS = {
+						get_current_government_type = yes
+						SYR = {
+							puppet = JBS
+						}
+						restore_previous_government_type = yes
+					}
+				}
+				if = {
+					limit = {
+						SAU = {
+							has_dynamic_modifier = {
+								modifier = SYR_League_of_Arab_States_dynamic_modifier
+								scope = SYR
+							}
+						}
+					}
+					SAU = {
+						get_current_government_type = yes
+						SYR = {
+							puppet = SAU
+						}
+						restore_previous_government_type = yes
+					}
+				}
+				if = {
+					limit = {
+						TRU = {
+							has_dynamic_modifier = {
+								modifier = SYR_League_of_Arab_States_dynamic_modifier
+								scope = SYR
+							}
+						}
+					}
+					TRU = {
+						get_current_government_type = yes
+						SYR = {
+							puppet = TRU
+						}
+						restore_previous_government_type = yes
+					}
+				}
+			}
+			create_faction = "League of Arab States"
+		}
+	}
+
+	focus = {
+		id = SYR_Council_of_Transportation
+		icon = GFX_goal_generic_railway_construction
+
+		cost = 3
+
+		prerequisite = {
+			focus = SYR_Arab_Parliament
+		}
+
+		available = {
+			is_subject = no
+			has_dynamic_modifier = {
+				modifier = SYR_League_of_Arab_States_dynamic_modifier
+				scope = SYR
+			}
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = SYR_Arab_Parliament
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_Council_of_Transportation"
+			custom_effect_tooltip = irq_memberstates_buff
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							infrastructure < 5
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							infrastructure < 5
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							infrastructure < 5
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SYR_Council_of_Justice
+		icon = GFX_goal_DOM_The_Trial
+
+		cost = 3
+
+		prerequisite = {
+			focus = SYR_Arab_Parliament
+		}
+
+		available = {
+			is_subject = no
+			has_dynamic_modifier = {
+				modifier = SYR_League_of_Arab_States_dynamic_modifier
+				scope = SYR
+			}
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = SYR_Arab_Parliament
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_Council_of_Justice"
+			custom_effect_tooltip = irq_memberstates_buff
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+				}
+				add_stability = 0.10
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+					add_stability = 0.10
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SYR_Council_of_Social_Affairs
+		icon = GFX_goal_LIB_whiter_pale
+
+		cost = 3
+
+		prerequisite = {
+			focus = SYR_Arab_Parliament
+		}
+
+		available = {
+			is_subject = no
+			has_dynamic_modifier = {
+				modifier = SYR_League_of_Arab_States_dynamic_modifier
+				scope = SYR
+			}
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = SYR_Arab_Parliament
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_Council_of_Social_Affairs"
+			custom_effect_tooltip = irq_memberstates_buff
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+				}
+				add_ideas = IRQ_Council_Social_Affairs
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+					}
+					add_ideas = IRQ_Council_Social_Affairs
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SYR_Arab_Federation
+		icon = GFX_goal_Pan_Arabism
+
+		cost = 3
+
+		prerequisite = {
+			focus = SYR_Council_of_Transportation
+		}
+		prerequisite = {
+			focus = SYR_Council_of_Justice
+		}
+		prerequisite = {
+			focus = SYR_Council_of_Social_Affairs
+		}
+
+		available = {
+			is_subject = no
+			has_dynamic_modifier = {
+				modifier = SYR_League_of_Arab_States_dynamic_modifier
+				scope = SYR
+			}
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = SYR_Arab_Parliament
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_Arab_Federation"
+			custom_effect_tooltip = irq_memberstates_integration
+			hidden_effect = {
+				if = {
+					limit = {
+						IRQ = {
+							is_subject_of = SYR
+						}
+					}
+					IRQ = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = IRQ
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = IRQ
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						HEJ = {
+							is_subject_of = SYR
+						}
+					}
+					HEJ = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = HEJ
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = HEJ
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						YEM = {
+							is_subject_of = SYR
+						}
+					}
+					YEM = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = YEM
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = YEM
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						OMA = {
+							is_subject_of = SYR
+						}
+					}
+					OMA = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = OMA
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = OMA
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						JBS = {
+							is_subject_of = SYR
+						}
+					}
+					JBS = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = JBS
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = JBS
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						SAU = {
+							is_subject_of = SYR
+						}
+					}
+					annex_country = {
+						target = SAU
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SAU
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						TRU = {
+							is_subject_of = SYR
+						}
+					}
+					TRU = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = TRU
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = TRU
+						}
+						add_core_of = SYR
+					}
+				}
+				remove_ideas = IRQ_Economic_Social_Council
+				remove_ideas = IRQ_Unified_Arab_Command
+				remove_ideas = IRQ_Council_Social_Affairs
+
+				set_country_flag = IRQ_CONQ
+				set_country_flag = LEB_CONQ
+				set_country_flag = KUR_CONQ
+				set_country_flag = HEJ_CONQ
+				set_country_flag = ARA_CONQ
+				set_country_flag = TRU_CONQ
+				set_country_flag = YEM_CONQ
+				set_country_flag = OMA_CONQ
+			}
+			set_cosmetic_tag = IRQ_federation
+			add_timed_idea = {
+				idea = IRQ_Arab_Federation_idea
+				days = 600
+			}
+		}
+	}
+	focus = {# Challenge Egyptian Domination
+		id = SYR_challenge_egypt
+		icon = GFX_EGY_Third_Arab_Congress
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = EGY
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_arab_leadership
+		}
+
+		cost = 3
+
+		x = 6
+		y = 1
+		relative_position_id = SYR_arab_leadership
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_challenge_egypt"
+			EGY = {
+				add_opinion_modifier = {
+					target = SYR
+					modifier = medium_decrease
+				}
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				remove_from_faction = HEJ
+				remove_from_faction = IRQ
+				remove_from_faction = SAU
+				remove_from_faction = JBS
+				remove_from_faction = YEM
+			}
+		}
+	}
+	focus = {# Destablise the Hejazi State
+		id = SYR_destablise_hejaz
+		icon = GFX_goal_Unite_Arabia
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = HEJ
+			}
+			HEJ = {
+				has_country_flag = refused_loa
+			}
+		}
+
+		bypass = {
+			HEJ = {
+				has_dynamic_modifier = {
+					modifier = SYR_League_of_Arab_States_dynamic_modifier
+					scope = SYR
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_challenge_egypt
+		}
+
+		cost = 3
+
+		x = -1
+		y = 1
+		relative_position_id = SYR_challenge_egypt
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_destablise_hejaz"
+			HEJ = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_stability = -0.05
+			}
+			create_wargoal = {
+				target = HEJ
+				type = topple_government
+			}
+		}
+	}
+	focus = {# Destablise the Immamate
+		id = SYR_destablize_the_imamate
+		icon = GFX_goal_OTT_Yemeni_Question
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = YEM
+			}
+			YEM = {
+				has_country_flag = refused_loa
+			}
+		}
+
+		bypass = {
+			YEM = {
+				has_dynamic_modifier = {
+					modifier = SYR_League_of_Arab_States_dynamic_modifier
+					scope = SYR
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_challenge_egypt
+		}
+
+		cost = 3
+
+		x = 0
+		y = 2
+		relative_position_id = SYR_challenge_egypt
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_destablize_the_imamate"
+			YEM = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_stability = -0.05
+			}
+			create_wargoal = {
+				target = YEM
+				type = topple_government
+			}
+		}
+	}
+	focus = {# Sawl Al-Arab Broadcasts
+		id = SYR_arab_broadcasts
+		icon = GFX_EGY_Radio_Free_Cairo
+
+		prerequisite = {
+			focus = SYR_challenge_egypt
+			focus = SYR_destablise_persian_gulf
+		}
+
+		cost = 3
+
+		x = 1
+		y = 1
+		relative_position_id = SYR_challenge_egypt
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_arab_broadcasts"
+			add_war_support = 0.10
+			HEJ = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_war_support = 0.05
+			}
+			IRQ = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_war_support = 0.05
+			}
+			JBS = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_war_support = 0.05
+			}
+			SAU = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_war_support = 0.05
+			}
+			EGY = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_war_support = 0.05
+			}
+			YEM = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {# Destablise the Persian Gulf
+		id = SYR_destablise_persian_gulf
+		icon = GFX_goal_OTT_persian_gulf
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = JBS
+				has_war_with = SAU
+			}
+			OR = {
+				JBS = {
+					has_country_flag = refused_loa
+				}
+				SAU = {
+					has_country_flag = refused_loa
+				}
+			}
+		}
+
+		bypass = {
+			JBS = {
+				OR = {
+					has_dynamic_modifier = {
+						modifier = SYR_League_of_Arab_States_dynamic_modifier
+						scope = SYR
+					}
+					exists = no
+				}
+			}
+			SAU = {
+				OR = {
+					has_dynamic_modifier = {
+						modifier = SYR_League_of_Arab_States_dynamic_modifier
+						scope = SYR
+					}
+					exists = no
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_arab_leadership
+		}
+
+		cost = 3
+
+		x = 2
+		y = 0
+		relative_position_id = SYR_challenge_egypt
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_destablise_persian_gulf"
+			JBS = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_stability = -0.05
+			}
+			SAU = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_stability = -0.05
+			}
+			create_wargoal = {
+				target = JBS
+				type = topple_government
+			}
+			create_wargoal = {
+				target = SAU
+				type = topple_government
+			}
+		}
+	}
+	focus = {# Destablise the Iraqi State
+		id = SYR_destablize_iraq
+		icon = GFX_EGY_Coordinate_with_Al_Fatat
+
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = IRQ
+			}
+			IRQ = {
+				has_country_flag = refused_loa
+			}
+		}
+
+		bypass = {
+			IRQ = {
+				has_dynamic_modifier = {
+					modifier = SYR_League_of_Arab_States_dynamic_modifier
+					scope = SYR
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_destablise_persian_gulf
+		}
+
+		cost = 3
+
+		x = 0
+		y = 2
+		relative_position_id = SYR_destablise_persian_gulf
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_destablize_iraq"
+			IRQ = {
+				if = {
+					limit = {
+						SYR = {
+							has_government = social_liberal
+						}
+					}
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.10
+					}
+				}
+				else = {
+					add_popularity = {
+						ideology = social_conservative
+						popularity = 0.10
+					}
+				}
+				add_stability = -0.05
+			}
+			create_wargoal = {
+				target = IRQ
+				type = topple_government
+			}
+		}
+	}
+	focus = {# The Arabistan Claim
+		id = SYR_arabistan_claim
+		icon = GFX_goal_IRQ_Arabistan
+
+		available = {
+			OR = {
+				is_in_faction_with = IRQ
+				owns_state = 291
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_destablize_iraq
+		}
+
+		cost = 3
+
+		x = 0
+		y = 3
+		relative_position_id = SYR_destablise_persian_gulf
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_arabistan_claim"
+			add_state_claim = 413
+		}
+	}
+	focus = {# Cooperate with Oman & Muscat
+		id = SYR_cooperate_oman_muscat
+		icon = GFX_goal_OTT_Muslim_Relations
+
+		available = {
+			NOT = {
+				has_war_with = OMA
+			}
+			OMA = {
+				is_subject = no
+			}
+		}
+
+		prerequisite = {
+			focus = SYR_destablise_persian_gulf
+		}
+
+		cost = 3
+
+		x = 1
+		y = 1
+		relative_position_id = SYR_destablise_persian_gulf
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SYR_cooperate_oman_muscat"
+			custom_effect_tooltip = irq_league_arab_states_oma
+		}
+	}
+	focus={
+		id=SYR_SSNP_won_a_big_victory
+		icon=SYRIA_SSNP_won_a_big_victory
+		x=9
+		y=8
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = SYR_SSNP_victory_flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Eradicate_pan_Arabists
+		icon=SYRIA_Eradicate_pan_Arabists
+		x=-2
+		y=1
+		prerequisite={focus=SYR_SSNP_won_a_big_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Enemies_of_Zionism
+		icon=SYRIA_Enemies_of_Zionism
+		x=0
+		y=1
+		prerequisite={focus=SYR_SSNP_won_a_big_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_The_party_commands_the_army
+		icon=SYRIA_The_party_commands_the_army
+		x=2
+		y=1
+		prerequisite={focus=SYR_SSNP_won_a_big_victory}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Ensure_leadership_authority
+		icon=SYRIA_Ensure_leadership_authority
+		x=-1
+		y=2
+		prerequisite={focus=SYR_Eradicate_pan_Arabists}
+		prerequisite={focus=SYR_Enemies_of_Zionism}
+		prerequisite={focus=SYR_The_party_commands_the_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Kick_out_Parliament
+		icon=SYRIA_Kick_out_Parliament
+		x=1
+		y=2
+		prerequisite={focus=SYR_Eradicate_pan_Arabists}
+		prerequisite={focus=SYR_Enemies_of_Zionism}
+		prerequisite={focus=SYR_The_party_commands_the_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_SSNP_Next
+		icon=SYRIA_SSNP_Next
+		x=0
+		y=3
+		prerequisite={focus=SYR_Ensure_leadership_authority}
+		prerequisite={focus=SYR_Kick_out_Parliament}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Zaims_vision_for_democracy
+		icon=SYRIA_Zaims_vision_for_democracy
+		x=-6
+		y=4
+		prerequisite={focus=SYR_SSNP_Next}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Retain_a_limited_parliament
+		icon=SYRIA_Retain_a_limited_parliament
+		x=-6
+		y=5
+		prerequisite={focus=SYR_Zaims_vision_for_democracy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Semi_democracy
+		icon=SYRIA_Semi_democracy
+		x=-6
+		y=6
+		prerequisite={focus=SYR_Retain_a_limited_parliament}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Moral_national_democracy
+		icon=SYRIA_Moral_national_democracy
+		x=-6
+		y=7
+		prerequisite={focus=SYR_Semi_democracy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Overhead_SSNP
+		icon=SYRIA_Overhead_SSNP
+		x=-8
+		y=5
+		prerequisite={focus=SYR_Zaims_vision_for_democracy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_The_dream_of_Greater_Syria
+		icon=SYRIA_The_dream_of_Greater_Syria
+		x=-4
+		y=5
+		prerequisite={focus=SYR_Zaims_vision_for_democracy focus=SYR_Shishaklis_revenge focus=SYR_Sadeh_reigns_forever focus=SYR_Ghassan_National_Revolution }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Shishaklis_revenge
+		icon=SYRIA_Shishaklis_revenge
+		x=-2
+		y=4
+		prerequisite={focus=SYR_SSNP_Next}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Total_jihad_agains_Judaism
+		icon=SYRIA_Total_jihad_agains_Judaism
+		x=-2
+		y=5
+		prerequisite={focus=SYR_Shishaklis_revenge}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Anti_socialism
+		icon=SYRIA_Anti_socialism
+		x=-2
+		y=6
+		prerequisite={focus=SYR_Total_jihad_agains_Judaism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_National_patriotism
+		icon=SYRIA_National_patriotism
+		x=-2
+		y=7
+		prerequisite={focus=SYR_Anti_socialism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Do_not_forget_the_four_major_guidelines
+		icon=SYRIA_Do_not_forget_the_four_major_guidelines
+		x=0
+		y=5
+		prerequisite={focus=SYR_Shishaklis_revenge focus=SYR_Sadeh_reigns_forever focus=SYR_Ghassan_National_Revolution }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Sadeh_reigns_forever
+		icon=SYRIA_Sadeh_reigns_forever
+		x=2
+		y=4
+		prerequisite={focus=SYR_SSNP_Next}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Gather_compatriots
+		icon=SYRIA_Gather_compatriots
+		x=2
+		y=5
+		prerequisite={focus=SYR_Sadeh_reigns_forever}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Tempering_and_forging
+		icon=SYRIA_Tempering_and_forging
+		x=2
+		y=6
+		prerequisite={focus=SYR_Gather_compatriots}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_The_original_goodness
+		icon=SYRIA_The_original_goodness
+		x=2
+		y=7
+		prerequisite={focus=SYR_Tempering_and_forging}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_secularism
+		icon=SYRIA_secularism
+		x=4
+		y=5
+		prerequisite={focus=SYR_Sadeh_reigns_forever focus=SYR_Ghassan_National_Revolution focus=SYR_Shishaklis_revenge focus=SYR_Zaims_vision_for_democracy }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Ghassan_National_Revolution
+		icon=SYRIA_Ghassan_National_Revolution
+		x=6
+		y=4
+		prerequisite={focus=SYR_SSNP_Next}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Attack_the_wealthy_families
+		icon=SYRIA_Attack_the_wealthy_families
+		x=6
+		y=5
+		prerequisite={focus=SYR_Ghassan_National_Revolution}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_social_security
+		icon=SYRIA_social_security
+		x=6
+		y=6
+		prerequisite={focus=SYR_Attack_the_wealthy_families}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_National_syndicalism
+		icon=SYRIA_National_syndicalism
+		x=6
+		y=7
+		prerequisite={focus=SYR_social_security}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Anti_imperialist_struggle
+		icon=SYRIA_Anti_imperialist_struggle
+		x=8
+		y=5
+		prerequisite={focus=SYR_Ghassan_National_Revolution focus=SYR_Zaims_vision_for_democracy focus=SYR_Shishaklis_revenge focus=SYR_Sadeh_reigns_forever focus=SYR_Ghassan_National_Revolution }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		relative_position_id = SYR_SSNP_won_a_big_victory
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Glory_to_the_Arab_flag
+		icon=SYRIA_Glory_to_the_Arab_flag
+		x=34
+		y=8
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = SYR_Pan_Arab_dawn_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Mobilize_intellectuals
+		icon=SYRIA_Mobilize_intellectuals
+		x=33
+		y=9
+		prerequisite={focus=SYR_Glory_to_the_Arab_flag}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Crush_the_enemies_of_the_revolution
+		icon=SYRIA_Crush_the_enemies_of_the_revolution
+		x=35
+		y=9
+		prerequisite={focus=SYR_Glory_to_the_Arab_flag}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Wash_the_spirit
+		icon=SYRIA_Wash_the_spirit
+		x=32
+		y=10
+		prerequisite={focus=SYR_Mobilize_intellectuals}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Unite_the_people
+		icon=SYRIA_Unite_the_people
+		x=34
+		y=10
+		prerequisite={focus=SYR_Mobilize_intellectuals}
+		prerequisite={focus=SYR_Crush_the_enemies_of_the_revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_A_fire_of_hope
+		icon=SYRIA_A_fire_of_hope
+		x=36
+		y=10
+		prerequisite={focus=SYR_Crush_the_enemies_of_the_revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_The_dawn_of_the_new_century
+		icon=SYRIA_The_dawn_of_the_new_century
+		x=34
+		y=11
+		prerequisite={focus=SYR_Wash_the_spirit}
+		prerequisite={focus=SYR_Unite_the_people}
+		prerequisite={focus=SYR_A_fire_of_hope}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Only_one_party
+		icon=SYRIA_Onl_one_party
+		x=24
+		y=12
+		prerequisite={focus=SYR_The_dawn_of_the_new_century}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Arab_reformism
+		icon=SYRIA_Arab_reformism
+		x=22
+		y=13
+		prerequisite={focus=SYR_Only_one_party}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Limited_democracy
+		icon=SYRIA_Limited_democracy
+		x=24
+		y=13
+		prerequisite={focus=SYR_Only_one_party}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Oppose_extremist_ideology
+		icon=SYRIA_Oppose_extremist_ideology
+		x=26
+		y=13
+		prerequisite={focus=SYR_Only_one_party}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_End_exploitation
+		icon=SYRIA_End_exploitation
+		x=23
+		y=14
+		prerequisite={focus=SYR_Arab_reformism}
+		prerequisite={focus=SYR_Limited_democracy}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Progressive_Alliance
+		icon=SYRIA_Progressive_Alliance
+		x=25
+		y=14
+		prerequisite={focus=SYR_Limited_democracy}
+		prerequisite={focus=SYR_Oppose_extremist_ideology}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Gentle_and_united
+		icon=SYRIA_Gentle_and_united
+		x=24
+		y=15
+		prerequisite={focus=SYR_End_exploitation}
+		prerequisite={focus=SYR_Progressive_Alliance}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Arab_unity
+		icon=SYRIA_Arab_unity
+		x=29
+		y=12
+		prerequisite={focus=SYR_The_dawn_of_the_new_century}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Transform_political_parties
+		icon=SYRIA_Transform_political_parties
+		x=28
+		y=13
+		prerequisite={focus=SYR_Arab_unity}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Encourage_sacrifice
+		icon=SYRIA_Encourage_sacrifice
+		x=30
+		y=13
+		prerequisite={focus=SYR_Arab_unity}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Guard_of_the_Arabs
+		icon=SYRIA_Guard_of_the_Arabs
+		x=27
+		y=14
+		prerequisite={focus=SYR_Transform_political_parties}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Spread_Baathlism
+		icon=SYRIA_Spread_Baathlism
+		x=29
+		y=14
+		prerequisite={focus=SYR_Transform_political_parties}
+		prerequisite={focus=SYR_Encourage_sacrifice}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Arm_the_people
+		icon=SYRIA_Arm_the_people
+		x=31
+		y=14
+		prerequisite={focus=SYR_Encourage_sacrifice}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Death_and_rebirth
+		icon=SYRIA_Death_and_rebirth
+		x=29
+		y=15
+		prerequisite={focus=SYR_Guard_of_the_Arabs}
+		prerequisite={focus=SYR_Spread_Baathlism}
+		prerequisite={focus=SYR_Arm_the_people}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Arab_Revolution
+		icon=SYRIA_Arab_Revolution
+		x=34
+		y=12
+		prerequisite={focus=SYR_The_dawn_of_the_new_century}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Socialist_bridgehead
+		icon=SYRIA_Socialist_bridgehead
+		x=32
+		y=13
+		prerequisite={focus=SYR_Arab_Revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Ideological_enlightenment
+		icon=SYRIA_Ideological_enlightenment
+		x=34
+		y=13
+		prerequisite={focus=SYR_Arab_Revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_The_farmer_owns_the_land
+		icon=SYRIA_The_farmer_owns_the_land
+		x=36
+		y=13
+		prerequisite={focus=SYR_Arab_Revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Anti_colonial_vanguard
+		icon=SYRIA_Anti_colonial_vanguard
+		x=33
+		y=14
+		prerequisite={focus=SYR_Socialist_bridgehead}
+		prerequisite={focus=SYR_Ideological_enlightenment}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Social_justice
+		icon=SYRIA_Social_justice
+		x=35
+		y=14
+		prerequisite={focus=SYR_Ideological_enlightenment}
+		prerequisite={focus=SYR_The_farmer_owns_the_land}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Defense_counterattack
+		icon=SYRIA_Defense_counterattack
+		x=34
+		y=15
+		prerequisite={focus=SYR_Anti_colonial_vanguard}
+		prerequisite={focus=SYR_Social_justice}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_The_old_party_is_reborn
+		icon=SYRIA_The_old_party_is_reborn
+		x=39
+		y=12
+		prerequisite={focus=SYR_The_dawn_of_the_new_century}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Communist_program
+		icon=SYRIA_Communist_program
+		x=38
+		y=13
+		prerequisite={focus=SYR_The_old_party_is_reborn}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Syria_first
+		icon=SYRIA_Syria_first
+		x=40
+		y=13
+		prerequisite={focus=SYR_The_old_party_is_reborn}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_National_vanguard
+		icon=SYRIA_National_vanguard
+		x=37
+		y=14
+		prerequisite={focus=SYR_Communist_program}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_The_wisdom_of_the_SSNP
+		icon=SYRIA_The_wisdom_of_the_SSNP
+		x=39
+		y=14
+		prerequisite={focus=SYR_Communist_program}
+		prerequisite={focus=SYR_Syria_first}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Embrace_the_regional_revolution
+		icon=SYRIA_Embrace_the_regional_revolution
+		x=41
+		y=14
+		prerequisite={focus=SYR_Syria_first}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_The_right_path_in_the_world
+		icon=SYRIA_The_right_path_in_the_world
+		x=39
+		y=15
+		prerequisite={focus=SYR_National_vanguard}
+		prerequisite={focus=SYR_The_wisdom_of_the_SSNP}
+		prerequisite={focus=SYR_Embrace_the_regional_revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Protect_the_revolution
+		icon=SYRIA_Protect_the_revolution
+		x=44
+		y=12
+		prerequisite={focus=SYR_The_dawn_of_the_new_century}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Weaken_the_power_of_civil_servants
+		icon=SYRIA_Weaken_the_power_of_civil_servants
+		x=42
+		y=13
+		prerequisite={focus=SYR_Protect_the_revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Martial_law_is_normalized
+		icon=SYRIA_Martial_law_is_normalized
+		x=44
+		y=13
+		prerequisite={focus=SYR_Protect_the_revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Absorb_the_jihadists
+		icon=SYRIA_Absorb_the_jihadists
+		x=46
+		y=13
+		prerequisite={focus=SYR_Protect_the_revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Maintain_military_governance
+		icon=SYRIA_Maintain_military_governance
+		x=43
+		y=14
+		prerequisite={focus=SYR_Weaken_the_power_of_civil_servants}
+		prerequisite={focus=SYR_Martial_law_is_normalized}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Calling_patriotic_children
+		icon=SYRIA_Calling_patriotic_children
+		x=45
+		y=14
+		prerequisite={focus=SYR_Martial_law_is_normalized}
+		prerequisite={focus=SYR_Absorb_the_jihadists}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Shield_of_Syria
+		icon=SYRIA_Shield_of_Syria
+		x=44
+		y=15
+		prerequisite={focus=SYR_Maintain_military_governance}
+		prerequisite={focus=SYR_Calling_patriotic_children}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Syrian_Revolution
+		icon=GFX_goal_ALB_Modernization
+		x=53
+		y=10
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = SYR_Syrian_Revolution_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Planned_Economy
+		icon=GFX_goal_ALB_Pickaxe
+		x=50
+		y=11
+		prerequisite={focus=SYR_Syrian_Revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Formulate_a_five_year_plan
+		icon=GFX_goal_ALB_Five_Years_Plan
+		x=49
+		y=12
+		prerequisite={focus=SYR_Planned_Economy}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Promote_collectivization
+		icon=GFX_goal_ALB_Local_Syndicate_Development
+		x=51
+		y=12
+		prerequisite={focus=SYR_Planned_Economy}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Everyone_is_a_builder
+		icon=GFX_goal_ALB_Albanian_Farmers
+		x=50
+		y=13
+		prerequisite={focus=SYR_Formulate_a_five_year_plan}
+		prerequisite={focus=SYR_Promote_collectivization}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Kill_the_reactionaries
+		icon=GFX_goal_ALB_New_Hardline_Methods
+		x=53
+		y=11
+		prerequisite={focus=SYR_Syrian_Revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Agrarian_Revolution
+		icon=GFX_goal_ALB_Northern_Tribes
+		x=53
+		y=12
+		prerequisite={focus=SYR_Kill_the_reactionaries}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_A_sanctuary_for_all_citizens
+		icon=GFX_goal_ALB_Vanguard
+		x=53
+		y=13
+		prerequisite={focus=SYR_Agrarian_Revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Social_revolution
+		icon=GFX_goal_ALB_Nationalization
+		x=56
+		y=11
+		prerequisite={focus=SYR_Syrian_Revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Crush_spiritual_opium
+		icon=GFX_goal_ALB_Smash_Reaction
+		x=55
+		y=12
+		prerequisite={focus=SYR_Social_revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_egalitarian_ideology
+		icon=GFX_goal_ALB_Worthy_Enver
+		x=57
+		y=12
+		prerequisite={focus=SYR_Social_revolution}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_no_allah_no_master
+		icon=GFX_goal_ALB_Flowers_Socialism
+		x=56
+		y=13
+		prerequisite={focus=SYR_Crush_spiritual_opium}
+		prerequisite={focus=SYR_egalitarian_ideology}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_The_hometown_of_syndicalism
+		icon=SYRIA_The_hometown_of_syndicalism
+		x=52
+		y=14
+		prerequisite={focus=SYR_Everyone_is_a_builder}
+		prerequisite={focus=SYR_A_sanctuary_for_all_citizens}
+		prerequisite={focus=SYR_no_allah_no_master}
+		mutually_exclusive={focus=SYR_Marxist_Leninist_base_area }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Marxist_Leninist_base_area
+		icon=SYRIA_Marxist_Leninist_base_area
+		x=54
+		y=14
+		prerequisite={focus=SYR_A_sanctuary_for_all_citizens}
+		prerequisite={focus=SYR_Everyone_is_a_builder}
+		prerequisite={focus=SYR_no_allah_no_master}
+		mutually_exclusive={focus=SYR_The_hometown_of_syndicalism }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_New_era
+		icon=GFX_goal_ALB_Albanian_Tribes
+		x=53
+		y=15
+		prerequisite={focus=SYR_The_hometown_of_syndicalism}
+		prerequisite={focus=SYR_Marxist_Leninist_base_area}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_victory_of_democracy
+		icon=SYRIA_victory_of_democracy
+		x=22
+		y=6
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available={
+			has_country_flag=SYR_Democracy_triumphs_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Damascus_faction
+		icon=SYRIA_Damascus_faction
+		x=15
+		y=7
+		prerequisite={focus=SYR_victory_of_democracy}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_New_Sultanate
+		icon=SYRIA_New_Sultanate
+		x=13
+		y=8
+		prerequisite={focus=SYR_Damascus_faction}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Characteristic_secularism
+		icon=SYRIA_Characteristic_secularism
+		x=15
+		y=8
+		prerequisite={focus=SYR_Damascus_faction}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Eliminate_division
+		icon=SYRIA_Eliminate_division
+		x=17
+		y=8
+		prerequisite={focus=SYR_Damascus_faction}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_fellow_Algerians
+		icon=SYRIA_fellow_Algerians
+		x=14
+		y=9
+		prerequisite={focus=SYR_New_Sultanate}
+		prerequisite={focus=SYR_Characteristic_secularism}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Towards_social_progress
+		icon=SYRIA_Towards_social_progress
+		x=16
+		y=9
+		prerequisite={focus=SYR_Characteristic_secularism}
+		prerequisite={focus=SYR_Eliminate_division}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Healthy_politics
+		icon=SYRIA_Healthy_politics
+		x=15
+		y=10
+		prerequisite={focus=SYR_fellow_Algerians}
+		prerequisite={focus=SYR_Towards_social_progress}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_National_reconciliation
+		icon=SYRIA_National_reconciliation
+		x=19
+		y=8
+		prerequisite={focus=SYR_Damascus_faction focus=SYR_Aleppo_faction focus=SYR_Ethnic_groups }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Recognize_the_Alawites
+		icon=SYRIA_Recognize_the_Alawites
+		x=19
+		y=9
+		prerequisite={focus=SYR_National_reconciliation}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Autonomous_regions
+		icon=SYRIA_Autonomous_regions
+		x=19
+		y=10
+		prerequisite={focus=SYR_Recognize_the_Alawites}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Aleppo_faction
+		icon=SYRIA_Aleppo_faction
+		x=22
+		y=7
+		prerequisite={focus=SYR_victory_of_democracy}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Protect_landlords
+		icon=SYRIA_Protect_landlords
+		x=21
+		y=8
+		prerequisite={focus=SYR_Aleppo_faction}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Appoint_social_elites
+		icon=SYRIA_Appoint_social_elites
+		x=21
+		y=9
+		prerequisite={focus=SYR_Protect_landlords}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Market_and_national_freedom
+		icon=SYRIA_Market_and_national_freedom
+		x=21
+		y=10
+		prerequisite={focus=SYR_Appoint_social_elites}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_The_elite_governed
+		icon=SYRIA_The_elite_governed
+		x=23
+		y=8
+		prerequisite={focus=SYR_Aleppo_faction}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Suppression_of_Damascus
+		icon=SYRIA_Suppression_of_Damascus
+		x=23
+		y=9
+		prerequisite={focus=SYR_The_elite_governed}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Limit_pan_Arabism
+		icon=SYRIA_Limit_pan_Arabism
+		x=23
+		y=10
+		prerequisite={focus=SYR_Suppression_of_Damascus}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Defend_democratic_power
+		icon=SYRIA_Defend_democratic_power
+		x=25
+		y=8
+		prerequisite={focus=SYR_Damascus_faction focus=SYR_Aleppo_faction focus=SYR_Ethnic_groups }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Politics_for_all
+		icon=SYRIA_Politics_for_all
+		x=25
+		y=9
+		prerequisite={focus=SYR_Defend_democratic_power}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Counter_revolutionary_revolutionaries
+		icon=SYRIA_Counter_revolutionary_revolutionaries
+		x=25
+		y=10
+		prerequisite={focus=SYR_Politics_for_all}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Ethnic_groups
+		icon=SYRIA_Ethnic_groups
+		x=29
+		y=7
+		prerequisite={focus=SYR_victory_of_democracy}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_True_national_independence
+		icon=SYRIA_True_national_independence
+		x=27
+		y=8
+		prerequisite={focus=SYR_Ethnic_groups}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Reconciliation_with_the_Ottomans
+		icon=SYRIA_Reconciliation_with_the_Ottomans
+		x=29
+		y=8
+		prerequisite={focus=SYR_Ethnic_groups}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Working_with_reformists
+		icon=SYRIA_Working_with_reformists
+		x=31
+		y=8
+		prerequisite={focus=SYR_Ethnic_groups}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Only_Syria
+		icon=SYRIA_Only_Syria
+		x=28
+		y=9
+		prerequisite={focus=SYR_True_national_independence}
+		prerequisite={focus=SYR_Reconciliation_with_the_Ottomans}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_A_united_government
+		icon=SYRIA_A_united_government
+		x=30
+		y=9
+		prerequisite={focus=SYR_Reconciliation_with_the_Ottomans}
+		prerequisite={focus=SYR_Working_with_reformists}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Everyone_participates
+		icon=SYRIA_Everyone_participates
+		x=29
+		y=10
+		prerequisite={focus=SYR_Only_Syria}
+		prerequisite={focus=SYR_A_united_government}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id=SYR_Democratic_barriers
+		icon=SYRIA_Democratic_barriers
+		x=22
+		y=11
+		prerequisite={focus=SYR_Autonomous_regions}
+		prerequisite={focus=SYR_Counter_revolutionary_revolutionaries}
+		prerequisite={focus=SYR_Healthy_politics focus=SYR_Everyone_participates focus=SYR_Market_and_national_freedom focus=SYR_Limit_pan_Arabism }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+		}
+	}
+}

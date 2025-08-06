@@ -200,5 +200,13 @@ spriteTypes = {
 		name = "GFX_adib_shishakli"
 		texturefile = "gfx/interface/decision/adib_shishakli.png"
 	}
+	SpriteType = {
+		name = "GFX_Greater_Syria_Uprising"
+		texturefile = "gfx/interface/decision/Greater_Syria_Uprising.png"
+	}
+	SpriteType = {
+		name = "GFX_Muslim_uprising"
+		texturefile = "gfx/interface/decision/Muslim_uprising.png"
+	}
 
 }

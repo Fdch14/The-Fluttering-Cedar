@@ -523,6 +523,12 @@ country_event = {
 			id = syr.4
 			days = 2
 		}
+		hidden_effect = {
+			country_event = {
+				id = syr.14
+				days = 45
+			}
+		}
 	}
 }
 
@@ -755,12 +761,6 @@ country_event = {
 	option = {
 		name = syr.13.a
 		344 = { add_core_of = SYR }
-		hidden_effect = {
-			country_event = {
-				id = syr.14
-				days = 2
-			}
-		}
 	}
 }
 
@@ -1263,4 +1263,35 @@ country_event = {
 		set_temp_variable = { coalition_partner_var = token:national_populist }
 		add_to_coalition = yes
 	}
+}
+
+country_event = {
+	id = syr.30
+	title = syr.30.t
+	desc = syr.30.d
+	picture = GFX_Greater_Syria_Uprising
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.30.a
+	}
+
+}
+country_event = {
+	id = syr.31
+	title = syr.31.t
+	desc = syr.31.d
+	picture = GFX_Muslim_uprising
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.31.a
+	}
+
 }
