@@ -6,6 +6,21 @@ guiTypes = {
 		orientation = upper_left
 		
 		iconType = {
+			name = "Ibrahim_Hananu" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SYR_Ibrahim_Hananu"
+		}
+		iconType = {
+			name = "Nazik_Abid" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SYR_Nazik_Abid"
+		}
+		iconType = {
+			name = "Sabri_Asali" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SYR_Sabri"
+		}
+		iconType = {
 			name = "Ahmed_Hussein" 
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_EGY_Ahmed_Hussein"

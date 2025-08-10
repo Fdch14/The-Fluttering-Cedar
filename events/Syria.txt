@@ -9,7 +9,305 @@
 add_namespace = syrrev
 add_namespace = syr
 add_namespace = syrfor
+add_namespace = syr_portrait_picker
 
+country_event = {
+	id = syr_portrait_picker.1
+	title = syr_portrait_picker.1.t 
+	desc = syr_portrait_picker.1.d 
+	picture = GFX_Antoun_Sadeh_Portrait_1
+
+	is_triggered_only = yes
+	
+	option = {
+		name = syr_portrait_picker.1.a
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_5.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.1.b
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_6.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.1.c
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_7.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.1.e
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_8.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.1.f
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_4.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.1.g
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_1.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.1.h
+		country_event = syr_portrait_picker.2
+	}
+}
+country_event = {
+	id = syr_portrait_picker.2
+	title = syr_portrait_picker.2.t 
+	desc = syr_portrait_picker.2.d 
+	picture = GFX_Antoun_Sadeh_Portrait_2
+
+	is_triggered_only = yes
+	
+	option = {
+		name = syr_portrait_picker.2.a
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_2.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.2.b
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_3.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.2.c
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_4.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.2.e
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_14.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.2.f
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.2.g
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_9.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.2.h
+		country_event = syr_portrait_picker.3
+	}
+}
+country_event = {
+	id = syr_portrait_picker.3
+	title = syr_portrait_picker.3.t 
+	desc = syr_portrait_picker.3.d 
+	picture = GFX_Antoun_Sadeh_Portrait_3
+
+	is_triggered_only = yes
+	
+	option = {
+		name = syr_portrait_picker.3.a
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_10.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.3.b
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_11.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.3.c
+		ai_chance = {
+			factor = 25
+		}
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/SYR/Portrait_SYR_Antoun_Sadeh_12.png"
+			}
+		}
+	}
+	option = {
+		name = syr_portrait_picker.3.e
+		ai_chance = {
+			factor = 25
+		}
+		country_event = syr_portrait_picker.1
+	}
+}
 country_event = {	#Invitation to the Arab League
 	id = syrfor.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event syrfor.1" }
@@ -458,6 +756,7 @@ country_event = {
 		NOT = {
 			has_war_with = TUR
 		}
+		is_subject = no
 	}
 
 	option = {
@@ -1292,6 +1591,514 @@ country_event = {
 
 	option = {
 		name = syr.31.a
+	}
+
+}
+
+country_event = {
+	id = syr.32
+	title = syr.32.t
+	desc = syr.32.d
+	picture = GFX_Muslim_uprising
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.32.a
+	}
+	option = {
+		name = syr.32.b
+		country_event = {
+			id = syr.33
+			days = 3
+		}
+	}
+
+}
+
+country_event = {
+	id = syr.33
+	title = syr.33.t
+	desc = syr.33.d
+	picture = GFX_Muslim_uprising
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.33.a
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+			name = SYR_alawism_party
+			long_name = SYR_alawism_party_long
+		}
+		create_country_leader = {
+			name = "Ali Sulayman al-Assad"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Ali_Sulayman_Assad.png"
+			expire = "1.1.1"
+			ideology = alawism_subtype
+		}
+		add_popularity = { ideology = social_democrat popularity = 0.65 }
+	}
+	option = {
+		name = syr.33.b
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+			name = SYR_druzeism_party
+			long_name = SYR_druzeism_party_long
+		}
+		create_country_leader = {
+			name = "Sultan al-Atrash"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Atrash.png"
+			expire = "1.1.1"
+			ideology = druzeism_subtype
+		}
+		add_popularity = { ideology = social_liberal popularity = 0.65 }
+	}
+	
+}
+
+country_event = {
+	id = syr.34
+	title = syr.34.t
+	desc = syr.34.d
+	picture = GFX_khalid_bakdash
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.34.a
+	}
+	option = {
+		name = syr.34.b
+	}
+
+}
+
+country_event = {
+	id = syr.35
+	title = syr.35.t
+	desc = syr.35.d
+	picture = GFX_ssnp_journey
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.35.a
+	}
+	option = {
+		name = syr.35.b
+	}
+
+}
+
+country_event = {
+	id = syr.36
+	title = syr.36.t
+	desc = syr.36.d
+	picture = GFX_decision_Lebanon_Mountain_Counter_Revolution
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.36.a
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			name = SYR_social_democrat_party
+			long_name = SYR_social_democrat_party_long
+		}
+		create_country_leader = {
+			name = "Amin al-Hafiz"
+			picture = "gfx/leaders/SYR/Portrait_LEB_Amin_al_Hafiz.png"
+			expire = "1.1.1"
+			ideology = red_tinted_autocracy_subtype
+		}
+		add_popularity = { ideology = paternal_autocrat popularity = 0.65 }
+	}
+	option = {
+		name = syr.36.b
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+			name = SYR_baath_soclist_party
+			long_name = SYR_baath_soclist_party_long
+		}
+		create_country_leader = {
+			name = "Amin al-Hafiz"
+			picture = "gfx/leaders/SYR/Portrait_LEB_Amin_al_Hafiz.png"
+			expire = "1.1.1"
+			ideology = radsoc_arab_socialism
+		}
+		add_popularity = { ideology = radical_socialist popularity = 0.65 }
+	}
+	option = {
+		name = syr.36.c
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+			name = SYR_social_democrat_party
+			long_name = SYR_social_democrat_party_long
+		}
+		create_country_leader = {
+			name = "Amin al-Hafiz"
+			picture = "gfx/leaders/SYR/Portrait_LEB_Amin_al_Hafiz.png"
+			expire = "1.1.1"
+			ideology = radsoc_arab_socialism
+		}
+		add_popularity = { ideology = social_democrat popularity = 0.65 }
+	}
+	option = {
+		name = syr.36.e
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			name = SYR_social_democrat_party
+			long_name = SYR_social_democrat_party_long
+		}
+		create_country_leader = {
+			name = "Amin al-Hafiz"
+			picture = "gfx/leaders/SYR/Portrait_LEB_Amin_al_Hafiz.png"
+			expire = "1.1.1"
+			ideology = pataut_arab_baathism_subtype
+		}
+		add_popularity = { ideology = paternal_autocrat popularity = 0.65 }
+	}
+
+}
+
+country_event = {
+	id = syr.37
+	title = syr.37.t
+	desc = syr.37.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SYR
+		has_country_leader = {
+			name = "Muhammad Abdel I"
+			ruling_only = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	option = {
+		name = syr.37.a
+		create_country_leader = {
+			name = "Faisal I"
+			picture = "gfx/leaders/LEB/Faisal_I_king.png"
+			expire = "1.1.1"
+			ideology = islamism_subtype
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = PLS_paternal_autocrat_party2_long
+			name = PLS_paternal_autocrat_party2
+		}
+		hidden_effect = {
+			country_event = {
+				id = syr.38
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = syr.37.b
+		hidden_effect = {
+			country_event = {
+				id = syr.38
+				days = 2
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = syr.38
+	title = syr.38.t
+	desc = syr.38.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_cosmetic_tag = SYR_sultanate
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "Muhammad Abdel I"
+						ruling_only = yes
+					}
+				}
+				set_party_name = {
+					ideology = social_liberal
+					long_name = SYR_sultanate_social_liberal_party_long
+					name = SYR_sultanate_social_liberal_party
+				}
+				set_party_name = {
+					ideology = market_liberal
+					long_name = SYR_sultanate_market_liberal_party_long
+					name = SYR_sultanate_market_liberal_party
+				}
+				set_party_name = {
+					ideology = social_conservative
+					long_name = SYR_sultanate_social_conservative_party_long
+					name = SYR_sultanate_social_conservative_party
+				}
+				create_country_leader = {
+					name = "Muhammad Abdel I"
+					desc = "POLITICS_ABDEL_MONEIM_DESC"
+					picture = "gfx/leaders/SYR/Portrait_SYR_Moneim.png"
+					expire = "1.1.1"
+					ideology = soclib_liberal_feminism_subtype
+				}
+				create_country_leader = {
+					name = "Muhammad Abdel I"
+					desc = "POLITICS_ABDEL_MONEIM_DESC"
+					picture = "gfx/leaders/SYR/Portrait_SYR_Moneim.png"
+					expire = "1.1.1"
+					ideology = marlib_islamism_subtype
+				}
+				create_country_leader = {
+					name = "Muhammad Abdel I"
+					desc = "POLITICS_ABDEL_MONEIM_DESC"
+					picture = "gfx/leaders/SYR/Portrait_SYR_Moneim.png"
+					expire = "1.1.1"
+					ideology = soccon_kemalism_subtype
+				}
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "Faisal I"
+						ruling_only = yes
+					}
+				}
+				set_party_name = {
+					ideology = social_liberal
+					long_name = SYR_hashimiyya_social_liberal_party_long
+					name = SYR_hashimiyya_social_liberal_party
+				}
+				set_party_name = {
+					ideology = market_liberal
+					long_name = SYR_hashimiyya_market_liberal_party_long
+					name = SYR_hashimiyya_market_liberal_party
+				}
+				set_party_name = {
+					ideology = social_conservative
+					long_name = SYR_hashimiyya_social_conservative_party_long
+					name = SYR_hashimiyya_social_conservative_party
+				}
+				create_country_leader = {
+					name = "Faisal I"
+					picture = "gfx/leaders/SYR/Faisal_I_king.png"
+					expire = "1.1.1"
+					ideology = soclib_liberal_feminism_subtype
+				}
+				create_country_leader = {
+					name = "Faisal I"
+					picture = "gfx/leaders/SYR/Faisal_I_king.png"
+					expire = "1.1.1"
+					ideology = marlib_islamism_subtype
+				}
+				create_country_leader = {
+					name = "Faisal I"
+					picture = "gfx/leaders/SYR/Faisal_I_king.png"
+					expire = "1.1.1"
+					ideology = soccon_kemalism_subtype
+				}
+			}
+		}
+	}
+
+	option = {
+		name = syr.38.a
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Nazik_Abid_hog_mli
+		set_country_flag = NR_LEADER_GUI_VISIBLE
+		add_popularity = { ideology = social_liberal popularity = 0.45 }
+	}
+	option = {
+		name = syr.38.b
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Ibrahim_Hananu_hog_sli
+		set_country_flag = NR_LEADER_GUI_VISIBLE
+		add_popularity = { ideology = market_liberal popularity = 0.45 }
+	}
+	option = {
+		name = syr.38.c
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Sabri_Asali_hog_sco
+		set_country_flag = NR_LEADER_GUI_VISIBLE
+		add_popularity = { ideology = social_conservative popularity = 0.45 }
+	}
+
+}
+
+country_event = {
+	id = syr.39
+	title = syr.39.t
+	desc = syr.39.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.39.a
+		if = {	
+			limit = { 
+				has_country_leader = {
+				name = "Said al-Jazairi"
+				ruling_only = yes
+			}
+						}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/LEB/SYR_said_al_jazairi.png"
+			}
+		}
+	}
+	option = {
+		name = syr.39.b
+	}
+
+}
+
+country_event = {
+	id = syr.40
+	title = syr.40.t
+	desc = syr.40.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.40.a
+	}
+
+}
+
+country_event = {
+	id = syr.41
+	title = syr.41.t
+	desc = syr.41.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.41.a
+	}
+
+}
+
+country_event = {
+	id = syr.42
+	title = syr.42.t
+	desc = syr.42.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.42.a
+	}
+
+}
+
+country_event = {
+	id = syr.43
+	title = syr.43.t
+	desc = syr.43.d
+	picture = GFX_Muslim_uprising
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.43.a
+	}
+
+}
+
+country_event = {
+	id = syr.44
+	title = syr.44.t
+	desc = syr.44.d
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.44.a
+	}
+
+}
+
+country_event = {
+	id = syr.45
+	title = syr.45.t
+	desc = syr.45.d
+	picture = GFX_decision_Fighting_in_Silesia
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.45.a
+	}
+
+}
+
+country_event = {
+	id = syr.46
+	title = syr.46.t
+	desc = syr.46.d
+	picture = GFX_revolutionary_elections
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.46.a
 	}
 
 }

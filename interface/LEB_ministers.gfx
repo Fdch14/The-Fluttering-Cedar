@@ -272,5 +272,17 @@ spriteTypes = {
 		name = "GFX_idea_EGY_Zakaria_Mohieddin_sec_pau"
 		texturefile = "gfx/interface/ministers/EGY/EGY_Zakaria_Mohieddin.png"
 	}
+	spriteType = {
+		name = "GFX_idea_SYR_Ibrahim_Hananu_hog_mli"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Ibrahim_Hananu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Nazik_Abid_hog_sli"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Nazik_Abid.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Sabri_Asali_hog_sco"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Sabri_Asali.png"
+	}
 
 }

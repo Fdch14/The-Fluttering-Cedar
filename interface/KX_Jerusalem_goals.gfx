@@ -4327,6 +4327,18 @@ SpriteTypes = {
 		name = "SYRIA_victory_of_democracy"
 		texturefile = "gfx/interface/goals/SYRIA_victory_of_democracy.png"
 	}
+	SpriteType = {
+		name = "SYRIA_The_Druze_Mountain_Revealed"
+		texturefile = "gfx/interface/goals/SYRIA_The_Druze_Mountain_Revealed.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Alavestan"
+		texturefile = "gfx/interface/goals/SYRIA_Alavestan.png"
+	}
+	SpriteType = {
+		name = "SYRIA_Alis_guidance"
+		texturefile = "gfx/interface/goals/SYRIA_Alis_guidance.png"
+	}
 	
 	
 }

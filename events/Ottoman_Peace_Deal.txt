@@ -1248,11 +1248,11 @@ country_event = { #Future of Syria
 				desc = "POLITICS_ABDEL_MONEIM_DESC"
 				picture = "gfx/leaders/SYR/Portrait_SYR_Moneim.png"
 				expire = "1.1.1"
-				ideology = authoritarian_democrat_subtype
+				ideology = islamism_subtype
 			}
 			set_politics = {
 				ruling_party = authoritarian_democrat
-				last_election = "1935.6.15"
+				last_election = "1938.6.15"
 				election_frequency = 48
 				elections_allowed = yes
 			}

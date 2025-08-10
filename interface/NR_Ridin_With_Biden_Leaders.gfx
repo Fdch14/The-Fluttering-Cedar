@@ -4,6 +4,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/GRU_pm_button.png"
 	}
 	spriteType = {
+		name = "GFX_Portrait_SYR_Ibrahim_Hananu"
+		texturefile = "gfx/leaders/SYR/Portrait_SYR_Ibrahim_Hananu.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SYR_Nazik_Abid"
+		texturefile = "gfx/leaders/SYR/Portrait_SYR_Nazik_Abid.png"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SYR_Sabri"
+		texturefile = "gfx/leaders/SYR/Portrait_SYR_Sabri.png"
+	}
+	spriteType = {
 		name = "GFX_Portrait_EGY_Ahmed_Hussein"
 		texturefile = "gfx/leaders/EGY/Portrait_EGY_Ahmed_Hussein.png"
 	}

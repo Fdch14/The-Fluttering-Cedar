@@ -208,5 +208,25 @@ spriteTypes = {
 		name = "GFX_Muslim_uprising"
 		texturefile = "gfx/interface/decision/Muslim_uprising.png"
 	}
+	SpriteType = {
+		name = "GFX_ssnp_journey"
+		texturefile = "gfx/interface/decision/ssnp_journey.png"
+	}
+	SpriteType = {
+		name = "GFX_Antoun_Sadeh_Portrait_1"
+		texturefile = "gfx/interface/decision/Antoun_Sadeh_Portrait_1.png"
+	}
+	SpriteType = {
+		name = "GFX_Antoun_Sadeh_Portrait_2"
+		texturefile = "gfx/interface/decision/Antoun_Sadeh_Portrait_2.png"
+	}
+	SpriteType = {
+		name = "GFX_Antoun_Sadeh_Portrait_3"
+		texturefile = "gfx/interface/decision/Antoun_Sadeh_Portrait_3.png"
+	}
+	SpriteType = {
+		name = "GFX_khalid_bakdash"
+		texturefile = "gfx/interface/decision/khalid_bakdash.png"
+	}
 
 }

@@ -30,6 +30,27 @@ defined_text = {
   }
   text = {
     trigger = {
+      tag = SYR
+	  has_idea = SYR_Ibrahim_Hananu_hog_mli
+    }
+    localization_key = SUL_OR_PM
+  }
+  text = {
+    trigger = {
+      tag = SYR
+	  has_idea = SYR_Nazik_Abid_hog_sli
+    }
+    localization_key = SUL_OR_PM
+  }
+  text = {
+    trigger = {
+      tag = SYR
+	  has_idea = SYR_Sabri_Asali_hog_sco
+    }
+    localization_key = SUL_OR_PM
+  }
+  text = {
+    trigger = {
       tag = PAL
 	  has_idea = PAL_Huseyin_Rauf_Orbay_hog_sco
     }
@@ -97,6 +118,27 @@ defined_text = {
     trigger = {
       tag = EGY
 	  has_idea = EGY_Ahmed_Hussein_hog_npo
+    }
+    localization_key = SUL_OR_PM2
+  }
+  text = {
+    trigger = {
+      tag = SYR
+	  has_idea = SYR_Ibrahim_Hananu_hog_mli
+    }
+    localization_key = SUL_OR_PM2
+  }
+  text = {
+    trigger = {
+      tag = SYR
+	  has_idea = SYR_Nazik_Abid_hog_sli
+    }
+    localization_key = SUL_OR_PM2
+  }
+  text = {
+    trigger = {
+      tag = SYR
+	  has_idea = SYR_Sabri_Asali_hog_sco
     }
     localization_key = SUL_OR_PM2
   }
@@ -181,6 +223,24 @@ defined_text = {
   }
   text = {
     trigger = {
+	  has_idea = SYR_Ibrahim_Hananu_hog_mli
+    }
+    localization_key = SYR_Ibrahim_Hananu_hog_sli
+  }
+  text = {
+    trigger = {
+	  has_idea = SYR_Nazik_Abid_hog_sli
+    }
+    localization_key = SYR_Nazik_Abid_hog_mli
+  }
+  text = {
+    trigger = {
+	  has_idea = SYR_Sabri_Asali_hog_sco
+    }
+    localization_key = SYR_Sabri_Asali_hog_sco
+  }
+  text = {
+    trigger = {
 	  has_idea = EGY_Ahmed_Hussein_hog_npo
     }
     localization_key = EGY_Ahmed_Hussein_hog_npo
@@ -244,6 +304,24 @@ defined_text = {
 	  has_idea = ISR_Morris_Abraham_Cohen_hog_rso
     }
     localization_key = GFX_Portrait_ISR_Morris_Abraham_Cohen
+  }
+  text = {
+    trigger = {
+	  has_idea = SYR_Ibrahim_Hananu_hog_mli
+    }
+    localization_key = GFX_Portrait_SYR_Ibrahim_Hananu
+  }
+  text = {
+    trigger = {
+	  has_idea = SYR_Nazik_Abid_hog_sli
+    }
+    localization_key = GFX_Portrait_SYR_Nazik_Abid
+  }
+  text = {
+    trigger = {
+	  has_idea = SYR_Sabri_Asali_hog_sco
+    }
+    localization_key = GFX_Portrait_SYR_Sabri
   }
   text = {
     trigger = {

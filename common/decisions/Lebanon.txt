@@ -23,6 +23,33 @@ political_actions = {
 			country_event = leb_portrait_picker.1
 		}
 	}
+	SYR_Antun_Saadeh_picker = {
+		icon = GFX_decision_portraits_picker
+		allowed = {
+			OR = {
+				tag = SYR
+				tag = LEB
+			}
+		}
+		visible = {
+			has_country_leader = {
+				name = "Antun Saadeh"
+				ruling_only = yes
+			}
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 1
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_willy_ii_picker"
+			country_event = syr_portrait_picker.1
+		}
+	}
 }
 LEB_Arab_War = {
 	

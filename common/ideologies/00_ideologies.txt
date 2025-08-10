@@ -1,10 +1,4 @@
-#Dskod1 (Dylan) now claims this file in the name of the AI... may the AI empire forever expan
-#All ideologies have been clumped into 3 groups for the AI. No one will ever see these, so we are hijacking them for our own purposes. The three AI groups are Democracy, Facist, and Communist
-#there is a 4th ai group called neutral, but that works differently.
-
-#Note: Because of hard coded features, democracies now use the fascist AI and the ol fascists use the neutral AI
-#Note: AI changed back to all neutral ai. This is because the other AI doesn't want to be apart of things if the tension is so low (IE at game start)
-#Note: when adding new subideologies please also add the new ideology to the Ideology_scripted_localisation file
+#Note: when adding new subideologies please remember about _useful_scripted_localisation.txt, countrypoliticsview.gfx alonsgide the obvious KR_00_Political_l_english.yml and an icon in gfx/interface/ideologies/subideologies
 
 ideologies = {
 
@@ -98,6 +92,7 @@ ideologies = {
 			zinovievism_subtype = {can_be_randomly_selected = no} #Zinovievism
 			council_communism_subtype = {can_be_randomly_selected = no} #Council Communism
 			peasant_charterism_subtype = {can_be_randomly_selected = no color = { 39 97 47 } } #Peasant Charterism
+			waisi_movement_subtype = {can_be_randomly_selected = no} #Wäisi Movement
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_TOTALIST_1"
@@ -130,10 +125,10 @@ ideologies = {
 
 	syndicalist = {
 		types = {
+			syndicalist_subtype = {} #generic
 			canaanist_subtype = {can_be_randomly_selected = no}
 			syn_haganah_military_rule_subtype = {can_be_randomly_selected = no}
 			arab_socialism = {can_be_randomly_selected = no} #Arab Socialism
-			syndicalist_subtype = {} #generic
 			anarcho_syndicalist_subtype = {can_be_randomly_selected = no} #AnSynd
 			feminist_syndicalist_subtype = {can_be_randomly_selected = no } #Socialist Feminism
 			syn_afrofuture_subtype = {can_be_randomly_selected = no color = { 199 4 138 } } #Afro-Futurism
@@ -346,6 +341,7 @@ ideologies = {
 	social_democrat = {
 		types = {
 			social_democrat_subtype = {}
+			alawism_subtype = {can_be_randomly_selected = no}
 			arab_baathism_subtype = {can_be_randomly_selected = no}
 			socdem_canaanist_subtype = {can_be_randomly_selected = no}
 			socdem_haganah_military_rule_subtype = {can_be_randomly_selected = no}
@@ -432,6 +428,7 @@ ideologies = {
 			socdem_paneuropeanism_subtype = {can_be_randomly_selected = no} #Paneuropeanism
 			batllismo_subtype = {can_be_randomly_selected = no} #Batllismo
 			socdem_venizelism_subtype = {can_be_randomly_selected = no} #Venizelism
+			nordic_model_subtype = {can_be_randomly_selected = no} #Nordic Model
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_DEMOCRAT_1"
@@ -465,6 +462,7 @@ ideologies = {
 	social_liberal = {
 		types = {
 			social_liberal_subtype = {}
+			druzeism_subtype = {can_be_randomly_selected = no}
 			soclib_canaanist_subtype = {can_be_randomly_selected = no}
 			centrist_subtype = {can_be_randomly_selected = no}
 			soclib_agrarianism_subtype = {can_be_randomly_selected = no}
@@ -657,9 +655,9 @@ ideologies = {
 
 	social_conservative = {
 		types = {
+			social_conservative_subtype = {}
 			soccon_zionism = {can_be_randomly_selected = no}
 			soccon_kemalism_subtype = {can_be_randomly_selected = no}
-			social_conservative_subtype = {}
 			moderate_authoritarianism_subtype = {can_be_randomly_selected = no}
 			christian_democracy_subtype = {can_be_randomly_selected = no}
 			soccon_agrarianism_subtype = {can_be_randomly_selected = no}
@@ -723,6 +721,7 @@ ideologies = {
 			herrerismo_subtype = {can_be_randomly_selected = no} #Herrerismo
 			conservative_feminism_subtype = {can_be_randomly_selected = no} #Conservative Feminism
 			soccon_chosid_nyi_subtype = {can_be_randomly_selected = no} #Chösid Nyi
+			soccon_ulmanism_subtype = {can_be_randomly_selected = no} #Ulmanism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_1"
@@ -832,6 +831,8 @@ ideologies = {
 			peronism_subtype = {can_be_randomly_selected = no} #Peronism
 			authdem_conservative_feminism_subtype = {can_be_randomly_selected = no} #Conservative Feminism
 			authdem_chosid_nyi_subtype = {can_be_randomly_selected = no} #Chösid Nyi
+			ulmanism_subtype = {can_be_randomly_selected = no} #Ulmanism
+			marhaenism_subtype = {can_be_randomly_selected = no} #Marhaenism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRAT_1"
@@ -864,11 +865,11 @@ ideologies = {
 
 	paternal_autocrat = {
 		types = {
+			paternal_autocrat_subtype = {}
 			pataut_arab_baathism_subtype = {can_be_randomly_selected = no}
 			pataut_haganah_military_rule_subtype = {can_be_randomly_selected = no}
 			antoun_saadeh_thought_subtype = {can_be_randomly_selected = no}
 			pataut_zionism = {can_be_randomly_selected = no}
-			paternal_autocrat_subtype = {}
 			junta_subtype = {can_be_randomly_selected = no}
 			theocracy_subtype = {can_be_randomly_selected = no}
 			absolute_monarchy_subtype = {can_be_randomly_selected = no}
@@ -961,6 +962,8 @@ ideologies = {
 			chosid_nyi_subtype = {can_be_randomly_selected = no} #Chösid Nyi
 			metaxism_subtype = {can_be_randomly_selected = no} #Metaxism
 			yan_xishan_thought_subtype = {can_be_randomly_selected = no} #Yan Xishan Thought 
+			vapsism_subtype = {can_be_randomly_selected = no} #Vapsism
+			universism_subtype = {can_be_randomly_selected = no} #Universism
 	    }
 		dynamic_faction_names = {
 			"FACTION_NAME_PATERNAL_AUTOCRAT_1"
@@ -993,6 +996,7 @@ ideologies = {
 
 	national_populist = {
 		types = {
+			national_populist_subtype = {}
 			revision_antoun_saadeh_thought_subtype = {can_be_randomly_selected = no}
 			natpop_canaanist_subtype = {can_be_randomly_selected = no}
 			islamic_legionism_subtype = {can_be_randomly_selected = no}
@@ -1005,7 +1009,6 @@ ideologies = {
 			red_turanianism = {can_be_randomly_selected = no}
 			technocratic_pan_turkism = {can_be_randomly_selected = no}
 			pan_turkism = {can_be_randomly_selected = no}
-			national_populist_subtype = {}
 			integralism_subtype = {can_be_randomly_selected = no}
 			fundementalism_subtype = {can_be_randomly_selected = no}
 			militarism_subtype = {can_be_randomly_selected = no}
@@ -1115,6 +1118,15 @@ ideologies = {
 			natpop_tribal_councilism_subtype = {can_be_randomly_selected = no} #Republican Tribal Councilism
 			shintaisei_subtype = {can_be_randomly_selected = no} #Shintaisei
 			consistent_way_subtype = {can_be_randomly_selected = no} #Consistent Way
+			taarausk_subtype = {can_be_randomly_selected = no} #Taarausk
+			neo_rexurdimento_subtype = {can_be_randomly_selected = no} #Neo-Rexurdimento
+			natpop_universism_subtype = {can_be_randomly_selected = no} #Universism
+			pan_iranism_subtype = {can_be_randomly_selected = no} #Pan-Iranism
+			phalangism_subtype = {can_be_randomly_selected = no} #Phalangism
+			syrian_social_nationalism_subtype = {can_be_randomly_selected = no} #Syrian Social Nationalism
+			cultured_magic_subtype = {can_be_randomly_selected = no} #Cultured Magic
+			evolian_thought_subtype = {can_be_randomly_selected = no} #Evolian Thought
+			kryvianism_subtype = {can_be_randomly_selected = no} #Kryvianism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_NATIONAL_POPULIST_1"

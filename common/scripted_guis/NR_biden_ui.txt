@@ -24,6 +24,24 @@ scripted_gui = {
 			NR_second_leader_button_visible = {
 				NR_uses_double_leader_gui = yes
 			}
+			Ibrahim_Hananu_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_idea = SYR_Ibrahim_Hananu_hog_mli
+				}
+			}
+			Nazik_Abid_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_idea = SYR_Nazik_Abid_hog_sli
+				}
+			}
+			Sabri_Asali_visible = {
+				AND = {
+					has_country_flag = NR_HOG_veiw
+					has_idea = SYR_Sabri_Asali_hog_sco
+				}
+			}
 			Ahmed_Hussein_visible = {
 				AND = {
 					has_country_flag = NR_HOG_veiw
