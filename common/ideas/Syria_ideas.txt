@@ -6,6 +6,229 @@ ideas = {
 ### Country Ideas ###
 
 	country = {
+		SYR_Economic_reconstruction_idea = {
+			name = SYR_Economic_reconstruction_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Economic_reconstruction_idea"}
+			picture = economic_interventionism
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				repair_speed_industrial_complex_factor = 0.1
+				repair_speed_arms_factory_factor = 0.1
+				repair_speed_rail_way_factor = 0.1
+			}
+		}
+		SYR_Economic_reconstruction_idea1 = {
+			name = SYR_Economic_reconstruction_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Economic_reconstruction_idea1"}
+			picture = economic_interventionism
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				repair_speed_industrial_complex_factor = 0.1
+				repair_speed_arms_factory_factor = 0.2
+				repair_speed_rail_way_factor = 0.2
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		SYR_Economic_reconstruction_idea2 = {
+			name = SYR_Economic_reconstruction_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Economic_reconstruction_idea2"}
+			picture = economic_interventionism
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				repair_speed_industrial_complex_factor = 0.1
+				repair_speed_arms_factory_factor = 0.2
+				repair_speed_rail_way_factor = 0.2
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+		}
+		SYR_Economic_reconstruction_idea3 = {
+			name = SYR_Economic_reconstruction_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Economic_reconstruction_idea3"}
+			picture = economic_interventionism
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				repair_speed_industrial_complex_factor = 0.1
+				repair_speed_arms_factory_factor = 0.2
+				repair_speed_rail_way_factor = 0.3
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+		SYR_Economic_reconstruction_idea4 = {
+			name = SYR_Economic_reconstruction_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Economic_reconstruction_idea4"}
+			picture = economic_interventionism
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				repair_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+				repair_speed_rail_way_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		SYR_Economic_reconstruction_idea5 = {
+			name = SYR_Economic_reconstruction_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Economic_reconstruction_idea5"}
+			picture = economic_interventionism
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.1
+				repair_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+				repair_speed_rail_way_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				local_building_slots_factor = 0.05
+			}
+		}
+		SYR_Economic_reconstruction_idea6 = {
+			name = SYR_Economic_reconstruction_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Economic_reconstruction_idea6"}
+			picture = economic_interventionism
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.15
+				repair_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+				repair_speed_rail_way_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				local_building_slots_factor = 0.1
+			}
+		}
+		SYR_Economic_reconstruction_idea7 = {
+			name = SYR_Economic_reconstruction_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Economic_reconstruction_idea7"}
+			picture = economic_interventionism
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.2
+				repair_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+				repair_speed_rail_way_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				local_building_slots_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+		SYR_Economic_reconstruction_idea8 = {
+			name = SYR_Economic_reconstruction_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Economic_reconstruction_idea8"}
+			picture = economic_interventionism
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				repair_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+				repair_speed_rail_way_factor = 0.3
+				line_change_production_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_speed_industrial_complex_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+		}
+		SYR_Protect_the_industry_idea = {
+			name = SYR_Protect_the_industry_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Protect_the_industry_idea"}
+			picture = industrial_protectionism
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		SYR_Protect_the_industry_idea1 = {
+			name = SYR_Protect_the_industry_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Protect_the_industry_idea1"}
+			picture = industrial_protectionism
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.15
+				production_speed_industrial_complex_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+				trade_opinion_factor = 0.1
+				min_export = 0.2
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+		SYR_Protect_the_industry_idea2 = {
+			name = SYR_Protect_the_industry_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Protect_the_industry_idea2"}
+			picture = industrial_protectionism
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				trade_opinion_factor = 0.1
+				min_export = 0.2
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+		}
+		SYR_Protect_the_industry_idea3 = {
+			name = SYR_Protect_the_industry_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Protect_the_industry_idea3"}
+			picture = industrial_protectionism
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_rail_way_factor = 0.15
+				trade_opinion_factor = 0.15
+				min_export = 0.3
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+		}
+		SYR_Entrepreneurial_enthusiasm_idea = {
+			name = SYR_Entrepreneurial_enthusiasm_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Entrepreneurial_enthusiasm_idea"}
+			picture = LEC_protection
+			allowed = { always = no }
+            modifier = {
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		SYR_Entrepreneurial_enthusiasm_idea1 = {
+			name = SYR_Entrepreneurial_enthusiasm_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Entrepreneurial_enthusiasm_idea1"}
+			picture = LEC_protection
+			allowed = { always = no }
+            modifier = {
+				local_building_slots_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				roduction_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
 		SYR_Greater_Syria_Uprising_idea = {
 			name = SYR_Greater_Syria_Uprising
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Greater_Syria_Uprising_idea"}

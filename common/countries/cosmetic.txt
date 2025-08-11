@@ -1,3 +1,7 @@
+SYR_revolutionary_republic = {
+	color = rgb { 202 32 46 }
+	color_ui = rgb { 202 32 46 }
+}
 PLS_third_international = {
 	color = rgb { 175 13 0 }
 	color_ui = rgb { 175 13 0 }

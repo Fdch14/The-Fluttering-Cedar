@@ -30,10 +30,8 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
-			swap_ideas = {
-				remove_idea = SYR_chaotic_economy_idea
-				add_idea = SYR_chaotic_economy_idea1
-			}
+			add_ideas = SYR_Economic_reconstruction_idea
+			country_event = syr.47
 		}
 	}
 	focus={
@@ -50,6 +48,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Protect_the_industry_idea
 		}
 	}
 	focus={
@@ -66,6 +65,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Protect_the_industry_idea
+				add_idea = SYR_Protect_the_industry_idea1
+			}
 		}
 	}
 	focus={
@@ -83,6 +86,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Protect_the_industry_idea1
+				add_idea = SYR_Protect_the_industry_idea2
+			}
 		}
 	}
 	focus={
@@ -99,6 +106,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_chaotic_economy_idea
+				add_idea = SYR_chaotic_economy_idea1
+			}
 		}
 	}
 	focus={
@@ -116,6 +127,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Economic_reconstruction_idea
+				add_idea = SYR_Economic_reconstruction_idea1
+			}
 		}
 	}
 	focus={
@@ -133,6 +148,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Economic_reconstruction_idea
+				add_idea = SYR_Economic_reconstruction_idea4
+			}
 		}
 	}
 	focus={
@@ -150,6 +169,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Economic_reconstruction_idea1
+				add_idea = SYR_Economic_reconstruction_idea2
+			}
 		}
 	}
 	focus={
@@ -167,6 +190,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Economic_reconstruction_idea4
+				add_idea = SYR_Economic_reconstruction_idea5
+			}
 		}
 	}
 	focus={
@@ -183,6 +210,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Economic_reconstruction_idea2
+				add_idea = SYR_Economic_reconstruction_idea3
+			}
 		}
 	}
 	focus={
@@ -195,10 +226,17 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = SYR_Product_diversification
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Protect_the_industry_idea2
+				add_idea = SYR_Protect_the_industry_idea3
+			}
 		}
 	}
 	focus={
@@ -216,6 +254,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Economic_reconstruction_idea3
+				add_idea = SYR_Economic_reconstruction_idea8
+			}
 		}
 	}
 	focus={
@@ -232,6 +274,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Economic_reconstruction_idea5
+				add_idea = SYR_Economic_reconstruction_idea6
+			}
 		}
 	}
 	focus={
@@ -249,6 +295,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Economic_reconstruction_idea6
+				add_idea = SYR_Economic_reconstruction_idea7
+			}
 		}
 	}
 	focus={
@@ -257,7 +307,7 @@ focus_tree = {
 		x=4
 		y=6
 		prerequisite={focus=SYR_Develop_national_industry focus=SYR_Encourage_economic_investment }
-		cost=4
+		cost=2
 		ai_will_do={
 			factor=1
 		}
@@ -265,6 +315,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			remove_ideas = SYR_chaotic_economy_idea1
 		}
 	}
 	focus={
@@ -281,6 +332,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Entrepreneurial_enthusiasm_idea
 		}
 	}
 	focus={
@@ -297,6 +349,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Entrepreneurial_enthusiasm_idea
+				add_idea = SYR_Entrepreneurial_enthusiasm_idea1
+			}
 		}
 	}
 	focus={
@@ -314,6 +370,33 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			455 = {
+				add_extra_state_shared_building_slots = 3
+			}
 		}
 	}
 	focus={
@@ -330,6 +413,46 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			554 = {
+				add_resource = {
+					type = oil
+					amount = 25
+				}
+				add_resource = {
+					type = rubber
+					amount = 25
+				}
+			}
+			995 = {
+				add_resource = {
+					type = oil
+					amount = 25
+				}
+				add_resource = {
+					type = rubber
+					amount = 25
+				}
+			}
+			677 = {
+				add_resource = {
+					type = oil
+					amount = 25
+				}
+				add_resource = {
+					type = rubber
+					amount = 25
+				}
+			}
+			680 = {
+				add_resource = {
+					type = oil
+					amount = 25
+				}
+				add_resource = {
+					type = rubber
+					amount = 25
+				}
+			}
 		}
 	}
 	focus={
@@ -346,6 +469,21 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			677 = {
+				increase_state_category_by_two_levels = yes
+			}
+			995 = {
+				increase_state_category_by_two_levels = yes
+			}
+			554 = {
+				increase_state_category_by_two_levels = yes
+			}
+			455 = {
+				increase_state_category_by_two_levels = yes
+			}
+			680 = {
+				increase_state_category_by_two_levels = yes
+			}
 		}
 	}
 	focus={
