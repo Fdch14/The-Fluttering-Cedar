@@ -4484,6 +4484,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_the_party_of_struggle_idea
 		}
 	}
 	focus={

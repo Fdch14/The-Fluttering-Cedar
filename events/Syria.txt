@@ -2208,6 +2208,7 @@ country_event = {
 
 	option = {
 		name = syr.43.a
+		create_wargoal = { target = ISR type = annex_everything }
 	}
 
 }
