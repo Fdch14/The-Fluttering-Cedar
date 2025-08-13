@@ -1,5 +1,59 @@
 ideas = {
 	head_of_government = {
+		SYR_Salah_Jadid_hog_tot = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Salah_Jadid_hog_tot"
+			}
+			traits = {
+				head_of_government
+				totalist
+				hog_totalist_chairman
+			}
+		}
+		SYR_Ali_Sulayman_Assad_hog_sde = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Ali_Sulayman_Assad_hog_sde"
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_pacifist_patriot
+			}
+		}
+		SYR_Sultan_al_Atrash_hog_sli = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Sultan_al_Atrash_hog_sli"
+			}
+			traits = {
+				head_of_government
+				social_liberal
+				hog_popular_figurehead
+			}
+		}
 		SYR_Nazik_Abid_hog_sli = {
 			allowed = { original_tag = SYR }
 			available = {
@@ -825,7 +879,12 @@ ideas = {
 			}
 		}
 		LEB_Akram_al_Haurani_hog_syn = {
-			allowed = { original_tag = LEB }
+			allowed = {
+				OR = {
+					original_tag = LEB
+					original_tag = SYR
+				}
+			}
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available
@@ -843,7 +902,12 @@ ideas = {
 			}
 		}
 		LEB_Michel_Aflaq_hog_rso = {
-			allowed = { original_tag = LEB }
+			allowed = {
+				OR = {
+					original_tag = LEB
+					original_tag = SYR
+				}
+			}
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available
@@ -879,7 +943,12 @@ ideas = {
 			}
 		}
 		LEB_Amin_al_Hafiz_hog_pau = {
-			allowed = { original_tag = LEB }
+			allowed = {
+				OR = {
+					original_tag = LEB
+					original_tag = SYR
+				}
+			}
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available
@@ -897,7 +966,12 @@ ideas = {
 			}
 		}
 		LEB_Antoun_Sadeh_hog_pau = {
-			allowed = { original_tag = LEB }
+			allowed = {
+				OR = {
+					original_tag = LEB
+					original_tag = SYR
+				}
+			}
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available
@@ -1096,6 +1170,258 @@ ideas = {
 		}
 	}
 	person_of_influence = {
+		SYR_Muhammad_Umran_for_tot = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Muhammad_Umran_for_tot"
+			}
+			traits = {
+				foreign_minister
+				totalist
+				for_tireless_organiser
+			}
+		}
+		SYR_Abdullah_Rimawi_for_syn = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Abdullah_Rimawi_for_syn"
+			}
+			traits = {
+				foreign_minister
+				syndicalist
+				for_iron_fisted_brute
+			}
+		}
+		SYR_Said_al_As_for_sli = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Said_al_As_for_sli"
+			}
+			traits = {
+				foreign_minister
+				social_liberal
+				for_anti_imperialist_crusader
+			}
+		}
+		SYR_George_Abd_Messih_for_pau = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_George_Abd_Messih_for_pau"
+			}
+			traits = {
+				foreign_minister
+				paternal_autocrat
+				for_master_diplomat
+			}
+		}
+		SYR_Salim_Hatum_eco_tot = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Salim_Hatum_eco_tot"
+			}
+			traits = {
+				economy_minister
+				totalist
+				eco_socialist_industrializer
+			}
+		}
+		SYR_Hani_al_Hindi_eco_syn = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Hani_al_Hindi_eco_syn"
+			}
+			traits = {
+				economy_minister
+				syndicalist
+				eco_administrative_genius
+			}
+		}
+		SYR_Munif_al_Razzaz_eco_rso = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Munif_al_Razzaz_eco_rso"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_mixed_economy
+			}
+		}
+		SYR_Salman_al_Murshid_eco_sli = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Salman_al_Murshid_eco_sli"
+			}
+			traits = {
+				economy_minister
+				social_liberal
+				eco_agrarian_conservative
+			}
+		}
+		SYR_Ghassan_Jadid_sec_tot = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Ghassan_Jadid_sec_tot"
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_organic_doctrinaire
+			}
+		}
+		SYR_Salah_Jadid_sec_tot = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Salah_Jadid_sec_tot"
+			}
+			traits = {
+				security_minister
+				totalist
+				sec_man_of_culture_and_science
+			}
+		}
+		SYR_Wahib_Al_Ghanim_sec_syn = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Wahib_Al_Ghanim_sec_syn"
+			}
+			traits = {
+				security_minister
+				syndicalist
+				sec_compassionate_gentleman
+			}
+		}
+		SYR_Nasim_al_Safarjalani_sec_rso = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Nasim_al_Safarjalani_sec_rso"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_public_works_administrator
+			}
+		}
+		SYR_Sheikh_Saleh_al_Ali_sec_sde = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Sheikh_Saleh_al_Ali_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_paramilitary_leader
+			}
+		}
+		SYR_Mansur_al_Atrash_sec_sde = {
+			allowed = { original_tag = SYR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SYR_Mansur_al_Atrash_sec_sde"
+			}
+			traits = {
+				security_minister
+				social_democrat
+				sec_crime_fighter
+			}
+		}
 		EGY_Ali_Sabri_eco_tot = {
 			allowed = { original_tag = EGY }
 			available = {

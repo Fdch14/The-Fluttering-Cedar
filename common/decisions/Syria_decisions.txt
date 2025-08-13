@@ -258,7 +258,7 @@ SYR_Arab_League = {
 
 		icon = generic_political_discourse
 
-		targets = { OMA YEM JBS IRQ HEJ SAU TRU }
+		targets = { ERI DJI SOM MRT TUN SUD PLS LEB OMA YEM JBS IRQ HEJ SAU TRU LBA TRP ALG MOR }
 
 		target_trigger = {
 			always = yes
@@ -288,6 +288,12 @@ SYR_Arab_League = {
 			FROM = {
 				exists = yes
 				OR = {
+					tag = ERI
+					tag = DJI
+					tag = SOM
+					tag = MRT
+					tag = TUN
+					tag = SUD
 					tag = PLS
 					tag = LEB
 					tag = TRU
@@ -296,6 +302,10 @@ SYR_Arab_League = {
 					tag = HEJ
 					tag = SAU
 					tag = JBS
+					tag = LBA
+					tag = TRP
+					tag = ALG
+					tag = MOR
 					AND = {
 						tag = OMA
 						SYR = {

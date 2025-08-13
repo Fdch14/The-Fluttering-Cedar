@@ -228,5 +228,9 @@ spriteTypes = {
 		name = "GFX_khalid_bakdash"
 		texturefile = "gfx/interface/decision/khalid_bakdash.png"
 	}
+	SpriteType = {
+		name = "GFX_syrian_dragoon_tactics"
+		texturefile = "gfx/interface/decision/syrian_dragoon_tactics.png"
+	}
 
 }

@@ -45,6 +45,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ministers/LEB/LEB_Amin_al_Hafiz.png"			
 	}
 	spriteType = {
+		name = "GFX_idea_SYR_Munif_al_Razzaz_eco_rso"
+		texturefile = "gfx/interface/ministers/LEB/LEB_Munif_al_Razzaz.png"			
+	}
+	spriteType = {
 		name = "GFX_idea_LEB_Munif_al_Razzaz_for_syn"
 		texturefile = "gfx/interface/ministers/LEB/LEB_Munif_al_Razzaz.png"			
 	}
@@ -283,6 +287,70 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SYR_Sabri_Asali_hog_sco"
 		texturefile = "gfx/interface/ministers/SYR/SYR_Sabri_Asali.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Wahib_Al_Ghanim_sec_syn"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Wahib_Al_Ghanim.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Abdullah_Rimawi_for_syn"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Abdullah_Rimawi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Hani_al_Hindi_eco_syn"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Hani_al_Hindi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Salah_Jadid_hog_tot"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Salah_Jadid.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Muhammad_Umran_for_tot"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Muhammad_Umran.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Salim_Hatum_eco_tot"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Salim_Hatum.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Ghassan_Jadid_sec_tot"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Ghassan_Jadid.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Salah_Jadid_sec_tot"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Salah_Jadid.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Nasim_al_Safarjalani_sec_rso"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Nasim_al_Safarjalani.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_George_Abd_Messih_for_pau"
+		texturefile = "gfx/interface/ministers/LEB/LEB_George_Abd_Messih.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Ali_Sulayman_Assad_hog_sde"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Ali_Sulayman_Assad.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Sheikh_Saleh_al_Ali_sec_sde"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Sheikh_Saleh_al_Ali.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Salman_al_Murshid_eco_sli"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Salman_al_Murshid.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Sultan_al_Atrash_hog_sli"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Sultan_al_Atrash.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Said_al_As_for_sli"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Said_al_As.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_Mansur_al_Atrash_sec_sde"
+		texturefile = "gfx/interface/ministers/SYR/SYR_Mansur_al_Atrash.png"			
 	}
 
 }

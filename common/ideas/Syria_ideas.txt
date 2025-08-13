@@ -6,6 +6,399 @@ ideas = {
 ### Country Ideas ###
 
 	country = {
+		SYR_the_party_of_struggle_idea = {
+			name = SYR_the_party_of_struggle_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_party_of_struggle_idea"}
+			picture = SYR_the_party_of_struggle
+			allowed = { always = no }
+            modifier = {
+				justify_war_goal_time = -0.25
+				surrender_limit = 0.1
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = NFA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		SYR_the_party_of_innovation_idea = {
+			name = SYR_the_party_of_innovation_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_party_of_innovation_idea"}
+			picture = SYR_the_party_of_innovation
+			allowed = { always = no }
+            modifier = {
+				local_building_slots_factor = 0.07
+				production_speed_buildings_factor = 0.07
+				production_speed_arms_factory_factor = 0.07
+				production_speed_industrial_complex_factor = 0.07
+				industrial_capacity_factory = 0.1
+			}
+		}
+		SYR_the_party_of_innovation_idea1 = {
+			name = SYR_the_party_of_innovation_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_party_of_innovation_idea1"}
+			picture = SYR_the_party_of_innovation
+			allowed = { always = no }
+            modifier = {
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.1
+				army_strength_factor = 0.15
+				org_loss_at_low_org_factor = -0.1
+			}
+		}
+		SYR_the_party_of_innovation_idea2 = {
+			name = SYR_the_party_of_innovation_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_party_of_innovation_idea2"}
+			picture = SYR_the_party_of_innovation
+			allowed = { always = no }
+            modifier = {
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.1
+				experience_loss_factor = -0.1
+				cas_damage_reduction = 0.1
+				local_org_regain = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		SYR_symbol_of_the_party_idea = {
+			name = SYR_symbol_of_the_party_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_symbol_of_the_party_idea"}
+			picture = SYR_symbol_of_the_party
+			allowed = { always = no }
+            modifier = {
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		SYR_symbol_of_the_party_idea1 = {
+			name = SYR_symbol_of_the_party_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_symbol_of_the_party_idea1"}
+			picture = SYR_symbol_of_the_party
+			allowed = { always = no }
+            modifier = {
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		SYR_symbol_of_the_party_idea2 = {
+			name = SYR_symbol_of_the_party_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_symbol_of_the_party_idea2"}
+			picture = SYR_symbol_of_the_party
+			allowed = { always = no }
+            modifier = {
+				dig_in_speed_factor = 0.2
+				max_dig_in_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		SYR_four_major_precepts_idea = {
+			name = SYR_four_major_precepts_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_four_major_precepts_idea"}
+			picture = SYR_four_major_precepts
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+				army_armor_attack_factor = 0.15
+				army_armor_defence_factor = 0.15
+			}
+		}
+		SYR_national_patriotism_idea = {
+			name = SYR_national_patriotism_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_national_patriotism_idea"}
+			picture = SYR_national_patriotism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				terrain_penalty_reduction = 0.1
+			}
+		}
+		SYR_national_patriotism_idea = {
+			name = SYR_national_patriotism_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_national_patriotism_idea"}
+			picture = SYR_national_patriotism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				terrain_penalty_reduction = 0.1
+			}
+		}
+		SYR_national_patriotism_idea1 = {
+			name = SYR_national_patriotism_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_national_patriotism_idea1"}
+			picture = SYR_national_patriotism
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				terrain_penalty_reduction = 0.2
+				local_building_slots_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+		SYR_the_dream_of_greater_syria_idea = {
+			name = SYR_The_dream_of_Greater_Syria
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_dream_of_greater_syria_idea"}
+			picture = SYR_the_dream_of_greater_syria
+			allowed = { always = no }
+            modifier = {
+				justify_war_goal_time = -0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				military_leader_cost_factor = -0.5
+				army_leader_start_level = 1
+			}
+		}
+		SYR_overhead_ssnp_idea = {
+			name = SYR_Overhead_SSNP
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_overhead_ssnp_idea"}
+			picture = SYR_overhead_ssnp
+			allowed = { always = no }
+            modifier = {
+				army_core_defence_factor = 0.1
+				local_resources_factor = 0.10
+				industry_repair_factor = 0.15
+				party_popularity_stability_factor = 0.15
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+		SYR_surveillance_democracy_idea = {
+			name = SYR_surveillance_democracy_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_surveillance_democracy_idea"}
+			picture = SYR_surveillance_democracy
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				drift_defence_factor = 0.15
+				political_power_cost = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		SYR_surveillance_democracy_idea1 = {
+			name = SYR_surveillance_democracy_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_surveillance_democracy_idea1"}
+			picture = SYR_surveillance_democracy
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				drift_defence_factor = 0.3
+				political_power_cost = -0.2
+				production_speed_buildings_factor = 0.1
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SYR_surveillance_democracy_idea2 = {
+			name = SYR_surveillance_democracy_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_surveillance_democracy_idea2"}
+			picture = SYR_surveillance_democracy
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				drift_defence_factor = 0.3
+				political_power_cost = -0.2
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				experience_loss_factor = 0.05
+				experience_gain_army_factor = 0.05
+				experience_gain_factor = 0.05
+			}
+		}
+		SYR_ensure_leadership_authority_idea = {
+			name = SYR_Ensure_leadership_authority
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_ensure_leadership_authority_idea"}
+			picture = SYR_ensure_leadership_authority
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.15
+				terrain_penalty_reduction = 0.1
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+		SYR_whirlwind_eagle_idea = {
+			name = SYR_whirlwind_eagle_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_whirlwind_eagle_idea"}
+			picture = SYR_whirlwind_eagle
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.05
+				conscription_factor = 0.1
+				recruitable_population = 0.1
+				non_core_manpower = 0.15
+				required_garrison_factor = -0.2
+			}
+		}
+		SYR_whirlwind_eagle_idea1 = {
+			name = SYR_whirlwind_eagle_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_whirlwind_eagle_idea1"}
+			picture = SYR_whirlwind_eagle
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.1
+				conscription_factor = 0.2
+				recruitable_population = 0.2
+				non_core_manpower = 0.25
+				required_garrison_factor = -0.2
+				supply_consumption_factor = -0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		SYR_the_enemy_of_Jacob_idea = {
+			name = SYR_the_enemy_of_Jacob_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_enemy_of_Jacob_idea"}
+			picture = SYR_the_enemy_of_Jacob
+			allowed = { always = no }
+            modifier = {
+				breakthrough_factor = 0.1
+				attrition = -0.1
+				resistance_target = -0.2
+				local_org_regain = 0.1
+			}
+			targeted_modifier = {
+				tag = ISR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		SYR_the_enemy_of_Jacob_idea1 = {
+			name = SYR_the_enemy_of_Jacob_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_enemy_of_Jacob_idea1"}
+			picture = SYR_the_enemy_of_Jacob
+			allowed = { always = no }
+            modifier = {
+				breakthrough_factor = 0.2
+				attrition = -0.2
+				resistance_target = -0.25
+				local_org_regain = 0.2
+				resistance_decay = 0.15
+				compliance_growth = 0.15
+			}
+			targeted_modifier = {
+				tag = ISR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = ALA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = WHR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = UKR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = COR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = KEN
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = MAG
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = BBR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		SYR_the_rule_of_the_SNP_idea = {
+			name = SYR_the_rule_of_the_SNP_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_rule_of_the_SNP_idea"}
+			picture = LEB_the_rule_of_the_Socialist_National_Party
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = -0.005
+				drift_defence_factor = -0.2
+				recon_factor = 0.1
+				weekly_manpower = 2500
+			}
+		}
+		SYR_the_rule_of_the_SNP_idea1 = {
+			name = SYR_the_rule_of_the_SNP_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_rule_of_the_SNP_idea1"}
+			picture = LEB_the_rule_of_the_Socialist_National_Party
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = -0.01
+				drift_defence_factor = -0.5
+				recon_factor = 0.2
+				weekly_manpower = 4500
+				initiative_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
 		SYR_Economic_reconstruction_idea = {
 			name = SYR_Economic_reconstruction_idea
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Economic_reconstruction_idea"}
@@ -256,6 +649,19 @@ ideas = {
 				political_power_cost = 0.2
 			}
 		}
+		SYR_Political_division_idea1 = {
+			name = SYR_Political_division_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Political_division_idea1"}
+			picture = USA_political_crisis
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = -0.1
+				political_power_gain = -0.1
+				stability_factor = -0.15
+				drift_defence_factor = -0.15
+				political_power_cost = 0.1
+			}
+		}
 		SYR_illiterate_army_idea = {
 			name = SYR_illiterate_army_idea
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_illiterate_army_idea"}
@@ -267,6 +673,412 @@ ideas = {
 				planning_speed = -0.1
 				max_planning = 0.05
 				land_reinforce_rate = -0.05
+			}
+		}
+		SYR_illiterate_army_idea1 = {
+			name = SYR_illiterate_army_idea1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_illiterate_army_idea1"}
+			picture = army_cooperation
+			allowed = { always = no }
+            modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				planning_speed = -0.1
+				max_planning = 0.1
+				mobilization_speed = 0.05
+				land_reinforce_rate = -0.05
+			}
+		}
+		SYR_illiterate_army_idea2 = {
+			name = SYR_illiterate_army_idea1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_illiterate_army_idea2"}
+			picture = army_cooperation
+			allowed = { always = no }
+            modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				planning_speed = -0.1
+				max_planning = 0.1
+				mobilization_speed = 0.05
+				land_reinforce_rate = -0.05
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+		}
+		SYR_illiterate_army_idea3 = {
+			name = SYR_illiterate_army_idea1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_illiterate_army_idea3"}
+			picture = army_cooperation
+			allowed = { always = no }
+            modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				planning_speed = -0.1
+				max_planning = 0.1
+				mobilization_speed = 0.05
+				land_reinforce_rate = -0.05
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				terrain_penalty_reduction = 0.1
+				winter_attrition_factor = -0.05
+				heat_attrition_factor = -0.05
+				supply_consumption_factor = -0.1
+			}
+		}
+		SYR_illiterate_army_idea4 = {
+			name = SYR_illiterate_army_idea1
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_illiterate_army_idea4"}
+			picture = army_cooperation
+			allowed = { always = no }
+            modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				max_planning = 0.1
+				mobilization_speed = 0.05
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				terrain_penalty_reduction = 0.1
+				winter_attrition_factor = -0.05
+				heat_attrition_factor = -0.05
+				supply_consumption_factor = -0.1
+				army_morale_factor = 0.1
+				breakthrough_factor = 0.1
+				pocket_penalty = -0.1
+				dig_in_speed_factor = 0.1
+				sickness_chance = -0.5
+			}
+		}
+		SYR_Cavalry_modernization_idea = {
+			name = SYR_Cavalry_modernization
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Cavalry_modernization_idea"}
+			picture = AFG_tribal_cavalry
+			allowed = { always = no }
+            modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+				modifier_army_sub_unit_cavalry_speed_factor = 0.3
+			}
+		}
+		SYR_Cavalry_modernization_idea1 = {
+			name = SYR_Cavalry_modernization
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Cavalry_modernization_idea1"}
+			picture = AFG_tribal_cavalry
+			allowed = { always = no }
+            modifier = {
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+				modifier_army_sub_unit_cavalry_speed_factor = 0.3
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+				army_armor_speed_factor = 0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+		SYR_Cavalry_modernization_idea2 = {
+			name = SYR_Cavalry_modernization
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Cavalry_modernization_idea2"}
+			picture = AFG_tribal_cavalry
+			allowed = { always = no }
+            modifier = {
+				cavalry_attack_factor = 0.2
+				cavalry_defence_factor = 0.2
+				modifier_army_sub_unit_cavalry_speed_factor = 0.3
+				army_armor_attack_factor = 0.2
+				army_armor_defence_factor = 0.2
+				army_armor_speed_factor = 0.2
+				supply_consumption_factor = -0.2
+			}
+		}
+		SYR_Cavalry_modernization_idea3 = {
+			name = SYR_Cavalry_modernization
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Cavalry_modernization_idea3"}
+			picture = AFG_tribal_cavalry
+			allowed = { always = no }
+            modifier = {
+				cavalry_attack_factor = 0.2
+				cavalry_defence_factor = 0.2
+				modifier_army_sub_unit_cavalry_speed_factor = 0.35
+				army_armor_attack_factor = 0.2
+				army_armor_defence_factor = 0.2
+				army_armor_speed_factor = 0.25
+				supply_consumption_factor = -0.2
+				army_speed_factor = 0.1
+				no_supply_grace = 72
+				org_loss_when_moving = -0.15
+				land_night_attack = 0.4
+			}
+		}
+		SYR_Syrian_air_power_idea = {
+			name = SYR_Syrian_air_power_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Syrian_air_power_idea"}
+			picture = SYR_Syrian_air_power
+			allowed = { always = no }
+            modifier = {
+				army_bonus_air_superiority_factor = 0.1
+				air_accidents = -0.1
+				air_weather_penalty = -0.1
+				air_attack_factor = 0.1
+				enemy_army_bonus_air_superiority_factor = -0.1
+			}
+		}
+		SYR_Syrian_air_power_idea1 = {
+			name = SYR_Syrian_air_power_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Syrian_air_power_idea1"}
+			picture = SYR_Syrian_air_power
+			allowed = { always = no }
+            modifier = {
+				army_bonus_air_superiority_factor = 0.1
+				air_accidents = -0.1
+				air_weather_penalty = -0.1
+				air_attack_factor = 0.1
+				enemy_army_bonus_air_superiority_factor = -0.1
+				air_fuel_consumption_factor = -0.1
+				air_mission_efficiency = 0.1 
+				air_superiority_efficiency = 0.1
+				air_intercept_efficiency = 0.1
+				air_cas_efficiency = 0.1
+			}
+		}
+		SYR_Syrian_air_power_idea2 = {
+			name = SYR_Syrian_air_power_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Syrian_air_power_idea2"}
+			picture = SYR_Syrian_air_power
+			allowed = { always = no }
+            modifier = {
+				army_bonus_air_superiority_factor = 0.1
+				air_accidents = -0.1
+				air_weather_penalty = -0.1
+				air_attack_factor = 0.1
+				enemy_army_bonus_air_superiority_factor = -0.1
+				air_fuel_consumption_factor = -0.2
+				air_mission_efficiency = 0.2
+				air_superiority_efficiency = 0.1
+				air_intercept_efficiency = 0.1
+				air_cas_efficiency = 0.1
+				air_night_penalty = -0.1
+				air_agility_factor = 0.1
+				air_escort_efficiency = 0.1
+			}
+		}
+		SYR_Syrian_air_power_idea3 = {
+			name = SYR_Syrian_air_power_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Syrian_air_power_idea3"}
+			picture = SYR_Syrian_air_power
+			allowed = { always = no }
+            modifier = {
+				army_bonus_air_superiority_factor = 0.1
+				air_accidents = -0.2
+				air_weather_penalty = -0.2
+				air_attack_factor = 0.25
+				enemy_army_bonus_air_superiority_factor = -0.1
+				air_fuel_consumption_factor = -0.2
+				air_mission_efficiency = 0.2
+				air_superiority_efficiency = 0.2
+				air_intercept_efficiency = 0.2
+				air_cas_efficiency = 0.1
+				air_night_penalty = -0.1
+				air_agility_factor = 0.1
+				air_escort_efficiency = 0.1
+			}
+		}
+		SYR_Syrian_air_power_idea4 = {
+			name = SYR_Syrian_air_power_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Syrian_air_power_idea4"}
+			picture = SYR_Syrian_air_power
+			allowed = { always = no }
+            modifier = {
+				army_bonus_air_superiority_factor = 0.2
+				air_accidents = -0.1
+				air_weather_penalty = -0.1
+				air_attack_factor = 0.15
+				enemy_army_bonus_air_superiority_factor = -0.1
+				air_fuel_consumption_factor = -0.2
+				air_mission_efficiency = 0.2
+				air_superiority_efficiency = 0.1
+				air_intercept_efficiency = 0.1
+				air_cas_efficiency = 0.2
+				air_night_penalty = -0.2
+				air_agility_factor = 0.2
+				air_escort_efficiency = 0.2
+			}
+		}
+		SYR_Mediterranean_Fleet_idea = {
+			name = SYR_Mediterranean_Fleet_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Mediterranean_Fleet_idea"}
+			picture = AST_oversized_fleet
+			allowed = { always = no }
+            modifier = {
+				screening_efficiency = 0.1
+				naval_retreat_speed = 0.1
+				navy_screen_attack_factor = 0.1
+				navy_screen_defence_factor = 0.1
+				navy_carrier_air_targetting_factor = 0.15
+			}
+		}
+		SYR_Mediterranean_Fleet_idea1 = {
+			name = SYR_Mediterranean_Fleet_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Mediterranean_Fleet_idea1"}
+			picture = AST_oversized_fleet
+			allowed = { always = no }
+            modifier = {
+				screening_efficiency = 0.1
+				naval_retreat_speed = 0.1
+				navy_screen_attack_factor = 0.15
+				navy_screen_defence_factor = 0.15
+				navy_carrier_air_targetting_factor = 0.15
+				navy_submarine_attack_factor  = 0.1
+				navy_submarine_defence_factor  = 0.1
+				naval_torpedo_reveal_chance_factor = -0.25
+				naval_torpedo_screen_penetration_factor = 0.15
+				ship_hull_submarine_design_cost_factor = -0.2
+			}
+		}
+		SYR_Mediterranean_Fleet_idea2 = {
+			name = SYR_Mediterranean_Fleet_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Mediterranean_Fleet_idea2"}
+			picture = AST_oversized_fleet
+			allowed = { always = no }
+            modifier = {
+				screening_efficiency = 0.1
+				naval_retreat_speed = 0.1
+				navy_screen_attack_factor = 0.2
+				navy_screen_defence_factor = 0.2
+				navy_carrier_air_targetting_factor = 0.15
+				navy_submarine_attack_factor  = 0.2
+				navy_submarine_defence_factor  = 0.2
+				naval_torpedo_reveal_chance_factor = -0.3
+				naval_torpedo_screen_penetration_factor = 0.2
+				ship_hull_submarine_design_cost_factor = -0.5
+			}
+		}
+		SYR_Mediterranean_Fleet_idea3 = {
+			name = SYR_Mediterranean_Fleet_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Mediterranean_Fleet_idea3"}
+			picture = AST_oversized_fleet
+			allowed = { always = no }
+            modifier = {
+				screening_efficiency = 0.15
+				naval_retreat_speed = 0.15
+				navy_screen_attack_factor = 0.2
+				navy_screen_defence_factor = 0.2
+				navy_carrier_air_targetting_factor = 0.2
+				navy_submarine_attack_factor  = 0.2
+				navy_submarine_defence_factor  = 0.2
+				naval_torpedo_reveal_chance_factor = -0.3
+				naval_torpedo_screen_penetration_factor = 0.2
+				ship_hull_submarine_design_cost_factor = -0.5
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.10
+					reliability = 0.15
+					armor_value = 0.15
+					hg_attack = 0.2
+					naval_range = 0.2
+					maximum_speed = 0.2
+					defense = 0.15
+					instant = yes
+				}
+			}
+		}
+		SYR_Mediterranean_Fleet_idea4 = {
+			name = SYR_Mediterranean_Fleet_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Mediterranean_Fleet_idea4"}
+			picture = AST_oversized_fleet
+			allowed = { always = no }
+            modifier = {
+				screening_efficiency = 0.2
+				naval_retreat_speed = 0.2
+				navy_screen_attack_factor = 0.2
+				navy_screen_defence_factor = 0.2
+				navy_carrier_air_targetting_factor = 0.25
+				navy_submarine_attack_factor  = 0.2
+				navy_submarine_defence_factor  = 0.25
+				naval_torpedo_reveal_chance_factor = -0.3
+				naval_torpedo_screen_penetration_factor = 0.25
+				ship_hull_submarine_design_cost_factor = -0.8
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.10
+					reliability = 0.2
+					armor_value = 0.2
+					hg_attack = 0.2
+					naval_range = 0.2
+					maximum_speed = 0.2
+					defense = 0.2
+					instant = yes
+				}
+			}
+		}
+		SYR_Red_Sea_Fleet_idea = {
+			name = SYR_Red_Sea_Fleet_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Red_Sea_Fleet_idea"}
+			picture = CSA_great_red_fleet_idea
+			allowed = { always = no }
+            modifier = {
+				navy_capital_ship_attack_factor = 0.1
+				naval_speed_factor = 0.1
+				navy_max_range_factor = 0.2
+				sortie_efficiency = 0.1
+				spotting_chance = 0.1
+			}
+		}
+		SYR_Red_Sea_Fleet_idea1 = {
+			name = SYR_Red_Sea_Fleet_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Red_Sea_Fleet_idea1"}
+			picture = CSA_great_red_fleet_idea
+			allowed = { always = no }
+            modifier = {
+				navy_capital_ship_attack_factor = 0.1
+				naval_speed_factor = 0.1
+				navy_max_range_factor = 0.2
+				sortie_efficiency = 0.1
+				spotting_chance = 0.2
+				positioning = 0.1
+				navy_fuel_consumption_factor = -0.2
+				navy_org = 50
+				navy_carrier_air_attack_factor = 0.2
+			}
+		}
+		SYR_Red_Sea_Fleet_idea2 = {
+			name = SYR_Red_Sea_Fleet_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Red_Sea_Fleet_idea2"}
+			picture = CSA_great_red_fleet_idea
+			allowed = { always = no }
+            modifier = {
+				navy_capital_ship_attack_factor = 0.2
+				naval_speed_factor = 0.2
+				navy_max_range_factor = 0.2
+				sortie_efficiency = 0.2
+				spotting_chance = 0.2
+				positioning = 0.2
+				navy_fuel_consumption_factor = -0.25
+				navy_org = 50
+				navy_carrier_air_attack_factor = 0.25
+			}
+		}
+		SYR_Red_Sea_Fleet_idea3 = {
+			name = SYR_Red_Sea_Fleet_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Red_Sea_Fleet_idea3"}
+			picture = CSA_great_red_fleet_idea
+			allowed = { always = no }
+            modifier = {
+				navy_capital_ship_attack_factor = 0.25
+				naval_speed_factor = 0.25
+				navy_max_range_factor = 0.25
+				sortie_efficiency = 0.25
+				spotting_chance = 0.25
+				positioning = 0.25
+				navy_fuel_consumption_factor = -0.3
+				navy_org = 75
+				navy_carrier_air_attack_factor = 0.3
 			}
 		}
 		SYR_chaotic_economy_idea = {
@@ -369,10 +1181,10 @@ ideas = {
 			picture = SYR_Ottoman_Military
 			allowed = { always = no }
             modifier = {
-				army_org_Factor = -0.15
-				max_planning = -0.20
-				planning_speed = -0.15
-				land_doctrine_cost_factor = 0.50
+				army_org_Factor = 0.15
+				max_planning = 0.20
+				planning_speed = 0.15
+				land_doctrine_cost_factor = -0.50
 			}
 		}
 		syr_sunni_elite_control = {
@@ -646,10 +1458,12 @@ ideas = {
 			targeted_modifier = {
 				tag = CYP
 				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 			targeted_modifier = {
 				tag = GRE
 				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 		}
 		syr_taking_cilicia = {
@@ -659,6 +1473,22 @@ ideas = {
 			targeted_modifier = {
 				tag = TUR
 				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = LEB
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = PAL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = PLS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 		}
 		syr_lion_of_syria = {

@@ -1,0 +1,10 @@
+SYR_Industrial_revival = {
+	icon = "GFX_idea_industrial_army"
+	enable = { always = yes }
+	recruitable_population_factor = 0.1
+	mobilization_speed = 0.2
+	state_resources_factor = 0.3
+	state_production_speed_buildings_factor = 0.15
+	resistance_growth = -0.15
+	monthly_population = 0.5
+}

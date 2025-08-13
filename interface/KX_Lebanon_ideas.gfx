@@ -85,6 +85,55 @@ spriteTypes = {
 		name = "GFX_idea_LEB_White_Cedar"
 		texturefile = "gfx/interface/ideas/LEB_White_Cedar.png"
 	}
+	spriteType = {
+		name = "GFX_idea_SYR_Syrian_air_power"
+		texturefile = "gfx/interface/ideas/SYR_Syrian_air_power.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_whirlwind_eagle"
+		texturefile = "gfx/interface/ideas/SYR_whirlwind_eagle.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_the_enemy_of_Jacob"
+		texturefile = "gfx/interface/ideas/SYR_the_enemy_of_Jacob.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_ensure_leadership_authority"
+		texturefile = "gfx/interface/ideas/SYR_ensure_leadership_authority.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_surveillance_democracy"
+		texturefile = "gfx/interface/ideas/SYR_surveillance_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_overhead_ssnp"
+		texturefile = "gfx/interface/ideas/SYR_overhead_ssnp.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_the_dream_of_greater_syria"
+		texturefile = "gfx/interface/ideas/SYR_the_dream_of_greater_syria.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_national_patriotism"
+		texturefile = "gfx/interface/ideas/SYR_national_patriotism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_four_major_precepts"
+		texturefile = "gfx/interface/ideas/SYR_four_major_precepts.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_symbol_of_the_party"
+		texturefile = "gfx/interface/ideas/SYR_symbol_of_the_party.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_the_party_of_struggle"
+		texturefile = "gfx/interface/ideas/SYR_the_party_of_struggle.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SYR_the_party_of_innovation"
+		texturefile = "gfx/interface/ideas/SYR_the_party_of_innovation.png"
+	}
+
 }
 
 

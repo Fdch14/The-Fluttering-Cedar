@@ -504,6 +504,9 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			army_experience = 100
+			navy_experience = 100
+			air_experience = 100
 		}
 	}
 	focus={
@@ -520,6 +523,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_illiterate_army_idea
+				add_idea = SYR_illiterate_army_idea1
+			}
 		}
 	}
 	focus={
@@ -536,6 +543,14 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus={
@@ -552,6 +567,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_illiterate_army_idea1
+				add_idea = SYR_illiterate_army_idea2
+			}
 		}
 	}
 	focus={
@@ -560,7 +579,7 @@ focus_tree = {
 		x=12
 		y=4
 		prerequisite={focus=SYR_Special_operations}
-		cost=4
+		cost=2
 		ai_will_do={
 			factor=1
 		}
@@ -568,6 +587,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = desert_warfare_effect
+			hidden_effect = {
+				set_technology = { desert_warfare = 1 popup = yes }
+			}
 		}
 	}
 	focus={
@@ -584,6 +607,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_illiterate_army_idea2
+				add_idea = SYR_illiterate_army_idea3
+			}
 		}
 	}
 	focus={
@@ -600,6 +627,13 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Cavalry_modernization_idea
+			if = {
+				limit = {
+					is_ai = no
+				}
+				country_event = syr.48
+			}
 		}
 	}
 	focus={
@@ -616,6 +650,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Cavalry_modernization_idea
+				add_idea = SYR_Cavalry_modernization_idea1
+			}
 		}
 	}
 	focus={
@@ -632,6 +670,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Cavalry_modernization_idea1
+				add_idea = SYR_Cavalry_modernization_idea2
+			}
 		}
 	}
 	focus={
@@ -648,6 +690,19 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = SYR_Develop_electronic_intelligence_systems
+				bonus = 2
+				uses = 2
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = SYR_Develop_electronic_intelligence_systems
+				bonus = 2
+				uses = 2
+				category = nuclear
+			}
 		}
 	}
 	focus={
@@ -665,6 +720,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Cavalry_modernization_idea2
+				add_idea = SYR_Cavalry_modernization_idea3
+			}
 		}
 	}
 	focus={
@@ -681,6 +740,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_illiterate_army_idea3
+				add_idea = SYR_illiterate_army_idea4
+			}
 		}
 	}
 	focus={
@@ -697,6 +760,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Red_Sea_Fleet_idea
 		}
 	}
 	focus={
@@ -713,6 +777,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Red_Sea_Fleet_idea
+				add_idea = SYR_Red_Sea_Fleet_idea1
+			}
 		}
 	}
 	focus={
@@ -729,6 +797,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Red_Sea_Fleet_idea1
+				add_idea = SYR_Red_Sea_Fleet_idea2
+			}
 		}
 	}
 	focus={
@@ -746,6 +818,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Red_Sea_Fleet_idea2
+				add_idea = SYR_Red_Sea_Fleet_idea3
+			}
 		}
 	}
 	focus={
@@ -758,10 +834,26 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			controls_state = 455
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			455 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+			455 = {
+				add_dynamic_modifier = {
+					modifier = SYR_Industrial_revival
+				}
+			}
 		}
 	}
 	focus={
@@ -774,10 +866,26 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			controls_state = 680
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			680 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+			680 = {
+				add_dynamic_modifier = {
+					modifier = SYR_Industrial_revival
+				}
+			}
 		}
 	}
 	focus={
@@ -794,6 +902,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Mediterranean_Fleet_idea
 		}
 	}
 	focus={
@@ -806,10 +915,26 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			controls_state = 344
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			344 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+			344 = {
+				add_dynamic_modifier = {
+					modifier = SYR_Industrial_revival
+				}
+			}
 		}
 	}
 	focus={
@@ -826,6 +951,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Mediterranean_Fleet_idea
+				add_idea = SYR_Mediterranean_Fleet_idea1
+			}
 		}
 	}
 	focus={
@@ -839,10 +968,17 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = SYR_Mediterranean_hunter
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Mediterranean_Fleet_idea2
+				add_idea = SYR_Mediterranean_Fleet_idea3
+			}
 		}
 	}
 	focus={
@@ -860,6 +996,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Mediterranean_Fleet_idea1
+				add_idea = SYR_Mediterranean_Fleet_idea2
+			}
 		}
 	}
 	focus={
@@ -877,6 +1017,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Mediterranean_Fleet_idea3
+				add_idea = SYR_Mediterranean_Fleet_idea4
+			}
 		}
 	}
 	focus={
@@ -893,6 +1037,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Syrian_air_power_idea
 		}
 	}
 	focus={
@@ -909,6 +1054,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Syrian_air_power_idea
+				add_idea = SYR_Syrian_air_power_idea1
+			}
 		}
 	}
 	focus={
@@ -925,6 +1074,32 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_research_slot = 1
+			air_experience = 100
+			add_tech_bonus = {
+				name = SYR_Air_Force_Academy
+				bonus = 2
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = SYR_Air_Force_Academy
+				bonus = 2
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = cat_heavy_fighter
+				bonus = 2
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = cas_bomber
+				bonus = 2
+				uses = 1
+				category = light_fighter
+			}
 		}
 	}
 	focus={
@@ -937,10 +1112,17 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = SYR_Flying_artillery
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Syrian_air_power_idea1
+				add_idea = SYR_Syrian_air_power_idea2
+			}
 		}
 	}
 	focus={
@@ -957,6 +1139,19 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			554 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			554 = {
+				add_dynamic_modifier = {
+					modifier = SYR_Industrial_revival
+				}
+			}
 		}
 	}
 	focus={
@@ -975,6 +1170,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Syrian_air_power_idea2
+				add_idea = SYR_Syrian_air_power_idea4
+			}
 		}
 	}
 	focus={
@@ -993,6 +1192,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Syrian_air_power_idea2
+				add_idea = SYR_Syrian_air_power_idea3
+			}
 		}
 	}
 	focus = {# The Defence of Natural Syria
@@ -1005,9 +1208,9 @@ focus_tree = {
 				has_war_with = TUR
 			}
 			OR = {
-				has_completed_focus = SYR_centralise_authority
-				has_completed_focus = SYR_syrian_federation
-				has_completed_focus = SYR_military_mandate
+				has_completed_focus = SYR_SSNP_Next
+				has_completed_focus = SYR_Corrective_movement
+				has_completed_focus = SYR_The_old_party_is_reborn
 			}
 		}
 
@@ -1034,7 +1237,7 @@ focus_tree = {
 		icon = GFX_goal_OTT_Land_Reform
 
 		available = {
-			has_government = national_populist
+			has_completed_focus = SYR_SSNP_Next
 			is_subject = no
 		}
 
@@ -1054,13 +1257,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SYR_greater_syrian_nationalism"
-			add_state_claim = 453
-			add_state_claim = 183
-			add_state_claim = 819
-			add_state_claim = 349
-			add_state_claim = 676
-			add_state_claim = 291
-			add_state_claim = 812
+			812 = { add_core_of = SYR }
+			291 = { add_core_of = SYR }
+			676 = { add_core_of = SYR }
+			349 = { add_core_of = SYR }
+			819 = { add_core_of = SYR }
+			352 = { add_core_of = SYR }
+			183 = { add_core_of = SYR }
+			417 = { add_core_of = SYR }
+			421 = { add_core_of = SYR }
+			413 = { add_core_of = SYR }
 		}
 	}
 	focus = {# The Cypriot Claim
@@ -1068,7 +1274,6 @@ focus_tree = {
 		icon = GFX_goal_generic_wolf_pack
 
 		available = {
-			has_government = national_populist
 			is_subject = no
 			OR = {
 				GRE = {
@@ -1113,10 +1318,7 @@ focus_tree = {
 					type = take_claimed_state
 				}
 			}
-			add_timed_idea = {
-				idea = syr_taking_cyprus
-				days = 100
-			}
+			add_ideas = syr_taking_cyprus
 		}
 	}
 	focus = {# Reclaim Cillcia
@@ -1124,10 +1326,8 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 
 		available = {
-			has_government = national_populist
 			is_subject = no
 			can_declare_war_on = TUR
-			TUR = { owns_state = 344 }
 		}
 
 		prerequisite = {
@@ -1146,15 +1346,27 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SYR_reclaim_cillcia"
-				create_wargoal = {
-					target = TUR
-					type = take_claimed_state
+			create_wargoal = {
+				target = TUR
+				type = take_claimed_state
 				generator = { 344 }
 			}
-			add_timed_idea = {
-				idea = syr_taking_cilicia
-				days = 100
+			create_wargoal = {
+				target = PLS
+				type = take_claimed_state
+				generator = { 992 453 }
 			}
+			create_wargoal = {
+				target = PAL
+				type = take_claimed_state
+				generator = { 992 453 }
+			}
+			create_wargoal = {
+				target = LEB
+				type = take_claimed_state
+				generator = { 553 }
+			}
+			add_ideas = syr_taking_cilicia
 		}
 	}
 	focus = {# Unite Syria and Assyria
@@ -1162,7 +1374,6 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 
 		available = {
-			has_government = national_populist
 			is_subject = no
 			IRQ = {
 				owns_state = 291
@@ -1189,6 +1400,10 @@ focus_tree = {
 				target = IRQ
 				type = take_claimed_state
 			}
+			create_wargoal = {
+				target = PER
+				type = take_claimed_state
+			}
 		}
 	}
 	focus = {# Cooperate with the International
@@ -1198,7 +1413,9 @@ focus_tree = {
 		available = {
 			is_subject = no
 			OR = {
-				has_government = social_liberal
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
 				has_government = social_democrat
 			}
 			FRA = {
@@ -1276,10 +1493,6 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			OR = {
-				has_government = social_liberal
-				has_government = social_democrat
-			}
 			FRA = {
 				is_faction_leader = yes
 				has_capitulated = no
@@ -1334,6 +1547,9 @@ focus_tree = {
 		available = {
 			is_subject = no
 			has_socialist_government = no
+			NOT = {
+				has_completed_focus = SYR_SSNP_won_a_big_victory
+			}
 			GER = {
 				exists = yes
 				NOT = {
@@ -1744,16 +1960,9 @@ focus_tree = {
 			factor = 100
 		}
 
-		bypass = {
-			NOT = {
-				has_idea = syr_ottoman_military
-			}
-		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SYR_military_colleges"
-			remove_ideas = syr_ottoman_military
-			country_event = syrrep.14
+			add_ideas = syr_ottoman_military
 		}
 	}
 	focus = {# Refurbish the Aleppan Munition Factories
@@ -1790,10 +1999,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SYR_munution_factories"
 			677 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 				}
 			}
 		}
@@ -1823,10 +2032,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SYR_domestic_arms_production"
 			554 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 				}
 			}
 		}
@@ -1951,14 +2160,12 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			NOT = {
-				has_government = national_populist
-				has_war_with = TUR
-			}
 			OR = {
-				has_completed_focus = SYR_centralise_authority
-				has_completed_focus = SYR_syrian_federation
-				has_completed_focus = SYR_military_mandate
+				has_completed_focus = SYR_Only_one_party
+				has_completed_focus = SYR_Arab_unity
+				has_completed_focus = SYR_Arab_Revolution
+				has_completed_focus = SYR_Protect_the_revolution
+				has_completed_focus = SYR_victory_of_democracy
 			}
 		}
 
@@ -1973,7 +2180,7 @@ focus_tree = {
 		relative_position_id = SYR_defend_natural_syria
 
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 
 		completion_reward = {
@@ -2450,7 +2657,18 @@ focus_tree = {
 					}
 				}
 			}
-			create_faction = "League of Arab States"
+			create_faction = League_of_Arab_States
+			every_country = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = SYR_League_of_Arab_States_dynamic_modifier
+						scope = SYR
+					}
+				}
+				SYR = {
+					add_to_faction = PREV
+				}
+			}
 		}
 	}
 
@@ -2696,6 +2914,329 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SYR_Arab_Federation"
 			custom_effect_tooltip = irq_memberstates_integration
 			hidden_effect = {
+				every_country = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = SYR_League_of_Arab_States_dynamic_modifier
+							scope = SYR
+						}
+						NOT = {
+							tag = SYR
+						}
+					}
+					SYR = {
+						annex_country = {
+							target = PREV
+							transfer_troops = yes
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						SOM = {
+							is_subject_of = SYR
+						}
+					}
+					SOM = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = SOM
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SOM
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						MRT = {
+							is_subject_of = SYR
+						}
+					}
+					MRT = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = MRT
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = MRT
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						TUN = {
+							is_subject_of = SYR
+						}
+					}
+					TUN = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = TUN
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = TUN
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						EGY = {
+							is_subject_of = SYR
+						}
+					}
+					EGY = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = EGY
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = EGY
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						SUD = {
+							is_subject_of = SYR
+						}
+					}
+					SUD = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = SUD
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SUD
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						TRP = {
+							is_subject_of = SYR
+						}
+					}
+					TRP = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = TRP
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = TRP
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						TRP = {
+							is_subject_of = SYR
+						}
+					}
+					TRP = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = TRP
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = TRP
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						ALG = {
+							is_subject_of = SYR
+						}
+					}
+					ALG = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = ALG
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = ALG
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						MOR = {
+							is_subject_of = SYR
+						}
+					}
+					MOR = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = MOR
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = MOR
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						LBA = {
+							is_subject_of = SYR
+						}
+					}
+					LBA = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = LBA
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = LBA
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						MRT = {
+							is_subject_of = SYR
+						}
+					}
+					MRT = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = MRT
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = MRT
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						TUN = {
+							is_subject_of = SYR
+						}
+					}
+					TUN = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = TUN
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = TUN
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						SOM = {
+							is_subject_of = SYR
+						}
+					}
+					SOM = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = SOM
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SOM
+						}
+						add_core_of = SYR
+					}
+				}
+				if = {
+					limit = {
+						DJI = {
+							is_subject_of = SYR
+						}
+					}
+					DJI = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = DJI
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SOM
+						}
+						add_core_of = DJI
+					}
+				}
+				if = {
+					limit = {
+						ERI = {
+							is_subject_of = SYR
+						}
+					}
+					ERI = {
+						every_unit_leader = { set_nationality = SYR }
+					}
+					annex_country = {
+						target = ERI
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SOM
+						}
+						add_core_of = ERI
+					}
+				}
 				if = {
 					limit = {
 						IRQ = {
@@ -2846,10 +3387,10 @@ focus_tree = {
 				set_country_flag = YEM_CONQ
 				set_country_flag = OMA_CONQ
 			}
-			set_cosmetic_tag = IRQ_federation
+			set_cosmetic_tag = SYR_federation
 			add_timed_idea = {
 				idea = IRQ_Arab_Federation_idea
-				days = 600
+				days = 100
 			}
 		}
 	}
@@ -3402,6 +3943,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_the_enemy_of_Jacob_idea
 		}
 	}
 	focus={
@@ -3419,6 +3961,11 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Political_division_idea
+				add_idea = SYR_Political_division_idea1
+			}
+			country_event = syr.46
 		}
 	}
 	focus={
@@ -3436,6 +3983,8 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_the_enemy_of_Jacob_idea
+			country_event = syr.43
 		}
 	}
 	focus={
@@ -3453,6 +4002,8 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_whirlwind_eagle_idea
+			country_event = syr.45
 		}
 	}
 	focus={
@@ -3472,6 +4023,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_ensure_leadership_authority_idea
 		}
 	}
 	focus={
@@ -3491,6 +4043,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_whirlwind_eagle_idea
+				add_idea = SYR_whirlwind_eagle_idea1
+			}
 		}
 	}
 	focus={
@@ -3509,6 +4065,11 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_the_rule_of_the_SNP_idea
+				add_idea = SYR_the_rule_of_the_SNP_idea1
+			}
+			country_event = syr.28
 		}
 	}
 	focus={
@@ -3521,11 +4082,15 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_country_flag = FE_NOM
+		}
 		available_if_capitulated=yes
 		relative_position_id = SYR_SSNP_won_a_big_victory
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -3543,6 +4108,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_surveillance_democracy_idea
 		}
 	}
 	focus={
@@ -3560,6 +4126,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_surveillance_democracy_idea
+				add_idea = SYR_surveillance_democracy_idea1
+			}
 		}
 	}
 	focus={
@@ -3577,6 +4147,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_surveillance_democracy_idea1
+				add_idea = SYR_surveillance_democracy_idea2
+			}
 		}
 	}
 	focus={
@@ -3594,6 +4168,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_overhead_ssnp_idea
 		}
 	}
 	focus={
@@ -3611,6 +4186,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_the_dream_of_greater_syria_idea
 		}
 	}
 	focus={
@@ -3623,11 +4199,15 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_country_flag = FE_NOM
+		}
 		available_if_capitulated=yes
 		relative_position_id = SYR_SSNP_won_a_big_victory
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -3645,6 +4225,11 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_the_enemy_of_Jacob_idea
+				add_idea = SYR_the_enemy_of_Jacob_idea1
+			}
+			country_event = syr.44
 		}
 	}
 	focus={
@@ -3662,6 +4247,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_national_patriotism_idea
 		}
 	}
 	focus={
@@ -3679,6 +4265,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_national_patriotism_idea
+				add_idea = SYR_national_patriotism_idea1
+			}
 		}
 	}
 	focus={
@@ -3696,6 +4286,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_four_major_precepts_idea
 		}
 	}
 	focus={
@@ -3708,11 +4299,15 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_country_flag = FE_NOM
+		}
 		available_if_capitulated=yes
 		relative_position_id = SYR_SSNP_won_a_big_victory
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -3730,6 +4325,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_symbol_of_the_party_idea
 		}
 	}
 	focus={
@@ -3747,6 +4343,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_symbol_of_the_party_idea
+				add_idea = SYR_symbol_of_the_party_idea1
+			}
 		}
 	}
 	focus={
@@ -3764,6 +4364,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_symbol_of_the_party_idea1
+				add_idea = SYR_symbol_of_the_party_idea2
+			}
 		}
 	}
 	focus={
@@ -3781,6 +4385,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			remove_ideas = SYR_Political_division_idea1
 		}
 	}
 	focus={
@@ -3793,11 +4398,15 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_country_flag = FE_NOM
+		}
 		available_if_capitulated=yes
 		relative_position_id = SYR_SSNP_won_a_big_victory
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -3815,6 +4424,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_the_party_of_innovation_idea
 		}
 	}
 	focus={
@@ -3832,6 +4442,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_the_party_of_innovation_idea
+				add_idea = SYR_the_party_of_innovation_idea1
+			}
 		}
 	}
 	focus={
@@ -3849,6 +4463,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_the_party_of_innovation_idea1
+				add_idea = SYR_the_party_of_innovation_idea2
+			}
 		}
 	}
 	focus={
@@ -5287,7 +5905,7 @@ focus_tree = {
 	}
 	focus={
 		id=SYR_Corrective_movement
-		icon=PALS_Solidarity_with_the_struggle
+		icon=PALS_Integrate_the_Jihadist_Army
 		x=44
 		y=7
 		cost=10

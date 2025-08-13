@@ -1194,6 +1194,14 @@ country_event = {
 			ruling_party = social_liberal
 			elections_allowed = no
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Jamil_Mardam_Bey_hog_sli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Aref_Abdul_Qadir_Al_Nomani_for_sli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Mohiuddin_Zakaria_Nasouli_eco_sli
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Fares_al_Khoury_sec_sli
 		add_popularity = { ideology = social_liberal popularity = 0.45 }
 	}
 	option = {
@@ -1202,6 +1210,14 @@ country_event = {
 			ruling_party = market_liberal
 			elections_allowed = no
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Ali_Rida_Pasha_al_Rikabi_hog_mli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Emile_Edde_for_mli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Abdallah_Beyhum_eco_mli
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Selim_Takla_sec_mli
 		add_popularity = { ideology = market_liberal popularity = 0.45 }
 	}
 	option = {
@@ -1210,6 +1226,14 @@ country_event = {
 			ruling_party = social_conservative
 			elections_allowed = no
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Bechara_El_Khoury_hog_sco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Abdul_Hamid_Karami_for_sco
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Abd_al_Rahman_Shahbandar_eco_sco
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Hashim_al_Atassi_sec_sco
 		add_popularity = { ideology = social_conservative popularity = 0.45 }
 	}
 }
@@ -1336,18 +1360,21 @@ country_event = {
 			expire = "1.1.1"
 			ideology = antoun_saadeh_thought_subtype
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Antoun_Sadeh_hog_pau
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_George_Abd_Messih_for_pau
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Said_Takkidine_eco_npo
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Adib_al_Shishakli_sec_npo
 		add_popularity = { ideology = paternal_autocrat popularity = 1 }
 		set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
 		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:national_populist }
 		add_to_coalition = yes
 		set_cosmetic_tag = SYR_ssnp
-		hidden_effect = {
-			country_event = {
-				id = syr.28
-				days = 5
-			}
-		}
+		set_country_flag = SYR_SSNP_victory_flag
 	}
 }
 
@@ -1376,6 +1403,14 @@ country_event = {
 			ruling_party = syndicalist
 			elections_allowed = no
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Akram_al_Haurani_hog_syn
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Abdullah_Rimawi_for_syn
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Hani_al_Hindi_eco_syn
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Wahib_Al_Ghanim_sec_syn
 		set_cosmetic_tag = SYR_arab
 		add_popularity = { ideology = syndicalist popularity = 0.45 }
 	}
@@ -1409,6 +1444,14 @@ country_event = {
 			ruling_party = social_democrat
 			elections_allowed = no
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Abd_al_Razzaq_al_Dandashi_hog_sde
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Khalid_al_Azm_eco_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Zaki_al_Arsuzi_for_sde
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Nazik_al_Abid_sec_sde
 	}
 	option = {
 		name = syr.26.b
@@ -1418,6 +1461,14 @@ country_event = {
 			name = SYR_baath_soclist_party
 			long_name = SYR_baath_soclist_party_long
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Michel_Aflaq_hog_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Salah_al_Din_al_Bitar_for_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Munif_al_Razzaz_eco_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Akram_al_Hourani_sec_rso
 		create_country_leader = {
 			name = "Michel Aflaq"
 			picture = "gfx/leaders/SYR/Portrait_SYR_Aflaq.png"
@@ -1449,6 +1500,14 @@ country_event = {
 			name = SYR_social_democrat_party
 			long_name = SYR_social_democrat_party_long
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Salah_Jadid_hog_tot
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Muhammad_Umran_for_tot
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Salim_Hatum_eco_tot
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Ghassan_Jadid_sec_tot
 		create_country_leader = {
 			name = "Salah Jadid"
 			picture = "gfx/leaders/SYR/Portrait_SYR_Salah_Jadid.png"
@@ -1465,6 +1524,14 @@ country_event = {
 			name = SYR_social_democrat_party
 			long_name = SYR_social_democrat_party_long
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = LEB_Amin_al_Hafiz_hog_pau
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Muhammad_Umran_for_tot
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Munif_al_Razzaz_eco_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Nasim_al_Safarjalani_sec_rso
 		create_country_leader = {
 			name = "Amin al-Hafiz"
 			picture = "gfx/leaders/LEB/Portrait_LEB_Amin_al_Hafiz.png"
@@ -1486,6 +1553,7 @@ country_event = {
 
 	option = {
 		name = syr.28.a
+		complete_national_focus = SYR_Sadeh_reigns_forever
 	}
 	option = {
 		name = syr.28.b
@@ -1521,6 +1589,7 @@ country_event = {
 		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:national_populist }
 		add_to_coalition = yes
+		complete_national_focus = SYR_Zaims_vision_for_democracy
 	}
 	option = {
 		name = syr.29.b
@@ -1541,6 +1610,7 @@ country_event = {
 		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
 		add_to_coalition = yes
+		complete_national_focus = SYR_Shishaklis_revenge
 	}
 	option = {
 		name = syr.29.c
@@ -1556,6 +1626,14 @@ country_event = {
 			expire = "1.1.1"
 			ideology = tot_antoun_saadeh_thought_subtype
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Ghassan_Jadid_hog_npo
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Muhammad_Umran_for_tot
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Salim_Hatum_eco_tot
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Salah_Jadid_sec_tot
 		add_popularity = { ideology = totalist popularity = 0.60 }
 		set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
 		add_to_coalition = yes
@@ -1563,6 +1641,7 @@ country_event = {
 		add_to_coalition = yes
 		set_temp_variable = { coalition_partner_var = token:national_populist }
 		add_to_coalition = yes
+		complete_national_focus = SYR_Ghassan_National_Revolution
 	}
 }
 
@@ -1644,6 +1723,14 @@ country_event = {
 			expire = "1.1.1"
 			ideology = alawism_subtype
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Ali_Sulayman_Assad_hog_sde
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Zaki_al_Arsuzi_for_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Salman_al_Murshid_eco_sli
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Sheikh_Saleh_al_Ali_sec_sde
 		add_popularity = { ideology = social_democrat popularity = 0.65 }
 	}
 	option = {
@@ -1654,6 +1741,14 @@ country_event = {
 			name = SYR_druzeism_party
 			long_name = SYR_druzeism_party_long
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Sultan_al_Atrash_hog_sli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Said_al_As_for_sli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Shawkat_Shukayr_eco_sde
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Mansur_al_Atrash_sec_sde
 		create_country_leader = {
 			name = "Sultan al-Atrash"
 			picture = "gfx/leaders/SYR/Portrait_SYR_Atrash.png"
@@ -1731,6 +1826,16 @@ country_event = {
 	}
 	option = {
 		name = syr.35.b
+		every_country = {
+			SYR = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+		every_state = { add_core_of = SYR }
+		set_cosmetic_tag = SYR_ssnp_earth
 	}
 
 }
@@ -1971,6 +2076,12 @@ country_event = {
 		}
 		remove_ideas_with_trait = head_of_government
 		add_ideas = SYR_Nazik_Abid_hog_mli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Aref_Abdul_Qadir_Al_Nomani_for_sli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Mohiuddin_Zakaria_Nasouli_eco_sli
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Fares_al_Khoury_sec_sli
 		set_country_flag = NR_LEADER_GUI_VISIBLE
 		add_popularity = { ideology = social_liberal popularity = 0.45 }
 	}
@@ -1981,7 +2092,13 @@ country_event = {
 			elections_allowed = no
 		}
 		remove_ideas_with_trait = head_of_government
-		add_ideas = SYR_Ibrahim_Hananu_hog_sli
+		add_ideas = SYR_Ibrahim_Hananu_hog_mli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Emile_Edde_for_mli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Abdallah_Beyhum_eco_mli
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Selim_Takla_sec_mli
 		set_country_flag = NR_LEADER_GUI_VISIBLE
 		add_popularity = { ideology = market_liberal popularity = 0.45 }
 	}
@@ -1993,6 +2110,12 @@ country_event = {
 		}
 		remove_ideas_with_trait = head_of_government
 		add_ideas = SYR_Sabri_Asali_hog_sco
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Abdul_Hamid_Karami_for_sco
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Abd_al_Rahman_Shahbandar_eco_sco
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Hashim_al_Atassi_sec_sco
 		set_country_flag = NR_LEADER_GUI_VISIBLE
 		add_popularity = { ideology = social_conservative popularity = 0.45 }
 	}
@@ -2013,10 +2136,10 @@ country_event = {
 		if = {	
 			limit = { 
 				has_country_leader = {
-				name = "Said al-Jazairi"
-				ruling_only = yes
+					name = "Said al-Jazairi"
+					ruling_only = yes
+				}
 			}
-						}
 			set_country_leader_portrait = {
 				portrait = "gfx/leaders/LEB/SYR_said_al_jazairi.png"
 			}
@@ -2101,6 +2224,8 @@ country_event = {
 
 	option = {
 		name = syr.44.a
+		set_country_flag = SYR_Total_jihad_agains_Judaism_Flag
+		unlock_decision_tooltip = SYR_Total_jihad_agains_Judaism_dec
 	}
 
 }
@@ -2148,6 +2273,176 @@ country_event = {
 
 	option = {
 		name = syr.47.a
+	}
+
+}
+
+country_event = {
+	id = syr.48
+	title = syr.48.t
+	desc = syr.48.d
+	picture = GFX_syrian_dragoon_tactics
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.48.a
+		custom_effect_tooltip = syrian_dragoon_tactics_effect
+		hidden_effect = {
+			set_technology = { syrian_dragoon_tactics = 1 popup = yes }
+		}
+	}
+
+}
+
+country_event = {
+	id = syr.49
+	title = syr.49.t
+	desc = syr.49.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SYR
+		LEB = {
+			is_ai = yes
+		}
+		LEB = {
+			OR = {
+				has_country_leader = {
+					name = "Antoun Saadeh"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Akram al-Haurani"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Khalid Bakdash"
+					ruling_only = yes
+				}
+			}
+		}
+		has_completed_focus = SYR_SSNP_won_a_big_victory
+		has_country_leader = {
+			name = "Akram al-Haurani"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "Khalid Bakdash"
+			ruling_only = yes
+		}
+	}
+
+	option = {
+		name = syr.49.a
+		annex_country = { target = LEB transfer_troops = yes }
+	}
+	option = {
+		name = syr.49.a
+		LEB = {
+			annex_country = { target = SYR transfer_troops = yes }
+			change_tag_from = SYR
+			every_state = {
+				limit = { is_core_of SYR }
+				add_core_of = LEB
+			}
+		}
+	}
+
+}
+country_event = {
+	id = syr.50
+	title = syr.50.t
+	desc = syr.50.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LEB
+		SYR = {
+			is_ai = yes
+		}
+		SYR = {
+			OR = {
+				has_completed_focus = SYR_SSNP_won_a_big_victory
+				has_country_leader = {
+					name = "Akram al-Haurani"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Khalid Bakdash"
+					ruling_only = yes
+				}
+			}
+		}
+		has_country_leader = {
+			name = "Antoun Saadeh"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "Akram al-Haurani"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "Khalid Bakdash"
+			ruling_only = yes
+		}
+	}
+
+	option = {
+		name = syr.50.a
+		annex_country = { target = SYR transfer_troops = yes }
+		every_state = {
+			limit = { is_core_of SYR }
+			add_core_of = LEB
+		}
+	}
+	option = {
+		name = syr.50.a
+		SYR = {
+			annex_country = { target = LEB transfer_troops = yes }
+			change_tag_from = LEB
+		}
+	}
+
+}
+
+country_event = {
+	id = syr.51
+	title = syr.51.t
+	desc = syr.51.d
+	picture = GFX_ssnp_journey
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SYR
+		has_completed_focus = SYR_SSNP_won_a_big_victory
+		controls_state = 291
+		controls_state = 421
+		controls_state = 553
+		controls_state = 183
+		controls_state = 454
+		controls_state = 352
+	}
+
+	option = {
+		name = syr.51.a
+		set_cosmetic_tag = SYR_greater_ssnp
+		if = {
+			limit = {
+				is_ai = no
+			}
+			hidden_effect = {
+				country_event = {
+					id = syr.35
+					days = 30
+				}
+			}
+		}
 	}
 
 }

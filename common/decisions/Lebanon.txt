@@ -1,4 +1,88 @@
 political_actions = {
+	SYR_Total_jihad_agains_Judaism_dec = {
+		icon = trumpet
+		allowed = {
+			tag = SYR
+		}
+		visible = {
+			has_country_flag = SYR_Total_jihad_agains_Judaism_Flag
+		}
+		cost = 100
+		days_remove = 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GER_willy_ii_picker"
+			create_wargoal = { target = MAG type = annex_everything }
+			create_wargoal = { target = KEN type = annex_everything }
+			create_wargoal = { target = COR type = annex_everything }
+			create_wargoal = { target = USA type = annex_everything }
+			create_wargoal = { target = CAL type = annex_everything }
+			create_wargoal = { target = CSA type = annex_everything }
+			create_wargoal = { target = TEX type = annex_everything }
+			create_wargoal = { target = BBR type = annex_everything }
+			create_wargoal = { target = ALA type = annex_everything }
+			create_wargoal = { target = WCC type = annex_everything }
+			create_wargoal = { target = NEE type = annex_everything }
+			create_wargoal = { target = WHR type = annex_everything }
+			create_wargoal = { target = UKR type = annex_everything }
+			every_state = {
+				limit = { is_core_of = WHR }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = UKR }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = MAG }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = KEN }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = COR }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = USA }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = CAL }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = CSA }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = TEX }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = BBR }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = ALA }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = WCC }
+				add_core_of = SYR
+			}
+			every_state = {
+				limit = { is_core_of = NEE }
+				add_core_of = SYR
+			}
+		}
+	}
 	LEB_Nihal_Atsiz_picker = {
 		icon = GFX_decision_portraits_picker
 		allowed = {
