@@ -4492,7 +4492,7 @@ focus_tree = {
 		icon=SYRIA_Glory_to_the_Arab_flag
 		x=34
 		y=8
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4503,6 +4503,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Glory_to_the_Arab_flag_idea
 		}
 	}
 	focus={
@@ -4511,7 +4512,7 @@ focus_tree = {
 		x=33
 		y=9
 		prerequisite={focus=SYR_Glory_to_the_Arab_flag}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4519,6 +4520,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_revolution_mobilize_idea
 		}
 	}
 	focus={
@@ -4527,7 +4529,7 @@ focus_tree = {
 		x=35
 		y=9
 		prerequisite={focus=SYR_Glory_to_the_Arab_flag}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4535,6 +4537,11 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Political_division_idea
+				add_idea = SYR_Political_division_idea1
+			}
+			add_ideas = SYR_Crush_the_enemies_of_the_revolution_idea
 		}
 	}
 	focus={
@@ -4543,7 +4550,8 @@ focus_tree = {
 		x=32
 		y=10
 		prerequisite={focus=SYR_Mobilize_intellectuals}
-		cost=10
+		prerequisite={focus=SYR_Crush_the_enemies_of_the_revolution}
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4551,6 +4559,8 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			remove_ideas = SYR_Political_division_idea1
+			add_ideas = SYR_Wash_the_spirit_idea
 		}
 	}
 	focus={
@@ -4560,7 +4570,7 @@ focus_tree = {
 		y=10
 		prerequisite={focus=SYR_Mobilize_intellectuals}
 		prerequisite={focus=SYR_Crush_the_enemies_of_the_revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4568,6 +4578,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_revolution_mobilize_idea
+				add_idea = SYR_revolution_mobilize_idea1
+			}
 		}
 	}
 	focus={
@@ -4575,8 +4589,9 @@ focus_tree = {
 		icon=SYRIA_A_fire_of_hope
 		x=36
 		y=10
+		prerequisite={focus=SYR_Mobilize_intellectuals}
 		prerequisite={focus=SYR_Crush_the_enemies_of_the_revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4584,6 +4599,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Crush_the_enemies_of_the_revolution_idea
+				add_idea = SYR_Crush_the_enemies_of_the_revolution_idea1
+			}
 		}
 	}
 	focus={
@@ -4594,7 +4613,7 @@ focus_tree = {
 		prerequisite={focus=SYR_Wash_the_spirit}
 		prerequisite={focus=SYR_Unite_the_people}
 		prerequisite={focus=SYR_A_fire_of_hope}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4602,6 +4621,24 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Glory_to_the_Arab_flag_idea
+				add_idea = SYR_Glory_to_the_Arab_flag_idea1
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = SYR_Pan_Arab_Socialist_Flag
+					}
+				}
+				country_event = syr.26
+			}
+			if = {
+				limit = {
+					has_country_flag = SYR_Pan_Arab_Socialist_Flag
+				}
+				complete_national_focus = SYR_Arab_Revolution
+			}
 		}
 	}
 	focus={
@@ -4610,14 +4647,18 @@ focus_tree = {
 		x=24
 		y=12
 		prerequisite={focus=SYR_The_dawn_of_the_new_century}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
 		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -4626,7 +4667,7 @@ focus_tree = {
 		x=22
 		y=13
 		prerequisite={focus=SYR_Only_one_party}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4634,6 +4675,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Arab_reformism_idea
 		}
 	}
 	focus={
@@ -4642,7 +4684,7 @@ focus_tree = {
 		x=24
 		y=13
 		prerequisite={focus=SYR_Only_one_party}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4650,6 +4692,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Limited_democracy_idea
 		}
 	}
 	focus={
@@ -4658,7 +4701,7 @@ focus_tree = {
 		x=26
 		y=13
 		prerequisite={focus=SYR_Only_one_party}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4666,6 +4709,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Oppose_extremist_ideology_idea
 		}
 	}
 	focus={
@@ -4675,7 +4719,7 @@ focus_tree = {
 		y=14
 		prerequisite={focus=SYR_Arab_reformism}
 		prerequisite={focus=SYR_Limited_democracy}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4683,6 +4727,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Arab_reformism_idea
+				add_idea = SYR_Arab_reformism_idea1
+			}
 		}
 	}
 	focus={
@@ -4692,7 +4740,7 @@ focus_tree = {
 		y=14
 		prerequisite={focus=SYR_Limited_democracy}
 		prerequisite={focus=SYR_Oppose_extremist_ideology}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4700,6 +4748,14 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			set_temp_variable = { coalition_partner_var = token:social_liberal }
+			add_to_coalition = yes
+			set_temp_variable = { coalition_partner_var = token:social_conservative }
+			add_to_coalition = yes
+			swap_ideas = {
+				remove_idea = SYR_Oppose_extremist_ideology_idea
+				add_idea = SYR_Oppose_extremist_ideology_idea1
+			}
 		}
 	}
 	focus={
@@ -4709,7 +4765,7 @@ focus_tree = {
 		y=15
 		prerequisite={focus=SYR_End_exploitation}
 		prerequisite={focus=SYR_Progressive_Alliance}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4717,6 +4773,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Arab_reformism_idea1
+				add_idea = SYR_Arab_reformism_idea2
+			}
 		}
 	}
 	focus={
@@ -4725,14 +4785,18 @@ focus_tree = {
 		x=29
 		y=12
 		prerequisite={focus=SYR_The_dawn_of_the_new_century}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
 		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -4741,7 +4805,7 @@ focus_tree = {
 		x=28
 		y=13
 		prerequisite={focus=SYR_Arab_unity}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4749,6 +4813,19 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			set_party_name = {
+				ideology = syndicalist
+				elections_allowed = no
+				name = SYR_baath_soclist_party
+				long_name = SYR_baath_soclist_party_long
+			}
+			set_party_name = {
+				ideology = social_democrat
+				elections_allowed = no
+				name = SYR_baath_soclist_party
+				long_name = SYR_baath_soclist_party_long
+			}
+			add_ideas = SYR_Transform_political_parties_idea
 		}
 	}
 	focus={
@@ -4757,7 +4834,7 @@ focus_tree = {
 		x=30
 		y=13
 		prerequisite={focus=SYR_Arab_unity}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4765,6 +4842,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Worship_death_idea
 		}
 	}
 	focus={
@@ -4773,7 +4851,7 @@ focus_tree = {
 		x=27
 		y=14
 		prerequisite={focus=SYR_Transform_political_parties}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4781,6 +4859,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Transform_political_parties_idea
+				add_idea = SYR_Transform_political_parties_idea1
+			}
 		}
 	}
 	focus={
@@ -4790,7 +4872,7 @@ focus_tree = {
 		y=14
 		prerequisite={focus=SYR_Transform_political_parties}
 		prerequisite={focus=SYR_Encourage_sacrifice}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4798,6 +4880,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Spread_Baathlism_idea
 		}
 	}
 	focus={
@@ -4806,7 +4889,7 @@ focus_tree = {
 		x=31
 		y=14
 		prerequisite={focus=SYR_Encourage_sacrifice}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4814,6 +4897,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Worship_death_idea
+				add_idea = SYR_Worship_death_idea1
+			}
 		}
 	}
 	focus={
@@ -4824,7 +4911,7 @@ focus_tree = {
 		prerequisite={focus=SYR_Guard_of_the_Arabs}
 		prerequisite={focus=SYR_Spread_Baathlism}
 		prerequisite={focus=SYR_Arm_the_people}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4832,6 +4919,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Spread_Baathlism_idea
+				add_idea = SYR_Spread_Baathlism_idea1
+			}
 		}
 	}
 	focus={
@@ -4840,14 +4931,18 @@ focus_tree = {
 		x=34
 		y=12
 		prerequisite={focus=SYR_The_dawn_of_the_new_century}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
 		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -4856,7 +4951,7 @@ focus_tree = {
 		x=32
 		y=13
 		prerequisite={focus=SYR_Arab_Revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4864,6 +4959,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Socialist_bridgehead_idea
 		}
 	}
 	focus={
@@ -4872,7 +4968,7 @@ focus_tree = {
 		x=34
 		y=13
 		prerequisite={focus=SYR_Arab_Revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4880,6 +4976,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Ideological_enlightenment_idea
 		}
 	}
 	focus={
@@ -4888,7 +4985,7 @@ focus_tree = {
 		x=36
 		y=13
 		prerequisite={focus=SYR_Arab_Revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4896,6 +4993,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_The_farmer_owns_the_land_idea
 		}
 	}
 	focus={
@@ -4905,7 +5003,7 @@ focus_tree = {
 		y=14
 		prerequisite={focus=SYR_Socialist_bridgehead}
 		prerequisite={focus=SYR_Ideological_enlightenment}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4913,6 +5011,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Socialist_bridgehead_idea
+				add_idea = SYR_Socialist_bridgehead_idea1
+			}
 		}
 	}
 	focus={
@@ -4922,7 +5024,7 @@ focus_tree = {
 		y=14
 		prerequisite={focus=SYR_Ideological_enlightenment}
 		prerequisite={focus=SYR_The_farmer_owns_the_land}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4930,6 +5032,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_The_farmer_owns_the_land_idea
+				add_idea = SYR_The_farmer_owns_the_land_idea1
+			}
 		}
 	}
 	focus={
@@ -4939,7 +5045,7 @@ focus_tree = {
 		y=15
 		prerequisite={focus=SYR_Anti_colonial_vanguard}
 		prerequisite={focus=SYR_Social_justice}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4947,6 +5053,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Socialist_bridgehead_idea1
+				add_idea = SYR_Socialist_bridgehead_idea2
+			}
 		}
 	}
 	focus={
@@ -4955,14 +5065,18 @@ focus_tree = {
 		x=39
 		y=12
 		prerequisite={focus=SYR_The_dawn_of_the_new_century}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
 		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -4971,7 +5085,7 @@ focus_tree = {
 		x=38
 		y=13
 		prerequisite={focus=SYR_The_old_party_is_reborn}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4979,6 +5093,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Communist_program_idea
 		}
 	}
 	focus={
@@ -4987,7 +5102,7 @@ focus_tree = {
 		x=40
 		y=13
 		prerequisite={focus=SYR_The_old_party_is_reborn}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -4995,6 +5110,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Syria_first_idea
 		}
 	}
 	focus={
@@ -5003,7 +5119,7 @@ focus_tree = {
 		x=37
 		y=14
 		prerequisite={focus=SYR_Communist_program}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5011,6 +5127,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Communist_program_idea
+				add_idea = SYR_Communist_program_idea1
+			}
 		}
 	}
 	focus={
@@ -5020,7 +5140,7 @@ focus_tree = {
 		y=14
 		prerequisite={focus=SYR_Communist_program}
 		prerequisite={focus=SYR_Syria_first}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5028,6 +5148,9 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			set_temp_variable = { coalition_partner_var = token:social_liberal }
+			add_to_coalition = yes
+			add_ideas = SYR_whirlwind_eagle_idea
 		}
 	}
 	focus={
@@ -5036,7 +5159,7 @@ focus_tree = {
 		x=41
 		y=14
 		prerequisite={focus=SYR_Syria_first}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5044,6 +5167,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Syria_first_idea
+				add_idea = SYR_Syria_first_idea1
+			}
 		}
 	}
 	focus={
@@ -5054,7 +5181,7 @@ focus_tree = {
 		prerequisite={focus=SYR_National_vanguard}
 		prerequisite={focus=SYR_The_wisdom_of_the_SSNP}
 		prerequisite={focus=SYR_Embrace_the_regional_revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5062,6 +5189,16 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Communist_program_idea1
+				add_idea = SYR_Communist_program_idea2
+			}
+			hidden_effect = {
+				country_event = {
+					id = syr.32
+					days = 15
+				}
+			}
 		}
 	}
 	focus={
@@ -5070,14 +5207,18 @@ focus_tree = {
 		x=44
 		y=12
 		prerequisite={focus=SYR_The_dawn_of_the_new_century}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
 		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -5086,7 +5227,7 @@ focus_tree = {
 		x=42
 		y=13
 		prerequisite={focus=SYR_Protect_the_revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5094,6 +5235,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Military_politics_idea
 		}
 	}
 	focus={
@@ -5102,7 +5244,7 @@ focus_tree = {
 		x=44
 		y=13
 		prerequisite={focus=SYR_Protect_the_revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5110,6 +5252,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Martial_law_is_normalized_idea
 		}
 	}
 	focus={
@@ -5118,7 +5261,7 @@ focus_tree = {
 		x=46
 		y=13
 		prerequisite={focus=SYR_Protect_the_revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5126,6 +5269,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Absorb_the_jihadists_idea
 		}
 	}
 	focus={
@@ -5135,7 +5279,7 @@ focus_tree = {
 		y=14
 		prerequisite={focus=SYR_Weaken_the_power_of_civil_servants}
 		prerequisite={focus=SYR_Martial_law_is_normalized}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5143,6 +5287,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Military_politics_idea
+				add_idea = SYR_Military_politics_idea1
+			}
 		}
 	}
 	focus={
@@ -5152,7 +5300,7 @@ focus_tree = {
 		y=14
 		prerequisite={focus=SYR_Martial_law_is_normalized}
 		prerequisite={focus=SYR_Absorb_the_jihadists}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5160,6 +5308,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Absorb_the_jihadists_idea
+				add_idea = SYR_Absorb_the_jihadists_idea1
+			}
 		}
 	}
 	focus={
@@ -5169,7 +5321,7 @@ focus_tree = {
 		y=15
 		prerequisite={focus=SYR_Maintain_military_governance}
 		prerequisite={focus=SYR_Calling_patriotic_children}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5177,6 +5329,11 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Military_politics_idea1
+				add_idea = SYR_Military_politics_idea2
+			}
+			country_event = syr.36
 		}
 	}
 	focus={
@@ -5184,7 +5341,7 @@ focus_tree = {
 		icon=GFX_goal_ALB_Modernization
 		x=53
 		y=10
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5203,7 +5360,7 @@ focus_tree = {
 		x=50
 		y=11
 		prerequisite={focus=SYR_Syrian_Revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5219,7 +5376,7 @@ focus_tree = {
 		x=49
 		y=12
 		prerequisite={focus=SYR_Planned_Economy}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5235,7 +5392,7 @@ focus_tree = {
 		x=51
 		y=12
 		prerequisite={focus=SYR_Planned_Economy}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5252,7 +5409,7 @@ focus_tree = {
 		y=13
 		prerequisite={focus=SYR_Formulate_a_five_year_plan}
 		prerequisite={focus=SYR_Promote_collectivization}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5268,7 +5425,7 @@ focus_tree = {
 		x=53
 		y=11
 		prerequisite={focus=SYR_Syrian_Revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5284,7 +5441,7 @@ focus_tree = {
 		x=53
 		y=12
 		prerequisite={focus=SYR_Kill_the_reactionaries}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5300,7 +5457,7 @@ focus_tree = {
 		x=53
 		y=13
 		prerequisite={focus=SYR_Agrarian_Revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5316,7 +5473,7 @@ focus_tree = {
 		x=56
 		y=11
 		prerequisite={focus=SYR_Syrian_Revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5332,7 +5489,7 @@ focus_tree = {
 		x=55
 		y=12
 		prerequisite={focus=SYR_Social_revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5348,7 +5505,7 @@ focus_tree = {
 		x=57
 		y=12
 		prerequisite={focus=SYR_Social_revolution}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5365,7 +5522,7 @@ focus_tree = {
 		y=13
 		prerequisite={focus=SYR_Crush_spiritual_opium}
 		prerequisite={focus=SYR_egalitarian_ideology}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5384,7 +5541,7 @@ focus_tree = {
 		prerequisite={focus=SYR_A_sanctuary_for_all_citizens}
 		prerequisite={focus=SYR_no_allah_no_master}
 		mutually_exclusive={focus=SYR_Marxist_Leninist_base_area }
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5403,7 +5560,7 @@ focus_tree = {
 		prerequisite={focus=SYR_Everyone_is_a_builder}
 		prerequisite={focus=SYR_no_allah_no_master}
 		mutually_exclusive={focus=SYR_The_hometown_of_syndicalism }
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5420,7 +5577,7 @@ focus_tree = {
 		y=15
 		prerequisite={focus=SYR_The_hometown_of_syndicalism}
 		prerequisite={focus=SYR_Marxist_Leninist_base_area}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5435,7 +5592,7 @@ focus_tree = {
 		icon=SYRIA_victory_of_democracy
 		x=22
 		y=6
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5454,7 +5611,7 @@ focus_tree = {
 		x=15
 		y=7
 		prerequisite={focus=SYR_victory_of_democracy}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5470,7 +5627,7 @@ focus_tree = {
 		x=13
 		y=8
 		prerequisite={focus=SYR_Damascus_faction}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5486,7 +5643,7 @@ focus_tree = {
 		x=15
 		y=8
 		prerequisite={focus=SYR_Damascus_faction}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5502,7 +5659,7 @@ focus_tree = {
 		x=17
 		y=8
 		prerequisite={focus=SYR_Damascus_faction}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5519,7 +5676,7 @@ focus_tree = {
 		y=9
 		prerequisite={focus=SYR_New_Sultanate}
 		prerequisite={focus=SYR_Characteristic_secularism}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5536,7 +5693,7 @@ focus_tree = {
 		y=9
 		prerequisite={focus=SYR_Characteristic_secularism}
 		prerequisite={focus=SYR_Eliminate_division}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5553,7 +5710,7 @@ focus_tree = {
 		y=10
 		prerequisite={focus=SYR_fellow_Algerians}
 		prerequisite={focus=SYR_Towards_social_progress}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5569,7 +5726,7 @@ focus_tree = {
 		x=19
 		y=8
 		prerequisite={focus=SYR_Damascus_faction focus=SYR_Aleppo_faction focus=SYR_Ethnic_groups }
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5585,7 +5742,7 @@ focus_tree = {
 		x=19
 		y=9
 		prerequisite={focus=SYR_National_reconciliation}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5601,7 +5758,7 @@ focus_tree = {
 		x=19
 		y=10
 		prerequisite={focus=SYR_Recognize_the_Alawites}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5617,7 +5774,7 @@ focus_tree = {
 		x=22
 		y=7
 		prerequisite={focus=SYR_victory_of_democracy}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5633,7 +5790,7 @@ focus_tree = {
 		x=21
 		y=8
 		prerequisite={focus=SYR_Aleppo_faction}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5649,7 +5806,7 @@ focus_tree = {
 		x=21
 		y=9
 		prerequisite={focus=SYR_Protect_landlords}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5665,7 +5822,7 @@ focus_tree = {
 		x=21
 		y=10
 		prerequisite={focus=SYR_Appoint_social_elites}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5681,7 +5838,7 @@ focus_tree = {
 		x=23
 		y=8
 		prerequisite={focus=SYR_Aleppo_faction}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5697,7 +5854,7 @@ focus_tree = {
 		x=23
 		y=9
 		prerequisite={focus=SYR_The_elite_governed}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5713,7 +5870,7 @@ focus_tree = {
 		x=23
 		y=10
 		prerequisite={focus=SYR_Suppression_of_Damascus}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5729,7 +5886,7 @@ focus_tree = {
 		x=25
 		y=8
 		prerequisite={focus=SYR_Damascus_faction focus=SYR_Aleppo_faction focus=SYR_Ethnic_groups }
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5745,7 +5902,7 @@ focus_tree = {
 		x=25
 		y=9
 		prerequisite={focus=SYR_Defend_democratic_power}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5761,7 +5918,7 @@ focus_tree = {
 		x=25
 		y=10
 		prerequisite={focus=SYR_Politics_for_all}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5777,7 +5934,7 @@ focus_tree = {
 		x=29
 		y=7
 		prerequisite={focus=SYR_victory_of_democracy}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5793,7 +5950,7 @@ focus_tree = {
 		x=27
 		y=8
 		prerequisite={focus=SYR_Ethnic_groups}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5809,7 +5966,7 @@ focus_tree = {
 		x=29
 		y=8
 		prerequisite={focus=SYR_Ethnic_groups}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5825,7 +5982,7 @@ focus_tree = {
 		x=31
 		y=8
 		prerequisite={focus=SYR_Ethnic_groups}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5842,7 +5999,7 @@ focus_tree = {
 		y=9
 		prerequisite={focus=SYR_True_national_independence}
 		prerequisite={focus=SYR_Reconciliation_with_the_Ottomans}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5859,7 +6016,7 @@ focus_tree = {
 		y=9
 		prerequisite={focus=SYR_Reconciliation_with_the_Ottomans}
 		prerequisite={focus=SYR_Working_with_reformists}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5876,7 +6033,7 @@ focus_tree = {
 		y=10
 		prerequisite={focus=SYR_Only_Syria}
 		prerequisite={focus=SYR_A_united_government}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5894,7 +6051,7 @@ focus_tree = {
 		prerequisite={focus=SYR_Autonomous_regions}
 		prerequisite={focus=SYR_Counter_revolutionary_revolutionaries}
 		prerequisite={focus=SYR_Healthy_politics focus=SYR_Everyone_participates focus=SYR_Market_and_national_freedom focus=SYR_Limit_pan_Arabism }
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5909,7 +6066,7 @@ focus_tree = {
 		icon=PALS_Integrate_the_Jihadist_Army
 		x=44
 		y=7
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5928,7 +6085,7 @@ focus_tree = {
 		x=41
 		y=8
 		prerequisite={focus=SYR_Corrective_movement}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5944,7 +6101,7 @@ focus_tree = {
 		x=39
 		y=9
 		prerequisite={focus=SYR_The_Druze_Mountain_Revealed}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5960,7 +6117,7 @@ focus_tree = {
 		x=41
 		y=9
 		prerequisite={focus=SYR_The_Druze_Mountain_Revealed}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5976,7 +6133,7 @@ focus_tree = {
 		x=43
 		y=9
 		prerequisite={focus=SYR_The_Druze_Mountain_Revealed}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -5994,7 +6151,7 @@ focus_tree = {
 		prerequisite={focus=SYR_Druze_rights}
 		prerequisite={focus=SYR_Reconciliation_with_Sunnis}
 		prerequisite={focus=SYR_Long_forgotten}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -6010,7 +6167,7 @@ focus_tree = {
 		x=47
 		y=8
 		prerequisite={focus=SYR_Corrective_movement}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -6026,7 +6183,7 @@ focus_tree = {
 		x=45
 		y=9
 		prerequisite={focus=SYR_Alavestan}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -6042,7 +6199,7 @@ focus_tree = {
 		x=47
 		y=9
 		prerequisite={focus=SYR_Alavestan}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -6058,7 +6215,7 @@ focus_tree = {
 		x=49
 		y=9
 		prerequisite={focus=SYR_Alavestan}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -6076,7 +6233,7 @@ focus_tree = {
 		prerequisite={focus=SYR_True_faithful}
 		prerequisite={focus=SYR_Promote_social_liberation}
 		prerequisite={focus=SYR_The_sage_of_Palestine}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -6092,7 +6249,7 @@ focus_tree = {
 		x=44
 		y=8
 		prerequisite={focus=SYR_Corrective_movement}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}
@@ -6108,7 +6265,7 @@ focus_tree = {
 		x=44
 		y=10
 		prerequisite={focus=SYR_Promote_integration}
-		cost=10
+		cost=4
 		ai_will_do={
 			factor=1
 		}

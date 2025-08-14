@@ -1403,6 +1403,7 @@ country_event = {
 			ruling_party = syndicalist
 			elections_allowed = no
 		}
+		set_country_flag = SYR_Pan_Arab_Socialist_Flag
 		remove_ideas_with_trait = head_of_government
 		add_ideas = LEB_Akram_al_Haurani_hog_syn
 		remove_ideas_with_trait = foreign_minister
@@ -1422,10 +1423,6 @@ country_event = {
 		}
 		set_cosmetic_tag = SYR_arab
 		add_popularity = { ideology = social_democrat popularity = 0.45 }
-		country_event = {
-			id = syr.26
-			days = 1
-		}
 	}
 }
 
@@ -1452,6 +1449,7 @@ country_event = {
 		add_ideas = SYR_Zaki_al_Arsuzi_for_sde
 		remove_ideas_with_trait = security_minister
 		add_ideas = SYR_Nazik_al_Abid_sec_sde
+		complete_national_focus = SYR_Only_one_party
 	}
 	option = {
 		name = syr.26.b
@@ -1476,6 +1474,7 @@ country_event = {
 			ideology = radsoc_arab_baathism_subtype
 		}
 		add_popularity = { ideology = radical_socialist popularity = 0.45 }
+		complete_national_focus = SYR_Arab_unity
 	}
 	option = {
 		name = syr.26.c
@@ -1515,6 +1514,7 @@ country_event = {
 			ideology = tot_arab_baathism_subtype
 		}
 		add_popularity = { ideology = totalist popularity = 0.45 }
+		complete_national_focus = SYR_The_old_party_is_reborn
 	}
 	option = {
 		name = syr.27.b
@@ -1539,6 +1539,7 @@ country_event = {
 			ideology = pataut_arab_baathism_subtype
 		}
 		add_popularity = { ideology = paternal_autocrat popularity = 0.45 }
+		complete_national_focus = SYR_Protect_the_revolution
 	}
 }
 
