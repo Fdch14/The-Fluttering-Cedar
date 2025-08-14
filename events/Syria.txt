@@ -1404,6 +1404,7 @@ country_event = {
 			elections_allowed = no
 		}
 		set_country_flag = SYR_Pan_Arab_Socialist_Flag
+		set_country_flag = SYR_Pan_Arab_dawn_Flag
 		remove_ideas_with_trait = head_of_government
 		add_ideas = LEB_Akram_al_Haurani_hog_syn
 		remove_ideas_with_trait = foreign_minister
@@ -1422,6 +1423,7 @@ country_event = {
 			elections_allowed = no
 		}
 		set_cosmetic_tag = SYR_arab
+		set_country_flag = SYR_Pan_Arab_dawn_Flag
 		add_popularity = { ideology = social_democrat popularity = 0.45 }
 	}
 }
