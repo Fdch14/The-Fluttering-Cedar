@@ -2910,13 +2910,14 @@ focus_tree = {
 		mutually_exclusive={focus=NYE_Join_the_Third_International focus=NYE_Arab_League }
 		cost=5
 		ai_will_do={
-			factor=1
+			factor=0
 		}
 		available = {
 			NOT = {
 				has_government = totalist
 				has_government = syndicalist
 			}
+			date > 1938.9.1
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -2936,13 +2937,14 @@ focus_tree = {
 		mutually_exclusive={focus=NYE_Liberal_diplomacy focus=NYE_Arab_League }
 		cost=5
 		ai_will_do={
-			factor=1
+			factor=0
 		}
 		available = {
 			OR = {
 				has_government = totalist
 				has_government = syndicalist
 			}
+			date > 1938.9.1
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -2962,106 +2964,120 @@ focus_tree = {
 		mutually_exclusive={focus=NYE_Liberal_diplomacy focus=NYE_Join_the_Third_International }
 		cost=5
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available = {
 			NOT = {
 				has_government = totalist
 			}
+			date > 1938.9.1
 		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
-			every_state = {
-				limit = { is_core_of = OMA }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = SAU }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = JBS }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = HEJ }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = ETH }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = SYR }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = IRQ }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = LBA }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = LEB }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = EGY }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = LBA }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = TRP }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = TUN }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = ALG }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = MOR }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = MRT }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = ERI }
-				add_core_of = YEM
-			}
-			every_state = {
-				limit = { is_core_of = DJI }
-				add_core_of = YEM
-			}
-			every_state = {
+			if = {
 				limit = {
-				OR = {
-					is_core_of = SOM
-					is_claimed_by = SOM
-					}
+					is_ai = no
 				}
-				add_core_of = YEM
+				every_state = {
+					limit = { is_core_of = OMA }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = SAU }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = JBS }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = HEJ }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = ETH }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = SYR }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = IRQ }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = LBA }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = LEB }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = EGY }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = LBA }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = TRP }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = TUN }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = ALG }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = MOR }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = MRT }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = ERI }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = { is_core_of = DJI }
+					add_core_of = YEM
+				}
+				every_state = {
+					limit = {
+					OR = {
+						is_core_of = SOM
+						is_claimed_by = SOM
+						}
+					}
+					add_core_of = YEM
+				}
+				hidden_effect = {
+				819 = {	add_core_of = YEM }
+				352 = {	add_core_of = YEM }
+				350 = {	add_core_of = YEM }
+				450 = {	add_core_of = YEM }
+				905 = { add_core_of = YEM }
+				}
+				set_cosmetic_tag = YEM_Arab
 			}
-			hidden_effect = {
-			819 = {	add_core_of = YEM }
-			352 = {	add_core_of = YEM }
-			350 = {	add_core_of = YEM }
-			450 = {	add_core_of = YEM }
-			905 = { add_core_of = YEM }
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				EGY = {
+					add_to_faction = YEM
+				}
 			}
-			set_cosmetic_tag = YEM_Arab
 		}
 	}
 }

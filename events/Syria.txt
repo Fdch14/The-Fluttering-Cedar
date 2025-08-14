@@ -320,6 +320,10 @@ country_event = {	#Invitation to the Arab League
 		name = syrfor.1.a
 		ai_chance = {
 			base = 100
+			modifier = {
+				factor = 0
+				is_in_faction = yes 
+			}
 		}
 		LOA_join_syrian_sphere = yes
 		SYR = { country_event = syrfor.2 }
@@ -379,6 +383,10 @@ country_event = {	#Invitation to the Arab League
 		name = syrfor.1.b
 		ai_chance = {
 			base = 0
+			modifier = {
+				factor = 100
+				is_in_faction = yes 
+			}
 		}
 		SYR = {
 			country_event = syrfor.3
@@ -479,6 +487,14 @@ country_event = {	#Syrian Revolt
 						type = artillery_equipment_1
 						amount = 20000
 						producer = EGY
+					}
+					country_event = {
+						id = syr.30
+						days = 4
+					}
+					country_event = {
+						id = syr.31
+						days = 7
 					}
 					add_manpower = 300000
 					transfer_state = 554
@@ -1393,6 +1409,7 @@ country_event = {
 			ruling_party = radical_socialist
 			elections_allowed = no
 		}
+		set_country_flag = SYR_Syrian_Revolution_Flag
 		set_cosmetic_tag = SYR_revolutionary_republic
 		add_popularity = { ideology = radical_socialist popularity = 0.45 }
 		country_event = syr.34
@@ -1660,6 +1677,45 @@ country_event = {
 
 	option = {
 		name = syr.30.a
+		division_template = {
+			name = "al-Muqawamah al-Wataniyyah"
+				division_names_group = SYR_NRARMY_01
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				artillery_brigade  = { x = 3 y = 0 }
+				artillery_brigade  = { x = 3 y = 1 }
+				artillery_brigade  = { x = 3 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Liwa Raqm 2 al-Muqawamah al-Wataniyyah\" division_template = \"al-Muqawamah al-Wataniyyah\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = SYR
+			}
+			create_unit = {
+				division = "name = \"Liwa Raqm 2 al-Muqawamah al-Wataniyyah\" division_template = \"al-Muqawamah al-Wataniyyah\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = SYR
+			}
+			create_unit = {
+				division = "name = \"Liwa Raqm 3 al-Muqawamah al-Wataniyyah\" division_template = \"al-Muqawamah al-Wataniyyah\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = SYR
+			}
+		}
 	}
 
 }
@@ -1675,6 +1731,56 @@ country_event = {
 
 	option = {
 		name = syr.31.a
+		division_template = {
+			name = "Jaysh al-Mujahideen"
+				division_names_group = SYR_NRARMY_02
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Liwa Raqm 2 Jaysh al-Mujahideen\" division_template = \"Jaysh al-Mujahideen\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = SYR
+			}
+			create_unit = {
+				division = "name = \"Liwa Raqm 2 Jaysh al-Mujahideen\" division_template = \"Jaysh al-Mujahideen\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = SYR
+			}
+			create_unit = {
+				division = "name = \"Liwa Raqm 3 Jaysh al-Mujahideen\" division_template = \"Jaysh al-Mujahideen\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = SYR
+			}
+			create_unit = {
+				division = "name = \"Liwa Raqm 4 Jaysh al-Mujahideen\" division_template = \"Jaysh al-Mujahideen\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = SYR
+			}
+			create_unit = {
+				division = "name = \"Liwa Raqm 5 Jaysh al-Mujahideen\" division_template = \"Jaysh al-Mujahideen\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = SYR
+			}
+			create_unit = {
+				division = "name = \"Liwa Raqm 6 Jaysh al-Mujahideen\" division_template = \"Jaysh al-Mujahideen\" start_experience_factor = 1 start_equipment_factor = 1"
+				allow_spawning_on_enemy_provs = yes
+				owner = SYR
+			}
+		}
 	}
 
 }
@@ -2343,6 +2449,9 @@ country_event = {
 	option = {
 		name = syr.49.a
 		annex_country = { target = LEB transfer_troops = yes }
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = {
 		name = syr.49.a
@@ -2353,6 +2462,9 @@ country_event = {
 				limit = { is_core_of SYR }
 				add_core_of = LEB
 			}
+		}
+		ai_chance = {
+			base = 0
 		}
 	}
 
@@ -2403,12 +2515,18 @@ country_event = {
 			limit = { is_core_of SYR }
 			add_core_of = LEB
 		}
+		ai_chance = {
+			base = 0
+		}
 	}
 	option = {
 		name = syr.50.a
 		SYR = {
 			annex_country = { target = LEB transfer_troops = yes }
 			change_tag_from = LEB
+		}
+		ai_chance = {
+			base = 100
 		}
 	}
 
@@ -2447,6 +2565,22 @@ country_event = {
 				}
 			}
 		}
+	}
+
+}
+
+country_event = {
+	id = syr.52
+	title = syr.52.t
+	desc = syr.52.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.52.a
+		create_wargoal = { target = SYR type = annex_everything }
 	}
 
 }

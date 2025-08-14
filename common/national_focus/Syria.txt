@@ -1208,6 +1208,7 @@ focus_tree = {
 				has_war_with = TUR
 			}
 			OR = {
+				has_completed_focus = SYR_Syrian_Revolution
 				has_completed_focus = SYR_SSNP_Next
 				has_completed_focus = SYR_Corrective_movement
 				has_completed_focus = SYR_The_old_party_is_reborn
@@ -3422,6 +3423,10 @@ focus_tree = {
 					target = SYR
 					modifier = medium_decrease
 				}
+				country_event = {
+					id = syr.52
+					days = 15
+				}
 				if = {
 					limit = {
 						SYR = {
@@ -5352,6 +5357,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Syrian_Revolution_idea
 		}
 	}
 	focus={
@@ -5368,6 +5374,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Planned_Economy_idea
 		}
 	}
 	focus={
@@ -5384,6 +5391,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Planned_Economy_idea
+				add_idea = SYR_Planned_Economy_idea1
+			}
 		}
 	}
 	focus={
@@ -5396,10 +5407,17 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = SYR_Formulate_a_five_year_plan
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Planned_Economy_idea1
+				add_idea = SYR_Planned_Economy_idea2
+			}
 		}
 	}
 	focus={
@@ -5417,6 +5435,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Planned_Economy_idea2
+				add_idea = SYR_Planned_Economy_idea3
+			}
 		}
 	}
 	focus={
@@ -5433,6 +5455,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Syrian_Revolution_idea
+				add_idea = SYR_Syrian_Revolution_idea1
+			}
 		}
 	}
 	focus={
@@ -5449,6 +5475,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Syrian_Revolution_idea1
+				add_idea = SYR_Syrian_Revolution_idea2
+			}
 		}
 	}
 	focus={
@@ -5465,6 +5495,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Syrian_Revolution_idea2
+				add_idea = SYR_Syrian_Revolution_idea3
+			}
 		}
 	}
 	focus={
@@ -5481,6 +5515,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Social_revolution_idea
 		}
 	}
 	focus={
@@ -5497,6 +5532,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Social_revolution_idea
+				add_idea = SYR_Social_revolution_idea1
+			}
 		}
 	}
 	focus={
@@ -5509,10 +5548,17 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = SYR_Crush_spiritual_opium
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Social_revolution_idea1
+				add_idea = SYR_Social_revolution_idea2
+			}
 		}
 	}
 	focus={
@@ -5530,6 +5576,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Social_revolution_idea2
+				add_idea = SYR_Social_revolution_idea3
+			}
 		}
 	}
 	focus={
@@ -5545,10 +5595,14 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_government = radical_socialist
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_The_hometown_of_syndicalism_idea
 		}
 	}
 	focus={
@@ -5564,10 +5618,14 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_government = totalist
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Marxist_Leninist_base_area_idea
 		}
 	}
 	focus={
@@ -5585,6 +5643,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Syrian_Revolution_idea3
+				add_idea = SYR_Syrian_Revolution_idea4
+			}
 		}
 	}
 	focus={

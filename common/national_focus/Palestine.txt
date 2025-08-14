@@ -4722,7 +4722,7 @@ focus_tree={
 		mutually_exclusive={focus=PLS_Cooperation_with_Egypt }
 		cost=1
 		ai_will_do={
-			factor=1
+			factor=0
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -4740,7 +4740,7 @@ focus_tree={
 		mutually_exclusive={focus=PLS_Creation_of_the_PTO }
 		cost=1
 		ai_will_do={
-			factor=1
+			factor=100
 		}
 		available_if_capitulated=yes
 		search_filters={
@@ -4756,7 +4756,7 @@ focus_tree={
 		icon=PALS_Claim_the_Islamic_State_of_Arabia
 		x=101
 		y=9
-		prerequisite={focus=PLS_Creation_of_the_PTO focus=PLS_Cooperation_with_Egypt }
+		prerequisite={focus=PLS_Creation_of_the_PTO}
 		cost=4
 		ai_will_do={
 			factor=1
@@ -4941,7 +4941,7 @@ focus_tree={
 		icon=PALS_Allah_alone
 		x=103
 		y=9
-		prerequisite={focus=PLS_Creation_of_the_PTO focus=PLS_Cooperation_with_Egypt }
+		prerequisite={focus=PLS_Creation_of_the_PTO}
 		cost=4
 		ai_will_do={
 			factor=1
@@ -5213,7 +5213,7 @@ focus_tree={
 		icon=PALS_Hashem_holds_the_glory
 		x=105
 		y=9
-		prerequisite={focus=PLS_Creation_of_the_PTO focus=PLS_Cooperation_with_Egypt }
+		prerequisite={focus=PLS_Creation_of_the_PTO}
 		cost=4
 		ai_will_do={
 			factor=1
@@ -5289,7 +5289,7 @@ focus_tree={
 		icon=PALS_The_legacy_of_the_Great_Uprising
 		x=107
 		y=9
-		prerequisite={focus=PLS_Creation_of_the_PTO focus=PLS_Cooperation_with_Egypt }
+		prerequisite={focus=PLS_Creation_of_the_PTO}
 		cost=4
 		ai_will_do={
 			factor=1
@@ -5480,7 +5480,7 @@ focus_tree={
 		icon=PALS_Arab_National_Revolution
 		x=109
 		y=9
-		prerequisite={focus=PLS_Creation_of_the_PTO focus=PLS_Cooperation_with_Egypt }
+		prerequisite={focus=PLS_Creation_of_the_PTO}
 		cost=4
 		ai_will_do={
 			factor=1

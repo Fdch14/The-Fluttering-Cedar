@@ -1455,6 +1455,9 @@ country_event = {
 
 	option = {
 		name = yemen.48.a
+		ai_chance = {
+			factor = 100
+		}
 		complete_national_focus = NYE_New_Imam
 		create_country_leader = {
 			name = "Ahmad bin Yahya"
@@ -1469,6 +1472,9 @@ country_event = {
 			has_completed_focus = NYE_Economic_planning
 		}
 		name = yemen.48.b
+		ai_chance = {
+			factor = 0
+		}
 		set_politics = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = no
@@ -1501,6 +1507,9 @@ country_event = {
 	option = {
 		trigger = {
 			has_completed_focus = NYE_Economic_planning
+		}
+		ai_chance = {
+			factor = 0
 		}
 		name = yemen.48.c
 		set_politics = {
@@ -1632,6 +1641,9 @@ country_event = {
 
 	option = {
 		name = yemen.53.a
+		ai_chance = {
+			factor = 100
+		}
 		set_politics = {
 			ruling_party = syndicalist
 			elections_allowed = no
@@ -1647,6 +1659,9 @@ country_event = {
 	}
 	option = {
 		name = yemen.53.b
+		ai_chance = {
+			factor = 0
+		}
 		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = no
@@ -1675,6 +1690,9 @@ country_event = {
 
 	option = {
 		name = yemen.54.a
+		ai_chance = {
+			factor = 0
+		}
 		set_politics = {
 			ruling_party = totalist
 			elections_allowed = no
@@ -1687,6 +1705,9 @@ country_event = {
 	}
 	option = {
 		name = yemen.54.b
+		ai_chance = {
+			factor = 100
+		}
 		set_politics = {
 			ruling_party = syndicalist
 			elections_allowed = no
