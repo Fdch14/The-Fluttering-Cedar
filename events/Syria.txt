@@ -1332,6 +1332,10 @@ country_event = {
 		}
 		remove_natpop_from_coalition = yes
 		remove_pataut_from_coalition = yes
+		country_event = {
+			id = syr.25
+			days = 1
+		}
 	}
 }
 country_event = {
