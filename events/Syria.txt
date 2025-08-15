@@ -1928,7 +1928,7 @@ country_event = {
 		}
 		create_country_leader = {
 			name = "Khalid Bakdash"
-			picture = "gfx/leaders/SYR/Portrait_SYR_Akram_Hourani.png"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Khalid_Bakdash.png"
 			expire = "1.1.1"
 			ideology = authcom_subtype
 		}
