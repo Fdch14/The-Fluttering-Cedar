@@ -1448,6 +1448,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SYR_international"
+			
 			every_country = {
 				limit = {
 					is_in_faction_with = FRA
@@ -1456,6 +1457,21 @@ focus_tree = {
 					target = SYR
 					modifier = small_increase
 				}
+			}
+			FRA = {
+				add_to_faction = SYR
+			}
+			create_wargoal = {
+				target = PLS
+				type = topple_government
+			}
+			create_wargoal = {
+				target = ISR
+				type = topple_government
+			}
+			create_wargoal = {
+				target = PAL
+				type = topple_government
 			}
 			custom_effect_tooltip = tooltip_white_line
 			add_tech_bonus = {
@@ -1581,6 +1597,18 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SYR_reichspakt"
+			create_wargoal = {
+				target = PLS
+				type = topple_government
+			}
+			create_wargoal = {
+				target = ISR
+				type = topple_government
+			}
+			create_wargoal = {
+				target = PAL
+				type = topple_government
+			}
 			every_country = {
 				limit = {
 					is_in_faction_with = GER
@@ -1877,6 +1905,24 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SYR_defend_syrian_national_interests"
 			custom_effect_tooltip = syr_join_faction
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = SYR_reichspakt
+					}
+					GER = {
+						add_to_faction = SYR
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = SYR_cairo_pact
+					}
+					EGY = {
+						add_to_faction = SYR
+					}
+				}
+			}
 		}
 	}
 	focus = {# Pursue Neutrality
@@ -5633,8 +5679,7 @@ focus_tree = {
 		icon=GFX_goal_ALB_Albanian_Tribes
 		x=53
 		y=15
-		prerequisite={focus=SYR_The_hometown_of_syndicalism}
-		prerequisite={focus=SYR_Marxist_Leninist_base_area}
+		prerequisite={focus=SYR_The_hometown_of_syndicalism focus=SYR_Marxist_Leninist_base_area}
 		cost=4
 		ai_will_do={
 			factor=1

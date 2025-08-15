@@ -1,5 +1,6 @@
 is_guides_nation = {		
 OR = {
+		tag = SYR
 		tag = PLS
 		tag = USA
 		tag = BUL

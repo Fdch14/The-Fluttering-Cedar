@@ -10,6 +10,12 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			tag = SYR
+		}
+		localization_key = "SYR_guidesnum"
+	}
+	text = {
+		trigger = {
 			tag = PLS
 		}
 		localization_key = "PLS_guidesnum"

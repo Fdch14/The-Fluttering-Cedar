@@ -1,6 +1,12 @@
 fire_guide_event_for_nation = {
 	if = {
 		limit = {
+			tag = SYR
+		}
+		country_event = SYRguides.1
+	}
+	if = {
+		limit = {
 			tag = PLS
 		}
 		country_event = PLSguides.1

@@ -10,7 +10,23 @@ add_namespace = syrrev
 add_namespace = syr
 add_namespace = syrfor
 add_namespace = syr_portrait_picker
+add_namespace = SYRguides
 
+country_event = {
+	id = SYRguides.1
+    picture = GFX_introduction_main
+    title = SYRguides.1.t
+    desc = SYRguides.1.d
+	
+    is_triggered_only = yes
+
+	option = { 
+		name = SYRguides.1.a
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
 country_event = {
 	id = syr_portrait_picker.1
 	title = syr_portrait_picker.1.t 
@@ -1417,6 +1433,14 @@ country_event = {
 			ruling_party = radical_socialist
 			elections_allowed = no
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = SYR_Khalid_Bakdash_hog_rso
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = SYR_Youssef_Ibrahim_Yazbek_for_rso
+		remove_ideas_with_trait = economy_minister
+		add_ideas = SYR_Artin_Madoyan_eco_rso
+		remove_ideas_with_trait = security_minister
+		add_ideas = SYR_Akram_al_Hourani_sec_rso
 		set_country_flag = SYR_Syrian_Revolution_Flag
 		set_cosmetic_tag = SYR_revolutionary_republic
 		add_popularity = { ideology = radical_socialist popularity = 0.45 }
