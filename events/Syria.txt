@@ -838,12 +838,6 @@ country_event = {
 			id = syr.4
 			days = 2
 		}
-		hidden_effect = {
-			country_event = {
-				id = syr.14
-				days = 45
-			}
-		}
 	}
 }
 
@@ -891,7 +885,11 @@ country_event = {
 		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
 		add_to_coalition = yes 
 		set_temp_variable = { coalition_partner_var = token:national_populist }
-		add_to_coalition = yes 
+		add_to_coalition = yes
+		country_event = {
+			id = syr.6
+			days = 3
+		}
 	}
 }
 
@@ -945,6 +943,12 @@ country_event = {
 
 	option = {
 		name = syr.8.a
+		hidden_effect = {
+			country_event = {
+				id = syr.14
+				days = 45
+			}
+		}
 	}
 }
 
@@ -1168,10 +1172,7 @@ country_event = {
 
 	option = {
 		name = syr.17.a
-		country_event = {
-			id = syr.19
-			days = 1
-		}
+		set_country_flag = SYR_Democracy_triumphs_Flag
 	}
 }
 
@@ -1219,6 +1220,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = SYR_Fares_al_Khoury_sec_sli
 		add_popularity = { ideology = social_liberal popularity = 0.45 }
+		complete_national_focus = SYR_Damascus_faction
 	}
 	option = {
 		name = syr.19.b
@@ -1235,6 +1237,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = SYR_Selim_Takla_sec_mli
 		add_popularity = { ideology = market_liberal popularity = 0.45 }
+		complete_national_focus = SYR_Aleppo_faction
 	}
 	option = {
 		name = syr.19.c
@@ -1251,6 +1254,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = SYR_Hashim_al_Atassi_sec_sco
 		add_popularity = { ideology = social_conservative popularity = 0.45 }
+		complete_national_focus = SYR_Ethnic_groups
 	}
 }
 
@@ -1804,10 +1808,7 @@ country_event = {
 	}
 	option = {
 		name = syr.32.b
-		country_event = {
-			id = syr.33
-			days = 3
-		}
+		set_country_flag = SYR_Religious_coup_Flag
 	}
 
 }
@@ -1836,6 +1837,7 @@ country_event = {
 			expire = "1.1.1"
 			ideology = alawism_subtype
 		}
+		set_cosmetic_tag = SYR_alawism
 		remove_ideas_with_trait = head_of_government
 		add_ideas = SYR_Ali_Sulayman_Assad_hog_sde
 		remove_ideas_with_trait = foreign_minister
@@ -1845,6 +1847,7 @@ country_event = {
 		remove_ideas_with_trait = security_minister
 		add_ideas = SYR_Sheikh_Saleh_al_Ali_sec_sde
 		add_popularity = { ideology = social_democrat popularity = 0.65 }
+		complete_national_focus = SYR_Alavestan
 	}
 	option = {
 		name = syr.33.b
@@ -1868,7 +1871,9 @@ country_event = {
 			expire = "1.1.1"
 			ideology = druzeism_subtype
 		}
+		set_cosmetic_tag = SYR_druzeism
 		add_popularity = { ideology = social_liberal popularity = 0.65 }
+		complete_national_focus = SYR_The_Druze_Mountain_Revealed
 	}
 	
 }
@@ -2100,6 +2105,7 @@ country_event = {
 						ruling_only = yes
 					}
 				}
+				set_country_flag = syr_sultanate_flag
 				set_party_name = {
 					ideology = social_liberal
 					long_name = SYR_sultanate_social_liberal_party_long
@@ -2257,9 +2263,12 @@ country_event = {
 				portrait = "gfx/leaders/LEB/SYR_said_al_jazairi.png"
 			}
 		}
+		set_cosmetic_tag = SYR_algeria_sultanate
+		add_ideas = SYR_sludanese_system_idea
 	}
 	option = {
 		name = syr.39.b
+		add_ideas = SYR_Democracy_idea
 	}
 
 }
@@ -2275,6 +2284,10 @@ country_event = {
 
 	option = {
 		name = syr.40.a
+		every_state = {
+			limit { is_core_of = ALG }
+			add_core_of = SYR
+		}
 	}
 
 }
@@ -2290,6 +2303,7 @@ country_event = {
 
 	option = {
 		name = syr.41.a
+		add_ideas = SYR_sudanese_system_idea
 	}
 
 }
@@ -2305,6 +2319,10 @@ country_event = {
 
 	option = {
 		name = syr.42.a
+		every_state = {
+			limit { is_core_of = ALG }
+			add_core_of = SYR
+		}
 	}
 
 }
@@ -2585,6 +2603,73 @@ country_event = {
 	option = {
 		name = syr.52.a
 		create_wargoal = { target = SYR type = annex_everything }
+	}
+
+}
+
+country_event = {
+	id = syr.53
+	title = syr.53.t
+	desc = syr.53.d
+	picture = GFX_Greater_Syria_Uprising
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUR
+		EGY = {
+			is_ai = yes
+		}
+		date > 1938.1.1
+	}
+
+	option = {
+		name = syr.53.a
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = syr.53.b
+		ai_chance = {
+			factor = 100
+		}
+		EGY = {
+			country_event = {
+				id = syr.54
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = syr.54
+	title = syr.54.t
+	desc = syr.54.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = syr.54.a
+		EGY = {
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PAL
+				type = annex_everything
+			}
+			PAL = {
+				set_country_flag = has_sand_war_flag
+			}
+		}
+		TUR = {
+			country_event = sand_war.24
+		}
 	}
 
 }

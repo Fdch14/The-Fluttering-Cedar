@@ -5665,6 +5665,8 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_victory_of_democracy_idea
+			country_event = syr.19
 		}
 	}
 	focus={
@@ -5677,10 +5679,14 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_country_flag = FE_NOM
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -5697,6 +5703,20 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = syr_sultanate_flag
+					}
+				}
+				country_event = syr.39
+			}
+			if = {
+				limit = {
+					has_country_flag = syr_sultanate_flag
+				}
+				country_event = syr.41
+			}
 		}
 	}
 	focus={
@@ -5713,6 +5733,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Characteristic_secularism_idea
 		}
 	}
 	focus={
@@ -5729,6 +5750,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Eliminate_division_idea
 		}
 	}
 	focus={
@@ -5746,6 +5768,24 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Characteristic_secularism_idea
+				add_idea = SYR_Characteristic_secularism_idea1
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = syr_sultanate_flag
+					}
+				}
+				country_event = syr.40
+			}
+			if = {
+				limit = {
+					has_country_flag = syr_sultanate_flag
+				}
+				country_event = syr.42
+			}
 		}
 	}
 	focus={
@@ -5763,6 +5803,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Eliminate_division_idea
+				add_idea = SYR_Eliminate_division_idea1
+			}
 		}
 	}
 	focus={
@@ -5780,6 +5824,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Eliminate_division_idea1
+				add_idea = SYR_Eliminate_division_idea2
+			}
 		}
 	}
 	focus={
@@ -5796,6 +5844,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Political_division_idea
+				add_idea = SYR_Political_division_idea1
+			}
 		}
 	}
 	focus={
@@ -5812,6 +5864,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			remove_ideas = SYR_Political_division_idea1
 		}
 	}
 	focus={
@@ -5828,6 +5881,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Political_division_idea2
 		}
 	}
 	focus={
@@ -5840,10 +5894,14 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_country_flag = FE_NOM
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -5860,6 +5918,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Protect_landlords_idea
 		}
 	}
 	focus={
@@ -5876,6 +5935,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Protect_landlords_idea
+				add_idea = SYR_Protect_landlords_idea1
+			}
 		}
 	}
 	focus={
@@ -5892,6 +5955,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Protect_landlords_idea1
+				add_idea = SYR_Protect_landlords_idea2
+			}
 		}
 	}
 	focus={
@@ -5908,6 +5975,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_The_elite_governed_idea
 		}
 	}
 	focus={
@@ -5924,6 +5992,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_The_elite_governed_idea
+				add_idea = SYR_The_elite_governed_idea1
+			}
 		}
 	}
 	focus={
@@ -5940,6 +6012,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_The_elite_governed_idea1
+				add_idea = SYR_The_elite_governed_idea2
+			}
 		}
 	}
 	focus={
@@ -5956,6 +6032,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Defend_democratic_power_idea
 		}
 	}
 	focus={
@@ -5972,6 +6049,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Defend_democratic_power_idea
+				add_idea = SYR_Defend_democratic_power_idea1
+			}
 		}
 	}
 	focus={
@@ -5988,6 +6069,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Defend_democratic_power_idea1
+				add_idea = SYR_Defend_democratic_power_idea2
+			}
 		}
 	}
 	focus={
@@ -6000,10 +6085,14 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_country_flag = FE_NOM
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -6020,6 +6109,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_True_national_independence_idea
 		}
 	}
 	focus={
@@ -6036,6 +6126,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Reconciliation_with_the_Ottomans_idea
 		}
 	}
 	focus={
@@ -6052,6 +6143,11 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			set_temp_variable = { coalition_partner_var = token:social_liberal }
+			add_to_coalition = yes
+			set_temp_variable = { coalition_partner_var = token:social_democrat }
+			add_to_coalition = yes
+			add_ideas = SYR_National_Unity_idea
 		}
 	}
 	focus={
@@ -6069,6 +6165,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_True_national_independence_idea
+				add_idea = SYR_True_national_independence_idea1
+			}
 		}
 	}
 	focus={
@@ -6086,6 +6186,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_National_Unity_idea
+				add_idea = SYR_National_Unity_idea1
+			}
 		}
 	}
 	focus={
@@ -6103,6 +6207,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_National_Unity_idea1
+				add_idea = SYR_National_Unity_idea2
+			}
 		}
 	}
 	focus={
@@ -6121,6 +6229,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_victory_of_democracy_idea
+				add_idea = SYR_victory_of_democracy_idea1
+			}
 		}
 	}
 	focus={
@@ -6139,6 +6251,8 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			country_event = syr.33
+			add_ideas = SYR_victory_of_loyalty_and_trust_idea
 		}
 	}
 	focus={
@@ -6151,10 +6265,14 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_country_flag = FE_NOM
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -6171,6 +6289,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_Druze_rights_idea
 		}
 	}
 	focus={
@@ -6183,10 +6302,17 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = SYR_Druze_rights
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Druze_rights_idea
+				add_idea = SYR_Druze_rights_idea1
+			}
 		}
 	}
 	focus={
@@ -6199,10 +6325,17 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = SYR_Reconciliation_with_Sunnis
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Druze_rights_idea1
+				add_idea = SYR_Druze_rights_idea2
+			}
 		}
 	}
 	focus={
@@ -6221,6 +6354,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Druze_rights_idea2
+				add_idea = SYR_Druze_rights_idea3
+			}
 		}
 	}
 	focus={
@@ -6233,10 +6370,14 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_country_flag = FE_NOM
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			custom_effect_tooltip = unlock_focuses
 		}
 	}
 	focus={
@@ -6253,6 +6394,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = SYR_True_faithful_idea
 		}
 	}
 	focus={
@@ -6265,10 +6407,17 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = SYR_True_faithful
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_True_faithful_idea
+				add_idea = SYR_True_faithful_idea1
+			}
 		}
 	}
 	focus={
@@ -6281,10 +6430,18 @@ focus_tree = {
 		ai_will_do={
 			factor=1
 		}
+		available = {
+			has_completed_focus = SYR_Promote_social_liberation
+		}
 		available_if_capitulated=yes
 		search_filters={
 		}
 		completion_reward={
+			add_ideas = PAL_Support_from_Mufti_ideas
+			swap_ideas = {
+				remove_idea = SYR_True_faithful_idea1
+				add_idea = SYR_True_faithful_idea2
+			}
 		}
 	}
 	focus={
@@ -6303,6 +6460,10 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_True_faithful_idea2
+				add_idea = SYR_True_faithful_idea3
+			}
 		}
 	}
 	focus={

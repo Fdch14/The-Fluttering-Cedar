@@ -1446,6 +1446,9 @@ country_event = {	#Egypt receives the Sinai (EGY)
 		tag = PAL
 		date > 1938.9.10
 		date < 1938.9.30
+		NOT = {
+			has_country_flag = has_sand_war_flag
+		}
 	}
 
 	fire_only_once = yes
