@@ -192,7 +192,7 @@ bookmarks = {
 		"SUE" = {
 			minor = yes
 			history = "SUE_GATHERING_STORM_DESC"
-			ideology = paternal_autocrat
+			ideology = authoritarian_democrat
 			ideas = {
 				SUZ_Establishment_of_the_PBCB_ideas
 				SUZ_Suez_electrification_line_ideas
@@ -205,26 +205,26 @@ bookmarks = {
 			}
 		}
 
-		"PAL" = {
+		"SYR" = {
 			minor = yes
-			history = "PAL_GATHERING_STORM_DESC"
-			ideology = paternal_autocrat
+			history = "SYR_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
 			ideas = {
-				pal_moj
-				PAL_Bloated_administrative_system
-				PAL_Kemalist_continued
+				SYR_the_enemy_of_Jacob_idea
+				SYR_whirlwind_eagle_idea
+				SYR_the_party_of_struggle_idea
 			}
 			focuses = {
-				MOJ_New_Years_Agenda_in_Jerusalem 
-				MOJ_Palestinian_communist_attack 
-				MOJ_Centralized_parliament_within_the_party
+				SYR_SSNP_won_a_big_victory
+				SYR_SSNP_Next
+				SYR_social_security
 			}
 		}
 		
 		"LEB" = {
 			minor = yes
 			history = "LEB_GATHERING_STORM_DESC"
-			ideology = paternal_autocrat
+			ideology = authoritarian_democrat
 			ideas = {
 				LEB_idea_a_land_hard_to_govern
 				LEB_religious_clashes
