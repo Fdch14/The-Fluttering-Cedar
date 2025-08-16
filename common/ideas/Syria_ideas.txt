@@ -1577,8 +1577,8 @@ ideas = {
 			allowed = { always = no }
             modifier = {
 				stability_weekly = 0.005
-				war_support_weekly = -0.005
-				drift_defence_factor = -0.2
+				war_support_weekly = 0.005
+				drift_defence_factor = 0.2
 				recon_factor = 0.1
 				weekly_manpower = 2500
 			}
@@ -1590,8 +1590,8 @@ ideas = {
 			allowed = { always = no }
             modifier = {
 				stability_weekly = 0.01
-				war_support_weekly = -0.01
-				drift_defence_factor = -0.5
+				war_support_weekly = 0.01
+				drift_defence_factor = 0.5
 				recon_factor = 0.2
 				weekly_manpower = 4500
 				initiative_factor = 0.1
