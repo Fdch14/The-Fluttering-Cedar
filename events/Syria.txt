@@ -1632,7 +1632,7 @@ country_event = {
 		}
 		create_country_leader = {
 			name = "Husni al-Za'im"
-			picture = "gfx/leaders/SYR/Portrait_SYR_Salah_Jadid.png"
+			picture = "gfx/leaders/SYR/Portrait_SYR_Husni_al_Zaim.png"
 			expire = "1.1.1"
 			ideology = thaw_antoun_saadeh_thought_subtype
 		}

@@ -3994,7 +3994,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
-			add_ideas = SYR_the_enemy_of_Jacob_idea
+			add_ideas = SYR_the_rule_of_the_SNP_idea
 		}
 	}
 	focus={
