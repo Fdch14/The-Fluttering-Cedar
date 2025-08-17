@@ -1,0 +1,398 @@
+﻿###################################
+# Iraqi Events by Jeankedezeehond #
+###################################
+add_namespace = irqrev
+add_namespace = irq
+add_namespace = irqfor
+
+country_event = {	#Iraqi Revolt
+	id = irqrev.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event irqrev.1" }
+	title = irqrev.1.t
+	desc = irqrev.1.d
+
+	picture = GFX_OTT_Arab_Recruits
+
+	trigger = {
+		has_war_with = EGY
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		if = {
+			limit = {
+				291 = {
+					is_owned_and_controlled_by = TUR
+				}
+			}
+			291 = {
+				force_disable_resistance = { clear = yes }
+			}
+			IRQ = {
+				transfer_state = 291
+				hidden_effect = {
+					add_state_core = 291
+					add_state_core = 676
+					add_state_core = 812
+				}
+				create_country_leader = {
+					name = "Kamil Shabib"
+					desc = "POLITICS_KAMIL_SHABIB_DESC"
+					picture = "gfx/leaders/IRQ/Portrait_IRQ_Kamil_Shabib_KR.png"
+					expire = "1.1.1"
+					ideology = authoritarian_democrat_subtype
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					last_election = "1935.10.11"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				remove_all_ministers = yes
+				add_ideas = {
+					IRQ_Rashid_Ali_al_Gaylani_hog_npo
+					IRQ_Naji_al_Suwaydi_for_npo
+					IRQ_Yunis_al_Saba'wi_eco_npo
+					IRQ_Muhammad_Naji_Shawkat_sec_npo
+				}
+				set_popularities = {
+					totalist = 0
+					syndicalist = 0
+					radical_socialist = 16
+					social_democrat = 20
+					social_liberal = 5
+					market_liberal = 6
+					social_conservative = 3
+					authoritarian_democrat = 34
+					paternal_autocrat = 15
+					national_populist = 1
+				}
+				declare_war_on = {
+					target = TUR
+					type = annex_everything
+				}
+				add_ideas = ott_syrian_uprising
+				load_oob = IRQ_revolt
+			}
+			EGY = {
+				add_to_faction = IRQ
+			}
+		}
+	}
+
+	option = {
+		name = irqrev.1.a
+		every_owned_state = {
+			limit = {
+				is_core_of = IRQ
+			}
+			ott_increase_revolt_risk = yes
+		}
+
+		#Egypt
+		custom_effect_tooltip = tooltip_white_line
+		EGY = {
+			add_ideas = ott_arab_revolt_support
+		}
+	}
+}
+
+country_event = { #Iraq asks to join faction
+	id = irqfor.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event irqfor.1" }
+	title = irqfor.1.t
+	desc = irqfor.1.d
+
+	picture = GFX_OTT_Arab_Recruits
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = irqfor.1.a
+		ai_chance = {
+			factor = 100
+		}	
+		add_to_faction = IRQ
+		IRQ = {
+			country_event = irqfor.2
+		}
+	}
+	option = {
+		name = irqfor.1.b
+		ai_chance = {
+			factor = 0
+		}	
+		IRQ = {
+			country_event = irqfor.3
+		}
+	}
+}
+
+country_event = { #Iraq asks to join faction (YES)
+	id = irqfor.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event irqfor.2" }
+	title = irqfor.2.t
+	desc = irqfor.2.d
+
+	picture = GFX_OTT_Arab_Recruits
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = irqfor.2.a
+
+	}
+}
+
+country_event = { #Iraq asks to join faction (NO)
+	id = irqfor.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event irqfor.3" }
+	title = irqfor.3.t
+	desc = irqfor.3.d
+
+	picture = GFX_OTT_Arab_Recruits
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = irqfor.3.a
+
+	}
+}
+
+country_event = { #Iraq invites us to the League of Arab States
+	id = irqfor.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event irqfor.4" }
+	title = irqfor.4.t
+	desc = irqfor.4.d
+
+	picture = GFX_OTT_Arab_Recruits
+
+	is_triggered_only = yes
+
+	option = {
+		name = irqfor.4.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				tag = SAU
+			}
+			modifier = {
+				factor = 0
+				tag = OMA
+				NOT = { is_subject_of = IRQ }
+			}
+			modifier = {
+				factor = 0
+				tag = YEM
+				OR = {
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				}
+				NOT = { is_subject_of = IRQ }
+			}
+			modifier = {
+				factor = 0
+				tag = SYR
+				OR = {
+					has_government = national_populist
+					is_subject_of = EGY
+				}	
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = IRQ_League_of_Arab_States_dynamic_modifier
+			scope = IRQ
+		}
+		set_country_flag = joined_loa
+		IRQ = {
+			add_to_variable = {
+				var = var_LOA_members
+				value = 0.01
+			}
+			country_event = irqfor.5
+		}
+		remove_dynamic_modifier = {
+			modifier = EGY_League_of_Arab_States_dynamic_modifier
+		}
+		set_country_flag = left_FAC
+		remove_ideas = IRQ_Economic_Social_Council
+		EGY = {
+			add_to_variable = {
+				var = var_FAC_members
+				value = -0.01
+			}
+		}
+
+
+		### give effects of Iraqi foci
+		if = {
+			limit = {
+				IRQ = {
+					has_completed_focus = IRQ_Economic_Social_Council
+				}
+			}
+			add_ideas = IRQ_Economic_Social_Council
+		}
+		if = {
+			limit = {
+				IRQ = {
+					has_completed_focus = IRQ_Arab_Unified_Command
+				}
+			}
+			add_ideas = IRQ_Unified_Arab_Command
+		}
+		if = {
+			limit = {
+				IRQ = {
+					has_completed_focus = IRQ_Arab_Parliament
+				}
+			}
+			IRQ = {
+				puppet = ROOT
+				add_to_faction = ROOT
+			}
+		}
+		if = {
+			limit = {
+				IRQ = {
+					has_completed_focus = IRQ_Council_of_Social_Affairs
+				}
+			}
+			add_ideas = IRQ_Council_Social_Affairs
+		}
+		if = {
+			limit = {
+				IRQ = {
+					has_completed_focus = IRQ_Arab_Federation
+				}
+			}
+			every_unit_leader = { set_nationality = IRQ }
+			IRQ = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = irqfor.4.b
+		ai_chance = {
+			factor = 1
+		}
+		IRQ = {
+			country_event = irqfor.6
+		}
+	}
+}
+
+country_event = { #Accepted to join the League
+	id = irqfor.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event irqfor.5" }
+	title = irqfor.5.t
+	desc = irqfor.5.d
+
+	picture = GFX_OTT_Arab_Recruits
+
+	is_triggered_only = yes
+
+	option = {
+		name = irqfor.5.a
+		add_political_power = 10
+	}
+}
+
+country_event = { #Refused to join the League
+	id = irqfor.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event irqfor.6" }
+	title = irqfor.6.t
+	desc = irqfor.6.d
+
+	picture = GFX_OTT_Arab_Recruits
+
+	is_triggered_only = yes
+
+	option = {
+		name = irqfor.6.a
+		FROM = {
+			set_country_flag = refused_loa
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = OMA
+				}
+			}
+			create_wargoal = {
+				target = OMA
+				type = topple_government
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = YEM
+				}
+			}
+			create_wargoal = {
+				target = YEM
+				type = topple_government
+			}
+		}
+	}
+}
+
+country_event = {
+	id = irqfor.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event irqfor.7" }
+	title = irqfor.7.t
+	desc = irqfor.7.d
+	picture = GFX_IRQ_Machine_Gun
+
+	trigger = {
+		is_ai = no
+		has_war_with = EGY
+		OR = {
+		tag = IRQ
+		tag = SAU
+		tag = JBS
+		tag = YEM
+		}
+		SYR = {
+			OR = {
+			is_in_faction_with = EGY
+			is_subject_of = EGY
+			}
+			has_capitulated = yes
+		}
+		controls_state = 554
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = irqfor.7.a
+		every_enemy_country = {
+			limit = {
+				is_in_faction_with = EGY
+			}
+			white_peace = ROOT
+		}
+		annex_country = {
+			target = SYR
+		}
+	}
+	option = {
+		name = irqfor.7.b
+		add_war_support = 0.1
+	}
+}

@@ -5,6 +5,7 @@ ideologies = {
 	totalist = {
 		types = {
 			totalist_subtype = {} #generic
+			tot_revolutionary_nationalism_subtype = {can_be_randomly_selected = no}
 			tot_antoun_saadeh_thought_subtype = {can_be_randomly_selected = no}
 			tot_arab_baathism_subtype = {can_be_randomly_selected = no}
 			tot_islamism_subtype = {can_be_randomly_selected = no}
@@ -341,6 +342,7 @@ ideologies = {
 	social_democrat = {
 		types = {
 			social_democrat_subtype = {}
+			socdem_revolutionary_nationalism_subtype = {can_be_randomly_selected = no}
 			alawism_subtype = {can_be_randomly_selected = no}
 			arab_baathism_subtype = {can_be_randomly_selected = no}
 			socdem_canaanist_subtype = {can_be_randomly_selected = no}
@@ -997,6 +999,7 @@ ideologies = {
 	national_populist = {
 		types = {
 			national_populist_subtype = {}
+			revolutionary_nationalism_subtype = {can_be_randomly_selected = no}
 			revision_antoun_saadeh_thought_subtype = {can_be_randomly_selected = no}
 			natpop_canaanist_subtype = {can_be_randomly_selected = no}
 			islamic_legionism_subtype = {can_be_randomly_selected = no}

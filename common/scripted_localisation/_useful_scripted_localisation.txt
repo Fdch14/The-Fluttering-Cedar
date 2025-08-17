@@ -198,6 +198,25 @@ defined_text = {
 
 defined_text = {
 	name = GetRulingIdeologySubtype
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = tot_revolutionary_nationalism_subtype
+		}
+		localization_key = tot_revolutionary_nationalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_revolutionary_nationalism_subtype
+		}
+		localization_key = socdem_revolutionary_nationalism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = revolutionary_nationalism_subtype
+		}
+		localization_key = revolutionary_nationalism_subtype
+	}
 	text = {
 		trigger = {
 			has_country_leader_ideology = alawism_subtype
