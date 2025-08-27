@@ -1524,7 +1524,15 @@ focus_tree = {
 		}
 
 		available = {
-			has_authoritarian_government = yes
+			OR = {
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
 			GER = {
 				exists = yes
 				NOT = {
@@ -1603,7 +1611,6 @@ focus_tree = {
 		available = {
 			controls_state = 812
 			controls_state = 349
-			has_authoritarian_government = yes
 			GER = {
 				exists = yes
 				NOT = {
@@ -1694,8 +1701,13 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_authoritarian_government = yes
+				has_government = social_democrat
+				has_government = social_liberal
 				has_government = market_liberal
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
 			}	
 			TUR = {
 				exists = yes
@@ -1771,10 +1783,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_authoritarian_government = yes
-				has_government = market_liberal
-			}
 			TUR = {
 				exists = yes
 				NOT = {
@@ -1863,6 +1871,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IRQ_Join_Phalanstere
 			focus = IRQ_Berlin_Baghdad_Railway
+			focus = IRQ_Tigris_Euphrate_Program
 		}
 
 		available = {
