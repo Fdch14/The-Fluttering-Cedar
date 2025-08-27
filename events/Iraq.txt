@@ -1179,13 +1179,11 @@ country_event = {
 	option = {
 		name = irq.22.a
 		ai_chance = {
-			factor = 30
+			factor = 70
 		}
-		hidden_effect = {
-			country_event = {
-				id = irq.24
-				days = 2
-			}
+		country_event = {
+			id = irq.23
+			days = 2
 		}
 	}
 	option = {
@@ -1193,9 +1191,11 @@ country_event = {
 		ai_chance = {
 			factor = 70
 		}
-		country_event = {
-			id = irq.23
-			days = 2
+		hidden_effect = {
+			country_event = {
+				id = irq.24
+				days = 2
+			}
 		}
 	}
 }
