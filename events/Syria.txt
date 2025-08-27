@@ -339,6 +339,9 @@ country_event = {	#Invitation to the Arab League
 			modifier = {
 				factor = 0
 				is_in_faction = yes 
+				NOT = {
+					is_in_faction_with = SYR
+				}
 			}
 		}
 		LOA_join_syrian_sphere = yes
@@ -402,6 +405,9 @@ country_event = {	#Invitation to the Arab League
 			modifier = {
 				factor = 100
 				is_in_faction = yes 
+				NOT = {
+					is_in_faction_with = SYR
+				}
 			}
 		}
 		SYR = {
@@ -1733,7 +1739,7 @@ country_event = {
 		}
 		random_owned_controlled_state = {
 			create_unit = {
-				division = "name = \"Liwa Raqm 2 al-Muqawamah al-Wataniyyah\" division_template = \"al-Muqawamah al-Wataniyyah\" start_experience_factor = 1 start_equipment_factor = 1"
+				division = "name = \"Liwa Raqm 1 al-Muqawamah al-Wataniyyah\" division_template = \"al-Muqawamah al-Wataniyyah\" start_experience_factor = 1 start_equipment_factor = 1"
 				allow_spawning_on_enemy_provs = yes
 				owner = SYR
 			}
@@ -1783,7 +1789,7 @@ country_event = {
 		}
 		random_owned_controlled_state = {
 			create_unit = {
-				division = "name = \"Liwa Raqm 2 Jaysh al-Mujahideen\" division_template = \"Jaysh al-Mujahideen\" start_experience_factor = 1 start_equipment_factor = 1"
+				division = "name = \"Liwa Raqm 1 Jaysh al-Mujahideen\" division_template = \"Jaysh al-Mujahideen\" start_experience_factor = 1 start_equipment_factor = 1"
 				allow_spawning_on_enemy_provs = yes
 				owner = SYR
 			}
@@ -2642,6 +2648,9 @@ country_event = {
 	trigger = {
 		tag = TUR
 		EGY = {
+			is_ai = yes
+		}
+		OTT = {
 			is_ai = yes
 		}
 		date > 1938.1.1

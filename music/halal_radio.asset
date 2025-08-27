@@ -1,4 +1,9 @@
 music = {
+	name = "seyf_al_iraq"
+	file = "seyf_al_iraq.ogg"
+	volume = 1.25
+}
+music = {
 	name = "nasheed_mekaouma"
 	file = "nasheed_mekaouma.ogg"
 	volume = 1.25

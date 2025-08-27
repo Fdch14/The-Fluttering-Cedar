@@ -1,3 +1,7 @@
+IRQ_communist = {
+	color = rgb { 163 17 17 }
+	color_ui = rgb { 163 17 17 }
+}
 SYR_revolutionary_republic = {
 	color = rgb { 202 32 46 }
 	color_ui = rgb { 202 32 46 }
@@ -247,20 +251,20 @@ SOV_tsentrobalt = {
 	color_ui = rgb { 163 17 31 }
 }
 SOV_union = {
-	color = rgb { 176 63 63 }
-	color_ui = rgb { 176 63 63 }
+	color = rgb { 123 0 28 }
+	color_ui = rgb { 163 17 31 }
 }
 SOV_union_alternative_3 = {
-	color = rgb { 176 63 63 }
-	color_ui = rgb { 176 63 63 }
+	color = rgb { 123 0 28 }
+	color_ui = rgb { 163 17 31 }
 }
 SOV_union_alternative = {
-	color = rgb { 176 63 63 }
-	color_ui = rgb { 176 63 63 }
+	color = rgb { 123 0 28 }
+	color_ui = rgb { 163 17 31 }
 }
 SOV_union_alternative_2 = {
-	color = rgb { 176 63 63 }
-	color_ui = rgb { 176 63 63 }
+	color = rgb { 123 0 28 }
+	color_ui = rgb { 163 17 31 }
 }
 SOV_union_syndicalist = {
 	color = rgb { 123 0 28 }
@@ -287,8 +291,8 @@ TRM_SIB_SOV = {
 	color_ui = rgb { 204 0 41 }	
 }
 TRM_UNITED_SOV = {
-	color = rgb { 69 22 28 }
-	color_ui = rgb { 69 22 28 }
+	color = rgb { 143 46 58 }
+	color_ui = rgb { 143 46 58 }
 }
 SOV_anarchy = {
 	color = rgb { 79 0 20 }
@@ -1713,12 +1717,12 @@ TSC = {
 }
 
 ALO_turkotatar = {
-	color = rgb { 50 255 255 }
-	color_ui = rgb { 50 255 255 }
+	color = rgb { 174 233 248 }
+	color_ui = rgb { 174 233 248 }
 }
 ALO_turkestan = {
-	color = rgb { 50 255 255 }
-	color_ui = rgb { 50 255 255 }
+	color = rgb { 174 233 248 }
+	color_ui = rgb { 174 233 248 }
 }
 ALO_autonomy = {
 	color = rgb { 60 179 113 }
@@ -2458,36 +2462,10 @@ SZC_Federal = {
 	color = rgb { 149 93 127 }
 	color_ui = rgb { 149 93 127 }
 }
-SZC_KMT = {
-	color = rgb { 222 41 16 }
-	color_ui = rgb { 222 41 16 }
-}
-
-TIB_KMT = {
-	color = rgb { 168 166 167 }
-	color_ui = rgb { 177 207 205 }
-}
-XSM_KMT = {
-	color = rgb { 105 69 85 }
-	color_ui = rgb { 115 80 82 }
-}
-SHX_KMT = {
-	color = rgb { 42 96 59 }
-	color_ui = rgb { 42 96 59 }
-}
 SYR_SSNP = {
 	color = rgb { 0 0 0 }
 	color_ui = rgb { 0 0 0 }
 }
-MON_KMT = {
-	color = rgb { 92 92 92 }
-	color_ui = rgb { 92 92 92 }
-}
-FNG_KMT = {
-	color = rgb { 189 113 33 }
-	color_ui = rgb { 189 113 33 }
-}
-
 QIE_redoubt = {
 	color = rgb { 8 99 156 }
 	color_ui = rgb { 8 99 156 }
@@ -4689,6 +4667,10 @@ ENG_Mosley_Federation = {
 	color_ui = rgb { 99 0 20 }
 }
 ENG_Max_Africa = {
+	color = rgb { 99 0 20 }
+	color_ui = rgb { 99 0 20 }
+}
+ENG_Max_Arabia = {
 	color = rgb { 99 0 20 }
 	color_ui = rgb { 99 0 20 }
 }

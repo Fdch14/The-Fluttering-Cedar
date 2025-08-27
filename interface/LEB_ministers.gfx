@@ -352,5 +352,49 @@ spriteTypes = {
 		name = "GFX_idea_SYR_Mansur_al_Atrash_sec_sde"
 		texturefile = "gfx/interface/ministers/SYR/SYR_Mansur_al_Atrash.png"			
 	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Abdul_Salam_Arif_hog_syn"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Abdul_Salam_Arif.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Abdul_Rahman_Al_Bazzaz_for_syn"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Abdul_Rahman_Al_Bazzaz.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Abdul_Rahman_Arif_eco_syn"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Abdul_Rahman_Arif.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Arif_Abdul_Razzaq_sec_syn"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Arif_Abdul_Razzaq.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Ahmed_Hassan_Al_Bakr_hog_rso"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Ahmed_Hassan_Al_Bakr.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Talib_al_Shabib_for_rso"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Talib_al_Shabib.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Naji_Talib_eco_rso"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Naji_Talib.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Izzat_Mustafa_Al_Ani_sec_rso"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Izzat_Mustafa_Al_Ani.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Mohsen_Al_Hakim_hog_sco"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Mohsen_Al_Hakim.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Muhammadus_Al_Khalisi_eco_sco"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Muhammadus_Al_Khalisi.png"			
+	}
+	spriteType = {
+		name = "GFX_idea_IRQ_Mirza_Mahdi_Shirazi_sec_sco"
+		texturefile = "gfx/interface/ministers/IRQ/IRQ_Mirza_Mahdi_Shirazi.png"			
+	}
 
 }

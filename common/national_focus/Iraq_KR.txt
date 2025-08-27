@@ -9,7 +9,7 @@ focus_tree = {
 	}
 
 	default = no
-	continuous_focus_position = { x = 0 y = 3000 }
+	continuous_focus_position = { x = 0 y = 3500 }
 	
 	focus={
 		id=IRQ_Start_rebuilding
@@ -627,12 +627,6 @@ focus_tree = {
 		}
 		completion_reward={
 			add_ideas = SYR_Cavalry_modernization_idea
-			if = {
-				limit = {
-					is_ai = no
-				}
-				country_event = syr.48
-			}
 		}
 	}
 	focus={
@@ -1158,6 +1152,7 @@ focus_tree = {
 		icon=ISRA_Anti_tank_forces
 		x=24
 		y=4
+		prerequisite={focus=IRQ_Theoretical_construction}
 		prerequisite={focus=IRQ_Expansion_of_the_aviation_industry}
 		prerequisite={focus=IRQ_Flying_artillery}
 		mutually_exclusive={focus=IRQ_Sweep_the_airspace }
@@ -1206,24 +1201,15 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_government = paternal_autocrat
-				has_government = authoritarian_democrat
-				has_government = social_democrat
-				has_government = market_liberal
-			}
-			OR = {
-				has_completed_focus = IRQ_Impose_Al_Muthanna_Curriculum
-				has_completed_focus = IRQ_Society_for_Eradicating_Illiteracy
-			}
-			OR = {
-				has_completed_focus = IRQ_Program_Redistribution_Miri_Land
-				has_completed_focus = IRQ_Al_Ahali_Surpression
-				has_government = market_liberal
+				has_completed_focus = IRQ_The_teachings_of_the_SSNP
+				has_completed_focus = IRQ_Communist_Party_of_Iraq
+				has_completed_focus = IRQ_Ittihad_Party
+				has_completed_focus = IRQ_Servant_of_Allah
 			}
 			is_subject = no
 		}
 
-		x = 38
+		x = 37
 		y = 0
 
 		available_if_capitulated = yes
@@ -1288,6 +1274,12 @@ focus_tree = {
 			add_state_claim = 907
 			add_state_claim = 413
 			add_state_claim = 819
+			every_state = {
+				limit = { is_core_of = SYR }
+				add_core_of = IRQ
+			}
+			352 = { add_core_of = IRQ }
+			183 = { add_core_of = IRQ }
 		}
 	}
 
@@ -1337,6 +1329,9 @@ focus_tree = {
 
 		available = {
 			controls_state = 413
+			controls_state = 417
+			controls_state = 421
+			controls_state = 352
 		}
 
 		x = 1
@@ -1348,6 +1343,9 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRQ_Reclaim_Emirate_Arabistan"
 			add_state_core = 413
+			add_state_core = 417
+			add_state_core = 421
+			add_state_core = 352
 		}
 	}
 
@@ -1723,6 +1721,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRQ_Cooperate_with_Turkey"
+			country_event = irq.35
 			TUR = {
 				add_opinion_modifier = {
 					target = IRQ
@@ -1907,10 +1906,7 @@ focus_tree = {
 			custom_effect_tooltip = irq_join_faction
 			if = {
 				limit = {
-					NOT = {
-						has_completed_focus = IRQ_Cooperate_with_Reichspakt
-						has_completed_focus = IRQ_Cooperate_with_Turkey
-					}
+					has_completed_focus = IRQ_Cooperate_with_Internationale
 				}
 				FRA = {
 					country_event = irqfor.1
@@ -1919,13 +1915,70 @@ focus_tree = {
 			custom_effect_tooltip = tooltip_white_line
 			if = {
 				limit = {
-					NOT = {
-						has_completed_focus = IRQ_Cooperate_with_Internationale
-						has_completed_focus = IRQ_Cooperate_with_Turkey
-					}
+					has_completed_focus = IRQ_Cooperate_with_Reichspakt
 				}
 				GER = {
 					country_event = irqfor.1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = IRQ_with_egypt_flag
+				}
+				EGY = {
+					country_event = irqfor.1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = IRQ_with_iran_flag
+				}
+				if = {
+					limit = {
+						PER = {
+							is_faction_leader = yes
+						}
+					}
+					PER = {
+						country_event = irqfor.1
+					}
+				}
+				if = {
+					limit = {
+						PER = {
+							is_in_faction = no
+						}
+					}
+					PER = {
+						create_faction = tabriz_treaty
+						country_event = irqfor.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = IRQ_with_ottman_flag
+				}
+				if = {
+					limit = {
+						OTT = {
+							is_faction_leader = yes
+						}
+					}
+					OTT = {
+						country_event = irqfor.1
+					}
+				}
+				if = {
+					limit = {
+						OTT = {
+							is_in_faction = no
+						}
+					}
+					OTT = {
+						create_faction = istanbul_accords
+						country_event = irqfor.1
+					}
 				}
 			}
 		}
@@ -1939,12 +1992,14 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_completed_focus = IRQ_Impose_Al_Muthanna_Curriculum
-				has_completed_focus = IRQ_Society_for_Eradicating_Illiteracy
-			}
-			OR = {
-				has_completed_focus = IRQ_Program_Redistribution_Miri_Land
-				has_completed_focus = IRQ_Al_Ahali_Surpression
+				has_completed_focus = IRQ_National_Brotherhood_Party
+				has_completed_focus = IRQ_The_Patriots_marched
+				has_completed_focus = IRQ_Musa_Club
+				has_completed_focus = IRQ_Baath_Party_Iraq
+				has_completed_focus = IRQ_Arab_socialism
+				has_completed_focus = IRQ_Peoples_Association
+				has_completed_focus = IRQ_National_Democratic_Party
+				has_completed_focus = IRQ_Arab_Liberal_Party
 			}
 			is_subject = no
 		}
@@ -1964,6 +2019,20 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRQ_Bismarck_of_the_Arabs"
 			add_country_leader_trait = bismarck_of_arabia
+			if = {
+				limit = {
+					is_ai = yes
+					has_completed_focus = IRQ_Baath_Party_Iraq
+				}
+				country_event = irq.38
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					has_completed_focus = IRQ_Arab_socialism
+				}
+				country_event = irq.39
+			}
 		}
 	}
 
@@ -2324,9 +2393,9 @@ focus_tree = {
 							}
 						}
 					}
-					SYR = {
+					IRQ = {
 						get_current_government_type = yes
-						IRQ = {
+						SYR = {
 							puppet = SYR
 						}
 						restore_previous_government_type = yes
@@ -2435,7 +2504,22 @@ focus_tree = {
 					}
 				}
 			}
-			create_faction = "League of Arab States"
+			create_faction = League_of_Arab_States
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = SYR
+			}
+			every_country = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = IRQ_League_of_Arab_States_dynamic_modifier
+						scope = IRQ
+					}
+				}
+				IRQ = {
+					add_to_faction = PREV
+				}
+			}
 		}
 	}
 
@@ -2685,6 +2769,329 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRQ_Arab_Federation"
 			custom_effect_tooltip = irq_memberstates_integration
 			hidden_effect = {
+				every_country = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = IRQ_League_of_Arab_States_dynamic_modifier
+							scope = IRQ
+						}
+						NOT = {
+							tag = IRQ
+						}
+					}
+					IRQ = {
+						annex_country = {
+							target = PREV
+							transfer_troops = yes
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						SOM = {
+							is_subject_of = IRQ
+						}
+					}
+					SOM = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = SOM
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SOM
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						MRT = {
+							is_subject_of = IRQ
+						}
+					}
+					MRT = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = MRT
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = MRT
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						TUN = {
+							is_subject_of = IRQ
+						}
+					}
+					TUN = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = TUN
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = TUN
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						EGY = {
+							is_subject_of = IRQ
+						}
+					}
+					EGY = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = EGY
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = EGY
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						SUD = {
+							is_subject_of = IRQ
+						}
+					}
+					SUD = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = SUD
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SUD
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						TRP = {
+							is_subject_of = IRQ
+						}
+					}
+					TRP = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = TRP
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = TRP
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						TRP = {
+							is_subject_of = IRQ
+						}
+					}
+					TRP = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = TRP
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = TRP
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						ALG = {
+							is_subject_of = IRQ
+						}
+					}
+					ALG = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = ALG
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = ALG
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						MOR = {
+							is_subject_of = IRQ
+						}
+					}
+					MOR = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = MOR
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = MOR
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						LBA = {
+							is_subject_of = IRQ
+						}
+					}
+					LBA = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = LBA
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = LBA
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						MRT = {
+							is_subject_of = IRQ
+						}
+					}
+					MRT = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = MRT
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = MRT
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						TUN = {
+							is_subject_of = IRQ
+						}
+					}
+					TUN = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = TUN
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = TUN
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						SOM = {
+							is_subject_of = IRQ
+						}
+					}
+					SOM = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = SOM
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SOM
+						}
+						add_core_of = IRQ
+					}
+				}
+				if = {
+					limit = {
+						DJI = {
+							is_subject_of = IRQ
+						}
+					}
+					DJI = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = DJI
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SOM
+						}
+						add_core_of = DJI
+					}
+				}
+				if = {
+					limit = {
+						ERI = {
+							is_subject_of = IRQ
+						}
+					}
+					ERI = {
+						every_unit_leader = { set_nationality = IRQ }
+					}
+					annex_country = {
+						target = ERI
+						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = SOM
+						}
+						add_core_of = ERI
+					}
+				}
 				if = {
 					limit = {
 						SYR = {
@@ -2835,10 +3242,10 @@ focus_tree = {
 				set_country_flag = YEM_CONQ
 				set_country_flag = OMA_CONQ
 			}
-			set_cosmetic_tag = IRQ_federation
+			set_cosmetic_tag = SYR_federation
 			add_timed_idea = {
 				idea = IRQ_Arab_Federation_idea
-				days = 600
+				days = 100
 			}
 		}
 	}
@@ -3212,6 +3619,2953 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRQ_Cooperate_Oman"
 			custom_effect_tooltip = irq_league_arab_states_oma
+		}
+	}
+	focus={
+		id=IRQ_National_Brotherhood_Party
+		icon=IRAQ_National_Brotherhood_Party
+		x=4
+		y=8
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Iraq_National_Brotherhood_Party_flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_No_more_chaos
+		icon=IRAQ_No_more_chaos
+		x=3
+		y=9
+		prerequisite={focus=IRQ_National_Brotherhood_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Political_division_idea
+				add_idea = IRQ_Political_division_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_call_of_the_Arab_mother
+		icon=IRAQ_The_call_of_the_Arab_mother
+		x=5
+		y=9
+		prerequisite={focus=IRQ_National_Brotherhood_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_The_call_of_the_Arab_mother_idea
+		}
+	}
+	focus={
+		id=IRQ_Take_control_of_the_tribe
+		icon=IRAQ_Take_control_of_the_tribe
+		x=2
+		y=10
+		prerequisite={focus=IRQ_No_more_chaos}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = IRQ_Political_division_idea1
+		}
+	}
+	focus={
+		id=IRQ_Iraqi_national_unity
+		icon=IRAQ_Iraqi_national_unity
+		x=2
+		y=11
+		prerequisite={focus=IRQ_Take_control_of_the_tribe}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Political_division_idea3
+		}
+	}
+	focus={
+		id=IRQ_Oppose_socialism
+		icon=IRAQ_Oppose_socialism
+		x=4
+		y=10
+		prerequisite={focus=IRQ_No_more_chaos}
+		prerequisite={focus=IRQ_The_call_of_the_Arab_mother}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Oppose_socialism_idea
+		}
+	}
+	focus={
+		id=IRQ_Nationalism_expanded
+		icon=IRAQ_Nationalism_expanded
+		x=4
+		y=11
+		prerequisite={focus=IRQ_Oppose_socialism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Oppose_socialism_idea
+				add_idea = IRQ_Oppose_socialism_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Resist_Iranian_influence
+		icon=IRQ_Resist_Iranian_influence
+		x=6
+		y=10
+		prerequisite={focus=IRQ_The_call_of_the_Arab_mother}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_The_call_of_the_Arab_mother_idea
+				add_idea = IRQ_The_call_of_the_Arab_mother_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_unimpressed
+		icon=IRAQ_unimpressed
+		x=6
+		y=11
+		prerequisite={focus=IRQ_Resist_Iranian_influence}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_The_call_of_the_Arab_mother_idea1
+				add_idea = IRQ_The_call_of_the_Arab_mother_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Come_back_in_new_clothes
+		icon=IRAQ_Come_back_in_new_clothes
+		x=4
+		y=12
+		prerequisite={focus=IRQ_Iraqi_national_unity}
+		prerequisite={focus=IRQ_Nationalism_expanded}
+		prerequisite={focus=IRQ_unimpressed}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Come_back_in_new_clothes_idea
+			country_event = irq.11
+		}
+	}
+	focus={
+		id=IRQ_Broad_solidarity
+		icon=IRAQ_Broad_solidarity
+		x=3
+		y=13
+		prerequisite={focus=IRQ_Come_back_in_new_clothes}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Come_back_in_new_clothes_idea
+				add_idea = IRQ_Come_back_in_new_clothes_idea1
+			}
+			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
+			add_to_coalition = yes
+			set_temp_variable = { coalition_partner_var = token:national_populist }
+			add_to_coalition = yes
+		}
+	}
+	focus={
+		id=IRQ_Fanaticism_and_belligerence
+		icon=IRAQ_Fanaticism_and_belligerence
+		x=3
+		y=14
+		prerequisite={focus=IRQ_Broad_solidarity}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Come_back_in_new_clothes_idea1
+				add_idea = IRQ_Come_back_in_new_clothes_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Loyal_scimitar
+		icon=IRAQ_Loyal_scimitar
+		x=5
+		y=13
+		prerequisite={focus=IRQ_Come_back_in_new_clothes}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Loyal_scimitar_idea
+		}
+	}
+	focus={
+		id=IRQ_Only_for_you
+		icon=IRAQ_Only_for_you
+		x=5
+		y=14
+		prerequisite={focus=IRQ_Loyal_scimitar}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Loyal_scimitar_idea
+				add_idea = IRQ_Loyal_scimitar_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Light_of_Mesopotamia
+		icon=IRAQ_Light_of_Mesopotamia
+		x=4
+		y=15
+		prerequisite={focus=IRQ_Fanaticism_and_belligerence}
+		prerequisite={focus=IRQ_Only_for_you}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Loyal_scimitar_idea1
+				add_idea = IRQ_Loyal_scimitar_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_Patriots_marched
+		icon=IRAQ_The_Patriots_marched
+		x=11
+		y=8
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Iraq_The_Patriots_marched_Flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_Pioneer_of_revival
+		icon=IRAQ_Pioneer_of_revival
+		x=10
+		y=9
+		prerequisite={focus=IRQ_The_Patriots_marched}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Political_division_idea3
+		}
+	}
+	focus={
+		id=IRQ_National_mobilization
+		icon=IRAQ_National_mobilization
+		x=12
+		y=9
+		prerequisite={focus=IRQ_The_Patriots_marched}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_National_mobilization_idea
+		}
+	}
+	focus={
+		id=IRQ_Oppose_separatism
+		icon=IRAQ_Oppose_separatism
+		x=9
+		y=10
+		prerequisite={focus=IRQ_Pioneer_of_revival}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Political_division_idea
+				add_idea = IRQ_Political_division_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Clear_the_unrest
+		icon=IRAQ_Clear_the_unrest
+		x=9
+		y=11
+		prerequisite={focus=IRQ_Oppose_separatism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = IRQ_Political_division_idea1
+		}
+	}
+	focus={
+		id=IRQ_populist_ideals
+		icon=IRAQ_populist_ideals
+		x=11
+		y=10
+		prerequisite={focus=IRQ_Pioneer_of_revival}
+		prerequisite={focus=IRQ_National_mobilization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_National_mobilization_idea
+				add_idea = IRQ_National_mobilization_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Arab_countries_are_supreme
+		icon=IRAQ_Arab_countries_are_supreme
+		x=11
+		y=11
+		prerequisite={focus=IRQ_populist_ideals}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_National_mobilization_idea1
+				add_idea = IRQ_National_mobilization_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Rooted_in_the_grassroots
+		icon=IRAQ_Rooted_in_the_grassroots
+		x=13
+		y=10
+		prerequisite={focus=IRQ_National_mobilization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Rooted_in_the_grassroots_idea
+		}
+	}
+	focus={
+		id=IRQ_We_will_rise
+		icon=IRAQ_We_will_rise
+		x=13
+		y=11
+		prerequisite={focus=IRQ_Rooted_in_the_grassroots}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Rooted_in_the_grassroots_idea
+				add_idea = IRQ_Rooted_in_the_grassroots_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Under_an_iron_fist
+		icon=IRAQ_Under_an_iron_fist
+		x=11
+		y=12
+		prerequisite={focus=IRQ_Clear_the_unrest}
+		prerequisite={focus=IRQ_Arab_countries_are_supreme}
+		prerequisite={focus=IRQ_We_will_rise}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Rooted_in_the_grassroots_idea1
+				add_idea = IRQ_Rooted_in_the_grassroots_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_All_for_Arabia
+		icon=IRAQ_All_for_Arabia
+		x=10
+		y=13
+		prerequisite={focus=IRQ_Under_an_iron_fist}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_All_for_Arabia_idea
+		}
+	}
+	focus={
+		id=IRQ_Timeless_enthusiasm
+		icon=IRAQ_Timeless_enthusiasm
+		x=10
+		y=14
+		prerequisite={focus=IRQ_All_for_Arabia}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_All_for_Arabia_idea
+				add_idea = IRQ_All_for_Arabia_idea1
+			}
+			country_event = irq.29
+		}
+	}
+	focus={
+		id=IRQ_Master_the_future
+		icon=IRAQ_Master_the_future
+		x=12
+		y=13
+		prerequisite={focus=IRQ_Under_an_iron_fist}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_flood_idea
+		}
+	}
+	focus={
+		id=IRQ_Encourage_dedication
+		icon=IRAQ_Encourage_dedication
+		x=12
+		y=14
+		prerequisite={focus=IRQ_Master_the_future}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_flood_idea
+				add_idea = IRQ_flood_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_Great_Expedition
+		icon=IRAQ_The_Great_Expedition
+		x=11
+		y=15
+		prerequisite={focus=IRQ_Timeless_enthusiasm}
+		prerequisite={focus=IRQ_Encourage_dedication}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_All_for_Arabia_idea1
+				add_idea = IRQ_All_for_Arabia_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_teachings_of_the_SSNP
+		icon=IRAQ_The_teachings_of_the_SSNP
+		x=18
+		y=8
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Iraq_The_teachings_of_the_SSNP_flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_Reject_pan_Arabism
+		icon=SYRIA_Anti_imperialist_struggle
+		x=17
+		y=9
+		prerequisite={focus=IRQ_The_teachings_of_the_SSNP}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Political_division_idea
+				add_idea = IRQ_Political_division_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Control_the_army
+		icon=SYRIA_The_party_commands_the_army
+		x=19
+		y=9
+		prerequisite={focus=IRQ_The_teachings_of_the_SSNP}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_whirlwind_eagle_idea
+		}
+	}
+	focus={
+		id=IRQ_Remove_religious_influences
+		icon=SYRIA_secularism
+		x=16
+		y=10
+		prerequisite={focus=IRQ_Reject_pan_Arabism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = IRQ_Political_division_idea1
+		}
+	}
+	focus={
+		id=IRQ_Keep_in_mind_the_four_major_programs
+		icon=SYRIA_Do_not_forget_the_four_major_guidelines
+		x=16
+		y=11
+		prerequisite={focus=IRQ_Remove_religious_influences}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_four_major_precepts_idea
+		}
+	}
+	focus={
+		id=IRQ_Abandon_fragile_democracies
+		icon=SYRIA_Retain_a_limited_parliament
+		x=18
+		y=10
+		prerequisite={focus=IRQ_Reject_pan_Arabism}
+		prerequisite={focus=IRQ_Control_the_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_the_party_of_innovation_idea
+		}
+	}
+	focus={
+		id=IRQ_Only_one_major_party
+		icon=SYRIA_SSNP_won_a_big_victory
+		x=18
+		y=11
+		prerequisite={focus=IRQ_Abandon_fragile_democracies}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_the_party_of_innovation_idea
+				add_idea = SYR_the_party_of_innovation_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Leadership_authority
+		icon=SYRIA_Ensure_leadership_authority
+		x=20
+		y=10
+		prerequisite={focus=IRQ_Control_the_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_ensure_leadership_authority_idea
+		}
+	}
+	focus={
+		id=IRQ_Enemies_of_Zionism
+		icon=SYRIA_Total_jihad_agains_Judaism
+		x=20
+		y=11
+		prerequisite={focus=IRQ_Leadership_authority}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_the_enemy_of_Jacob_idea
+			country_event = irq.30
+		}
+	}
+	focus={
+		id=IRQ_Embrace_the_identity_of_the_Two_Rivers
+		icon=SYRIA_The_dream_of_Greater_Syria
+		x=18
+		y=12
+		prerequisite={focus=IRQ_Keep_in_mind_the_four_major_programs}
+		prerequisite={focus=IRQ_Only_one_major_party}
+		prerequisite={focus=IRQ_Enemies_of_Zionism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_the_dream_of_greater_syria_idea
+		}
+	}
+	focus={
+		id=IRQ_Calling_overseas_compatriots
+		icon=SYRIA_Moral_national_democracy
+		x=17
+		y=13
+		prerequisite={focus=IRQ_Embrace_the_identity_of_the_Two_Rivers}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_national_patriotism_idea
+		}
+	}
+	focus={
+		id=IRQ_Forge_ahead
+		icon=SYRIA_The_original_goodness
+		x=17
+		y=14
+		prerequisite={focus=IRQ_Calling_overseas_compatriots}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_national_patriotism_idea
+				add_idea = SYR_national_patriotism_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Strike_against_the_powerful
+		icon=SYRIA_Attack_the_wealthy_families
+		x=19
+		y=13
+		prerequisite={focus=IRQ_Embrace_the_identity_of_the_Two_Rivers}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_the_party_of_struggle_idea1
+		}
+	}
+	focus={
+		id=IRQ_National_security_system
+		icon=SYRIA_social_security
+		x=19
+		y=14
+		prerequisite={focus=IRQ_Strike_against_the_powerful}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_the_party_of_innovation_idea1
+				add_idea = SYR_the_party_of_innovation_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Thousands_of_tempers
+		icon=SYRIA_Tempering_and_forging
+		x=18
+		y=15
+		prerequisite={focus=IRQ_Forge_ahead}
+		prerequisite={focus=IRQ_National_security_system}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_the_party_of_struggle_idea1
+				add_idea = SYR_the_party_of_struggle_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Musa_Club
+		icon=IRAQ_Musa_Club
+		x=25
+		y=8
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Iraq_Musa_Club_flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_idealistic_nationalist
+		icon=IRAQ_idealistic_nationalist
+		x=24
+		y=9
+		prerequisite={focus=IRQ_Musa_Club}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Political_division_idea
+				add_idea = IRQ_Political_division_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_virtue_of_liberation
+		icon=IRAQ_The_virtue_of_liberation
+		x=26
+		y=9
+		prerequisite={focus=IRQ_Musa_Club}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_The_virtue_of_liberation_idea
+		}
+	}
+	focus={
+		id=IRQ_Slaughter_all_traitors
+		icon=IRAQ_Slaughter_all_traitors
+		x=23
+		y=10
+		prerequisite={focus=IRQ_idealistic_nationalist}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = IRQ_Political_division_idea2
+		}
+	}
+	focus={
+		id=IRQ_Stable_country
+		icon=IRAQ_Stable_country
+		x=23
+		y=11
+		prerequisite={focus=IRQ_Slaughter_all_traitors}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Political_division_idea3
+		}
+	}
+	focus={
+		id=IRQ_Vengeance_Fire
+		icon=IRAQ_Vengeance_Fire
+		x=25
+		y=10
+		prerequisite={focus=IRQ_idealistic_nationalist}
+		prerequisite={focus=IRQ_The_virtue_of_liberation}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_The_virtue_of_liberation_idea
+				add_idea = IRQ_The_virtue_of_liberation_idea1
+			}
+			country_event = irq.32
+		}
+	}
+	focus={
+		id=IRQ_Patriotic_enlightenment
+		icon=IRAQ_Patriotic_enlightenment
+		x=25
+		y=11
+		prerequisite={focus=IRQ_Vengeance_Fire}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_The_virtue_of_liberation_idea1
+				add_idea = IRQ_The_virtue_of_liberation_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Sharpen_the_sword
+		icon=IRAQ_Sharpen_the_sword
+		x=27
+		y=10
+		prerequisite={focus=IRQ_The_virtue_of_liberation}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Sharpen_the_sword_idea
+		}
+	}
+	focus={
+		id=IRQ_Work_for_the_country
+		icon=IRAQ_Work_for_the_country
+		x=27
+		y=11
+		prerequisite={focus=IRQ_Sharpen_the_sword}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Sharpen_the_sword_idea
+				add_idea = IRQ_Sharpen_the_sword_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Nationalism_of_the_fighting
+		icon=IRAQ_Nationalism_of_the_fighting
+		x=25
+		y=12
+		prerequisite={focus=IRQ_Stable_country}
+		prerequisite={focus=IRQ_Patriotic_enlightenment}
+		prerequisite={focus=IRQ_Work_for_the_country}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Sharpen_the_sword_idea1
+				add_idea = IRQ_Sharpen_the_sword_idea2
+			}
+			set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
+			add_to_coalition = yes
+			set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
+			add_to_coalition = yes
+		}
+	}
+	focus={
+		id=IRQ_Oppressed_compatriots
+		icon=IRAQ_Oppressed_compatriots
+		x=24
+		y=13
+		prerequisite={focus=IRQ_Nationalism_of_the_fighting}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Resisters_everywhere_idea
+		}
+	}
+	focus={
+		id=IRQ_Resisters_everywhere
+		icon=IRAQ_Resisters_everywhere
+		x=24
+		y=14
+		prerequisite={focus=IRQ_Oppressed_compatriots}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Resisters_everywhere_idea
+				add_idea = IRQ_Resisters_everywhere_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_end_of_imperialism
+		icon=IRAQ_The_end_of_imperialism
+		x=26
+		y=13
+		prerequisite={focus=IRQ_Nationalism_of_the_fighting}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_The_end_of_imperialism_idea
+		}
+	}
+	focus={
+		id=IRQ_Nationalist_supreme_jihad
+		icon=IRAQ_Nationalist_supreme_jihad
+		x=26
+		y=14
+		prerequisite={focus=IRQ_The_end_of_imperialism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_The_end_of_imperialism_idea
+				add_idea = IRQ_The_end_of_imperialism_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_day_of_judgment_is_approaching
+		icon=IRAQ_The_day_of_judgment_is_approaching
+		x=25
+		y=15
+		prerequisite={focus=IRQ_Resisters_everywhere}
+		prerequisite={focus=IRQ_Nationalist_supreme_jihad}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_The_end_of_imperialism_idea1
+				add_idea = IRQ_The_end_of_imperialism_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Servant_of_Allah
+		icon=PALS_Maintain_an_anti_Zion_stance
+		x=34
+		y=8
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Iraq_Servant_of_Allah_flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_National_Rescue_Committee
+		icon=PALS_Responsible_Parliament
+		x=33
+		y=9
+		prerequisite={focus=IRQ_Servant_of_Allah}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Political_division_idea
+				add_idea = IRQ_Political_division_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Unite_Muslims
+		icon=PALS_The_Millett_system_is_adopted
+		x=35
+		y=9
+		prerequisite={focus=IRQ_Servant_of_Allah}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Unite_Muslims_idea
+		}
+	}
+	focus={
+		id=IRQ_Healing_cracks
+		icon=PALS_Muslims_first
+		x=32
+		y=10
+		prerequisite={focus=IRQ_National_Rescue_Committee}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_idea = IRQ_Political_division_idea2
+		}
+	}
+	focus={
+		id=IRQ_The_death_of_the_denier
+		icon=PALS_A_society_guided_by_Allah
+		x=32
+		y=11
+		prerequisite={focus=IRQ_Healing_cracks}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Political_division_idea3
+		}
+	}
+	focus={
+		id=IRQ_Islamic_values
+		icon=PALS_Rebuild_the_political_system
+		x=34
+		y=10
+		prerequisite={focus=IRQ_National_Rescue_Committee}
+		prerequisite={focus=IRQ_Unite_Muslims}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Islamic_values_idea
+		}
+	}
+	focus={
+		id=IRQ_Teaching_the_rule_of_law
+		icon=PALS_Economy_under_Sharia
+		x=34
+		y=11
+		prerequisite={focus=IRQ_Islamic_values}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Islamic_values_idea
+				add_idea = IRQ_Islamic_values_idea1
+			}
+			country_event = irq.25
+		}
+	}
+	focus={
+		id=IRQ_Believe_in_Allah_and_brothers
+		icon=GFX_goal_AFG_Conservative_Concessions_Coalition
+		x=36
+		y=10
+		prerequisite={focus=IRQ_Unite_Muslims}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Unite_Muslims_idea
+				add_idea = IRQ_Unite_Muslims_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Reorganize_the_jihadist_army
+		icon=PALS_Looking_back_on_the_golden_years
+		x=36
+		y=11
+		prerequisite={focus=IRQ_Believe_in_Allah_and_brothers}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Unite_Muslims_idea1
+				add_idea = IRQ_Unite_Muslims_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_faithful_hold_the_reins
+		icon=IRAQ_The_faithful_hold_the_reins
+		x=32
+		y=12
+		prerequisite={focus=IRQ_The_death_of_the_denier}
+		prerequisite={focus=IRQ_Teaching_the_rule_of_law}
+		prerequisite={focus=IRQ_Reorganize_the_jihadist_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Iraq_Servant_of_Allah_2_flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Unite_Muslims_idea2
+				add_idea = IRQ_Unite_Muslims_idea3
+			}
+		}
+	}
+	focus={
+		id=IRQ_Imitate_the_constitutional_system
+		icon=PALS_Enlist_the_support_of_the_wealthy_family
+		x=31
+		y=13
+		prerequisite={focus=IRQ_The_faithful_hold_the_reins}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Imitate_the_constitutional_system_idea
+		}
+	}
+	focus={
+		id=IRQ_Allahs_guided_society
+		icon=PALS_Civic_cognition
+		x=31
+		y=14
+		prerequisite={focus=IRQ_Imitate_the_constitutional_system}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Imitate_the_constitutional_system_idea
+				add_idea = IRQ_Imitate_the_constitutional_system_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Close_to_Iran
+		icon=PALS_land_reform
+		x=33
+		y=13
+		prerequisite={focus=IRQ_The_faithful_hold_the_reins}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				IRQ = {
+					get_current_government_type = yes
+					PER = {
+						set_autonomy = { target = EGY autonomy_state = autonomous_territory }
+					}
+					restore_previous_government_type = yes
+				}
+			}
+			add_ideas = IRQ_Cultural_exchange_idea
+		}
+	}
+	focus={
+		id=IRQ_Hire_Islamic_scholars
+		icon=PALS_Stop_the_depravity_and_countercurrent
+		x=33
+		y=14
+		prerequisite={focus=IRQ_Close_to_Iran}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Cultural_exchange_idea
+				add_idea = IRQ_Cultural_exchange_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Islamic_Republic
+		icon=PALS_Secularization_attempts
+		x=32
+		y=15
+		prerequisite={focus=IRQ_Allahs_guided_society}
+		prerequisite={focus=IRQ_Hire_Islamic_scholars}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Cultural_exchange_idea1
+				add_idea = IRQ_Cultural_exchange_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Saadun_family
+		icon=IRAQ_Saadun_family
+		x=36
+		y=12
+		prerequisite={focus=IRQ_The_death_of_the_denier}
+		prerequisite={focus=IRQ_Teaching_the_rule_of_law}
+		prerequisite={focus=IRQ_Reorganize_the_jihadist_army}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Iraq_Servant_of_Allah_3_flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Islamic_values_idea1
+				add_idea = IRQ_Islamic_values_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Ensure_landlord_support
+		icon=PALS_Promote_progressive_taxation
+		x=35
+		y=13
+		prerequisite={focus=IRQ_Saadun_family}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Ensure_landlord_support_idea
+		}
+	}
+	focus={
+		id=IRQ_Issuing_titles_of_nobility
+		icon=GFX_goal_AFG_Poetic_Cultural_Reformation
+		x=35
+		y=14
+		prerequisite={focus=IRQ_Ensure_landlord_support}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Ensure_landlord_support_idea
+				add_idea = IRQ_Ensure_landlord_support_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_King_authority
+		icon=PALS_Spiritual_mobilization
+		x=37
+		y=13
+		prerequisite={focus=IRQ_Saadun_family}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_King_authority_idea
+		}
+	}
+	focus={
+		id=IRQ_Absolute_loyalty
+		icon=PALS_Between_Arabia_and_Islam
+		x=37
+		y=14
+		prerequisite={focus=IRQ_King_authority}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_King_authority_idea
+				add_idea = IRQ_King_authority_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Modern_Sultanate
+		icon=GFX_goal_AFG_Rule_Piety_Temperance
+		x=36
+		y=15
+		prerequisite={focus=IRQ_Issuing_titles_of_nobility}
+		prerequisite={focus=IRQ_Absolute_loyalty}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_King_authority_idea1
+				add_idea = IRQ_King_authority_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_dawn_of_socialism
+		icon=SYRIA_Encourage_sacrifice
+		x=7
+		y=17
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Iraq_The_dawn_of_socialism_flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_Carry_out_national_transformation
+		icon=SYRIA_National_vanguard
+		x=6
+		y=18
+		prerequisite={focus=IRQ_The_dawn_of_socialism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Political_division_idea3
+		}
+	}
+	focus={
+		id=IRQ_Add_fire_to_the_revolution
+		icon=SYRIA_Maintain_military_governance
+		x=8
+		y=18
+		prerequisite={focus=IRQ_The_dawn_of_socialism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_revolution_mobilize_idea
+		}
+	}
+	focus={
+		id=IRQ_End_the_state_of_chaos
+		icon=SYRIA_Syria_first
+		x=5
+		y=19
+		prerequisite={focus=IRQ_Carry_out_national_transformation}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Political_division_idea
+				add_idea = IRQ_Political_division_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Healing_ethnic_divisions
+		icon=SYRIA_Spread_Baathlism
+		x=5
+		y=20
+		prerequisite={focus=IRQ_End_the_state_of_chaos}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = IRQ_Political_division_idea1
+		}
+	}
+	focus={
+		id=IRQ_Moderate_secularization
+		icon=SYRIA_Weaken_the_power_of_civil_servants
+		x=7
+		y=19
+		prerequisite={focus=IRQ_Carry_out_national_transformation}
+		prerequisite={focus=IRQ_Add_fire_to_the_revolution}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_Ideological_enlightenment_idea
+		}
+	}
+	focus={
+		id=IRQ_Enlightenment_Committee
+		icon=SYRIA_Ideological_enlightenment
+		x=7
+		y=20
+		prerequisite={focus=IRQ_Moderate_secularization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Ideological_enlightenment_idea
+				add_idea = IRQ_Ideological_enlightenment_idea
+			}
+		}
+	}
+	focus={
+		id=IRQ_Mobilize_intellectuals
+		icon=SYRIA_Mobilize_intellectuals
+		x=9
+		y=19
+		prerequisite={focus=IRQ_Add_fire_to_the_revolution}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_revolution_mobilize_idea
+				add_idea = SYR_revolution_mobilize_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Socialist_culture
+		icon=SYRIA_Gentle_and_united
+		x=9
+		y=20
+		prerequisite={focus=IRQ_Mobilize_intellectuals}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_revolution_mobilize_idea1
+				add_idea = IRQ_revolution_mobilize_idea
+			}
+		}
+	}
+	focus={
+		id=IRQ_Baath_Party_Iraq
+		icon=IRAQ_Baath_Party_Iraq
+		x=3
+		y=21
+		prerequisite={focus=IRQ_Healing_ethnic_divisions}
+		prerequisite={focus=IRQ_Enlightenment_Committee}
+		prerequisite={focus=IRQ_Socialist_culture}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = IRQ_Pro_Syrian_factions_in_power
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_Military_politics_idea
+		}
+	}
+	focus={
+		id=IRQ_fellow_Syrians
+		icon=SYRIA_Gentle_and_united
+		x=2
+		y=22
+		prerequisite={focus=IRQ_Baath_Party_Iraq}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_Absorb_the_jihadists_idea
+		}
+	}
+	focus={
+		id=IRQ_United_Arab_nationalists
+		icon=SYRIA_Arab_reformism
+		x=2
+		y=23
+		prerequisite={focus=IRQ_fellow_Syrians}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Absorb_the_jihadists_idea
+				add_idea = SYR_Absorb_the_jihadists_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Social_justice
+		icon=SYRIA_Anti_colonial_vanguard
+		x=4
+		y=22
+		prerequisite={focus=IRQ_Baath_Party_Iraq}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_The_farmer_owns_the_land_idea
+		}
+	}
+	focus={
+		id=IRQ_Land_redistribution
+		icon=SYRIA_End_exploitation
+		x=4
+		y=23
+		prerequisite={focus=IRQ_Social_justice}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_The_farmer_owns_the_land_idea
+				add_idea = SYR_The_farmer_owns_the_land_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_A_united_motherland
+		icon=SYRIA_Glory_to_the_Arab_flag
+		x=3
+		y=24
+		prerequisite={focus=IRQ_United_Arab_nationalists}
+		prerequisite={focus=IRQ_Land_redistribution}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_The_farmer_owns_the_land_idea1
+				add_idea = IRQ_The_farmer_owns_the_land_idea
+			}
+		}
+	}
+	focus={
+		id=IRQ_Communist_Party_of_Iraq
+		icon=IRAQ_Communist_Party_of_Iraq
+		x=7
+		y=21
+		prerequisite={focus=IRQ_Healing_ethnic_divisions}
+		prerequisite={focus=IRQ_Enlightenment_Committee}
+		prerequisite={focus=IRQ_Socialist_culture}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = IRQ_Communist_in_power
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Iraq_Revolution_idea
+		}
+	}
+	focus={
+		id=IRQ_Communist_Constitution
+		icon=GFX_goal_ALB_Constitution
+		x=6
+		y=22
+		prerequisite={focus=IRQ_Communist_Party_of_Iraq}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Iraq_Revolution_idea
+				add_idea = IRQ_Iraq_Revolution_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Youth_power
+		icon=GFX_goal_ALB_Rini_Rini
+		x=6
+		y=23
+		prerequisite={focus=IRQ_Communist_Constitution}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Iraq_Revolution_idea1
+				add_idea = IRQ_Iraq_Revolution_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Iraq_of_the_Builders
+		icon=GFX_goal_ALB_Thousand_Voices
+		x=8
+		y=22
+		prerequisite={focus=IRQ_Communist_Party_of_Iraq}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_Planned_Economy_idea
+		}
+	}
+	focus={
+		id=IRQ_A_laborers_paradise
+		icon=GFX_goal_ALB_Local_Syndicate_Development
+		x=8
+		y=23
+		prerequisite={focus=IRQ_Iraq_of_the_Builders}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Planned_Economy_idea
+				add_idea = SYR_Planned_Economy_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Red_heart
+		icon=SYRIA_Marxist_Leninist_base_area
+		x=7
+		y=24
+		prerequisite={focus=IRQ_Youth_power}
+		prerequisite={focus=IRQ_A_laborers_paradise}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Iraq_Revolution_idea2
+				add_idea = IRQ_Iraq_Revolution_idea3
+			}
+		}
+	}
+	focus={
+		id=IRQ_Arab_socialism
+		icon=IRAQ_Arab_socialism
+		x=11
+		y=21
+		prerequisite={focus=IRQ_Healing_ethnic_divisions}
+		prerequisite={focus=IRQ_Enlightenment_Committee}
+		prerequisite={focus=IRQ_Socialist_culture}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = IRQ_Pro_Egyptian_faction_in_power
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_Socialist_bridgehead_idea
+		}
+	}
+	focus={
+		id=IRQ_Follow_Egypt
+		icon=SYRIA_The_right_path_in_the_world
+		x=10
+		y=22
+		prerequisite={focus=IRQ_Arab_socialism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Socialist_bridgehead_idea
+				add_idea = SYR_Socialist_bridgehead_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Calling_patriotic_children
+		icon=SYRIA_Calling_patriotic_children
+		x=10
+		y=23
+		prerequisite={focus=IRQ_Follow_Egypt}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Socialist_bridgehead_idea1
+				add_idea = SYR_Socialist_bridgehead_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_A_true_revolutionary
+		icon=SYRIA_Guard_of_the_Arabs
+		x=12
+		y=22
+		prerequisite={focus=IRQ_Arab_socialism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_Crush_the_enemies_of_the_revolution_idea
+		}
+	}
+	focus={
+		id=IRQ_Military_political_system
+		icon=SYRIA_Martial_law_is_normalized
+		x=12
+		y=23
+		prerequisite={focus=IRQ_A_true_revolutionary}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Crush_the_enemies_of_the_revolution_idea
+				add_idea = SYR_Crush_the_enemies_of_the_revolution_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Pan_Arab_cause
+		icon=SYRIA_Shield_of_Syria
+		x=11
+		y=24
+		prerequisite={focus=IRQ_Calling_patriotic_children}
+		prerequisite={focus=IRQ_Military_political_system}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = SYR_Crush_the_enemies_of_the_revolution_idea1
+				add_idea = IRQ_Crush_the_enemies_of_the_revolution_idea
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_victory_of_democracy
+		icon=SYRIA_Democratic_barriers
+		x=29
+		y=17
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = Iraq_The_victory_of_democracy_flag
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_Peoples_Association
+		icon=IRAQ_Peoples_Association
+		x=18
+		y=18
+		prerequisite={focus=IRQ_The_victory_of_democracy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_Moderate_social_reforms
+		icon=IRAQ_Moderate_social_reforms
+		x=16
+		y=19
+		prerequisite={focus=IRQ_Peoples_Association}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Moderate_social_reforms_idea
+		}
+	}
+	focus={
+		id=IRQ_Limited_cooperation
+		icon=IRAQ_Limited_cooperation
+		x=18
+		y=19
+		prerequisite={focus=IRQ_Peoples_Association}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Restraint_from_extremes_idea
+		}
+	}
+	focus={
+		id=IRQ_Depoliticization_of_the_military
+		icon=IRAQ_Depoliticization_of_the_military
+		x=20
+		y=19
+		prerequisite={focus=IRQ_Peoples_Association}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Overall_modernization_idea
+		}
+	}
+	focus={
+		id=IRQ_Social_equality_in_the_Quran
+		icon=IRAQ_Social_equality_in_the_Quran
+		x=17
+		y=20
+		prerequisite={focus=IRQ_Moderate_social_reforms}
+		prerequisite={focus=IRQ_Limited_cooperation}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Moderate_social_reforms_idea
+				add_idea = IRQ_Moderate_social_reforms_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Bask_in_freedom
+		icon=IRAQ_Bask_in_freedom
+		x=19
+		y=20
+		prerequisite={focus=IRQ_Limited_cooperation}
+		prerequisite={focus=IRQ_Depoliticization_of_the_military}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Overall_modernization_idea
+				add_idea = IRQ_Overall_modernization_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Protect_poor_citizens
+		icon=IRAQ_Protect_poor_citizens
+		x=17
+		y=21
+		prerequisite={focus=IRQ_Social_equality_in_the_Quran}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Moderate_social_reforms_idea1
+				add_idea = IRQ_Moderate_social_reforms_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Modernization_of_the_country
+		icon=IRAQ_Modernization_of_the_country
+		x=19
+		y=21
+		prerequisite={focus=IRQ_Bask_in_freedom}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Overall_modernization_idea1
+				add_idea = IRQ_Overall_modernization_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_An_equal_and_strong_motherland
+		icon=IRAQ_An_equal_and_strong_motherland
+		x=18
+		y=22
+		prerequisite={focus=IRQ_Protect_poor_citizens}
+		prerequisite={focus=IRQ_Modernization_of_the_country}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Restraint_from_extremes_idea
+				add_idea = IRQ_Restraint_from_extremes_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_National_Democratic_Party
+		icon=IRAQ_National_Democratic_Party
+		x=24
+		y=18
+		prerequisite={focus=IRQ_The_victory_of_democracy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_Curb_landlords_and_gentry
+		icon=SYRIA_Protect_landlords
+		x=22
+		y=19
+		prerequisite={focus=IRQ_National_Democratic_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Protect_agriculture_idea
+		}
+	}
+	focus={
+		id=IRQ_Political_liberalization
+		icon=SYRIA_Everyone_participates
+		x=24
+		y=19
+		prerequisite={focus=IRQ_National_Democratic_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Political_liberalization_idea
+		}
+	}
+	focus={
+		id=IRQ_Judicial_system_reform
+		icon=SYRIA_The_elite_governed
+		x=26
+		y=19
+		prerequisite={focus=IRQ_National_Democratic_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Judicial_system_reform_idea
+		}
+	}
+	focus={
+		id=IRQ_Agricultural_subsidies_are_issued
+		icon=SYRIA_Appoint_social_elites
+		x=23
+		y=20
+		prerequisite={focus=IRQ_Curb_landlords_and_gentry}
+		prerequisite={focus=IRQ_Political_liberalization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Protect_agriculture_idea
+				add_idea = IRQ_Protect_agriculture_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Judicial_justice
+		icon=SYRIA_Characteristic_secularism
+		x=25
+		y=20
+		prerequisite={focus=IRQ_Political_liberalization}
+		prerequisite={focus=IRQ_Judicial_system_reform}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Judicial_system_reform_idea
+				add_idea = IRQ_Judicial_system_reform_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Feed_the_people
+		icon=SYRIA_Market_and_national_freedom
+		x=23
+		y=21
+		prerequisite={focus=IRQ_Agricultural_subsidies_are_issued}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Protect_agriculture_idea1
+				add_idea = IRQ_Protect_agriculture_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Release_political_prisoners
+		icon=SYRIA_Towards_social_progress
+		x=25
+		y=21
+		prerequisite={focus=IRQ_Judicial_justice}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Judicial_system_reform_idea1
+				add_idea = IRQ_Judicial_system_reform_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_country_of_freedom
+		icon=SYRIA_victory_of_democracy
+		x=24
+		y=22
+		prerequisite={focus=IRQ_Feed_the_people}
+		prerequisite={focus=IRQ_Release_political_prisoners}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Political_liberalization_idea
+				add_idea = IRQ_Political_liberalization_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Correct_the_fallacy_of_populism
+		icon=SYRIA_Defend_democratic_power
+		x=28
+		y=19
+		prerequisite={focus=IRQ_Peoples_Association focus=IRQ_National_Democratic_Party focus=IRQ_Arab_Liberal_Party focus=IRQ_Ittihad_Party }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Political_division_idea
+				add_idea = IRQ_Political_division_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Promote_national_equality
+		icon=SYRIA_Working_with_reformists
+		x=30
+		y=19
+		prerequisite={focus=IRQ_Peoples_Association focus=IRQ_National_Democratic_Party focus=IRQ_Arab_Liberal_Party focus=IRQ_Ittihad_Party }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Patriotic_nationalism_idea
+		}
+	}
+	focus={
+		id=IRQ_Clear_out_the_red_mob
+		icon=SYRIA_Counter_revolutionary_revolutionaries
+		x=27
+		y=20
+		prerequisite={focus=IRQ_Correct_the_fallacy_of_populism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			remove_ideas = IRQ_Political_division_idea2
+		}
+	}
+	focus={
+		id=IRQ_Nationalism_moderated
+		icon=SYRIA_Politics_for_all
+		x=29
+		y=20
+		prerequisite={focus=IRQ_Correct_the_fallacy_of_populism}
+		prerequisite={focus=IRQ_Promote_national_equality}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Patriotic_nationalism_idea
+				add_idea = IRQ_Patriotic_nationalism_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Planning_ethnic_autonomous_regions
+		icon=IRAQ_Planning_ethnic_autonomous_regions
+		x=31
+		y=20
+		prerequisite={focus=IRQ_Promote_national_equality}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = SYR_Political_division_idea2
+		}
+	}
+	focus={
+		id=IRQ_Encourage_patriotism
+		icon=SYRIA_True_national_independence
+		x=29
+		y=21
+		prerequisite={focus=IRQ_Clear_out_the_red_mob}
+		prerequisite={focus=IRQ_Nationalism_moderated}
+		prerequisite={focus=IRQ_Planning_ethnic_autonomous_regions}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Patriotic_nationalism_idea1
+				add_idea = IRQ_Patriotic_nationalism_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Arab_Liberal_Party
+		icon=IRAQ_Arab_Liberal_Party
+		x=34
+		y=18
+		prerequisite={focus=IRQ_The_victory_of_democracy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_Remembering_Arab_identity
+		icon=SYRIA_Only_Syria
+		x=32
+		y=19
+		prerequisite={focus=IRQ_Arab_Liberal_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Remembering_Arab_identity_idea
+		}
+	}
+	focus={
+		id=IRQ_Ensuring_freedom_of_belief
+		icon=SYRIA_Healthy_politics
+		x=34
+		y=19
+		prerequisite={focus=IRQ_Arab_Liberal_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Ensuring_freedom_of_belief_idea
+		}
+	}
+	focus={
+		id=IRQ_Exposure_to_the_Western_world
+		icon=IRAQ_Exposure_to_the_Western_world
+		x=36
+		y=19
+		prerequisite={focus=IRQ_Arab_Liberal_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Exposure_to_the_Western_world_idea
+		}
+	}
+	focus={
+		id=IRQ_Redefine_pan_Arabism
+		icon=IRAQ_Redefine_pan_Arabism
+		x=33
+		y=20
+		prerequisite={focus=IRQ_Remembering_Arab_identity}
+		prerequisite={focus=IRQ_Ensuring_freedom_of_belief}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Remembering_Arab_identity_idea
+				add_idea = IRQ_Remembering_Arab_identity_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Promote_economic_liberalization
+		icon=SYRIA_Eliminate_division
+		x=35
+		y=20
+		prerequisite={focus=IRQ_Ensuring_freedom_of_belief}
+		prerequisite={focus=IRQ_Exposure_to_the_Western_world}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Exposure_to_the_Western_world_idea
+				add_idea = IRQ_Exposure_to_the_Western_world_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Appease_nationalist_sentiments
+		icon=IRAQ_Appease_nationalist_sentiments
+		x=33
+		y=21
+		prerequisite={focus=IRQ_Redefine_pan_Arabism}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Remembering_Arab_identity_idea1
+				add_idea = IRQ_Remembering_Arab_identity_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Expand_trade_routes
+		icon=IRAQ_Expand_trade_routes
+		x=35
+		y=21
+		prerequisite={focus=IRQ_Promote_economic_liberalization}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Exposure_to_the_Western_world_idea1
+				add_idea = IRQ_Exposure_to_the_Western_world_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Democracy_in_Mesopotamia
+		icon=IRAQ_Democracy_in_Mesopotamia
+		x=34
+		y=22
+		prerequisite={focus=IRQ_Appease_nationalist_sentiments}
+		prerequisite={focus=IRQ_Expand_trade_routes}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Ensuring_freedom_of_belief_idea
+				add_idea = IRQ_Ensuring_freedom_of_belief_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_Ittihad_Party
+		icon=IRAQ_Ittihad_Party
+		x=40
+		y=18
+		prerequisite={focus=IRQ_The_victory_of_democracy}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available = {
+			has_country_flag = FE_NOM
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			custom_effect_tooltip = unlock_focuses
+		}
+	}
+	focus={
+		id=IRQ_Requested_Persian_aid
+		icon=SYRIA_National_reconciliation
+		x=38
+		y=19
+		prerequisite={focus=IRQ_Ittihad_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Three_knives_on_both_sides_idea
+		}
+	}
+	focus={
+		id=IRQ_Domesticated_tribesmen
+		icon=SYRIA_New_Sultanate
+		x=40
+		y=19
+		prerequisite={focus=IRQ_Ittihad_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Allahs_teachings_idea
+		}
+	}
+	focus={
+		id=IRQ_Religious_elite_government
+		icon=IRAQ_Religious_elite_government
+		x=42
+		y=19
+		prerequisite={focus=IRQ_Ittihad_Party}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			add_ideas = IRQ_Religious_elite_government_idea
+		}
+	}
+	focus={
+		id=IRQ_Keep_your_distance_from_Persia
+		icon=IRAQ_Keep_your_distance_from_Persia
+		x=39
+		y=20
+		prerequisite={focus=IRQ_Requested_Persian_aid}
+		prerequisite={focus=IRQ_Domesticated_tribesmen}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Three_knives_on_both_sides_idea
+				add_idea = IRQ_Three_knives_on_both_sides_idea1
+			}
+			hidden_effect = {
+				IRQ = {
+					country_event = {
+						id = irq.40
+						days = 5 
+					}
+				}
+			}
+		}
+	}
+	focus={
+		id=IRQ_Fulfill_zakat_obligations
+		icon=IRAQ_Fulfill_zakat_obligations
+		x=41
+		y=20
+		prerequisite={focus=IRQ_Domesticated_tribesmen}
+		prerequisite={focus=IRQ_Religious_elite_government}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Religious_elite_government_idea
+				add_idea = IRQ_Religious_elite_government_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_science_and_education_independence
+		icon=IRAQ_science_and_education_independence
+		x=39
+		y=21
+		prerequisite={focus=IRQ_Keep_your_distance_from_Persia}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Three_knives_on_both_sides_idea1
+				add_idea = IRQ_Three_knives_on_both_sides_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_The_Giaz_tax_is_levied
+		icon=IRAQ_The_Giaz_tax_is_levied
+		x=41
+		y=21
+		prerequisite={focus=IRQ_Fulfill_zakat_obligations}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Religious_elite_government_idea1
+				add_idea = IRQ_Religious_elite_government_idea2
+			}
+		}
+	}
+	focus={
+		id=IRQ_Under_the_light_of_Allah
+		icon=IRAQ_Under_the_light_of_Allah
+		x=40
+		y=22
+		prerequisite={focus=IRQ_science_and_education_independence}
+		prerequisite={focus=IRQ_The_Giaz_tax_is_levied}
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Allahs_teachings_idea
+				add_idea = IRQ_Allahs_teachings_idea1
+			}
+		}
+	}
+	focus={
+		id=IRQ_A_beacon_of_liberalism
+		icon=IRAQ_A_beacon_of_liberalism
+		x=29
+		y=23
+		prerequisite={focus=IRQ_Encourage_patriotism}
+		prerequisite={focus=IRQ_An_equal_and_strong_motherland focus=IRQ_The_country_of_freedom focus=IRQ_Democracy_in_Mesopotamia focus=IRQ_Under_the_light_of_Allah }
+		cost=4
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+		}
+		completion_reward={
+			swap_ideas = {
+				remove_idea = IRQ_Patriotic_nationalism_idea2
+				add_idea = IRQ_Patriotic_nationalism_idea3
+			}
 		}
 	}
 }

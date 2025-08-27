@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "KR_SCENARIO_DESC"
 		date = 1936.1.1.1
 		picture = "GFX_select_date_1936"
-		default_country = "LEB"
+		default_country = "EGY"
 		default = yes
 		
 		"FRA" = {
@@ -173,35 +173,29 @@ bookmarks = {
 			}
 		}
 		
-		"YEM" = {
+		"PER" = {
 			minor = yes
-			history = "YEM_GATHERING_STORM_DESC"
-			ideology = paternal_autocrat
+			history = "PER_GATHERING_STORM_DESC"
+			ideology = soc
 			ideas = {
-				YEM_Ottoman_Rule
-				YEM_Old_Army
-				YEM_Slave_economy
 			}
 			focuses = {
-				NYE_Riots_intensified
-				NYE_Imam_assassination 
-				NYE_The_victory_of_the_Free_Yemeni_Movement
 			}
 		}
 
-		"SUE" = {
+		"IRQ" = {
 			minor = yes
-			history = "SUE_GATHERING_STORM_DESC"
+			history = "IRQ_GATHERING_STORM_DESC"
 			ideology = authoritarian_democrat
 			ideas = {
-				SUZ_Establishment_of_the_PBCB_ideas
-				SUZ_Suez_electrification_line_ideas
-				SUZ_Solve_the_problem_of_the_canal_workers_strike_ideas
+				IRQ_Allahs_teachings_idea
+				IRQ_Come_back_in_new_clothes_idea
+				IRQ_Overall_modernization_idea
 			}
 			focuses = {
-				SUZ_Suez_the_land_of_prosperity 
-				SUZ_The_onslaught_of_Black_Monday 
-				SUZ_Reduced_tariffs_on_goods
+				IRQ_Come_back_in_new_clothes
+				IRQ_Resisters_everywhere
+				IRQ_Teaching_the_rule_of_law
 			}
 		}
 
@@ -221,19 +215,13 @@ bookmarks = {
 			}
 		}
 		
-		"LEB" = {
+		"SAU" = {
 			minor = yes
-			history = "LEB_GATHERING_STORM_DESC"
-			ideology = authoritarian_democrat
+			history = "SAU_GATHERING_STORM_DESC"
+			ideology = paternal_autocrat
 			ideas = {
-				LEB_idea_a_land_hard_to_govern
-				LEB_religious_clashes
-				LEB_gate_between_two_worlds
 			}
 			focuses = {
-				LEB_a_land_hard_to_govern 
-				LEB_storm_has_dissipated 
-				LEB_expand_beirut_university
 			}
 		}
 		

@@ -64,7 +64,7 @@ set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1935.10.11"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
@@ -123,41 +123,36 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Yusuf Salman Yusuf"
-	desc = "POLITICS_SALMAN_DESC"
-	picture = "gfx/leaders/IRQ/Portrait_IRQ_Yusuf.png"
+	name = "Abdul Salam Arif"
+	picture = "gfx/leaders/IRQ/Portrait_IRQ_Abdul_Salam_Arif.png"
 	expire = "1.1.1"
-	ideology = centralized_syndicalism_subtype
+	ideology = arab_socialism
 }
 
 create_country_leader = {
-	name = "Yusuf Salman Yusuf"
-	desc = "POLITICS_SALMAN_DESC"
-	picture = "gfx/leaders/IRQ/Portrait_IRQ_Yusuf.png"
+	name = "Ahmed Hassan Al-Bakr"
+	picture = "gfx/leaders/IRQ/Portrait_IRQ_Ahmed_Hassan_Al_Bakr.png"
 	expire = "1.1.1"
-	ideology = radsoc_communism_subtype
+	ideology = radsoc_arab_baathism_subtype
 }
 
 create_country_leader = {
 	name = "Kamil al-Chadirchi"
-	desc = "POLITICS_UMARI_DESC"
 	picture = "gfx/leaders/IRQ/Portrait_IRQ_Kamil_Chadirchi.png"
 	expire = "1.1.1"
-	ideology = socdem_radical_progressivism_subtype
+	ideology = socdem_revolutionary_nationalism_subtype
 }
 
 create_country_leader = {
-	name = "Arshad al-Umari"
-	desc = "POLITICS_UMARI_DESC"
-	picture = "gfx/leaders/IRQ/Portrait_IRQ_Arshad_al_Umari.png"
+	name = "Hikmat Sulayman"
+	picture = "gfx/leaders/IRQ/Portrait_IRQ_Hikmat_Sulayman.png"
 	expire = "1.1.1"
 	ideology = centrist_subtype
 }
 
 create_country_leader = {
-	name = "Arshad al-Umari"
-	desc = "POLITICS_UMARI_DESC"
-	picture = "gfx/leaders/IRQ/Portrait_IRQ_Arshad_al_Umari.png"
+	name = "Naji al-Suwaydi"
+	picture = "gfx/leaders/IRQ/Portrait_IRQ_Naji_al_Suwaydi.png"
 	expire = "1.1.1"
 	ideology = liberal_conservative_subtype
 }
@@ -180,7 +175,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Salah al-Din al-Sabbagh"
-	picture = "gfx/leaders/PLS/Portrait_PLS_Salah_al_Din_al_Sabbagh.png"
+	picture = "gfx/leaders/IRQ/Portrait_IRQ_Salah_al_Din_al_Sabbagh_KR.png"
 	expire = "1.1.1"
 	ideology = pataut_savinkovism_subtype
 }
@@ -209,6 +204,46 @@ create_field_marshal = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Abdul Salam Arif "
+	portrait_path = "gfx/leaders/IRQ/Portrait_IRQ_Abdul_Salam_Arif_Army.png"
+	traits = {
+		trait_mountaineer
+		jungle_rat
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Ahmed Hassan Al-Bakr"
+	portrait_path = "gfx/leaders/IRQ/Portrait_IRQ_Ahmed_Hassan_Al_Bakr.png"
+	traits = {
+		offensive_doctrine
+		winter_specialist
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Abdul Rahman Arif"
+	portrait_path = "gfx/leaders/IRQ/Portrait_IRQ_Abdul_Rahman_Arif.png"
+	traits = {
+		ranger
+		urban_assault_specialist
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {

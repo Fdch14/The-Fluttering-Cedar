@@ -232,5 +232,33 @@ spriteTypes = {
 		name = "GFX_syrian_dragoon_tactics"
 		texturefile = "gfx/interface/decision/syrian_dragoon_tactics.png"
 	}
+	SpriteType = {
+		name = "GFX_iraqi_rebellion"
+		texturefile = "gfx/interface/decision/iraqi_rebellion.png"
+	}
+	SpriteType = {
+		name = "GFX_iraqi_revolution"
+		texturefile = "gfx/interface/decision/iraqi_revolution.png"
+	}
+	SpriteType = {
+		name = "GFX_iraqi_nationalist_congress"
+		texturefile = "gfx/interface/decision/iraqi_nationalist_congress.png"
+	}
+	SpriteType = {
+		name = "GFX_golden_square"
+		texturefile = "gfx/interface/decision/golden_square.png"
+	}
+	SpriteType = {
+		name = "GFX_iraqi_muslims"
+		texturefile = "gfx/interface/decision/iraqi_muslims.png"
+	}
+	SpriteType = {
+		name = "GFX_arab_iraq"
+		texturefile = "gfx/interface/decision/arab_iraq.png"
+	}
+	SpriteType = {
+		name = "GFX_iraqi_communism"
+		texturefile = "gfx/interface/decision/iraqi_communism.png"
+	}
 
 }

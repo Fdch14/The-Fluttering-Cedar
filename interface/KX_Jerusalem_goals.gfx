@@ -4339,6 +4339,310 @@ SpriteTypes = {
 		name = "SYRIA_Alis_guidance"
 		texturefile = "gfx/interface/goals/SYRIA_Alis_guidance.png"
 	}
+	SpriteType = {
+		name = "IRAQ_The_teachings_of_the_SSNP"
+		texturefile = "gfx/interface/goals/IRAQ_The_teachings_of_the_SSNP.png"
+	}
+	SpriteType = {
+		name = "IRAQ_The_Patriots_marched"
+		texturefile = "gfx/interface/goals/IRAQ_The_Patriots_marched.png"
+	}
+	SpriteType = {
+		name = "IRAQ_The_day_of_judgment_is_approaching"
+		texturefile = "gfx/interface/goals/IRAQ_The_day_of_judgment_is_approaching.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Nationalist_supreme_jihad"
+		texturefile = "gfx/interface/goals/IRAQ_Nationalist_supreme_jihad.png"
+	}
+	SpriteType = {
+		name = "IRAQ_The_end_of_imperialism"
+		texturefile = "gfx/interface/goals/IRAQ_The_end_of_imperialism.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Oppressed_compatriots"
+		texturefile = "gfx/interface/goals/IRAQ_Oppressed_compatriots.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Resisters_everywhere"
+		texturefile = "gfx/interface/goals/IRAQ_Resisters_everywhere.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Nationalism_of_the_fighting"
+		texturefile = "gfx/interface/goals/IRAQ_Nationalism_of_the_fighting.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Work_for_the_country"
+		texturefile = "gfx/interface/goals/IRAQ_Work_for_the_country.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Sharpen_the_sword"
+		texturefile = "gfx/interface/goals/IRAQ_Sharpen_the_sword.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Patriotic_enlightenment"
+		texturefile = "gfx/interface/goals/IRAQ_Patriotic_enlightenment.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Vengeance_Fire"
+		texturefile = "gfx/interface/goals/IRAQ_Vengeance_Fire.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Stable_country"
+		texturefile = "gfx/interface/goals/IRAQ_Stable_country.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Slaughter_all_traitors"
+		texturefile = "gfx/interface/goals/IRAQ_Slaughter_all_traitors.png"
+	}
+	SpriteType = {
+		name = "IRAQ_The_virtue_of_liberation"
+		texturefile = "gfx/interface/goals/IRAQ_The_virtue_of_liberation.png"
+	}
+	SpriteType = {
+		name = "IRAQ_idealistic_nationalist"
+		texturefile = "gfx/interface/goals/IRAQ_idealistic_nationalist.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Musa_Club"
+		texturefile = "gfx/interface/goals/IRAQ_Musa_Club.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Light_of_Mesopotamia"
+		texturefile = "gfx/interface/goals/IRAQ_Light_of_Mesopotamia.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Only_for_you"
+		texturefile = "gfx/interface/goals/IRAQ_Only_for_you.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Loyal_scimitar"
+		texturefile = "gfx/interface/goals/IRAQ_Loyal_scimitar.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Fanaticism_and_belligerence"
+		texturefile = "gfx/interface/goals/IRAQ_Fanaticism_and_belligerence.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Broad_solidarity"
+		texturefile = "gfx/interface/goals/IRAQ_Broad_solidarity.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Come_back_in_new_clothes"
+		texturefile = "gfx/interface/goals/IRAQ_Come_back_in_new_clothes.png"
+	}
+	SpriteType = {
+		name = "IRAQ_unimpressed"
+		texturefile = "gfx/interface/goals/IRAQ_unimpressed.png"
+	}
+	SpriteType = {
+		name = "IRQ_Resist_Iranian_influence"
+		texturefile = "gfx/interface/goals/IRQ_Resist_Iranian_influence.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Nationalism_expanded"
+		texturefile = "gfx/interface/goals/IRAQ_Nationalism_expanded.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Oppose_socialism"
+		texturefile = "gfx/interface/goals/IRAQ_Oppose_socialism.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Iraqi_national_unity"
+		texturefile = "gfx/interface/goals/IRAQ_Iraqi_national_unity.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Take_control_of_the_tribe"
+		texturefile = "gfx/interface/goals/IRAQ_Take_control_of_the_tribe.png"
+	}
+	SpriteType = {
+		name = "IRAQ_The_call_of_the_Arab_mother"
+		texturefile = "gfx/interface/goals/IRAQ_The_call_of_the_Arab_mother.png"
+	}
+	SpriteType = {
+		name = "IRAQ_No_more_chaos"
+		texturefile = "gfx/interface/goals/IRAQ_No_more_chaos.png"
+	}
+	SpriteType = {
+		name = "IRAQ_National_Brotherhood_Party"
+		texturefile = "gfx/interface/goals/IRAQ_National_Brotherhood_Party.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Pioneer_of_revival"
+		texturefile = "gfx/interface/goals/IRAQ_Pioneer_of_revival.png"
+	}
+	SpriteType = {
+		name = "IRAQ_National_mobilization"
+		texturefile = "gfx/interface/goals/IRAQ_National_mobilization.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Oppose_separatism"
+		texturefile = "gfx/interface/goals/IRAQ_Oppose_separatism.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Clear_the_unrest"
+		texturefile = "gfx/interface/goals/IRAQ_Clear_the_unrest.png"
+	}
+	SpriteType = {
+		name = "IRAQ_populist_ideals"
+		texturefile = "gfx/interface/goals/IRAQ_populist_ideals.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Arab_countries_are_supreme"
+		texturefile = "gfx/interface/goals/IRAQ_Arab_countries_are_supreme.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Rooted_in_the_grassroots"
+		texturefile = "gfx/interface/goals/IRAQ_Rooted_in_the_grassroots.png"
+	}
+	SpriteType = {
+		name = "IRAQ_We_will_rise"
+		texturefile = "gfx/interface/goals/IRAQ_We_will_rise.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Under_an_iron_fist"
+		texturefile = "gfx/interface/goals/IRAQ_Under_an_iron_fist.png"
+	}
+	SpriteType = {
+		name = "IRAQ_All_for_Arabia"
+		texturefile = "gfx/interface/goals/IRAQ_All_for_Arabia.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Timeless_enthusiasm"
+		texturefile = "gfx/interface/goals/IRAQ_Timeless_enthusiasm.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Master_the_future"
+		texturefile = "gfx/interface/goals/IRAQ_Master_the_future.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Encourage_dedication"
+		texturefile = "gfx/interface/goals/IRAQ_Encourage_dedication.png"
+	}
+	SpriteType = {
+		name = "IRAQ_The_Great_Expedition"
+		texturefile = "gfx/interface/goals/IRAQ_The_Great_Expedition.png"
+	}
+	SpriteType = {
+		name = "IRAQ_The_faithful_hold_the_reins"
+		texturefile = "gfx/interface/goals/IRAQ_The_faithful_hold_the_reins.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Saadun_family"
+		texturefile = "gfx/interface/goals/IRAQ_Saadun_family.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Communist_Party_of_Iraq"
+		texturefile = "gfx/interface/goals/IRAQ_Communist_Party_of_Iraq.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Arab_socialism"
+		texturefile = "gfx/interface/goals/IRAQ_Arab_socialism.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Baath_Party_Iraq"
+		texturefile = "gfx/interface/goals/IRAQ_Baath_Party_Iraq.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Peoples_Association"
+		texturefile = "gfx/interface/goals/IRAQ_Peoples_Association.png"
+	}
+	SpriteType = {
+		name = "IRAQ_National_Democratic_Party"
+		texturefile = "gfx/interface/goals/IRAQ_National_Democratic_Party.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Arab_Liberal_Party"
+		texturefile = "gfx/interface/goals/IRAQ_Arab_Liberal_Party.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Ittihad_Party"
+		texturefile = "gfx/interface/goals/IRAQ_Ittihad_Party.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Planning_ethnic_autonomous_regions"
+		texturefile = "gfx/interface/goals/IRAQ_Planning_ethnic_autonomous_regions.png"
+	}
+	SpriteType = {
+		name = "IRAQ_A_beacon_of_liberalism"
+		texturefile = "gfx/interface/goals/IRAQ_A_beacon_of_liberalism.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Under_the_light_of_Allah"
+		texturefile = "gfx/interface/goals/IRAQ_Under_the_light_of_Allah.png"
+	}
+	SpriteType = {
+		name = "IRAQ_The_Giaz_tax_is_levied"
+		texturefile = "gfx/interface/goals/IRAQ_The_Giaz_tax_is_levied.png"
+	}
+	SpriteType = {
+		name = "IRAQ_science_and_education_independence"
+		texturefile = "gfx/interface/goals/IRAQ_science_and_education_independence.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Fulfill_zakat_obligations"
+		texturefile = "gfx/interface/goals/IRAQ_Fulfill_zakat_obligations.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Keep_your_distance_from_Persia"
+		texturefile = "gfx/interface/goals/IRAQ_Keep_your_distance_from_Persia.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Religious_elite_government"
+		texturefile = "gfx/interface/goals/IRAQ_Religious_elite_government.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Democracy_in_Mesopotamia"
+		texturefile = "gfx/interface/goals/IRAQ_Democracy_in_Mesopotamia.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Expand_trade_routes"
+		texturefile = "gfx/interface/goals/IRAQ_Expand_trade_routes.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Appease_nationalist_sentiments"
+		texturefile = "gfx/interface/goals/IRAQ_Appease_nationalist_sentiments.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Redefine_pan_Arabism"
+		texturefile = "gfx/interface/goals/IRAQ_Redefine_pan_Arabism.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Exposure_to_the_Western_world"
+		texturefile = "gfx/interface/goals/IRAQ_Exposure_to_the_Western_world.png"
+	}
+	SpriteType = {
+		name = "IRAQ_An_equal_and_strong_motherland"
+		texturefile = "gfx/interface/goals/IRAQ_An_equal_and_strong_motherland.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Modernization_of_the_country"
+		texturefile = "gfx/interface/goals/IRAQ_Modernization_of_the_country.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Protect_poor_citizens"
+		texturefile = "gfx/interface/goals/IRAQ_Protect_poor_citizens.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Bask_in_freedom"
+		texturefile = "gfx/interface/goals/IRAQ_Bask_in_freedom.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Social_equality_in_the_Quran"
+		texturefile = "gfx/interface/goals/IRAQ_Social_equality_in_the_Quran.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Depoliticization_of_the_military"
+		texturefile = "gfx/interface/goals/IRAQ_Depoliticization_of_the_military.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Moderate_social_reforms"
+		texturefile = "gfx/interface/goals/IRAQ_Moderate_social_reforms.png"
+	}
+	SpriteType = {
+		name = "IRAQ_Limited_cooperation"
+		texturefile = "gfx/interface/goals/IRAQ_Limited_cooperation.png"
+	}
 	
 	
 }

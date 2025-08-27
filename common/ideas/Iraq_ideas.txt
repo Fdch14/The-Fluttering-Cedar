@@ -5,6 +5,1356 @@ ideas = {
 ##############
 	country = {
 		
+		IRQ_Religious_elite_government_idea = {
+			name = IRQ_Religious_elite_government
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Religious_elite_government_idea"}
+			picture = NYC_civil_rights_all_or_nothing
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.07
+				political_power_gain = 0.07
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				experience_gain_factor = 0.05
+			}
+		}
+		IRQ_Religious_elite_government_idea1 = {
+			name = IRQ_Religious_elite_government
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Religious_elite_government_idea1"}
+			picture = NYC_civil_rights_all_or_nothing
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				experience_gain_factor = 0.1
+			}
+		}
+		IRQ_Religious_elite_government_idea2 = {
+			name = IRQ_Religious_elite_government
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Religious_elite_government_idea2"}
+			picture = NYC_civil_rights_all_or_nothing
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				experience_gain_factor = 0.1
+			}
+		}
+		IRQ_Allahs_teachings_idea = {
+			name = IRQ_Allahs_teachings_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Allahs_teachings_idea"}
+			picture = NYC_civil_rights_all_or_nothing
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.05
+				local_resources_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		IRQ_Allahs_teachings_idea1 = {
+			name = IRQ_Allahs_teachings_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Allahs_teachings_idea1"}
+			picture = NYC_civil_rights_all_or_nothing
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		IRQ_Three_knives_on_both_sides_idea = {
+			name = IRQ_Three_knives_on_both_sides_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Three_knives_on_both_sides_idea"}
+			picture = terror_in_the_knight
+			allowed = { always = no }
+            modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				industrial_factory_donations = 5
+				military_factory_donations = 5
+				industrial_capacity_factory = 0.05
+			}
+		}
+		IRQ_Three_knives_on_both_sides_idea1 = {
+			name = IRQ_Three_knives_on_both_sides_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Three_knives_on_both_sides_idea1"}
+			picture = terror_in_the_knight
+			allowed = { always = no }
+            modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industrial_factory_donations = 10
+				military_factory_donations = 10
+				industrial_capacity_factory = 0.1
+			}
+		}
+		IRQ_Three_knives_on_both_sides_idea2 = {
+			name = IRQ_Three_knives_on_both_sides_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Three_knives_on_both_sides_idea2"}
+			picture = terror_in_the_knight
+			allowed = { always = no }
+            modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				industrial_factory_donations = 10
+				military_factory_donations = 10
+				industrial_capacity_factory = 0.15
+				research_speed_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+		IRQ_Exposure_to_the_Western_world_idea = {
+			name = IRQ_Exposure_to_the_Western_world
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Exposure_to_the_Western_world_idea"}
+			picture = CEA_anti_western_idea
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				industry_free_repair_factor = 0.07
+			}
+		}
+		IRQ_Exposure_to_the_Western_world_idea1 = {
+			name = IRQ_Exposure_to_the_Western_world
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Exposure_to_the_Western_world_idea1"}
+			picture = CEA_anti_western_idea
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				industry_free_repair_factor = 0.15
+			}
+		}
+		IRQ_Exposure_to_the_Western_world_idea2 = {
+			name = IRQ_Exposure_to_the_Western_world
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Exposure_to_the_Western_world_idea2"}
+			picture = CEA_anti_western_idea
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				industry_free_repair_factor = 0.25
+			}
+		}
+		IRQ_Ensuring_freedom_of_belief_idea = {
+			name = IRQ_Ensuring_freedom_of_belief
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Ensuring_freedom_of_belief_idea"}
+			picture = freedom_from_want_2
+			allowed = { always = no }
+            modifier = {
+				land_reinforce_rate = 0.05
+				navy_fuel_consumption_factor = -0.1
+				army_fuel_consumption_factor = -0.1
+				air_fuel_consumption_factor = -0.1
+				base_fuel_gain_factor = 0.1
+			}
+		}
+		IRQ_Ensuring_freedom_of_belief_idea1 = {
+			name = IRQ_Ensuring_freedom_of_belief
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Ensuring_freedom_of_belief_idea1"}
+			picture = freedom_from_want_2
+			allowed = { always = no }
+            modifier = {
+				land_reinforce_rate = 0.1
+				navy_fuel_consumption_factor = -0.2
+				army_fuel_consumption_factor = -0.2
+				air_fuel_consumption_factor = -0.2
+				base_fuel_gain_factor = 0.2
+			}
+		}
+		IRQ_Remembering_Arab_identity_idea = {
+			name = IRQ_Remembering_Arab_identity
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Remembering_Arab_identity_idea"}
+			picture = EGY_model_democracy_arab_world
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.02
+				conscription_factor = 0.05
+				recruitable_population = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		IRQ_Remembering_Arab_identity_idea1 = {
+			name = IRQ_Remembering_Arab_identity
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Remembering_Arab_identity_idea1"}
+			picture = EGY_model_democracy_arab_world
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.05
+				conscription_factor = 0.1
+				recruitable_population = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		IRQ_Remembering_Arab_identity_idea2 = {
+			name = IRQ_Remembering_Arab_identity
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Remembering_Arab_identity_idea2"}
+			picture = EGY_model_democracy_arab_world
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.08
+				conscription_factor = 0.15
+				recruitable_population = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		IRQ_Patriotic_nationalism_idea = {
+			name = IRQ_Patriotic_nationalism_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Patriotic_nationalism_idea"}
+			picture = american_patriotism
+			allowed = { always = no }
+            modifier = {
+				compliance_growth = 0.01
+				resistance_decay = 0.01
+				resistance_target = -0.07
+				compliance_starting_value = 0.07
+				resistance_growth = -0.01
+			}
+		}
+		IRQ_Patriotic_nationalism_idea1 = {
+			name = IRQ_Patriotic_nationalism_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Patriotic_nationalism_idea1"}
+			picture = american_patriotism
+			allowed = { always = no }
+            modifier = {
+				compliance_growth = 0.02
+				resistance_decay = 0.02
+				resistance_target = -0.13
+				compliance_starting_value = 0.13
+				resistance_growth = -0.02
+			}
+		}
+		IRQ_Patriotic_nationalism_idea2 = {
+			name = IRQ_Patriotic_nationalism_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Patriotic_nationalism_idea2"}
+			picture = american_patriotism
+			allowed = { always = no }
+            modifier = {
+				compliance_growth = 0.03
+				resistance_decay = 0.03
+				resistance_target = -0.2
+				compliance_starting_value = 0.2
+				resistance_growth = -0.03
+			}
+		}
+		IRQ_Patriotic_nationalism_idea3 = {
+			name = IRQ_Patriotic_nationalism_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Patriotic_nationalism_idea3"}
+			picture = american_patriotism
+			allowed = { always = no }
+            modifier = {
+				compliance_growth = 0.05
+				resistance_decay = 0.05
+				resistance_target = -0.3
+				compliance_starting_value = 0.3
+				resistance_growth = -0.05
+			}
+		}
+		IRQ_Judicial_system_reform_idea = {
+			name = IRQ_Judicial_system_reform
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Judicial_system_reform_idea"}
+			picture = CAN_unfied_broadcasting_system
+			allowed = { always = no }
+            modifier = {
+				war_support_weekly = 0.005
+				stability_weekly = 0.005
+				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				experience_loss_factor = -0.05
+			}
+		}
+		IRQ_Judicial_system_reform_idea1 = {
+			name = IRQ_Judicial_system_reform
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Judicial_system_reform_idea1"}
+			picture = CAN_unfied_broadcasting_system
+			allowed = { always = no }
+            modifier = {
+				war_support_weekly = 0.01
+				stability_weekly = 0.01
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				experience_loss_factor = -0.1
+			}
+		}
+		IRQ_Judicial_system_reform_idea2 = {
+			name = IRQ_Judicial_system_reform
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Judicial_system_reform_idea2"}
+			picture = CAN_unfied_broadcasting_system
+			allowed = { always = no }
+            modifier = {
+				war_support_weekly = 0.015
+				stability_weekly = 0.015
+				industrial_capacity_factory = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				experience_loss_factor = -0.15
+			}
+		}
+		IRQ_Political_liberalization_idea = {
+			name = IRQ_Political_liberalization
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Political_liberalization_idea"}
+			picture = NFA_french_corpo
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				breakthrough_factor = 0.05
+				required_garrison_factor = -0.1
+				attrition = -0.1
+			}
+		}
+		IRQ_Political_liberalization_idea1 = {
+			name = IRQ_Political_liberalization
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Political_liberalization_idea1"}
+			picture = NFA_french_corpo
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				breakthrough_factor = 0.1
+				required_garrison_factor = -0.2
+				attrition = -0.2
+			}
+		}
+		IRQ_Protect_agriculture_idea = {
+			name = IRQ_Protect_agriculture_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Protect_agriculture_idea"}
+			picture = agricultural_securities
+			allowed = { always = no }
+            modifier = {
+				repair_speed_industrial_complex_factor = 0.07
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.05
+				consumer_goods_expected_value = -0.08
+				consumer_goods_factor = -0.08
+			}
+		}
+		IRQ_Protect_agriculture_idea1 = {
+			name = IRQ_Protect_agriculture_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Protect_agriculture_idea1"}
+			picture = agricultural_securities
+			allowed = { always = no }
+            modifier = {
+				repair_speed_industrial_complex_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+				consumer_goods_expected_value = -0.16
+				consumer_goods_factor = -0.16
+			}
+		}
+		IRQ_Protect_agriculture_idea2 = {
+			name = IRQ_Protect_agriculture_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Protect_agriculture_idea2"}
+			picture = agricultural_securities
+			allowed = { always = no }
+            modifier = {
+				repair_speed_industrial_complex_factor = 0.22
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_synthetic_refinery_factor = 0.15
+				consumer_goods_expected_value = -0.25
+				consumer_goods_factor = -0.25
+			}
+		}
+		IRQ_Overall_modernization_idea = {
+			name = IRQ_Overall_modernization_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Overall_modernization_idea"}
+			picture = modern_farms
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.05
+				local_resources_factor = 0.05
+				production_lack_of_resource_penalty_factor = 0.05
+				political_power_factor = 0.7
+				political_power_gain = 0.7
+			}
+		}
+		IRQ_Overall_modernization_idea1 = {
+			name = IRQ_Overall_modernization_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Overall_modernization_idea1"}
+			picture = modern_farms
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				production_lack_of_resource_penalty_factor = 0.1
+				political_power_factor = 0.15
+				political_power_gain = 0.15
+			}
+		}
+		IRQ_Overall_modernization_idea2 = {
+			name = IRQ_Overall_modernization_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Overall_modernization_idea2"}
+			picture = modern_farms
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.15
+				local_resources_factor = 0.15
+				production_lack_of_resource_penalty_factor = 0.15
+				political_power_factor = 0.20
+				political_power_gain = 0.20
+			}
+		}
+		IRQ_Restraint_from_extremes_idea = {
+			name = IRQ_Restraint_from_extremes_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Restraint_from_extremes_idea"}
+			picture = NYC_anti_communist_leader
+			allowed = { always = no }
+            modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				local_building_slots_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				industry_free_repair_factor = 0.1
+			}
+		}
+		IRQ_Restraint_from_extremes_idea1 = {
+			name = IRQ_Restraint_from_extremes_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Restraint_from_extremes_idea1"}
+			picture = NYC_anti_communist_leader
+			allowed = { always = no }
+            modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				industry_free_repair_factor = 0.2
+			}
+		}
+		IRQ_Moderate_social_reforms_idea = {
+			name = IRQ_Moderate_social_reforms
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Moderate_social_reforms_idea"}
+			picture = ZAM_reforms_support_idea
+			allowed = { always = no }
+            modifier = {
+				supply_consumption_factor = -0.05
+				no_supply_grace = 48
+				org_loss_when_moving = -0.05
+				supply_factor = 0.05
+				supply_node_range = 0.05
+			}
+		}
+		IRQ_Moderate_social_reforms_idea1 = {
+			name = IRQ_Moderate_social_reforms
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Moderate_social_reforms_idea1"}
+			picture = ZAM_reforms_support_idea
+			allowed = { always = no }
+            modifier = {
+				supply_consumption_factor = -0.1
+				no_supply_grace = 72
+				org_loss_when_moving = -0.1
+				supply_factor = 0.1
+				supply_node_range = 0.1
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		IRQ_Moderate_social_reforms_idea2 = {
+			name = IRQ_Moderate_social_reforms
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Moderate_social_reforms_idea2"}
+			picture = ZAM_reforms_support_idea
+			allowed = { always = no }
+            modifier = {
+				supply_consumption_factor = -0.15
+				no_supply_grace = 72
+				org_loss_when_moving = -0.15
+				supply_factor = 0.15
+				supply_node_range = 0.15
+				consumer_goods_expected_value = -0.2
+			}
+		}
+		IRQ_Crush_the_enemies_of_the_revolution_idea = {
+			name = SYR_Crush_the_enemies_of_the_revolution
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Crush_the_enemies_of_the_revolution_idea"}
+			picture = KIK_Revisionist_Pariah
+			allowed = { always = no }
+            modifier = {
+				drift_defence_factor = 0.5
+				repair_speed_industrial_complex_factor = 0.2
+				repair_speed_arms_factory_factor = 0.2
+				repair_speed_rail_way_factor = 0.2
+				national_populist_drift = -0.2
+				authoritarian_democrat_drift = -0.2
+				market_liberal_drift = -0.2
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				conversion_cost_mil_to_civ_factor = -0.5
+				conversion_cost_civ_to_mil_factor = -0.5
+				attrition = -0.05
+			}
+		}
+		IRQ_Iraq_Revolution_idea = {
+			name = IRQ_Iraq_Revolution
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Iraq_Revolution_idea"}
+			picture = CZE_revolution_idea
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+				drift_defence_factor = 0.2
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		IRQ_Iraq_Revolution_idea1 = {
+			name = IRQ_Iraq_Revolution
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Iraq_Revolution_idea1"}
+			picture = CZE_revolution_idea
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				drift_defence_factor = 0.6
+				army_attack_factor = 0.07
+				army_defence_factor = 0.07
+				social_democrat_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				social_conservative_drift = -0.1
+				authoritarian_democrat_drift = -0.1
+				paternal_autocrat_drift = -0.1
+				national_populist_drift = -0.1
+			}
+		}
+		IRQ_Iraq_Revolution_idea2 = {
+			name = IRQ_Iraq_Revolution
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Iraq_Revolution_idea2"}
+			picture = CZE_revolution_idea
+			allowed = { always = no }
+            modifier = {
+				local_building_slots_factor = 0.1
+				local_resources_factor = 0.1
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				repair_speed_rail_way_factor = 0.1
+				drift_defence_factor = 0.6
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				social_democrat_drift = -0.1
+				social_liberal_drift = -0.1
+				market_liberal_drift = -0.1
+				social_conservative_drift = -0.1
+				authoritarian_democrat_drift = -0.1
+				paternal_autocrat_drift = -0.1
+				national_populist_drift = -0.1
+			}
+		}
+		IRQ_Iraq_Revolution_idea3 = {
+			name = IRQ_Iraq_Revolution
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Iraq_Revolution_idea3"}
+			picture = CZE_revolution_idea
+			allowed = { always = no }
+            modifier = {
+				local_building_slots_factor = 0.2
+				local_resources_factor = 0.2
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				repair_speed_rail_way_factor = 0.2
+				drift_defence_factor = 0.6
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				social_democrat_drift = -0.2
+				social_liberal_drift = -0.2
+				market_liberal_drift = -0.2
+				social_conservative_drift = -0.2
+				authoritarian_democrat_drift = -0.2
+				paternal_autocrat_drift = -0.2
+				national_populist_drift = -0.2
+			}
+		}
+		IRQ_The_farmer_owns_the_land_idea = {
+			name = SYR_The_farmer_owns_the_land
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_The_farmer_owns_the_land_idea"}
+			picture = JAP_Rampant_Landlordism
+			allowed = { always = no }
+            modifier = {
+				local_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		IRQ_revolution_mobilize_idea = {
+			name = SYR_revolution_mobilize_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_revolution_mobilize_idea"}
+			picture = BAN_gray_army_mobilize
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.15
+				recruitable_population = 0.2
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				conscription_factor = 0.15
+			}
+		}
+		IRQ_Ideological_enlightenment_idea = {
+			name = SYR_Ideological_enlightenment
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Ideological_enlightenment_idea"}
+			picture = NEE_sell_book_lovecraft
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				local_resources_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				research_speed_factor = 0.1
+			}
+		}
+		IRQ_King_authority_idea = {
+			name = IRQ_King_authority
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_King_authority_idea"}
+			picture = CAN_kings_new_deal_idea
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		IRQ_King_authority_idea1 = {
+			name = IRQ_King_authority
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_King_authority_idea1"}
+			picture = CAN_kings_new_deal_idea
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		IRQ_King_authority_idea2 = {
+			name = IRQ_King_authority
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_King_authority_idea2"}
+			picture = CAN_kings_new_deal_idea
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+			}
+		}
+		IRQ_Ensure_landlord_support_idea = {
+			name = IRQ_Ensure_landlord_support
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Ensure_landlord_support_idea"}
+			picture = UKR_polish_landowners
+			allowed = { always = no }
+            modifier = {
+				industry_free_repair_factor = 0.1
+				industrial_factory_donations = 5
+				military_factory_donations = 5
+				base_fuel_gain_factor = 0.05
+				recruitable_population = 0.05
+			}
+		}
+		IRQ_Ensure_landlord_support_idea1 = {
+			name = IRQ_Ensure_landlord_support
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Ensure_landlord_support_idea1"}
+			picture = UKR_polish_landowners
+			allowed = { always = no }
+            modifier = {
+				industry_free_repair_factor = 0.2
+				industrial_factory_donations = 10
+				military_factory_donations = 10
+				base_fuel_gain_factor = 0.1
+				recruitable_population = 0.1
+			}
+		}
+		IRQ_Cultural_exchange_idea = {
+			name = IRQ_Cultural_exchange_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Cultural_exchange_idea"}
+			picture = generic_personality_cult
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.05
+				local_resources_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
+				pocket_penalty = -0.05
+				field_officer_promotion_penalty = -0.2
+			}
+		}
+		IRQ_Cultural_exchange_idea1 = {
+			name = IRQ_Cultural_exchange_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Cultural_exchange_idea1"}
+			picture = generic_personality_cult
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.1
+				local_resources_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				pocket_penalty = -0.1
+				field_officer_promotion_penalty = -0.5
+			}
+		}
+		IRQ_Cultural_exchange_idea2 = {
+			name = IRQ_Cultural_exchange_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Cultural_exchange_idea2"}
+			picture = generic_personality_cult
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.15
+				local_resources_factor = 0.15
+				production_lack_of_resource_penalty_factor = -0.15
+				pocket_penalty = -0.15
+				field_officer_promotion_penalty = -0.8
+			}
+		}
+		IRQ_Imitate_the_constitutional_system_idea = {
+			name = IRQ_Imitate_the_constitutional_system
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Imitate_the_constitutional_system_idea"}
+			picture = constitution
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.1
+				production_speed_nuclear_reactor_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		IRQ_Imitate_the_constitutional_system_idea1 = {
+			name = IRQ_Imitate_the_constitutional_system
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Imitate_the_constitutional_system_idea1"}
+			picture = constitution
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.2
+				political_power_gain = 0.2
+				production_speed_nuclear_reactor_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		IRQ_Islamic_values_idea = {
+			name = IRQ_Islamic_values
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Islamic_values_idea"}
+			picture = TRK_modernisation
+			allowed = { always = no }
+            modifier = {
+				local_org_regain = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				cas_damage_reduction = 0.05
+				initiative_factor = 0.05
+			}
+		}
+		IRQ_Islamic_values_idea1 = {
+			name = IRQ_Islamic_values
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Islamic_values_idea1"}
+			picture = TRK_modernisation
+			allowed = { always = no }
+            modifier = {
+				local_org_regain = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				cas_damage_reduction = 0.1
+				initiative_factor = 0.1
+			}
+		}
+		IRQ_Islamic_values_idea2 = {
+			name = IRQ_Islamic_values
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Islamic_values_idea2"}
+			picture = TRK_modernisation
+			allowed = { always = no }
+            modifier = {
+				local_org_regain = 0.15
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				cas_damage_reduction = 0.15
+				initiative_factor = 0.15
+			}
+		}
+		IRQ_Unite_Muslims_idea = {
+			name = IRQ_Unite_Muslims
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Unite_Muslims_idea"}
+			picture = AFG_alexander
+			allowed = { always = no }
+            modifier = {
+				war_support_weekly = 0.005
+				stability_weekly = 0.005
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				attrition = -0.05
+			}
+		}
+		IRQ_Unite_Muslims_idea1 = {
+			name = IRQ_Unite_Muslims
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Unite_Muslims_idea1"}
+			picture = AFG_alexander
+			allowed = { always = no }
+            modifier = {
+				war_support_weekly = 0.01
+				stability_weekly = 0.01
+				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.2
+				attrition = -0.1
+			}
+		}
+		IRQ_Unite_Muslims_idea2 = {
+			name = IRQ_Unite_Muslims
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Unite_Muslims_idea2"}
+			picture = AFG_alexander
+			allowed = { always = no }
+            modifier = {
+				war_support_weekly = 0.015
+				stability_weekly = 0.015
+				consumer_goods_factor = -0.25
+				consumer_goods_expected_value = -0.25
+				attrition = -0.15
+				supply_node_range = 0.1
+			}
+		}
+		IRQ_Unite_Muslims_idea3 = {
+			name = IRQ_Unite_Muslims
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Unite_Muslims_idea3"}
+			picture = AFG_alexander
+			allowed = { always = no }
+            modifier = {
+				war_support_weekly = 0.02
+				stability_weekly = 0.02
+				consumer_goods_factor = -0.3
+				consumer_goods_expected_value = -0.3
+				attrition = -0.2
+				supply_node_range = 0.2
+			}
+		}
+		IRQ_The_end_of_imperialism_idea = {
+			name = IRQ_The_end_of_imperialism
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_The_end_of_imperialism_idea"}
+			picture = YUC_anti_hispanicism
+			allowed = { always = no }
+            modifier = {
+				army_attack_against_major_factor = 0.05
+				army_defence_against_major_factor = 0.05
+				training_time_army_factor = -0.05
+				production_lack_of_resource_penalty_factor = -0.05
+				terrain_penalty_reduction = 0.05
+			}
+			targeted_modifier = {
+				tag = NFA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		IRQ_The_end_of_imperialism_idea1 = {
+			name = IRQ_The_end_of_imperialism
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_The_end_of_imperialism_idea1"}
+			picture = YUC_anti_hispanicism
+			allowed = { always = no }
+            modifier = {
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+				training_time_army_factor = -0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				terrain_penalty_reduction = 0.1
+			}
+			targeted_modifier = {
+				tag = NFA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		IRQ_The_end_of_imperialism_idea2 = {
+			name = IRQ_The_end_of_imperialism
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_The_end_of_imperialism_idea2"}
+			picture = YUC_anti_hispanicism
+			allowed = { always = no }
+            modifier = {
+				army_attack_against_major_factor = 0.15
+				army_defence_against_major_factor = 0.15
+				training_time_army_factor = -0.15
+				production_lack_of_resource_penalty_factor = -0.15
+				terrain_penalty_reduction = 0.15
+			}
+			targeted_modifier = {
+				tag = NFA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		IRQ_Resisters_everywhere_idea = {
+			name = IRQ_Resisters_everywhere
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Resisters_everywhere_idea"}
+			picture = ALB_thousand_voices
+			allowed = { always = no }
+            modifier = {
+				non_core_manpower = 0.1
+				recruitable_population = 0.1
+				experience_loss_factor = -0.1
+				experience_gain_army_factor = 0.1
+				experience_gain_factor = 0.1
+			}
+		}
+		IRQ_Resisters_everywhere_idea1 = {
+			name = IRQ_Resisters_everywhere
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Resisters_everywhere_idea1"}
+			picture = ALB_thousand_voices
+			allowed = { always = no }
+            modifier = {
+				non_core_manpower = 0.1
+				recruitable_population = 0.1
+				experience_loss_factor = -0.1
+				experience_gain_army_factor = 0.1
+				experience_gain_factor = 0.1
+				resistance_target_on_our_occupied_states = 0.2
+				resistance_decay_on_our_occupied_states = -0.2
+				resistance_growth_on_our_occupied_states = 0.2
+				compliance_growth_on_our_occupied_states = -0.2
+				supply_factor = 0.1
+			}
+		}
+		IRQ_Sharpen_the_sword_idea = {
+			name = IRQ_Sharpen_the_sword
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Sharpen_the_sword_idea"}
+			picture = BAN_shaken_nation
+			allowed = { always = no }
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		IRQ_Sharpen_the_sword_idea1 = {
+			name = IRQ_Sharpen_the_sword
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Sharpen_the_sword_idea1"}
+			picture = BAN_shaken_nation
+			allowed = { always = no }
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		IRQ_Sharpen_the_sword_idea2 = {
+			name = IRQ_Sharpen_the_sword
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Sharpen_the_sword_idea2"}
+			picture = BAN_shaken_nation
+			allowed = { always = no }
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		IRQ_The_virtue_of_liberation_idea = {
+			name = WHR_theology_of_liberation
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_The_virtue_of_liberation_idea"}
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				mobilization_speed = 0.05
+			}
+		}
+		IRQ_The_virtue_of_liberation_idea1 = {
+			name = WHR_theology_of_liberation
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_The_virtue_of_liberation_idea1"}
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+		IRQ_The_virtue_of_liberation_idea2 = {
+			name = WHR_theology_of_liberation
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_The_virtue_of_liberation_idea2"}
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+            modifier = {
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				mobilization_speed = 0.15
+			}
+		}
+		IRQ_flood_idea = {
+			name = IRQ_flood_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_flood_idea"}
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+            modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+		IRQ_flood_idea1 = {
+			name = IRQ_flood_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_flood_idea1"}
+			picture = FSA_atlanta_fire
+			allowed = { always = no }
+            modifier = {
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				army_artillery_attack_factor = 0.15
+				army_artillery_defence_factor = 0.15
+				army_speed_factor = 0.15
+			}
+		}
+		IRQ_All_for_Arabia_idea = {
+			name = IRQ_All_for_Arabia
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_All_for_Arabia_idea"}
+			picture = WHR_forced_labour
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				production_speed_bunker_factor = 0.05
+			}
+		}
+		IRQ_All_for_Arabia_idea1 = {
+			name = IRQ_All_for_Arabia
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_All_for_Arabia_idea1"}
+			picture = WHR_forced_labour
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_bunker_factor = 0.1
+			}
+		}
+		IRQ_All_for_Arabia_idea2 = {
+			name = IRQ_All_for_Arabia
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_All_for_Arabia_idea2"}
+			picture = WHR_forced_labour
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+				production_speed_bunker_factor = 0.15
+			}
+			targeted_modifier = {
+				tag = NFA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		IRQ_Rooted_in_the_grassroots_idea = {
+			name = IRQ_Rooted_in_the_grassroots
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Rooted_in_the_grassroots_idea"}
+			picture = TIB_root_peace
+			allowed = { always = no }
+            modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		IRQ_Rooted_in_the_grassroots_idea1 = {
+			name = IRQ_Rooted_in_the_grassroots
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Rooted_in_the_grassroots_idea1"}
+			picture = TIB_root_peace
+			allowed = { always = no }
+            modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		IRQ_Rooted_in_the_grassroots_idea2 = {
+			name = IRQ_Rooted_in_the_grassroots
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Rooted_in_the_grassroots_idea2"}
+			picture = TIB_root_peace
+			allowed = { always = no }
+            modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		IRQ_National_mobilization_idea = {
+			name = IRQ_National_mobilization
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_National_mobilization_idea"}
+			picture = SAF_native_service
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.03
+				conscription_factor = 0.05
+				recruitable_population = 0.05
+				non_core_manpower = 0.05
+				mobilization_speed = 0.05
+			}
+		}
+		IRQ_National_mobilization_idea1 = {
+			name = IRQ_National_mobilization
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_National_mobilization_idea1"}
+			picture = SAF_native_service
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.05
+				conscription_factor = 0.1
+				recruitable_population = 0.1
+				non_core_manpower = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+		IRQ_National_mobilization_idea2 = {
+			name = IRQ_National_mobilization
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_National_mobilization_idea2"}
+			picture = SAF_native_service
+			allowed = { always = no }
+            modifier = {
+				conscription = 0.07
+				conscription_factor = 0.15
+				recruitable_population = 0.15
+				non_core_manpower = 0.15
+				mobilization_speed = 0.15
+			}
+		}
+		IRQ_Loyal_scimitar_idea = {
+			name = IRQ_Loyal_scimitar
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Loyal_scimitar_idea"}
+			picture = terror_in_the_knight
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				fortification_collateral_chance = 0.05
+				reassignment_duration_factor = -0.1
+				static_anti_air_hit_chance_factor = 0.05
+			}
+		}
+		IRQ_Loyal_scimitar_idea1 = {
+			name = IRQ_Loyal_scimitar
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Loyal_scimitar_idea1"}
+			picture = terror_in_the_knight
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				fortification_collateral_chance = 0.1
+				reassignment_duration_factor = -0.2
+				static_anti_air_hit_chance_factor = 0.1
+			}
+		}
+		IRQ_Loyal_scimitar_idea2 = {
+			name = IRQ_Loyal_scimitar
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Loyal_scimitar_idea2"}
+			picture = terror_in_the_knight
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				fortification_collateral_chance = 0.15
+				reassignment_duration_factor = -0.3
+				static_anti_air_hit_chance_factor = 0.15
+			}
+		}
+		IRQ_Come_back_in_new_clothes_idea1 = {
+			name = IRQ_Come_back_in_new_clothes_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Come_back_in_new_clothes_idea1"}
+			picture = new_command_structure
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.1
+				authoritarian_democrat_drift = 0.2
+				national_populist_drift = 0.1
+				paternal_autocrat_drift = 0.1
+				military_leader_cost_factor = -0.5
+				industry_free_repair_factor = 0.1
+				trade_opinion_factor = 0.15
+			}
+		}
+		IRQ_Come_back_in_new_clothes_idea2 = {
+			name = IRQ_Come_back_in_new_clothes_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Come_back_in_new_clothes_idea2"}
+			picture = new_command_structure
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.15
+				authoritarian_democrat_drift = 0.3
+				national_populist_drift = 0.15
+				paternal_autocrat_drift = 0.15
+				military_leader_cost_factor = -1
+				industry_free_repair_factor = 0.15
+				trade_opinion_factor = 0.2
+			}
+		}
+		IRQ_Come_back_in_new_clothes_idea = {
+			name = IRQ_Come_back_in_new_clothes_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Come_back_in_new_clothes_idea"}
+			picture = new_command_structure
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.05
+				authoritarian_democrat_drift = 0.1
+				military_leader_cost_factor = -0.3
+				industry_free_repair_factor = 0.05
+				trade_opinion_factor = 0.1
+			}
+		}
+		IRQ_Oppose_socialism_idea = {
+			name = IRQ_Oppose_socialism
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Oppose_socialism_idea"}
+			picture = CAN_anti_syndicalism_decree
+			allowed = { always = no }
+            modifier = {
+				totalist_drift = -0.1
+				syndicalist_drift = -0.1
+				radical_socialist_drift = -0.1
+				social_democrat_drift = -0.1
+				consumer_goods_expected_value = -0.15
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		IRQ_Oppose_socialism_idea1 = {
+			name = IRQ_Oppose_socialism
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Oppose_socialism_idea1"}
+			picture = CAN_anti_syndicalism_decree
+			allowed = { always = no }
+            modifier = {
+				totalist_drift = -0.2
+				syndicalist_drift = -0.2
+				radical_socialist_drift = -0.2
+				social_democrat_drift = -0.2
+				consumer_goods_expected_value = -0.25
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		IRQ_The_call_of_the_Arab_mother_idea = {
+			name = IRQ_The_call_of_the_Arab_mother
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_The_call_of_the_Arab_mother_idea"}
+			picture = PLS_Pan_Arabism
+			allowed = { always = no }
+            modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		IRQ_The_call_of_the_Arab_mother_idea1 = {
+			name = IRQ_The_call_of_the_Arab_mother
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_The_call_of_the_Arab_mother_idea1"}
+			picture = PLS_Pan_Arabism
+			allowed = { always = no }
+            modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		IRQ_The_call_of_the_Arab_mother_idea2 = {
+			name = IRQ_The_call_of_the_Arab_mother
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_The_call_of_the_Arab_mother_idea2"}
+			picture = PLS_Pan_Arabism
+			allowed = { always = no }
+            modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_speed_factor = 0.15
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
 		IRQ_Political_division_idea = {
 			name = SYR_Political_division_idea
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Political_division_idea"}
@@ -20,6 +1370,46 @@ ideas = {
 				stability_factor = -0.1
 				drift_defence_factor = -0.1
 				political_power_cost = 0.15
+			}
+		}
+		IRQ_Political_division_idea1 = {
+			name = SYR_Political_division_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Political_division_idea1"}
+			picture = bloated_bureaucracy
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = -0.1
+				political_power_gain = -0.05
+				stability_factor = -0.05
+				drift_defence_factor = -0.1
+				political_power_cost = 0.1
+			}
+		}
+		IRQ_Political_division_idea2 = {
+			name = SYR_Political_division_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Political_division_idea2"}
+			picture = bloated_bureaucracy
+			allowed = { always = no }
+            modifier = {
+				totalist_drift = 0.1
+				radical_socialist_drift = 0.1
+				syndicalist_drift = 0.1
+				national_populist_drift =0.1
+				drift_defence_factor = -0.05
+				political_power_cost = 0.1
+			}
+		}
+		IRQ_Political_division_idea3 = {
+			name = SYR_Political_division_idea3
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea IRQ_Political_division_idea3"}
+			picture = Revolt_against_modern_world
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.1
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				drift_defence_factor = 0.1
+				political_power_cost = -0.1
 			}
 		}
 		IRQ_Mediterranean_Fleet_idea = {

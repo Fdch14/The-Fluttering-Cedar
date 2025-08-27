@@ -175,5 +175,13 @@ spriteTypes = {
 		name = "GFX_ideology_alawism_subtype"
 		texturefile = "gfx/interface/ideologies/alawism_group.png"
 	}
+	spriteType = {
+		name = "GFX_ideology_autdem_revolutionary_nationalism_subtype"
+		texturefile = "gfx/interface/ideologies/autdem_revolutionary_nationalism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_transitional_government_subtype"
+		texturefile = "gfx/interface/ideologies/transitional_government_group.png"
+	}
 	
 }

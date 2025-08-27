@@ -10,6 +10,18 @@ defined_text = {
 	
 	text = {
 		trigger = {
+			tag = IRQ
+		}
+		localization_key = "IRQ_guidesnum"
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = "JAP_guidesnum"
+	}
+	text = {
+		trigger = {
 			tag = SYR
 		}
 		localization_key = "SYR_guidesnum"

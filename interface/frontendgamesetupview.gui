@@ -735,24 +735,24 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "Yemen_name"
+			name = "Persia_name"
 			position = { x = 367 y = 836 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = -226}
-			text = "Yemen"
+			text = "Persia"
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre
 		}
 		
 		instantTextBoxType = {
-			name = "Suez_name"
+			name = "IRAQ_name"
 			position = { x = 539 y = 836 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = -226}
-			text = "Suez"
+			text = "Iraq"
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre
@@ -776,7 +776,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = -226}
-			text = "Beirut Vilayet"
+			text = "Nejd "
 			maxWidth = 340
 			maxHeight = 30	
 			format = centre
@@ -1102,10 +1102,28 @@ guiTypes = {
 			pdx_tooltip = "GFX_Cyprus_notices_GUI_tooltip"
 		}
 		iconType = {
-			name = "GFX_Lebanon_notices_GUI_name"
+			name = "GFX_Persia_notices_GUI_name"
+			spriteType = "GFX_notices_GUI"		
+			position = { x = 585  y = 505 }
+			pdx_tooltip = "GFX_Persia_notices_GUI_tooltip"
+		}
+		iconType = {
+			name = "GFX_Iraq_notices_GUI_name"
+			spriteType = "GFX_notices_GUI"		
+			position = { x = 755  y = 505 }
+			pdx_tooltip = "GFX_Iraq_notices_GUI_tooltip"
+		}
+		iconType = {
+			name = "GFX_Syria_notices_GUI_name"
+			spriteType = "GFX_notices_GUI"		
+			position = { x = 925  y = 505 }
+			pdx_tooltip = "GFX_Syria_notices_GUI_tooltip"
+		}
+		iconType = {
+			name = "GFX_Nejd_notices_GUI_name"
 			spriteType = "GFX_notices_GUI"		
 			position = { x = 1095  y = 505 }
-			pdx_tooltip = "GFX_Lebanon_notices_GUI_tooltip"
+			pdx_tooltip = "GFX_Nejd_notices_GUI_tooltip"
 		}
 		iconType = {
 			name = "GFX_Palestine_notices_GUI_name"

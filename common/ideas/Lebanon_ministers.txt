@@ -1,5 +1,59 @@
 ideas = {
 	head_of_government = {
+		IRQ_Abdul_Salam_Arif_hog_syn = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Abdul_Salam_Arif_hog_syn"
+			}
+			traits = {
+				head_of_government
+				syndicalist
+				hog_hooded_chairman
+			}
+		}
+		IRQ_Ahmed_Hassan_Al_Bakr_hog_rso = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Ahmed_Hassan_Al_Bakr_hog_rso"
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_old_general
+			}
+		}
+		IRQ_Mohsen_Al_Hakim_hog_sco = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Mohsen_Al_Hakim_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_spiritual_leader
+			}
+		}
 		SYR_Salah_Jadid_hog_tot = {
 			allowed = { original_tag = SYR }
 			available = {
@@ -1170,6 +1224,150 @@ ideas = {
 		}
 	}
 	person_of_influence = {
+		IRQ_Abdul_Rahman_Al_Bazzaz_for_syn = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Abdul_Rahman_Al_Bazzaz_for_syn"
+			}
+			traits = {
+				foreign_minister
+				syndicalist
+				for_ideological_crusader
+			}
+		}
+		IRQ_Talib_al_Shabib_for_rso = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Talib_al_Shabib_for_rso"
+			}
+			traits = {
+				foreign_minister
+				radical_socialist
+				for_apologetic_clerk
+			}
+		}
+		IRQ_Abdul_Rahman_Arif_eco_syn = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Abdul_Rahman_Arif_eco_syn"
+			}
+			traits = {
+				economy_minister
+				syndicalist
+				eco_mixed_economy
+			}
+		}
+		IRQ_Naji_Talib_eco_rso = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Naji_Talib_eco_rso"
+			}
+			traits = {
+				economy_minister
+				radical_socialist
+				eco_peoples_economist
+			}
+		}
+		IRQ_Muhammadus_Al_Khalisi_eco_sco = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Muhammadus_Al_Khalisi_eco_sco"
+			}
+			traits = {
+				economy_minister
+				social_conservative
+				eco_agricultural_economist
+			}
+		}
+		IRQ_Arif_Abdul_Razzaq_sec_syn = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Arif_Abdul_Razzaq_sec_syn"
+			}
+			traits = {
+				security_minister
+				syndicalist
+				sec_compassionate_gentleman
+			}
+		}
+		IRQ_Izzat_Mustafa_Al_Ani_sec_rso = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Izzat_Mustafa_Al_Ani_sec_rso"
+			}
+			traits = {
+				security_minister
+				radical_socialist
+				sec_paramilitary_leader
+			}
+		}
+		IRQ_Mirza_Mahdi_Shirazi_sec_sco = {
+			allowed = { original_tag = IRQ }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea IRQ_Mirza_Mahdi_Shirazi_sec_sco"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_paternalistic_missionary
+			}
+		}
 		SYR_Muhammad_Umran_for_tot = {
 			allowed = { original_tag = SYR }
 			available = {

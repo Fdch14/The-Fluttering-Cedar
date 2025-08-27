@@ -1159,6 +1159,7 @@ focus_tree = {
 		icon=ISRA_Anti_tank_forces
 		x=24
 		y=4
+		prerequisite={focus=SYR_Theoretical_construction}
 		prerequisite={focus=SYR_Expansion_of_the_aviation_industry}
 		prerequisite={focus=SYR_Flying_artillery}
 		mutually_exclusive={focus=SYR_Sweep_the_airspace }
@@ -3439,6 +3440,10 @@ focus_tree = {
 				idea = IRQ_Arab_Federation_idea
 				days = 100
 			}
+			every_state = {
+				limit = { is_core_of = EGY }
+				add_core_of = SYR
+			}
 		}
 	}
 	focus = {# Challenge Egyptian Domination
@@ -4611,7 +4616,6 @@ focus_tree = {
 		}
 		completion_reward={
 			remove_ideas = SYR_Political_division_idea1
-			add_ideas = SYR_Wash_the_spirit_idea
 		}
 	}
 	focus={

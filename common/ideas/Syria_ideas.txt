@@ -874,7 +874,7 @@ ideas = {
 				political_power_factor = 0.1
 				political_power_gain = 0.1
 				local_resources_factor = 0.05
-				production_lack_of_resource_penalty_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
 				research_speed_factor = 0.05
 			}
 		}
@@ -1213,6 +1213,58 @@ ideas = {
 				surrender_limit = 0.1
 				army_attack_against_major_factor = 0.1
 				army_defence_against_major_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = NFA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		SYR_the_party_of_struggle_idea1 = {
+			name = SYR_the_party_of_struggle_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_party_of_struggle_idea1"}
+			picture = SYR_the_party_of_struggle
+			allowed = { always = no }
+            modifier = {
+				justify_war_goal_time = -0.15
+				army_attack_against_major_factor = 0.05
+				army_defence_against_major_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		SYR_the_party_of_struggle_idea2 = {
+			name = SYR_the_party_of_struggle_idea
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_the_party_of_struggle_idea2"}
+			picture = SYR_the_party_of_struggle
+			allowed = { always = no }
+            modifier = {
+				justify_war_goal_time = -0.25
+				surrender_limit = 0.1
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
 			}
 			targeted_modifier = {
 				tag = GER
