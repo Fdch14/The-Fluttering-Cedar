@@ -315,14 +315,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "工人自治团体"
+	name = "Workers' self-government groups"
 	picture = "gfx/leaders/MOJ/Portrait_SUE_Arbeiterautonomiegruppe.png"
 	expire = "1.1.1"
 	ideology = radsoc_austromarxism_subtype
 }
 
 create_country_leader = {
-	name = "工人自治团体"
+	name = "Workers' self-government groups"
 	picture = "gfx/leaders/MOJ/Portrait_SUE_Arbeiterautonomiegruppe.png"
 	expire = "1.1.1"
 	ideology = syndie_social_democrat_subtype

@@ -118,6 +118,7 @@ country_event = {	#Iraqi Revolt
 					target = TUR
 					type = annex_everything
 				}
+				inherit_technology = TUR
 				add_ideas = ott_syrian_uprising
 				load_oob = IRQ_revolt
 				country_event = {
@@ -1325,7 +1326,6 @@ country_event = {
 		add_ideas = IRQ_Musa_al_Shabnder_eco_pau
 		remove_ideas_with_trait = security_minister
 		add_ideas = IRQ_Mahmud_Subhi_al_Daftary_sec_pau
-	}
 	}
 }
 

@@ -4843,7 +4843,7 @@ focus_tree = {
 		search_filters={
 		}
 		completion_reward={
-			remove_idea = IRQ_Political_division_idea2
+			remove_ideas = IRQ_Political_division_idea2
 		}
 	}
 	focus={

@@ -1,3 +1,7 @@
+KHU = {
+	color = rgb { 111 131 48 }
+	color_ui = rgb { 111 131 48 }
+}
 LYE = {
 	color = rgb { 233 155 81 }
 	color_ui = rgb { 233 155 81 }

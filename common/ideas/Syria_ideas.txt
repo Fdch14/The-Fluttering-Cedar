@@ -974,9 +974,9 @@ ideas = {
 				terrain_penalty_reduction = 0.2
 			}
 		}
-		SYR_Transform_political_parties_idea = {
+		SYR_Transform_political_parties_idea1 = {
 			name = SYR_Transform_political_parties
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Transform_political_parties_idea"}
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Transform_political_parties_idea1"}
 			picture = ALB_sorrows_aria
 			allowed = { always = no }
             modifier = {
@@ -987,9 +987,9 @@ ideas = {
 				industrial_capacity_dockyard = 0.1
 			}
 		}
-		SYR_Transform_political_parties_idea1 = {
+		SYR_Transform_political_parties_idea = {
 			name = SYR_Transform_political_parties
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Transform_political_parties_idea1"}
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SYR_Transform_political_parties_idea"}
 			picture = ALB_sorrows_aria
 			allowed = { always = no }
             modifier = {
