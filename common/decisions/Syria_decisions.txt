@@ -320,6 +320,40 @@ SYR_Arab_League = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision SYR_invite_LOA target: [From.GetName]"
+			hidden_effect = {
+				if = {
+					 limit = {
+						NOT = {
+							has_country_flag = ADD_CORE_OF_ALG_MOR_TUN
+						}
+					 }
+					every_state = {
+						limit = {
+							is_core_of = ALG
+						}
+						add_core_of = SYR
+					}
+					every_state = {
+						limit = {
+							is_core_of = TUN
+						}
+						add_core_of = SYR
+					}
+					every_state = {
+						limit = {
+							is_core_of = MOR
+						}
+						add_core_of = SYR
+					}
+					every_state = {
+						limit = {
+							is_core_of = MRT
+						}
+						add_core_of = SYR
+					}
+					set_country_flag = ADD_CORE_OF_ALG_MOR_TUN
+				}
+			}
 			FROM = {
 				country_event = syrfor.1
 			}
