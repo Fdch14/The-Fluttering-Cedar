@@ -3361,6 +3361,20 @@ ideas = {
 				attrition = -0.15
 			}
 		}
+		ISR_International_Aid_ideas3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_International_Aid_ideas2"}
+			allowed = { always = no }
+			name = ISR_International_Aid_ideas
+			picture = FRA_home_of_the_international_revolution
+			modifier = {
+				consumer_goods_expected_value = -0.25
+				consumer_goods_factor = -0.25
+				research_speed_factor = 0.2
+				local_resources_factor = 0.25
+				production_speed_buildings_factor = 0.2
+				attrition = -0.2
+			}
+		}
 		ISR_Kibbutz_Syndicate_ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_Kibbutz_Syndicate_ideas"}
 			allowed = { always = no }
@@ -3507,6 +3521,20 @@ ideas = {
 				army_attack_factor = 0.15
 				local_org_regain = 0.15
 				supply_consumption_factor = -0.15
+			}
+		}
+		ISR_reeducate_ideas2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_reeducate_ideas2"}
+			allowed = { always = no }
+			name = ISR_reeducate_ideas
+			picture = educate_rural_whites
+			modifier = {
+				breakthrough_factor = 0.25
+				recon_factor = 0.25
+				land_reinforce_rate = 0.25
+				army_attack_factor = 0.2
+				local_org_regain = 0.2
+				supply_consumption_factor = -0.2
 			}
 		}
 		ISR_Military_industrial_complex_ideas = {
